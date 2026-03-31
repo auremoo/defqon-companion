@@ -40,13 +40,13 @@ export default function Settings() {
         <button onClick={() => navigate(-1)} className="mb-2 text-sm text-text-muted hover:text-text-primary">
           &larr; {t('settings.back')}
         </button>
-        <h1 className="text-2xl font-bold sm:text-3xl text-text-primary">{t('settings.title')}</h1>
+        <h1 className="defqon-heading text-2xl font-bold sm:text-3xl text-text-primary">{t('settings.title')}</h1>
       </header>
 
       <div className="mx-auto w-full max-w-md space-y-6">
         {/* Account */}
         <section>
-          <h2 className="mb-2 text-xs font-medium uppercase tracking-wider text-text-muted">
+          <h2 className="defqon-heading mb-2 text-xs font-medium uppercase tracking-wider text-text-muted">
             {t('settings.account')}
           </h2>
           <div className="rounded-2xl border border-border bg-surface-card overflow-hidden">
@@ -78,7 +78,7 @@ export default function Settings() {
 
         {/* Language */}
         <section>
-          <h2 className="mb-2 text-xs font-medium uppercase tracking-wider text-text-muted">
+          <h2 className="defqon-heading mb-2 text-xs font-medium uppercase tracking-wider text-text-muted">
             {t('settings.language')}
           </h2>
           <div className="rounded-2xl border border-border bg-surface-card overflow-hidden divide-y divide-border">
@@ -99,7 +99,7 @@ export default function Settings() {
 
         {/* Music platform */}
         <section>
-          <h2 className="mb-2 text-xs font-medium uppercase tracking-wider text-text-muted">
+          <h2 className="defqon-heading mb-2 text-xs font-medium uppercase tracking-wider text-text-muted">
             {t('settings.musicPlatform')}
           </h2>
           <div className="rounded-2xl border border-border bg-surface-card overflow-hidden divide-y divide-border">
@@ -121,7 +121,7 @@ export default function Settings() {
 
         {/* App info */}
         <section>
-          <h2 className="mb-2 text-xs font-medium uppercase tracking-wider text-text-muted">
+          <h2 className="defqon-heading mb-2 text-xs font-medium uppercase tracking-wider text-text-muted">
             {t('settings.about')}
           </h2>
           <div className="rounded-2xl border border-border bg-surface-card p-4 space-y-1">

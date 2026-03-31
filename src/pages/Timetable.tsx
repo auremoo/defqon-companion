@@ -409,7 +409,7 @@ export default function Timetable() {
             </Link>
           </div>
         </div>
-        <h1 className="text-2xl font-bold sm:text-3xl">{t('timetable.title')}</h1>
+        <h1 className="defqon-heading text-2xl font-bold sm:text-3xl">{t('timetable.title')}</h1>
         <p className="mt-1 text-sm text-text-muted">{t('timetable.subtitle')}</p>
       </header>
 
@@ -467,7 +467,7 @@ export default function Timetable() {
               <button
                 key={day.key}
                 onClick={() => { setActiveDay(day.key); setActiveStage('ALL') }}
-                className={`shrink-0 rounded-full px-4 py-2 text-xs font-medium transition-colors ${
+                className={`shrink-0 rounded-full px-4 py-2 text-xs font-medium uppercase tracking-wider transition-colors ${
                   activeDay === day.key
                     ? 'bg-accent text-text-primary'
                     : 'bg-surface-alt text-text-muted hover:bg-surface-card'
@@ -482,7 +482,7 @@ export default function Timetable() {
           <div className="mb-4 flex gap-1.5 overflow-x-auto pb-1">
             <button
               onClick={() => setActiveStage('ALL')}
-              className={`shrink-0 rounded-lg px-3 py-1.5 text-xs font-medium transition-colors ${
+              className={`shrink-0 rounded-lg px-3 py-1.5 text-xs font-medium uppercase tracking-wider transition-colors ${
                 activeStage === 'ALL' ? 'bg-white text-gray-900' : 'bg-surface-alt text-text-muted hover:bg-surface-card'
               }`}
             >
@@ -492,7 +492,7 @@ export default function Timetable() {
               <button
                 key={stage}
                 onClick={() => setActiveStage(stage)}
-                className={`shrink-0 rounded-lg px-3 py-1.5 text-xs font-medium transition-colors ${
+                className={`shrink-0 rounded-lg px-3 py-1.5 text-xs font-medium uppercase tracking-wider transition-colors ${
                   activeStage === stage ? 'text-text-primary' : 'text-text-muted hover:text-text-primary'
                 }`}
                 style={activeStage === stage ? { backgroundColor: stageColors[stage] } : { backgroundColor: 'rgb(31,41,55)' }}
@@ -543,7 +543,7 @@ export default function Timetable() {
                 if (daySets.length === 0) return null
                 return (
                   <div key={day.key}>
-                    <h3 className="mb-2 text-xs font-medium uppercase tracking-wider text-text-muted">
+                    <h3 className="defqon-heading mb-2 text-xs font-medium uppercase tracking-wider text-text-muted">
                       {t(`timetable.days.${day.key}`)} — {day.date}
                     </h3>
                     <div className="space-y-2">

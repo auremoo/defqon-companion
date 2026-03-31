@@ -137,20 +137,20 @@ export default function Colors() {
             <SettingsIcon size={20} />
           </Link>
         </div>
-        <h1 className="text-2xl font-bold sm:text-3xl text-text-primary">{t('colors.title')}</h1>
+        <h1 className="defqon-heading text-2xl font-bold sm:text-3xl text-text-primary">{t('colors.title')}</h1>
         <p className="mt-1 text-sm text-text-secondary">{t('colors.subtitle')}</p>
       </header>
 
       <div className="mx-auto w-full max-w-md space-y-3">
         {favoriteColors.length > 0 && (
           <>
-            <h2 className="text-xs font-medium uppercase tracking-wider text-accent">
+            <h2 className="defqon-heading text-xs font-medium uppercase tracking-wider text-accent">
               {t('colors.favorites')}
             </h2>
             {favoriteColors.map((c) => (
               <ColorCard key={c.id} color={c} isFavorite={true} onToggleFavorite={() => toggleFavorite(c.id)} />
             ))}
-            <h2 className="pt-2 text-xs font-medium uppercase tracking-wider text-text-muted">
+            <h2 className="defqon-heading pt-2 text-xs font-medium uppercase tracking-wider text-text-muted">
               {t('colors.allColors')}
             </h2>
           </>

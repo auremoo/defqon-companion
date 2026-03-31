@@ -1,28 +1,36 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Defqon';
+  src: local('Arial Black'), local('Impact'), local('sans-serif');
+  font-weight: 900;
+}
+
 @theme {
   /* Defqon stage colors */
-  --color-defqon-red: #cc2030;
-  --color-defqon-blue: #1d3557;
-  --color-defqon-black: #111111;
-  --color-defqon-yellow: #f4a261;
+  --color-defqon-red: #e20613;
+  --color-defqon-blue: #1a3a6b;
+  --color-defqon-black: #0a0a0a;
+  --color-defqon-yellow: #e89b1c;
   --color-defqon-indigo: #4a00e0;
-  --color-defqon-magenta: #e040a0;
-  --color-defqon-silver: #a8a8a8;
-  --color-defqon-gold: #d4a20a;
-  --color-defqon-purple: #7b2d8e;
+  --color-defqon-magenta: #d42f8a;
+  --color-defqon-silver: #8c8c8c;
+  --color-defqon-gold: #c89a0e;
+  --color-defqon-purple: #6b1d7e;
 
-  /* App theme — dark with warm Defqon tones */
-  --color-surface: #0d0d12;
-  --color-surface-alt: #14141c;
-  --color-surface-card: #1a1a24;
-  --color-border: rgba(255, 255, 255, 0.08);
-  --color-border-hover: rgba(204, 32, 48, 0.4);
-  --color-text-primary: #f0ece6;
-  --color-text-secondary: #8a8490;
-  --color-text-muted: #5a5560;
-  --color-accent: #cc2030;
-  --color-accent-glow: rgba(204, 32, 48, 0.15);
+  /* App theme — Defqon official style */
+  --color-surface: #171717;
+  --color-surface-alt: #1e1e1e;
+  --color-surface-card: #222222;
+  --color-surface-elevated: #2a2a2a;
+  --color-border: rgba(255, 255, 255, 0.06);
+  --color-border-hover: rgba(226, 6, 19, 0.5);
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #b0b0b0;
+  --color-text-muted: #666666;
+  --color-accent: #e20613;
+  --color-accent-glow: rgba(226, 6, 19, 0.15);
+  --color-accent-dark: #a00410;
 }
 
 html {
@@ -36,10 +44,51 @@ body {
   overscroll-behavior: none;
   background-color: var(--color-surface);
   color: var(--color-text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 #root {
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
+}
+
+/* Defqon heading style — bold, uppercase, tight tracking */
+.defqon-heading {
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+/* Red accent line */
+.accent-line {
+  width: 40px;
+  height: 3px;
+  background: var(--color-accent);
+}
+
+/* Glow effect for accent elements */
+.accent-glow {
+  box-shadow: 0 0 20px rgba(226, 6, 19, 0.3), 0 0 60px rgba(226, 6, 19, 0.1);
+}
+
+/* Subtle noise texture overlay */
+.noise-bg {
+  position: relative;
+}
+.noise-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Gradient fade for sections */
+.fade-bottom {
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
 }

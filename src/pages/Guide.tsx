@@ -8,7 +8,7 @@ type Tab = 'history' | 'hardstyle' | 'vocabulary'
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div className="rounded-2xl border border-border bg-surface-card p-5">
-      <h3 className="mb-3 text-lg font-semibold text-text-primary">{title}</h3>
+      <h3 className="defqon-heading mb-3 text-lg font-semibold text-text-primary">{title}</h3>
       {children}
     </div>
   )
@@ -101,7 +101,7 @@ export default function Guide() {
             <SettingsIcon size={20} />
           </Link>
         </div>
-        <h1 className="text-2xl font-bold sm:text-3xl">{t('guide.title')}</h1>
+        <h1 className="defqon-heading text-2xl font-bold sm:text-3xl">{t('guide.title')}</h1>
         <p className="mt-1 text-sm text-text-muted">{t('guide.subtitle')}</p>
       </header>
 
@@ -111,7 +111,7 @@ export default function Guide() {
           <button
             key={tab.key}
             onClick={() => setActiveTab(tab.key)}
-            className={`flex items-center gap-1.5 whitespace-nowrap rounded-full px-4 py-2 text-xs font-medium transition-colors ${
+            className={`flex items-center gap-1.5 whitespace-nowrap rounded-full px-4 py-2 text-xs font-medium uppercase tracking-wider transition-colors ${
               activeTab === tab.key
                 ? 'bg-accent text-text-primary'
                 : 'bg-surface-alt text-text-muted hover:bg-surface-card hover:text-text-primary'

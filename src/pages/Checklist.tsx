@@ -57,7 +57,7 @@ export default function Checklist() {
             <SettingsIcon size={20} />
           </Link>
         </div>
-        <h1 className="text-2xl font-bold sm:text-3xl">{t('checklist.title')}</h1>
+        <h1 className="defqon-heading text-2xl font-bold sm:text-3xl">{t('checklist.title')}</h1>
         <p className="mt-1 text-sm text-text-muted">{t('checklist.subtitle')}</p>
         {/* Progress bar */}
         <div className="mt-3 h-2 overflow-hidden rounded-full bg-surface-alt">
@@ -74,7 +74,7 @@ export default function Checklist() {
           if (catItems.length === 0) return null
           return (
             <div key={cat}>
-              <h2 className="mb-2 text-xs font-medium uppercase tracking-wider text-text-muted">
+              <h2 className="defqon-heading mb-2 text-xs font-medium uppercase tracking-wider text-text-muted">
                 {t(`checklist.${cat}`)}
               </h2>
               <div className="space-y-1.5">
