@@ -264,7 +264,7 @@ export default function Timetable() {
   const [savedSets, setSavedSets] = useState<string[]>(() => getLocalSavedSets(edition.year))
   const [friendSets, setFriendSets] = useState<Record<string, string[]>>({})
   const [showFriends, setShowFriends] = useState(false)
-  const [viewMode, setViewMode] = useState<'timetable' | 'my-schedule'>('timetable')
+  const [viewMode, setViewMode] = useState<'timetable' | 'my-schedule' | 'friends'>('timetable')
 
   // Load saved sets from Supabase filtered by edition year
   useEffect(() => {
@@ -376,6 +376,14 @@ export default function Timetable() {
       return dayOrder || a.startTime.localeCompare(b.startTime)
     })
 
+  // Sets where at least one buddy is going
+  const friendsViewSets = edition.lineup
+    .filter((s) => friendSets[s.id]?.length > 0)
+    .sort((a, b) => {
+      const dayOrder = days.findIndex((d) => d.key === a.day) - days.findIndex((d) => d.key === b.day)
+      return dayOrder || a.startTime.localeCompare(b.startTime)
+    })
+
   const conflicts = getConflicts()
   const stages = edition.stagesPerDay[activeDay]
 
@@ -417,7 +425,7 @@ export default function Timetable() {
       <div className="mt-3 flex rounded-lg bg-black/30 p-0.5">
         <button
           onClick={() => setViewMode('timetable')}
-          className={`flex-1 rounded-md py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors ${
+          className={`flex-1 rounded-md py-1.5 text-[10px] font-semibold uppercase tracking-wider transition-colors ${
             viewMode === 'timetable' ? 'bg-accent text-text-primary' : 'text-text-muted hover:text-text-primary'
           }`}
         >
@@ -425,12 +433,22 @@ export default function Timetable() {
         </button>
         <button
           onClick={() => setViewMode('my-schedule')}
-          className={`flex-1 rounded-md py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors ${
+          className={`flex-1 rounded-md py-1.5 text-[10px] font-semibold uppercase tracking-wider transition-colors ${
             viewMode === 'my-schedule' ? 'bg-accent text-text-primary' : 'text-text-muted hover:text-text-primary'
           }`}
         >
           {t('timetable.mySchedule')} ({savedSets.length})
         </button>
+        {configured && user && (
+          <button
+            onClick={() => setViewMode('friends')}
+            className={`flex-1 rounded-md py-1.5 text-[10px] font-semibold uppercase tracking-wider transition-colors ${
+              viewMode === 'friends' ? 'bg-accent text-text-primary' : 'text-text-muted hover:text-text-primary'
+            }`}
+          >
+            {t('timetable.friendsTab')}
+          </button>
+        )}
       </div>
     </>
   )
@@ -502,7 +520,7 @@ export default function Timetable() {
             )}
           </div>
         </>
-      ) : (
+      ) : viewMode === 'my-schedule' ? (
         /* My schedule view */
         <div className="mx-auto w-full max-w-md">
           {/* Conflicts warning */}
@@ -546,7 +564,70 @@ export default function Timetable() {
             </div>
           )}
         </div>
-      )}
+      ) : viewMode === 'friends' ? (
+        /* Friends sets view — sets where buddies are going */
+        <div className="mx-auto w-full max-w-md">
+          {friendsViewSets.length === 0 ? (
+            <div className="py-12 text-center">
+              <p className="text-sm text-text-muted">{t('timetable.noFriendSets')}</p>
+              <button
+                onClick={() => setShowFriends(true)}
+                className="mt-3 rounded-lg bg-surface-card px-4 py-2 text-xs font-semibold uppercase tracking-wider text-accent hover:bg-surface-alt"
+              >
+                {t('timetable.manageBuddies')}
+              </button>
+            </div>
+          ) : (
+            <div className="space-y-4">
+              {days.map((day) => {
+                const daySets = friendsViewSets.filter((s) => s.day === day.key)
+                if (daySets.length === 0) return null
+                return (
+                  <div key={day.key}>
+                    <h3 className="defqon-heading mb-2 text-xs font-medium uppercase tracking-wider text-text-muted">
+                      {t(`timetable.days.${day.key}`)} — {day.date}
+                    </h3>
+                    <div className="space-y-2">
+                      {daySets.map((set) => {
+                        const isMine = savedSets.includes(set.id)
+                        return (
+                          <div
+                            key={set.id}
+                            className={`flex items-center gap-3 rounded-xl border p-3 transition-colors ${
+                              isMine
+                                ? 'border-accent/30 bg-accent/5'
+                                : 'border-border bg-surface-card'
+                            }`}
+                          >
+                            <div
+                              className="h-10 w-1 shrink-0 rounded-full"
+                              style={{ backgroundColor: stageColors[set.stage] }}
+                            />
+                            <div className="flex-1 min-w-0">
+                              <p className="truncate text-sm font-medium text-text-primary">{set.artist}</p>
+                              <p className="text-xs text-text-muted">
+                                {set.stage} &middot; {set.startTime} – {set.endTime}
+                              </p>
+                            </div>
+                            <div className="flex items-center gap-2">
+                              <span className="inline-flex items-center gap-1 rounded-full bg-blue-900/40 px-2 py-0.5 text-xs text-blue-300">
+                                {friendSets[set.id].length} <UsersIcon size={11} />
+                              </span>
+                              {isMine && (
+                                <span className="text-[9px] font-bold uppercase tracking-wider text-accent">{t('timetable.youToo')}</span>
+                              )}
+                            </div>
+                          </div>
+                        )
+                      })}
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+          )}
+        </div>
+      ) : null}
 
       {showFriends && <FriendsPanel onClose={() => setShowFriends(false)} editionYear={edition.year} />}
     </PageShell>
