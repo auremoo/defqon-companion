@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import PageHeader from '../components/PageHeader'
+import PageShell from '../components/PageShell'
 
 type Tab = 'history' | 'hardstyle' | 'vocabulary'
 
@@ -92,36 +92,31 @@ export default function Guide() {
   const { t } = useTranslation()
   const [activeTab, setActiveTab] = useState<Tab>('history')
 
+  const tabBar = (
+    <div className="mt-4 flex gap-2 overflow-x-auto">
+      {tabs.map((tab) => (
+        <button
+          key={tab.key}
+          onClick={() => setActiveTab(tab.key)}
+          className={`flex items-center gap-1.5 whitespace-nowrap rounded-full px-4 py-2 text-xs font-medium uppercase tracking-wider transition-colors ${
+            activeTab === tab.key
+              ? 'bg-accent text-text-primary'
+              : 'bg-surface-alt text-text-muted hover:bg-surface-card hover:text-text-primary'
+          }`}
+        >
+          <span>{t(tab.labelKey)}</span>
+        </button>
+      ))}
+    </div>
+  )
+
   return (
-    <div className="flex flex-1 flex-col px-4 pb-24 pt-8">
-      <header className="mb-6">
-        <PageHeader />
-        <h1 className="defqon-heading text-2xl font-bold sm:text-3xl">{t('guide.title')}</h1>
-        <p className="mt-1 text-sm text-text-muted">{t('guide.subtitle')}</p>
-      </header>
-
-      {/* Tab bar */}
-      <div className="mb-6 flex gap-2 overflow-x-auto">
-        {tabs.map((tab) => (
-          <button
-            key={tab.key}
-            onClick={() => setActiveTab(tab.key)}
-            className={`flex items-center gap-1.5 whitespace-nowrap rounded-full px-4 py-2 text-xs font-medium uppercase tracking-wider transition-colors ${
-              activeTab === tab.key
-                ? 'bg-accent text-text-primary'
-                : 'bg-surface-alt text-text-muted hover:bg-surface-card hover:text-text-primary'
-            }`}
-          >
-            <span>{t(tab.labelKey)}</span>
-          </button>
-        ))}
-      </div>
-
+    <PageShell title={t('guide.title')} subtitle={t('guide.subtitle')} headerContent={tabBar}>
       <div className="mx-auto w-full max-w-md">
         {activeTab === 'history' && <HistoryTab />}
         {activeTab === 'hardstyle' && <HardstyleTab />}
         {activeTab === 'vocabulary' && <VocabularyTab />}
       </div>
-    </div>
+    </PageShell>
   )
 }

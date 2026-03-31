@@ -119,6 +119,35 @@ export default function Settings() {
           <p className="mt-2 text-xs text-text-muted">{t('settings.musicPlatformDesc')}</p>
         </section>
 
+        {/* Official links */}
+        <section>
+          <h2 className="defqon-heading mb-2 text-xs font-medium uppercase tracking-wider text-text-muted">
+            {t('settings.officialLinks')}
+          </h2>
+          <div className="rounded-2xl border border-border bg-surface-card overflow-hidden divide-y divide-border">
+            <a href="https://www.q-dance.com/l/defqon1-2026" target="_blank" rel="noopener noreferrer"
+              className="flex items-center justify-between p-4 text-sm text-text-primary transition-colors hover:bg-surface-alt">
+              <span>{t('settings.defqonWebsite')}</span>
+              <span className="text-text-muted">&rarr;</span>
+            </a>
+            <a href="https://www.q-dance.com/l/defqon1-2026-tickets" target="_blank" rel="noopener noreferrer"
+              className="flex items-center justify-between p-4 text-sm text-text-primary transition-colors hover:bg-surface-alt">
+              <span>{t('settings.defqonTickets')}</span>
+              <span className="text-text-muted">&rarr;</span>
+            </a>
+            <a href="https://apps.apple.com/app/q-dance/id410976210" target="_blank" rel="noopener noreferrer"
+              className="flex items-center justify-between p-4 text-sm text-text-primary transition-colors hover:bg-surface-alt">
+              <span>{t('settings.defqonApp')} (iOS)</span>
+              <span className="text-text-muted">&rarr;</span>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.qdance.qdance" target="_blank" rel="noopener noreferrer"
+              className="flex items-center justify-between p-4 text-sm text-text-primary transition-colors hover:bg-surface-alt">
+              <span>{t('settings.defqonApp')} (Android)</span>
+              <span className="text-text-muted">&rarr;</span>
+            </a>
+          </div>
+        </section>
+
         {/* App info */}
         <section>
           <h2 className="defqon-heading mb-2 text-xs font-medium uppercase tracking-wider text-text-muted">

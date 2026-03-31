@@ -2,8 +2,8 @@ import { useState, useEffect, useCallback } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useAuth } from '../contexts/AuthContext'
 import { supabase } from '../lib/supabase'
-import { UsersIcon, HistoryIcon } from '../components/Icons'
-import PageHeader from '../components/PageHeader'
+import { UsersIcon } from '../components/Icons'
+import PageShell from '../components/PageShell'
 import { days, stageColors, type Day, type Stage, type Set } from '../data/lineup'
 import { editions, getCurrentEdition, type Edition } from '../data/editions'
 
@@ -379,53 +379,45 @@ export default function Timetable() {
   const conflicts = getConflicts()
   const stages = edition.stagesPerDay[activeDay]
 
-  return (
-    <div className="flex flex-1 flex-col px-4 pb-24 pt-8">
-      <header className="mb-4">
-        <PageHeader />
-        <h1 className="defqon-heading text-2xl font-bold sm:text-3xl">{t('timetable.title')}</h1>
-        <p className="mt-1 text-sm text-text-muted">{t('timetable.subtitle')}</p>
+  const headerContent = (
+    <>
+      {/* Edition + Friends row */}
+      <div className="mt-3 flex items-center justify-between">
+        <div className="flex gap-1.5">
+          {editions.map((ed) => (
+            <button
+              key={ed.year}
+              onClick={() => { setEdition(ed); setActiveDay('friday'); setActiveStage('ALL') }}
+              className={`rounded-md px-2.5 py-1 text-xs font-bold uppercase tracking-wider transition-colors ${
+                edition.year === ed.year
+                  ? 'bg-accent text-text-primary'
+                  : 'bg-white/5 text-text-muted hover:text-text-primary'
+              }`}
+            >
+              {ed.year}
+            </button>
+          ))}
+        </div>
         {configured && user && (
           <button
             onClick={() => setShowFriends(true)}
-            className="mt-2 inline-flex items-center gap-1.5 rounded-lg bg-surface-alt px-3 py-1.5 text-xs font-medium uppercase tracking-wider text-text-secondary hover:bg-surface-card"
+            className="inline-flex items-center gap-1.5 rounded-md bg-white/5 px-2.5 py-1 text-xs font-medium text-text-secondary hover:text-text-primary"
           >
-            <UsersIcon size={14} /> {t('timetable.friends')}
+            <UsersIcon size={13} /> {t('timetable.friends')}
           </button>
         )}
-      </header>
-
-      {/* Edition selector */}
-      <div className="mb-4 flex items-center gap-2 overflow-x-auto">
-        <HistoryIcon size={14} className="shrink-0 text-text-muted" />
-        {editions.map((ed) => (
-          <button
-            key={ed.year}
-            onClick={() => { setEdition(ed); setActiveDay('friday'); setActiveStage('ALL') }}
-            className={`shrink-0 rounded-full px-3 py-1.5 text-xs font-medium transition-colors ${
-              edition.year === ed.year
-                ? 'bg-accent text-text-primary'
-                : 'bg-surface-alt text-text-muted hover:bg-surface-card'
-            }`}
-          >
-            {ed.year} {ed.isCurrent && `(${t('timetable.currentEdition')})`}
-          </button>
-        ))}
       </div>
 
-      {/* Edition theme banner */}
+      {/* Theme for archive editions */}
       {!edition.isCurrent && (
-        <div className="mb-4 rounded-xl border border-border bg-surface-card p-3 text-center">
-          <p className="text-xs text-text-muted">{t('timetable.archive')}</p>
-          <p className="text-sm font-semibold text-text-primary italic">&ldquo;{edition.theme}&rdquo;</p>
-        </div>
+        <p className="mt-2 text-xs italic text-text-secondary">&ldquo;{edition.theme}&rdquo; &middot; {t('timetable.archive')}</p>
       )}
 
-      {/* View toggle */}
-      <div className="mb-4 flex rounded-xl bg-surface-alt p-1">
+      {/* View toggle — integrated in header */}
+      <div className="mt-3 flex rounded-lg bg-black/30 p-0.5">
         <button
           onClick={() => setViewMode('timetable')}
-          className={`flex-1 rounded-lg py-2 text-xs font-medium transition-colors ${
+          className={`flex-1 rounded-md py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors ${
             viewMode === 'timetable' ? 'bg-accent text-text-primary' : 'text-text-muted hover:text-text-primary'
           }`}
         >
@@ -433,39 +425,46 @@ export default function Timetable() {
         </button>
         <button
           onClick={() => setViewMode('my-schedule')}
-          className={`flex-1 rounded-lg py-2 text-xs font-medium transition-colors ${
+          className={`flex-1 rounded-md py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors ${
             viewMode === 'my-schedule' ? 'bg-accent text-text-primary' : 'text-text-muted hover:text-text-primary'
           }`}
         >
           {t('timetable.mySchedule')} ({savedSets.length})
         </button>
       </div>
+    </>
+  )
 
+  return (
+    <PageShell title={t('timetable.title')} subtitle={t('timetable.subtitle')} headerContent={headerContent}>
       {viewMode === 'timetable' ? (
         <>
-          {/* Day selector */}
-          <div className="mb-3 flex gap-2 overflow-x-auto">
+          {/* Day tabs — card style */}
+          <div className="mb-3 grid grid-cols-4 gap-1.5">
             {days.map((day) => (
               <button
                 key={day.key}
                 onClick={() => { setActiveDay(day.key); setActiveStage('ALL') }}
-                className={`shrink-0 rounded-full px-4 py-2 text-xs font-medium uppercase tracking-wider transition-colors ${
+                className={`rounded-lg py-2.5 text-center transition-colors ${
                   activeDay === day.key
                     ? 'bg-accent text-text-primary'
-                    : 'bg-surface-alt text-text-muted hover:bg-surface-card'
+                    : 'bg-surface-card border border-border text-text-muted hover:text-text-primary'
                 }`}
               >
-                {t(`timetable.days.${day.key}`)}
+                <span className="block text-[10px] font-bold uppercase tracking-wider">
+                  {t(`timetable.days.${day.key}`).slice(0, 3)}
+                </span>
+                <span className="block text-[9px] text-text-muted mt-0.5">{day.date.split(' ')[1]}</span>
               </button>
             ))}
           </div>
 
-          {/* Stage filter */}
-          <div className="mb-4 flex gap-1.5 overflow-x-auto pb-1">
+          {/* Stage chips — compact colored dots */}
+          <div className="mb-4 flex gap-1 overflow-x-auto pb-1">
             <button
               onClick={() => setActiveStage('ALL')}
-              className={`shrink-0 rounded-lg px-3 py-1.5 text-xs font-medium uppercase tracking-wider transition-colors ${
-                activeStage === 'ALL' ? 'bg-white text-gray-900' : 'bg-surface-alt text-text-muted hover:bg-surface-card'
+              className={`shrink-0 rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-wider transition-colors ${
+                activeStage === 'ALL' ? 'bg-text-primary text-surface' : 'bg-surface-card text-text-muted hover:text-text-primary'
               }`}
             >
               {t('timetable.allStages')}
@@ -474,11 +473,13 @@ export default function Timetable() {
               <button
                 key={stage}
                 onClick={() => setActiveStage(stage)}
-                className={`shrink-0 rounded-lg px-3 py-1.5 text-xs font-medium uppercase tracking-wider transition-colors ${
-                  activeStage === stage ? 'text-text-primary' : 'text-text-muted hover:text-text-primary'
-                }`}
-                style={activeStage === stage ? { backgroundColor: stageColors[stage] } : { backgroundColor: 'rgb(31,41,55)' }}
+                className="shrink-0 flex items-center gap-1 rounded-full px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider transition-colors"
+                style={{
+                  backgroundColor: activeStage === stage ? stageColors[stage] : 'var(--color-surface-card)',
+                  color: activeStage === stage ? '#fff' : 'var(--color-text-muted)',
+                }}
               >
+                <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: stageColors[stage] }} />
                 {stage}
               </button>
             ))}
@@ -548,6 +549,6 @@ export default function Timetable() {
       )}
 
       {showFriends && <FriendsPanel onClose={() => setShowFriends(false)} editionYear={edition.year} />}
-    </div>
+    </PageShell>
   )
 }

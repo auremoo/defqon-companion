@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { colors, type DefqonColor } from '../data/colors'
 import { HeartIcon, SpotifyIcon, YouTubeIcon, AppleMusicIcon, DeezerIcon, SoundCloudIcon } from '../components/Icons'
-import PageHeader from '../components/PageHeader'
+import PageShell from '../components/PageShell'
 
 function getStoredFavorites(): string[] {
   try {
@@ -130,13 +130,7 @@ export default function Colors() {
   const otherColors = colors.filter((c) => !favorites.includes(c.id))
 
   return (
-    <div className="flex flex-1 flex-col px-4 pb-24 pt-8">
-      <header className="mb-6">
-        <PageHeader />
-        <h1 className="defqon-heading text-2xl font-bold sm:text-3xl text-text-primary">{t('colors.title')}</h1>
-        <p className="mt-1 text-sm text-text-secondary">{t('colors.subtitle')}</p>
-      </header>
-
+    <PageShell title={t('colors.title')} subtitle={t('colors.subtitle')}>
       <div className="mx-auto w-full max-w-md space-y-3">
         {favoriteColors.length > 0 && (
           <>
@@ -155,6 +149,6 @@ export default function Colors() {
           <ColorCard key={c.id} color={c} isFavorite={false} onToggleFavorite={() => toggleFavorite(c.id)} />
         ))}
       </div>
-    </div>
+    </PageShell>
   )
 }

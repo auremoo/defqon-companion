@@ -234,6 +234,10 @@
     "language": "Langue",
     "musicPlatform": "Plateforme musicale pr\u00e9f\u00e9r\u00e9e",
     "musicPlatformDesc": "Les liens sur les pages couleurs prioriseront ta plateforme",
+    "officialLinks": "Officiel",
+    "defqonWebsite": "Site Defqon.1",
+    "defqonTickets": "Acheter des billets",
+    "defqonApp": "App Q-dance",
     "about": "\u00c0 propos",
     "disclaimer": "Application communautaire. Non affili\u00e9e \u00e0 Q-dance ou Defqon.1."
   }

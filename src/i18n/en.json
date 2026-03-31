@@ -234,6 +234,10 @@
     "language": "Language",
     "musicPlatform": "Preferred Music Platform",
     "musicPlatformDesc": "Links on color pages will prioritize your chosen platform",
+    "officialLinks": "Official",
+    "defqonWebsite": "Defqon.1 Website",
+    "defqonTickets": "Buy Tickets",
+    "defqonApp": "Q-dance App",
     "about": "About",
     "disclaimer": "Fan-made companion app. Not affiliated with Q-dance or Defqon.1."
   }

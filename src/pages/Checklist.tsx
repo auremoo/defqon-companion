@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { defaultChecklist, type ChecklistItem } from '../data/festival'
-import PageHeader from '../components/PageHeader'
+import PageShell from '../components/PageShell'
 
 function getStoredChecklist(): ChecklistItem[] {
   try {
@@ -45,22 +45,20 @@ export default function Checklist() {
   const checkedCount = items.filter((i) => i.checked).length
   const categories = ['essentials', 'camping', 'comfort'] as const
 
-  return (
-    <div className="flex flex-1 flex-col px-4 pb-24 pt-8">
-      <header className="mb-6">
-        <PageHeader />
-        <span className="text-xs text-text-muted">{t('checklist.progress', { checked: checkedCount, total: items.length })}</span>
-        <h1 className="defqon-heading text-2xl font-bold sm:text-3xl">{t('checklist.title')}</h1>
-        <p className="mt-1 text-sm text-text-muted">{t('checklist.subtitle')}</p>
-        {/* Progress bar */}
-        <div className="mt-3 h-2 overflow-hidden rounded-full bg-surface-alt">
-          <div
-            className="h-full rounded-full bg-accent transition-all duration-300"
-            style={{ width: `${items.length ? (checkedCount / items.length) * 100 : 0}%` }}
-          />
-        </div>
-      </header>
+  const progressSection = (
+    <>
+      <span className="mt-3 block text-xs text-text-muted">{t('checklist.progress', { checked: checkedCount, total: items.length })}</span>
+      <div className="mt-3 h-2 overflow-hidden rounded-full bg-surface-alt">
+        <div
+          className="h-full rounded-full bg-accent transition-all duration-300"
+          style={{ width: `${items.length ? (checkedCount / items.length) * 100 : 0}%` }}
+        />
+      </div>
+    </>
+  )
 
+  return (
+    <PageShell title={t('checklist.title')} subtitle={t('checklist.subtitle')} headerContent={progressSection}>
       <div className="mx-auto w-full max-w-md space-y-6">
         {categories.map((cat) => {
           const catItems = items.filter((i) => i.category === cat)
@@ -134,6 +132,6 @@ export default function Checklist() {
           {t('checklist.reset')}
         </button>
       </div>
-    </div>
+    </PageShell>
   )
 }
