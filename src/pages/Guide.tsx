@@ -44,7 +44,7 @@ function HistoryTab() {
 
 function HardstyleTab() {
   const { t } = useTranslation()
-  const subgenres = ['euphoric', 'raw', 'hardcore', 'frenchcore', 'classic'] as const
+  const subgenres = ['euphoric', 'raw', 'extraRaw', 'hardcore', 'frenchcore', 'uptempo', 'terror', 'industrial', 'classic', 'earlyRave', 'hardTrance', 'hardTechno', 'dnb', 'happyHardcore'] as const
   return (
     <div className="space-y-4">
       <Section title={t('guide.hardstyle.title')}>
@@ -67,7 +67,7 @@ function HardstyleTab() {
 
 function VocabularyTab() {
   const { t } = useTranslation()
-  const terms = ['kick', 'reverseBass', 'breakdown', 'climax', 'screeches', 'qdance'] as const
+  const terms = ['kick', 'reverseBass', 'breakdown', 'climax', 'screeches', 'antiClimactic', 'bpm', 'gabber', 'shuffle', 'anthem', 'endshow', 'powerHour', 'set', 'qdance', 'hardBass'] as const
   return (
     <div className="space-y-4">
       <Section title={t('guide.vocabulary.title')}>

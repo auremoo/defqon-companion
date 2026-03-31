@@ -60,12 +60,21 @@
     "hardstyle": {
       "title": "Qu\u2019est-ce que le Hardstyle ?",
       "text": "Le hardstyle est un genre de musique \u00e9lectronique n\u00e9 au d\u00e9but des ann\u00e9es 2000 aux Pays-Bas. Il se caract\u00e9rise par des kicks puissants, des m\u00e9lodies euphoriques et une \u00e9nergie intense. Le BPM tourne g\u00e9n\u00e9ralement entre 150 et 160.",
-      "subgenres": "Sous-genres",
-      "euphoric": "Euphoric Hardstyle \u2014 M\u00e9lodique, entra\u00eenant, \u00e9motionnel. Le sous-genre le plus accessible\u00a0: de belles m\u00e9lodies sur des kicks puissants.",
-      "raw": "Raw Hardstyle \u2014 Plus sombre, kicks et screeches agressifs. Moins de m\u00e9lodie, plus d\u2019\u00e9nergie brute.",
-      "hardcore": "Hardcore \u2014 Plus rapide (160-200+ BPM), plus dur, plus extr\u00eame. Un genre \u00e0 part, profond\u00e9ment ancr\u00e9 aux Pays-Bas.",
-      "frenchcore": "Frenchcore \u2014 N\u00e9 en France, 190-210 BPM, kicks distordus et drops intenses. De l\u2019\u00e9nergie pure.",
-      "classic": "Classic / Early Hardstyle \u2014 Le son originel (2000-2008). Reverse bass, m\u00e9lodies simples, vibes nostalgiques."
+      "subgenres": "Les sous-genres \u00e0 Defqon.1",
+      "euphoric": "Euphoric Hardstyle (RED) \u2014 M\u00e9lodique, entra\u00eenant, \u00e9motionnel. Le sous-genre le plus accessible\u00a0: de belles m\u00e9lodies sur des kicks puissants. 150\u2013160 BPM.",
+      "raw": "Raw Hardstyle (BLUE) \u2014 Plus sombre, kicks et screeches agressifs. Moins de m\u00e9lodie, plus d\u2019\u00e9nergie brute et de sons industriels. 150\u2013160 BPM.",
+      "extraRaw": "Extra Raw (INDIGO) \u2014 Le raw hardstyle pouss\u00e9 \u00e0 l\u2019extr\u00eame. Textures industrielles, kicks brutaux, atmosph\u00e8re underground. 150\u2013165 BPM.",
+      "hardcore": "Hardcore (BLACK) \u2014 Plus rapide, plus dur, plus extr\u00eame. Kicks distordus \u00e0 160\u2013200+ BPM. Un genre \u00e0 part, profond\u00e9ment ancr\u00e9 aux Pays-Bas.",
+      "frenchcore": "Frenchcore (YELLOW) \u2014 N\u00e9 en France, 190\u2013210 BPM, kicks distordus et drops intenses. De l\u2019\u00e9nergie pure sur le dancefloor.",
+      "uptempo": "Uptempo (YELLOW) \u2014 Le pont entre le hardcore et le frenchcore. 180\u2013220 BPM, tempo implacable avec des kicks rebondissants.",
+      "terror": "Terror (YELLOW) \u2014 Le tempo le plus extr\u00eame\u00a0: 200\u2013300+ BPM. Bruyant, chaotique, pas pour les \u00e2mes sensibles.",
+      "industrial": "Industrial Hardcore (SILVER) \u2014 L\u00e0 o\u00f9 le hardcore rencontre la musique industrielle. Rythmes m\u00e9caniques, textures m\u00e9talliques, ambiance dystopique. 170\u2013200 BPM.",
+      "classic": "Classic / Early Hardstyle (MAGENTA) \u2014 Le son originel (2000\u20132008). Reverse bass, m\u00e9lodies simples, vibes nostalgiques. 140\u2013155 BPM.",
+      "earlyRave": "Early Rave / Gabber (GOLD) \u2014 Les racines de la sc\u00e8ne rave. Hymnes des ann\u00e9es 90-2000, gabber old-school, millennium hardcore. 150\u2013180 BPM.",
+      "hardTrance": "Hard Trance (ORANGE) \u2014 L\u00e0 o\u00f9 la trance rencontre le hard dance. Basslines entra\u00eenantes, mont\u00e9es euphoriques et synths acides. Aux origines de nombreux artistes hardstyle.",
+      "hardTechno": "Hard Techno (GREEN) \u2014 La vague crossover actuelle. Techno industrielle + \u00e9nergie hard dance. Certains artistes hardstyle y jouent sous alter ego.",
+      "dnb": "Drum & Bass (PINK) \u2014 Breakbeats rapides \u00e0 170\u2013180 BPM. Introduit \u00e0 Defqon.1 en 2025 avec sa propre sc\u00e8ne d\u00e9di\u00e9e.",
+      "happyHardcore": "Happy Hardcore (UV) \u2014 Rapide, joyeux et euphorique. 160\u2013180 BPM avec des voix pitch\u00e9es et des m\u00e9lodies de piano. Pense Darren Styles et les crossovers de Da Tweekaz."
     },
     "vocabulary": {
       "title": "Le vocabulaire",
@@ -74,7 +83,16 @@
       "breakdown": "Breakdown \u2014 Section m\u00e9lodique au c\u0153ur du morceau, qui monte la tension avant le climax.",
       "climax": "Climax \u2014 Le moment o\u00f9 m\u00e9lodie et kicks se combinent \u00e0 pleine puissance. Le moment que tout le monde attend.",
       "screeches": "Screeches \u2014 Sons synth\u00e9tiques aigus et distordus, typiques du raw hardstyle.",
-      "qdance": "Q-dance \u2014 L\u2019organisateur n\u00e9erlandais derri\u00e8re Defqon.1, Qlimax et bien d\u2019autres \u00e9v\u00e9nements hardstyle."
+      "antiClimactic": "Anti-climax \u2014 Quand la mont\u00e9e d\u00e9bouche sur un drop brutal au lieu d\u2019une m\u00e9lodie. Signature du raw hardstyle.",
+      "bpm": "BPM \u2014 Battements par minute. Hardstyle\u00a0: 150\u2013160, hardcore\u00a0: 160\u2013200+, frenchcore\u00a0: 190\u2013210, terror\u00a0: jusqu\u2019\u00e0 300+.",
+      "gabber": "Gabber \u2014 Mouvement hardcore n\u00e9erlandais des ann\u00e9es 90. Rapide, agressif, distordu. L\u2019anc\u00eatre de la sc\u00e8ne hardcore actuelle.",
+      "shuffle": "Melbourne Shuffle \u2014 La danse embl\u00e9matique du hardstyle. Jeu de pieds rapide, glissements talon-pointe.",
+      "anthem": "Anthem \u2014 Le morceau officiel d\u2019une \u00e9dition de festival, r\u00e9v\u00e9l\u00e9 lors de l\u2019\u00e9v\u00e9nement. \u00catre choisi comme cr\u00e9ateur d\u2019anthem est le plus grand honneur.",
+      "endshow": "Endshow \u2014 Le spectacle de cl\u00f4ture d\u2019une sc\u00e8ne, avec feux d\u2019artifice, pyrotechnie et un DJ set sp\u00e9cial.",
+      "powerHour": "POWER HOUR \u2014 Le moment l\u00e9gendaire de Defqon.1\u00a0: une heure de hits encha\u00een\u00e9s, feux d\u2019artifice et le c\u00e9l\u00e8bre mouvement gauche-droite de la foule.",
+      "qdance": "Q-dance \u2014 L\u2019organisateur n\u00e9erlandais derri\u00e8re Defqon.1, Qlimax et bien d\u2019autres \u00e9v\u00e9nements hardstyle. Fond\u00e9 en 1999.",
+      "hardBass": "Hardbass \u2014 \u00c0 ne pas confondre avec le hardstyle. Un style \u00e9lectronique rapide, d\u2019origine russe. Parfois jou\u00e9 en clin d\u2019\u0153il en festival.",
+      "set": "Set \u2014 La performance d\u2019un DJ. G\u00e9n\u00e9ralement 60 minutes en festival. Un set B2B signifie deux DJ qui jouent ensemble en alternance."
     }
   },
   "checklist": {

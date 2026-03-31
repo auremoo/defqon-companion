@@ -60,12 +60,21 @@
     "hardstyle": {
       "title": "What is Hardstyle?",
       "text": "Hardstyle is a genre of electronic dance music born in the early 2000s in the Netherlands. It's characterized by its hard-hitting kick drums, euphoric melodies, and intense energy. The genre typically ranges from 150 to 160 BPM.",
-      "subgenres": "Subgenres",
-      "euphoric": "Euphoric Hardstyle \u2014 Melodic, uplifting, emotional. The most accessible subgenre with beautiful melodies over powerful kicks.",
-      "raw": "Raw Hardstyle \u2014 Darker, more aggressive kicks and screeches. Less melody, more raw energy and industrial sounds.",
-      "hardcore": "Hardcore \u2014 Faster (160-200+ BPM), harder, more extreme. A genre of its own with deep roots in the Netherlands.",
-      "frenchcore": "Frenchcore \u2014 Born in France, 190-210 BPM, distorted kicks and intense drops. Pure energy on the dance floor.",
-      "classic": "Classic/Early Hardstyle \u2014 The original sound from 2000-2008. Reverse bass, simpler melodies, nostalgic vibes."
+      "subgenres": "Subgenres at Defqon.1",
+      "euphoric": "Euphoric Hardstyle (RED) \u2014 Melodic, uplifting, emotional. The most accessible subgenre with beautiful melodies over powerful kicks. 150\u2013160 BPM.",
+      "raw": "Raw Hardstyle (BLUE) \u2014 Darker, more aggressive kicks and screeches. Less melody, more raw energy and industrial sounds. 150\u2013160 BPM.",
+      "extraRaw": "Extra Raw (INDIGO) \u2014 Raw hardstyle pushed to the extreme. Industrial textures, brutal kicks, underground atmosphere. 150\u2013165 BPM.",
+      "hardcore": "Hardcore (BLACK) \u2014 Faster, harder, more extreme. Distorted kicks at 160\u2013200+ BPM. A genre of its own with deep roots in the Netherlands.",
+      "frenchcore": "Frenchcore (YELLOW) \u2014 Born in France, 190\u2013210 BPM, distorted kicks and intense drops. Pure energy on the dance floor.",
+      "uptempo": "Uptempo (YELLOW) \u2014 The bridge between hardcore and frenchcore. 180\u2013220 BPM, relentless tempo with bouncy kicks.",
+      "terror": "Terror (YELLOW) \u2014 The most extreme tempo: 200\u2013300+ BPM. Noisy, chaotic, not for the faint of heart.",
+      "industrial": "Industrial Hardcore (SILVER) \u2014 Where hardcore meets industrial music. Mechanical rhythms, metallic textures, dystopian vibes. 170\u2013200 BPM.",
+      "classic": "Classic/Early Hardstyle (MAGENTA) \u2014 The original sound from 2000\u20132008. Reverse bass, simpler melodies, nostalgic vibes. 140\u2013155 BPM.",
+      "earlyRave": "Early Rave / Gabber (GOLD) \u2014 The roots of the rave scene. 90s and early 2000s anthems, old-school gabber, millennium hardcore. 150\u2013180 BPM.",
+      "hardTrance": "Hard Trance (ORANGE) \u2014 Where trance meets hard dance. Driving basslines, euphoric builds and acid synths. The roots of many hardstyle artists.",
+      "hardTechno": "Hard Techno (GREEN) \u2014 The current crossover wave. Industrial techno meets hard dance energy. Some hardstyle artists' alter egos perform here.",
+      "dnb": "Drum & Bass (PINK) \u2014 Fast breakbeats at 170\u2013180 BPM. Introduced at Defqon.1 in 2025 with its own dedicated stage.",
+      "happyHardcore": "Happy Hardcore (UV) \u2014 Fast, joyful, and uplifting. 160\u2013180 BPM with pitched-up vocals and euphoric piano melodies. Think Darren Styles and Da Tweekaz crossovers."
     },
     "vocabulary": {
       "title": "Vocabulary",
@@ -74,7 +83,16 @@
       "breakdown": "Breakdown \u2014 The melodic mid-section of a track, building tension before the climax.",
       "climax": "Climax \u2014 The peak moment when melody and kicks combine at full power. The moment everyone waits for.",
       "screeches": "Screeches \u2014 High-pitched, distorted synthesizer sounds typical of raw hardstyle.",
-      "qdance": "Q-dance \u2014 The Dutch event organizer behind Defqon.1, Qlimax, and many other hardstyle events."
+      "antiClimactic": "Anti-climax \u2014 When the build-up leads to a raw/unexpected drop instead of a melody. A raw hardstyle signature move.",
+      "bpm": "BPM \u2014 Beats Per Minute. Hardstyle is 150\u2013160, hardcore 160\u2013200+, frenchcore 190\u2013210, terror can go 300+.",
+      "gabber": "Gabber \u2014 Dutch hardcore movement from the 90s. Fast, aggressive, distorted. The ancestor of today's hardcore scene.",
+      "shuffle": "Melbourne Shuffle \u2014 The iconic dance style associated with hardstyle. Quick footwork, heel-toe sliding movements.",
+      "anthem": "Anthem \u2014 The official track of a festival edition, revealed at the event. Being chosen as anthem creator is the highest honor.",
+      "endshow": "Endshow \u2014 The spectacular closing performance of a stage, featuring fireworks, pyro, and a special DJ set.",
+      "powerHour": "POWER HOUR \u2014 Defqon.1's legendary moment: one hour of back-to-back hits, fireworks, and the famous left-right crowd movement.",
+      "qdance": "Q-dance \u2014 The Dutch event organizer behind Defqon.1, Qlimax, and many other hardstyle events. Founded in 1999.",
+      "hardBass": "Hardbass \u2014 Not to be confused with hardstyle. A fast, Russian electronic style. Sometimes jokingly played at festivals.",
+      "set": "Set \u2014 A DJ's performance. Typically 60 minutes at festivals. A B2B set means two DJs playing back-to-back."
     }
   },
   "checklist": {
