@@ -25,9 +25,11 @@ function getPreferredPlatform(): string {
 export default function Settings() {
   const { t, i18n } = useTranslation()
   const navigate = useNavigate()
-  const { user, profile, configured, signOut } = useAuth()
+  const { user, profile, configured, signOut, updateProfile } = useAuth()
   const [showAuth, setShowAuth] = useState(false)
   const [platform, setPlatform] = useState(getPreferredPlatform)
+  const [defqonUsername, setDefqonUsername] = useState(profile?.defqon_username || '')
+  const [saving, setSaving] = useState(false)
 
   const changePlatform = (id: string) => {
     setPlatform(id)
@@ -75,6 +77,50 @@ export default function Settings() {
             )}
           </div>
         </section>
+
+        {/* Defqon profile — only when logged in */}
+        {configured && user && profile && (
+          <section>
+            <h2 className="defqon-heading mb-2 text-xs font-medium uppercase tracking-wider text-text-muted">
+              {t('settings.defqonProfile')}
+            </h2>
+            <div className="rounded-2xl border border-border bg-surface-card overflow-hidden divide-y divide-border">
+              {/* Defqon username */}
+              <div className="p-4">
+                <label className="mb-1 block text-xs text-text-muted">{t('settings.defqonUsername')}</label>
+                <div className="flex gap-2">
+                  <input
+                    type="text"
+                    value={defqonUsername}
+                    onChange={(e) => setDefqonUsername(e.target.value)}
+                    placeholder={t('settings.defqonUsernamePlaceholder')}
+                    className="flex-1 rounded-lg border border-border bg-surface-alt px-3 py-2 text-sm text-text-primary placeholder-text-muted outline-none focus:border-accent/50"
+                  />
+                  <button
+                    onClick={async () => { setSaving(true); await updateProfile({ defqon_username: defqonUsername || null }); setSaving(false) }}
+                    disabled={saving}
+                    className="rounded-lg bg-accent px-3 py-2 text-xs font-semibold uppercase text-text-primary disabled:opacity-50"
+                  >
+                    {saving ? '...' : t('settings.save')}
+                  </button>
+                </div>
+              </div>
+              {/* Dediqated toggle */}
+              <button
+                onClick={() => updateProfile({ is_dediqated: !profile.is_dediqated })}
+                className="flex w-full items-center justify-between p-4 transition-colors hover:bg-surface-alt"
+              >
+                <div>
+                  <span className="text-sm text-text-primary">{t('settings.dediqated')}</span>
+                  <p className="text-xs text-text-muted">{t('settings.dediqatedDesc')}</p>
+                </div>
+                <div className={`h-6 w-10 rounded-full transition-colors ${profile.is_dediqated ? 'bg-defqon-gold' : 'bg-surface-elevated'}`}>
+                  <div className={`mt-0.5 h-5 w-5 rounded-full bg-white shadow transition-transform ${profile.is_dediqated ? 'translate-x-4.5' : 'translate-x-0.5'}`} />
+                </div>
+              </button>
+            </div>
+          </section>
+        )}
 
         {/* Language */}
         <section>

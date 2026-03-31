@@ -13,9 +13,16 @@ export default function PageHeader() {
   return (
     <>
       <div className="mb-2 flex items-center justify-between">
-        <div>
+        <div className="flex items-center gap-2">
           {configured && user && profile ? (
-            <span className="text-xs text-text-muted">@{profile.username}</span>
+            <>
+              <span className="text-xs text-text-muted">@{profile.username}</span>
+              {profile.is_dediqated && (
+                <span className="rounded-sm bg-defqon-gold/20 px-1.5 py-0.5 text-[9px] font-black uppercase tracking-wider text-defqon-gold">
+                  Dediqated
+                </span>
+              )}
+            </>
           ) : configured ? (
             <button
               onClick={() => setShowAuth(true)}

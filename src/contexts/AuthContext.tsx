@@ -2,10 +2,12 @@ import { createContext, useContext, useEffect, useState, type ReactNode } from '
 import { supabase, isSupabaseConfigured } from '../lib/supabase'
 import type { User } from '@supabase/supabase-js'
 
-interface Profile {
+export interface Profile {
   id: string
   username: string
   display_name: string | null
+  defqon_username: string | null
+  is_dediqated: boolean
 }
 
 interface AuthState {
@@ -16,6 +18,8 @@ interface AuthState {
   signUp: (email: string, password: string, username: string) => Promise<string | null>
   signIn: (email: string, password: string) => Promise<string | null>
   signOut: () => Promise<void>
+  updateProfile: (fields: Partial<Pick<Profile, 'display_name' | 'defqon_username' | 'is_dediqated'>>) => Promise<string | null>
+  refreshProfile: () => Promise<void>
 }
 
 const AuthContext = createContext<AuthState>({
@@ -26,6 +30,8 @@ const AuthContext = createContext<AuthState>({
   signUp: async () => null,
   signIn: async () => null,
   signOut: async () => {},
+  updateProfile: async () => null,
+  refreshProfile: async () => {},
 })
 
 export function AuthProvider({ children }: { children: ReactNode }) {
@@ -58,7 +64,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     if (!supabase) return
     const { data } = await supabase
       .from('profiles')
-      .select('id, username, display_name')
+      .select('id, username, display_name, defqon_username, is_dediqated')
       .eq('id', userId)
       .single()
     if (data) setProfile(data)
@@ -87,8 +93,20 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setProfile(null)
   }
 
+  async function updateProfile(fields: Partial<Pick<Profile, 'display_name' | 'defqon_username' | 'is_dediqated'>>): Promise<string | null> {
+    if (!supabase || !user) return 'Not authenticated'
+    const { error } = await supabase.from('profiles').update(fields).eq('id', user.id)
+    if (error) return error.message
+    await fetchProfile(user.id)
+    return null
+  }
+
+  async function refreshProfile() {
+    if (user) await fetchProfile(user.id)
+  }
+
   return (
-    <AuthContext.Provider value={{ user, profile, loading, configured: isSupabaseConfigured, signUp, signIn, signOut }}>
+    <AuthContext.Provider value={{ user, profile, loading, configured: isSupabaseConfigured, signUp, signIn, signOut, updateProfile, refreshProfile }}>
       {children}
     </AuthContext.Provider>
   )
