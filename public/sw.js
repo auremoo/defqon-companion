@@ -1,8 +1,9 @@
-const CACHE_NAME = 'defqon-companion-v1'
+const CACHE_NAME = 'defqon-companion-v2'
+const BASE = '/defqon-companion/'
 const STATIC_ASSETS = [
-  '/',
-  '/index.html',
-  '/manifest.json',
+  BASE,
+  BASE + 'index.html',
+  BASE + 'manifest.json',
 ]
 
 self.addEventListener('install', (event) => {
