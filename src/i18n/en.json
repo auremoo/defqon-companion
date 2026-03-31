@@ -1,0 +1,130 @@
+{
+  "nav": {
+    "home": "Home",
+    "colors": "Colors",
+    "guide": "Guide",
+    "checklist": "Checklist",
+    "timetable": "Timetable"
+  },
+  "home": {
+    "title": "Defqon Companion",
+    "subtitle": "Your guide to the hardest festival on Earth",
+    "countdown": {
+      "title": "Countdown to Defqon.1 2026",
+      "days": "days",
+      "hours": "hours",
+      "minutes": "min",
+      "seconds": "sec",
+      "live": "Defqon.1 is happening NOW!",
+      "past": "See you next year!"
+    },
+    "theme": "Sacred Oath",
+    "dates": "June 25 – 28, 2026",
+    "location": "Biddinghuizen, Netherlands",
+    "quickLinks": "Quick Links",
+    "exploreColors": "Explore Colors",
+    "readGuide": "Read the Guide",
+    "prepChecklist": "Prep Checklist"
+  },
+  "colors": {
+    "title": "Colors of Defqon.1",
+    "subtitle": "Each color represents a unique stage and music style",
+    "bpm": "BPM",
+    "vibe": "Vibe",
+    "artists": "Key Artists",
+    "playlists": "Playlists",
+    "favorite": "Favorite",
+    "unfavorite": "Unfavorite",
+    "favorites": "Your Favorites",
+    "allColors": "All Colors",
+    "listenOnSpotify": "Listen on Spotify",
+    "watchOnYouTube": "Watch on YouTube"
+  },
+  "guide": {
+    "title": "Discover Hardstyle",
+    "subtitle": "Everything you need to know before your first Defqon.1",
+    "history": {
+      "title": "History of Defqon.1",
+      "originTitle": "Origin of the Name",
+      "originText": "The name Defqon.1 comes from DEFCON, the American military alert level system. It's a stylization of DEFCON 1, which represents the maximum alert level. The idea behind this name is to convey an image of power, intensity and maximum tension, in line with the very hard and energetic universe of the festival.",
+      "whyOneTitle": "Why the Number \"1\"?",
+      "whyOneText": "The number 1 refers directly to the highest level of the DEFCON system. It's not an arbitrary number: it symbolizes the maximum level of vigilance. In the festival context, this \"1\" reinforces the idea of an extreme event, with very strong energy, designed as an intense experience from start to finish.",
+      "colorsTitle": "The Colors of Defqon.1",
+      "colorsText": "Defqon.1 has built a visual universe based on the \"Colors of Defqon.1\". Each color corresponds to a musical style, a stage, or a particular atmosphere of the festival. Each color helps the public navigate the festival while reinforcing the feeling of belonging to a coherent and immersive musical world.",
+      "brandTitle": "The Big Picture",
+      "brandText": "Defqon.1 is not just a name: it's a highly structured brand universe. The festival combines a strong name, a striking military reference, and a precise color code to create an immediately recognizable identity."
+    },
+    "hardstyle": {
+      "title": "What is Hardstyle?",
+      "text": "Hardstyle is a genre of electronic dance music born in the early 2000s in the Netherlands. It's characterized by its hard-hitting kick drums, euphoric melodies, and intense energy. The genre typically ranges from 150 to 160 BPM.",
+      "subgenres": "Subgenres",
+      "euphoric": "Euphoric Hardstyle — Melodic, uplifting, emotional. The most accessible subgenre with beautiful melodies over powerful kicks.",
+      "raw": "Raw Hardstyle — Darker, more aggressive kicks and screeches. Less melody, more raw energy and industrial sounds.",
+      "hardcore": "Hardcore — Faster (160-200+ BPM), harder, more extreme. A genre of its own with deep roots in the Netherlands.",
+      "frenchcore": "Frenchcore — Born in France, 190-210 BPM, distorted kicks and intense drops. Pure energy on the dance floor.",
+      "classic": "Classic/Early Hardstyle — The original sound from 2000-2008. Reverse bass, simpler melodies, nostalgic vibes."
+    },
+    "vocabulary": {
+      "title": "Vocabulary",
+      "kick": "Kick — The heavy bass drum hit that defines hardstyle. The most important element of any track.",
+      "reverseBass": "Reverse Bass — A kick technique where the bass tail plays before the punch. Signature of early hardstyle.",
+      "breakdown": "Breakdown — The melodic mid-section of a track, building tension before the climax.",
+      "climax": "Climax — The peak moment when melody and kicks combine at full power. The moment everyone waits for.",
+      "screeches": "Screeches — High-pitched, distorted synthesizer sounds typical of raw hardstyle.",
+      "qdance": "Q-dance — The Dutch event organizer behind Defqon.1, Qlimax, and many other hardstyle events."
+    }
+  },
+  "checklist": {
+    "title": "Festival Checklist",
+    "subtitle": "Make sure you're ready for Defqon.1",
+    "essentials": "Essentials",
+    "camping": "Camping",
+    "comfort": "Comfort & Safety",
+    "addItem": "Add item...",
+    "add": "Add",
+    "reset": "Reset All",
+    "progress": "{{checked}} / {{total}} ready"
+  },
+  "auth": {
+    "login": "Log In",
+    "signup": "Sign Up",
+    "email": "Email",
+    "password": "Password",
+    "username": "Username",
+    "noAccount": "Don't have an account? Sign up",
+    "hasAccount": "Already have an account? Log in"
+  },
+  "timetable": {
+    "title": "Timetable",
+    "subtitle": "Plan your festival & sync with friends",
+    "fullLineup": "Full Lineup",
+    "mySchedule": "My Schedule",
+    "allStages": "All",
+    "noSets": "No sets for this selection",
+    "emptySchedule": "No sets saved yet. Browse the lineup and tap + to add sets!",
+    "conflicts": "Schedule conflicts detected:",
+    "loginToSync": "Log in to sync with friends",
+    "offlineMode": "Offline mode",
+    "friends": "Friends",
+    "searchFriends": "Search by username...",
+    "search": "Search",
+    "addFriend": "Add",
+    "pendingRequests": "Pending Requests",
+    "accept": "Accept",
+    "decline": "Decline",
+    "yourFriends": "Your Friends",
+    "remove": "Remove",
+    "sentRequests": "Sent",
+    "waiting": "Pending...",
+    "noFriends": "No friends yet. Search for users to add them!",
+    "friendsGoing": "friends going",
+    "days": {
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday"
+    }
+  },
+  "language": "Language",
+  "switchLang": "Fran\u00e7ais"
+}
