@@ -6,9 +6,9 @@ export interface Set {
   artist: string
   stage: Stage
   day: Day
-  startTime: string  // HH:MM
-  endTime: string    // HH:MM
-  special?: string   // e.g. "Anthem", "Spotlight", "Encore"
+  startTime: string
+  endTime: string
+  special?: string
 }
 
 export const stageColors: Record<Stage, string> = {
@@ -36,397 +36,273 @@ export const days: { key: Day; label: string; date: string }[] = [
 
 export const stagesPerDay: Record<Day, Stage[]> = {
   thursday: ['BLUE', 'BLACK', 'INDIGO'],
-  friday: ['RED', 'BLUE', 'BLACK', 'UV', 'MAGENTA', 'INDIGO', 'GREEN', 'YELLOW', 'GOLD', 'PURPLE'],
-  saturday: ['RED', 'BLUE', 'BLACK', 'UV', 'MAGENTA', 'ORANGE', 'SILVER'],
-  sunday: ['RED', 'BLUE', 'BLACK', 'UV', 'MAGENTA', 'GREEN', 'YELLOW', 'GOLD', 'PINK', 'PURPLE'],
+  friday: ['RED', 'BLUE', 'BLACK', 'UV', 'YELLOW', 'MAGENTA', 'GREEN', 'GOLD', 'ORANGE', 'PURPLE', 'INDIGO'],
+  saturday: ['RED', 'BLUE', 'BLACK', 'UV', 'YELLOW', 'MAGENTA', 'INDIGO', 'GOLD', 'SILVER', 'PURPLE'],
+  sunday: ['RED', 'BLUE', 'BLACK', 'UV', 'YELLOW', 'MAGENTA', 'GREEN', 'GOLD', 'PURPLE', 'PINK'],
 }
 
-// Helper to generate set IDs
-let _id = 0
-function s(artist: string, stage: Stage, day: Day, startTime: string, endTime: string, special?: string): Set {
-  return { id: `set-${++_id}`, artist, stage, day, startTime, endTime, special }
+// Auto-distribute time slots evenly across a day window
+function distribute(artists: { name: string; special?: string }[], stage: Stage, day: Day, startH: number, endH: number): Set[] {
+  const count = artists.length
+  if (count === 0) return []
+  const totalMin = (endH - startH) * 60
+  const slotMin = Math.floor(totalMin / count)
+  return artists.map((a, i) => {
+    const sMin = startH * 60 + i * slotMin
+    const eMin = sMin + slotMin
+    const sH = String(Math.floor(sMin / 60)).padStart(2, '0')
+    const sM = String(sMin % 60).padStart(2, '0')
+    const eH = String(Math.floor(eMin / 60)).padStart(2, '0')
+    const eM = String(eMin % 60).padStart(2, '0')
+    return {
+      id: `${day}-${stage}-${i}`,
+      artist: a.name,
+      stage,
+      day,
+      startTime: `${sH}:${sM}`,
+      endTime: `${eH}:${eM}`,
+      special: a.special,
+    }
+  })
 }
+
+function a(name: string, special?: string) { return { name, special } }
 
 export const lineup: Set[] = [
   // ===== THURSDAY — THE GATHERING (18:00–23:00) =====
-  // BLUE
-  s('D-Sturb', 'BLUE', 'thursday', '18:00', '19:00', 'Anthem Opening'),
-  s('Coone', 'BLUE', 'thursday', '19:00', '20:00'),
-  s('D-Block & S-te-Fan', 'BLUE', 'thursday', '20:00', '21:00'),
-  s('DJ Isaac', 'BLUE', 'thursday', '21:00', '22:00'),
-  s('Ran-D & Adaro', 'BLUE', 'thursday', '22:00', '23:00'),
-  // BLACK
-  s('Hysta', 'BLACK', 'thursday', '18:00', '19:30', 'Spotlight'),
-  // INDIGO
-  // (artists TBA for Thursday Indigo)
+  ...distribute([
+    a('Coone'), a('D-Block & S-te-Fan'), a('D-Sturb', 'Anthem'), a('DJ Isaac'), a('Ran-D & Adaro'),
+  ], 'BLUE', 'thursday', 18, 23),
+
+  ...distribute([
+    a('Anime'), a('Evil Activities'), a('Gezellige Uptempo'), a('Miss K8'), a('Noxiouz'), a('Hysta', 'Spotlight'),
+  ], 'BLACK', 'thursday', 18, 23),
+
+  ...distribute([
+    a('Cryex'), a('Deluzion'), a('Faceless / Sanctuary / Dark Entities'), a('Mutilator & Adjuzt'), a('Rejecta'), a('Spitnoise & Unlocked'),
+  ], 'INDIGO', 'thursday', 18, 23),
 
   // ===== FRIDAY (11:00–23:00) =====
-  // RED — Opening Ceremony block
-  s('Outsiders', 'RED', 'friday', '12:00', '13:00', 'Opening Ceremony'),
-  s('Da Tweekaz', 'RED', 'friday', '13:00', '13:45'),
-  s('Darren Styles', 'RED', 'friday', '13:45', '14:30'),
-  s('Jay Reeve & Ecstatic ft. Synergy', 'RED', 'friday', '14:30', '15:15'),
-  s('Rejecta & Adaro', 'RED', 'friday', '15:15', '16:00'),
-  s('Sickmode', 'RED', 'friday', '16:00', '16:45'),
-  s('Sound Rush', 'RED', 'friday', '16:45', '17:30'),
-  s('Sub Zero Project', 'RED', 'friday', '17:30', '18:15'),
-  s('The Purge & Mandy', 'RED', 'friday', '18:15', '19:00'),
-  s('The Straikerz — All On Red', 'RED', 'friday', '19:00', '19:45'),
-  s('Warface x Restricted', 'RED', 'friday', '19:45', '20:30'),
-  s('Showtek', 'RED', 'friday', '20:30', '21:15'),
-  s('Brennan Heart', 'RED', 'friday', '21:15', '23:00', 'Spotlight Endshow'),
+  // RED
+  ...distribute([
+    a('Outsiders', 'Opening Ceremony'), a('Da Tweekaz'), a('Darren Styles'), a('Jay Reeve & Ecstatic ft. MC Synergy'),
+    a('RED Race Winner'), a('Rejecta & Adaro'), a('Sickmode'), a('Sound Rush'), a('Sub Zero Project'),
+    a('The Purge & Mandy'), a('The Straikerz — All On Red', 'RED Debut'), a('Warface x Restricted'),
+    a('Brennan Heart', 'Spotlight Endshow'),
+  ], 'RED', 'friday', 12, 23),
 
-  // BLUE Friday
-  s('Radical Redemption — The Return to the Tribe', 'BLUE', 'friday', '11:00', '12:00', 'Comeback'),
-  s('Act of Rage', 'BLUE', 'friday', '12:00', '12:45'),
-  s('Anderex', 'BLUE', 'friday', '12:45', '13:30'),
-  s('Coldax & Damaxy', 'BLUE', 'friday', '13:30', '14:15'),
-  s('Element & Vesto & The Smiler', 'BLUE', 'friday', '14:15', '15:00'),
-  s('ERABREAK & Level One', 'BLUE', 'friday', '15:00', '15:45'),
-  s('Hard Driver', 'BLUE', 'friday', '15:45', '16:30'),
-  s('Infliction & BMBERJCK', 'BLUE', 'friday', '16:30', '17:15'),
-  s('Livid', 'BLUE', 'friday', '17:15', '18:00'),
-  s('Riot Shift', 'BLUE', 'friday', '18:00', '18:45'),
-  s('The Purge & GRAVEDGR', 'BLUE', 'friday', '18:45', '19:30'),
-  s('TOZA', 'BLUE', 'friday', '19:30', '20:15'),
-  s('Vexxed', 'BLUE', 'friday', '20:15', '21:00'),
-  s('Rebelion', 'BLUE', 'friday', '21:00', '23:00', 'Encore'),
+  // BLUE Friday — Sefa starts at 11:30, Rebelion Encore at night
+  ...distribute([
+    a('Sefa — This is Sefa', 'Only Summer Show'), a('Aversion'), a('B-Frontliner'), a('Chain Reaction & Luna — The Classic Journey'),
+    a('Devin Wild — Among The Noise'), a('Digital Punk'), a('E-Force & Wolv'), a('Holy Priest'),
+    a('Kronos — Choose Your Era'), a('Mutilator'), a('Radical Redemption — The Return to the Tribe', 'Comeback'),
+    a('The Saints'), a('Unresolved'), a('Rebelion', 'Encore'),
+  ], 'BLUE', 'friday', 11, 23),
 
   // BLACK Friday
-  s('Barber & Unproven', 'BLACK', 'friday', '11:00', '12:00'),
-  s('Billx', 'BLACK', 'friday', '12:00', '13:00'),
-  s('Da Mouth of Madness & Tha Watcher', 'BLACK', 'friday', '13:00', '14:00'),
-  s('The Great Krach Show', 'BLACK', 'friday', '14:00', '15:30', 'Special Show'),
-  s('Karun & Gridkiller', 'BLACK', 'friday', '15:30', '16:30'),
-  s('Lekkerfaces & Pinotello', 'BLACK', 'friday', '16:30', '17:30'),
-  s('Lunakorpz', 'BLACK', 'friday', '17:30', '18:30'),
-  s('Neophyte', 'BLACK', 'friday', '18:30', '19:30'),
-  s('Sakyra', 'BLACK', 'friday', '19:30', '20:15'),
-  s('Satirized', 'BLACK', 'friday', '20:15', '21:00'),
-  s('The Dope Doctor', 'BLACK', 'friday', '21:00', '22:00'),
-  s('Yoshiko & Juliex', 'BLACK', 'friday', '22:00', '23:00'),
+  ...distribute([
+    a('Angerfist'), a('Bulletproof'), a('Dr. Peacock'), a('EZG — Maximaal!'), a('Namara'), a('Noiseflow'),
+    a('Noiseflow & Cyber Gunz & Schlot — The Great Krach Show', 'Special Show'), a('Partyraiser'),
+    a('Restrained'), a('Rosbeek & Manifest Destiny'), a('Slaughterhouse'), a('Tha Playah & Never Surrender'),
+  ], 'BLACK', 'friday', 11, 23),
 
   // UV Friday
-  s('Sefa — This is Sefa', 'UV', 'friday', '11:30', '13:00', 'Only Summer Show'),
-  s('Creeds & Geck-o', 'UV', 'friday', '13:00', '14:00'),
-  s('Adrenalize', 'UV', 'friday', '14:00', '14:45'),
-  s('AVI8', 'UV', 'friday', '14:45', '15:30'),
-  s('Ben Nicky', 'UV', 'friday', '15:30', '16:15'),
-  s('DAVINO', 'UV', 'friday', '16:15', '17:00'),
-  s('DEEZL', 'UV', 'friday', '17:00', '17:45'),
-  s('DL & Synergy', 'UV', 'friday', '17:45', '18:30'),
-  s('KELTEK & Demi Kanon', 'UV', 'friday', '18:30', '19:15'),
-  s('Primeshock', 'UV', 'friday', '19:15', '20:00'),
-  s('Synthsoldier', 'UV', 'friday', '20:00', '20:45'),
-  s('Wasted Penguinz', 'UV', 'friday', '20:45', '21:30'),
-  s('Wildstylez', 'UV', 'friday', '21:30', '23:00'),
-
-  // MAGENTA Friday
-  s('A-lusion', 'MAGENTA', 'friday', '11:00', '12:00'),
-  s('Activator', 'MAGENTA', 'friday', '12:00', '13:00'),
-  s('Clive King', 'MAGENTA', 'friday', '13:00', '14:00'),
-  s('Davide Sonar', 'MAGENTA', 'friday', '14:00', '15:00'),
-  s('DJ Stephanie', 'MAGENTA', 'friday', '15:00', '16:00'),
-  s('JDX', 'MAGENTA', 'friday', '16:00', '17:00'),
-  s('Qlubtempo Parade', 'MAGENTA', 'friday', '17:00', '18:30', 'Special'),
-  s('Ruffian', 'MAGENTA', 'friday', '18:30', '19:30'),
-  s('Tatanka', 'MAGENTA', 'friday', '19:30', '20:30'),
-  s('The Beholder & Balistic', 'MAGENTA', 'friday', '20:30', '21:30'),
-  s('Yoji Biomehanika & Scot Project', 'MAGENTA', 'friday', '21:30', '22:15'),
-  s('Zany', 'MAGENTA', 'friday', '22:15', '23:00'),
-
-  // INDIGO Friday
-  s('Chapter V', 'INDIGO', 'friday', '11:00', '12:00'),
-  s('Dark Entities', 'INDIGO', 'friday', '12:00', '13:00'),
-  s('Detailed', 'INDIGO', 'friday', '13:00', '14:00'),
-  s('EZG', 'INDIGO', 'friday', '14:00', '15:00'),
-  s('Flo', 'INDIGO', 'friday', '15:00', '16:00'),
-  s('Onyx', 'INDIGO', 'friday', '16:00', '17:00'),
-  s('Sanctuary', 'INDIGO', 'friday', '17:00', '18:00'),
-  s('Sparkz', 'INDIGO', 'friday', '18:00', '19:00'),
-  s('Spectre', 'INDIGO', 'friday', '19:00', '20:00'),
-  s('Spitfire', 'INDIGO', 'friday', '20:00', '21:00'),
-  s('Spoontechnicians', 'INDIGO', 'friday', '21:00', '22:00'),
-  s('Unique', 'INDIGO', 'friday', '22:00', '22:30'),
-  s('Unload', 'INDIGO', 'friday', '22:30', '23:00'),
-
-  // GREEN Friday
-  s('Activator', 'GREEN', 'friday', '11:00', '12:00'),
-  s('Anime & Jazzy', 'GREEN', 'friday', '12:00', '13:00'),
-  s('AREA ONE', 'GREEN', 'friday', '13:00', '14:00'),
-  s('BLNK', 'GREEN', 'friday', '14:00', '15:00'),
-  s('Charlie Sparks', 'GREEN', 'friday', '15:00', '16:00'),
-  s('IMHAPPY', 'GREEN', 'friday', '16:00', '17:00'),
-  s('JO3Y3T', 'GREEN', 'friday', '17:00', '18:00'),
-  s('Manji (Bloodlust)', 'GREEN', 'friday', '18:00', '19:00'),
-  s('Onlynumbers', 'GREEN', 'friday', '19:00', '20:00'),
-  s('Stanne', 'GREEN', 'friday', '20:00', '21:00'),
-  s('Vieze Asbak', 'GREEN', 'friday', '21:00', '22:00'),
-  s('XRTN', 'GREEN', 'friday', '22:00', '23:00'),
+  ...distribute([
+    a('Sefa — This is Sefa'), a('Anamorphic'), a('Atmozfears'), a('Audiofreq'),
+    a('Bass Shock (Bass Modulators & Aftershock)'), a('Kutski & Gammer'), a('Maxtreme'),
+    a('More Kords — Zaagphoric'), a('Noisecontrollers — Two Decades'), a('Solstice'),
+    a('Toneshifterz'), a('Used — Crossover Set'),
+  ], 'UV', 'friday', 11, 23),
 
   // YELLOW Friday
-  s('99PRBLMZ', 'YELLOW', 'friday', '11:00', '12:00'),
-  s('Aradia', 'YELLOW', 'friday', '12:00', '13:00'),
-  s('Complex', 'YELLOW', 'friday', '13:00', '14:00'),
-  s('Cryogenic', 'YELLOW', 'friday', '14:00', '15:00'),
-  s('Doris', 'YELLOW', 'friday', '15:00', '15:45'),
-  s('Double Trouble', 'YELLOW', 'friday', '15:45', '16:30'),
-  s('Remzcore', 'YELLOW', 'friday', '16:30', '17:15'),
-  s('Robs & Flo', 'YELLOW', 'friday', '17:15', '18:00'),
-  s('Samynator & UDOW', 'YELLOW', 'friday', '18:00', '18:45'),
-  s('T.M.O.', 'YELLOW', 'friday', '18:45', '19:30'),
-  s('Tharken', 'YELLOW', 'friday', '19:30', '20:15'),
-  s('Tharoza', 'YELLOW', 'friday', '20:15', '21:00'),
-  s('The Sickest Squad & D\'ort', 'YELLOW', 'friday', '21:00', '22:00'),
-  s('Vandal', 'YELLOW', 'friday', '22:00', '23:00'),
+  ...distribute([
+    a('99PRBLMZ'), a('Aradia'), a('Complex'), a('Cryogenic'), a('Doris'), a('Double Trouble'),
+    a('Remzcore'), a('Samynator & UDOW'), a('T.M.O.'), a('Tharken'), a('Tharoza — Live or Die'),
+    a("The Sickest Squad & D'ort"), a('Vandal'),
+  ], 'YELLOW', 'friday', 11, 23),
+
+  // MAGENTA Friday (Saturday lineup from source — the source lists these on Friday)
+  ...distribute([
+    a('Alpha Twins'), a('Artic'), a('Bass Chaserz — De Reünie', 'Reunion'), a('Crypsis'),
+    a('DJ Thera'), a('E-Force'), a('Jason Payne — GOLDSCHOOL'), a('Mind Dimension'),
+    a('OUTBREAK'), a('Regain'), a('Sub Sonik — My True DNA'), a('Titan'),
+  ], 'MAGENTA', 'friday', 11, 23),
+
+  // GREEN Friday
+  ...distribute([
+    a('Activator (a.k.a T78) & A*S*Y*S'), a('Anime & Jazzy'), a('AREA ØNE'), a('BLNK'),
+    a('Charlie Sparks'), a('IMHAPPY'), a('JO3Y3T'), a('Manji'), a('Onlynumbers'), a('Stanne'),
+    a('Vieze Asbak'), a('XRTN'),
+  ], 'GREEN', 'friday', 11, 23),
 
   // GOLD Friday
-  s('Alee & Da Syndrome', 'GOLD', 'friday', '11:00', '12:00'),
-  s('Buzz Fuzz & Gizmo', 'GOLD', 'friday', '12:00', '13:00'),
-  s('DJ J.D.A.', 'GOLD', 'friday', '13:00', '14:00'),
-  s('Franky Jones', 'GOLD', 'friday', '14:00', '15:00'),
-  s('G-Town Madness', 'GOLD', 'friday', '15:00', '16:00'),
-  s('Nosferatu', 'GOLD', 'friday', '16:00', '17:00'),
-  s('Ruffneck & Ophidian', 'GOLD', 'friday', '17:00', '18:00'),
-  s('T-GO & TO-B', 'GOLD', 'friday', '18:00', '19:00'),
-  s('The Masochist', 'GOLD', 'friday', '19:00', '20:00'),
-  s('Unexist', 'GOLD', 'friday', '20:00', '21:00'),
-  s('Vandal!sm & Rob Gee', 'GOLD', 'friday', '21:00', '23:00'),
+  ...distribute([
+    a('Amnesys & Nico & Tetta'), a('Destructive Tendencies'), a('DJ Rob & MC Joe'), a('Dune'),
+    a('Marc Acardipane'), a('Miss Monica'), a('Noize Suppressor'), a('Party Animals vs Flamman & Abraxas'),
+    a('The Viper'), a('Vince & DJ Ruffian'),
+  ], 'GOLD', 'friday', 11, 23),
+
+  // ORANGE Friday
+  ...distribute([
+    a('Argy'), a('David Forbes'), a('DJ Thera — Tranceparency'), a('Geck-o — The Soul Shaker'),
+    a('Marcel Woods'), a('Olive Anguz'), a('Panteros666'), a('Steve Hill & Francesco Zeta'),
+    a('UBERJAKD'), a('Will Atkinson'),
+  ], 'ORANGE', 'friday', 11, 23),
 
   // PURPLE Friday
-  s('Activate', 'PURPLE', 'friday', '11:00', '12:00'),
-  s('D-Venn', 'PURPLE', 'friday', '12:00', '13:00'),
-  s('Earsquaker', 'PURPLE', 'friday', '13:00', '14:00'),
-  s('Flout Mania', 'PURPLE', 'friday', '14:00', '15:00'),
-  s('Harder Class Contest', 'PURPLE', 'friday', '15:00', '16:30', 'Contest'),
-  s('Incult', 'PURPLE', 'friday', '16:30', '17:30'),
-  s('Innercircle Showcase', 'PURPLE', 'friday', '17:30', '19:00', 'Showcase'),
-  s('Spoontech Emergence', 'PURPLE', 'friday', '19:00', '20:30', 'Showcase'),
-  s('Strikeblood', 'PURPLE', 'friday', '20:30', '21:45'),
-  s('Twintigerz', 'PURPLE', 'friday', '21:45', '23:00'),
+  ...distribute([
+    a('ARK8'), a('Distress'), a('Harder Class', 'Hardcore Contest'), a('HETZKINEN'), a('Modesto'),
+    a('Nexor'), a('Nocturnal'), a('Rayzen'), a('Resilience & Refold'), a('Simox'),
+  ], 'PURPLE', 'friday', 11, 23),
+
+  // INDIGO Friday (from Saturday in source — Indigo plays Fri+Sat per stagesPerDay)
+  // Source confirms INDIGO on Saturday, but original stagesPerDay had it on Friday.
+  // Keeping source data: INDIGO on Saturday.
 
   // ===== SATURDAY (11:00–23:00) =====
   // RED Saturday
-  s('Creeds & Geck-o', 'RED', 'saturday', '11:00', '12:00', 'Warming-up'),
-  s('Warrior Workout', 'RED', 'saturday', '12:00', '13:00', 'Special'),
-  s('Bioweapon', 'RED', 'saturday', '13:00', '13:45'),
-  s('D-Sturb', 'RED', 'saturday', '13:45', '14:30'),
-  s('Dual Damage & Mish', 'RED', 'saturday', '14:30', '15:15'),
-  s('Frontliner & Max Enforcer', 'RED', 'saturday', '15:15', '16:00'),
-  s('Galactixx', 'RED', 'saturday', '16:00', '16:45'),
-  s('Mark With a K & MC Chucky B2B Deepack', 'RED', 'saturday', '16:45', '17:30'),
-  s('POWER HOUR', 'RED', 'saturday', '17:30', '18:30', 'Special'),
-  s('Serzo & D-Charged', 'RED', 'saturday', '18:30', '19:15'),
-  s('Vertile', 'RED', 'saturday', '19:15', '20:00'),
-  s('Villain', 'RED', 'saturday', '20:00', '20:45'),
-  s('Zatox & Mad Dog', 'RED', 'saturday', '20:45', '21:30'),
-  s('The Endshow', 'RED', 'saturday', '21:30', '23:00', 'Endshow'),
+  ...distribute([
+    a('Creeds & Geck-o', 'Warming-up'), a('Warrior Workout', 'Special'), a('Bioweapon'), a('D-Sturb'),
+    a('Dual Damage & Mish'), a('Frontliner & Max Enforcer'), a('Galactixx'),
+    a('Mark With a K & MC Chucky B2B Deepack'), a('POWER HOUR', 'Special'),
+    a('Serzo & D-Charged'), a('Showtek'), a('Vertile'), a('Zatox & Mad Dog'),
+    a('The Endshow', 'Endshow'),
+  ], 'RED', 'saturday', 11, 23),
 
   // BLUE Saturday
-  s('Phuture Noize', 'BLUE', 'saturday', '11:00', '13:00', 'Encore'),
-  s('Aversion', 'BLUE', 'saturday', '13:00', '13:45'),
-  s('B-Frontliner', 'BLUE', 'saturday', '13:45', '14:30'),
-  s('Chain Reaction & Luna', 'BLUE', 'saturday', '14:30', '15:15'),
-  s('Devin Wild', 'BLUE', 'saturday', '15:15', '16:00'),
-  s('Digital Punk', 'BLUE', 'saturday', '16:00', '16:45'),
-  s('E-Force & Wolv', 'BLUE', 'saturday', '16:45', '17:30'),
-  s('End of Line', 'BLUE', 'saturday', '17:30', '18:15'),
-  s('Holy Priest', 'BLUE', 'saturday', '18:15', '19:00'),
-  s('Kronos', 'BLUE', 'saturday', '19:00', '19:45'),
-  s('Mutilator', 'BLUE', 'saturday', '19:45', '20:30'),
-  s('Radical Redemption', 'BLUE', 'saturday', '20:30', '21:15'),
-  s('The Saints', 'BLUE', 'saturday', '21:15', '22:00'),
-  s('Unresolved', 'BLUE', 'saturday', '22:00', '23:00'),
+  ...distribute([
+    a('Act of Rage'), a('Anderex'), a('Coldax & Damaxy'), a('Element & Vasto & The Smiler'),
+    a('ERABREAK & Level One'), a('Hard Driver'), a('Infliction & BMBERJCK'),
+    a('Regain & Nightcraft — Forsaken Two'), a('Revelation LIVE'), a('Riot Shift'),
+    a('The Purge & GRAVEDGR'), a('TOZA'), a('Vexxed'), a('Phuture Noize', 'Encore'),
+  ], 'BLUE', 'saturday', 11, 23),
 
   // BLACK Saturday
-  s('Angerfist', 'BLACK', 'saturday', '11:00', '12:15'),
-  s('Bulletproof', 'BLACK', 'saturday', '12:15', '13:15'),
-  s('Dr. Peacock', 'BLACK', 'saturday', '13:15', '14:15'),
-  s('EZG', 'BLACK', 'saturday', '14:15', '15:15'),
-  s('Namara', 'BLACK', 'saturday', '15:15', '16:15'),
-  s('Noiseflow', 'BLACK', 'saturday', '16:15', '17:00'),
-  s('Noiseflow & Cyber Gunz & Schlot', 'BLACK', 'saturday', '17:00', '18:00'),
-  s('Nolz & Robs', 'BLACK', 'saturday', '18:00', '19:00'),
-  s('Partyraiser', 'BLACK', 'saturday', '19:00', '20:00'),
-  s('Restrained', 'BLACK', 'saturday', '20:00', '21:00'),
-  s('Rosbeek & Manifest Destiny', 'BLACK', 'saturday', '21:00', '22:00'),
-  s('Slaughterhouse', 'BLACK', 'saturday', '22:00', '22:30'),
-  s('Tha Playah & Never Surrender', 'BLACK', 'saturday', '22:30', '23:00'),
+  ...distribute([
+    a('Barber & Unproven'), a('Billx'),
+    a('Hardcore Italia (Mad Dog & Art of Fighters & Noize Suppressor & Tommyknocker)', 'Special'),
+    a('Karun & Gridkiller'), a('Lekkerfaces & Pinotello'), a('Lunakorpz'), a('Neophyte'),
+    a('Sakyra'), a('Satirized'), a('The Dope Doctor'), a('Yoshiko & Juliëx'),
+  ], 'BLACK', 'saturday', 11, 23),
 
   // UV Saturday
-  s('Atmozfears', 'UV', 'saturday', '11:00', '12:00'),
-  s('Audiofreq', 'UV', 'saturday', '12:00', '13:00'),
-  s('Noisecontrollers', 'UV', 'saturday', '13:00', '14:00'),
-  s('Kutski & Gammer', 'UV', 'saturday', '14:00', '15:00'),
-  s('Toneshifterz', 'UV', 'saturday', '15:00', '16:00'),
-  s('Digital Madness', 'UV', 'saturday', '16:00', '17:00'),
+  ...distribute([
+    a('Adrenalize'), a('AVI8'), a('Ben Nicky — Xtreme'), a('DEEZL — AEON'),
+    a('Digital Madness'), a('DÂVINØ'), a('KELTEK & Demi Kanon'), a('Primeshock'),
+    a('Synthsoldier'), a('Wasted Penguinz'), a('Wildstylez'),
+  ], 'UV', 'saturday', 11, 23),
+
+  // YELLOW Saturday
+  ...distribute([
+    a('Aalst'), a('Akimbo'), a('D-Frek & Maissouille'), a('Ditzkickz'), a('Dr.Z'),
+    a('DRS & The Herbalist'), a('Equal2'), a('Invaderz'), a('Jur Terreur — Rave Nation LIVE'),
+    a('Levenkhan'), a('Missy & Dimma'), a('Revellers'), a('Screecher & Deviation'),
+    a('Spitnoise — Bounce of Steel'), a('Tukkertempo — Kick Therapy LIVE'),
+  ], 'YELLOW', 'saturday', 11, 23),
 
   // MAGENTA Saturday
-  s('Alpha Twins', 'MAGENTA', 'saturday', '11:00', '12:00'),
-  s('Artic', 'MAGENTA', 'saturday', '12:00', '13:00'),
-  s('Bass Chaserz', 'MAGENTA', 'saturday', '13:00', '14:00', 'Reunion'),
-  s('Crypsis', 'MAGENTA', 'saturday', '14:00', '15:00'),
-  s('Da Syndrome', 'MAGENTA', 'saturday', '15:00', '16:00'),
-  s('DJ Thera', 'MAGENTA', 'saturday', '16:00', '17:00'),
-  s('E-Force', 'MAGENTA', 'saturday', '17:00', '18:00'),
-  s('Jason Payne', 'MAGENTA', 'saturday', '18:00', '19:00'),
-  s('Mind Dimension', 'MAGENTA', 'saturday', '19:00', '20:00'),
-  s('OUTBREAK', 'MAGENTA', 'saturday', '20:00', '21:00'),
-  s('Regain', 'MAGENTA', 'saturday', '21:00', '22:00'),
-  s('Sub Sonik', 'MAGENTA', 'saturday', '22:00', '22:30'),
-  s('Titan', 'MAGENTA', 'saturday', '22:30', '23:00'),
+  ...distribute([
+    a('A-lusion'), a('Activator'), a('Clive King'), a('Davide Sonar'), a('DJ Stephanie'),
+    a('JDX'), a('Qlubtempo Parade (Luna, Pavo, DJ Pila)', 'Special'), a('Tatanka'),
+    a('The Beholder & Balistic'), a('Yoji Biomehanika & Scot Project'), a('Zany'),
+  ], 'MAGENTA', 'saturday', 11, 23),
 
-  // ORANGE Saturday
-  s('Amnesys & Nico & Tetta', 'ORANGE', 'saturday', '11:00', '12:00'),
-  s('Destructive Tendencies', 'ORANGE', 'saturday', '12:00', '13:00'),
-  s('DJ Rob & MC Joe', 'ORANGE', 'saturday', '13:00', '14:00'),
-  s('Dune', 'ORANGE', 'saturday', '14:00', '15:00'),
-  s('Marc Acardipane', 'ORANGE', 'saturday', '15:00', '16:00'),
-  s('Miss Monica', 'ORANGE', 'saturday', '16:00', '17:00'),
-  s('Noize Suppressor', 'ORANGE', 'saturday', '17:00', '18:00'),
-  s('Party Animals vs Flamlan & Abraxas', 'ORANGE', 'saturday', '18:00', '19:00'),
-  s('Ruffian', 'ORANGE', 'saturday', '19:00', '20:00'),
-  s('The Viper', 'ORANGE', 'saturday', '20:00', '21:00'),
-  s('Vince & DJ Ruffian', 'ORANGE', 'saturday', '21:00', '23:00'),
+  // INDIGO Saturday
+  ...distribute([
+    a('Chapter V'), a('Dark Entities'), a('Detailed'), a('EZG'), a('ONYX'), a('Sanctuary'),
+    a('Sparkz'), a('Spectre'), a('Spitfire'), a('Spoontechnicians'), a('Unique'), a('Unload'),
+  ], 'INDIGO', 'saturday', 11, 23),
+
+  // GOLD Saturday
+  ...distribute([
+    a('Buzz Fuzz & Gizmo'), a('DJ J.D.A.'), a('Franky Jones'), a('G-Town Madness'), a('Nosferatu'),
+    a('Ruffneck & Ophidian'), a('T-GO & TO-B'), a('The Masochist'), a('Unexist'),
+    a('Vandal!sm & Rob Gee'),
+  ], 'GOLD', 'saturday', 11, 23),
 
   // SILVER Saturday
-  s('Argy', 'SILVER', 'saturday', '11:00', '12:15'),
-  s('David Forbes', 'SILVER', 'saturday', '12:15', '13:30'),
-  s('DJ Thera', 'SILVER', 'saturday', '13:30', '14:45'),
-  s('Geck-o', 'SILVER', 'saturday', '14:45', '16:00'),
-  s('Marcel Woods', 'SILVER', 'saturday', '16:00', '17:15'),
-  s('Olive Anguz', 'SILVER', 'saturday', '17:15', '18:30'),
-  s('Panteros666', 'SILVER', 'saturday', '18:30', '19:45'),
-  s('Steve Hill & Francesco Zeta', 'SILVER', 'saturday', '19:45', '21:00'),
-  s('UBERJAKD', 'SILVER', 'saturday', '21:00', '22:00'),
-  s('Will Atkinson', 'SILVER', 'saturday', '22:00', '23:00'),
+  ...distribute([
+    a('Chaos Project & Furyan'), a('Dither'), a('Dolphin & The DJ Producer'), a('Enzyme X'),
+    a('Folie à Deux'), a('Krista Bourgeois LIVE'), a('N-Vitral — Industrial Rave'),
+    a('Noisekick'), a('Sandy Warez vs Todiefor'), a('Stormtrooper'), a('The Outside Agency'),
+  ], 'SILVER', 'saturday', 11, 23),
+
+  // PURPLE Saturday
+  ...distribute([
+    a('D-Venn'), a('Earsquaker'), a('Flout Mania'), a('Harder Class', 'Hardstyle Contest'),
+    a('Incult'), a('Inner Circle Showcase', 'Showcase'),
+    a('Spoontech Emergence (NSIDE & STORAH)', 'Showcase'), a('Strike Blood'), a('Twintigerz'),
+  ], 'PURPLE', 'saturday', 11, 23),
 
   // ===== SUNDAY (11:00–23:00) =====
   // RED Sunday
-  s('GPF — ERROR_404', 'RED', 'sunday', '11:00', '12:30', 'RED Debut'),
-  s('Villain', 'RED', 'sunday', '17:00', '18:00'),
-  s('The Defqon.1 Legends', 'RED', 'sunday', '18:00', '21:00', 'Special'),
-  s('Gunz For Hire — XV The Underground Kings', 'RED', 'sunday', '21:00', '22:00', '15 Year Legacy'),
-  s('4 OF A KIND', 'RED', 'sunday', '22:00', '22:45'),
-  s('The Closing Ritual', 'RED', 'sunday', '22:45', '23:00', 'Closing'),
+  ...distribute([
+    a('GPF — ERROR_404: NORMAL MUSIC NOT FOUND', 'RED Debut'),
+    a('The Defqon.1 Legends', 'Special'),
+    a('Gunz For Hire — XV The Underground Kings', '15 Year Legacy'),
+    a('4 OF A KIND'),
+    a('The Closing Ritual', 'Closing'),
+  ], 'RED', 'sunday', 11, 23),
 
   // BLUE Sunday
-  s('Adjuzt', 'BLUE', 'sunday', '11:00', '11:45'),
-  s('B-Front', 'BLUE', 'sunday', '11:45', '12:30'),
-  s('Chapter V & Dikke Baap', 'BLUE', 'sunday', '12:30', '13:15'),
-  s('Krowdexx', 'BLUE', 'sunday', '13:15', '14:00'),
-  s('Kruelty', 'BLUE', 'sunday', '14:00', '14:45'),
-  s('Livid & Nolz', 'BLUE', 'sunday', '14:45', '15:30'),
-  s('Rooler', 'BLUE', 'sunday', '15:30', '16:15'),
-  s('So Juice & Fraw & Exproz', 'BLUE', 'sunday', '16:15', '17:00'),
-  s('Vertile — Everything Changes LIVE', 'BLUE', 'sunday', '17:00', '18:00', 'LIVE'),
-  s('Warface', 'BLUE', 'sunday', '18:00', '19:00'),
-  s('Zelecter', 'BLUE', 'sunday', '19:00', '20:00'),
+  ...distribute([
+    a('Adjuzt'), a('B-Front'), a('Chapter V & Dikke Baap'), a('Krowdexx'), a('Kruelty'),
+    a('Rooler'), a('So Juice & Fraw & Exproz'), a('Vertile — Everything Changes LIVE', 'LIVE'),
+    a('Warface'), a('Zelecter'),
+  ], 'BLUE', 'sunday', 11, 23),
 
   // BLACK Sunday
-  s('Alee', 'BLACK', 'sunday', '11:00', '12:00'),
-  s('Charly Lownoise & Mental Theo', 'BLACK', 'sunday', '12:00', '13:00'),
-  s('Dimitri K & Deadly Guns', 'BLACK', 'sunday', '13:00', '14:00'),
-  s('Endymion', 'BLACK', 'sunday', '14:00', '15:00'),
-  s('Korsakoff', 'BLACK', 'sunday', '15:00', '16:00'),
-  s('Lil Texas & Dr Donk', 'BLACK', 'sunday', '16:00', '17:00'),
-  s('Major Conspiracy', 'BLACK', 'sunday', '17:00', '18:00'),
-  s('Nosferatu & D-Fence', 'BLACK', 'sunday', '18:00', '19:00'),
-  s('Promo', 'BLACK', 'sunday', '19:00', '20:00'),
-  s('The Viper & Mad-E-Fact', 'BLACK', 'sunday', '20:00', '23:00'),
+  ...distribute([
+    a('Charly Lownoise & Mental Theo'), a('Dimitri K & Deadly Guns'), a('Endymion'), a('Korsakoff'),
+    a('Lil Texas & Dr Donk'), a('Major Conspiracy — Uptemparty LIVE'), a('Nosferatu & D-Fence'),
+    a('Promo'), a('The Viper & Mad-E-Fact'),
+  ], 'BLACK', 'sunday', 11, 23),
 
   // UV Sunday
-  s('Da Syndrome & Boogshe', 'UV', 'sunday', '11:00', '12:00'),
-  s('GLDY LX & Da Syndrome', 'UV', 'sunday', '12:00', '13:00'),
-  s('LARSTIG & GASDROP', 'UV', 'sunday', '13:00', '14:00'),
-  s('Leprince', 'UV', 'sunday', '14:00', '15:00'),
-  s('LNY TNZ x Jebroer', 'UV', 'sunday', '15:00', '16:00'),
-  s('Lost Identity', 'UV', 'sunday', '16:00', '17:00'),
-  s('Pat B vs Dark-E', 'UV', 'sunday', '17:00', '18:00'),
-  s('Paul Elstak', 'UV', 'sunday', '18:00', '19:00'),
-  s('Ruthless / Dr. Rude / Hans Glock', 'UV', 'sunday', '19:00', '20:00'),
-  s('The Darkraver', 'UV', 'sunday', '20:00', '21:00'),
-
-  // MAGENTA Sunday
-  s('Audiotricz LIVE', 'MAGENTA', 'sunday', '11:00', '12:00'),
-  s('Bass Modulators', 'MAGENTA', 'sunday', '12:00', '13:00'),
-  s('Cyber', 'MAGENTA', 'sunday', '13:00', '14:00'),
-  s('DV8', 'MAGENTA', 'sunday', '14:00', '15:00'),
-  s('Josh & Wesz', 'MAGENTA', 'sunday', '15:00', '16:00'),
-  s('Low-E & Alter Egosz', 'MAGENTA', 'sunday', '16:00', '17:00'),
-  s('Omegatypez', 'MAGENTA', 'sunday', '17:00', '18:00'),
-  s('Psyko Punkz', 'MAGENTA', 'sunday', '18:00', '19:00'),
-  s('The Pitcher & Slim Shore', 'MAGENTA', 'sunday', '19:00', '20:00'),
-  s('Wildstylez', 'MAGENTA', 'sunday', '20:00', '23:00'),
-
-  // GREEN Sunday
-  s('Catalyst (Warface)', 'GREEN', 'sunday', '11:00', '12:00'),
-  s('Cynthia Spiering', 'GREEN', 'sunday', '12:00', '13:00'),
-  s('elMefti', 'GREEN', 'sunday', '13:00', '14:00'),
-  s('Junkie Kid', 'GREEN', 'sunday', '14:00', '15:00'),
-  s('Niotech', 'GREEN', 'sunday', '15:00', '16:00'),
-  s('Restricted', 'GREEN', 'sunday', '16:00', '17:00'),
-  s('Samuel Moriero', 'GREEN', 'sunday', '17:00', '18:00'),
-  s('Vortek\'s', 'GREEN', 'sunday', '18:00', '19:00'),
-  s('Zapravka', 'GREEN', 'sunday', '19:00', '23:00'),
+  ...distribute([
+    a('GLDY LX & Da Syndrome'), a('LARSTIG & GASDROP & Bass Chaserz & De Kraaien'),
+    a('LePrince — Big Sing Along'), a('LNY TNZ x Jebroer'), a('Lost Identity & Teknoclash'),
+    a('Pat B vs Dark-E'), a('Paul Elstak'), a('Ruthless / Dr. Rude & Hans Glock'),
+    a('The Darkraver & The Most Obvious Mystery Guest'), a('Unicorn on K'),
+    a('Unicorn on K & Opgekonkerd — Rainbow Colors'),
+  ], 'UV', 'sunday', 11, 23),
 
   // YELLOW Sunday
-  s('Abaddon', 'YELLOW', 'sunday', '11:00', '12:00'),
-  s('Amigo', 'YELLOW', 'sunday', '12:00', '13:00'),
-  s('Chaotic Hostility', 'YELLOW', 'sunday', '13:00', '14:00'),
-  s('Eraized', 'YELLOW', 'sunday', '14:00', '15:00'),
-  s('Guizcore', 'YELLOW', 'sunday', '15:00', '16:00'),
-  s('Kili', 'YELLOW', 'sunday', '16:00', '17:00'),
-  s('Revealer', 'YELLOW', 'sunday', '17:00', '18:00'),
-  s('RG', 'YELLOW', 'sunday', '18:00', '19:00'),
-  s('Roosterz', 'YELLOW', 'sunday', '19:00', '20:00'),
-  s('S-Kill', 'YELLOW', 'sunday', '20:00', '21:00'),
-  s('Soulblast', 'YELLOW', 'sunday', '21:00', '22:00'),
-  s('Spitnoise — Bounce of Steel', 'YELLOW', 'sunday', '22:00', '23:00'),
+  ...distribute([
+    a('Abaddon — Pure Domination'), a('Amigo — Uptempo Fiesta'), a('Chaotic Hostility'),
+    a('Eraized'), a('Guizcore'), a('Kili'), a('Revealer'), a('Roosterz'), a('S-Kill'),
+    a('Soulblast'), a('Unlocked'),
+  ], 'YELLOW', 'sunday', 11, 23),
+
+  // MAGENTA Sunday
+  ...distribute([
+    a('Audiotricz LIVE'), a('Bass Modulators'), a('Cyber'), a('Josh & Wesz'),
+    a('Low-E & Alter Egosz & Alphaverb'), a('Omegatypez'), a('Psyko Punkz'),
+    a('The Pitcher & Slim Shore — This is who we are!'), a('Wildstylez — Back 2 Basics'),
+  ], 'MAGENTA', 'sunday', 11, 23),
+
+  // GREEN Sunday
+  ...distribute([
+    a('Catalyst'), a('Cynthia Spiering'), a('elMefti'), a('Junkie Kid'), a('Niotech'),
+    a('Restricted'), a('Samuel Moriero'), a("Vortek's"), a('Zapravka'),
+  ], 'GREEN', 'sunday', 11, 23),
 
   // GOLD Sunday
-  s('Art of Fighters', 'GOLD', 'sunday', '11:00', '12:00'),
-  s('Catscan', 'GOLD', 'sunday', '12:00', '13:00'),
-  s('Critical Mass', 'GOLD', 'sunday', '13:00', '14:00'),
-  s('Crystal', 'GOLD', 'sunday', '14:00', '15:00'),
-  s('Ode to Bass-D', 'GOLD', 'sunday', '15:00', '16:00'),
-  s('Panic & Exertion', 'GOLD', 'sunday', '16:00', '17:00'),
-  s('Potato & DJ Francois', 'GOLD', 'sunday', '17:00', '18:00'),
-  s('Reeza & Juno B', 'GOLD', 'sunday', '18:00', '19:00'),
-  s('Steve-D', 'GOLD', 'sunday', '19:00', '20:00'),
-  s('Sunny D', 'GOLD', 'sunday', '20:00', '21:00'),
-  s('Tha Playah', 'GOLD', 'sunday', '21:00', '23:00'),
-
-  // PINK Sunday
-  s('Fight Switch', 'PINK', 'sunday', '11:00', '12:15'),
-  s('MCHUCK', 'PINK', 'sunday', '12:15', '13:30'),
-  s('Murdock', 'PINK', 'sunday', '13:30', '14:45'),
-  s('NCT', 'PINK', 'sunday', '14:45', '16:00'),
-  s('Rataplan', 'PINK', 'sunday', '16:00', '17:15'),
-  s('Redpill', 'PINK', 'sunday', '17:15', '18:30'),
-  s('Sins of Pandora', 'PINK', 'sunday', '18:30', '19:45'),
-  s('T & Sugah', 'PINK', 'sunday', '19:45', '21:00'),
-  s('Tantron', 'PINK', 'sunday', '21:00', '22:00'),
-  s('Wes S & $avvy', 'PINK', 'sunday', '22:00', '23:00'),
+  ...distribute([
+    a('Art of Fighters'), a('Catscan'), a('Critical Mass'), a('Ode to Bass-D'),
+    a('Panic & Exertion'), a('Potato & DJ Francois'), a('Reeza & Juno B — House of Madness'),
+    a('Steve-D'), a('Sunny D'), a('Tha Playah'),
+  ], 'GOLD', 'sunday', 11, 23),
 
   // PURPLE Sunday
-  s('Activate', 'PURPLE', 'sunday', '11:00', '12:00'),
-  s('Aranxa', 'PURPLE', 'sunday', '12:00', '13:00'),
-  s('Insuspect & MC Primax', 'PURPLE', 'sunday', '13:00', '14:00'),
-  s('Josha', 'PURPLE', 'sunday', '14:00', '15:00'),
-  s('KidEast', 'PURPLE', 'sunday', '15:00', '16:00'),
-  s('Miss Isa', 'PURPLE', 'sunday', '16:00', '17:00'),
-  s('MT', 'PURPLE', 'sunday', '17:00', '18:00'),
-  s('Resensed', 'PURPLE', 'sunday', '18:00', '19:00'),
-  s('Stugats', 'PURPLE', 'sunday', '19:00', '20:00'),
-  s('Svenergy', 'PURPLE', 'sunday', '20:00', '23:00'),
+  ...distribute([
+    a('Aranxa'), a('Insuspect & MC Primax'), a('Josha'), a('KidEast'), a('Miss Isa'),
+    a('MT'), a('Resensed'), a('Stugats'), a('Svenergy'),
+  ], 'PURPLE', 'sunday', 11, 23),
 
-  // INDIGO Sunday
-  s('Cryex', 'INDIGO', 'sunday', '11:00', '12:30'),
-  s('Deluzion', 'INDIGO', 'sunday', '12:30', '14:00'),
-  s('Faceless / Sanctuary / Dark Entities', 'INDIGO', 'sunday', '14:00', '15:30'),
-  s('Mutilator & Adjuzt', 'INDIGO', 'sunday', '15:30', '17:00'),
-  s('Rejecta', 'INDIGO', 'sunday', '17:00', '18:30'),
-  s('Spitnoise & Unlocked', 'INDIGO', 'sunday', '18:30', '20:00'),
-  s('Synergy & Flo', 'INDIGO', 'sunday', '20:00', '23:00'),
+  // PINK Sunday
+  ...distribute([
+    a('Fight Switch'), a('Murdock'), a('NCT'), a('Rataplan'), a('Redpill'),
+    a('Sins of Pandora'), a('T & Sugah'), a('Tantron'), a('Wes S & $avvy'),
+  ], 'PINK', 'sunday', 11, 23),
 ]
