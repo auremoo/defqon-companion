@@ -41,7 +41,70 @@
     "watchOnYouTube": "YouTube",
     "listenOnApple": "Apple Music",
     "listenOnDeezer": "Deezer",
-    "listenOnSoundCloud": "SoundCloud"
+    "listenOnSoundCloud": "SoundCloud",
+    "red": {
+      "style": "Euphoric Hardstyle",
+      "subtitle": "Main stage \u2014 the heart of Defqon.1",
+      "short": "The legendary main stage where the biggest names in hardstyle perform.",
+      "long": "RED is where the magic happens. The main stage hosts the most iconic hardstyle artists, delivering euphoric melodies and powerful kicks to tens of thousands of fans. This is where the opening ceremonies, anthem reveals, and legendary closing shows take place.",
+      "vibe": "Euphoric, epic, emotional"
+    },
+    "blue": {
+      "style": "Raw Hardstyle",
+      "subtitle": "Raw & mainstream raw hardstyle",
+      "short": "Harder kicks, darker atmosphere, raw energy.",
+      "long": "BLUE brings the raw power. Expect aggressive kicks, dark melodies, and an intense atmosphere. This stage is for those who prefer their hardstyle with more edge and grit, featuring the hardest-hitting raw artists.",
+      "vibe": "Dark, aggressive, intense"
+    },
+    "black": {
+      "style": "Hardcore",
+      "subtitle": "Pure hardcore",
+      "short": "Faster, harder, louder. The home of hardcore.",
+      "long": "BLACK is the domain of hardcore \u2014 faster BPMs, distorted kicks, and relentless energy. This stage pushes the limits of intensity and is beloved by the most dedicated hardcore fans.",
+      "vibe": "Extreme, relentless, powerful"
+    },
+    "yellow": {
+      "style": "Frenchcore / Uptempo / Terror",
+      "subtitle": "Frenchcore, uptempo & terror",
+      "short": "Ultra-fast and distorted. Born in France, loved worldwide.",
+      "long": "YELLOW is where speed meets chaos. Frenchcore, uptempo, and terror genres dominate this stage with BPMs pushing well above 190. If you want non-stop energy and distorted madness, this is your color.",
+      "vibe": "Chaotic, fast, explosive"
+    },
+    "indigo": {
+      "style": "Extra Raw Hardstyle",
+      "subtitle": "The darkest corner of raw hardstyle",
+      "short": "Raw pushed to the extreme. Industrial and uncompromising.",
+      "long": "INDIGO goes beyond standard raw hardstyle into extra raw territory. Think industrial sounds, brutal kicks, and an atmosphere that feels underground and unapologetic. This stage is for the purists of hard sound.",
+      "vibe": "Industrial, underground, brutal"
+    },
+    "magenta": {
+      "style": "Early Hardstyle / Classics",
+      "subtitle": "The golden era of hardstyle",
+      "short": "Nostalgia meets energy. The classics that started it all.",
+      "long": "MAGENTA is a tribute to the roots of hardstyle. Reverse bass kicks, iconic melodies from the 2000s, and the tracks that built the scene. This stage is pure nostalgia for veterans and a history lesson for newcomers.",
+      "vibe": "Nostalgic, classic, warm"
+    },
+    "silver": {
+      "style": "Industrial Hardcore",
+      "subtitle": "Mechanical, metallic, industrial",
+      "short": "Where hardcore meets industrial. Cold, hard, metallic.",
+      "long": "SILVER channels an industrial aesthetic \u2014 think mechanical rhythms, metallic textures, and hardcore beats that feel like they belong in a dystopian factory. A niche but fiercely loyal audience.",
+      "vibe": "Mechanical, cold, dystopian"
+    },
+    "gold": {
+      "style": "Early Rave / Millennium Hardcore",
+      "subtitle": "Old-school rave & millennium hardcore",
+      "short": "The roots of the rave scene. 90s and early 2000s vibes.",
+      "long": "GOLD celebrates the origins of rave culture and millennium hardcore. Expect classic rave anthems, old-school gabber, and the sounds that defined electronic music in the 90s and early 2000s.",
+      "vibe": "Retro, rave, old-school"
+    },
+    "purple": {
+      "style": "Talent Stage",
+      "subtitle": "New artists & rising stars",
+      "short": "Where tomorrow's legends are born. Fresh talent showcase.",
+      "long": "PURPLE is the launchpad for emerging talent. This stage showcases the next generation of hardstyle, hardcore, and hard dance artists. Many of today's biggest names once started on this very stage.",
+      "vibe": "Fresh, exciting, surprising"
+    }
   },
   "guide": {
     "title": "Discover Hardstyle",

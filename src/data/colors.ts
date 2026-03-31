@@ -1,12 +1,7 @@
 export interface DefqonColor {
   id: string
   name: string
-  styleKey: string
-  style: string
-  shortDesc: string
-  longDesc: string
   bpm: string
-  vibe: string
   artists: string[]
   hex: string
   spotify?: string
@@ -20,12 +15,7 @@ export const colors: DefqonColor[] = [
   {
     id: 'red',
     name: 'RED',
-    styleKey: 'Euphoric Hardstyle',
-    style: 'Main stage — the heart of Defqon.1',
-    shortDesc: 'The legendary main stage where the biggest names in hardstyle perform.',
-    longDesc: 'RED is where the magic happens. The main stage hosts the most iconic hardstyle artists, delivering euphoric melodies and powerful kicks to tens of thousands of fans. This is where the opening ceremonies, anthem reveals, and legendary closing shows take place.',
-    bpm: '150–160',
-    vibe: 'Euphoric, epic, emotional',
+    bpm: '150\u2013160',
     artists: ['Headhunterz', 'Wildstylez', 'D-Block & S-te-Fan', 'Sound Rush', 'Sub Zero Project'],
     hex: '#e63946',
     spotify: 'https://open.spotify.com/search/defqon%20red%20euphoric%20hardstyle',
@@ -36,12 +26,7 @@ export const colors: DefqonColor[] = [
   {
     id: 'blue',
     name: 'BLUE',
-    styleKey: 'Raw Hardstyle',
-    style: 'Raw & mainstream raw hardstyle',
-    shortDesc: 'Harder kicks, darker atmosphere, raw energy.',
-    longDesc: 'BLUE brings the raw power. Expect aggressive kicks, dark melodies, and an intense atmosphere. This stage is for those who prefer their hardstyle with more edge and grit, featuring the hardest-hitting raw artists.',
-    bpm: '150–160',
-    vibe: 'Dark, aggressive, intense',
+    bpm: '150\u2013160',
     artists: ['Warface', 'B-Front', 'Rebelion', 'Act of Rage', 'Ran-D'],
     hex: '#1d3557',
     spotify: 'https://open.spotify.com/search/defqon%20blue%20raw%20hardstyle',
@@ -52,12 +37,7 @@ export const colors: DefqonColor[] = [
   {
     id: 'black',
     name: 'BLACK',
-    styleKey: 'Hardcore',
-    style: 'Pure hardcore',
-    shortDesc: 'Faster, harder, louder. The home of hardcore.',
-    longDesc: 'BLACK is the domain of hardcore — faster BPMs, distorted kicks, and relentless energy. This stage pushes the limits of intensity and is beloved by the most dedicated hardstyle and hardcore fans.',
-    bpm: '160–200',
-    vibe: 'Extreme, relentless, powerful',
+    bpm: '160\u2013200',
     artists: ['Angerfist', 'Miss K8', 'Destructive Tendencies', 'Nosferatu', 'Dr. Peacock'],
     hex: '#111111',
     spotify: 'https://open.spotify.com/search/defqon%20black%20hardcore',
@@ -68,12 +48,7 @@ export const colors: DefqonColor[] = [
   {
     id: 'yellow',
     name: 'YELLOW',
-    styleKey: 'Frenchcore / Uptempo / Terror',
-    style: 'Frenchcore, uptempo & terror',
-    shortDesc: 'Ultra-fast and distorted. Born in France, loved worldwide.',
-    longDesc: 'YELLOW is where speed meets chaos. Frenchcore, uptempo, and terror genres dominate this stage with BPMs pushing well above 190. If you want non-stop energy and distorted madness, this is your color.',
-    bpm: '190–250+',
-    vibe: 'Chaotic, fast, explosive',
+    bpm: '190\u2013250+',
     artists: ['Sefa', 'Dr. Peacock', 'Billx', 'Partyraiser', 'The Speed Freak'],
     hex: '#f4a261',
     spotify: 'https://open.spotify.com/search/frenchcore%20uptempo%20defqon',
@@ -84,12 +59,7 @@ export const colors: DefqonColor[] = [
   {
     id: 'indigo',
     name: 'INDIGO',
-    styleKey: 'Extra Raw Hardstyle',
-    style: 'The darkest corner of raw hardstyle',
-    shortDesc: 'Raw pushed to the extreme. Industrial and uncompromising.',
-    longDesc: 'INDIGO goes beyond standard raw hardstyle into extra raw territory. Think industrial sounds, brutal kicks, and an atmosphere that feels underground and unapologetic. This stage is for the purists of hard sound.',
-    bpm: '150–165',
-    vibe: 'Industrial, underground, brutal',
+    bpm: '150\u2013165',
     artists: ['Radical Redemption', 'Digital Punk', 'E-Force', 'Rooler', 'Vertex'],
     hex: '#4a00e0',
     spotify: 'https://open.spotify.com/search/extra%20raw%20hardstyle',
@@ -100,12 +70,7 @@ export const colors: DefqonColor[] = [
   {
     id: 'magenta',
     name: 'MAGENTA',
-    styleKey: 'Early Hardstyle / Classics',
-    style: 'The golden era of hardstyle',
-    shortDesc: 'Nostalgia meets energy. The classics that started it all.',
-    longDesc: 'MAGENTA is a tribute to the roots of hardstyle. Reverse bass kicks, iconic melodies from the 2000s, and the tracks that built the scene. This stage is pure nostalgia for veterans and a history lesson for newcomers.',
-    bpm: '140–155',
-    vibe: 'Nostalgic, classic, warm',
+    bpm: '140\u2013155',
     artists: ['Technoboy', 'Tuneboy', 'The Prophet', 'Showtek', 'Brennan Heart'],
     hex: '#e040a0',
     spotify: 'https://open.spotify.com/search/early%20hardstyle%20classics',
@@ -116,12 +81,7 @@ export const colors: DefqonColor[] = [
   {
     id: 'silver',
     name: 'SILVER',
-    styleKey: 'Industrial Hardcore',
-    style: 'Mechanical, metallic, industrial',
-    shortDesc: 'Where hardcore meets industrial. Cold, hard, metallic.',
-    longDesc: 'SILVER channels an industrial aesthetic — think mechanical rhythms, metallic textures, and hardcore beats that feel like they belong in a dystopian factory. A niche but fiercely loyal audience.',
-    bpm: '170–200',
-    vibe: 'Mechanical, cold, dystopian',
+    bpm: '170\u2013200',
     artists: ['Sei2ure', 'Tymon', 'Drokz', 'The Outside Agency', 'Ophidian'],
     hex: '#a8a8a8',
     spotify: 'https://open.spotify.com/search/industrial%20hardcore',
@@ -132,12 +92,7 @@ export const colors: DefqonColor[] = [
   {
     id: 'gold',
     name: 'GOLD',
-    styleKey: 'Early Rave / Millennium Hardcore',
-    style: 'Old-school rave & millennium hardcore',
-    shortDesc: 'The roots of the rave scene. 90s and early 2000s vibes.',
-    longDesc: 'GOLD celebrates the origins of rave culture and millennium hardcore. Expect classic rave anthems, old-school gabber, and the sounds that defined electronic music in the 90s and early 2000s.',
-    bpm: '150–180',
-    vibe: 'Retro, rave, old-school',
+    bpm: '150\u2013180',
     artists: ['Paul Elstak', 'Darkraver', 'Neophyte', 'Evil Activities', 'Korsakoff'],
     hex: '#d4a20a',
     spotify: 'https://open.spotify.com/search/early%20rave%20gabber%20hardcore',
@@ -148,12 +103,7 @@ export const colors: DefqonColor[] = [
   {
     id: 'purple',
     name: 'PURPLE',
-    styleKey: 'Talent Stage',
-    style: 'New artists & rising stars',
-    shortDesc: 'Where tomorrow\'s legends are born. Fresh talent showcase.',
-    longDesc: 'PURPLE is the launchpad for emerging talent. This stage showcases the next generation of hardstyle, hardcore, and hard dance artists. Many of today\'s biggest names once started on this very stage.',
-    bpm: '150–170',
-    vibe: 'Fresh, exciting, surprising',
+    bpm: '150\u2013170',
     artists: ['Emerging DJs', 'Contest winners', 'Rising producers'],
     hex: '#7b2d8e',
     spotify: 'https://open.spotify.com/search/new%20hardstyle%20talent',

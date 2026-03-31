@@ -33,7 +33,7 @@ function ColorCard({ color, isFavorite, onToggleFavorite }: {
         >
           <div>
             <h3 className="font-bold text-text-primary">{color.name}</h3>
-            <p className="text-xs text-text-secondary">{color.styleKey}</p>
+            <p className="text-xs text-text-secondary">{t(`colors.${color.id}.style`)}</p>
           </div>
         </button>
         <button
@@ -48,8 +48,8 @@ function ColorCard({ color, isFavorite, onToggleFavorite }: {
       {/* Expandable content */}
       {expanded && (
         <div className="border-t border-border p-4 space-y-3">
-          <p className="text-sm text-text-secondary">{color.shortDesc}</p>
-          <p className="text-sm text-text-muted">{color.longDesc}</p>
+          <p className="text-sm text-text-secondary">{t(`colors.${color.id}.short`)}</p>
+          <p className="text-sm text-text-muted">{t(`colors.${color.id}.long`)}</p>
 
           <div className="grid grid-cols-2 gap-2 text-xs">
             <div className="rounded-lg bg-surface-alt p-2">
@@ -58,7 +58,7 @@ function ColorCard({ color, isFavorite, onToggleFavorite }: {
             </div>
             <div className="rounded-lg bg-surface-alt p-2">
               <span className="text-text-muted">{t('colors.vibe')}</span>
-              <p className="font-medium text-text-primary">{color.vibe}</p>
+              <p className="font-medium text-text-primary">{t(`colors.${color.id}.vibe`)}</p>
             </div>
           </div>
 

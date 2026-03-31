@@ -41,7 +41,70 @@
     "watchOnYouTube": "YouTube",
     "listenOnApple": "Apple Music",
     "listenOnDeezer": "Deezer",
-    "listenOnSoundCloud": "SoundCloud"
+    "listenOnSoundCloud": "SoundCloud",
+    "red": {
+      "style": "Euphoric Hardstyle",
+      "subtitle": "Sc\u00e8ne principale \u2014 le c\u0153ur de Defqon.1",
+      "short": "La sc\u00e8ne l\u00e9gendaire o\u00f9 les plus grands noms du hardstyle se produisent.",
+      "long": "RED, c\u2019est l\u00e0 que la magie op\u00e8re. La sc\u00e8ne principale accueille les artistes hardstyle les plus embl\u00e9matiques, avec des m\u00e9lodies euphoriques et des kicks puissants devant des dizaines de milliers de fans. C\u2019est ici que se d\u00e9roulent les c\u00e9r\u00e9monies d\u2019ouverture, les r\u00e9v\u00e9lations d\u2019anthems et les shows de cl\u00f4ture l\u00e9gendaires.",
+      "vibe": "Euphorique, \u00e9pique, \u00e9motionnel"
+    },
+    "blue": {
+      "style": "Raw Hardstyle",
+      "subtitle": "Raw & mainstream raw hardstyle",
+      "short": "Des kicks plus durs, une atmosph\u00e8re plus sombre, de l\u2019\u00e9nergie brute.",
+      "long": "BLUE, c\u2019est la puissance brute. Des kicks agressifs, des m\u00e9lodies sombres et une atmosph\u00e8re intense. Cette sc\u00e8ne est faite pour ceux qui pr\u00e9f\u00e8rent leur hardstyle avec plus de caract\u00e8re et de force.",
+      "vibe": "Sombre, agressif, intense"
+    },
+    "black": {
+      "style": "Hardcore",
+      "subtitle": "Hardcore pur",
+      "short": "Plus rapide, plus dur, plus fort. Le temple du hardcore.",
+      "long": "BLACK, c\u2019est le territoire du hardcore \u2014 des BPM plus rapides, des kicks distordus et une \u00e9nergie implacable. Cette sc\u00e8ne repousse les limites de l\u2019intensit\u00e9 et est ador\u00e9e par les fans les plus d\u00e9vou\u00e9s.",
+      "vibe": "Extr\u00eame, implacable, puissant"
+    },
+    "yellow": {
+      "style": "Frenchcore / Uptempo / Terror",
+      "subtitle": "Frenchcore, uptempo & terror",
+      "short": "Ultra-rapide et distordu. N\u00e9 en France, aim\u00e9 dans le monde entier.",
+      "long": "YELLOW, c\u2019est l\u00e0 o\u00f9 la vitesse rencontre le chaos. Frenchcore, uptempo et terror dominent cette sc\u00e8ne avec des BPM bien au-dessus de 190. Si tu veux de l\u2019\u00e9nergie non-stop et de la folie distordue, c\u2019est ta couleur.",
+      "vibe": "Chaotique, rapide, explosif"
+    },
+    "indigo": {
+      "style": "Extra Raw Hardstyle",
+      "subtitle": "Le coin le plus sombre du raw hardstyle",
+      "short": "Le raw pouss\u00e9 \u00e0 l\u2019extr\u00eame. Industriel et sans compromis.",
+      "long": "INDIGO va au-del\u00e0 du raw hardstyle classique. Sons industriels, kicks brutaux et une atmosph\u00e8re underground sans concession. Cette sc\u00e8ne est r\u00e9serv\u00e9e aux puristes du son dur.",
+      "vibe": "Industriel, underground, brutal"
+    },
+    "magenta": {
+      "style": "Early Hardstyle / Classics",
+      "subtitle": "L\u2019\u00e2ge d\u2019or du hardstyle",
+      "short": "La nostalgie rencontre l\u2019\u00e9nergie. Les classiques qui ont tout lanc\u00e9.",
+      "long": "MAGENTA rend hommage aux racines du hardstyle. Les kicks reverse bass, les m\u00e9lodies embl\u00e9matiques des ann\u00e9es 2000 et les morceaux qui ont b\u00e2ti la sc\u00e8ne. Pure nostalgie pour les v\u00e9t\u00e9rans et le\u00e7on d\u2019histoire pour les nouveaux.",
+      "vibe": "Nostalgique, classique, chaleureux"
+    },
+    "silver": {
+      "style": "Industrial Hardcore",
+      "subtitle": "M\u00e9canique, m\u00e9tallique, industriel",
+      "short": "L\u00e0 o\u00f9 le hardcore rencontre l\u2019industriel. Froid, dur, m\u00e9tallique.",
+      "long": "SILVER canalise une esth\u00e9tique industrielle \u2014 rythmes m\u00e9caniques, textures m\u00e9talliques et beats hardcore dignes d\u2019une usine dystopique. Un public niche mais farouchement fid\u00e8le.",
+      "vibe": "M\u00e9canique, froid, dystopique"
+    },
+    "gold": {
+      "style": "Early Rave / Millennium Hardcore",
+      "subtitle": "Rave old-school & millennium hardcore",
+      "short": "Les racines de la sc\u00e8ne rave. Vibes ann\u00e9es 90 et d\u00e9but 2000.",
+      "long": "GOLD c\u00e9l\u00e8bre les origines de la culture rave et du millennium hardcore. Des hymnes rave classiques, du gabber old-school et les sons qui ont d\u00e9fini la musique \u00e9lectronique des ann\u00e9es 90 et 2000.",
+      "vibe": "R\u00e9tro, rave, old-school"
+    },
+    "purple": {
+      "style": "Talent Stage",
+      "subtitle": "Nouveaux artistes & \u00e9toiles montantes",
+      "short": "L\u00e0 o\u00f9 na\u00eessent les l\u00e9gendes de demain. Vitrine de talents.",
+      "long": "PURPLE est le tremplin pour les talents \u00e9mergents. Cette sc\u00e8ne met en lumi\u00e8re la prochaine g\u00e9n\u00e9ration d\u2019artistes hardstyle, hardcore et hard dance. Beaucoup des plus grands noms d\u2019aujourd\u2019hui ont commenc\u00e9 sur cette sc\u00e8ne.",
+      "vibe": "Frais, excitant, surprenant"
+    }
   },
   "guide": {
     "title": "D\u00e9couvrir le Hardstyle",
