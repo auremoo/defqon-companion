@@ -14,8 +14,8 @@ export default function BottomNav() {
   const { t } = useTranslation()
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-50 border-t border-white/5 bg-[#111111]/95 backdrop-blur-md">
-      <div className="mx-auto flex max-w-lg">
+    <nav className="fixed bottom-0 left-0 right-0 z-50 border-t border-white/5 bg-[#111111]/95 backdrop-blur-md" style={{ paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}>
+      <div className="mx-auto flex max-w-lg" style={{ paddingLeft: 'env(safe-area-inset-left, 0px)', paddingRight: 'env(safe-area-inset-right, 0px)' }}>
         {navItems.map((item) => (
           <NavLink
             key={item.to}
