@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import { AuthProvider } from './contexts/AuthContext'
 import BottomNav from './components/BottomNav'
 import Home from './pages/Home'
@@ -16,7 +16,7 @@ function PageLoader() {
 export default function App() {
   return (
     <AuthProvider>
-      <BrowserRouter>
+      <HashRouter>
         <main className="flex-1">
           <Suspense fallback={<PageLoader />}>
             <Routes>
@@ -29,7 +29,7 @@ export default function App() {
           </Suspense>
         </main>
         <BottomNav />
-      </BrowserRouter>
+      </HashRouter>
     </AuthProvider>
   )
 }
