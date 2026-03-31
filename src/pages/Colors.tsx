@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Link } from 'react-router-dom'
 import { colors, type DefqonColor } from '../data/colors'
-import { HeartIcon, SettingsIcon, SpotifyIcon, YouTubeIcon, AppleMusicIcon, DeezerIcon, SoundCloudIcon } from '../components/Icons'
+import { HeartIcon, SpotifyIcon, YouTubeIcon, AppleMusicIcon, DeezerIcon, SoundCloudIcon } from '../components/Icons'
+import PageHeader from '../components/PageHeader'
 
 function getStoredFavorites(): string[] {
   try {
@@ -132,11 +132,7 @@ export default function Colors() {
   return (
     <div className="flex flex-1 flex-col px-4 pb-24 pt-8">
       <header className="mb-6">
-        <div className="mb-2 flex justify-end">
-          <Link to="/settings" className="rounded-lg p-2 text-text-muted transition-colors hover:text-text-primary">
-            <SettingsIcon size={20} />
-          </Link>
-        </div>
+        <PageHeader />
         <h1 className="defqon-heading text-2xl font-bold sm:text-3xl text-text-primary">{t('colors.title')}</h1>
         <p className="mt-1 text-sm text-text-secondary">{t('colors.subtitle')}</p>
       </header>

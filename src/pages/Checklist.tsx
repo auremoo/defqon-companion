@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Link } from 'react-router-dom'
 import { defaultChecklist, type ChecklistItem } from '../data/festival'
-import { SettingsIcon } from '../components/Icons'
+import PageHeader from '../components/PageHeader'
 
 function getStoredChecklist(): ChecklistItem[] {
   try {
@@ -49,14 +48,8 @@ export default function Checklist() {
   return (
     <div className="flex flex-1 flex-col px-4 pb-24 pt-8">
       <header className="mb-6">
-        <div className="mb-2 flex items-center justify-between">
-          <span className="text-xs text-text-muted">
-            {t('checklist.progress', { checked: checkedCount, total: items.length })}
-          </span>
-          <Link to="/settings" className="rounded-lg p-2 text-text-muted transition-colors hover:text-text-primary">
-            <SettingsIcon size={20} />
-          </Link>
-        </div>
+        <PageHeader />
+        <span className="text-xs text-text-muted">{t('checklist.progress', { checked: checkedCount, total: items.length })}</span>
         <h1 className="defqon-heading text-2xl font-bold sm:text-3xl">{t('checklist.title')}</h1>
         <p className="mt-1 text-sm text-text-muted">{t('checklist.subtitle')}</p>
         {/* Progress bar */}

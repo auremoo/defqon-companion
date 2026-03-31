@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import CountdownTimer from '../components/CountdownTimer'
-import { SettingsIcon, PaletteIcon, BookIcon, ChecklistIcon, CalendarIcon } from '../components/Icons'
+import { PaletteIcon, BookIcon, ChecklistIcon, CalendarIcon } from '../components/Icons'
+import PageHeader from '../components/PageHeader'
 import { festival } from '../data/festival'
 
 export default function Home() {
@@ -12,11 +13,7 @@ export default function Home() {
       {/* Hero section */}
       <div className="noise-bg relative overflow-hidden bg-gradient-to-b from-accent/10 via-surface to-surface px-4 pb-8 pt-6">
         <div className="relative z-10">
-          <div className="flex justify-end">
-            <Link to="/settings" className="rounded-lg p-2 text-text-muted transition-colors hover:text-text-primary">
-              <SettingsIcon size={20} />
-            </Link>
-          </div>
+          <PageHeader />
 
           {/* Logo + Title */}
           <div className="mt-2 text-center">

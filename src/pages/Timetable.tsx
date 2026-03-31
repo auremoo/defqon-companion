@@ -1,10 +1,9 @@
 import { useState, useEffect, useCallback } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Link } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import { supabase } from '../lib/supabase'
-import AuthModal from '../components/AuthModal'
-import { SettingsIcon, UsersIcon, HistoryIcon } from '../components/Icons'
+import { UsersIcon, HistoryIcon } from '../components/Icons'
+import PageHeader from '../components/PageHeader'
 import { days, stageColors, type Day, type Stage, type Set } from '../data/lineup'
 import { editions, getCurrentEdition, type Edition } from '../data/editions'
 
@@ -110,7 +109,8 @@ function FriendsPanel({ onClose, editionYear }: { onClose: () => void; editionYe
   return (
     <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/70 sm:items-center" onClick={onClose}>
       <div
-        className="max-h-[85vh] w-full max-w-md overflow-y-auto rounded-t-2xl border border-border bg-surface p-5 sm:rounded-2xl"
+        className="w-full max-w-md overflow-y-auto rounded-t-2xl border border-border bg-surface p-5 sm:rounded-2xl"
+        style={{ maxHeight: 'calc(100dvh - 60px)', paddingBottom: 'calc(16px + env(safe-area-inset-bottom, 0px))' }}
         onClick={(e) => e.stopPropagation()}
       >
         <h2 className="mb-4 text-lg font-bold text-text-primary">{t('timetable.friends')}</h2>
@@ -257,13 +257,12 @@ function SetCard({ set, saved, friendCount, onToggle }: {
 // ─── Main Timetable Page ───
 export default function Timetable() {
   const { t } = useTranslation()
-  const { user, profile, configured } = useAuth()
+  const { user, configured } = useAuth()
   const [edition, setEdition] = useState<Edition>(getCurrentEdition)
   const [activeDay, setActiveDay] = useState<Day>('friday')
   const [activeStage, setActiveStage] = useState<Stage | 'ALL'>('ALL')
   const [savedSets, setSavedSets] = useState<string[]>(() => getLocalSavedSets(edition.year))
   const [friendSets, setFriendSets] = useState<Record<string, string[]>>({})
-  const [showAuth, setShowAuth] = useState(false)
   const [showFriends, setShowFriends] = useState(false)
   const [viewMode, setViewMode] = useState<'timetable' | 'my-schedule'>('timetable')
 
@@ -383,34 +382,17 @@ export default function Timetable() {
   return (
     <div className="flex flex-1 flex-col px-4 pb-24 pt-8">
       <header className="mb-4">
-        <div className="mb-2 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            {configured && user && profile ? (
-              <span className="text-xs text-text-muted">@{profile.username}</span>
-            ) : configured ? (
-              <button onClick={() => setShowAuth(true)} className="text-xs text-accent hover:text-text-primary">
-                {t('timetable.loginToSync')}
-              </button>
-            ) : (
-              <span className="text-xs text-gray-500">{t('timetable.offlineMode')}</span>
-            )}
-          </div>
-          <div className="flex items-center gap-2">
-            {configured && user && (
-              <button
-                onClick={() => setShowFriends(true)}
-                className="inline-flex items-center gap-1.5 rounded-lg bg-surface-alt px-3 py-1.5 text-xs font-medium text-text-secondary hover:bg-surface-card"
-              >
-                <UsersIcon size={14} /> {t('timetable.friends')}
-              </button>
-            )}
-            <Link to="/settings" className="rounded-lg p-2 text-text-muted transition-colors hover:text-text-primary">
-              <SettingsIcon size={20} />
-            </Link>
-          </div>
-        </div>
+        <PageHeader />
         <h1 className="defqon-heading text-2xl font-bold sm:text-3xl">{t('timetable.title')}</h1>
         <p className="mt-1 text-sm text-text-muted">{t('timetable.subtitle')}</p>
+        {configured && user && (
+          <button
+            onClick={() => setShowFriends(true)}
+            className="mt-2 inline-flex items-center gap-1.5 rounded-lg bg-surface-alt px-3 py-1.5 text-xs font-medium uppercase tracking-wider text-text-secondary hover:bg-surface-card"
+          >
+            <UsersIcon size={14} /> {t('timetable.friends')}
+          </button>
+        )}
       </header>
 
       {/* Edition selector */}
@@ -565,7 +547,6 @@ export default function Timetable() {
         </div>
       )}
 
-      {showAuth && <AuthModal onClose={() => setShowAuth(false)} />}
       {showFriends && <FriendsPanel onClose={() => setShowFriends(false)} editionYear={edition.year} />}
     </div>
   )

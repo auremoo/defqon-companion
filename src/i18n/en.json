@@ -182,6 +182,7 @@
     "checkEmail": "Account created! Check your email to confirm your address, then log in.",
     "signupHint": "Your username is how friends find you",
     "usernameHint": "Lowercase letters, numbers, - and _ only (3\u201320 chars)",
+    "loginPrompt": "Log in to sync with friends",
     "noAccount": "Don't have an account? Sign up",
     "hasAccount": "Already have an account? Log in"
   },
