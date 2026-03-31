@@ -112,6 +112,13 @@
     "email": "Email",
     "password": "Password",
     "username": "Username",
+    "confirmPassword": "Confirm password",
+    "show": "Show",
+    "hide": "Hide",
+    "passwordMismatch": "Passwords don't match",
+    "checkEmail": "Account created! Check your email to confirm your address, then log in.",
+    "signupHint": "Your username is how friends find you",
+    "usernameHint": "Lowercase letters, numbers, - and _ only (3\u201320 chars)",
     "noAccount": "Don't have an account? Sign up",
     "hasAccount": "Already have an account? Log in"
   },

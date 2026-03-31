@@ -112,6 +112,13 @@
     "email": "Adresse email",
     "password": "Mot de passe",
     "username": "Nom d\u2019utilisateur",
+    "confirmPassword": "Confirmer le mot de passe",
+    "show": "Voir",
+    "hide": "Masquer",
+    "passwordMismatch": "Les mots de passe ne correspondent pas",
+    "checkEmail": "Compte cr\u00e9\u00e9\u00a0! V\u00e9rifie tes emails pour confirmer ton adresse, puis connecte-toi.",
+    "signupHint": "Ton pseudo, c\u2019est comme \u00e7a que tes amis te trouveront",
+    "usernameHint": "Minuscules, chiffres, - et _ uniquement (3\u201320 caract\u00e8res)",
     "noAccount": "Pas encore de compte\u00a0? Inscris-toi",
     "hasAccount": "D\u00e9j\u00e0 un compte\u00a0? Connecte-toi"
   },
