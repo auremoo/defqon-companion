@@ -9,17 +9,18 @@ import { days, stageColors, type Day, type Stage, type Set } from '../data/lineu
 import { editions, getCurrentEdition, type Edition } from '../data/editions'
 
 // ─── Local storage fallback for non-authenticated users ───
-function getLocalSavedSets(): string[] {
-  try { return JSON.parse(localStorage.getItem('defqon-timetable') || '[]') } catch { return [] }
+function getLocalSavedSets(year: number): string[] {
+  try { return JSON.parse(localStorage.getItem(`defqon-timetable-${year}`) || '[]') } catch { return [] }
 }
 
 // ─── Friends panel ───
-function FriendsPanel({ onClose }: { onClose: () => void }) {
+function FriendsPanel({ onClose, editionYear }: { onClose: () => void; editionYear: number }) {
   const { t } = useTranslation()
   const { user } = useAuth()
   const [searchQuery, setSearchQuery] = useState('')
-  const [friends, setFriends] = useState<{ id: string; username: string; display_name: string | null; status: string; isRequester: boolean }[]>([])
+  const [friends, setFriends] = useState<{ id: string; friendUserId: string; username: string; display_name: string | null; status: string; isRequester: boolean }[]>([])
   const [searchResults, setSearchResults] = useState<{ id: string; username: string }[]>([])
+  const [buddyIds, setBuddyIds] = useState<string[]>([])
 
   const loadFriends = useCallback(async () => {
     if (!supabase || !user) return
@@ -39,6 +40,7 @@ function FriendsPanel({ onClose }: { onClose: () => void }) {
         const friendData = friend as { id: string; username: string; display_name: string | null }
         return {
           id: f.id as string,
+          friendUserId: friendData.id,
           username: friendData.username,
           display_name: friendData.display_name,
           status: f.status as string,
@@ -46,9 +48,29 @@ function FriendsPanel({ onClose }: { onClose: () => void }) {
         }
       }))
     }
-  }, [user])
+
+    // Load edition buddies
+    const { data: buddies } = await supabase
+      .from('edition_buddies')
+      .select('friend_id')
+      .eq('user_id', user.id)
+      .eq('edition_year', editionYear)
+    if (buddies) setBuddyIds(buddies.map((b) => b.friend_id))
+  }, [user, editionYear])
 
   useEffect(() => { loadFriends() }, [loadFriends])
+
+  const toggleBuddy = async (friendUserId: string) => {
+    if (!supabase || !user) return
+    const isBuddy = buddyIds.includes(friendUserId)
+    if (isBuddy) {
+      await supabase.from('edition_buddies').delete().eq('user_id', user.id).eq('friend_id', friendUserId).eq('edition_year', editionYear)
+      setBuddyIds((prev) => prev.filter((id) => id !== friendUserId))
+    } else {
+      await supabase.from('edition_buddies').insert({ user_id: user.id, friend_id: friendUserId, edition_year: editionYear })
+      setBuddyIds((prev) => [...prev, friendUserId])
+    }
+  }
 
   const searchUsers = async () => {
     if (!supabase || !searchQuery.trim()) return
@@ -137,16 +159,30 @@ function FriendsPanel({ onClose }: { onClose: () => void }) {
           </div>
         )}
 
-        {/* Accepted friends */}
+        {/* Accepted friends with buddy toggle */}
         {accepted.length > 0 && (
           <div className="mb-4">
             <h3 className="mb-2 text-xs font-medium uppercase text-text-muted">{t('timetable.yourFriends')}</h3>
-            {accepted.map((f) => (
-              <div key={f.id} className="flex items-center justify-between rounded-lg bg-surface-alt p-2 mb-1">
-                <span className="text-sm text-text-secondary">{f.display_name || f.username}</span>
-                <button onClick={() => removeFriend(f.id)} className="text-xs text-gray-500 hover:text-red-400">{t('timetable.remove')}</button>
-              </div>
-            ))}
+            {accepted.map((f) => {
+              const isBuddy = buddyIds.includes(f.friendUserId)
+              return (
+                <div key={f.id} className="flex items-center justify-between rounded-lg bg-surface-alt p-2 mb-1">
+                  <div className="flex items-center gap-2">
+                    <button
+                      onClick={() => toggleBuddy(f.friendUserId)}
+                      className={`rounded-md px-2 py-0.5 text-xs font-medium transition-colors ${
+                        isBuddy ? 'bg-green-900/40 text-green-400' : 'bg-surface-card text-text-muted'
+                      }`}
+                      title={isBuddy ? t('timetable.buddyActive') : t('timetable.buddyInactive')}
+                    >
+                      {isBuddy ? t('timetable.goingTogether') : editionYear.toString()}
+                    </button>
+                    <span className="text-sm text-text-secondary">{f.display_name || f.username}</span>
+                  </div>
+                  <button onClick={() => removeFriend(f.id)} className="text-xs text-gray-500 hover:text-red-400">{t('timetable.remove')}</button>
+                </div>
+              )
+            })}
           </div>
         )}
 
@@ -225,47 +261,50 @@ export default function Timetable() {
   const [edition, setEdition] = useState<Edition>(getCurrentEdition)
   const [activeDay, setActiveDay] = useState<Day>('friday')
   const [activeStage, setActiveStage] = useState<Stage | 'ALL'>('ALL')
-  const [savedSets, setSavedSets] = useState<string[]>(getLocalSavedSets)
+  const [savedSets, setSavedSets] = useState<string[]>(() => getLocalSavedSets(edition.year))
   const [friendSets, setFriendSets] = useState<Record<string, string[]>>({})
   const [showAuth, setShowAuth] = useState(false)
   const [showFriends, setShowFriends] = useState(false)
   const [viewMode, setViewMode] = useState<'timetable' | 'my-schedule'>('timetable')
 
-  // Load saved sets from Supabase if authenticated
+  // Load saved sets from Supabase filtered by edition year
   useEffect(() => {
     if (!supabase || !user) return
     supabase
       .from('timetable_entries')
       .select('set_id')
       .eq('user_id', user.id)
+      .eq('edition_year', edition.year)
       .then(({ data }) => {
         if (data) setSavedSets(data.map((d) => d.set_id))
       })
-  }, [user])
+  }, [user, edition.year])
 
   // Load friends' sets
   useEffect(() => {
     if (!supabase || !user) return
 
     async function loadFriendSets() {
-      // Get accepted friend IDs
-      const { data: friendships } = await supabase!
-        .from('friendships')
-        .select('requester_id, addressee_id')
-        .eq('status', 'accepted')
-        .or(`requester_id.eq.${user!.id},addressee_id.eq.${user!.id}`)
+      // Get edition buddies only (friends marked as "going together" this year)
+      const { data: buddies } = await supabase!
+        .from('edition_buddies')
+        .select('friend_id')
+        .eq('user_id', user!.id)
+        .eq('edition_year', edition.year)
 
-      if (!friendships?.length) return
+      if (!buddies?.length) {
+        setFriendSets({})
+        return
+      }
 
-      const friendIds = friendships.map((f) =>
-        f.requester_id === user!.id ? f.addressee_id : f.requester_id
-      )
+      const buddyIds = buddies.map((b) => b.friend_id)
 
-      // Get their timetable entries
+      // Get their timetable entries for current edition
       const { data: entries } = await supabase!
         .from('timetable_entries')
         .select('user_id, set_id')
-        .in('user_id', friendIds)
+        .in('user_id', buddyIds)
+        .eq('edition_year', edition.year)
 
       if (entries) {
         const grouped: Record<string, string[]> = {}
@@ -288,12 +327,12 @@ export default function Timetable() {
       .subscribe()
 
     return () => { supabase!.removeChannel(channel) }
-  }, [user])
+  }, [user, edition.year])
 
-  // Persist to localStorage (fallback) and Supabase
+  // Persist to localStorage per edition (fallback)
   useEffect(() => {
-    localStorage.setItem('defqon-timetable', JSON.stringify(savedSets))
-  }, [savedSets])
+    localStorage.setItem(`defqon-timetable-${edition.year}`, JSON.stringify(savedSets))
+  }, [savedSets, edition.year])
 
   const toggleSet = async (setId: string) => {
     const isSaved = savedSets.includes(setId)
@@ -301,12 +340,12 @@ export default function Timetable() {
     if (isSaved) {
       setSavedSets((prev) => prev.filter((id) => id !== setId))
       if (supabase && user) {
-        await supabase.from('timetable_entries').delete().eq('user_id', user.id).eq('set_id', setId)
+        await supabase.from('timetable_entries').delete().eq('user_id', user.id).eq('set_id', setId).eq('edition_year', edition.year)
       }
     } else {
       setSavedSets((prev) => [...prev, setId])
       if (supabase && user) {
-        await supabase.from('timetable_entries').insert({ user_id: user.id, set_id: setId })
+        await supabase.from('timetable_entries').insert({ user_id: user.id, set_id: setId, edition_year: edition.year })
       }
     }
   }
@@ -527,7 +566,7 @@ export default function Timetable() {
       )}
 
       {showAuth && <AuthModal onClose={() => setShowAuth(false)} />}
-      {showFriends && <FriendsPanel onClose={() => setShowFriends(false)} />}
+      {showFriends && <FriendsPanel onClose={() => setShowFriends(false)} editionYear={edition.year} />}
     </div>
   )
 }

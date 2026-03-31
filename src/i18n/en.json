@@ -144,6 +144,9 @@
     "currentEdition": "Current",
     "markAttended": "I was there",
     "attended": "Attended",
+    "goingTogether": "Going",
+    "buddyActive": "Going together this year \u2014 tap to remove",
+    "buddyInactive": "Tap to mark as going together this year",
     "days": {
       "thursday": "Thursday",
       "friday": "Friday",

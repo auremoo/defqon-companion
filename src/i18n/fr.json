@@ -144,6 +144,9 @@
     "currentEdition": "En cours",
     "markAttended": "J\u2019y \u00e9tais",
     "attended": "Vu",
+    "goingTogether": "Y va",
+    "buddyActive": "Y va cette ann\u00e9e \u2014 appuie pour retirer",
+    "buddyInactive": "Appuie pour marquer comme pr\u00e9sent cette ann\u00e9e",
     "days": {
       "thursday": "Jeudi",
       "friday": "Vendredi",
