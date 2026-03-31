@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import { ChevronRightIcon } from '../components/Icons'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import AuthModal from '../components/AuthModal'
 
 const languages = [
@@ -28,24 +28,49 @@ export default function Settings() {
   const { user, profile, configured, signOut, updateProfile } = useAuth()
   const [showAuth, setShowAuth] = useState(false)
   const [platform, setPlatform] = useState(getPreferredPlatform)
-  const [defqonUsername, setDefqonUsername] = useState(profile?.defqon_username || '')
-  const [saving, setSaving] = useState(false)
+  const [defqonUsername, setDefqonUsername] = useState('')
+  const [isDediqated, setIsDediqated] = useState(false)
+  const [saveStatus, setSaveStatus] = useState<'idle' | 'saving' | 'saved'>('idle')
+
+  // Sync local state when profile loads/changes
+  useEffect(() => {
+    if (profile) {
+      setDefqonUsername(profile.defqon_username || '')
+      setIsDediqated(profile.is_dediqated)
+    }
+  }, [profile])
 
   const changePlatform = (id: string) => {
     setPlatform(id)
     localStorage.setItem('defqon-music-platform', id)
   }
 
-  return (
-    <div className="flex flex-1 flex-col px-4 pb-24 pt-8">
-      <header className="mb-6">
-        <button onClick={() => navigate(-1)} className="mb-2 text-sm text-text-muted hover:text-text-primary">
-          &larr; {t('settings.back')}
-        </button>
-        <h1 className="defqon-heading text-2xl font-bold sm:text-3xl text-text-primary">{t('settings.title')}</h1>
-      </header>
+  const saveDefqonUsername = async () => {
+    setSaveStatus('saving')
+    await updateProfile({ defqon_username: defqonUsername.trim() || null })
+    setSaveStatus('saved')
+    setTimeout(() => setSaveStatus('idle'), 2000)
+  }
 
-      <div className="mx-auto w-full max-w-md space-y-6">
+  const toggleDediqated = async () => {
+    const newVal = !isDediqated
+    setIsDediqated(newVal) // Optimistic update
+    const err = await updateProfile({ is_dediqated: newVal })
+    if (err) setIsDediqated(!newVal) // Revert on error
+  }
+
+  return (
+    <div className="flex flex-1 flex-col" style={{ paddingBottom: 'calc(80px + env(safe-area-inset-bottom, 0px))' }}>
+      <div className="noise-bg relative bg-gradient-to-b from-accent/10 via-surface to-surface px-4 pb-6 pt-6">
+        <div className="relative z-10">
+          <button onClick={() => navigate(-1)} className="mb-2 text-sm text-text-muted hover:text-text-primary">
+            &larr; {t('settings.back')}
+          </button>
+          <h1 className="defqon-heading text-2xl font-bold sm:text-3xl text-text-primary">{t('settings.title')}</h1>
+        </div>
+      </div>
+
+      <div className="mx-auto w-full max-w-md space-y-6 px-4 pt-4">
         {/* Account */}
         <section>
           <h2 className="defqon-heading mb-2 text-xs font-medium uppercase tracking-wider text-text-muted">
@@ -55,13 +80,20 @@ export default function Settings() {
             {configured && user && profile ? (
               <>
                 <div className="p-4">
-                  <p className="text-sm font-medium text-text-primary">{profile.display_name || profile.username}</p>
+                  <div className="flex items-center gap-2">
+                    <p className="text-sm font-medium text-text-primary">{profile.display_name || profile.username}</p>
+                    {isDediqated && (
+                      <span className="rounded-sm bg-defqon-gold/20 px-1.5 py-0.5 text-[9px] font-black uppercase tracking-wider text-defqon-gold">
+                        Dediqated
+                      </span>
+                    )}
+                  </div>
                   <p className="text-xs text-text-muted">@{profile.username}</p>
                   <p className="mt-1 text-xs text-text-muted">{user.email}</p>
                 </div>
                 <button
                   onClick={signOut}
-                  className="w-full border-t border-border p-3 text-sm text-defqon-red transition-colors hover:bg-accent-glow"
+                  className="w-full border-t border-border p-3 text-sm text-accent transition-colors hover:bg-accent-glow"
                 >
                   {t('settings.signOut')}
                 </button>
@@ -97,25 +129,29 @@ export default function Settings() {
                     className="flex-1 rounded-lg border border-border bg-surface-alt px-3 py-2 text-sm text-text-primary placeholder-text-muted outline-none focus:border-accent/50"
                   />
                   <button
-                    onClick={async () => { setSaving(true); await updateProfile({ defqon_username: defqonUsername || null }); setSaving(false) }}
-                    disabled={saving}
-                    className="rounded-lg bg-accent px-3 py-2 text-xs font-semibold uppercase text-text-primary disabled:opacity-50"
+                    onClick={saveDefqonUsername}
+                    disabled={saveStatus === 'saving'}
+                    className={`rounded-lg px-3 py-2 text-xs font-semibold uppercase transition-colors ${
+                      saveStatus === 'saved'
+                        ? 'bg-green-900/30 text-green-400'
+                        : 'bg-accent text-text-primary disabled:opacity-50'
+                    }`}
                   >
-                    {saving ? '...' : t('settings.save')}
+                    {saveStatus === 'saving' ? '...' : saveStatus === 'saved' ? '\u2713' : t('settings.save')}
                   </button>
                 </div>
               </div>
               {/* Dediqated toggle */}
               <button
-                onClick={() => updateProfile({ is_dediqated: !profile.is_dediqated })}
+                onClick={toggleDediqated}
                 className="flex w-full items-center justify-between p-4 transition-colors hover:bg-surface-alt"
               >
-                <div>
+                <div className="text-left">
                   <span className="text-sm text-text-primary">{t('settings.dediqated')}</span>
                   <p className="text-xs text-text-muted">{t('settings.dediqatedDesc')}</p>
                 </div>
-                <div className={`h-6 w-10 rounded-full transition-colors ${profile.is_dediqated ? 'bg-defqon-gold' : 'bg-surface-elevated'}`}>
-                  <div className={`mt-0.5 h-5 w-5 rounded-full bg-white shadow transition-transform ${profile.is_dediqated ? 'translate-x-4.5' : 'translate-x-0.5'}`} />
+                <div className={`relative h-7 w-12 shrink-0 rounded-full transition-colors duration-200 ${isDediqated ? 'bg-defqon-gold' : 'bg-surface-elevated'}`}>
+                  <div className={`absolute top-1 h-5 w-5 rounded-full bg-white shadow transition-all duration-200 ${isDediqated ? 'left-6' : 'left-1'}`} />
                 </div>
               </button>
             </div>
@@ -181,12 +217,12 @@ export default function Settings() {
               <span>{t('settings.defqonTickets')}</span>
               <span className="text-text-muted">&rarr;</span>
             </a>
-            <a href="https://apps.apple.com/app/q-dance/id410976210" target="_blank" rel="noopener noreferrer"
+            <a href="https://apps.apple.com/us/app/defqon-1/id957425293" target="_blank" rel="noopener noreferrer"
               className="flex items-center justify-between p-4 text-sm text-text-primary transition-colors hover:bg-surface-alt">
               <span>{t('settings.defqonApp')} (iOS)</span>
               <span className="text-text-muted">&rarr;</span>
             </a>
-            <a href="https://play.google.com/store/apps/details?id=com.qdance.qdance" target="_blank" rel="noopener noreferrer"
+            <a href="https://play.google.com/store/apps/details?id=com.qdance.radio" target="_blank" rel="noopener noreferrer"
               className="flex items-center justify-between p-4 text-sm text-text-primary transition-colors hover:bg-surface-alt">
               <span>{t('settings.defqonApp')} (Android)</span>
               <span className="text-text-muted">&rarr;</span>
