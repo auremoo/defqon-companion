@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-defqon-red: #e63946;
+  /* Defqon stage colors */
+  --color-defqon-red: #cc2030;
   --color-defqon-blue: #1d3557;
   --color-defqon-black: #111111;
   --color-defqon-yellow: #f4a261;
@@ -10,6 +11,18 @@
   --color-defqon-silver: #a8a8a8;
   --color-defqon-gold: #d4a20a;
   --color-defqon-purple: #7b2d8e;
+
+  /* App theme — dark with warm Defqon tones */
+  --color-surface: #0d0d12;
+  --color-surface-alt: #14141c;
+  --color-surface-card: #1a1a24;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-hover: rgba(204, 32, 48, 0.4);
+  --color-text-primary: #f0ece6;
+  --color-text-secondary: #8a8490;
+  --color-text-muted: #5a5560;
+  --color-accent: #cc2030;
+  --color-accent-glow: rgba(204, 32, 48, 0.15);
 }
 
 html {
@@ -21,6 +34,8 @@ body {
   margin: 0;
   min-height: 100dvh;
   overscroll-behavior: none;
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
 }
 
 #root {

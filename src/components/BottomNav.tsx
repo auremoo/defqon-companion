@@ -1,19 +1,20 @@
 import { NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { HomeIcon, PaletteIcon, CalendarIcon, BookIcon, ChecklistIcon } from './Icons'
 
 const navItems = [
-  { to: '/', icon: '\u2302', labelKey: 'nav.home' },
-  { to: '/colors', icon: '\ud83c\udfa8', labelKey: 'nav.colors' },
-  { to: '/timetable', icon: '\ud83d\udcc5', labelKey: 'nav.timetable' },
-  { to: '/guide', icon: '\ud83d\udcd6', labelKey: 'nav.guide' },
-  { to: '/checklist', icon: '\u2705', labelKey: 'nav.checklist' },
+  { to: '/', Icon: HomeIcon, labelKey: 'nav.home' },
+  { to: '/colors', Icon: PaletteIcon, labelKey: 'nav.colors' },
+  { to: '/timetable', Icon: CalendarIcon, labelKey: 'nav.timetable' },
+  { to: '/guide', Icon: BookIcon, labelKey: 'nav.guide' },
+  { to: '/checklist', Icon: ChecklistIcon, labelKey: 'nav.checklist' },
 ]
 
 export default function BottomNav() {
   const { t } = useTranslation()
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-50 border-t border-gray-800 bg-gray-950/95 backdrop-blur-sm">
+    <nav className="fixed bottom-0 left-0 right-0 z-50 border-t border-white/10 bg-[#0d0d12]/95 backdrop-blur-md">
       <div className="mx-auto flex max-w-lg">
         {navItems.map((item) => (
           <NavLink
@@ -22,11 +23,11 @@ export default function BottomNav() {
             end={item.to === '/'}
             className={({ isActive }) =>
               `flex flex-1 flex-col items-center gap-0.5 py-2.5 text-xs transition-colors ${
-                isActive ? 'text-defqon-red' : 'text-gray-400 hover:text-gray-200'
+                isActive ? 'text-defqon-red' : 'text-gray-500 hover:text-gray-300'
               }`
             }
           >
-            <span className="text-lg">{item.icon}</span>
+            <item.Icon size={20} />
             <span>{t(item.labelKey)}</span>
           </NavLink>
         ))}

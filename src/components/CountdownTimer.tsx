@@ -37,8 +37,8 @@ export default function CountdownTimer() {
 
   if (timeLeft === 'live') {
     return (
-      <div className="rounded-xl bg-defqon-red/20 border border-defqon-red/50 p-6 text-center">
-        <p className="text-2xl font-bold text-defqon-red animate-pulse">
+      <div className="rounded-xl border border-accent bg-accent-glow p-6 text-center">
+        <p className="text-2xl font-bold text-accent animate-pulse">
           {t('home.countdown.live')}
         </p>
       </div>
@@ -47,8 +47,8 @@ export default function CountdownTimer() {
 
   if (timeLeft === 'past') {
     return (
-      <div className="rounded-xl bg-gray-800/50 p-6 text-center">
-        <p className="text-xl text-gray-400">{t('home.countdown.past')}</p>
+      <div className="rounded-xl bg-surface-card p-6 text-center">
+        <p className="text-xl text-text-secondary">{t('home.countdown.past')}</p>
       </div>
     )
   }
@@ -62,16 +62,16 @@ export default function CountdownTimer() {
 
   return (
     <div>
-      <h2 className="mb-4 text-center text-sm font-medium uppercase tracking-wider text-gray-400">
+      <h2 className="mb-4 text-center text-sm font-medium uppercase tracking-wider text-text-muted">
         {t('home.countdown.title')}
       </h2>
       <div className="grid grid-cols-4 gap-3">
         {blocks.map((b) => (
-          <div key={b.label} className="rounded-xl bg-gray-800/60 p-3 text-center">
-            <div className="text-2xl font-bold text-white sm:text-3xl">
+          <div key={b.label} className="rounded-xl bg-surface-card border border-border p-3 text-center">
+            <div className="text-2xl font-bold text-text-primary sm:text-3xl">
               {String(b.value).padStart(2, '0')}
             </div>
-            <div className="mt-1 text-xs text-gray-400">{b.label}</div>
+            <div className="mt-1 text-xs text-text-muted">{b.label}</div>
           </div>
         ))}
       </div>

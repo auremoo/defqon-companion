@@ -8,15 +8,15 @@
   },
   "home": {
     "title": "Defqon Companion",
-    "subtitle": "Ton guide pour le festival le plus dur au monde",
+    "subtitle": "Ton guide pour le festival le plus dur de la plan\u00e8te",
     "countdown": {
-      "title": "Compte \u00e0 rebours Defqon.1 2026",
+      "title": "Compte \u00e0 rebours \u2014 Defqon.1 2026",
       "days": "jours",
       "hours": "heures",
       "minutes": "min",
       "seconds": "sec",
-      "live": "Defqon.1 c'est MAINTENANT !",
-      "past": "\u00c0 l'ann\u00e9e prochaine !"
+      "live": "Defqon.1, c\u2019est MAINTENANT !",
+      "past": "\u00c0 l\u2019ann\u00e9e prochaine !"
     },
     "theme": "Sacred Oath",
     "dates": "25 \u2013 28 juin 2026",
@@ -28,71 +28,74 @@
   },
   "colors": {
     "title": "Les couleurs de Defqon.1",
-    "subtitle": "Chaque couleur repr\u00e9sente une sc\u00e8ne et un style musical unique",
+    "subtitle": "Chaque couleur repr\u00e9sente une sc\u00e8ne et un style musical",
     "bpm": "BPM",
     "vibe": "Ambiance",
-    "artists": "Artistes cl\u00e9s",
+    "artists": "Artistes phares",
     "playlists": "Playlists",
-    "favorite": "Favori",
+    "favorite": "Ajouter aux favoris",
     "unfavorite": "Retirer des favoris",
     "favorites": "Tes favoris",
     "allColors": "Toutes les couleurs",
-    "listenOnSpotify": "\u00c9couter sur Spotify",
-    "watchOnYouTube": "Regarder sur YouTube"
+    "listenOnSpotify": "Spotify",
+    "watchOnYouTube": "YouTube",
+    "listenOnApple": "Apple Music",
+    "listenOnDeezer": "Deezer",
+    "listenOnSoundCloud": "SoundCloud"
   },
   "guide": {
     "title": "D\u00e9couvrir le Hardstyle",
-    "subtitle": "Tout ce qu'il faut savoir avant ton premier Defqon.1",
+    "subtitle": "Tout ce qu\u2019il faut savoir avant ton premier Defqon.1",
     "history": {
       "title": "Histoire de Defqon.1",
       "originTitle": "Origine du nom",
-      "originText": "Le nom Defqon.1 vient de DEFCON, le syst\u00e8me de niveaux d'alerte militaire am\u00e9ricain. C'est un jeu de style autour de DEFCON 1, qui correspond au niveau d'alerte maximal. L'id\u00e9e derri\u00e8re ce nom est de transmettre une image de puissance, d'intensit\u00e9 et de tension maximale, en accord avec l'univers tr\u00e8s dur et \u00e9nergique du festival.",
-      "whyOneTitle": "Pourquoi le chiffre \u00ab 1 \u00bb ?",
-      "whyOneText": "Le chiffre 1 renvoie directement au niveau le plus \u00e9lev\u00e9 du syst\u00e8me DEFCON. Ce n'est pas un num\u00e9ro arbitraire : il symbolise le niveau maximal de vigilance. Dans le contexte du festival, ce \u00ab 1 \u00bb renforce l'id\u00e9e d'un \u00e9v\u00e9nement extr\u00eame, \u00e0 l'\u00e9nergie tr\u00e8s forte, pens\u00e9 comme une exp\u00e9rience intense du d\u00e9but \u00e0 la fin.",
+      "originText": "Le nom Defqon.1 vient de DEFCON, le syst\u00e8me d\u2019alerte militaire am\u00e9ricain. C\u2019est une stylisation de DEFCON 1, le niveau d\u2019alerte maximal. L\u2019id\u00e9e : transmettre une image de puissance, d\u2019intensit\u00e9 et de tension maximale, \u00e0 l\u2019image de l\u2019univers du festival.",
+      "whyOneTitle": "Pourquoi le chiffre \u00ab\u00a01\u00a0\u00bb ?",
+      "whyOneText": "Le 1 renvoie au niveau le plus \u00e9lev\u00e9 du syst\u00e8me DEFCON. Ce n\u2019est pas un num\u00e9ro au hasard\u00a0: il symbolise la vigilance maximale. Pour le festival, ce \u00ab\u00a01\u00a0\u00bb renforce l\u2019id\u00e9e d\u2019un \u00e9v\u00e9nement extr\u00eame, pens\u00e9 comme une exp\u00e9rience intense du d\u00e9but \u00e0 la fin.",
       "colorsTitle": "Les couleurs de Defqon.1",
-      "colorsText": "Defqon.1 a construit un univers visuel bas\u00e9 sur les \u00ab Colors of Defqon.1 \u00bb. Chaque couleur correspond \u00e0 un style musical, \u00e0 une sc\u00e8ne ou \u00e0 une ambiance particuli\u00e8re du festival. Chaque couleur aide le public \u00e0 se rep\u00e9rer tout en renfor\u00e7ant le sentiment d'appartenir \u00e0 un monde musical coh\u00e9rent et immersif.",
-      "brandTitle": "L'id\u00e9e g\u00e9n\u00e9rale",
-      "brandText": "Defqon.1 n'est pas seulement un nom : c'est un univers de marque tr\u00e8s structur\u00e9. Le festival associe un nom fort, une r\u00e9f\u00e9rence militaire marqu\u00e9e et un code couleur pr\u00e9cis pour cr\u00e9er une identit\u00e9 imm\u00e9diatement reconnaissable."
+      "colorsText": "Defqon.1 a b\u00e2ti un univers visuel autour de ses \u00ab\u00a0Colors\u00a0\u00bb. Chaque couleur correspond \u00e0 un style musical, une sc\u00e8ne et une ambiance. Elles aident le public \u00e0 se rep\u00e9rer tout en renfor\u00e7ant le sentiment d\u2019appartenir \u00e0 un monde musical immersif.",
+      "brandTitle": "La vision d\u2019ensemble",
+      "brandText": "Defqon.1 n\u2019est pas qu\u2019un nom\u00a0: c\u2019est un univers de marque. Le festival associe un nom fort, une r\u00e9f\u00e9rence militaire et un code couleur pr\u00e9cis pour cr\u00e9er une identit\u00e9 imm\u00e9diatement reconnaissable."
     },
     "hardstyle": {
-      "title": "Qu'est-ce que le Hardstyle ?",
-      "text": "Le hardstyle est un genre de musique \u00e9lectronique n\u00e9 au d\u00e9but des ann\u00e9es 2000 aux Pays-Bas. Il se caract\u00e9rise par ses kicks puissants, ses m\u00e9lodies euphoriques et son \u00e9nergie intense. Le genre se situe g\u00e9n\u00e9ralement entre 150 et 160 BPM.",
+      "title": "Qu\u2019est-ce que le Hardstyle ?",
+      "text": "Le hardstyle est un genre de musique \u00e9lectronique n\u00e9 au d\u00e9but des ann\u00e9es 2000 aux Pays-Bas. Il se caract\u00e9rise par des kicks puissants, des m\u00e9lodies euphoriques et une \u00e9nergie intense. Le BPM tourne g\u00e9n\u00e9ralement entre 150 et 160.",
       "subgenres": "Sous-genres",
-      "euphoric": "Euphoric Hardstyle \u2014 M\u00e9lodique, entra\u00eenant, \u00e9motionnel. Le sous-genre le plus accessible avec de belles m\u00e9lodies sur des kicks puissants.",
-      "raw": "Raw Hardstyle \u2014 Plus sombre, kicks et screeches plus agressifs. Moins de m\u00e9lodie, plus d'\u00e9nergie brute et de sons industriels.",
-      "hardcore": "Hardcore \u2014 Plus rapide (160-200+ BPM), plus dur, plus extr\u00eame. Un genre \u00e0 part enti\u00e8re avec des racines profondes aux Pays-Bas.",
-      "frenchcore": "Frenchcore \u2014 N\u00e9 en France, 190-210 BPM, kicks distordus et drops intenses. De l'\u00e9nergie pure sur le dancefloor.",
-      "classic": "Classic/Early Hardstyle \u2014 Le son originel de 2000-2008. Reverse bass, m\u00e9lodies plus simples, vibes nostalgiques."
+      "euphoric": "Euphoric Hardstyle \u2014 M\u00e9lodique, entra\u00eenant, \u00e9motionnel. Le sous-genre le plus accessible\u00a0: de belles m\u00e9lodies sur des kicks puissants.",
+      "raw": "Raw Hardstyle \u2014 Plus sombre, kicks et screeches agressifs. Moins de m\u00e9lodie, plus d\u2019\u00e9nergie brute.",
+      "hardcore": "Hardcore \u2014 Plus rapide (160-200+ BPM), plus dur, plus extr\u00eame. Un genre \u00e0 part, profond\u00e9ment ancr\u00e9 aux Pays-Bas.",
+      "frenchcore": "Frenchcore \u2014 N\u00e9 en France, 190-210 BPM, kicks distordus et drops intenses. De l\u2019\u00e9nergie pure.",
+      "classic": "Classic / Early Hardstyle \u2014 Le son originel (2000-2008). Reverse bass, m\u00e9lodies simples, vibes nostalgiques."
     },
     "vocabulary": {
-      "title": "Vocabulaire",
-      "kick": "Kick \u2014 Le coup de grosse caisse lourd qui d\u00e9finit le hardstyle. L'\u00e9l\u00e9ment le plus important de tout morceau.",
-      "reverseBass": "Reverse Bass \u2014 Une technique de kick o\u00f9 la queue de basse joue avant l'impact. Signature de l'early hardstyle.",
-      "breakdown": "Breakdown \u2014 La section m\u00e9lodique au milieu d'un morceau, qui construit la tension avant le climax.",
-      "climax": "Climax \u2014 Le moment culminant o\u00f9 m\u00e9lodie et kicks se combinent \u00e0 pleine puissance. Le moment que tout le monde attend.",
-      "screeches": "Screeches \u2014 Sons de synth\u00e9tiseur aigus et distordus, typiques du raw hardstyle.",
-      "qdance": "Q-dance \u2014 L'organisateur d'\u00e9v\u00e9nements n\u00e9erlandais derri\u00e8re Defqon.1, Qlimax et de nombreux autres \u00e9v\u00e9nements hardstyle."
+      "title": "Le vocabulaire",
+      "kick": "Kick \u2014 Le coup de grosse caisse qui d\u00e9finit le hardstyle. L\u2019\u00e9l\u00e9ment central de tout morceau.",
+      "reverseBass": "Reverse Bass \u2014 Technique de kick o\u00f9 la basse joue avant l\u2019impact. Signature de l\u2019early hardstyle.",
+      "breakdown": "Breakdown \u2014 Section m\u00e9lodique au c\u0153ur du morceau, qui monte la tension avant le climax.",
+      "climax": "Climax \u2014 Le moment o\u00f9 m\u00e9lodie et kicks se combinent \u00e0 pleine puissance. Le moment que tout le monde attend.",
+      "screeches": "Screeches \u2014 Sons synth\u00e9tiques aigus et distordus, typiques du raw hardstyle.",
+      "qdance": "Q-dance \u2014 L\u2019organisateur n\u00e9erlandais derri\u00e8re Defqon.1, Qlimax et bien d\u2019autres \u00e9v\u00e9nements hardstyle."
     }
   },
   "checklist": {
     "title": "Checklist Festival",
-    "subtitle": "Assure-toi d'\u00eatre pr\u00eat pour Defqon.1",
+    "subtitle": "V\u00e9rifie que tu es pr\u00eat pour Defqon.1",
     "essentials": "Essentiels",
     "camping": "Camping",
     "comfort": "Confort & S\u00e9curit\u00e9",
-    "addItem": "Ajouter un \u00e9l\u00e9ment...",
+    "addItem": "Ajouter un \u00e9l\u00e9ment\u2026",
     "add": "Ajouter",
     "reset": "Tout r\u00e9initialiser",
     "progress": "{{checked}} / {{total}} pr\u00eat"
   },
   "auth": {
     "login": "Se connecter",
-    "signup": "S'inscrire",
-    "email": "Email",
+    "signup": "Cr\u00e9er un compte",
+    "email": "Adresse email",
     "password": "Mot de passe",
-    "username": "Nom d'utilisateur",
-    "noAccount": "Pas de compte ? Inscris-toi",
-    "hasAccount": "D\u00e9j\u00e0 un compte ? Connecte-toi"
+    "username": "Nom d\u2019utilisateur",
+    "noAccount": "Pas encore de compte\u00a0? Inscris-toi",
+    "hasAccount": "D\u00e9j\u00e0 un compte\u00a0? Connecte-toi"
   },
   "timetable": {
     "title": "Programme",
@@ -101,23 +104,28 @@
     "mySchedule": "Mon planning",
     "allStages": "Tout",
     "noSets": "Aucun set pour cette s\u00e9lection",
-    "emptySchedule": "Aucun set sauvegard\u00e9. Parcours le lineup et appuie sur + pour ajouter !",
-    "conflicts": "Conflits d'horaires d\u00e9tect\u00e9s :",
-    "loginToSync": "Connecte-toi pour synchroniser",
+    "emptySchedule": "Aucun set sauvegard\u00e9. Parcours le lineup et appuie sur + pour en ajouter\u00a0!",
+    "conflicts": "Conflits d\u2019horaires d\u00e9tect\u00e9s\u00a0:",
+    "loginToSync": "Connecte-toi pour synchroniser avec tes amis",
     "offlineMode": "Mode hors-ligne",
     "friends": "Amis",
-    "searchFriends": "Chercher par pseudo...",
+    "searchFriends": "Chercher par pseudo\u2026",
     "search": "Chercher",
     "addFriend": "Ajouter",
-    "pendingRequests": "Demandes re\u00e7ues",
+    "pendingRequests": "Demandes en attente",
     "accept": "Accepter",
     "decline": "Refuser",
     "yourFriends": "Tes amis",
     "remove": "Retirer",
     "sentRequests": "Envoy\u00e9es",
-    "waiting": "En attente...",
-    "noFriends": "Pas encore d'amis. Cherche des utilisateurs pour les ajouter !",
+    "waiting": "En attente\u2026",
+    "noFriends": "Pas encore d\u2019amis. Cherche des utilisateurs pour les ajouter\u00a0!",
     "friendsGoing": "amis y vont",
+    "edition": "\u00c9dition",
+    "archive": "\u00c9ditions pass\u00e9es",
+    "currentEdition": "En cours",
+    "markAttended": "J\u2019y \u00e9tais",
+    "attended": "Vu",
     "days": {
       "thursday": "Jeudi",
       "friday": "Vendredi",
@@ -125,6 +133,16 @@
       "sunday": "Dimanche"
     }
   },
-  "language": "Langue",
-  "switchLang": "English"
+  "settings": {
+    "title": "Param\u00e8tres",
+    "back": "Retour",
+    "account": "Compte",
+    "signIn": "Connecte-toi pour synchroniser ton planning avec tes amis",
+    "signOut": "Se d\u00e9connecter",
+    "language": "Langue",
+    "musicPlatform": "Plateforme musicale pr\u00e9f\u00e9r\u00e9e",
+    "musicPlatformDesc": "Les liens sur les pages couleurs prioriseront ta plateforme",
+    "about": "\u00c0 propos",
+    "disclaimer": "Application communautaire. Non affili\u00e9e \u00e0 Q-dance ou Defqon.1."
+  }
 }

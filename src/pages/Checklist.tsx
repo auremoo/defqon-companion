@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 import { defaultChecklist, type ChecklistItem } from '../data/festival'
-import LanguageToggle from '../components/LanguageToggle'
+import { SettingsIcon } from '../components/Icons'
 
 function getStoredChecklist(): ChecklistItem[] {
   try {
@@ -49,17 +50,19 @@ export default function Checklist() {
     <div className="flex flex-1 flex-col px-4 pb-24 pt-8">
       <header className="mb-6">
         <div className="mb-2 flex items-center justify-between">
-          <span className="text-xs text-gray-400">
+          <span className="text-xs text-text-muted">
             {t('checklist.progress', { checked: checkedCount, total: items.length })}
           </span>
-          <LanguageToggle />
+          <Link to="/settings" className="rounded-lg p-2 text-text-muted transition-colors hover:text-text-primary">
+            <SettingsIcon size={20} />
+          </Link>
         </div>
         <h1 className="text-2xl font-bold sm:text-3xl">{t('checklist.title')}</h1>
-        <p className="mt-1 text-sm text-gray-400">{t('checklist.subtitle')}</p>
+        <p className="mt-1 text-sm text-text-muted">{t('checklist.subtitle')}</p>
         {/* Progress bar */}
-        <div className="mt-3 h-2 overflow-hidden rounded-full bg-gray-800">
+        <div className="mt-3 h-2 overflow-hidden rounded-full bg-surface-alt">
           <div
-            className="h-full rounded-full bg-defqon-red transition-all duration-300"
+            className="h-full rounded-full bg-accent transition-all duration-300"
             style={{ width: `${items.length ? (checkedCount / items.length) * 100 : 0}%` }}
           />
         </div>
@@ -71,20 +74,20 @@ export default function Checklist() {
           if (catItems.length === 0) return null
           return (
             <div key={cat}>
-              <h2 className="mb-2 text-xs font-medium uppercase tracking-wider text-gray-400">
+              <h2 className="mb-2 text-xs font-medium uppercase tracking-wider text-text-muted">
                 {t(`checklist.${cat}`)}
               </h2>
               <div className="space-y-1.5">
                 {catItems.map((item) => (
                   <div
                     key={item.id}
-                    className="flex items-center gap-3 rounded-xl border border-gray-800 bg-gray-900/50 p-3"
+                    className="flex items-center gap-3 rounded-xl border border-border bg-surface-card p-3"
                   >
                     <button
                       onClick={() => toggle(item.id)}
                       className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-md border-2 text-xs transition-colors ${
                         item.checked
-                          ? 'border-defqon-red bg-defqon-red text-white'
+                          ? 'border-accent bg-accent text-text-primary'
                           : 'border-gray-600 text-transparent hover:border-gray-400'
                       }`}
                     >
@@ -120,11 +123,11 @@ export default function Checklist() {
             onChange={(e) => setNewItem(e.target.value)}
             onKeyDown={(e) => e.key === 'Enter' && addItem()}
             placeholder={t('checklist.addItem')}
-            className="flex-1 rounded-xl border border-gray-800 bg-gray-900/50 px-4 py-2.5 text-sm text-white placeholder-gray-500 outline-none focus:border-defqon-red/50"
+            className="flex-1 rounded-xl border border-border bg-surface-card px-4 py-2.5 text-sm text-text-primary placeholder-gray-500 outline-none focus:border-accent/50"
           />
           <button
             onClick={addItem}
-            className="rounded-xl bg-defqon-red px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-defqon-red/80"
+            className="rounded-xl bg-accent px-4 py-2.5 text-sm font-medium text-text-primary transition-colors hover:bg-accent/80"
           >
             {t('checklist.add')}
           </button>
@@ -133,7 +136,7 @@ export default function Checklist() {
         {/* Reset */}
         <button
           onClick={resetAll}
-          className="w-full rounded-xl border border-gray-800 py-2.5 text-xs text-gray-500 transition-colors hover:border-red-900 hover:text-red-400"
+          className="w-full rounded-xl border border-border py-2.5 text-xs text-gray-500 transition-colors hover:border-red-900 hover:text-red-400"
         >
           {t('checklist.reset')}
         </button>

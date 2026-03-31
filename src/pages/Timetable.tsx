@@ -1,10 +1,12 @@
 import { useState, useEffect, useCallback } from 'react'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import { supabase } from '../lib/supabase'
 import AuthModal from '../components/AuthModal'
-import LanguageToggle from '../components/LanguageToggle'
-import { lineup, days, stagesPerDay, stageColors, type Day, type Stage, type Set } from '../data/lineup'
+import { SettingsIcon, UsersIcon, HistoryIcon } from '../components/Icons'
+import { days, stageColors, type Day, type Stage, type Set } from '../data/lineup'
+import { editions, getCurrentEdition, type Edition } from '../data/editions'
 
 // ─── Local storage fallback for non-authenticated users ───
 function getLocalSavedSets(): string[] {
@@ -86,10 +88,10 @@ function FriendsPanel({ onClose }: { onClose: () => void }) {
   return (
     <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/70 sm:items-center" onClick={onClose}>
       <div
-        className="max-h-[85vh] w-full max-w-md overflow-y-auto rounded-t-2xl border border-gray-800 bg-gray-900 p-5 sm:rounded-2xl"
+        className="max-h-[85vh] w-full max-w-md overflow-y-auto rounded-t-2xl border border-border bg-surface p-5 sm:rounded-2xl"
         onClick={(e) => e.stopPropagation()}
       >
-        <h2 className="mb-4 text-lg font-bold text-white">{t('timetable.friends')}</h2>
+        <h2 className="mb-4 text-lg font-bold text-text-primary">{t('timetable.friends')}</h2>
 
         {/* Search */}
         <div className="mb-4 flex gap-2">
@@ -99,9 +101,9 @@ function FriendsPanel({ onClose }: { onClose: () => void }) {
             onChange={(e) => setSearchQuery(e.target.value)}
             onKeyDown={(e) => e.key === 'Enter' && searchUsers()}
             placeholder={t('timetable.searchFriends')}
-            className="flex-1 rounded-xl border border-gray-700 bg-gray-800 px-3 py-2 text-sm text-white placeholder-gray-500 outline-none focus:border-defqon-red/50"
+            className="flex-1 rounded-xl border border-border-hover bg-surface-alt px-3 py-2 text-sm text-text-primary placeholder-gray-500 outline-none focus:border-accent/50"
           />
-          <button onClick={searchUsers} className="rounded-xl bg-defqon-red px-3 py-2 text-sm font-medium text-white">
+          <button onClick={searchUsers} className="rounded-xl bg-accent px-3 py-2 text-sm font-medium text-text-primary">
             {t('timetable.search')}
           </button>
         </div>
@@ -109,9 +111,9 @@ function FriendsPanel({ onClose }: { onClose: () => void }) {
         {searchResults.length > 0 && (
           <div className="mb-4 space-y-2">
             {searchResults.map((u) => (
-              <div key={u.id} className="flex items-center justify-between rounded-lg bg-gray-800/50 p-2">
-                <span className="text-sm text-gray-300">@{u.username}</span>
-                <button onClick={() => sendRequest(u.id)} className="text-xs text-defqon-red hover:text-white">
+              <div key={u.id} className="flex items-center justify-between rounded-lg bg-surface-alt p-2">
+                <span className="text-sm text-text-secondary">@{u.username}</span>
+                <button onClick={() => sendRequest(u.id)} className="text-xs text-accent hover:text-text-primary">
                   {t('timetable.addFriend')}
                 </button>
               </div>
@@ -124,11 +126,11 @@ function FriendsPanel({ onClose }: { onClose: () => void }) {
           <div className="mb-4">
             <h3 className="mb-2 text-xs font-medium uppercase text-yellow-400">{t('timetable.pendingRequests')}</h3>
             {pending.map((f) => (
-              <div key={f.id} className="flex items-center justify-between rounded-lg bg-gray-800/50 p-2 mb-1">
-                <span className="text-sm text-gray-300">@{f.username}</span>
+              <div key={f.id} className="flex items-center justify-between rounded-lg bg-surface-alt p-2 mb-1">
+                <span className="text-sm text-text-secondary">@{f.username}</span>
                 <div className="flex gap-2">
-                  <button onClick={() => acceptRequest(f.id)} className="text-xs text-green-400 hover:text-white">{t('timetable.accept')}</button>
-                  <button onClick={() => removeFriend(f.id)} className="text-xs text-red-400 hover:text-white">{t('timetable.decline')}</button>
+                  <button onClick={() => acceptRequest(f.id)} className="text-xs text-green-400 hover:text-text-primary">{t('timetable.accept')}</button>
+                  <button onClick={() => removeFriend(f.id)} className="text-xs text-red-400 hover:text-text-primary">{t('timetable.decline')}</button>
                 </div>
               </div>
             ))}
@@ -138,10 +140,10 @@ function FriendsPanel({ onClose }: { onClose: () => void }) {
         {/* Accepted friends */}
         {accepted.length > 0 && (
           <div className="mb-4">
-            <h3 className="mb-2 text-xs font-medium uppercase text-gray-400">{t('timetable.yourFriends')}</h3>
+            <h3 className="mb-2 text-xs font-medium uppercase text-text-muted">{t('timetable.yourFriends')}</h3>
             {accepted.map((f) => (
-              <div key={f.id} className="flex items-center justify-between rounded-lg bg-gray-800/50 p-2 mb-1">
-                <span className="text-sm text-gray-300">{f.display_name || f.username}</span>
+              <div key={f.id} className="flex items-center justify-between rounded-lg bg-surface-alt p-2 mb-1">
+                <span className="text-sm text-text-secondary">{f.display_name || f.username}</span>
                 <button onClick={() => removeFriend(f.id)} className="text-xs text-gray-500 hover:text-red-400">{t('timetable.remove')}</button>
               </div>
             ))}
@@ -153,8 +155,8 @@ function FriendsPanel({ onClose }: { onClose: () => void }) {
           <div>
             <h3 className="mb-2 text-xs font-medium uppercase text-gray-500">{t('timetable.sentRequests')}</h3>
             {sent.map((f) => (
-              <div key={f.id} className="flex items-center justify-between rounded-lg bg-gray-800/50 p-2 mb-1">
-                <span className="text-sm text-gray-400">@{f.username}</span>
+              <div key={f.id} className="flex items-center justify-between rounded-lg bg-surface-alt p-2 mb-1">
+                <span className="text-sm text-text-muted">@{f.username}</span>
                 <span className="text-xs text-gray-600">{t('timetable.waiting')}</span>
               </div>
             ))}
@@ -182,8 +184,8 @@ function SetCard({ set, saved, friendCount, onToggle }: {
     <div
       className={`flex items-center gap-3 rounded-xl border p-3 transition-colors ${
         saved
-          ? 'border-defqon-red/50 bg-defqon-red/10'
-          : 'border-gray-800 bg-gray-900/50'
+          ? 'border-accent/50 bg-accent/10'
+          : 'border-border bg-surface-card'
       }`}
     >
       <div
@@ -191,23 +193,23 @@ function SetCard({ set, saved, friendCount, onToggle }: {
         style={{ backgroundColor: stageColors[set.stage] }}
       />
       <div className="flex-1 min-w-0">
-        <p className="truncate text-sm font-medium text-white">{set.artist}</p>
-        <p className="text-xs text-gray-400">
+        <p className="truncate text-sm font-medium text-text-primary">{set.artist}</p>
+        <p className="text-xs text-text-muted">
           {set.startTime} – {set.endTime}
-          {set.special && <span className="ml-1.5 text-defqon-red">({set.special})</span>}
+          {set.special && <span className="ml-1.5 text-accent">({set.special})</span>}
         </p>
       </div>
       {friendCount > 0 && (
-        <span className="shrink-0 rounded-full bg-blue-900/40 px-2 py-0.5 text-xs text-blue-300" title={t('timetable.friendsGoing')}>
-          {friendCount} {'\ud83d\udc65'}
+        <span className="inline-flex shrink-0 items-center gap-1 rounded-full bg-blue-900/40 px-2 py-0.5 text-xs text-blue-300" title={t('timetable.friendsGoing')}>
+          {friendCount} <UsersIcon size={12} />
         </span>
       )}
       <button
         onClick={onToggle}
         className={`shrink-0 rounded-lg px-2.5 py-1.5 text-xs font-medium transition-colors ${
           saved
-            ? 'bg-defqon-red/20 text-defqon-red hover:bg-defqon-red/30'
-            : 'bg-gray-800 text-gray-400 hover:bg-gray-700 hover:text-white'
+            ? 'bg-accent/20 text-accent hover:bg-accent/30'
+            : 'bg-surface-alt text-text-muted hover:bg-surface-card hover:text-text-primary'
         }`}
       >
         {saved ? '\u2713' : '+'}
@@ -220,6 +222,7 @@ function SetCard({ set, saved, friendCount, onToggle }: {
 export default function Timetable() {
   const { t } = useTranslation()
   const { user, profile, configured } = useAuth()
+  const [edition, setEdition] = useState<Edition>(getCurrentEdition)
   const [activeDay, setActiveDay] = useState<Day>('friday')
   const [activeStage, setActiveStage] = useState<Stage | 'ALL'>('ALL')
   const [savedSets, setSavedSets] = useState<string[]>(getLocalSavedSets)
@@ -310,7 +313,7 @@ export default function Timetable() {
 
   // Check for time conflicts in saved sets
   const getConflicts = (): Set[][] => {
-    const saved = lineup.filter((s) => savedSets.includes(s.id))
+    const saved = edition.lineup.filter((s) => savedSets.includes(s.id))
     const conflicts: Set[][] = []
     for (let i = 0; i < saved.length; i++) {
       for (let j = i + 1; j < saved.length; j++) {
@@ -323,12 +326,12 @@ export default function Timetable() {
     return conflicts
   }
 
-  const filteredSets = lineup
+  const filteredSets = edition.lineup
     .filter((s) => s.day === activeDay)
     .filter((s) => activeStage === 'ALL' || s.stage === activeStage)
     .sort((a, b) => a.startTime.localeCompare(b.startTime))
 
-  const mySets = lineup
+  const mySets = edition.lineup
     .filter((s) => savedSets.includes(s.id))
     .sort((a, b) => {
       const dayOrder = days.findIndex((d) => d.key === a.day) - days.findIndex((d) => d.key === b.day)
@@ -336,7 +339,7 @@ export default function Timetable() {
     })
 
   const conflicts = getConflicts()
-  const stages = stagesPerDay[activeDay]
+  const stages = edition.stagesPerDay[activeDay]
 
   return (
     <div className="flex flex-1 flex-col px-4 pb-24 pt-8">
@@ -344,9 +347,9 @@ export default function Timetable() {
         <div className="mb-2 flex items-center justify-between">
           <div className="flex items-center gap-2">
             {configured && user && profile ? (
-              <span className="text-xs text-gray-400">@{profile.username}</span>
+              <span className="text-xs text-text-muted">@{profile.username}</span>
             ) : configured ? (
-              <button onClick={() => setShowAuth(true)} className="text-xs text-defqon-red hover:text-white">
+              <button onClick={() => setShowAuth(true)} className="text-xs text-accent hover:text-text-primary">
                 {t('timetable.loginToSync')}
               </button>
             ) : (
@@ -357,24 +360,52 @@ export default function Timetable() {
             {configured && user && (
               <button
                 onClick={() => setShowFriends(true)}
-                className="rounded-lg bg-gray-800 px-3 py-1.5 text-xs font-medium text-gray-300 hover:bg-gray-700"
+                className="inline-flex items-center gap-1.5 rounded-lg bg-surface-alt px-3 py-1.5 text-xs font-medium text-text-secondary hover:bg-surface-card"
               >
-                {'\ud83d\udc65'} {t('timetable.friends')}
+                <UsersIcon size={14} /> {t('timetable.friends')}
               </button>
             )}
-            <LanguageToggle />
+            <Link to="/settings" className="rounded-lg p-2 text-text-muted transition-colors hover:text-text-primary">
+              <SettingsIcon size={20} />
+            </Link>
           </div>
         </div>
         <h1 className="text-2xl font-bold sm:text-3xl">{t('timetable.title')}</h1>
-        <p className="mt-1 text-sm text-gray-400">{t('timetable.subtitle')}</p>
+        <p className="mt-1 text-sm text-text-muted">{t('timetable.subtitle')}</p>
       </header>
 
+      {/* Edition selector */}
+      <div className="mb-4 flex items-center gap-2 overflow-x-auto">
+        <HistoryIcon size={14} className="shrink-0 text-text-muted" />
+        {editions.map((ed) => (
+          <button
+            key={ed.year}
+            onClick={() => { setEdition(ed); setActiveDay('friday'); setActiveStage('ALL') }}
+            className={`shrink-0 rounded-full px-3 py-1.5 text-xs font-medium transition-colors ${
+              edition.year === ed.year
+                ? 'bg-accent text-text-primary'
+                : 'bg-surface-alt text-text-muted hover:bg-surface-card'
+            }`}
+          >
+            {ed.year} {ed.isCurrent && `(${t('timetable.currentEdition')})`}
+          </button>
+        ))}
+      </div>
+
+      {/* Edition theme banner */}
+      {!edition.isCurrent && (
+        <div className="mb-4 rounded-xl border border-border bg-surface-card p-3 text-center">
+          <p className="text-xs text-text-muted">{t('timetable.archive')}</p>
+          <p className="text-sm font-semibold text-text-primary italic">&ldquo;{edition.theme}&rdquo;</p>
+        </div>
+      )}
+
       {/* View toggle */}
-      <div className="mb-4 flex rounded-xl bg-gray-800/50 p-1">
+      <div className="mb-4 flex rounded-xl bg-surface-alt p-1">
         <button
           onClick={() => setViewMode('timetable')}
           className={`flex-1 rounded-lg py-2 text-xs font-medium transition-colors ${
-            viewMode === 'timetable' ? 'bg-defqon-red text-white' : 'text-gray-400 hover:text-white'
+            viewMode === 'timetable' ? 'bg-accent text-text-primary' : 'text-text-muted hover:text-text-primary'
           }`}
         >
           {t('timetable.fullLineup')}
@@ -382,7 +413,7 @@ export default function Timetable() {
         <button
           onClick={() => setViewMode('my-schedule')}
           className={`flex-1 rounded-lg py-2 text-xs font-medium transition-colors ${
-            viewMode === 'my-schedule' ? 'bg-defqon-red text-white' : 'text-gray-400 hover:text-white'
+            viewMode === 'my-schedule' ? 'bg-accent text-text-primary' : 'text-text-muted hover:text-text-primary'
           }`}
         >
           {t('timetable.mySchedule')} ({savedSets.length})
@@ -399,8 +430,8 @@ export default function Timetable() {
                 onClick={() => { setActiveDay(day.key); setActiveStage('ALL') }}
                 className={`shrink-0 rounded-full px-4 py-2 text-xs font-medium transition-colors ${
                   activeDay === day.key
-                    ? 'bg-defqon-red text-white'
-                    : 'bg-gray-800 text-gray-400 hover:bg-gray-700'
+                    ? 'bg-accent text-text-primary'
+                    : 'bg-surface-alt text-text-muted hover:bg-surface-card'
                 }`}
               >
                 {t(`timetable.days.${day.key}`)}
@@ -413,7 +444,7 @@ export default function Timetable() {
             <button
               onClick={() => setActiveStage('ALL')}
               className={`shrink-0 rounded-lg px-3 py-1.5 text-xs font-medium transition-colors ${
-                activeStage === 'ALL' ? 'bg-white text-gray-900' : 'bg-gray-800 text-gray-400 hover:bg-gray-700'
+                activeStage === 'ALL' ? 'bg-white text-gray-900' : 'bg-surface-alt text-text-muted hover:bg-surface-card'
               }`}
             >
               {t('timetable.allStages')}
@@ -423,7 +454,7 @@ export default function Timetable() {
                 key={stage}
                 onClick={() => setActiveStage(stage)}
                 className={`shrink-0 rounded-lg px-3 py-1.5 text-xs font-medium transition-colors ${
-                  activeStage === stage ? 'text-white' : 'text-gray-400 hover:text-white'
+                  activeStage === stage ? 'text-text-primary' : 'text-text-muted hover:text-text-primary'
                 }`}
                 style={activeStage === stage ? { backgroundColor: stageColors[stage] } : { backgroundColor: 'rgb(31,41,55)' }}
               >
@@ -473,7 +504,7 @@ export default function Timetable() {
                 if (daySets.length === 0) return null
                 return (
                   <div key={day.key}>
-                    <h3 className="mb-2 text-xs font-medium uppercase tracking-wider text-gray-400">
+                    <h3 className="mb-2 text-xs font-medium uppercase tracking-wider text-text-muted">
                       {t(`timetable.days.${day.key}`)} — {day.date}
                     </h3>
                     <div className="space-y-2">

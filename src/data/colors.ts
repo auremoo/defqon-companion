@@ -1,7 +1,6 @@
 export interface DefqonColor {
   id: string
   name: string
-  emoji: string
   styleKey: string
   style: string
   shortDesc: string
@@ -9,17 +8,18 @@ export interface DefqonColor {
   bpm: string
   vibe: string
   artists: string[]
-  tailwindColor: string
   hex: string
   spotify?: string
   youtube?: string
+  apple?: string
+  deezer?: string
+  soundcloud?: string
 }
 
 export const colors: DefqonColor[] = [
   {
     id: 'red',
     name: 'RED',
-    emoji: '\u2764\ufe0f',
     styleKey: 'Euphoric Hardstyle',
     style: 'Main stage — the heart of Defqon.1',
     shortDesc: 'The legendary main stage where the biggest names in hardstyle perform.',
@@ -27,15 +27,15 @@ export const colors: DefqonColor[] = [
     bpm: '150–160',
     vibe: 'Euphoric, epic, emotional',
     artists: ['Headhunterz', 'Wildstylez', 'D-Block & S-te-Fan', 'Sound Rush', 'Sub Zero Project'],
-    tailwindColor: 'bg-defqon-red',
     hex: '#e63946',
     spotify: 'https://open.spotify.com/search/defqon%20red%20euphoric%20hardstyle',
     youtube: 'https://www.youtube.com/results?search_query=defqon+red+stage',
+    apple: 'https://music.apple.com/search?term=euphoric+hardstyle+defqon',
+    deezer: 'https://www.deezer.com/search/euphoric%20hardstyle%20defqon',
   },
   {
     id: 'blue',
     name: 'BLUE',
-    emoji: '\ud83d\udd35',
     styleKey: 'Raw Hardstyle',
     style: 'Raw & mainstream raw hardstyle',
     shortDesc: 'Harder kicks, darker atmosphere, raw energy.',
@@ -43,15 +43,15 @@ export const colors: DefqonColor[] = [
     bpm: '150–160',
     vibe: 'Dark, aggressive, intense',
     artists: ['Warface', 'B-Front', 'Rebelion', 'Act of Rage', 'Ran-D'],
-    tailwindColor: 'bg-defqon-blue',
     hex: '#1d3557',
     spotify: 'https://open.spotify.com/search/defqon%20blue%20raw%20hardstyle',
     youtube: 'https://www.youtube.com/results?search_query=defqon+blue+raw+stage',
+    apple: 'https://music.apple.com/search?term=raw+hardstyle',
+    deezer: 'https://www.deezer.com/search/raw%20hardstyle',
   },
   {
     id: 'black',
     name: 'BLACK',
-    emoji: '\ud83d\udda4',
     styleKey: 'Hardcore',
     style: 'Pure hardcore',
     shortDesc: 'Faster, harder, louder. The home of hardcore.',
@@ -59,15 +59,15 @@ export const colors: DefqonColor[] = [
     bpm: '160–200',
     vibe: 'Extreme, relentless, powerful',
     artists: ['Angerfist', 'Miss K8', 'Destructive Tendencies', 'Nosferatu', 'Dr. Peacock'],
-    tailwindColor: 'bg-defqon-black',
     hex: '#111111',
     spotify: 'https://open.spotify.com/search/defqon%20black%20hardcore',
     youtube: 'https://www.youtube.com/results?search_query=defqon+black+hardcore+stage',
+    apple: 'https://music.apple.com/search?term=hardcore+defqon',
+    deezer: 'https://www.deezer.com/search/hardcore%20defqon',
   },
   {
     id: 'yellow',
     name: 'YELLOW',
-    emoji: '\ud83d\udfe1',
     styleKey: 'Frenchcore / Uptempo / Terror',
     style: 'Frenchcore, uptempo & terror',
     shortDesc: 'Ultra-fast and distorted. Born in France, loved worldwide.',
@@ -75,15 +75,15 @@ export const colors: DefqonColor[] = [
     bpm: '190–250+',
     vibe: 'Chaotic, fast, explosive',
     artists: ['Sefa', 'Dr. Peacock', 'Billx', 'Partyraiser', 'The Speed Freak'],
-    tailwindColor: 'bg-defqon-yellow',
     hex: '#f4a261',
     spotify: 'https://open.spotify.com/search/frenchcore%20uptempo%20defqon',
     youtube: 'https://www.youtube.com/results?search_query=defqon+yellow+frenchcore',
+    apple: 'https://music.apple.com/search?term=frenchcore+uptempo',
+    deezer: 'https://www.deezer.com/search/frenchcore%20uptempo',
   },
   {
     id: 'indigo',
     name: 'INDIGO',
-    emoji: '\ud83d\udd2e',
     styleKey: 'Extra Raw Hardstyle',
     style: 'The darkest corner of raw hardstyle',
     shortDesc: 'Raw pushed to the extreme. Industrial and uncompromising.',
@@ -91,15 +91,15 @@ export const colors: DefqonColor[] = [
     bpm: '150–165',
     vibe: 'Industrial, underground, brutal',
     artists: ['Radical Redemption', 'Digital Punk', 'E-Force', 'Rooler', 'Vertex'],
-    tailwindColor: 'bg-defqon-indigo',
     hex: '#4a00e0',
     spotify: 'https://open.spotify.com/search/extra%20raw%20hardstyle',
     youtube: 'https://www.youtube.com/results?search_query=defqon+indigo+extra+raw',
+    apple: 'https://music.apple.com/search?term=extra+raw+hardstyle',
+    deezer: 'https://www.deezer.com/search/extra%20raw%20hardstyle',
   },
   {
     id: 'magenta',
     name: 'MAGENTA',
-    emoji: '\ud83c\udf38',
     styleKey: 'Early Hardstyle / Classics',
     style: 'The golden era of hardstyle',
     shortDesc: 'Nostalgia meets energy. The classics that started it all.',
@@ -107,15 +107,15 @@ export const colors: DefqonColor[] = [
     bpm: '140–155',
     vibe: 'Nostalgic, classic, warm',
     artists: ['Technoboy', 'Tuneboy', 'The Prophet', 'Showtek', 'Brennan Heart'],
-    tailwindColor: 'bg-defqon-magenta',
     hex: '#e040a0',
     spotify: 'https://open.spotify.com/search/early%20hardstyle%20classics',
     youtube: 'https://www.youtube.com/results?search_query=defqon+magenta+early+hardstyle',
+    apple: 'https://music.apple.com/search?term=early+hardstyle+classics',
+    deezer: 'https://www.deezer.com/search/early%20hardstyle%20classics',
   },
   {
     id: 'silver',
     name: 'SILVER',
-    emoji: '\u2699\ufe0f',
     styleKey: 'Industrial Hardcore',
     style: 'Mechanical, metallic, industrial',
     shortDesc: 'Where hardcore meets industrial. Cold, hard, metallic.',
@@ -123,15 +123,15 @@ export const colors: DefqonColor[] = [
     bpm: '170–200',
     vibe: 'Mechanical, cold, dystopian',
     artists: ['Sei2ure', 'Tymon', 'Drokz', 'The Outside Agency', 'Ophidian'],
-    tailwindColor: 'bg-defqon-silver',
     hex: '#a8a8a8',
     spotify: 'https://open.spotify.com/search/industrial%20hardcore',
     youtube: 'https://www.youtube.com/results?search_query=defqon+silver+industrial',
+    apple: 'https://music.apple.com/search?term=industrial+hardcore',
+    deezer: 'https://www.deezer.com/search/industrial%20hardcore',
   },
   {
     id: 'gold',
     name: 'GOLD',
-    emoji: '\ud83c\udfc6',
     styleKey: 'Early Rave / Millennium Hardcore',
     style: 'Old-school rave & millennium hardcore',
     shortDesc: 'The roots of the rave scene. 90s and early 2000s vibes.',
@@ -139,15 +139,15 @@ export const colors: DefqonColor[] = [
     bpm: '150–180',
     vibe: 'Retro, rave, old-school',
     artists: ['Paul Elstak', 'Darkraver', 'Neophyte', 'Evil Activities', 'Korsakoff'],
-    tailwindColor: 'bg-defqon-gold',
     hex: '#d4a20a',
     spotify: 'https://open.spotify.com/search/early%20rave%20gabber%20hardcore',
     youtube: 'https://www.youtube.com/results?search_query=defqon+gold+early+rave',
+    apple: 'https://music.apple.com/search?term=early+rave+gabber',
+    deezer: 'https://www.deezer.com/search/early%20rave%20gabber',
   },
   {
     id: 'purple',
     name: 'PURPLE',
-    emoji: '\ud83c\udf1f',
     styleKey: 'Talent Stage',
     style: 'New artists & rising stars',
     shortDesc: 'Where tomorrow\'s legends are born. Fresh talent showcase.',
@@ -155,9 +155,10 @@ export const colors: DefqonColor[] = [
     bpm: '150–170',
     vibe: 'Fresh, exciting, surprising',
     artists: ['Emerging DJs', 'Contest winners', 'Rising producers'],
-    tailwindColor: 'bg-defqon-purple',
     hex: '#7b2d8e',
     spotify: 'https://open.spotify.com/search/new%20hardstyle%20talent',
     youtube: 'https://www.youtube.com/results?search_query=defqon+purple+talent+stage',
+    apple: 'https://music.apple.com/search?term=new+hardstyle+talent',
+    deezer: 'https://www.deezer.com/search/new%20hardstyle%20talent',
   },
 ]
