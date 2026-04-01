@@ -88,6 +88,16 @@ body {
   z-index: 0;
 }
 
+/* Scrolling marquee animation */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  display: inline-block;
+  animation: marquee 15s linear infinite;
+}
+
 /* Gradient fade for sections */
 .fade-bottom {
   mask-image: linear-gradient(to bottom, black 70%, transparent 100%);

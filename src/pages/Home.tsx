@@ -52,7 +52,7 @@ export default function Home() {
             <iframe
               src="https://open.spotify.com/embed/playlist/5tkWlvbjzTTCMKVrcaEHpQ?utm_source=generator&theme=0"
               width="100%"
-              height="152"
+              height="352"
               style={{ border: 'none' }}
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
               loading="lazy"
