@@ -140,6 +140,21 @@
       "dnb": "Drum & Bass (PINK) \u2014 Fast breakbeats at 170\u2013180 BPM. Introduced at Defqon.1 in 2025 with its own dedicated stage.",
       "happyHardcore": "Happy Hardcore (UV) \u2014 Fast, joyful, and uplifting. 160\u2013180 BPM with pitched-up vocals and euphoric piano melodies. Think Darren Styles and Da Tweekaz crossovers."
     },
+    "practical": {
+      "title": "Practical Info",
+      "gettingThereTitle": "Getting There",
+      "gettingThereText": "Defqon.1 takes place at Walibi Holland, Biddinghuizen, Netherlands. Shuttle buses run from Amsterdam, Rotterdam, and Utrecht. Car parking is available on-site — arrive early to secure a good spot. There is no public transport directly to the venue.",
+      "campingTitle": "Camping",
+      "campingText": "Camping opens on Thursday morning. Bring all your own gear — tents, sleeping bags, chairs, etc. No glass is allowed on the campsite. Lockers are available for rent. Showers and toilets are provided on-site.",
+      "whatToBringTitle": "What to Bring",
+      "whatToBringText": "Earplugs (essential!), sunscreen, rain poncho, comfortable shoes, power bank, cash + card, ID/passport, reusable water bottle. These basics will make your festival experience much more enjoyable.",
+      "rulesTitle": "Rules",
+      "rulesText": "18+ only — ID is checked at the entrance. No drugs. No professional cameras. No glass bottles. No weapons or sharp objects. Make sure to read the full terms on the official Defqon.1 website before attending.",
+      "tipsTitle": "Tips from Veterans",
+      "tipsText": "Arrive on Thursday for The Gathering — it's the perfect warm-up. Explore all stages, not just your favorite. Eat before heading to the stages. Stay hydrated throughout the day. Download the Q-dance app for the official timetable. Meet at the Defqon.1 flag for meetups with friends.",
+      "weatherTitle": "Weather",
+      "weatherText": "Late June in the Netherlands — expect anything. Hot sun during the day, cold at night. Pack layers, and always have a rain poncho ready. Sunscreen during the day, a hoodie for the evening."
+    },
     "vocabulary": {
       "title": "Vocabulary",
       "kick": "Kick \u2014 The heavy bass drum hit that defines hardstyle. The most important element of any track.",
@@ -215,6 +230,10 @@
     "noFriendSets": "No sets from your buddies yet. Mark friends as \"Going\" to see their plans!",
     "manageBuddies": "Manage buddies",
     "youToo": "You too",
+    "searchArtist": "Search artist...",
+    "searchResultCount": "results",
+    "setsPlanned": "sets planned",
+    "emptyBuddySchedule": "No sets saved for this edition yet",
     "edition": "Edition",
     "archive": "Past editions",
     "currentEdition": "Current",

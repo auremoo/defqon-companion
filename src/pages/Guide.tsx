@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import PageShell from '../components/PageShell'
 
-type Tab = 'history' | 'hardstyle' | 'vocabulary'
+type Tab = 'history' | 'hardstyle' | 'vocabulary' | 'practical'
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
@@ -82,10 +82,49 @@ function VocabularyTab() {
   )
 }
 
+function PracticalTab() {
+  const { t } = useTranslation()
+  return (
+    <div className="space-y-4">
+      <Section title={t('guide.practical.gettingThereTitle')}>
+        <p className="text-sm leading-relaxed text-text-secondary">
+          {t('guide.practical.gettingThereText')}
+        </p>
+      </Section>
+      <Section title={t('guide.practical.campingTitle')}>
+        <p className="text-sm leading-relaxed text-text-secondary">
+          {t('guide.practical.campingText')}
+        </p>
+      </Section>
+      <Section title={t('guide.practical.whatToBringTitle')}>
+        <p className="text-sm leading-relaxed text-text-secondary">
+          {t('guide.practical.whatToBringText')}
+        </p>
+      </Section>
+      <Section title={t('guide.practical.rulesTitle')}>
+        <p className="text-sm leading-relaxed text-text-secondary">
+          {t('guide.practical.rulesText')}
+        </p>
+      </Section>
+      <Section title={t('guide.practical.tipsTitle')}>
+        <p className="text-sm leading-relaxed text-text-secondary">
+          {t('guide.practical.tipsText')}
+        </p>
+      </Section>
+      <Section title={t('guide.practical.weatherTitle')}>
+        <p className="text-sm leading-relaxed text-text-secondary">
+          {t('guide.practical.weatherText')}
+        </p>
+      </Section>
+    </div>
+  )
+}
+
 const tabs: { key: Tab; labelKey: string }[] = [
   { key: 'history', labelKey: 'guide.history.title' },
   { key: 'hardstyle', labelKey: 'guide.hardstyle.title' },
   { key: 'vocabulary', labelKey: 'guide.vocabulary.title' },
+  { key: 'practical', labelKey: 'guide.practical.title' },
 ]
 
 export default function Guide() {
@@ -116,6 +155,7 @@ export default function Guide() {
         {activeTab === 'history' && <HistoryTab />}
         {activeTab === 'hardstyle' && <HardstyleTab />}
         {activeTab === 'vocabulary' && <VocabularyTab />}
+        {activeTab === 'practical' && <PracticalTab />}
       </div>
     </PageShell>
   )

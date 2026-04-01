@@ -140,6 +140,21 @@
       "dnb": "Drum & Bass (PINK) \u2014 Breakbeats rapides \u00e0 170\u2013180 BPM. Introduit \u00e0 Defqon.1 en 2025 avec sa propre sc\u00e8ne d\u00e9di\u00e9e.",
       "happyHardcore": "Happy Hardcore (UV) \u2014 Rapide, joyeux et euphorique. 160\u2013180 BPM avec des voix pitch\u00e9es et des m\u00e9lodies de piano. Pense Darren Styles et les crossovers de Da Tweekaz."
     },
+    "practical": {
+      "title": "Infos pratiques",
+      "gettingThereTitle": "Comment s'y rendre",
+      "gettingThereText": "Defqon.1 se déroule à Walibi Holland, Biddinghuizen, aux Pays-Bas. Des navettes partent d'Amsterdam, Rotterdam et Utrecht. Un parking est disponible sur place — arrive tôt pour avoir une bonne place. Il n'y a pas de transport en commun direct jusqu'au site.",
+      "campingTitle": "Camping",
+      "campingText": "Le camping ouvre le jeudi matin. Amène tout ton matériel — tente, sac de couchage, chaises, etc. Le verre est interdit sur le camping. Des casiers sont disponibles à la location. Douches et toilettes sont sur place.",
+      "whatToBringTitle": "Quoi emmener",
+      "whatToBringText": "Bouchons d'oreilles (indispensable !), crème solaire, poncho de pluie, chaussures confortables, batterie externe, espèces + carte bancaire, pièce d'identité/passeport, gourde réutilisable. Ces essentiels rendront ton expérience bien plus agréable.",
+      "rulesTitle": "Règles",
+      "rulesText": "Interdit aux moins de 18 ans — contrôle d'identité à l'entrée. Pas de drogues. Pas d'appareils photo professionnels. Pas de bouteilles en verre. Pas d'armes ni d'objets tranchants. Lis bien les conditions complètes sur le site officiel de Defqon.1 avant de venir.",
+      "tipsTitle": "Conseils de vétérans",
+      "tipsText": "Arrive le jeudi pour The Gathering — c'est l'échauffement parfait. Explore toutes les scènes, pas seulement ta préférée. Mange avant d'aller aux scènes. Reste bien hydraté tout au long de la journée. Télécharge l'app Q-dance pour le programme officiel. Retrouve tes amis au drapeau Defqon.1 pour les points de rencontre.",
+      "weatherTitle": "Météo",
+      "weatherText": "Fin juin aux Pays-Bas — prépare-toi à tout. Grand soleil la journée, froid la nuit. Prends des couches de vêtements et garde toujours un poncho de pluie à portée de main. Crème solaire en journée, sweat pour la soirée."
+    },
     "vocabulary": {
       "title": "Le vocabulaire",
       "kick": "Kick \u2014 Le coup de grosse caisse qui d\u00e9finit le hardstyle. L\u2019\u00e9l\u00e9ment central de tout morceau.",
@@ -215,6 +230,10 @@
     "noFriendSets": "Aucun set de tes potes pour l\u2019instant. Marque des amis comme \u00ab\u00a0Y va\u00a0\u00bb pour voir leurs plans\u00a0!",
     "manageBuddies": "G\u00e9rer les potes",
     "youToo": "Toi aussi",
+    "searchArtist": "Chercher un artiste\u2026",
+    "searchResultCount": "r\u00e9sultats",
+    "setsPlanned": "sets pr\u00e9vus",
+    "emptyBuddySchedule": "Aucun set sauvegard\u00e9 pour cette \u00e9dition",
     "edition": "\u00c9dition",
     "archive": "\u00c9ditions pass\u00e9es",
     "currentEdition": "En cours",

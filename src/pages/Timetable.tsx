@@ -13,7 +13,7 @@ function getLocalSavedSets(year: number): string[] {
 }
 
 // ─── Friends panel ───
-function FriendsPanel({ onClose, editionYear }: { onClose: () => void; editionYear: number }) {
+function FriendsPanel({ onClose, editionYear, onViewSchedule }: { onClose: () => void; editionYear: number; onViewSchedule: (friendId: string, friendName: string) => void }) {
   const { t } = useTranslation()
   const { user } = useAuth()
   const [searchQuery, setSearchQuery] = useState('')
@@ -177,7 +177,12 @@ function FriendsPanel({ onClose, editionYear }: { onClose: () => void; editionYe
                     >
                       {isBuddy ? t('timetable.goingTogether') : editionYear.toString()}
                     </button>
-                    <span className="text-sm text-text-secondary">{f.display_name || f.username}</span>
+                    <button
+                      onClick={() => { onViewSchedule(f.friendUserId, f.display_name || f.username); onClose() }}
+                      className="text-sm text-text-secondary hover:text-accent transition-colors"
+                    >
+                      {f.display_name || f.username}
+                    </button>
                   </div>
                   <button onClick={() => removeFriend(f.id)} className="text-xs text-gray-500 hover:text-red-400">{t('timetable.remove')}</button>
                 </div>
@@ -265,6 +270,9 @@ export default function Timetable() {
   const [friendSets, setFriendSets] = useState<Record<string, string[]>>({})
   const [showFriends, setShowFriends] = useState(false)
   const [viewMode, setViewMode] = useState<'timetable' | 'my-schedule' | 'friends'>('timetable')
+  const [searchQuery, setSearchQuery] = useState('')
+  const [viewingBuddy, setViewingBuddy] = useState<{ id: string; name: string } | null>(null)
+  const [buddySetIds, setBuddySetIds] = useState<string[]>([])
 
   // Load saved sets from Supabase filtered by edition year
   useEffect(() => {
@@ -349,6 +357,19 @@ export default function Timetable() {
     }
   }
 
+  // Load a buddy's schedule
+  const viewBuddySchedule = async (friendId: string, friendName: string) => {
+    setViewingBuddy({ id: friendId, name: friendName })
+    if (supabase) {
+      const { data } = await supabase
+        .from('timetable_entries')
+        .select('set_id')
+        .eq('user_id', friendId)
+        .eq('edition_year', edition.year)
+      setBuddySetIds(data?.map((d) => d.set_id) || [])
+    }
+  }
+
   // Check for time conflicts in saved sets
   const getConflicts = (): Set[][] => {
     const saved = edition.lineup.filter((s) => savedSets.includes(s.id))
@@ -367,7 +388,28 @@ export default function Timetable() {
   const filteredSets = edition.lineup
     .filter((s) => s.day === activeDay)
     .filter((s) => activeStage === 'ALL' || s.stage === activeStage)
+    .filter((s) => !searchQuery || s.artist.toLowerCase().includes(searchQuery.toLowerCase()))
     .sort((a, b) => a.startTime.localeCompare(b.startTime))
+
+  // When searching across all days/stages
+  const searchResults = searchQuery.length >= 2
+    ? edition.lineup
+        .filter((s) => s.artist.toLowerCase().includes(searchQuery.toLowerCase()))
+        .sort((a, b) => {
+          const dayOrder = days.findIndex((d) => d.key === a.day) - days.findIndex((d) => d.key === b.day)
+          return dayOrder || a.startTime.localeCompare(b.startTime)
+        })
+    : null
+
+  // Buddy's sets for the schedule viewer
+  const buddySets = viewingBuddy
+    ? edition.lineup
+        .filter((s) => buddySetIds.includes(s.id))
+        .sort((a, b) => {
+          const dayOrder = days.findIndex((d) => d.key === a.day) - days.findIndex((d) => d.key === b.day)
+          return dayOrder || a.startTime.localeCompare(b.startTime)
+        })
+    : []
 
   const mySets = edition.lineup
     .filter((s) => savedSets.includes(s.id))
@@ -455,7 +497,36 @@ export default function Timetable() {
 
   return (
     <PageShell title={t('timetable.title')} subtitle={t('timetable.subtitle')} headerContent={headerContent}>
-      {viewMode === 'timetable' ? (
+      {/* Search bar — always visible */}
+      <div className="mb-3">
+        <input
+          type="text"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          placeholder={t('timetable.searchArtist')}
+          className="w-full rounded-xl border border-border bg-surface-card px-4 py-2.5 text-sm text-text-primary placeholder-text-muted outline-none focus:border-accent/50"
+        />
+      </div>
+
+      {/* Search results override */}
+      {searchResults ? (
+        <div className="mx-auto w-full max-w-md">
+          <p className="mb-2 text-xs text-text-muted">
+            {searchResults.length} {t('timetable.searchResultCount')}
+          </p>
+          <div className="space-y-2">
+            {searchResults.map((set) => (
+              <SetCard
+                key={set.id}
+                set={set}
+                saved={savedSets.includes(set.id)}
+                friendCount={friendSets[set.id]?.length || 0}
+                onToggle={() => toggleSet(set.id)}
+              />
+            ))}
+          </div>
+        </div>
+      ) : viewMode === 'timetable' ? (
         <>
           {/* Day tabs — card style */}
           <div className="mb-3 grid grid-cols-4 gap-1.5">
@@ -629,7 +700,59 @@ export default function Timetable() {
         </div>
       ) : null}
 
-      {showFriends && <FriendsPanel onClose={() => setShowFriends(false)} editionYear={edition.year} />}
+      {showFriends && <FriendsPanel onClose={() => setShowFriends(false)} editionYear={edition.year} onViewSchedule={viewBuddySchedule} />}
+
+      {/* Buddy schedule viewer */}
+      {viewingBuddy && (
+        <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/70 sm:items-center" onClick={() => setViewingBuddy(null)}>
+          <div
+            className="w-full max-w-md overflow-y-auto rounded-t-2xl border border-border bg-surface p-5 sm:rounded-2xl"
+            style={{ maxHeight: 'calc(100dvh - 60px)', paddingBottom: 'calc(16px + env(safe-area-inset-bottom, 0px))' }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="mb-4 flex items-center justify-between">
+              <h2 className="defqon-heading text-lg text-text-primary">{viewingBuddy.name}</h2>
+              <button onClick={() => setViewingBuddy(null)} className="text-sm text-text-muted hover:text-text-primary">&times;</button>
+            </div>
+            <p className="mb-3 text-xs text-text-muted">{buddySets.length} {t('timetable.setsPlanned')}</p>
+            {buddySets.length === 0 ? (
+              <p className="py-8 text-center text-sm text-text-muted">{t('timetable.emptyBuddySchedule')}</p>
+            ) : (
+              <div className="space-y-4">
+                {days.map((day) => {
+                  const daySets = buddySets.filter((s) => s.day === day.key)
+                  if (daySets.length === 0) return null
+                  return (
+                    <div key={day.key}>
+                      <h3 className="mb-2 text-xs font-bold uppercase tracking-wider text-text-muted">
+                        {t(`timetable.days.${day.key}`)}
+                      </h3>
+                      <div className="space-y-1.5">
+                        {daySets.map((set) => {
+                          const isMine = savedSets.includes(set.id)
+                          return (
+                            <div
+                              key={set.id}
+                              className={`flex items-center gap-2 rounded-lg p-2.5 ${isMine ? 'bg-accent/10' : 'bg-surface-alt'}`}
+                            >
+                              <div className="h-8 w-1 shrink-0 rounded-full" style={{ backgroundColor: stageColors[set.stage] }} />
+                              <div className="flex-1 min-w-0">
+                                <p className="truncate text-sm text-text-primary">{set.artist}</p>
+                                <p className="text-[10px] text-text-muted">{set.stage} &middot; {set.startTime}</p>
+                              </div>
+                              {isMine && <span className="text-[9px] font-bold uppercase text-accent">{t('timetable.youToo')}</span>}
+                            </div>
+                          )
+                        })}
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
+            )}
+          </div>
+        </div>
+      )}
     </PageShell>
   )
 }
