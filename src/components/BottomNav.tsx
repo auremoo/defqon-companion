@@ -6,6 +6,7 @@ const navItems = [
   { to: '/', Icon: HomeIcon, labelKey: 'nav.home' },
   { to: '/colors', Icon: PaletteIcon, labelKey: 'nav.colors' },
   { to: '/timetable', Icon: CalendarIcon, labelKey: 'nav.timetable' },
+  { to: '/music', Icon: MusicIcon, labelKey: 'nav.music' },
   { to: '/guide', Icon: BookIcon, labelKey: 'nav.guide' },
 ]
 

@@ -10,6 +10,7 @@ const Timetable = lazy(() => import('./pages/Timetable'))
 const Checklist = lazy(() => import('./pages/Checklist'))
 const Settings = lazy(() => import('./pages/Settings'))
 const MyEditions = lazy(() => import('./pages/MyEditions'))
+const Music = lazy(() => import('./pages/Music'))
 
 function PageLoader() {
   return <div className="flex flex-1 items-center justify-center"><span className="text-gray-500">...</span></div>
@@ -29,6 +30,7 @@ export default function App() {
               <Route path="/checklist" element={<Checklist />} />
               <Route path="/settings" element={<Settings />} />
               <Route path="/my-editions" element={<MyEditions />} />
+              <Route path="/music" element={<Music />} />
             </Routes>
           </Suspense>
         </main>

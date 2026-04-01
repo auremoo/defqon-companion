@@ -4,6 +4,7 @@
     "colors": "Colors",
     "guide": "Guide",
     "nowListening": "Listen now",
+    "music": "Music",
     "checklist": "Checklist",
     "timetable": "Timetable"
   },
@@ -257,6 +258,22 @@
       "saturday": "Saturday",
       "sunday": "Sunday"
     }
+  },
+  "music": {
+    "title": "Music",
+    "subtitle": "Playlists to get you ready for Defqon.1",
+    "getHyped": "Get Hyped",
+    "qdancePlaylists": "Q-dance on Spotify",
+    "allQdancePlaylists": "All Q-dance playlists on Spotify",
+    "defqon2026": "Defqon.1 2026",
+    "powerHour": "POWER HOUR 2026",
+    "hardstyle2026": "Hardstyle 2026",
+    "rawHardstyle": "Raw Hardstyle 2026",
+    "classics": "Hardstyle Classics",
+    "hardcore2026": "Hardcore 2026",
+    "warriorWorkout": "Warrior Workout \u2014 Hardstyle Gym",
+    "top40": "Hardstyle Top 40",
+    "qlimax": "Qlimax"
   },
   "myEditions": {
     "title": "My Editions",
