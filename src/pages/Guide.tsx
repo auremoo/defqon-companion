@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import PageShell from '../components/PageShell'
 
@@ -130,6 +130,8 @@ const tabs: { key: Tab; labelKey: string }[] = [
 export default function Guide() {
   const { t } = useTranslation()
   const [activeTab, setActiveTab] = useState<Tab>('history')
+
+  useEffect(() => { document.title = 'Discover Hardstyle — Defqon Companion' }, [])
 
   const tabBar = (
     <div className="mt-4 flex gap-2 overflow-x-auto">

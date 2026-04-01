@@ -116,6 +116,8 @@ export default function Colors() {
   const { t } = useTranslation()
   const [favorites, setFavorites] = useState<string[]>(getStoredFavorites)
 
+  useEffect(() => { document.title = 'Colors of Defqon.1 — Defqon Companion' }, [])
+
   useEffect(() => {
     localStorage.setItem('defqon-favorites', JSON.stringify(favorites))
   }, [favorites])

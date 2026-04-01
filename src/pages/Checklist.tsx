@@ -16,6 +16,8 @@ export default function Checklist() {
   const [items, setItems] = useState<ChecklistItem[]>(getStoredChecklist)
   const [newItem, setNewItem] = useState('')
 
+  useEffect(() => { document.title = 'Festival Checklist — Defqon Companion' }, [])
+
   useEffect(() => {
     localStorage.setItem('defqon-checklist', JSON.stringify(items))
   }, [items])

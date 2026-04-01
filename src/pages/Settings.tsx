@@ -32,6 +32,8 @@ export default function Settings() {
   const [isDediqated, setIsDediqated] = useState(false)
   const [saveStatus, setSaveStatus] = useState<'idle' | 'saving' | 'saved'>('idle')
 
+  useEffect(() => { document.title = 'Settings — Defqon Companion' }, [])
+
   // Sync local state when profile loads/changes
   useEffect(() => {
     if (profile) {

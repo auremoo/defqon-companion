@@ -1,11 +1,12 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useAuth } from '../contexts/AuthContext'
 import { supabase } from '../lib/supabase'
 import { UsersIcon } from '../components/Icons'
 import PageShell from '../components/PageShell'
+import LiveMode from '../components/LiveMode'
 import { days, stageColors, type Day, type Stage, type Set } from '../data/lineup'
-import { editions, getCurrentEdition, type Edition } from '../data/editions'
+import { editionMetas, getCurrentEdition, loadEdition, type Edition } from '../data/editions'
 
 // ─── Local storage fallback for non-authenticated users ───
 function getLocalSavedSets(year: number): string[] {
@@ -274,6 +275,8 @@ export default function Timetable() {
   const [viewingBuddy, setViewingBuddy] = useState<{ id: string; name: string } | null>(null)
   const [buddySetIds, setBuddySetIds] = useState<string[]>([])
 
+  useEffect(() => { document.title = 'Timetable — Defqon Companion' }, [])
+
   // Load saved sets from Supabase filtered by edition year
   useEffect(() => {
     if (!supabase || !user) return
@@ -370,6 +373,26 @@ export default function Timetable() {
     }
   }
 
+  // Share planning link
+  const shareUrl = useMemo(() => {
+    if (savedSets.length === 0) return ''
+    const ids = savedSets.map((id) => {
+      const parts = id.split('-')
+      return parts[parts.length - 1]
+    }).join(',')
+    return `${window.location.origin}${import.meta.env.BASE_URL}#/timetable?y=${edition.year}&s=${ids}`
+  }, [savedSets, edition.year])
+
+  const sharePlanning = async () => {
+    const text = t('timetable.shareText', { count: savedSets.length, year: edition.year })
+    if (navigator.share) {
+      await navigator.share({ title: `Defqon.1 ${edition.year}`, text, url: shareUrl })
+    } else {
+      await navigator.clipboard.writeText(`${text}\n${shareUrl}`)
+      alert(t('timetable.linkCopied'))
+    }
+  }
+
   // Check for time conflicts in saved sets
   const getConflicts = (): Set[][] => {
     const saved = edition.lineup.filter((s) => savedSets.includes(s.id))
@@ -434,17 +457,20 @@ export default function Timetable() {
       {/* Edition + Friends row */}
       <div className="mt-3 flex items-center justify-between">
         <div className="flex gap-1.5">
-          {editions.map((ed) => (
+          {editionMetas.map((em) => (
             <button
-              key={ed.year}
-              onClick={() => { setEdition(ed); setActiveDay('friday'); setActiveStage('ALL') }}
+              key={em.year}
+              onClick={async () => {
+                const ed = await loadEdition(em.year)
+                setEdition(ed); setActiveDay('friday'); setActiveStage('ALL')
+              }}
               className={`rounded-md px-2.5 py-1 text-xs font-bold uppercase tracking-wider transition-colors ${
-                edition.year === ed.year
+                edition.year === em.year
                   ? 'bg-accent text-text-primary'
                   : 'bg-white/5 text-text-muted hover:text-text-primary'
               }`}
             >
-              {ed.year}
+              {em.year}
             </button>
           ))}
         </div>
@@ -507,6 +533,11 @@ export default function Timetable() {
           className="w-full rounded-xl border border-border bg-surface-card px-4 py-2.5 text-sm text-text-primary placeholder-text-muted outline-none focus:border-accent/50"
         />
       </div>
+
+      {/* Live mode — only for current edition */}
+      {edition.isCurrent && (
+        <LiveMode edition={edition} friendSets={friendSets} savedSets={savedSets} />
+      )}
 
       {/* Search results override */}
       {searchResults ? (
@@ -594,6 +625,16 @@ export default function Timetable() {
       ) : viewMode === 'my-schedule' ? (
         /* My schedule view */
         <div className="mx-auto w-full max-w-md">
+          {/* Share button */}
+          {savedSets.length > 0 && (
+            <button
+              onClick={sharePlanning}
+              className="mb-3 w-full rounded-xl border border-border bg-surface-card py-2.5 text-xs font-semibold uppercase tracking-wider text-text-secondary transition-colors hover:border-accent/50 hover:text-accent"
+            >
+              {t('timetable.sharePlanning')}
+            </button>
+          )}
+
           {/* Conflicts warning */}
           {conflicts.length > 0 && (
             <div className="mb-4 rounded-xl border border-yellow-700/50 bg-yellow-900/20 p-3">

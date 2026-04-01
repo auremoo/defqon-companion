@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { useAuth } from '../contexts/AuthContext'
 import { supabase } from '../lib/supabase'
 import PageShell from '../components/PageShell'
-import { editions } from '../data/editions'
+import { editionMetas, loadEdition, type Edition } from '../data/editions'
 import { stageColors, days, type Set } from '../data/lineup'
 
 interface EditionHistory {
@@ -23,10 +23,13 @@ export default function MyEditions() {
   const { user, configured } = useAuth()
   const [editionHistories, setEditionHistories] = useState<EditionHistory[]>([])
   const [selectedYear, setSelectedYear] = useState<number | null>(null)
+  const [selectedEdition, setSelectedEdition] = useState<Edition | null>(null)
   const [savedSets, setSavedSets] = useState<SavedSet[]>([])
   const [notes, setNotes] = useState('')
   const [rating, setRating] = useState<number | null>(null)
   const [saving, setSaving] = useState(false)
+
+  useEffect(() => { document.title = 'My Editions — Defqon Companion' }, [])
 
   useEffect(() => {
     if (!supabase || !user) return
@@ -41,6 +44,8 @@ export default function MyEditions() {
 
   const loadEditionSets = async (year: number) => {
     setSelectedYear(year)
+    const ed = await loadEdition(year)
+    setSelectedEdition(ed)
     if (!supabase || !user) {
       // Fallback to localStorage
       try {
@@ -80,7 +85,6 @@ export default function MyEditions() {
     setSaving(false)
   }
 
-  const selectedEdition = editions.find((e) => e.year === selectedYear)
   const selectedSetsData: Set[] = selectedEdition
     ? selectedEdition.lineup.filter((s) => savedSets.some((ss) => ss.set_id === s.id))
         .sort((a, b) => {
@@ -93,7 +97,7 @@ export default function MyEditions() {
     <PageShell title={t('myEditions.title')} subtitle={t('myEditions.subtitle')}>
       <div className="mx-auto w-full max-w-md space-y-4">
         {/* Edition cards */}
-        {editions.map((ed) => {
+        {editionMetas.map((ed) => {
           const history = editionHistories.find((h) => h.edition_year === ed.year)
           const isSelected = selectedYear === ed.year
           const localSets = (() => {

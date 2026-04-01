@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import CountdownTimer from '../components/CountdownTimer'
@@ -7,6 +8,8 @@ import { festival } from '../data/festival'
 
 export default function Home() {
   const { t } = useTranslation()
+
+  useEffect(() => { document.title = 'Defqon Companion — Your Festival Guide' }, [])
 
   const headerContent = (
     <>
