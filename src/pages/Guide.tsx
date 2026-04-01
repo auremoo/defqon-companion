@@ -2,8 +2,6 @@ import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import PageShell from '../components/PageShell'
 
-type Tab = 'history' | 'hardstyle' | 'vocabulary' | 'practical'
-
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div className="rounded-2xl border border-border bg-surface-card p-5">
@@ -13,7 +11,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
   )
 }
 
-function HistoryTab() {
+function HistoryContent() {
   const { t } = useTranslation()
   return (
     <div className="space-y-4">
@@ -41,7 +39,7 @@ function HistoryTab() {
   )
 }
 
-function HardstyleTab() {
+function HardstyleContent() {
   const { t } = useTranslation()
   const subgenres = ['euphoric', 'raw', 'extraRaw', 'hardcore', 'frenchcore', 'uptempo', 'terror', 'industrial', 'classic', 'earlyRave', 'hardTrance', 'hardTechno', 'dnb', 'happyHardcore'] as const
   return (
@@ -64,7 +62,7 @@ function HardstyleTab() {
   )
 }
 
-function VocabularyTab() {
+function VocabularyContent() {
   const { t } = useTranslation()
   const terms = ['kick', 'reverseBass', 'breakdown', 'climax', 'screeches', 'antiClimactic', 'bpm', 'gabber', 'shuffle', 'anthem', 'endshow', 'powerHour', 'set', 'qdance', 'hardBass'] as const
   return (
@@ -82,7 +80,7 @@ function VocabularyTab() {
   )
 }
 
-function PracticalTab() {
+function PracticalContent() {
   const { t } = useTranslation()
   return (
     <div className="space-y-4">
@@ -120,44 +118,68 @@ function PracticalTab() {
   )
 }
 
-const tabs: { key: Tab; labelKey: string }[] = [
-  { key: 'history', labelKey: 'guide.history.title' },
-  { key: 'hardstyle', labelKey: 'guide.hardstyle.title' },
-  { key: 'vocabulary', labelKey: 'guide.vocabulary.title' },
-  { key: 'practical', labelKey: 'guide.practical.title' },
+type SectionKey = 'history' | 'hardstyle' | 'vocabulary' | 'practical'
+
+const sections: { key: SectionKey; labelKey: string; Content: React.FC }[] = [
+  { key: 'history', labelKey: 'guide.history.title', Content: HistoryContent },
+  { key: 'hardstyle', labelKey: 'guide.hardstyle.title', Content: HardstyleContent },
+  { key: 'vocabulary', labelKey: 'guide.vocabulary.title', Content: VocabularyContent },
+  { key: 'practical', labelKey: 'guide.practical.title', Content: PracticalContent },
 ]
 
 export default function Guide() {
   const { t } = useTranslation()
-  const [activeTab, setActiveTab] = useState<Tab>('history')
+  const [openSection, setOpenSection] = useState<SectionKey | null>(null)
 
   useEffect(() => { document.title = 'Discover Hardstyle — Defqon Companion' }, [])
 
-  const tabBar = (
-    <div className="mt-4 flex gap-2 overflow-x-auto">
-      {tabs.map((tab) => (
-        <button
-          key={tab.key}
-          onClick={() => setActiveTab(tab.key)}
-          className={`flex items-center gap-1.5 whitespace-nowrap rounded-full px-4 py-2 text-xs font-medium uppercase tracking-wider transition-colors ${
-            activeTab === tab.key
-              ? 'bg-accent text-text-primary'
-              : 'bg-surface-alt text-text-muted hover:bg-surface-card hover:text-text-primary'
-          }`}
-        >
-          <span>{t(tab.labelKey)}</span>
-        </button>
-      ))}
-    </div>
-  )
+  const toggleSection = (key: SectionKey) => {
+    setOpenSection((prev) => (prev === key ? null : key))
+  }
 
   return (
-    <PageShell title={t('guide.title')} subtitle={t('guide.subtitle')} headerContent={tabBar}>
-      <div className="mx-auto w-full max-w-md">
-        {activeTab === 'history' && <HistoryTab />}
-        {activeTab === 'hardstyle' && <HardstyleTab />}
-        {activeTab === 'vocabulary' && <VocabularyTab />}
-        {activeTab === 'practical' && <PracticalTab />}
+    <PageShell title={t('guide.title')} subtitle={t('guide.subtitle')}>
+      <div className="mx-auto w-full max-w-md space-y-3">
+        {sections.map(({ key, labelKey, Content }) => {
+          const isOpen = openSection === key
+          return (
+            <div
+              key={key}
+              className="overflow-hidden rounded-2xl border border-border bg-surface-card"
+            >
+              <button
+                onClick={() => toggleSection(key)}
+                className="flex w-full items-center justify-between px-5 py-4 text-left transition-colors"
+              >
+                <span
+                  className={`defqon-heading text-lg font-semibold uppercase tracking-wider ${
+                    isOpen ? 'text-accent' : 'text-text-primary'
+                  }`}
+                >
+                  {t(labelKey)}
+                </span>
+                <span
+                  className={`text-lg transition-transform duration-200 ${
+                    isOpen ? 'text-accent' : 'text-text-muted'
+                  }`}
+                >
+                  {isOpen ? '▾' : '▸'}
+                </span>
+              </button>
+              <div
+                className={`grid transition-[grid-template-rows] duration-300 ease-in-out ${
+                  isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'
+                }`}
+              >
+                <div className="overflow-hidden">
+                  <div className="px-5 pb-5">
+                    <Content />
+                  </div>
+                </div>
+              </div>
+            </div>
+          )
+        })}
       </div>
     </PageShell>
   )
