@@ -40,6 +40,24 @@ export default function Home() {
   return (
     <PageShell title={t('home.title')} subtitle={t('home.subtitle')} headerContent={headerContent}>
       <div className="mx-auto w-full max-w-md space-y-6">
+        {/* Playlist */}
+        <div>
+          <h2 className="defqon-heading mb-3 text-xs tracking-widest text-text-muted">
+            {t('home.playlist')}
+          </h2>
+          <div className="overflow-hidden rounded-xl border border-border bg-surface-card">
+            <iframe
+              src="https://open.spotify.com/embed/playlist/5tkWlvbjzTTCMKVrcaEHpQ?utm_source=generator&theme=0"
+              width="100%"
+              height="152"
+              style={{ border: 'none' }}
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+              className="block"
+            />
+          </div>
+        </div>
+
         {/* Quick links */}
         <div>
           <h2 className="defqon-heading mb-3 text-xs tracking-widest text-text-muted">
