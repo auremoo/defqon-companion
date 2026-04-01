@@ -4,10 +4,8 @@ export interface Artist {
   realName: string
   country: string
   subgenre: string
-  bio: string
-  fact: string
   spotify?: string
-  ghostStories?: string
+  hasGhostStories?: boolean
 }
 
 export const artists: Artist[] = [
@@ -17,8 +15,6 @@ export const artists: Artist[] = [
     realName: 'Willem Rebergen',
     country: 'Netherlands',
     subgenre: 'Euphoric Hardstyle',
-    bio: 'One of the most iconic figures in hardstyle history. Rose to prominence in the late 2000s and became the genre\'s biggest crossover act. Temporarily left hardstyle (2014-2017) to explore EDM before making a celebrated return.',
-    fact: 'His track "Dragonborn" is considered one of the greatest hardstyle tracks ever made. Highest-ranked hardstyle DJ in DJ Mag Top 100 multiple times.',
     spotify: 'https://open.spotify.com/artist/62HGxHdjBJMRbqCasgYuuq',
   },
   {
@@ -27,8 +23,6 @@ export const artists: Artist[] = [
     realName: 'Joram Metekohy',
     country: 'Netherlands',
     subgenre: 'Euphoric Hardstyle',
-    bio: 'Known for emotionally rich productions, a staple of the hardstyle scene since the mid-2000s. Formed the legendary duo Project One with Headhunterz, producing timeless anthems.',
-    fact: 'Project One\'s "The Art of Creation" album is considered a milestone in hardstyle history.',
     spotify: 'https://open.spotify.com/artist/6FYPEZxKIUfJjJtaq0AZTY',
   },
   {
@@ -37,10 +31,8 @@ export const artists: Artist[] = [
     realName: 'Diederik Bakker & Stefan den Daas',
     country: 'Netherlands',
     subgenre: 'Euphoric Hardstyle',
-    bio: 'Active since 2004, one of the longest-running and most respected duos in hardstyle. Celebrated for exceptional musicality, cinematic productions, and pioneering full-scale narrative live shows.',
-    fact: 'Created the Defqon.1 2024 anthem and multiple other major festival anthems.',
     spotify: 'https://open.spotify.com/artist/3SxRFBNXMEK5FC9QnFfAY9',
-    ghostStories: 'Ghost Stories is a cinematic live show concept featuring an original storyline, custom visuals, and exclusive tracks produced specifically for each edition. Three editions so far — Ghost Stories 1 (2022, AFAS Live Amsterdam), Ghost Stories 2 (2023), and Ghost Stories 3 (2024), each with its own storyline chapter and exclusive soundtrack album. Widely considered one of the greatest hardstyle show concepts ever created — it elevated the genre beyond standard DJ sets into a full narrative experience with film-quality storytelling, voice acting, and stage production. Each edition sold out rapidly.',
+    hasGhostStories: true,
   },
   {
     id: 'sound-rush',
@@ -48,8 +40,6 @@ export const artists: Artist[] = [
     realName: 'Tieme Siers & Julian Jonkman',
     country: 'Netherlands',
     subgenre: 'Euphoric Hardstyle',
-    bio: 'Quickly rose through the ranks with high-energy euphoric productions. Signed to Dirty Workz, they became one of the most consistent hitmakers in modern euphoric hardstyle.',
-    fact: 'Created the Defqon.1 2023 anthem "Primal Energy".',
     spotify: 'https://open.spotify.com/artist/6Cxux3I1YOlbkn1WjxzE1a',
   },
   {
@@ -58,8 +48,6 @@ export const artists: Artist[] = [
     realName: 'Fabian Bohn',
     country: 'Netherlands',
     subgenre: 'Euphoric Hardstyle',
-    bio: 'A veteran producer active since the early 2000s, one of hardstyle\'s most prolific anthem creators. Runs the I AM Hardstyle label and event brand.',
-    fact: '"Imaginary" is one of the most-played hardstyle tracks of all time. Created the Defqon.1 2016 anthem.',
     spotify: 'https://open.spotify.com/artist/5Y7rFm8RVjKJSNSxEAbGid',
   },
   {
@@ -68,8 +56,6 @@ export const artists: Artist[] = [
     realName: 'Bob van der Plas',
     country: 'Netherlands',
     subgenre: 'Raw / Melodic Hardstyle',
-    bio: 'Occupies a unique space between raw and melodic hardstyle, crafting dark, atmospheric, and emotionally intense tracks. Revered for his uncompromising artistic vision.',
-    fact: 'Often cited by fans and peers as the most "authentic" artist in hardstyle — a true artist\'s artist. His Qlimax sets are legendary.',
     spotify: 'https://open.spotify.com/artist/4boGMGaCP0aoHQfLacNsLV',
   },
   {
@@ -78,8 +64,6 @@ export const artists: Artist[] = [
     realName: 'Youssef Mokhtari',
     country: 'Netherlands',
     subgenre: 'Raw Hardstyle',
-    bio: 'One of the most energetic raw hardstyle acts, known for aggressive kicks, dark atmospheres, and intense live performances. A driving force in pushing raw hardstyle forward.',
-    fact: '"I Need You" became a massive crossover hit within the scene. Runs the Art of Dance events.',
     spotify: 'https://open.spotify.com/artist/5c1NOyHBIwxbUOWL80A5wH',
   },
   {
@@ -88,8 +72,6 @@ export const artists: Artist[] = [
     realName: 'Joey van Ingen',
     country: 'Netherlands',
     subgenre: 'Raw Hardstyle',
-    bio: 'Self-styled as the "One Man Army," one of the biggest names in raw hardstyle with a massive catalog. Hosts his own sold-out solo arena events.',
-    fact: 'His solo show "The One Man Army" at AFAS Live sells out consistently — one of the few raw hardstyle acts to headline solo arena events.',
     spotify: 'https://open.spotify.com/artist/6aZyMrc4doVtmYMhKNhZkI',
   },
   {
@@ -98,8 +80,6 @@ export const artists: Artist[] = [
     realName: 'Duncan Kurk & Roscoe van Heest',
     country: 'Netherlands',
     subgenre: 'Raw Hardstyle',
-    bio: 'Known for ultra-hard, industrial-leaning raw hardstyle with punishing kicks and dark themes. Pushed the boundaries of how aggressive raw hardstyle could get while maintaining musicality.',
-    fact: 'Their "Overdose" album defined a new wave of extreme raw hardstyle.',
     spotify: 'https://open.spotify.com/artist/4NuS62ZEI2A0sIhbGBuvjt',
   },
   {
@@ -108,8 +88,6 @@ export const artists: Artist[] = [
     realName: 'Thomas Veldman & Nigel Groeneveld',
     country: 'Netherlands',
     subgenre: 'Euphoric / Raw Crossover',
-    bio: 'Bridge the gap between euphoric and raw hardstyle, combining hard kicks with big melodies. Rose meteorically through the ranks in the late 2010s.',
-    fact: 'Known for their "PSYchedelic" exploration blending psy-trance elements into hardstyle. Created the Defqon.1 2023 closing ceremony anthem.',
     spotify: 'https://open.spotify.com/artist/3dhU3VacbBGzaH4bwLstLG',
   },
   {
@@ -118,8 +96,6 @@ export const artists: Artist[] = [
     realName: 'Danny Masseling',
     country: 'Netherlands',
     subgenre: 'Hardcore',
-    bio: 'The undisputed king of mainstream hardcore, active since the early 2000s. His masked persona and relentless production output have made him the most recognized hardcore act worldwide.',
-    fact: '#1 in DJ Mag Hardcore Top 100 for multiple consecutive years. His Defqon.1 and Masters of Hardcore sets are considered definitive hardcore experiences.',
     spotify: 'https://open.spotify.com/artist/7v3m3VihiGM3oOV4sRsJfT',
   },
   {
@@ -128,8 +104,6 @@ export const artists: Artist[] = [
     realName: 'Kateryna Kremko',
     country: 'Ukraine',
     subgenre: 'Hardcore',
-    bio: 'The most prominent female artist in hardcore, known for fierce mixing skills and intense track selection. Originally from Ukraine, she became a global touring act.',
-    fact: 'First woman to win the DJ Mag Hardcore Top 100, ranking #1. Has headlined virtually every major hardcore event globally.',
     spotify: 'https://open.spotify.com/artist/59XfhHFg9yeLMGW7IqmPkq',
   },
   {
@@ -138,8 +112,6 @@ export const artists: Artist[] = [
     realName: 'Gerson Aleman',
     country: 'Netherlands',
     subgenre: 'Hardcore',
-    bio: 'A hardcore veteran active since the 1990s, part of the old guard that helped shape the genre. Known for his dark, cinematic style and extraordinary longevity.',
-    fact: 'Over 25 years of producing and performing, making him one of the longest-active hardcore artists. His dark atmospheric style influenced many newer producers.',
     spotify: 'https://open.spotify.com/artist/0f1bOGbHvM8mNYVc9e1okl',
   },
   {
@@ -148,8 +120,6 @@ export const artists: Artist[] = [
     realName: 'Sefa Vliegenthart',
     country: 'Netherlands',
     subgenre: 'Frenchcore',
-    bio: 'Broke through as a teenager, becoming the youngest artist to play a mainstage at Defqon.1. Widely credited with bringing frenchcore into the mainstream hardstyle festival circuit.',
-    fact: 'Played the Defqon.1 mainstage at just 19 years old. Founded his own label Generation HRD.',
     spotify: 'https://open.spotify.com/artist/6TQj5BFPRi8EGbVMJOePkP',
   },
   {
@@ -158,8 +128,6 @@ export const artists: Artist[] = [
     realName: 'Sven Krammer',
     country: 'Netherlands',
     subgenre: 'Frenchcore',
-    bio: 'One of the key figures who popularized frenchcore internationally. Founded Peacock Records, the premier frenchcore label, and mentored several artists including Sefa.',
-    fact: '"Trip to Ireland" became one of the most recognized frenchcore anthems, blending Irish folk melodies with hard kicks.',
     spotify: 'https://open.spotify.com/artist/6OsGsVBd1nUEJYAhzu3rn6',
   },
   {
@@ -168,8 +136,6 @@ export const artists: Artist[] = [
     realName: 'Wouter & Sjoerd Janssen',
     country: 'Netherlands',
     subgenre: 'Hardstyle / EDM',
-    bio: 'Among the biggest hardstyle acts in the mid-2000s before making a high-profile — and controversial — genre switch to mainstream EDM around 2012. Achieved massive global commercial success.',
-    fact: '"FTS" remains a beloved hardstyle anthem. Their EDM track "Booyah" and collab with David Guetta "Bad" reached hundreds of millions of streams.',
     spotify: 'https://open.spotify.com/artist/21mKp7DqtSNHhCAU2ugvUw',
   },
   {
@@ -178,8 +144,6 @@ export const artists: Artist[] = [
     realName: 'Dov Elkabas',
     country: 'Netherlands',
     subgenre: 'Hardstyle / Hard Dance',
-    bio: 'Considered one of the founding fathers of hardstyle, active since the late 1990s when the genre was still emerging from gabber and hard trance. Co-founded Scantraxx Records.',
-    fact: 'Scantraxx Records (est. 2002) launched the careers of Headhunterz, Wildstylez, and many other top acts.',
     spotify: 'https://open.spotify.com/artist/6oZxDrp01CgMjRJ5auqxLV',
   },
   {
@@ -188,8 +152,6 @@ export const artists: Artist[] = [
     realName: '',
     country: 'Netherlands',
     subgenre: 'Raw Hardstyle',
-    bio: 'A new generation raw hardstyle producer who has risen rapidly with a powerful, polished sound. Represents the modern wave of hardstyle production with crisp sound design.',
-    fact: 'Created the Defqon.1 2025 anthem — a career-defining milestone for any hardstyle artist.',
     spotify: 'https://open.spotify.com/artist/3Oy0GqVMDRKBAqnvRi8H6P',
   },
   {
@@ -198,8 +160,6 @@ export const artists: Artist[] = [
     realName: 'Jordy Huisman',
     country: 'Netherlands',
     subgenre: 'Raw Hardstyle',
-    bio: 'Established himself as one of the top raw hardstyle producers with consistent high-quality releases. His sound bridges raw power with melodic elements, earning wide appeal.',
-    fact: 'Selected to produce the Defqon.1 2026 anthem "Sacred Oath," cementing his status as one of the genre\'s leading figures.',
     spotify: 'https://open.spotify.com/artist/3RBNfTN3VvKMkiG6cXHMEy',
   },
   {
@@ -208,8 +168,6 @@ export const artists: Artist[] = [
     realName: 'Marco Spronk',
     country: 'Netherlands',
     subgenre: 'Artistic Hardstyle',
-    bio: 'Known for his deeply artistic and conceptual approach to hardstyle, releasing full album projects with overarching narratives and themes. His productions are considered among the most musically sophisticated in the genre.',
-    fact: 'His album "Silver Bullet" (2019) is widely regarded as one of the greatest hardstyle albums ever made.',
     spotify: 'https://open.spotify.com/artist/5xhCNMz8qVCLCN3w5F3z8H',
   },
   {
@@ -218,8 +176,6 @@ export const artists: Artist[] = [
     realName: 'Randy Wieland',
     country: 'Netherlands',
     subgenre: 'Hardstyle',
-    bio: 'Achieved something extremely rare in hardstyle: a genuine crossover mainstream hit. A veteran producer with decades of experience, respected for both harder and melodic productions.',
-    fact: '"Zombie" (a hardstyle cover of The Cranberries) went viral in 2019 with hundreds of millions of streams — one of the biggest hardstyle crossover moments ever.',
     spotify: 'https://open.spotify.com/artist/0WjpcwPz7BTqiFMOTChOQi',
   },
   {
@@ -228,8 +184,6 @@ export const artists: Artist[] = [
     realName: 'Koen Bauweraerts',
     country: 'Belgium',
     subgenre: 'Hardstyle',
-    bio: 'Belgium\'s most prominent hardstyle export and a key ambassador for the genre. Active since the mid-2000s, running his own label Dirty Workz.',
-    fact: 'Founded Dirty Workz, one of the most successful hardstyle labels. First Belgian artist to create a Defqon.1 anthem ("Survival of the Fittest," 2014).',
     spotify: 'https://open.spotify.com/artist/0CoD5uyKiVQ5iniS5tlNaK',
   },
   {
@@ -238,8 +192,6 @@ export const artists: Artist[] = [
     realName: 'Kenth Kvien & Marcus Nordli',
     country: 'Norway',
     subgenre: 'Euphoric Hardstyle',
-    bio: 'Norwegian duo known for lighthearted, crowd-pleasing hardstyle with humor, pop culture references, and sing-along melodies. One of the few successful Scandinavian hardstyle acts.',
-    fact: 'Famous for their unofficial Disney hardstyle bootlegs (Frozen\'s "Let It Go," The Lion King\'s "Circle of Life") which became massive crowd favorites.',
     spotify: 'https://open.spotify.com/artist/4PiFHCBqXCcR4q2yNYUjxQ',
   },
   {
@@ -248,8 +200,6 @@ export const artists: Artist[] = [
     realName: 'Tim Remelink',
     country: 'Netherlands',
     subgenre: 'Melodic / Cinematic Hardstyle',
-    bio: 'Known for cinematic, emotionally rich productions that emphasize atmosphere and melody. Characterized by lush pads, sweeping builds, and polished production.',
-    fact: 'Created the Qlimax 2018 anthem "Keep Me Awake." Also known for sharing in-depth production tutorials with the community.',
     spotify: 'https://open.spotify.com/artist/2LQGM7VHJHwYxQXqygBFMP',
   },
   {
@@ -258,8 +208,6 @@ export const artists: Artist[] = [
     realName: 'Barry Droog',
     country: 'Netherlands',
     subgenre: 'Euphoric Hardstyle',
-    bio: 'Widely regarded as one of the most technically gifted producers in hardstyle history. Known for pushing production boundaries and innovating with sound design.',
-    fact: '"Halos" is considered a genre-defining classic. Often called the "producer\'s producer" for his mastery of synthesizer programming and kick design.',
     spotify: 'https://open.spotify.com/artist/0F3QMQOp5QNFBG6Gax3Xij',
   },
 ]

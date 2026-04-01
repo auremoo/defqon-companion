@@ -103,15 +103,15 @@ function ArtistsView() {
                 {artist.realName && (
                   <p className="text-xs text-text-muted">{artist.realName}</p>
                 )}
-                <p className="text-sm leading-relaxed text-text-secondary">{artist.bio}</p>
+                <p className="text-sm leading-relaxed text-text-secondary">{t(`music.artists.${artist.id}.bio`)}</p>
                 <div className="rounded-lg bg-surface-alt p-3">
-                  <p className="text-xs text-text-secondary">{artist.fact}</p>
+                  <p className="text-xs text-text-secondary">{t(`music.artists.${artist.id}.fact`)}</p>
                 </div>
 
-                {artist.ghostStories && (
+                {artist.hasGhostStories && (
                   <div className="rounded-lg border border-accent/20 bg-accent/5 p-3">
                     <h4 className="defqon-heading mb-1 text-xs text-accent">{t('music.ghostStories')}</h4>
-                    <p className="text-xs leading-relaxed text-text-secondary">{artist.ghostStories}</p>
+                    <p className="text-xs leading-relaxed text-text-secondary">{t(`music.artists.${artist.id}.ghostStories`)}</p>
                   </div>
                 )}
 

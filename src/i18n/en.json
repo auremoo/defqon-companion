@@ -277,7 +277,110 @@
     "playlistsTab": "Playlists",
     "artistsTab": "Artists",
     "ghostStories": "Ghost Stories",
-    "listenOnSpotify": "Listen on Spotify"
+    "listenOnSpotify": "Listen on Spotify",
+    "artists": {
+      "headhunterz": {
+        "bio": "One of the most iconic figures in hardstyle history. Rose to prominence in the late 2000s and became the genre's biggest crossover act. Temporarily left hardstyle (2014-2017) to explore EDM before making a celebrated return.",
+        "fact": "His track \"Dragonborn\" is considered one of the greatest hardstyle tracks ever made. Highest-ranked hardstyle DJ in DJ Mag Top 100 multiple times."
+      },
+      "wildstylez": {
+        "bio": "Known for emotionally rich productions, a staple of the hardstyle scene since the mid-2000s. Formed the legendary duo Project One with Headhunterz, producing timeless anthems.",
+        "fact": "Project One's \"The Art of Creation\" album is considered a milestone in hardstyle history."
+      },
+      "dbstf": {
+        "bio": "Active since 2004, one of the longest-running and most respected duos in hardstyle. Celebrated for exceptional musicality, cinematic productions, and pioneering full-scale narrative live shows.",
+        "fact": "Created the Defqon.1 2024 anthem and multiple other major festival anthems.",
+        "ghostStories": "Ghost Stories is a cinematic live show concept featuring D-Block & S-te-Fan alongside vocalist Evelyn Bakker \u2014 Diederik's sister, who started as a dancer before lending her voice to the project. The show features an original storyline, custom visuals, and exclusive tracks for each edition. Three chapters: Ghost Stories 1 (2022, AFAS Live Amsterdam), Ghost Stories 2 (2023), and Ghost Stories 3 (2024), each with its own narrative arc and soundtrack album. The final show took place in November 2025 for DBSTF's 20th anniversary. Widely considered one of the greatest hardstyle show concepts ever \u2014 it elevated the genre into a full narrative experience with film-quality storytelling."
+      },
+      "sound-rush": {
+        "bio": "Quickly rose through the ranks with high-energy euphoric productions. Signed to Dirty Workz, they became one of the most consistent hitmakers in modern euphoric hardstyle.",
+        "fact": "Created the Defqon.1 2023 anthem \"Primal Energy\"."
+      },
+      "brennan-heart": {
+        "bio": "A veteran producer active since the early 2000s, one of hardstyle's most prolific anthem creators. Runs the I AM Hardstyle label and event brand.",
+        "fact": "\"Imaginary\" is one of the most-played hardstyle tracks of all time. Created the Defqon.1 2016 anthem."
+      },
+      "b-front": {
+        "bio": "Occupies a unique space between raw and melodic hardstyle, crafting dark, atmospheric, and emotionally intense tracks. Revered for his uncompromising artistic vision.",
+        "fact": "Often cited by fans and peers as the most \"authentic\" artist in hardstyle — a true artist's artist. His Qlimax sets are legendary."
+      },
+      "warface": {
+        "bio": "One of the most energetic raw hardstyle acts, known for aggressive kicks, dark atmospheres, and intense live performances. A driving force in pushing raw hardstyle forward.",
+        "fact": "\"I Need You\" became a massive crossover hit within the scene. Runs the Art of Dance events."
+      },
+      "radical-redemption": {
+        "bio": "Self-styled as the \"One Man Army,\" one of the biggest names in raw hardstyle with a massive catalog. Hosts his own sold-out solo arena events.",
+        "fact": "His solo show \"The One Man Army\" at AFAS Live sells out consistently — one of the few raw hardstyle acts to headline solo arena events."
+      },
+      "rebelion": {
+        "bio": "Known for ultra-hard, industrial-leaning raw hardstyle with punishing kicks and dark themes. Pushed the boundaries of how aggressive raw hardstyle could get while maintaining musicality.",
+        "fact": "Their \"Overdose\" album defined a new wave of extreme raw hardstyle."
+      },
+      "sub-zero-project": {
+        "bio": "Bridge the gap between euphoric and raw hardstyle, combining hard kicks with big melodies. Rose meteorically through the ranks in the late 2010s.",
+        "fact": "Known for their \"PSYchedelic\" exploration blending psy-trance elements into hardstyle. Created the Defqon.1 2023 closing ceremony anthem."
+      },
+      "angerfist": {
+        "bio": "The undisputed king of mainstream hardcore, active since the early 2000s. His masked persona and relentless production output have made him the most recognized hardcore act worldwide.",
+        "fact": "#1 in DJ Mag Hardcore Top 100 for multiple consecutive years. His Defqon.1 and Masters of Hardcore sets are considered definitive hardcore experiences."
+      },
+      "miss-k8": {
+        "bio": "The most prominent female artist in hardcore, known for fierce mixing skills and intense track selection. Originally from Ukraine, she became a global touring act.",
+        "fact": "First woman to win the DJ Mag Hardcore Top 100, ranking #1. Has headlined virtually every major hardcore event globally."
+      },
+      "nosferatu": {
+        "bio": "A hardcore veteran active since the 1990s, part of the old guard that helped shape the genre. Known for his dark, cinematic style and extraordinary longevity.",
+        "fact": "Over 25 years of producing and performing, making him one of the longest-active hardcore artists. His dark atmospheric style influenced many newer producers."
+      },
+      "sefa": {
+        "bio": "Broke through as a teenager, becoming the youngest artist to play a mainstage at Defqon.1. Widely credited with bringing frenchcore into the mainstream hardstyle festival circuit.",
+        "fact": "Played the Defqon.1 mainstage at just 19 years old. Founded his own label Generation HRD."
+      },
+      "dr-peacock": {
+        "bio": "One of the key figures who popularized frenchcore internationally. Founded Peacock Records, the premier frenchcore label, and mentored several artists including Sefa.",
+        "fact": "\"Trip to Ireland\" became one of the most recognized frenchcore anthems, blending Irish folk melodies with hard kicks."
+      },
+      "showtek": {
+        "bio": "Among the biggest hardstyle acts in the mid-2000s before making a high-profile — and controversial — genre switch to mainstream EDM around 2012. Achieved massive global commercial success.",
+        "fact": "\"FTS\" remains a beloved hardstyle anthem. Their EDM track \"Booyah\" and collab with David Guetta \"Bad\" reached hundreds of millions of streams."
+      },
+      "the-prophet": {
+        "bio": "Considered one of the founding fathers of hardstyle, active since the late 1990s when the genre was still emerging from gabber and hard trance. Co-founded Scantraxx Records.",
+        "fact": "Scantraxx Records (est. 2002) launched the careers of Headhunterz, Wildstylez, and many other top acts."
+      },
+      "vertile": {
+        "bio": "A new generation raw hardstyle producer who has risen rapidly with a powerful, polished sound. Represents the modern wave of hardstyle production with crisp sound design.",
+        "fact": "Created the Defqon.1 2025 anthem — a career-defining milestone for any hardstyle artist."
+      },
+      "d-sturb": {
+        "bio": "Established himself as one of the top raw hardstyle producers with consistent high-quality releases. His sound bridges raw power with melodic elements, earning wide appeal.",
+        "fact": "Selected to produce the Defqon.1 2026 anthem \"Sacred Oath,\" cementing his status as one of the genre's leading figures."
+      },
+      "phuture-noize": {
+        "bio": "Known for his deeply artistic and conceptual approach to hardstyle, releasing full album projects with overarching narratives and themes. His productions are considered among the most musically sophisticated in the genre.",
+        "fact": "His album \"Silver Bullet\" (2019) is widely regarded as one of the greatest hardstyle albums ever made."
+      },
+      "ran-d": {
+        "bio": "Achieved something extremely rare in hardstyle: a genuine crossover mainstream hit. A veteran producer with decades of experience, respected for both harder and melodic productions.",
+        "fact": "\"Zombie\" (a hardstyle cover of The Cranberries) went viral in 2019 with hundreds of millions of streams — one of the biggest hardstyle crossover moments ever."
+      },
+      "coone": {
+        "bio": "Belgium's most prominent hardstyle export and a key ambassador for the genre. Active since the mid-2000s, running his own label Dirty Workz.",
+        "fact": "Founded Dirty Workz, one of the most successful hardstyle labels. First Belgian artist to create a Defqon.1 anthem (\"Survival of the Fittest,\" 2014)."
+      },
+      "da-tweekaz": {
+        "bio": "Norwegian duo known for lighthearted, crowd-pleasing hardstyle with humor, pop culture references, and sing-along melodies. One of the few successful Scandinavian hardstyle acts.",
+        "fact": "Famous for their unofficial Disney hardstyle bootlegs (Frozen's \"Let It Go,\" The Lion King's \"Circle of Life\") which became massive crowd favorites."
+      },
+      "atmozfears": {
+        "bio": "Known for cinematic, emotionally rich productions that emphasize atmosphere and melody. Characterized by lush pads, sweeping builds, and polished production.",
+        "fact": "Created the Qlimax 2018 anthem \"Keep Me Awake.\" Also known for sharing in-depth production tutorials with the community."
+      },
+      "frontliner": {
+        "bio": "Widely regarded as one of the most technically gifted producers in hardstyle history. Known for pushing production boundaries and innovating with sound design.",
+        "fact": "\"Halos\" is considered a genre-defining classic. Often called the \"producer's producer\" for his mastery of synthesizer programming and kick design."
+      }
+    }
   },
   "myEditions": {
     "title": "My Editions",
