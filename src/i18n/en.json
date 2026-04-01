@@ -25,7 +25,8 @@
     "quickLinks": "Quick Links",
     "exploreColors": "Explore Colors",
     "readGuide": "Read the Guide",
-    "prepChecklist": "Prep Checklist"
+    "prepChecklist": "Prep Checklist",
+    "myEditions": "My Editions"
   },
   "colors": {
     "title": "Colors of Defqon.1",
@@ -249,11 +250,23 @@
       "sunday": "Sunday"
     }
   },
+  "myEditions": {
+    "title": "My Editions",
+    "subtitle": "Your Defqon.1 history and memories",
+    "current": "Current edition",
+    "setsSaved": "sets saved",
+    "noSets": "No sets saved for this edition",
+    "rating": "Your Rating",
+    "notes": "Your Notes",
+    "notesPlaceholder": "Best moments, memories, who you were with...",
+    "save": "Save"
+  },
   "settings": {
     "title": "Settings",
     "back": "Back",
     "account": "Account",
     "signIn": "Sign in to sync your timetable with friends",
+    "myEditions": "My Editions",
     "signOut": "Sign Out",
     "language": "Language",
     "musicPlatform": "Preferred Music Platform",

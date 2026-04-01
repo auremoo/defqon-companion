@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import { ChevronRightIcon } from '../components/Icons'
 import { useState, useEffect } from 'react'
@@ -91,6 +91,13 @@ export default function Settings() {
                   <p className="text-xs text-text-muted">@{profile.username}</p>
                   <p className="mt-1 text-xs text-text-muted">{user.email}</p>
                 </div>
+                <Link
+                  to="/my-editions"
+                  className="flex w-full items-center justify-between border-t border-border p-3 text-sm text-text-primary transition-colors hover:bg-surface-alt"
+                >
+                  <span>{t('settings.myEditions')}</span>
+                  <ChevronRightIcon size={16} className="text-text-muted" />
+                </Link>
                 <button
                   onClick={signOut}
                   className="w-full border-t border-border p-3 text-sm text-accent transition-colors hover:bg-accent-glow"

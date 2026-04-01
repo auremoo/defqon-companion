@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import CountdownTimer from '../components/CountdownTimer'
-import { PaletteIcon, BookIcon, ChecklistIcon, CalendarIcon } from '../components/Icons'
+import { PaletteIcon, BookIcon, ChecklistIcon, CalendarIcon, HistoryIcon } from '../components/Icons'
 import PageShell from '../components/PageShell'
 import { festival } from '../data/festival'
 
@@ -69,6 +69,7 @@ export default function Home() {
               { to: '/timetable', Icon: CalendarIcon, label: 'Timetable' },
               { to: '/guide', Icon: BookIcon, label: t('home.readGuide') },
               { to: '/checklist', Icon: ChecklistIcon, label: t('home.prepChecklist') },
+              { to: '/my-editions', Icon: HistoryIcon, label: t('home.myEditions') },
             ].map((link) => (
               <Link
                 key={link.to}

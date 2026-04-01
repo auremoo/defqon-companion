@@ -25,7 +25,8 @@
     "quickLinks": "Acc\u00e8s rapide",
     "exploreColors": "Explorer les couleurs",
     "readGuide": "Lire le guide",
-    "prepChecklist": "Pr\u00e9parer sa checklist"
+    "prepChecklist": "Pr\u00e9parer sa checklist",
+    "myEditions": "Mes \u00e9ditions"
   },
   "colors": {
     "title": "Les couleurs de Defqon.1",
@@ -249,11 +250,23 @@
       "sunday": "Dimanche"
     }
   },
+  "myEditions": {
+    "title": "Mes \u00e9ditions",
+    "subtitle": "Ton historique et tes souvenirs Defqon.1",
+    "current": "\u00c9dition en cours",
+    "setsSaved": "sets sauvegard\u00e9s",
+    "noSets": "Aucun set sauvegard\u00e9 pour cette \u00e9dition",
+    "rating": "Ta note",
+    "notes": "Tes notes",
+    "notesPlaceholder": "Meilleurs moments, souvenirs, avec qui tu \u00e9tais\u2026",
+    "save": "Sauvegarder"
+  },
   "settings": {
     "title": "Param\u00e8tres",
     "back": "Retour",
     "account": "Compte",
     "signIn": "Connecte-toi pour synchroniser ton planning avec tes amis",
+    "myEditions": "Mes \u00e9ditions",
     "signOut": "Se d\u00e9connecter",
     "language": "Langue",
     "musicPlatform": "Plateforme musicale pr\u00e9f\u00e9r\u00e9e",
