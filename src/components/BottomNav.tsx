@@ -14,23 +14,36 @@ export default function BottomNav() {
   const { t } = useTranslation()
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-50 border-t border-white/5 bg-[#111111]/95 backdrop-blur-md" style={{ paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}>
-      <div className="mx-auto flex max-w-lg" style={{ paddingLeft: 'env(safe-area-inset-left, 0px)', paddingRight: 'env(safe-area-inset-right, 0px)' }}>
-        {navItems.map((item) => (
-          <NavLink
-            key={item.to}
-            to={item.to}
-            end={item.to === '/'}
-            className={({ isActive }) =>
-              `flex flex-1 flex-col items-center gap-0.5 py-2.5 text-[10px] uppercase tracking-wider transition-colors ${
-                isActive ? 'text-accent' : 'text-text-muted hover:text-text-secondary'
-              }`
-            }
-          >
-            <item.Icon size={20} />
-            <span>{t(item.labelKey)}</span>
-          </NavLink>
-        ))}
+    <nav
+      className="fixed bottom-0 left-0 right-0 z-50"
+      style={{ paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}
+    >
+      <div
+        className="liquid-glass mx-3 mb-3 rounded-2xl"
+        style={{
+          paddingLeft: 'env(safe-area-inset-left, 0px)',
+          paddingRight: 'env(safe-area-inset-right, 0px)',
+        }}
+      >
+        <div className="mx-auto flex max-w-lg">
+          {navItems.map((item) => (
+            <NavLink
+              key={item.to}
+              to={item.to}
+              end={item.to === '/'}
+              className={({ isActive }) =>
+                `relative flex flex-1 flex-col items-center gap-0.5 py-2.5 text-[10px] uppercase tracking-wider transition-all duration-300 ${
+                  isActive
+                    ? 'text-white liquid-glass-active'
+                    : 'text-white/40 hover:text-white/70'
+                }`
+              }
+            >
+              <item.Icon size={20} />
+              <span>{t(item.labelKey)}</span>
+            </NavLink>
+          ))}
+        </div>
       </div>
     </nav>
   )
