@@ -28,10 +28,6 @@ Defqon Companion is a client-side React SPA designed as a PWA. It runs entirely 
 | `/guide` | Guide | History, hardstyle intro, vocabulary (tabbed) |
 | `/checklist` | Checklist | Interactive packing checklist |
 
-### UI design system
-
-- **Liquid Glass** — The bottom navigation uses a frosted glass effect (`backdrop-filter: blur + saturate + brightness`) with animated prismatic shimmer and specular highlights. CSS-only implementation in `src/index.css` (`.liquid-glass` classes). Active items have a breathing red glow pill and dot indicator.
-
 ### Offline strategy
 
 - Service worker uses **stale-while-revalidate**: serves cached content immediately, fetches updates in background.
