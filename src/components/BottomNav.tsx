@@ -19,10 +19,10 @@ export default function BottomNav() {
       style={{ paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}
     >
       <div
-        className="liquid-glass mx-3 mb-3 rounded-2xl"
+        className="liquid-glass mx-4 mb-3 rounded-[22px] px-1"
         style={{
-          paddingLeft: 'env(safe-area-inset-left, 0px)',
-          paddingRight: 'env(safe-area-inset-right, 0px)',
+          paddingLeft: `max(4px, env(safe-area-inset-left, 0px))`,
+          paddingRight: `max(4px, env(safe-area-inset-right, 0px))`,
         }}
       >
         <div className="mx-auto flex max-w-lg">
@@ -32,11 +32,11 @@ export default function BottomNav() {
               to={item.to}
               end={item.to === '/'}
               className={({ isActive }) =>
-                `relative flex flex-1 flex-col items-center gap-0.5 pt-3 pb-2.5 text-[10px] uppercase tracking-wider transition-all duration-300 ${
+                `relative z-[1] flex flex-1 flex-col items-center gap-0.5 py-3 text-[10px] uppercase tracking-wider transition-all duration-200 ${
                   isActive
-                    ? 'text-white liquid-glass-active'
-                    : 'text-white/40 hover:text-white/70'
-                }`
+                    ? 'text-white'
+                    : 'text-white/35 hover:text-white/60'
+                }${isActive ? ' liquid-glass-active' : ''}`
               }
             >
               <item.Icon size={20} />
