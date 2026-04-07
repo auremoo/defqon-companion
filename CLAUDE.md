@@ -59,7 +59,6 @@ npm run preview  # Preview production build
 - **i18n** — English is the source of truth. French translations mirror structure exactly.
 - **Dark theme only** — matches festival aesthetic. bg-gray-950 base.
 - **Graceful degradation** — app works without Supabase config (localStorage fallback for timetable).
-- **Liquid Glass UI** — bottom nav uses `.liquid-glass` CSS classes (frosted blur, shimmer animation, specular highlights). Styles in `src/index.css`.
 
 ## Conventions
 

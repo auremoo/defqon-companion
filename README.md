@@ -12,7 +12,6 @@ Mobile-first web companion app for the **Defqon.1** hardstyle festival. Built wi
 - **Bilingual** — English (default) and French. Auto-detects browser language.
 - **Offline Ready** — Service worker caches the app for use without network.
 - **PWA** — Installable on mobile devices via "Add to Home Screen".
-- **Liquid Glass UI** — Floating bottom navigation with frosted glass effect, animated prismatic shimmer, and specular highlights.
 
 ## Getting started
 
@@ -74,7 +73,6 @@ supabase/        # Database migrations
 
 - [x] Phase 1: Home + Colors + History/Guide + Checklist + PWA
 - [x] Phase 2: Social Timetable + Auth + Database
-- [x] Liquid Glass UI for bottom navigation
 - [ ] Phase 3: Playlists / Radio companion
 - [ ] Phase 4: Push notifications
 - [ ] Future: Advanced social features, admin panel

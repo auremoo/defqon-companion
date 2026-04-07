@@ -106,8 +106,8 @@ An interactive timetable with social features, distinct from the official app's 
   - Guide (history + discovery text)
   - Timetable (social timetable)
   - Checklist (preparation)
-- Bottom tab navigation with **liquid glass** design — floating frosted pill with backdrop blur, animated prismatic shimmer, and specular highlights.
-- Subtle animations (shimmer, breathing glow on active items), minimal scrolling, no complex forms.
+- Bottom tab navigation.
+- No heavy animations, minimal scrolling, no complex forms.
 - Dark theme (matches festival aesthetic).
 
 ## 4. What the App Does NOT Do
