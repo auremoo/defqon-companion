@@ -32,7 +32,7 @@ export default function BottomNav() {
               to={item.to}
               end={item.to === '/'}
               className={({ isActive }) =>
-                `relative flex flex-1 flex-col items-center gap-0.5 py-2.5 text-[10px] uppercase tracking-wider transition-all duration-300 ${
+                `relative flex flex-1 flex-col items-center gap-0.5 pt-3 pb-2.5 text-[10px] uppercase tracking-wider transition-all duration-300 ${
                   isActive
                     ? 'text-white liquid-glass-active'
                     : 'text-white/40 hover:text-white/70'

@@ -104,71 +104,114 @@ body {
   -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
 }
 
-/* Liquid Glass effect */
+/* ========================================
+   Liquid Glass Design System
+   ======================================== */
+
+/* Animated shimmer sweep */
+@keyframes liquid-shimmer {
+  0% { transform: translateX(-100%) rotate(-15deg); }
+  100% { transform: translateX(200%) rotate(-15deg); }
+}
+
+/* Subtle breathing glow on active item */
+@keyframes liquid-breathe {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+/* Base liquid glass surface */
 .liquid-glass {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.08) 0%,
-    rgba(255, 255, 255, 0.03) 50%,
-    rgba(255, 255, 255, 0.06) 100%
-  );
-  backdrop-filter: blur(24px) saturate(1.8);
-  -webkit-backdrop-filter: blur(24px) saturate(1.8);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.02) 40%,
+      rgba(255, 255, 255, 0.05) 60%,
+      rgba(255, 255, 255, 0.08) 100%
+    );
+  backdrop-filter: blur(28px) saturate(1.9) brightness(1.05);
+  -webkit-backdrop-filter: blur(28px) saturate(1.9) brightness(1.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow:
-    0 8px 32px rgba(0, 0, 0, 0.4),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 8px 32px rgba(0, 0, 0, 0.45),
+    0 2px 8px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15),
     inset 0 -1px 0 rgba(255, 255, 255, 0.05);
 }
 
-/* Top shine / reflet */
+/* Top specular highlight — curved reflection */
 .liquid-glass::before {
   content: '';
   position: absolute;
   top: 0;
-  left: -20%;
-  right: -20%;
-  height: 50%;
+  left: -10%;
+  right: -10%;
+  height: 55%;
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.12) 0%,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0.05) 40%,
     rgba(255, 255, 255, 0) 100%
   );
-  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
   pointer-events: none;
 }
 
-/* Subtle prismatic edge highlight */
+/* Animated prismatic shimmer sweep */
 .liquid-glass::after {
   content: '';
   position: absolute;
-  inset: 0;
-  border-radius: inherit;
+  top: -50%;
+  left: 0;
+  width: 60%;
+  height: 200%;
   background: linear-gradient(
-    105deg,
-    transparent 40%,
-    rgba(226, 6, 19, 0.06) 45%,
-    rgba(74, 0, 224, 0.06) 50%,
-    rgba(212, 47, 138, 0.06) 55%,
-    transparent 60%
-  );
-  pointer-events: none;
-}
-
-/* Active nav item glow pill */
-.liquid-glass-active::before {
-  content: '';
-  position: absolute;
-  inset: 4px 8px;
-  border-radius: 12px;
-  background: radial-gradient(
-    ellipse at center,
-    rgba(226, 6, 19, 0.2) 0%,
-    rgba(226, 6, 19, 0.05) 60%,
+    90deg,
+    transparent 0%,
+    rgba(226, 6, 19, 0.06) 20%,
+    rgba(74, 0, 224, 0.08) 40%,
+    rgba(212, 47, 138, 0.06) 60%,
+    rgba(232, 155, 28, 0.04) 80%,
     transparent 100%
   );
   pointer-events: none;
+  animation: liquid-shimmer 8s ease-in-out infinite;
+  opacity: 0.7;
+}
+
+/* Active nav item — glow pill + breathing */
+.liquid-glass-active::before {
+  content: '';
+  position: absolute;
+  inset: 6px 10px;
+  border-radius: 12px;
+  background:
+    radial-gradient(
+      ellipse at center bottom,
+      rgba(226, 6, 19, 0.25) 0%,
+      rgba(226, 6, 19, 0.08) 50%,
+      transparent 100%
+    );
+  border: 1px solid rgba(226, 6, 19, 0.15);
+  pointer-events: none;
   z-index: -1;
+  animation: liquid-breathe 3s ease-in-out infinite;
+}
+
+/* Active item top dot indicator */
+.liquid-glass-active::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  box-shadow: 0 0 6px rgba(226, 6, 19, 0.6), 0 0 12px rgba(226, 6, 19, 0.3);
+  pointer-events: none;
 }
