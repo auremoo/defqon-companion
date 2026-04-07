@@ -104,71 +104,72 @@ body {
   -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
 }
 
-/* Liquid Glass effect */
+/* ========================================
+   Liquid Glass — iOS 26 style
+   ======================================== */
+
+/* Base liquid glass container */
 .liquid-glass {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.08) 0%,
-    rgba(255, 255, 255, 0.03) 50%,
-    rgba(255, 255, 255, 0.06) 100%
-  );
-  backdrop-filter: blur(24px) saturate(1.8);
-  -webkit-backdrop-filter: blur(24px) saturate(1.8);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(38, 38, 38, 0.55);
+  backdrop-filter: blur(40px) saturate(2.1) brightness(1.1);
+  -webkit-backdrop-filter: blur(40px) saturate(2.1) brightness(1.1);
+  border: 0.5px solid rgba(255, 255, 255, 0.18);
   box-shadow:
-    0 8px 32px rgba(0, 0, 0, 0.4),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.05);
+    0 4px 24px rgba(0, 0, 0, 0.3),
+    0 1px 3px rgba(0, 0, 0, 0.15),
+    inset 0 0.5px 0 rgba(255, 255, 255, 0.2),
+    inset 0 -0.5px 0 rgba(255, 255, 255, 0.05);
 }
 
-/* Top shine / reflet */
+/* Top specular band — the signature iOS glass shine */
 .liquid-glass::before {
   content: '';
   position: absolute;
   top: 0;
-  left: -20%;
-  right: -20%;
+  left: 0;
+  right: 0;
   height: 50%;
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.12) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-  pointer-events: none;
-}
-
-/* Subtle prismatic edge highlight */
-.liquid-glass::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background: linear-gradient(
-    105deg,
-    transparent 40%,
-    rgba(226, 6, 19, 0.06) 45%,
-    rgba(74, 0, 224, 0.06) 50%,
-    rgba(212, 47, 138, 0.06) 55%,
-    transparent 60%
-  );
-  pointer-events: none;
-}
-
-/* Active nav item glow pill */
-.liquid-glass-active::before {
-  content: '';
-  position: absolute;
-  inset: 4px 8px;
-  border-radius: 12px;
-  background: radial-gradient(
-    ellipse at center,
-    rgba(226, 6, 19, 0.2) 0%,
-    rgba(226, 6, 19, 0.05) 60%,
+    rgba(255, 255, 255, 0.04) 50%,
     transparent 100%
   );
   pointer-events: none;
-  z-index: -1;
+}
+
+/* Active nav item — glass pill like iOS 26 tab bar */
+.liquid-glass-active::before {
+  content: '';
+  position: absolute;
+  inset: 5px 6px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px) brightness(1.15);
+  -webkit-backdrop-filter: blur(8px) brightness(1.15);
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  box-shadow:
+    inset 0 0.5px 0 rgba(255, 255, 255, 0.25),
+    inset 0 -0.5px 0 rgba(255, 255, 255, 0.08),
+    0 2px 8px rgba(0, 0, 0, 0.12);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Active item accent bar — bottom edge tint */
+.liquid-glass-active::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 2.5px;
+  border-radius: 2px;
+  background: var(--color-accent);
+  box-shadow: 0 0 8px rgba(226, 6, 19, 0.5);
+  pointer-events: none;
+  z-index: 1;
 }
