@@ -415,5 +415,76 @@
     "defqonApp": "App Q-dance",
     "about": "\u00c0 propos",
     "disclaimer": "Application communautaire. Non affili\u00e9e \u00e0 Q-dance ou Defqon.1."
+  },
+  "discover": {
+    "title": "D\u00e9couvrir",
+    "subtitle": "Des sets que tu pourrais adorer, selon tes go\u00fbts",
+    "stageProfile": "Ton profil de sc\u00e8nes",
+    "basedOn": "Bas\u00e9 sur {{favorites}} couleurs favorites et {{saved}} sets sauvegard\u00e9s",
+    "recommended": "Recommand\u00e9 pour toi",
+    "popular": "Coups de c\u0153ur des fans",
+    "buildProfile": "Construis ton profil",
+    "buildProfileDesc": "Ajoute des couleurs en favoris ou sauvegarde des sets \u2014 on sugg\u00e8rera ce que tu rates.",
+    "openTimetable": "Ouvrir le programme pour sauvegarder des sets"
+  },
+  "bingo": {
+    "title": "Bingo Festival",
+    "subtitle": "Coche ce que tu vis \u00e0 Defqon.1 2026",
+    "progress": "Progression",
+    "share": "Partager",
+    "newCard": "Nouvelle carte",
+    "newCardConfirm": "G\u00e9n\u00e9rer une nouvelle carte ?",
+    "newCardWarning": "Ta progression actuelle sera perdue.",
+    "cancel": "Annuler",
+    "tip": "Appuie sur une case pour la cocher. 5 en ligne = BINGO !"
+  },
+  "weather": {
+    "title": "M\u00e9t\u00e9o",
+    "subtitle": "Pr\u00e9visions Biddinghuizen & pr\u00e9paration festival",
+    "now": "En ce moment \u00e0 Biddinghuizen",
+    "loading": "Chargement...",
+    "festivalForecast": "M\u00e9t\u00e9o festival (25\u201328 juin)",
+    "historicalAvg": "Moyennes historiques (25\u201328 juin)",
+    "forecastUnlocks": "Pr\u00e9visions disponibles dans ~{{days}} jours",
+    "liveForecast": "Pr\u00e9visions en direct \u2014 mises \u00e0 jour quotidiennement",
+    "rainChance": "risque de pluie",
+    "packAdvice": "Conseils d\u2019emballage",
+    "externalForecasts": "M\u00e9t\u00e9os externes"
+  },
+  "quiz": {
+    "title": "Quiz Hardstyle",
+    "subtitle": "Teste tes connaissances sur la culture hardstyle",
+    "questionsCount": "{{count}} questions",
+    "category": "Cat\u00e9gorie",
+    "allCategories": "Toutes les cat\u00e9gories",
+    "start": "Lancer le quiz",
+    "result": "R\u00e9sultat",
+    "howDidYouDo": "Comment tu t'en es sorti ?",
+    "correct": "correctes",
+    "learnFromMistakes": "Apprendre de ses erreurs",
+    "didYouKnow": "Le saviez-vous ?",
+    "share": "Partager",
+    "tryAgain": "R\u00e9essayer",
+    "seeResults": "Voir les r\u00e9sultats",
+    "nextQuestion": "Question suivante \u2192",
+    "grades": {
+      "legend": "L\u00e9gende du Hardstyle",
+      "experienced": "Raver exp\u00e9riment\u00e9",
+      "festivalGoer": "Festivalier",
+      "newcomer": "Nouveau sur Q-dance"
+    }
+  },
+  "budget": {
+    "title": "Budget Festival",
+    "subtitle": "Suis tes d\u00e9penses pour Defqon.1 2026",
+    "planned": "Pr\u00e9vu",
+    "spent": "D\u00e9pens\u00e9",
+    "remaining": "Restant",
+    "categories": "Cat\u00e9gories",
+    "resetAll": "Tout r\u00e9initialiser",
+    "tapToSet": "Appuyer pour saisir",
+    "save": "Enregistrer",
+    "moneyTips": "Astuces \u00e9conomies",
+    "budgetUsed": "% du budget utilis\u00e9"
   }
 }

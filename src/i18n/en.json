@@ -415,5 +415,76 @@
     "defqonApp": "Q-dance App",
     "about": "About",
     "disclaimer": "Fan-made companion app. Not affiliated with Q-dance or Defqon.1."
+  },
+  "discover": {
+    "title": "Discover",
+    "subtitle": "Sets you might love, based on your taste",
+    "stageProfile": "Your stage profile",
+    "basedOn": "Based on {{favorites}} favorite colors and {{saved}} saved sets",
+    "recommended": "Recommended for you",
+    "popular": "Fan favourites to start with",
+    "buildProfile": "Build your taste profile",
+    "buildProfileDesc": "Favorite some color stages or save sets — we'll suggest what you're missing.",
+    "openTimetable": "Open Timetable to save sets"
+  },
+  "bingo": {
+    "title": "Festival Bingo",
+    "subtitle": "Mark what you experience at Defqon.1 2026",
+    "progress": "Progress",
+    "share": "Share",
+    "newCard": "New Card",
+    "newCardConfirm": "Generate a new card?",
+    "newCardWarning": "Your current progress will be lost.",
+    "cancel": "Cancel",
+    "tip": "Tap a square to mark it. Get 5 in a row to win!"
+  },
+  "weather": {
+    "title": "Weather",
+    "subtitle": "Biddinghuizen forecast & festival prep",
+    "now": "Now in Biddinghuizen",
+    "loading": "Loading...",
+    "festivalForecast": "Festival Forecast (June 25–28)",
+    "historicalAvg": "Historical Averages (June 25–28)",
+    "forecastUnlocks": "Festival forecast unlocks in ~{{days}} days",
+    "liveForecast": "Live forecast — updated daily",
+    "rainChance": "rain chance",
+    "packAdvice": "Pack advice",
+    "externalForecasts": "External Forecasts"
+  },
+  "quiz": {
+    "title": "Hardstyle Quiz",
+    "subtitle": "Test your knowledge of hardstyle culture",
+    "questionsCount": "{{count}} questions",
+    "category": "Category",
+    "allCategories": "All categories",
+    "start": "Start Quiz",
+    "result": "Result",
+    "howDidYouDo": "How did you do?",
+    "correct": "correct",
+    "learnFromMistakes": "Learn from mistakes",
+    "didYouKnow": "Did you know?",
+    "share": "Share",
+    "tryAgain": "Try again",
+    "seeResults": "See Results",
+    "nextQuestion": "Next Question →",
+    "grades": {
+      "legend": "Hardstyle Legend",
+      "experienced": "Experienced Raver",
+      "festivalGoer": "Festival-Goer",
+      "newcomer": "Q-dance Newcomer"
+    }
+  },
+  "budget": {
+    "title": "Festival Budget",
+    "subtitle": "Track your Defqon.1 2026 spending",
+    "planned": "Planned",
+    "spent": "Spent",
+    "remaining": "Remaining",
+    "categories": "Categories",
+    "resetAll": "Reset all",
+    "tapToSet": "Tap to set",
+    "save": "Save",
+    "moneyTips": "Money-saving tips",
+    "budgetUsed": "% of budget used"
   }
 }

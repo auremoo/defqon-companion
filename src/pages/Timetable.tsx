@@ -2,11 +2,21 @@ import { useState, useEffect, useCallback, useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useAuth } from '../contexts/AuthContext'
 import { supabase } from '../lib/supabase'
-import { UsersIcon } from '../components/Icons'
+import { UsersIcon, FlameIcon, SnowflakeIcon } from '../components/Icons'
 import PageShell from '../components/PageShell'
 import LiveMode from '../components/LiveMode'
 import { days, stageColors, type Day, type Stage, type Set } from '../data/lineup'
 import { editionMetas, getCurrentEdition, loadEdition, type Edition } from '../data/editions'
+
+type VoteType = 'fire' | 'cold'
+
+function getLocalVotes(year: number): Record<string, VoteType> {
+  try { return JSON.parse(localStorage.getItem(`defqon-votes-${year}`) || '{}') } catch { return {} }
+}
+
+function saveLocalVotes(year: number, votes: Record<string, VoteType>) {
+  localStorage.setItem(`defqon-votes-${year}`, JSON.stringify(votes))
+}
 
 // ─── Local storage fallback for non-authenticated users ───
 function getLocalSavedSets(year: number): string[] {
@@ -214,48 +224,77 @@ function FriendsPanel({ onClose, editionYear, onViewSchedule }: { onClose: () =>
 }
 
 // ─── Set Card ───
-function SetCard({ set, saved, friendCount, onToggle }: {
+function SetCard({ set, saved, friendCount, vote, onToggle, onVote }: {
   set: Set
   saved: boolean
   friendCount: number
+  vote?: VoteType
   onToggle: () => void
+  onVote: (type: VoteType) => void
 }) {
   const { t } = useTranslation()
 
   return (
     <div
-      className={`flex items-center gap-3 rounded-xl border p-3 transition-colors ${
-        saved
-          ? 'border-accent/50 bg-accent/10'
-          : 'border-border bg-surface-card'
+      className={`rounded-xl border transition-colors ${
+        saved ? 'border-accent/50 bg-accent/10' : 'border-border bg-surface-card'
       }`}
     >
-      <div
-        className="h-10 w-1 shrink-0 rounded-full"
-        style={{ backgroundColor: stageColors[set.stage] }}
-      />
-      <div className="flex-1 min-w-0">
-        <p className="truncate text-sm font-medium text-text-primary">{set.artist}</p>
-        <p className="text-xs text-text-muted">
-          {set.startTime} – {set.endTime}
-          {set.special && <span className="ml-1.5 text-accent">({set.special})</span>}
-        </p>
+      <div className="flex items-center gap-3 p-3">
+        <div
+          className="h-10 w-1 shrink-0 rounded-full"
+          style={{ backgroundColor: stageColors[set.stage] }}
+        />
+        <div className="flex-1 min-w-0">
+          <p className="truncate text-sm font-medium text-text-primary">{set.artist}</p>
+          <p className="text-xs text-text-muted">
+            {set.startTime} – {set.endTime}
+            {set.special && <span className="ml-1.5 text-accent">({set.special})</span>}
+          </p>
+        </div>
+        {friendCount > 0 && (
+          <span className="inline-flex shrink-0 items-center gap-1 rounded-full bg-blue-900/40 px-2 py-0.5 text-xs text-blue-300" title={t('timetable.friendsGoing')}>
+            {friendCount} <UsersIcon size={12} />
+          </span>
+        )}
+        <button
+          onClick={onToggle}
+          className={`shrink-0 rounded-lg px-2.5 py-1.5 text-xs font-medium transition-colors ${
+            saved
+              ? 'bg-accent/20 text-accent hover:bg-accent/30'
+              : 'bg-surface-alt text-text-muted hover:bg-surface-card hover:text-text-primary'
+          }`}
+        >
+          {saved ? '✓' : '+'}
+        </button>
       </div>
-      {friendCount > 0 && (
-        <span className="inline-flex shrink-0 items-center gap-1 rounded-full bg-blue-900/40 px-2 py-0.5 text-xs text-blue-300" title={t('timetable.friendsGoing')}>
-          {friendCount} <UsersIcon size={12} />
-        </span>
+      {saved && (
+        <div className="flex items-center gap-1.5 border-t border-white/5 px-3 py-1.5">
+          <span className="mr-auto text-[10px] text-text-muted">Rate this set:</span>
+          <button
+            onClick={() => onVote('fire')}
+            className={`flex items-center gap-1 rounded-full px-2.5 py-1 text-[11px] font-semibold transition-all ${
+              vote === 'fire'
+                ? 'bg-orange-500/30 text-orange-400'
+                : 'bg-surface-alt text-text-muted hover:bg-orange-500/20 hover:text-orange-400'
+            }`}
+          >
+            <FlameIcon size={12} />
+            Fire
+          </button>
+          <button
+            onClick={() => onVote('cold')}
+            className={`flex items-center gap-1 rounded-full px-2.5 py-1 text-[11px] font-semibold transition-all ${
+              vote === 'cold'
+                ? 'bg-blue-500/30 text-blue-400'
+                : 'bg-surface-alt text-text-muted hover:bg-blue-500/20 hover:text-blue-400'
+            }`}
+          >
+            <SnowflakeIcon size={12} />
+            Cold
+          </button>
+        </div>
       )}
-      <button
-        onClick={onToggle}
-        className={`shrink-0 rounded-lg px-2.5 py-1.5 text-xs font-medium transition-colors ${
-          saved
-            ? 'bg-accent/20 text-accent hover:bg-accent/30'
-            : 'bg-surface-alt text-text-muted hover:bg-surface-card hover:text-text-primary'
-        }`}
-      >
-        {saved ? '\u2713' : '+'}
-      </button>
     </div>
   )
 }
@@ -274,8 +313,27 @@ export default function Timetable() {
   const [searchQuery, setSearchQuery] = useState('')
   const [viewingBuddy, setViewingBuddy] = useState<{ id: string; name: string } | null>(null)
   const [buddySetIds, setBuddySetIds] = useState<string[]>([])
+  const [votes, setVotes] = useState<Record<string, VoteType>>(() => getLocalVotes(getCurrentEdition().year))
 
   useEffect(() => { document.title = 'Timetable — Defqon Companion' }, [])
+
+  // Reload votes when edition changes
+  useEffect(() => {
+    setVotes(getLocalVotes(edition.year))
+  }, [edition.year])
+
+  const voteSet = useCallback((setId: string, type: VoteType) => {
+    setVotes((prev) => {
+      const next = { ...prev }
+      if (next[setId] === type) {
+        delete next[setId]
+      } else {
+        next[setId] = type
+      }
+      saveLocalVotes(edition.year, next)
+      return next
+    })
+  }, [edition.year])
 
   // Load saved sets from Supabase filtered by edition year
   useEffect(() => {
@@ -552,7 +610,9 @@ export default function Timetable() {
                 set={set}
                 saved={savedSets.includes(set.id)}
                 friendCount={friendSets[set.id]?.length || 0}
+                vote={votes[set.id]}
                 onToggle={() => toggleSet(set.id)}
+                onVote={(type) => voteSet(set.id, type)}
               />
             ))}
           </div>
@@ -616,7 +676,9 @@ export default function Timetable() {
                   set={set}
                   saved={savedSets.includes(set.id)}
                   friendCount={friendSets[set.id]?.length || 0}
+                  vote={votes[set.id]}
                   onToggle={() => toggleSet(set.id)}
+                  onVote={(type) => voteSet(set.id, type)}
                 />
               ))
             )}
@@ -666,7 +728,9 @@ export default function Timetable() {
                           set={set}
                           saved={true}
                           friendCount={friendSets[set.id]?.length || 0}
+                          vote={votes[set.id]}
                           onToggle={() => toggleSet(set.id)}
+                          onVote={(type) => voteSet(set.id, type)}
                         />
                       ))}
                     </div>
