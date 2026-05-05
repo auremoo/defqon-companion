@@ -139,7 +139,7 @@ export default function Quiz() {
       <PageShell title="Result" subtitle="How did you do?">
         <div className="mx-auto w-full max-w-md space-y-4 pb-4">
           <div className="rounded-xl border border-border bg-surface-card p-6 text-center">
-            <TrophyIcon size={36} className="mx-auto mb-3" style={{ color: grade.color }} />
+            <div className="mx-auto mb-3 w-fit" style={{ color: grade.color }}><TrophyIcon size={36} /></div>
             <p className="text-3xl font-bold text-text-primary">{score} / {quizQuestions.length}</p>
             <p className="mt-1 text-lg font-semibold" style={{ color: grade.color }}>{grade.label}</p>
             <p className="mt-1 text-sm text-text-muted">{pct}% correct</p>
