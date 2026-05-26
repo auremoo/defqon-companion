@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useAuth } from '../contexts/AuthContext'
-import { supabase } from '../lib/supabase'
+import { db } from '../lib/firebase'
+import { collection, doc, getDocs, setDoc, query, where } from 'firebase/firestore'
 import PageShell from '../components/PageShell'
 import { editionMetas, loadEdition, type Edition } from '../data/editions'
 import { stageColors, days, type Set } from '../data/lineup'
@@ -32,34 +33,31 @@ export default function MyEditions() {
   useEffect(() => { document.title = 'My Editions — Defqon Companion' }, [])
 
   useEffect(() => {
-    if (!supabase || !user) return
-    supabase
-      .from('user_editions')
-      .select('edition_year, attended_festival, notes, rating')
-      .eq('user_id', user.id)
-      .then(({ data }) => {
-        if (data) setEditionHistories(data)
-      })
+    if (!db || !user) return
+    getDocs(query(collection(db, 'user_editions'), where('user_id', '==', user.uid))).then((snaps) => {
+      setEditionHistories(snaps.docs.map((d) => d.data() as EditionHistory))
+    })
   }, [user])
 
   const loadEditionSets = async (year: number) => {
     setSelectedYear(year)
     const ed = await loadEdition(year)
     setSelectedEdition(ed)
-    if (!supabase || !user) {
-      // Fallback to localStorage
+
+    if (!db || !user) {
       try {
         const local = JSON.parse(localStorage.getItem(`defqon-timetable-${year}`) || '[]')
         setSavedSets(local.map((id: string) => ({ set_id: id, attended: false })))
       } catch { setSavedSets([]) }
       return
     }
-    const { data } = await supabase
-      .from('timetable_entries')
-      .select('set_id, attended')
-      .eq('user_id', user.id)
-      .eq('edition_year', year)
-    if (data) setSavedSets(data)
+
+    const snaps = await getDocs(query(
+      collection(db, 'timetable_entries'),
+      where('user_id', '==', user.uid),
+      where('edition_year', '==', year)
+    ))
+    setSavedSets(snaps.docs.map((d) => ({ set_id: d.data().set_id as string, attended: d.data().attended as boolean ?? false })))
 
     const history = editionHistories.find((h) => h.edition_year === year)
     setNotes(history?.notes || '')
@@ -67,26 +65,24 @@ export default function MyEditions() {
   }
 
   const saveEditionNotes = async () => {
-    if (!supabase || !user || !selectedYear) return
+    if (!db || !user || !selectedYear) return
     setSaving(true)
-    const payload = {
-      user_id: user.id,
+    const docId = `${user.uid}_${selectedYear}`
+    await setDoc(doc(db, 'user_editions', docId), {
+      user_id: user.uid,
       edition_year: selectedYear,
       attended_festival: true,
       notes: notes || null,
       rating,
-    }
-    await supabase.from('user_editions').upsert(payload, { onConflict: 'user_id,edition_year' })
-    const { data } = await supabase
-      .from('user_editions')
-      .select('edition_year, attended_festival, notes, rating')
-      .eq('user_id', user.id)
-    if (data) setEditionHistories(data)
+    })
+    const snaps = await getDocs(query(collection(db, 'user_editions'), where('user_id', '==', user.uid)))
+    setEditionHistories(snaps.docs.map((d) => d.data() as EditionHistory))
     setSaving(false)
   }
 
   const selectedSetsData: Set[] = selectedEdition
-    ? selectedEdition.lineup.filter((s) => savedSets.some((ss) => ss.set_id === s.id))
+    ? selectedEdition.lineup
+        .filter((s) => savedSets.some((ss) => ss.set_id === s.id))
         .sort((a, b) => {
           const dayOrder = days.findIndex((d) => d.key === a.day) - days.findIndex((d) => d.key === b.day)
           return dayOrder || a.startTime.localeCompare(b.startTime)
@@ -96,7 +92,6 @@ export default function MyEditions() {
   return (
     <PageShell title={t('myEditions.title')} subtitle={t('myEditions.subtitle')}>
       <div className="mx-auto w-full max-w-md space-y-4">
-        {/* Edition cards */}
         {editionMetas.map((ed) => {
           const history = editionHistories.find((h) => h.edition_year === ed.year)
           const isSelected = selectedYear === ed.year
@@ -129,10 +124,8 @@ export default function MyEditions() {
                 </div>
               </button>
 
-              {/* Expanded detail */}
               {isSelected && (
                 <div className="mt-2 space-y-3 rounded-xl border border-border bg-surface-card p-4">
-                  {/* Sets saved */}
                   {selectedSetsData.length > 0 ? (
                     <div>
                       <p className="mb-2 text-xs font-bold uppercase tracking-wider text-text-muted">
@@ -154,10 +147,8 @@ export default function MyEditions() {
                     <p className="text-sm text-text-muted">{t('myEditions.noSets')}</p>
                   )}
 
-                  {/* Notes & Rating — only if logged in */}
                   {configured && user && (
                     <div className="space-y-3 border-t border-border pt-3">
-                      {/* Rating */}
                       <div>
                         <p className="mb-1 text-xs font-bold uppercase tracking-wider text-text-muted">{t('myEditions.rating')}</p>
                         <div className="flex gap-1">
@@ -165,9 +156,7 @@ export default function MyEditions() {
                             <button
                               key={star}
                               onClick={() => setRating(rating === star ? null : star)}
-                              className={`text-2xl transition-colors ${
-                                star <= (rating || 0) ? 'text-defqon-gold' : 'text-text-muted'
-                              }`}
+                              className={`text-2xl transition-colors ${star <= (rating || 0) ? 'text-defqon-gold' : 'text-text-muted'}`}
                             >
                               ★
                             </button>
@@ -175,7 +164,6 @@ export default function MyEditions() {
                         </div>
                       </div>
 
-                      {/* Notes */}
                       <div>
                         <p className="mb-1 text-xs font-bold uppercase tracking-wider text-text-muted">{t('myEditions.notes')}</p>
                         <textarea

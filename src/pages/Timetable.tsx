@@ -1,7 +1,11 @@
 import { useState, useEffect, useCallback, useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useAuth } from '../contexts/AuthContext'
-import { supabase } from '../lib/supabase'
+import { db } from '../lib/firebase'
+import {
+  collection, doc, getDocs, setDoc, deleteDoc, query, where,
+  onSnapshot, getDoc,
+} from 'firebase/firestore'
 import { UsersIcon, FlameIcon, SnowflakeIcon } from '../components/Icons'
 import PageShell from '../components/PageShell'
 import LiveMode from '../components/LiveMode'
@@ -18,13 +22,16 @@ function saveLocalVotes(year: number, votes: Record<string, VoteType>) {
   localStorage.setItem(`defqon-votes-${year}`, JSON.stringify(votes))
 }
 
-// ─── Local storage fallback for non-authenticated users ───
 function getLocalSavedSets(year: number): string[] {
   try { return JSON.parse(localStorage.getItem(`defqon-timetable-${year}`) || '[]') } catch { return [] }
 }
 
 // ─── Friends panel ───
-function FriendsPanel({ onClose, editionYear, onViewSchedule }: { onClose: () => void; editionYear: number; onViewSchedule: (friendId: string, friendName: string) => void }) {
+function FriendsPanel({ onClose, editionYear, onViewSchedule }: {
+  onClose: () => void
+  editionYear: number
+  onViewSchedule: (friendId: string, friendName: string) => void
+}) {
   const { t } = useTranslation()
   const { user } = useAuth()
   const [searchQuery, setSearchQuery] = useState('')
@@ -33,83 +40,89 @@ function FriendsPanel({ onClose, editionYear, onViewSchedule }: { onClose: () =>
   const [buddyIds, setBuddyIds] = useState<string[]>([])
 
   const loadFriends = useCallback(async () => {
-    if (!supabase || !user) return
-    const { data } = await supabase
-      .from('friendships')
-      .select(`
-        id, status, requester_id, addressee_id,
-        requester:profiles!friendships_requester_id_fkey(id, username, display_name),
-        addressee:profiles!friendships_addressee_id_fkey(id, username, display_name)
-      `)
-      .or(`requester_id.eq.${user.id},addressee_id.eq.${user.id}`)
+    if (!db || !user) return
 
-    if (data) {
-      setFriends(data.map((f: Record<string, unknown>) => {
-        const isRequester = (f.requester_id as string) === user.id
-        const friend = isRequester ? f.addressee : f.requester
-        const friendData = friend as { id: string; username: string; display_name: string | null }
-        return {
-          id: f.id as string,
-          friendUserId: friendData.id,
-          username: friendData.username,
-          display_name: friendData.display_name,
-          status: f.status as string,
-          isRequester,
-        }
-      }))
-    }
+    const [asRequester, asAddressee] = await Promise.all([
+      getDocs(query(collection(db, 'friendships'), where('requester_id', '==', user.uid))),
+      getDocs(query(collection(db, 'friendships'), where('addressee_id', '==', user.uid))),
+    ])
+
+    const all = [...asRequester.docs, ...asAddressee.docs]
+    const enriched = await Promise.all(all.map(async (snap) => {
+      const data = snap.data()
+      const isRequester = data.requester_id === user.uid
+      const friendUid = isRequester ? data.addressee_id : data.requester_id
+      const profileSnap = await getDoc(doc(db!, 'users', friendUid))
+      const profile = profileSnap.data() as { username: string; display_name: string | null } | undefined
+      return {
+        id: snap.id,
+        friendUserId: friendUid,
+        username: profile?.username ?? friendUid,
+        display_name: profile?.display_name ?? null,
+        status: data.status as string,
+        isRequester,
+      }
+    }))
+    setFriends(enriched)
 
     // Load edition buddies
-    const { data: buddies } = await supabase
-      .from('edition_buddies')
-      .select('friend_id')
-      .eq('user_id', user.id)
-      .eq('edition_year', editionYear)
-    if (buddies) setBuddyIds(buddies.map((b) => b.friend_id))
+    const buddySnaps = await getDocs(
+      query(collection(db, 'edition_buddies'),
+        where('user_id', '==', user.uid),
+        where('edition_year', '==', editionYear))
+    )
+    setBuddyIds(buddySnaps.docs.map((d) => d.data().friend_id as string))
   }, [user, editionYear])
 
   useEffect(() => { loadFriends() }, [loadFriends])
 
   const toggleBuddy = async (friendUserId: string) => {
-    if (!supabase || !user) return
+    if (!db || !user) return
+    const docId = `${user.uid}_${friendUserId}_${editionYear}`
     const isBuddy = buddyIds.includes(friendUserId)
     if (isBuddy) {
-      await supabase.from('edition_buddies').delete().eq('user_id', user.id).eq('friend_id', friendUserId).eq('edition_year', editionYear)
+      await deleteDoc(doc(db, 'edition_buddies', docId))
       setBuddyIds((prev) => prev.filter((id) => id !== friendUserId))
     } else {
-      await supabase.from('edition_buddies').insert({ user_id: user.id, friend_id: friendUserId, edition_year: editionYear })
+      await setDoc(doc(db, 'edition_buddies', docId), { user_id: user.uid, friend_id: friendUserId, edition_year: editionYear })
       setBuddyIds((prev) => [...prev, friendUserId])
     }
   }
 
   const searchUsers = async () => {
-    if (!supabase || !searchQuery.trim()) return
-    const { data } = await supabase
-      .from('profiles')
-      .select('id, username')
-      .ilike('username', `%${searchQuery}%`)
-      .neq('id', user?.id)
-      .limit(10)
-    if (data) setSearchResults(data)
+    if (!db || !searchQuery.trim()) return
+    // Firestore ne supporte pas ILIKE — on charge par username exact (insensible à la casse côté client)
+    const snaps = await getDocs(query(
+      collection(db, 'users'),
+      where('username', '>=', searchQuery.toLowerCase()),
+      where('username', '<=', searchQuery.toLowerCase() + '')
+    ))
+    setSearchResults(
+      snaps.docs
+        .filter((d) => d.id !== user?.uid)
+        .map((d) => ({ id: d.id, username: d.data().username as string }))
+        .slice(0, 10)
+    )
   }
 
   const sendRequest = async (friendId: string) => {
-    if (!supabase || !user) return
-    await supabase.from('friendships').insert({ requester_id: user.id, addressee_id: friendId })
+    if (!db || !user) return
+    const docId = [user.uid, friendId].sort().join('_')
+    await setDoc(doc(db, 'friendships', docId), { requester_id: user.uid, addressee_id: friendId, status: 'pending' })
     setSearchResults([])
     setSearchQuery('')
     loadFriends()
   }
 
   const acceptRequest = async (friendshipId: string) => {
-    if (!supabase) return
-    await supabase.from('friendships').update({ status: 'accepted' }).eq('id', friendshipId)
+    if (!db) return
+    await setDoc(doc(db, 'friendships', friendshipId), { status: 'accepted' }, { merge: true })
     loadFriends()
   }
 
   const removeFriend = async (friendshipId: string) => {
-    if (!supabase) return
-    await supabase.from('friendships').delete().eq('id', friendshipId)
+    if (!db) return
+    await deleteDoc(doc(db, 'friendships', friendshipId))
     loadFriends()
   }
 
@@ -126,7 +139,6 @@ function FriendsPanel({ onClose, editionYear, onViewSchedule }: { onClose: () =>
       >
         <h2 className="mb-4 text-lg font-bold text-text-primary">{t('timetable.friends')}</h2>
 
-        {/* Search */}
         <div className="mb-4 flex gap-2">
           <input
             type="text"
@@ -154,7 +166,6 @@ function FriendsPanel({ onClose, editionYear, onViewSchedule }: { onClose: () =>
           </div>
         )}
 
-        {/* Pending requests */}
         {pending.length > 0 && (
           <div className="mb-4">
             <h3 className="mb-2 text-xs font-medium uppercase text-yellow-400">{t('timetable.pendingRequests')}</h3>
@@ -170,7 +181,6 @@ function FriendsPanel({ onClose, editionYear, onViewSchedule }: { onClose: () =>
           </div>
         )}
 
-        {/* Accepted friends with buddy toggle */}
         {accepted.length > 0 && (
           <div className="mb-4">
             <h3 className="mb-2 text-xs font-medium uppercase text-text-muted">{t('timetable.yourFriends')}</h3>
@@ -202,7 +212,6 @@ function FriendsPanel({ onClose, editionYear, onViewSchedule }: { onClose: () =>
           </div>
         )}
 
-        {/* Sent requests */}
         {sent.length > 0 && (
           <div>
             <h3 className="mb-2 text-xs font-medium uppercase text-gray-500">{t('timetable.sentRequests')}</h3>
@@ -235,16 +244,9 @@ function SetCard({ set, saved, friendCount, vote, onToggle, onVote }: {
   const { t } = useTranslation()
 
   return (
-    <div
-      className={`rounded-xl border transition-colors ${
-        saved ? 'border-accent/50 bg-accent/10' : 'border-border bg-surface-card'
-      }`}
-    >
+    <div className={`rounded-xl border transition-colors ${saved ? 'border-accent/50 bg-accent/10' : 'border-border bg-surface-card'}`}>
       <div className="flex items-center gap-3 p-3">
-        <div
-          className="h-10 w-1 shrink-0 rounded-full"
-          style={{ backgroundColor: stageColors[set.stage] }}
-        />
+        <div className="h-10 w-1 shrink-0 rounded-full" style={{ backgroundColor: stageColors[set.stage] }} />
         <div className="flex-1 min-w-0">
           <p className="truncate text-sm font-medium text-text-primary">{set.artist}</p>
           <p className="text-xs text-text-muted">
@@ -274,24 +276,18 @@ function SetCard({ set, saved, friendCount, vote, onToggle, onVote }: {
           <button
             onClick={() => onVote('fire')}
             className={`flex items-center gap-1 rounded-full px-2.5 py-1 text-[11px] font-semibold transition-all ${
-              vote === 'fire'
-                ? 'bg-orange-500/30 text-orange-400'
-                : 'bg-surface-alt text-text-muted hover:bg-orange-500/20 hover:text-orange-400'
+              vote === 'fire' ? 'bg-orange-500/30 text-orange-400' : 'bg-surface-alt text-text-muted hover:bg-orange-500/20 hover:text-orange-400'
             }`}
           >
-            <FlameIcon size={12} />
-            Fire
+            <FlameIcon size={12} /> Fire
           </button>
           <button
             onClick={() => onVote('cold')}
             className={`flex items-center gap-1 rounded-full px-2.5 py-1 text-[11px] font-semibold transition-all ${
-              vote === 'cold'
-                ? 'bg-blue-500/30 text-blue-400'
-                : 'bg-surface-alt text-text-muted hover:bg-blue-500/20 hover:text-blue-400'
+              vote === 'cold' ? 'bg-blue-500/30 text-blue-400' : 'bg-surface-alt text-text-muted hover:bg-blue-500/20 hover:text-blue-400'
             }`}
           >
-            <SnowflakeIcon size={12} />
-            Cold
+            <SnowflakeIcon size={12} /> Cold
           </button>
         </div>
       )}
@@ -306,7 +302,7 @@ export default function Timetable() {
   const [edition, setEdition] = useState<Edition>(getCurrentEdition)
   const [activeDay, setActiveDay] = useState<Day>('friday')
   const [activeStage, setActiveStage] = useState<Stage | 'ALL'>('ALL')
-  const [savedSets, setSavedSets] = useState<string[]>(() => getLocalSavedSets(edition.year))
+  const [savedSets, setSavedSets] = useState<string[]>(() => getLocalSavedSets(getCurrentEdition().year))
   const [friendSets, setFriendSets] = useState<Record<string, string[]>>({})
   const [showFriends, setShowFriends] = useState(false)
   const [viewMode, setViewMode] = useState<'timetable' | 'my-schedule' | 'friends'>('timetable')
@@ -317,7 +313,6 @@ export default function Timetable() {
 
   useEffect(() => { document.title = 'Timetable — Defqon Companion' }, [])
 
-  // Reload votes when edition changes
   useEffect(() => {
     setVotes(getLocalVotes(edition.year))
   }, [edition.year])
@@ -325,119 +320,106 @@ export default function Timetable() {
   const voteSet = useCallback((setId: string, type: VoteType) => {
     setVotes((prev) => {
       const next = { ...prev }
-      if (next[setId] === type) {
-        delete next[setId]
-      } else {
-        next[setId] = type
-      }
+      if (next[setId] === type) delete next[setId]
+      else next[setId] = type
       saveLocalVotes(edition.year, next)
       return next
     })
   }, [edition.year])
 
-  // Load saved sets from Supabase filtered by edition year
+  // Charger les sets sauvegardés depuis Firestore
   useEffect(() => {
-    if (!supabase || !user) return
-    supabase
-      .from('timetable_entries')
-      .select('set_id')
-      .eq('user_id', user.id)
-      .eq('edition_year', edition.year)
-      .then(({ data }) => {
-        if (data) setSavedSets(data.map((d) => d.set_id))
-      })
+    if (!db || !user) return
+    getDocs(query(
+      collection(db, 'timetable_entries'),
+      where('user_id', '==', user.uid),
+      where('edition_year', '==', edition.year)
+    )).then((snaps) => {
+      if (!snaps.empty) setSavedSets(snaps.docs.map((d) => d.data().set_id as string))
+    })
   }, [user, edition.year])
 
-  // Load friends' sets
+  // Écouter en temps réel les sets des buddies
   useEffect(() => {
-    if (!supabase || !user) return
+    if (!db || !user) return
 
-    async function loadFriendSets() {
-      // Get edition buddies only (friends marked as "going together" this year)
-      const { data: buddies } = await supabase!
-        .from('edition_buddies')
-        .select('friend_id')
-        .eq('user_id', user!.id)
-        .eq('edition_year', edition.year)
+    let unsubscribe: (() => void) | undefined
 
-      if (!buddies?.length) {
+    async function subscribeBuddySets() {
+      const buddySnaps = await getDocs(query(
+        collection(db!, 'edition_buddies'),
+        where('user_id', '==', user!.uid),
+        where('edition_year', '==', edition.year)
+      ))
+      const buddyIds = buddySnaps.docs.map((d) => d.data().friend_id as string)
+
+      if (!buddyIds.length) {
         setFriendSets({})
         return
       }
 
-      const buddyIds = buddies.map((b) => b.friend_id)
-
-      // Get their timetable entries for current edition
-      const { data: entries } = await supabase!
-        .from('timetable_entries')
-        .select('user_id, set_id')
-        .in('user_id', buddyIds)
-        .eq('edition_year', edition.year)
-
-      if (entries) {
-        const grouped: Record<string, string[]> = {}
-        entries.forEach((e) => {
-          if (!grouped[e.set_id]) grouped[e.set_id] = []
-          grouped[e.set_id].push(e.user_id)
-        })
-        setFriendSets(grouped)
-      }
+      // onSnapshot sur les entries des buddies
+      unsubscribe = onSnapshot(
+        query(
+          collection(db!, 'timetable_entries'),
+          where('user_id', 'in', buddyIds),
+          where('edition_year', '==', edition.year)
+        ),
+        (snap) => {
+          const grouped: Record<string, string[]> = {}
+          snap.docs.forEach((d) => {
+            const { set_id, user_id } = d.data() as { set_id: string; user_id: string }
+            if (!grouped[set_id]) grouped[set_id] = []
+            grouped[set_id].push(user_id)
+          })
+          setFriendSets(grouped)
+        }
+      )
     }
 
-    loadFriendSets()
-
-    // Subscribe to realtime changes
-    const channel = supabase
-      .channel('friend-timetable')
-      .on('postgres_changes', { event: '*', schema: 'public', table: 'timetable_entries' }, () => {
-        loadFriendSets()
-      })
-      .subscribe()
-
-    return () => { supabase!.removeChannel(channel) }
+    subscribeBuddySets()
+    return () => unsubscribe?.()
   }, [user, edition.year])
 
-  // Persist to localStorage per edition (fallback)
+  // Sync localStorage
   useEffect(() => {
     localStorage.setItem(`defqon-timetable-${edition.year}`, JSON.stringify(savedSets))
   }, [savedSets, edition.year])
 
   const toggleSet = async (setId: string) => {
     const isSaved = savedSets.includes(setId)
-
     if (isSaved) {
       setSavedSets((prev) => prev.filter((id) => id !== setId))
-      if (supabase && user) {
-        await supabase.from('timetable_entries').delete().eq('user_id', user.id).eq('set_id', setId).eq('edition_year', edition.year)
+      if (db && user) {
+        await deleteDoc(doc(db, 'timetable_entries', `${user.uid}_${edition.year}_${setId}`))
       }
     } else {
       setSavedSets((prev) => [...prev, setId])
-      if (supabase && user) {
-        await supabase.from('timetable_entries').insert({ user_id: user.id, set_id: setId, edition_year: edition.year })
+      if (db && user) {
+        await setDoc(doc(db, 'timetable_entries', `${user.uid}_${edition.year}_${setId}`), {
+          user_id: user.uid,
+          set_id: setId,
+          edition_year: edition.year,
+        })
       }
     }
   }
 
-  // Load a buddy's schedule
   const viewBuddySchedule = async (friendId: string, friendName: string) => {
     setViewingBuddy({ id: friendId, name: friendName })
-    if (supabase) {
-      const { data } = await supabase
-        .from('timetable_entries')
-        .select('set_id')
-        .eq('user_id', friendId)
-        .eq('edition_year', edition.year)
-      setBuddySetIds(data?.map((d) => d.set_id) || [])
+    if (db) {
+      const snaps = await getDocs(query(
+        collection(db, 'timetable_entries'),
+        where('user_id', '==', friendId),
+        where('edition_year', '==', edition.year)
+      ))
+      setBuddySetIds(snaps.docs.map((d) => d.data().set_id as string))
     }
   }
 
-  // Share planning link
   const shareUrl = useMemo(() => {
     if (savedSets.length === 0) return ''
-    const ids = savedSets.map((id) => {
-      const parts = id.split('-')
-      return parts[parts.length - 1]
-    }).join(',')
+    const ids = savedSets.map((id) => id.split('-').at(-1)).join(',')
     return `${window.location.origin}${import.meta.env.BASE_URL}#/timetable?y=${edition.year}&s=${ids}`
   }, [savedSets, edition.year])
 
@@ -451,7 +433,6 @@ export default function Timetable() {
     }
   }
 
-  // Check for time conflicts in saved sets
   const getConflicts = (): Set[][] => {
     const saved = edition.lineup.filter((s) => savedSets.includes(s.id))
     const conflicts: Set[][] = []
@@ -472,7 +453,6 @@ export default function Timetable() {
     .filter((s) => !searchQuery || s.artist.toLowerCase().includes(searchQuery.toLowerCase()))
     .sort((a, b) => a.startTime.localeCompare(b.startTime))
 
-  // When searching across all days/stages
   const searchResults = searchQuery.length >= 2
     ? edition.lineup
         .filter((s) => s.artist.toLowerCase().includes(searchQuery.toLowerCase()))
@@ -482,14 +462,11 @@ export default function Timetable() {
         })
     : null
 
-  // Buddy's sets for the schedule viewer
   const buddySets = viewingBuddy
-    ? edition.lineup
-        .filter((s) => buddySetIds.includes(s.id))
-        .sort((a, b) => {
-          const dayOrder = days.findIndex((d) => d.key === a.day) - days.findIndex((d) => d.key === b.day)
-          return dayOrder || a.startTime.localeCompare(b.startTime)
-        })
+    ? edition.lineup.filter((s) => buddySetIds.includes(s.id)).sort((a, b) => {
+        const dayOrder = days.findIndex((d) => d.key === a.day) - days.findIndex((d) => d.key === b.day)
+        return dayOrder || a.startTime.localeCompare(b.startTime)
+      })
     : []
 
   const mySets = edition.lineup
@@ -499,7 +476,6 @@ export default function Timetable() {
       return dayOrder || a.startTime.localeCompare(b.startTime)
     })
 
-  // Sets where at least one buddy is going
   const friendsViewSets = edition.lineup
     .filter((s) => friendSets[s.id]?.length > 0)
     .sort((a, b) => {
@@ -512,7 +488,6 @@ export default function Timetable() {
 
   const headerContent = (
     <>
-      {/* Edition + Friends row */}
       <div className="mt-3 flex items-center justify-between">
         <div className="flex gap-1.5">
           {editionMetas.map((em) => (
@@ -523,9 +498,7 @@ export default function Timetable() {
                 setEdition(ed); setActiveDay('friday'); setActiveStage('ALL')
               }}
               className={`rounded-md px-2.5 py-1 text-xs font-bold uppercase tracking-wider transition-colors ${
-                edition.year === em.year
-                  ? 'bg-accent text-text-primary'
-                  : 'bg-white/5 text-text-muted hover:text-text-primary'
+                edition.year === em.year ? 'bg-accent text-text-primary' : 'bg-white/5 text-text-muted hover:text-text-primary'
               }`}
             >
               {em.year}
@@ -542,12 +515,10 @@ export default function Timetable() {
         )}
       </div>
 
-      {/* Theme for archive editions */}
       {!edition.isCurrent && (
         <p className="mt-2 text-xs italic text-text-secondary">&ldquo;{edition.theme}&rdquo; &middot; {t('timetable.archive')}</p>
       )}
 
-      {/* View toggle — integrated in header */}
       <div className="mt-3 flex rounded-lg bg-black/30 p-0.5">
         <button
           onClick={() => setViewMode('timetable')}
@@ -581,7 +552,6 @@ export default function Timetable() {
 
   return (
     <PageShell title={t('timetable.title')} subtitle={t('timetable.subtitle')} headerContent={headerContent}>
-      {/* Search bar — always visible */}
       <div className="mb-3">
         <input
           type="text"
@@ -592,54 +562,36 @@ export default function Timetable() {
         />
       </div>
 
-      {/* Live mode — only for current edition */}
       {edition.isCurrent && (
         <LiveMode edition={edition} friendSets={friendSets} savedSets={savedSets} />
       )}
 
-      {/* Search results override */}
       {searchResults ? (
         <div className="mx-auto w-full max-w-md">
-          <p className="mb-2 text-xs text-text-muted">
-            {searchResults.length} {t('timetable.searchResultCount')}
-          </p>
+          <p className="mb-2 text-xs text-text-muted">{searchResults.length} {t('timetable.searchResultCount')}</p>
           <div className="space-y-2">
             {searchResults.map((set) => (
-              <SetCard
-                key={set.id}
-                set={set}
-                saved={savedSets.includes(set.id)}
-                friendCount={friendSets[set.id]?.length || 0}
-                vote={votes[set.id]}
-                onToggle={() => toggleSet(set.id)}
-                onVote={(type) => voteSet(set.id, type)}
-              />
+              <SetCard key={set.id} set={set} saved={savedSets.includes(set.id)} friendCount={friendSets[set.id]?.length || 0} vote={votes[set.id]} onToggle={() => toggleSet(set.id)} onVote={(type) => voteSet(set.id, type)} />
             ))}
           </div>
         </div>
       ) : viewMode === 'timetable' ? (
         <>
-          {/* Day tabs — card style */}
           <div className="mb-3 grid grid-cols-4 gap-1.5">
             {days.map((day) => (
               <button
                 key={day.key}
                 onClick={() => { setActiveDay(day.key); setActiveStage('ALL') }}
                 className={`rounded-lg py-2.5 text-center transition-colors ${
-                  activeDay === day.key
-                    ? 'bg-accent text-text-primary'
-                    : 'bg-surface-card border border-border text-text-muted hover:text-text-primary'
+                  activeDay === day.key ? 'bg-accent text-text-primary' : 'bg-surface-card border border-border text-text-muted hover:text-text-primary'
                 }`}
               >
-                <span className="block text-[10px] font-bold uppercase tracking-wider">
-                  {t(`timetable.days.${day.key}`).slice(0, 3)}
-                </span>
+                <span className="block text-[10px] font-bold uppercase tracking-wider">{t(`timetable.days.${day.key}`).slice(0, 3)}</span>
                 <span className="block text-[9px] text-text-muted mt-0.5">{day.date.split(' ')[1]}</span>
               </button>
             ))}
           </div>
 
-          {/* Stage chips — compact colored dots */}
           <div className="mb-4 flex gap-1 overflow-x-auto pb-1">
             <button
               onClick={() => setActiveStage('ALL')}
@@ -665,29 +617,18 @@ export default function Timetable() {
             ))}
           </div>
 
-          {/* Sets list */}
           <div className="mx-auto w-full max-w-md space-y-2">
             {filteredSets.length === 0 ? (
               <p className="py-8 text-center text-sm text-gray-500">{t('timetable.noSets')}</p>
             ) : (
               filteredSets.map((set) => (
-                <SetCard
-                  key={set.id}
-                  set={set}
-                  saved={savedSets.includes(set.id)}
-                  friendCount={friendSets[set.id]?.length || 0}
-                  vote={votes[set.id]}
-                  onToggle={() => toggleSet(set.id)}
-                  onVote={(type) => voteSet(set.id, type)}
-                />
+                <SetCard key={set.id} set={set} saved={savedSets.includes(set.id)} friendCount={friendSets[set.id]?.length || 0} vote={votes[set.id]} onToggle={() => toggleSet(set.id)} onVote={(type) => voteSet(set.id, type)} />
               ))
             )}
           </div>
         </>
       ) : viewMode === 'my-schedule' ? (
-        /* My schedule view */
         <div className="mx-auto w-full max-w-md">
-          {/* Share button */}
           {savedSets.length > 0 && (
             <button
               onClick={sharePlanning}
@@ -697,13 +638,12 @@ export default function Timetable() {
             </button>
           )}
 
-          {/* Conflicts warning */}
           {conflicts.length > 0 && (
             <div className="mb-4 rounded-xl border border-yellow-700/50 bg-yellow-900/20 p-3">
               <p className="mb-1 text-xs font-medium text-yellow-400">{t('timetable.conflicts')}</p>
               {conflicts.map(([a, b], i) => (
                 <p key={i} className="text-xs text-yellow-300/80">
-                  {a.artist} ({a.stage} {a.startTime}) {'\u2194'} {b.artist} ({b.stage} {b.startTime})
+                  {a.artist} ({a.stage} {a.startTime}) {'↔'} {b.artist} ({b.stage} {b.startTime})
                 </p>
               ))}
             </div>
@@ -723,15 +663,7 @@ export default function Timetable() {
                     </h3>
                     <div className="space-y-2">
                       {daySets.map((set) => (
-                        <SetCard
-                          key={set.id}
-                          set={set}
-                          saved={true}
-                          friendCount={friendSets[set.id]?.length || 0}
-                          vote={votes[set.id]}
-                          onToggle={() => toggleSet(set.id)}
-                          onVote={(type) => voteSet(set.id, type)}
-                        />
+                        <SetCard key={set.id} set={set} saved={true} friendCount={friendSets[set.id]?.length || 0} vote={votes[set.id]} onToggle={() => toggleSet(set.id)} onVote={(type) => voteSet(set.id, type)} />
                       ))}
                     </div>
                   </div>
@@ -741,7 +673,6 @@ export default function Timetable() {
           )}
         </div>
       ) : viewMode === 'friends' ? (
-        /* Friends sets view — sets where buddies are going */
         <div className="mx-auto w-full max-w-md">
           {friendsViewSets.length === 0 ? (
             <div className="py-12 text-center">
@@ -769,29 +700,18 @@ export default function Timetable() {
                         return (
                           <div
                             key={set.id}
-                            className={`flex items-center gap-3 rounded-xl border p-3 transition-colors ${
-                              isMine
-                                ? 'border-accent/30 bg-accent/5'
-                                : 'border-border bg-surface-card'
-                            }`}
+                            className={`flex items-center gap-3 rounded-xl border p-3 transition-colors ${isMine ? 'border-accent/30 bg-accent/5' : 'border-border bg-surface-card'}`}
                           >
-                            <div
-                              className="h-10 w-1 shrink-0 rounded-full"
-                              style={{ backgroundColor: stageColors[set.stage] }}
-                            />
+                            <div className="h-10 w-1 shrink-0 rounded-full" style={{ backgroundColor: stageColors[set.stage] }} />
                             <div className="flex-1 min-w-0">
                               <p className="truncate text-sm font-medium text-text-primary">{set.artist}</p>
-                              <p className="text-xs text-text-muted">
-                                {set.stage} &middot; {set.startTime} – {set.endTime}
-                              </p>
+                              <p className="text-xs text-text-muted">{set.stage} &middot; {set.startTime} – {set.endTime}</p>
                             </div>
                             <div className="flex items-center gap-2">
                               <span className="inline-flex items-center gap-1 rounded-full bg-blue-900/40 px-2 py-0.5 text-xs text-blue-300">
                                 {friendSets[set.id].length} <UsersIcon size={11} />
                               </span>
-                              {isMine && (
-                                <span className="text-[9px] font-bold uppercase tracking-wider text-accent">{t('timetable.youToo')}</span>
-                              )}
+                              {isMine && <span className="text-[9px] font-bold uppercase tracking-wider text-accent">{t('timetable.youToo')}</span>}
                             </div>
                           </div>
                         )
@@ -807,7 +727,6 @@ export default function Timetable() {
 
       {showFriends && <FriendsPanel onClose={() => setShowFriends(false)} editionYear={edition.year} onViewSchedule={viewBuddySchedule} />}
 
-      {/* Buddy schedule viewer */}
       {viewingBuddy && (
         <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/70 sm:items-center" onClick={() => setViewingBuddy(null)}>
           <div
@@ -829,17 +748,12 @@ export default function Timetable() {
                   if (daySets.length === 0) return null
                   return (
                     <div key={day.key}>
-                      <h3 className="mb-2 text-xs font-bold uppercase tracking-wider text-text-muted">
-                        {t(`timetable.days.${day.key}`)}
-                      </h3>
+                      <h3 className="mb-2 text-xs font-bold uppercase tracking-wider text-text-muted">{t(`timetable.days.${day.key}`)}</h3>
                       <div className="space-y-1.5">
                         {daySets.map((set) => {
                           const isMine = savedSets.includes(set.id)
                           return (
-                            <div
-                              key={set.id}
-                              className={`flex items-center gap-2 rounded-lg p-2.5 ${isMine ? 'bg-accent/10' : 'bg-surface-alt'}`}
-                            >
+                            <div key={set.id} className={`flex items-center gap-2 rounded-lg p-2.5 ${isMine ? 'bg-accent/10' : 'bg-surface-alt'}`}>
                               <div className="h-8 w-1 shrink-0 rounded-full" style={{ backgroundColor: stageColors[set.stage] }} />
                               <div className="flex-1 min-w-0">
                                 <p className="truncate text-sm text-text-primary">{set.artist}</p>

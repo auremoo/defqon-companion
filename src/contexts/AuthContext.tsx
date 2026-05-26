@@ -1,6 +1,13 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from 'react'
-import { supabase, isSupabaseConfigured } from '../lib/supabase'
-import type { User } from '@supabase/supabase-js'
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  signOut as firebaseSignOut,
+  onAuthStateChanged,
+  type User,
+} from 'firebase/auth'
+import { doc, getDoc, setDoc, updateDoc } from 'firebase/firestore'
+import { auth, db, isFirebaseConfigured } from '../lib/firebase'
 
 export interface Profile {
   id: string
@@ -25,7 +32,7 @@ interface AuthState {
 const AuthContext = createContext<AuthState>({
   user: null,
   profile: null,
-  loading: true,
+  loading: false,
   configured: false,
   signUp: async () => null,
   signIn: async () => null,
@@ -37,76 +44,83 @@ const AuthContext = createContext<AuthState>({
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null)
   const [profile, setProfile] = useState<Profile | null>(null)
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(isFirebaseConfigured)
 
   useEffect(() => {
-    if (!isSupabaseConfigured || !supabase) {
-      setLoading(false)
-      return
-    }
+    if (!isFirebaseConfigured || !auth) return
 
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      setUser(session?.user ?? null)
-      if (session?.user) fetchProfile(session.user.id)
+    // onAuthStateChanged résout depuis le cache IndexedDB — pas de blocage réseau
+    const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
+      setUser(firebaseUser)
+      if (firebaseUser) {
+        await fetchProfile(firebaseUser.uid)
+      } else {
+        setProfile(null)
+      }
       setLoading(false)
     })
 
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
-      setUser(session?.user ?? null)
-      if (session?.user) fetchProfile(session.user.id)
-      else setProfile(null)
-    })
-
-    return () => subscription.unsubscribe()
+    return unsubscribe
   }, [])
 
-  async function fetchProfile(userId: string) {
-    if (!supabase) return
-    const { data } = await supabase
-      .from('profiles')
-      .select('id, username, display_name, defqon_username, is_dediqated')
-      .eq('id', userId)
-      .single()
-    if (data) setProfile(data)
+  async function fetchProfile(uid: string) {
+    if (!db) return
+    const snap = await getDoc(doc(db, 'users', uid))
+    if (snap.exists()) {
+      setProfile({ id: uid, ...(snap.data() as Omit<Profile, 'id'>) })
+    }
   }
 
   async function signUp(email: string, password: string, username: string): Promise<string | null> {
-    if (!supabase) return 'Supabase not configured'
-    const { error } = await supabase.auth.signUp({
-      email,
-      password,
-      options: { data: { username, display_name: username } },
-    })
-    return error?.message ?? null
+    if (!auth || !db) return 'Firebase not configured'
+    try {
+      const { user: newUser } = await createUserWithEmailAndPassword(auth, email, password)
+      await setDoc(doc(db, 'users', newUser.uid), {
+        username,
+        display_name: username,
+        defqon_username: null,
+        is_dediqated: false,
+      })
+      return null
+    } catch (e: unknown) {
+      return (e as Error).message
+    }
   }
 
   async function signIn(email: string, password: string): Promise<string | null> {
-    if (!supabase) return 'Supabase not configured'
-    const { error } = await supabase.auth.signInWithPassword({ email, password })
-    return error?.message ?? null
+    if (!auth) return 'Firebase not configured'
+    try {
+      await signInWithEmailAndPassword(auth, email, password)
+      return null
+    } catch (e: unknown) {
+      return (e as Error).message
+    }
   }
 
   async function signOut() {
-    if (!supabase) return
-    await supabase.auth.signOut()
+    if (!auth) return
+    await firebaseSignOut(auth)
     setUser(null)
     setProfile(null)
   }
 
   async function updateProfile(fields: Partial<Pick<Profile, 'display_name' | 'defqon_username' | 'is_dediqated'>>): Promise<string | null> {
-    if (!supabase || !user) return 'Not authenticated'
-    const { error } = await supabase.from('profiles').update(fields).eq('id', user.id)
-    if (error) return error.message
-    await fetchProfile(user.id)
-    return null
+    if (!db || !user) return 'Not authenticated'
+    try {
+      await updateDoc(doc(db, 'users', user.uid), fields)
+      await fetchProfile(user.uid)
+      return null
+    } catch (e: unknown) {
+      return (e as Error).message
+    }
   }
 
   async function refreshProfile() {
-    if (user) await fetchProfile(user.id)
+    if (user) await fetchProfile(user.uid)
   }
 
   return (
-    <AuthContext.Provider value={{ user, profile, loading, configured: isSupabaseConfigured, signUp, signIn, signOut, updateProfile, refreshProfile }}>
+    <AuthContext.Provider value={{ user, profile, loading, configured: isFirebaseConfigured, signUp, signIn, signOut, updateProfile, refreshProfile }}>
       {children}
     </AuthContext.Provider>
   )
