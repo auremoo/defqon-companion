@@ -1,0 +1,42 @@
+name: Cache Hardstyle Data
+
+on:
+  schedule:
+    - cron: '0 5 * * *' # Every day at 5am UTC (before news at 6am)
+  workflow_dispatch:
+
+jobs:
+  cache:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Scrape charts (Top 100 — weekly update but check daily)
+        run: node scripts/cache-hardstyle-charts.mjs
+      - name: Scrape latest releases
+        run: node scripts/cache-hardstyle-releases.mjs
+      - name: Scrape upcoming events
+        run: node scripts/cache-hardstyle-events.mjs
+      - name: Commit if changed
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/hardstyle-charts.json public/data/hardstyle-releases.json public/data/hardstyle-events.json
+          if git diff --staged --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            git commit -m "chore: update hardstyle charts, releases & events"
+            git push
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+      - name: Trigger deploy
+        if: steps.commit.outputs.changed == 'true'
+        run: gh workflow run deploy.yml
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

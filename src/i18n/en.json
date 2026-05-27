@@ -283,7 +283,12 @@
     "top40": "Hardstyle Top 40",
     "qlimax": "Qlimax",
     "playlistsTab": "Playlists",
+    "chartsTab": "Charts",
     "artistsTab": "Artists",
+    "top100": "Hardstyle Top 100",
+    "latestReleases": "Latest Releases",
+    "upcomingEvents": "Upcoming Events",
+    "moreOnHardstyle": "More on hardstyle.com",
     "ghostStories": "Ghost Stories",
     "listenOnSpotify": "Listen on Spotify",
     "artists": {

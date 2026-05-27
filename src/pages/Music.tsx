@@ -1,8 +1,34 @@
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import PageShell from '../components/PageShell'
-import { SpotifyIcon } from '../components/Icons'
+import { SpotifyIcon, ExternalLinkIcon } from '../components/Icons'
 import { artists } from '../data/artists'
+
+const CHARTS_URL   = `${import.meta.env.BASE_URL}data/hardstyle-charts.json`
+const RELEASES_URL = `${import.meta.env.BASE_URL}data/hardstyle-releases.json`
+
+interface ChartTrack {
+  position: number
+  id: string
+  title: string
+  artist: string
+  mix: string
+  label: string
+  image: string
+  link: string
+  lastWeek: string
+  peak: string
+  weeksOnChart: string
+}
+
+interface Release {
+  id: string
+  title: string
+  artist: string
+  mix: string
+  image: string
+  link: string
+}
 
 const PERSONAL_PLAYLIST = '5tkWlvbjzTTCMKVrcaEHpQ'
 
@@ -75,6 +101,103 @@ function PlaylistsView() {
   )
 }
 
+function ChartsView() {
+  const { t } = useTranslation()
+  const [tracks, setTracks] = useState<ChartTrack[]>([])
+  const [releases, setReleases] = useState<Release[]>([])
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    Promise.all([
+      fetch(CHARTS_URL).then(r => r.json()).catch(() => ({ tracks: [] })),
+      fetch(RELEASES_URL).then(r => r.json()).catch(() => ({ releases: [] })),
+    ]).then(([c, r]) => {
+      setTracks(c.tracks ?? [])
+      setReleases(r.releases ?? [])
+      setLoading(false)
+    })
+  }, [])
+
+  if (loading) {
+    return (
+      <div className="space-y-2">
+        {[...Array(8)].map((_, i) => (
+          <div key={i} className="flex gap-3 rounded-xl border border-border bg-surface-card p-3">
+            <div className="h-12 w-12 shrink-0 animate-pulse rounded-lg bg-surface-alt" />
+            <div className="flex-1 space-y-1.5 py-1">
+              <div className="h-3 animate-pulse rounded bg-surface-alt" />
+              <div className="h-2.5 w-2/3 animate-pulse rounded bg-surface-alt" />
+            </div>
+          </div>
+        ))}
+      </div>
+    )
+  }
+
+  return (
+    <div className="space-y-6">
+      {/* Top 100 */}
+      <div>
+        <div className="mb-3 flex items-center justify-between">
+          <h2 className="defqon-heading text-xs tracking-widest text-text-muted">{t('music.top100')}</h2>
+          <a href="https://hardstyle.com/en/charts" target="_blank" rel="noopener noreferrer"
+            className="flex items-center gap-1 text-[10px] text-text-muted hover:text-text-secondary">
+            hardstyle.com <ExternalLinkIcon size={10} />
+          </a>
+        </div>
+        <div className="space-y-1.5">
+          {tracks.slice(0, 50).map((track) => (
+            <a key={track.id} href={track.link} target="_blank" rel="noopener noreferrer"
+              className="flex items-center gap-3 rounded-xl border border-border bg-surface-card p-2.5 transition-colors hover:border-border-hover">
+              <span className="w-6 shrink-0 text-center text-xs font-bold text-text-muted">
+                {track.position}
+              </span>
+              <img src={track.image} alt="" loading="lazy"
+                className="h-10 w-10 shrink-0 rounded-md object-cover bg-surface-alt" />
+              <div className="min-w-0 flex-1">
+                <p className="truncate text-xs font-semibold text-text-primary">{track.artist}</p>
+                <p className="truncate text-[11px] text-text-muted">{track.title}</p>
+              </div>
+              {track.peak !== '-' && (
+                <div className="shrink-0 text-right">
+                  <p className="text-[9px] text-text-muted">Peak</p>
+                  <p className="text-xs font-bold text-accent">#{track.peak}</p>
+                </div>
+              )}
+            </a>
+          ))}
+        </div>
+      </div>
+
+      {/* Latest Releases */}
+      {releases.length > 0 && (
+        <div>
+          <div className="mb-3 flex items-center justify-between">
+            <h2 className="defqon-heading text-xs tracking-widest text-text-muted">{t('music.latestReleases')}</h2>
+            <a href="https://hardstyle.com/en/music" target="_blank" rel="noopener noreferrer"
+              className="flex items-center gap-1 text-[10px] text-text-muted hover:text-text-secondary">
+              <ExternalLinkIcon size={10} />
+            </a>
+          </div>
+          <div className="grid grid-cols-2 gap-2">
+            {releases.slice(0, 10).map((r) => (
+              <a key={r.id} href={r.link} target="_blank" rel="noopener noreferrer"
+                className="flex flex-col rounded-xl border border-border bg-surface-card overflow-hidden transition-colors hover:border-border-hover">
+                <img src={r.image} alt="" loading="lazy"
+                  className="aspect-square w-full object-cover bg-surface-alt" />
+                <div className="p-2">
+                  <p className="truncate text-[11px] font-semibold text-text-primary">{r.title}</p>
+                  <p className="truncate text-[10px] text-text-muted">{r.artist}</p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
+
 function ArtistsView() {
   const { t } = useTranslation()
   const [expanded, setExpanded] = useState<string | null>(null)
@@ -137,35 +260,38 @@ function ArtistsView() {
 
 export default function Music() {
   const { t } = useTranslation()
-  const [tab, setTab] = useState<'playlists' | 'artists'>('playlists')
+  const [tab, setTab] = useState<'playlists' | 'charts' | 'artists'>('charts')
 
   useEffect(() => { document.title = 'Music \u2014 Defqon Companion' }, [])
 
+  const tabs = [
+    { key: 'charts' as const, label: t('music.chartsTab') },
+    { key: 'playlists' as const, label: t('music.playlistsTab') },
+    { key: 'artists' as const, label: t('music.artistsTab') },
+  ]
+
   const headerContent = (
     <div className="mt-3 flex rounded-lg bg-black/30 p-0.5">
-      <button
-        onClick={() => setTab('playlists')}
-        className={`flex-1 rounded-md py-1.5 text-[10px] font-semibold uppercase tracking-wider transition-colors ${
-          tab === 'playlists' ? 'bg-accent text-text-primary' : 'text-text-muted hover:text-text-primary'
-        }`}
-      >
-        {t('music.playlistsTab')}
-      </button>
-      <button
-        onClick={() => setTab('artists')}
-        className={`flex-1 rounded-md py-1.5 text-[10px] font-semibold uppercase tracking-wider transition-colors ${
-          tab === 'artists' ? 'bg-accent text-text-primary' : 'text-text-muted hover:text-text-primary'
-        }`}
-      >
-        {t('music.artistsTab')} ({artists.length})
-      </button>
+      {tabs.map(({ key, label }) => (
+        <button
+          key={key}
+          onClick={() => setTab(key)}
+          className={`flex-1 rounded-md py-1.5 text-[10px] font-semibold uppercase tracking-wider transition-colors ${
+            tab === key ? 'bg-accent text-text-primary' : 'text-text-muted hover:text-text-primary'
+          }`}
+        >
+          {label}
+        </button>
+      ))}
     </div>
   )
 
   return (
     <PageShell title={t('music.title')} subtitle={t('music.subtitle')} headerContent={headerContent}>
       <div className="mx-auto w-full max-w-md">
-        {tab === 'playlists' ? <PlaylistsView /> : <ArtistsView />}
+        {tab === 'charts' && <ChartsView />}
+        {tab === 'playlists' && <PlaylistsView />}
+        {tab === 'artists' && <ArtistsView />}
       </div>
     </PageShell>
   )
