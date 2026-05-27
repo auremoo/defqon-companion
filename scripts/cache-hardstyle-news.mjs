@@ -18,36 +18,84 @@ if (!res.ok) {
 
 const html = await res.text()
 
-// Extract article cards — hardstyle.com uses article elements with consistent structure
-const articles = []
-
-// Match article blocks (each news item)
-const articleBlocks = [...html.matchAll(/<article[^>]*>([\s\S]*?)<\/article>/g)]
-
-for (const [, block] of articleBlocks) {
-  // Extract link and title from anchor
-  const linkMatch = block.match(/<a[^>]+href="([^"]+)"[^>]*>/)
-  const titleMatch = block.match(/<h[23][^>]*>\s*(?:<a[^>]*>)?\s*([^<]+)\s*(?:<\/a>)?\s*<\/h[23]>/)
-  const imgMatch = block.match(/<img[^>]+src="([^"]+)"/)
-  const dateMatch = block.match(/<time[^>]*datetime="([^"]+)"[^>]*>/) || block.match(/datetime="([^"]+)"/)
-  const categoryMatch = block.match(/\/en\/news\/([a-z-]+)\//)
-
-  if (!linkMatch || !titleMatch) continue
-
-  let link = linkMatch[1]
-  if (link.startsWith('/')) link = `${BASE_URL}${link}`
-
-  const title = titleMatch[1].trim().replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"')
-  const image = imgMatch ? (imgMatch[1].startsWith('http') ? imgMatch[1] : `${BASE_URL}${imgMatch[1]}`) : null
-  const date = dateMatch ? dateMatch[1] : null
-  const category = categoryMatch ? categoryMatch[1] : 'news'
-
-  if (title && link) {
-    articles.push({ title, link, image, date, category })
-  }
+// Parse DD.MM.YYYY to ISO date string (strip "Premium" label if present)
+function parseDate(raw) {
+  const clean = raw.replace(/Premium/g, '').trim()
+  const m = clean.match(/(\d{2})\.(\d{2})\.(\d{4})/)
+  if (!m) return null
+  return `${m[3]}-${m[2]}-${m[1]}`
 }
 
-// Deduplicate by link, keep first 30
+// Extract leading image from an anchor block: try data-src first, then srcset
+function extractImage(block) {
+  const dataSrc = block.match(/data-src="([^"]+)"/)
+  if (dataSrc) return dataSrc[1].startsWith('http') ? dataSrc[1] : `${BASE_URL}${dataSrc[1]}`
+  const srcset = block.match(/srcset="([^\s"]+)/)
+  if (srcset) return srcset[1].startsWith('http') ? srcset[1] : `${BASE_URL}${srcset[1]}`
+  return null
+}
+
+// Decode common HTML entities
+function decode(s) {
+  return s
+    .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+    .replace(/&#039;/g, "'").replace(/&quot;/g, '"')
+    .replace(/&lsquo;/g, '‘').replace(/&rsquo;/g, '’')
+    .replace(/&ldquo;/g, '“').replace(/&rdquo;/g, '”')
+    .replace(/&ndash;/g, '–').replace(/&mdash;/g, '—')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&[A-Za-z]+;/g, '').replace(/&#\d+;/g, '')
+    .trim()
+}
+
+const articles = []
+
+// 1. Featured highlight: <a class="newsHighlight" href="...">
+for (const [, href, block] of html.matchAll(/<a class="newsHighlight" href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g)) {
+  const titleMatch = block.match(/<span class="bigTitle">([^<]+)<\/span>/)
+  const dateMatch = block.match(/<span class="date">([^<]+)<\/span>/)
+  const tagsMatch = [...block.matchAll(/<span class="tag"[^>]*>([^<]+)<\/span>/g)].map(m => m[1].replace('#', ''))
+  if (!titleMatch) continue
+  articles.push({
+    title: decode(titleMatch[1]),
+    link: href.startsWith('http') ? href : `${BASE_URL}${href}`,
+    image: extractImage(block),
+    date: dateMatch ? parseDate(dateMatch[1]) : null,
+    category: tagsMatch.map(t => t.toLowerCase()).join(','),
+  })
+}
+
+// 2. Block items: <a class="newsBlockItem" href="...">
+for (const [, href, block] of html.matchAll(/<a class="newsBlockItem" href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g)) {
+  const titleMatch = block.match(/<span class="mediumTitle">([^<]+)<\/span>/)
+  const dateMatch = block.match(/<span class="date">([^<]+)<\/span>/)
+  const tagsMatch = [...block.matchAll(/<span class="tag"[^>]*>([^<]+)<\/span>/g)].map(m => m[1].replace('#', ''))
+  if (!titleMatch) continue
+  articles.push({
+    title: decode(titleMatch[1]),
+    link: href.startsWith('http') ? href : `${BASE_URL}${href}`,
+    image: extractImage(block),
+    date: dateMatch ? parseDate(dateMatch[1]) : null,
+    category: tagsMatch.map(t => t.toLowerCase()).join(','),
+  })
+}
+
+// 3. List items: <a class="newsListItem" href="..."> (text-only, no image)
+for (const [, href, block] of html.matchAll(/<a class="newsListItem" href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g)) {
+  const titleMatch = block.match(/<span class="newsTitle[^"]*">(?:<span[^>]*>[^<]*<\/span>)?([^<]+)<\/span>/)
+  const dateMatch = block.match(/<span class="date">([^<]+)<\/span>/)
+  const tagsMatch = [...block.matchAll(/<span class="tag"[^>]*>([^<]+)<\/span>/g)].map(m => m[1].replace('#', ''))
+  if (!titleMatch) continue
+  articles.push({
+    title: decode(titleMatch[1]),
+    link: href.startsWith('http') ? href : `${BASE_URL}${href}`,
+    image: null,
+    date: dateMatch ? parseDate(dateMatch[1]) : null,
+    category: tagsMatch.map(t => t.toLowerCase()).join(','),
+  })
+}
+
+// Deduplicate by link
 const seen = new Set()
 const unique = articles.filter((a) => {
   if (seen.has(a.link)) return false
