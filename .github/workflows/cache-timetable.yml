@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
       - name: Poll Q-dance timetable API
         run: node scripts/cache-timetable.mjs
       - name: Commit if changed

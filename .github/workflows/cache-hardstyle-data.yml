@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
       - name: Scrape charts (Top 100 — weekly update but check daily)
         run: node scripts/cache-hardstyle-charts.mjs
       - name: Scrape latest releases
