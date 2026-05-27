@@ -16,6 +16,7 @@ const Bingo = lazy(() => import('./pages/Bingo'))
 const Weather = lazy(() => import('./pages/Weather'))
 const Quiz = lazy(() => import('./pages/Quiz'))
 const Budget = lazy(() => import('./pages/Budget'))
+const News = lazy(() => import('./pages/News'))
 
 function PageLoader() {
   return <div className="flex flex-1 items-center justify-center"><span className="text-gray-500">...</span></div>
@@ -41,6 +42,7 @@ export default function App() {
               <Route path="/weather" element={<Weather />} />
               <Route path="/quiz" element={<Quiz />} />
               <Route path="/budget" element={<Budget />} />
+              <Route path="/news" element={<News />} />
             </Routes>
           </Suspense>
         </main>

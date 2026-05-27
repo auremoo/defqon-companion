@@ -19,7 +19,7 @@ const xml = await res.text()
 
 // YouTube RSS format is stable — regex parsing is safe here
 const videos = [...xml.matchAll(/<entry>([\s\S]*?)<\/entry>/g)]
-  .slice(0, 10)
+  .slice(0, 20)
   .map(([, entry]) => {
     const videoId = entry.match(/<yt:videoId>([^<]+)<\/yt:videoId>/)?.[1] ?? ''
     const rawTitle = entry.match(/<title>([^<]+)<\/title>/)?.[1] ?? ''

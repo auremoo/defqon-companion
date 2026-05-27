@@ -1,13 +1,13 @@
 import { NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { HomeIcon, PaletteIcon, CalendarIcon, BookIcon, MusicIcon } from './Icons'
+import { HomeIcon, PaletteIcon, CalendarIcon, NewspaperIcon, MusicIcon } from './Icons'
 
 const navItems = [
   { to: '/', Icon: HomeIcon, labelKey: 'nav.home' },
   { to: '/colors', Icon: PaletteIcon, labelKey: 'nav.colors' },
   { to: '/timetable', Icon: CalendarIcon, labelKey: 'nav.timetable' },
   { to: '/music', Icon: MusicIcon, labelKey: 'nav.music' },
-  { to: '/guide', Icon: BookIcon, labelKey: 'nav.guide' },
+  { to: '/news', Icon: NewspaperIcon, labelKey: 'nav.news' },
 ]
 
 export default function BottomNav() {

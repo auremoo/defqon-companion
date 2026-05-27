@@ -6,7 +6,8 @@
     "nowListening": "\u00c9couter",
     "music": "Musique",
     "checklist": "Checklist",
-    "timetable": "Programme"
+    "timetable": "Programme",
+    "news": "Actus"
   },
   "home": {
     "title": "Defqon Companion",
@@ -486,5 +487,14 @@
     "save": "Enregistrer",
     "moneyTips": "Astuces \u00e9conomies",
     "budgetUsed": "% du budget utilis\u00e9"
+  },
+  "news": {
+    "title": "Actus",
+    "subtitle": "Dernières vidéos de Q-dance & la scène hardstyle",
+    "filterAll": "Tout",
+    "filterSets": "Sets",
+    "filterAfterMovies": "Aftermovies",
+    "noResults": "Aucune vidéo dans cette catégorie.",
+    "moreOnYouTube": "Plus sur YouTube"
   }
 }
