@@ -494,7 +494,8 @@
     "filterAll": "All",
     "filterSets": "Sets",
     "filterAfterMovies": "Aftermovies",
-    "noResults": "No videos in this category.",
-    "moreOnYouTube": "More on YouTube"
+    "noResults": "Nothing in this category.",
+    "moreOnYouTube": "More on YouTube",
+    "moreOnHardstyle": "More on hardstyle.com"
   }
 }

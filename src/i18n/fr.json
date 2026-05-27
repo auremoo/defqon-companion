@@ -490,11 +490,12 @@
   },
   "news": {
     "title": "Actus",
-    "subtitle": "Dernières vidéos de Q-dance & la scène hardstyle",
+    "subtitle": "Dernières nouvelles Q-dance & scène hardstyle",
     "filterAll": "Tout",
     "filterSets": "Sets",
     "filterAfterMovies": "Aftermovies",
-    "noResults": "Aucune vidéo dans cette catégorie.",
-    "moreOnYouTube": "Plus sur YouTube"
+    "noResults": "Rien dans cette catégorie.",
+    "moreOnYouTube": "Plus sur YouTube",
+    "moreOnHardstyle": "Plus sur hardstyle.com"
   }
 }
