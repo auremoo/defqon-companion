@@ -1,10 +1,21 @@
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
-import { YouTubeIcon, ExternalLinkIcon, NewspaperIcon } from '../components/Icons'
+import { YouTubeIcon, ExternalLinkIcon, NewspaperIcon, CalendarIcon } from '../components/Icons'
 import PageShell from '../components/PageShell'
 
 const CACHED_VIDEOS_URL = `${import.meta.env.BASE_URL}data/qdance-news.json`
 const CACHED_ARTICLES_URL = `${import.meta.env.BASE_URL}data/hardstyle-news.json`
+const EVENTS_URL = `${import.meta.env.BASE_URL}data/hardstyle-events.json`
+
+interface HardstyleEvent {
+  title: string
+  link: string
+  image: string | null
+  location: string
+  time: string
+  date: string
+  month: string
+}
 const QDANCE_RSS = 'https://api.allorigins.win/raw?url=' + encodeURIComponent('https://www.youtube.com/feeds/videos.xml?channel_id=UCAEwCfBRlB3jIY9whEfSP5Q')
 
 interface VideoItem {
@@ -67,6 +78,51 @@ function parseRSS(xml: string): VideoItem[] {
       thumbnail: videoId ? `https://i.ytimg.com/vi/${videoId}/mqdefault.jpg` : null,
     }
   }).filter((v) => v.id)
+}
+
+function EventsWidget() {
+  const { t } = useTranslation()
+  const [events, setEvents] = useState<HardstyleEvent[]>([])
+
+  useEffect(() => {
+    fetch(EVENTS_URL)
+      .then(r => r.json())
+      .then((d: { events?: HardstyleEvent[] }) => setEvents((d.events ?? []).slice(0, 5)))
+      .catch(() => {})
+  }, [])
+
+  if (events.length === 0) return null
+
+  return (
+    <div className="mt-6">
+      <div className="mb-3 flex items-center justify-between">
+        <h2 className="defqon-heading text-xs tracking-widest text-text-muted">{t('music.upcomingEvents')}</h2>
+        <a href="https://hardstyle.com/en/events" target="_blank" rel="noopener noreferrer"
+          className="flex items-center gap-1 text-[11px] text-text-muted hover:text-text-secondary">
+          hardstyle.com <ExternalLinkIcon size={11} />
+        </a>
+      </div>
+      <div className="space-y-2">
+        {events.map((ev) => (
+          <a key={ev.link} href={ev.link} target="_blank" rel="noopener noreferrer"
+            className="flex items-center gap-3 rounded-xl border border-border bg-surface-card p-3 transition-colors hover:border-border-hover">
+            {ev.image ? (
+              <img src={ev.image} alt="" loading="lazy"
+                className="h-12 w-12 shrink-0 rounded-lg object-cover bg-surface-alt" />
+            ) : (
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-surface-alt text-text-muted">
+                <CalendarIcon size={18} />
+              </div>
+            )}
+            <div className="min-w-0 flex-1">
+              <p className="truncate text-xs font-semibold text-text-primary">{ev.title}</p>
+              <p className="text-[10px] text-text-muted">{ev.location} &middot; {ev.date.slice(5).replace('-', '/')}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  )
 }
 
 export default function News() {
@@ -219,6 +275,8 @@ export default function News() {
               })}
             </div>
           )}
+
+          <EventsWidget />
 
           <div className="mt-4 flex flex-col items-center gap-2">
             <a
