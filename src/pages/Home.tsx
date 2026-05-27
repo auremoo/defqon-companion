@@ -229,7 +229,7 @@ export default function Home() {
   )
 
   return (
-    <PageShell title={t('home.title')} subtitle={t('home.subtitle')} headerContent={headerContent}>
+    <PageShell title={t('home.title')} headerContent={headerContent}>
       <div className="mx-auto w-full max-w-md space-y-6">
 
         {/* Going widget */}

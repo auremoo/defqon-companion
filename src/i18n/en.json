@@ -506,7 +506,10 @@
     "filterAll": "All",
     "filterSets": "Sets",
     "filterAfterMovies": "Aftermovies",
+    "feedTab": "News",
+    "eventsTab": "Events",
     "noResults": "Nothing in this category.",
+    "noEvents": "No upcoming events found.",
     "moreOnYouTube": "More on YouTube",
     "moreOnHardstyle": "More on hardstyle.com"
   }

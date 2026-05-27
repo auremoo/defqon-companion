@@ -6,6 +6,7 @@ import PageShell from '../components/PageShell'
 const CACHED_VIDEOS_URL = `${import.meta.env.BASE_URL}data/qdance-news.json`
 const CACHED_ARTICLES_URL = `${import.meta.env.BASE_URL}data/hardstyle-news.json`
 const EVENTS_URL = `${import.meta.env.BASE_URL}data/hardstyle-events.json`
+const QDANCE_RSS = 'https://api.allorigins.win/raw?url=' + encodeURIComponent('https://www.youtube.com/feeds/videos.xml?channel_id=UCAEwCfBRlB3jIY9whEfSP5Q')
 
 interface HardstyleEvent {
   title: string
@@ -16,7 +17,6 @@ interface HardstyleEvent {
   date: string
   month: string
 }
-const QDANCE_RSS = 'https://api.allorigins.win/raw?url=' + encodeURIComponent('https://www.youtube.com/feeds/videos.xml?channel_id=UCAEwCfBRlB3jIY9whEfSP5Q')
 
 interface VideoItem {
   type: 'video'
@@ -80,60 +80,88 @@ function parseRSS(xml: string): VideoItem[] {
   }).filter((v) => v.id)
 }
 
-function EventsWidget() {
+function EventsView() {
   const { t } = useTranslation()
   const [events, setEvents] = useState<HardstyleEvent[]>([])
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     fetch(EVENTS_URL)
       .then(r => r.json())
-      .then((d: { events?: HardstyleEvent[] }) => setEvents((d.events ?? []).slice(0, 5)))
+      .then((d: { events?: HardstyleEvent[] }) => setEvents(d.events ?? []))
       .catch(() => {})
+      .finally(() => setLoading(false))
   }, [])
 
-  if (events.length === 0) return null
-
-  return (
-    <div className="mt-6">
-      <div className="mb-3 flex items-center justify-between">
-        <h2 className="defqon-heading text-xs tracking-widest text-text-muted">{t('music.upcomingEvents')}</h2>
-        <a href="https://hardstyle.com/en/events" target="_blank" rel="noopener noreferrer"
-          className="flex items-center gap-1 text-[11px] text-text-muted hover:text-text-secondary">
-          hardstyle.com <ExternalLinkIcon size={11} />
-        </a>
-      </div>
+  if (loading) {
+    return (
       <div className="space-y-2">
-        {events.map((ev) => (
-          <a key={ev.link} href={ev.link} target="_blank" rel="noopener noreferrer"
-            className="flex items-center gap-3 rounded-xl border border-border bg-surface-card p-3 transition-colors hover:border-border-hover">
-            {ev.image ? (
-              <img src={ev.image} alt="" loading="lazy"
-                className="h-12 w-12 shrink-0 rounded-lg object-cover bg-surface-alt" />
-            ) : (
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-surface-alt text-text-muted">
-                <CalendarIcon size={18} />
-              </div>
-            )}
-            <div className="min-w-0 flex-1">
-              <p className="truncate text-xs font-semibold text-text-primary">{ev.title}</p>
-              <p className="text-[10px] text-text-muted">{ev.location} &middot; {ev.date.slice(5).replace('-', '/')}</p>
+        {[...Array(6)].map((_, i) => (
+          <div key={i} className="flex gap-3 rounded-xl border border-border bg-surface-card p-3">
+            <div className="h-12 w-12 shrink-0 animate-pulse rounded-lg bg-surface-alt" />
+            <div className="flex-1 space-y-1.5 py-1">
+              <div className="h-3 animate-pulse rounded bg-surface-alt" />
+              <div className="h-2.5 w-2/3 animate-pulse rounded bg-surface-alt" />
             </div>
-          </a>
+          </div>
         ))}
       </div>
+    )
+  }
+
+  if (events.length === 0) {
+    return <p className="py-12 text-center text-sm text-text-muted">{t('news.noEvents')}</p>
+  }
+
+  // Group by month
+  const byMonth: Record<string, HardstyleEvent[]> = {}
+  for (const ev of events) {
+    const key = ev.month || ev.date.slice(0, 7)
+    ;(byMonth[key] ??= []).push(ev)
+  }
+
+  return (
+    <div className="space-y-6">
+      {Object.entries(byMonth).map(([month, evs]) => (
+        <div key={month}>
+          <h2 className="defqon-heading mb-2 text-xs tracking-widest text-text-muted">{month}</h2>
+          <div className="space-y-2">
+            {evs.map((ev) => (
+              <a key={ev.link} href={ev.link} target="_blank" rel="noopener noreferrer"
+                className="flex items-center gap-3 rounded-xl border border-border bg-surface-card p-3 transition-colors hover:border-border-hover">
+                {ev.image ? (
+                  <img src={ev.image} alt="" loading="lazy"
+                    className="h-12 w-12 shrink-0 rounded-lg object-cover bg-surface-alt" />
+                ) : (
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-surface-alt text-text-muted">
+                    <CalendarIcon size={18} />
+                  </div>
+                )}
+                <div className="min-w-0 flex-1">
+                  <p className="truncate text-xs font-semibold text-text-primary">{ev.title}</p>
+                  <p className="text-[10px] text-text-muted">{ev.location} &middot; {ev.date.slice(5).replace('-', '/')}{ev.time ? ` · ${ev.time}` : ''}</p>
+                </div>
+                <ExternalLinkIcon size={12} className="shrink-0 text-text-muted" />
+              </a>
+            ))}
+          </div>
+        </div>
+      ))}
+      <a href="https://hardstyle.com/en/events" target="_blank" rel="noopener noreferrer"
+        className="flex items-center justify-center gap-1.5 py-1 text-xs text-text-muted underline-offset-2 hover:underline">
+        hardstyle.com <ExternalLinkIcon size={11} />
+      </a>
     </div>
   )
 }
 
-export default function News() {
+function FeedView() {
   const { t } = useTranslation()
   const [feed, setFeed] = useState<FeedItem[]>([])
   const [loading, setLoading] = useState(true)
   const [filter, setFilter] = useState<Filter>('all')
 
   useEffect(() => {
-    document.title = 'News — Defqon Companion'
-
     const loadVideos = fetch(CACHED_VIDEOS_URL)
       .then((r) => r.json())
       .then((data: { videos?: Omit<VideoItem, 'type'>[] }) => {
@@ -155,8 +183,7 @@ export default function News() {
       .catch((): ArticleItem[] => [])
 
     Promise.all([loadVideos, loadArticles]).then(([videos, articles]) => {
-      const merged: FeedItem[] = [...videos, ...articles].sort((a, b) => itemDate(b) - itemDate(a))
-      setFeed(merged)
+      setFeed([...videos, ...articles].sort((a, b) => itemDate(b) - itemDate(a)))
       setLoading(false)
     })
   }, [])
@@ -173,10 +200,27 @@ export default function News() {
 
   const filtered = filter === 'all' ? feed : feed.filter((item) => getCategory(item) === filter)
 
+  if (loading) {
+    return (
+      <div className="space-y-3">
+        {[1, 2, 3, 4, 5].map((i) => (
+          <div key={i} className="flex gap-3 rounded-xl border border-border bg-surface-card p-3">
+            <div className="h-16 w-28 shrink-0 animate-pulse rounded-lg bg-surface-alt" />
+            <div className="flex-1 space-y-2 py-1">
+              <div className="h-3 animate-pulse rounded bg-surface-alt" />
+              <div className="h-3 w-3/4 animate-pulse rounded bg-surface-alt" />
+              <div className="h-2 w-1/4 animate-pulse rounded bg-surface-alt" />
+            </div>
+          </div>
+        ))}
+      </div>
+    )
+  }
+
   return (
-    <PageShell title={t('news.title')} subtitle={t('news.subtitle')}>
+    <>
       {/* Filter pills */}
-      {!loading && feed.length > 0 && (
+      {feed.length > 0 && (
         <div className="mb-4 flex gap-2 overflow-x-auto pb-1">
           {filters.map(({ key, label }) => {
             const count = key === 'all' ? feed.length : feed.filter((item) => getCategory(item) === key).length
@@ -198,106 +242,107 @@ export default function News() {
         </div>
       )}
 
-      {/* Skeleton */}
-      {loading && (
-        <div className="space-y-3">
-          {[1, 2, 3, 4, 5].map((i) => (
-            <div key={i} className="flex gap-3 rounded-xl border border-border bg-surface-card p-3">
-              <div className="h-16 w-28 shrink-0 animate-pulse rounded-lg bg-surface-alt" />
-              <div className="flex-1 space-y-2 py-1">
-                <div className="h-3 animate-pulse rounded bg-surface-alt" />
-                <div className="h-3 w-3/4 animate-pulse rounded bg-surface-alt" />
-                <div className="h-2 w-1/4 animate-pulse rounded bg-surface-alt" />
-              </div>
-            </div>
-          ))}
+      {filtered.length === 0 ? (
+        <p className="py-12 text-center text-sm text-text-muted">{t('news.noResults')}</p>
+      ) : (
+        <div className="space-y-2">
+          {filtered.map((item, i) => {
+            const isVideo = item.type === 'video'
+            const thumb = isVideo ? item.thumbnail : item.image
+            const date = isVideo ? item.published : item.date
+            const tag = getCategory(item)
+
+            return (
+              <a
+                key={isVideo ? item.id : item.link + i}
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex gap-3 rounded-xl border border-border bg-surface-card p-3 transition-colors hover:border-border-hover"
+              >
+                {thumb ? (
+                  <img src={thumb} alt=""
+                    className="h-16 w-28 shrink-0 rounded-lg object-cover bg-surface-alt"
+                    loading="lazy" />
+                ) : (
+                  <div className="flex h-16 w-28 shrink-0 items-center justify-center rounded-lg bg-surface-alt">
+                    {isVideo
+                      ? <YouTubeIcon size={20} className="text-red-500" />
+                      : <NewspaperIcon size={20} className="text-text-muted" />
+                    }
+                  </div>
+                )}
+                <div className="min-w-0 flex-1">
+                  <p className="line-clamp-2 text-xs font-medium leading-snug text-text-primary">{item.title}</p>
+                  <div className="mt-1.5 flex flex-wrap items-center gap-2">
+                    {isVideo
+                      ? <YouTubeIcon size={11} className="shrink-0 text-red-500" />
+                      : <NewspaperIcon size={11} className="shrink-0 text-text-muted" />
+                    }
+                    <span className="text-[10px] text-text-muted">
+                      {isVideo ? 'Q-dance' : 'hardstyle.com'}
+                    </span>
+                    {date && <span className="text-[10px] text-text-muted">{timeAgo(date)}</span>}
+                    {tag !== 'all' && (
+                      <span className="rounded-full bg-surface-alt px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wider text-text-muted">
+                        {tag}
+                      </span>
+                    )}
+                  </div>
+                </div>
+              </a>
+            )
+          })}
         </div>
       )}
 
-      {/* Feed */}
-      {!loading && (
-        <>
-          {filtered.length === 0 ? (
-            <p className="py-12 text-center text-sm text-text-muted">{t('news.noResults')}</p>
-          ) : (
-            <div className="space-y-2">
-              {filtered.map((item, i) => {
-                const isVideo = item.type === 'video'
-                const thumb = isVideo ? item.thumbnail : item.image
-                const date = isVideo ? item.published : item.date
-                const tag = getCategory(item)
+      <div className="mt-4 flex flex-col items-center gap-2">
+        <a href="https://www.youtube.com/@qdance" target="_blank" rel="noopener noreferrer"
+          className="flex items-center gap-1.5 py-1 text-xs text-text-muted underline-offset-2 hover:underline">
+          {t('news.moreOnYouTube')} <ExternalLinkIcon size={11} />
+        </a>
+        <a href="https://hardstyle.com/en/news" target="_blank" rel="noopener noreferrer"
+          className="flex items-center gap-1.5 py-1 text-xs text-text-muted underline-offset-2 hover:underline">
+          {t('news.moreOnHardstyle')} <ExternalLinkIcon size={11} />
+        </a>
+      </div>
+    </>
+  )
+}
 
-                return (
-                  <a
-                    key={isVideo ? item.id : item.link + i}
-                    href={item.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex gap-3 rounded-xl border border-border bg-surface-card p-3 transition-colors hover:border-border-hover"
-                  >
-                    {thumb ? (
-                      <img
-                        src={thumb}
-                        alt=""
-                        className="h-16 w-28 shrink-0 rounded-lg object-cover bg-surface-alt"
-                        loading="lazy"
-                      />
-                    ) : (
-                      <div className="flex h-16 w-28 shrink-0 items-center justify-center rounded-lg bg-surface-alt">
-                        {isVideo
-                          ? <YouTubeIcon size={20} className="text-red-500" />
-                          : <NewspaperIcon size={20} className="text-text-muted" />
-                        }
-                      </div>
-                    )}
-                    <div className="min-w-0 flex-1">
-                      <p className="line-clamp-2 text-xs font-medium leading-snug text-text-primary">{item.title}</p>
-                      <div className="mt-1.5 flex items-center gap-2 flex-wrap">
-                        {isVideo
-                          ? <YouTubeIcon size={11} className="shrink-0 text-red-500" />
-                          : <NewspaperIcon size={11} className="shrink-0 text-text-muted" />
-                        }
-                        <span className="text-[10px] text-text-muted">
-                          {isVideo ? 'Q-dance' : 'hardstyle.com'}
-                        </span>
-                        {date && (
-                          <span className="text-[10px] text-text-muted">{timeAgo(date)}</span>
-                        )}
-                        {tag !== 'all' && (
-                          <span className="rounded-full bg-surface-alt px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wider text-text-muted">
-                            {tag}
-                          </span>
-                        )}
-                      </div>
-                    </div>
-                  </a>
-                )
-              })}
-            </div>
-          )}
+export default function News() {
+  const { t } = useTranslation()
+  const [tab, setTab] = useState<'feed' | 'events'>('feed')
 
-          <EventsWidget />
+  useEffect(() => { document.title = 'News — Defqon Companion' }, [])
 
-          <div className="mt-4 flex flex-col items-center gap-2">
-            <a
-              href="https://www.youtube.com/@qdance"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1.5 py-1 text-xs text-text-muted underline-offset-2 hover:underline"
-            >
-              {t('news.moreOnYouTube')} <ExternalLinkIcon size={11} />
-            </a>
-            <a
-              href="https://hardstyle.com/en/news"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1.5 py-1 text-xs text-text-muted underline-offset-2 hover:underline"
-            >
-              {t('news.moreOnHardstyle')} <ExternalLinkIcon size={11} />
-            </a>
-          </div>
-        </>
-      )}
+  const tabs = [
+    { key: 'feed' as const, label: t('news.feedTab') },
+    { key: 'events' as const, label: t('news.eventsTab') },
+  ]
+
+  const headerContent = (
+    <div className="mt-3 flex rounded-lg bg-black/30 p-0.5">
+      {tabs.map(({ key, label }) => (
+        <button
+          key={key}
+          onClick={() => setTab(key)}
+          className={`flex-1 rounded-md py-1.5 text-[10px] font-semibold uppercase tracking-wider transition-colors ${
+            tab === key ? 'bg-accent text-text-primary' : 'text-text-muted hover:text-text-primary'
+          }`}
+        >
+          {label}
+        </button>
+      ))}
+    </div>
+  )
+
+  return (
+    <PageShell title={t('news.title')} subtitle={t('news.subtitle')} headerContent={headerContent}>
+      <div className="mx-auto w-full max-w-md">
+        {tab === 'feed' && <FeedView />}
+        {tab === 'events' && <EventsView />}
+      </div>
     </PageShell>
   )
 }
