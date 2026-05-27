@@ -57,18 +57,23 @@ for (const { appId, name } of artistEntries) {
       continue
     }
 
-    // Fetch top tracks
-    const tracksRes = await fetch(
-      `https://api.spotify.com/v1/artists/${artist.id}/top-tracks?market=NL`,
-      { headers: { Authorization: `Bearer ${access_token}` } }
-    )
+    // Search returns SimplifiedArtistObject — fetch full object + top tracks separately
+    const [fullRes, tracksRes] = await Promise.all([
+      fetch(`https://api.spotify.com/v1/artists/${artist.id}`, {
+        headers: { Authorization: `Bearer ${access_token}` },
+      }),
+      fetch(`https://api.spotify.com/v1/artists/${artist.id}/top-tracks?market=NL`, {
+        headers: { Authorization: `Bearer ${access_token}` },
+      }),
+    ])
+    const full = await fullRes.json()
     const tracksData = await tracksRes.json()
 
     result[appId] = {
       spotifyId: artist.id,
-      image: artist.images?.[0]?.url ?? null,
-      followers: artist.followers?.total ?? 0,
-      popularity: artist.popularity ?? 0,
+      image: full.images?.[0]?.url ?? null,
+      followers: full.followers?.total ?? 0,
+      popularity: full.popularity ?? 0,
       topTracks: (tracksData.tracks ?? []).slice(0, 3).map((t) => ({
         id: t.id,
         name: t.name,
@@ -77,7 +82,7 @@ for (const { appId, name } of artistEntries) {
         spotifyUrl: t.external_urls?.spotify ?? null,
       })),
     }
-    console.log(`✓ ${name} (${artist.followers?.total?.toLocaleString()} followers)`)
+    console.log(`✓ ${name} (${full.followers?.total?.toLocaleString()} followers)`)
   } catch (e) {
     console.warn(`✗ ${name}: ${e.message}`)
   }
