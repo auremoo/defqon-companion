@@ -1,4 +1,75 @@
 {
-  "updatedAt": "2026-05-27T13:25:18.887Z",
-  "articles": []
+  "updatedAt": "2026-05-27T13:58:59.807Z",
+  "articles": [
+    {
+      "title": "Frontliner Brings 'The Summer of Frontliner' to Vinyl",
+      "link": "https://hardstyle.com/en/news/frontliner-brings-the-summer-of-frontliner-to-vinyl",
+      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/2026/Mei/RV26_0227_233702_AFAS_02072_LorenzoTNC.jpg",
+      "date": "2026-05-26",
+      "category": "news,hardstyle"
+    },
+    {
+      "title": "This week's hardstyle releases [week 22]",
+      "link": "https://hardstyle.com/en/news/this-week-s-hardstyle-releases-week-22-2026",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/Mei/582408269_1401444094875706_5089896207015485031_n.jpg",
+      "date": null,
+      "category": "hardstyle,music"
+    },
+    {
+      "title": "Sub Zero Project will bring their exclusive ‘Our World’ concept to Germany next Saturday",
+      "link": "https://hardstyle.com/en/news/sub-zero-project-will-bring-their-exclusive-our-world-concept-to-germany-next-saturday",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/Mei/01.jpg",
+      "date": "2026-05-22",
+      "category": "news,hardstyle"
+    },
+    {
+      "title": "Cyber Gunz enters new era with debut album 'Cyber War'",
+      "link": "https://hardstyle.com/en/news/cyber-gunz-enters-new-era-with-debut-album-cyber-war",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/Mei/original%20(32).jpeg",
+      "date": "2026-05-22",
+      "category": "news,hardstyle"
+    },
+    {
+      "title": "DJ The Prophet returns to the stage with exclusive show concept",
+      "link": "https://hardstyle.com/en/news/dj-the-prophet-returns-to-the-stage-with-exclusive-show-concept",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/Mei/20260415-123347-LorenzoTNC-0081.jpg",
+      "date": "2026-05-21",
+      "category": "news,hardstyle"
+    },
+    {
+      "title": "Full lineup revealed for 15 Years of Gunz For Hire",
+      "link": "https://hardstyle.com/en/news/full-lineup-revealed-for-15-years-of-gunz-for-hire",
+      "image": null,
+      "date": "2026-05-19",
+      "category": "news,hardstyle"
+    },
+    {
+      "title": "DVIN releases thematic track ‘The Temple’",
+      "link": "https://hardstyle.com/en/news/davino-releases-thematic-track-the-temple",
+      "image": null,
+      "date": "2026-05-19",
+      "category": "news,hardstyle"
+    },
+    {
+      "title": "This week's hardstyle releases [week 21]",
+      "link": "https://hardstyle.com/en/news/this-week-s-hardstyle-releases-week-21-2026",
+      "image": null,
+      "date": null,
+      "category": "hardstyle,music"
+    },
+    {
+      "title": "Frontliner releases Nexus Festival anthem: ‘No Receta’",
+      "link": "https://hardstyle.com/en/news/frontliner-releases-nexus-festival-anthem-no-receta",
+      "image": null,
+      "date": "2026-05-18",
+      "category": "news,hardstyle"
+    },
+    {
+      "title": "Hard Bass announce a monumental line-up for its one-time-only return",
+      "link": "https://hardstyle.com/en/news/hard-bass-announce-a-monumental-line-up-for-its-one-time-only-return",
+      "image": null,
+      "date": "2026-05-13",
+      "category": "news,hardstyle"
+    }
+  ]
 }
