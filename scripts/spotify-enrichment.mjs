@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-// Fetches Spotify data for all artists in src/data/artists.ts
-// Searches by artist name (more reliable than stored URLs which may be stale)
+// Fetches Spotify artist images and popularity for all artists in src/data/artists.ts
+// Note: top-tracks and followers require Spotify quota extension (restricted since 2024)
 // Writes to public/data/spotify-enrichment.json
 
 import { readFileSync, writeFileSync, mkdirSync } from 'fs'
@@ -13,7 +13,7 @@ if (!CLIENT_ID || !CLIENT_SECRET) {
   process.exit(1)
 }
 
-// Extract artist { id, name } pairs from artists.ts — one object block at a time
+// Extract artist { appId, name } pairs — one object block at a time
 const artistsTs = readFileSync('src/data/artists.ts', 'utf-8')
 const artistEntries = []
 for (const [, block] of artistsTs.matchAll(/\{([^{}]+)\}/g)) {
@@ -35,7 +35,7 @@ const tokenRes = await fetch('https://accounts.spotify.com/api/token', {
 })
 const tokenData = await tokenRes.json()
 if (!tokenData.access_token) {
-  console.error('Failed to get Spotify token:', tokenData)
+  console.error('Failed to get Spotify token:', JSON.stringify(tokenData))
   process.exit(1)
 }
 const { access_token } = tokenData
@@ -44,53 +44,36 @@ const result = {}
 
 for (const { appId, name } of artistEntries) {
   try {
-    // Search by name — more reliable than stored IDs
+    // Search to get artist ID
     const searchRes = await fetch(
       `https://api.spotify.com/v1/search?q=${encodeURIComponent(name)}&type=artist&limit=1`,
       { headers: { Authorization: `Bearer ${access_token}` } }
     )
     const searchData = await searchRes.json()
-    const artist = searchData.artists?.items?.[0]
+    const found = searchData.artists?.items?.[0]
 
-    if (!artist) {
-      console.warn(`✗ ${name}: not found on Spotify`)
+    if (!found) {
+      console.warn(`✗ ${name}: not found`)
       continue
     }
 
-    // Search returns SimplifiedArtistObject — fetch full object + top tracks separately
-    const [fullRes, tracksRes] = await Promise.all([
-      fetch(`https://api.spotify.com/v1/artists/${artist.id}`, {
-        headers: { Authorization: `Bearer ${access_token}` },
-      }),
-      fetch(`https://api.spotify.com/v1/artists/${artist.id}/top-tracks?market=NL`, {
-        headers: { Authorization: `Bearer ${access_token}` },
-      }),
-    ])
+    // Fetch full artist object for image + popularity
+    const fullRes = await fetch(`https://api.spotify.com/v1/artists/${found.id}`, {
+      headers: { Authorization: `Bearer ${access_token}` },
+    })
     const full = await fullRes.json()
-    const tracksData = await tracksRes.json()
 
     if (full.error) {
-      console.warn(`✗ ${name} artist endpoint error: ${full.error.status} ${full.error.message}`)
+      console.warn(`✗ ${name}: ${full.error.status} ${full.error.message}`)
       continue
-    }
-    if (tracksData.error) {
-      console.warn(`  top-tracks error for ${name}: ${tracksData.error.status} ${tracksData.error.message}`)
     }
 
     result[appId] = {
-      spotifyId: artist.id,
+      spotifyId: found.id,
       image: full.images?.[0]?.url ?? null,
-      followers: full.followers?.total ?? 0,
       popularity: full.popularity ?? 0,
-      topTracks: (tracksData.tracks ?? []).slice(0, 3).map((t) => ({
-        id: t.id,
-        name: t.name,
-        previewUrl: t.preview_url ?? null,
-        albumImage: t.album?.images?.[1]?.url ?? null,
-        spotifyUrl: t.external_urls?.spotify ?? null,
-      })),
     }
-    console.log(`✓ ${name} (${full.followers?.total?.toLocaleString()} followers)`)
+    console.log(`✓ ${name} (popularity: ${full.popularity}, image: ${full.images?.length > 0 ? 'yes' : 'no'})`)
   } catch (e) {
     console.warn(`✗ ${name}: ${e.message}`)
   }
