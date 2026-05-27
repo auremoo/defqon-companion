@@ -6,7 +6,7 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs'
 import { createHash } from 'crypto'
 
-const PAGE_URL = 'https://www.defqon.nl/en/programme'
+const PAGE_URL = 'https://www.defqon.com/en/programme'
 const HASH_FILE = '.github/lineup-hash.txt'
 
 const res = await fetch(PAGE_URL, {
