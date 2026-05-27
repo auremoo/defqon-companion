@@ -69,6 +69,14 @@ for (const { appId, name } of artistEntries) {
     const full = await fullRes.json()
     const tracksData = await tracksRes.json()
 
+    if (full.error) {
+      console.warn(`✗ ${name} artist endpoint error: ${full.error.status} ${full.error.message}`)
+      continue
+    }
+    if (tracksData.error) {
+      console.warn(`  top-tracks error for ${name}: ${tracksData.error.status} ${tracksData.error.message}`)
+    }
+
     result[appId] = {
       spotifyId: artist.id,
       image: full.images?.[0]?.url ?? null,
