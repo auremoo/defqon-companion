@@ -1,152 +1,177 @@
 {
-  "updatedAt": "2026-05-27T12:29:30.862Z",
+  "updatedAt": "2026-05-27T12:46:31.180Z",
   "artists": {
     "headhunterz": {
-      "image": null,
+      "spotifyId": "6C0KWmCdqrLU2LzzWBPbOy",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb6b752efcbd31eadc11c45fcf",
       "followers": 0,
       "popularity": 0,
       "topTracks": []
     },
     "wildstylez": {
-      "image": null,
+      "spotifyId": "0wr85NuJuAYZsRzP1lJgiV",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe3e2995835c3ac87910299af",
       "followers": 0,
       "popularity": 0,
       "topTracks": []
     },
     "dbstf": {
-      "image": null,
+      "spotifyId": "6L7a6wPGpvLtTwOsMLnF1z",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb0bf9f33d385dbece9ef8eb04",
       "followers": 0,
       "popularity": 0,
       "topTracks": []
     },
     "sound-rush": {
-      "image": null,
+      "spotifyId": "7IFPeV5Ew63S7Hid0AjNgK",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb250f4ccf4d6edbecdebd25e3",
       "followers": 0,
       "popularity": 0,
       "topTracks": []
     },
     "brennan-heart": {
-      "image": null,
+      "spotifyId": "5QySqc6yAFDx9m7fedFZmC",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb73351c2c4ac2a14f5734b7a5",
       "followers": 0,
       "popularity": 0,
       "topTracks": []
     },
     "b-front": {
-      "image": null,
+      "spotifyId": "6Xhhpra0X0hpvC3yZaQ0Du",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb77e7d52925cd90df681a3cdb",
       "followers": 0,
       "popularity": 0,
       "topTracks": []
     },
     "warface": {
-      "image": null,
+      "spotifyId": "1wuQQfTDZhgNb4GJyhThUs",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebbc4140d57c93d1eb4d050ff3",
       "followers": 0,
       "popularity": 0,
       "topTracks": []
     },
     "radical-redemption": {
-      "image": null,
+      "spotifyId": "3Ij56hbjOTHq8RgutQwfxC",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb2716d371d70ee446cb46ce56",
       "followers": 0,
       "popularity": 0,
       "topTracks": []
     },
     "rebelion": {
-      "image": null,
+      "spotifyId": "5JcSyYpBdqCmjJyVlKh7Yg",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb9ee91c455ba0fe17e45340eb",
       "followers": 0,
       "popularity": 0,
       "topTracks": []
     },
     "sub-zero-project": {
-      "image": null,
+      "spotifyId": "4f0OXMMSxr0r8Ztx6CdpAl",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebf0f5d4d2b3d8398b569b7561",
       "followers": 0,
       "popularity": 0,
       "topTracks": []
     },
     "angerfist": {
-      "image": null,
+      "spotifyId": "4sQNUQjOYj9rV2sdfJ8laS",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebc5f1b5bf40435c2d378a07ba",
       "followers": 0,
       "popularity": 0,
       "topTracks": []
     },
     "miss-k8": {
-      "image": null,
+      "spotifyId": "776uRsooWrGiVZkVWtvfgO",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebf7c59a4d81c183fe3b67140c",
       "followers": 0,
       "popularity": 0,
       "topTracks": []
     },
     "nosferatu": {
-      "image": null,
+      "spotifyId": "3F4VZL0xYGYRCHesepj46W",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb638df4f29d84b009412e9b95",
       "followers": 0,
       "popularity": 0,
       "topTracks": []
     },
     "sefa": {
-      "image": null,
+      "spotifyId": "0caJEGgVuXuSHhhrMCmlkI",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe6c7e550f3ec57a1d183a091",
       "followers": 0,
       "popularity": 0,
       "topTracks": []
     },
     "dr-peacock": {
-      "image": null,
+      "spotifyId": "4RbUYWWjEBb4umwqakOEd3",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb38354a921fabe908436bfe65",
       "followers": 0,
       "popularity": 0,
       "topTracks": []
     },
     "showtek": {
-      "image": "https://i.scdn.co/image/ab6761610000e5eb9f4a0cbfcc9b274344681ccb",
+      "spotifyId": "3gk0OYeLFWYupGFRHqLSR7",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb72059dbcd979a5edc2e59cf0",
       "followers": 0,
       "popularity": 0,
       "topTracks": []
     },
     "the-prophet": {
-      "image": null,
+      "spotifyId": "2iRqqPkOyIvvb7qFZN1Onz",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebceac4e99c3541f49a2321001",
       "followers": 0,
       "popularity": 0,
       "topTracks": []
     },
     "vertile": {
-      "image": null,
+      "spotifyId": "2CREMC4YATn7Bx9ZQku6IH",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb35ab5756b370f04f7d5411e6",
       "followers": 0,
       "popularity": 0,
       "topTracks": []
     },
     "d-sturb": {
-      "image": null,
+      "spotifyId": "7E6DrjKJieOdJKO8mbwCMO",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb1c58ba0717165f1f6fbff1a1",
       "followers": 0,
       "popularity": 0,
       "topTracks": []
     },
     "phuture-noize": {
-      "image": null,
+      "spotifyId": "7AGSJihqYPhYy5QzMcwcQT",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb8dc774a25e982b79e24a6b66",
       "followers": 0,
       "popularity": 0,
       "topTracks": []
     },
     "ran-d": {
-      "image": null,
+      "spotifyId": "7IeovKzVkfcG9mIJGNzTcT",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb32de11caefe04b8fbce679d3",
       "followers": 0,
       "popularity": 0,
       "topTracks": []
     },
     "coone": {
-      "image": null,
+      "spotifyId": "1Wt63OMKtv6v2ivHuQLm2C",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb016ec9c8653ee0a365389b20",
       "followers": 0,
       "popularity": 0,
       "topTracks": []
     },
     "da-tweekaz": {
-      "image": null,
+      "spotifyId": "6UOk7DmvqlzWmo6gjhZvn6",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb7284682d71d73a442c67ccfa",
       "followers": 0,
       "popularity": 0,
       "topTracks": []
     },
     "atmozfears": {
-      "image": null,
+      "spotifyId": "0MBGxwmCdXdO26ojaNcT64",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebdee918e01c2b7c2510174a57",
       "followers": 0,
       "popularity": 0,
       "topTracks": []
     },
     "frontliner": {
-      "image": null,
+      "spotifyId": "7momuad2Twkv5O7MY3dODa",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb0c6da67f668ffae4eb7ae4e6",
       "followers": 0,
       "popularity": 0,
       "topTracks": []
