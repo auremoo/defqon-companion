@@ -29,7 +29,13 @@
     "exploreColors": "Explorer les couleurs",
     "readGuide": "Lire le guide",
     "prepChecklist": "Pr\u00e9parer sa checklist",
-    "myEditions": "Mes \u00e9ditions"
+    "myEditions": "Mes \u00e9ditions",
+    "goingTitle": "Bracelet re\u00e7u ?",
+    "goingSubtitle": "Confirme ta pr\u00e9sence \u00e0 Defqon.1 2026",
+    "goingConfirm": "J'y vais !",
+    "goingConfirmed": "Tu y vas !",
+    "goingDate": "Defqon.1 2026 \u2014 25\u201328 juin, Biddinghuizen",
+    "goingUndo": "Je n'y vais plus"
   },
   "colors": {
     "title": "Les couleurs de Defqon.1",
@@ -181,6 +187,7 @@
   "checklist": {
     "title": "Checklist Festival",
     "subtitle": "V\u00e9rifie que tu es pr\u00eat pour Defqon.1",
+    "bracelet": "Bracelet & RFID",
     "essentials": "Essentiels",
     "camping": "Camping",
     "comfort": "Confort & S\u00e9curit\u00e9",

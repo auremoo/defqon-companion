@@ -5,6 +5,9 @@ import CountdownTimer from '../components/CountdownTimer'
 import { PaletteIcon, BookIcon, ChecklistIcon, CalendarIcon, HistoryIcon, SparklesIcon, GridIcon, CloudSunIcon, BrainIcon, WalletIcon, YouTubeIcon, ExternalLinkIcon } from '../components/Icons'
 import PageShell from '../components/PageShell'
 import { festival } from '../data/festival'
+import { useAuth } from '../contexts/AuthContext'
+import { db } from '../lib/firebase'
+import { doc, setDoc } from 'firebase/firestore'
 
 // Cached by GitHub Action daily — falls back to live RSS if empty
 const CACHED_NEWS_URL = `${import.meta.env.BASE_URL}data/qdance-news.json`
@@ -42,6 +45,56 @@ function timeAgo(isoDate: string): string {
   if (days < 7) return `${days}d ago`
   if (days < 30) return `${Math.floor(days / 7)}w ago`
   return `${Math.floor(days / 30)}mo ago`
+}
+
+function GoingWidget() {
+  const { t } = useTranslation()
+  const { user } = useAuth()
+  const [going, setGoing] = useState(() => localStorage.getItem('defqon-going-2026') === 'true')
+
+  const confirm = async () => {
+    localStorage.setItem('defqon-going-2026', 'true')
+    setGoing(true)
+    if (db && user) {
+      await setDoc(doc(db, 'user_editions', `${user.uid}_2026`), {
+        user_id: user.uid,
+        edition_year: 2026,
+        attended_festival: true,
+        notes: null,
+        rating: null,
+      }, { merge: true })
+    }
+  }
+
+  const undo = () => {
+    localStorage.removeItem('defqon-going-2026')
+    setGoing(false)
+  }
+
+  if (going) {
+    return (
+      <div className="rounded-xl border border-green-800/50 bg-green-900/15 p-4 text-center">
+        <p className="text-base font-bold text-green-400">{t('home.goingConfirmed')} 🤘</p>
+        <p className="mt-0.5 text-xs text-text-muted">{t('home.goingDate')}</p>
+        <button onClick={undo} className="mt-2 text-[10px] text-text-muted underline underline-offset-2 hover:text-text-secondary">
+          {t('home.goingUndo')}
+        </button>
+      </div>
+    )
+  }
+
+  return (
+    <div className="rounded-xl border border-accent/30 bg-accent/5 p-4 text-center">
+      <p className="text-sm font-bold text-text-primary">{t('home.goingTitle')}</p>
+      <p className="mt-0.5 text-xs text-text-muted">{t('home.goingSubtitle')}</p>
+      <button
+        onClick={confirm}
+        className="mt-3 rounded-lg bg-accent px-5 py-2 text-sm font-bold text-text-primary transition-colors hover:bg-accent/80"
+      >
+        {t('home.goingConfirm')} 🤘
+      </button>
+    </div>
+  )
 }
 
 function NewsWidget() {
@@ -175,6 +228,9 @@ export default function Home() {
   return (
     <PageShell title={t('home.title')} subtitle={t('home.subtitle')} headerContent={headerContent}>
       <div className="mx-auto w-full max-w-md space-y-6">
+
+        {/* Going widget */}
+        <GoingWidget />
 
         {/* Quick links — original */}
         <div>

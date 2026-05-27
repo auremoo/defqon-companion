@@ -29,7 +29,13 @@
     "exploreColors": "Explore Colors",
     "readGuide": "Read the Guide",
     "prepChecklist": "Prep Checklist",
-    "myEditions": "My Editions"
+    "myEditions": "My Editions",
+    "goingTitle": "Got your bracelet?",
+    "goingSubtitle": "Mark yourself as attending Defqon.1 2026",
+    "goingConfirm": "I'm going!",
+    "goingConfirmed": "You're going!",
+    "goingDate": "Defqon.1 2026 — June 25–28, Biddinghuizen",
+    "goingUndo": "Not going anymore"
   },
   "colors": {
     "title": "Colors of Defqon.1",
@@ -181,6 +187,7 @@
   "checklist": {
     "title": "Festival Checklist",
     "subtitle": "Make sure you're ready for Defqon.1",
+    "bracelet": "Bracelet & RFID",
     "essentials": "Essentials",
     "camping": "Camping",
     "comfort": "Comfort & Safety",

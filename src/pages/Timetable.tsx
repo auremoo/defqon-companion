@@ -295,11 +295,14 @@ function SetCard({ set, saved, friendCount, vote, onToggle, onVote }: {
   )
 }
 
+const TIMETABLE_CACHE_URL = `${import.meta.env.BASE_URL}data/timetable-2026.json`
+
 // ─── Main Timetable Page ───
 export default function Timetable() {
   const { t } = useTranslation()
   const { user, configured } = useAuth()
   const [edition, setEdition] = useState<Edition>(getCurrentEdition)
+  const [officialTimetableLoaded, setOfficialTimetableLoaded] = useState(false)
   const [activeDay, setActiveDay] = useState<Day>('friday')
   const [activeStage, setActiveStage] = useState<Stage | 'ALL'>('ALL')
   const [savedSets, setSavedSets] = useState<string[]>(() => getLocalSavedSets(getCurrentEdition().year))
@@ -312,6 +315,20 @@ export default function Timetable() {
   const [votes, setVotes] = useState<Record<string, VoteType>>(() => getLocalVotes(getCurrentEdition().year))
 
   useEffect(() => { document.title = 'Timetable — Defqon Companion' }, [])
+
+  // Try to load official timetable cache for 2026
+  useEffect(() => {
+    if (edition.year !== 2026 || officialTimetableLoaded) return
+    fetch(TIMETABLE_CACHE_URL)
+      .then((r) => r.json())
+      .then((data: { sets?: import('../data/lineup').Set[] }) => {
+        if (data.sets && data.sets.length > 0) {
+          setEdition((prev) => ({ ...prev, lineup: data.sets! }))
+          setOfficialTimetableLoaded(true)
+        }
+      })
+      .catch(() => { /* keep static data */ })
+  }, [edition.year, officialTimetableLoaded])
 
   useEffect(() => {
     setVotes(getLocalVotes(edition.year))

@@ -17,7 +17,7 @@ export const festival = {
 
 export interface ChecklistItem {
   id: string
-  category: 'essentials' | 'camping' | 'comfort'
+  category: 'bracelet' | 'essentials' | 'camping' | 'comfort'
   labelKey: string
   label: string
   checked: boolean
@@ -25,6 +25,13 @@ export interface ChecklistItem {
 }
 
 export const defaultChecklist: ChecklistItem[] = [
+  // Bracelet
+  { id: 'bracelet-received', category: 'bracelet', labelKey: 'braceletReceived', label: 'Bracelet received', checked: false },
+  { id: 'bracelet-registered', category: 'bracelet', labelKey: 'braceletRegistered', label: 'Register bracelet on Q-dance account', checked: false },
+  { id: 'bracelet-cashless', category: 'bracelet', labelKey: 'braceletCashless', label: 'Top up RFID cashless', checked: false },
+  { id: 'bracelet-color', category: 'bracelet', labelKey: 'braceletColor', label: 'Check bracelet color & access zones', checked: false },
+  { id: 'bracelet-ref', category: 'bracelet', labelKey: 'braceletRef', label: 'Note your bracelet reference number', checked: false },
+
   { id: 'ticket', category: 'essentials', labelKey: 'ticket', label: 'Festival ticket / invitation', checked: false },
   { id: 'id', category: 'essentials', labelKey: 'id', label: 'ID / Passport', checked: false },
   { id: 'phone', category: 'essentials', labelKey: 'phone', label: 'Phone + charger', checked: false },
