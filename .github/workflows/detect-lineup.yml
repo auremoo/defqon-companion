@@ -1,0 +1,30 @@
+name: Detect Lineup Changes
+
+on:
+  schedule:
+    - cron: '0 8 * * *' # Every day at 8am UTC
+  workflow_dispatch:
+
+jobs:
+  detect:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Check Defqon.1 programme page
+        run: node scripts/detect-lineup-changes.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+      - name: Commit hash update
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .github/lineup-hash.txt
+          git diff --staged --quiet || git commit -m "chore: update lineup page hash"
+          git push

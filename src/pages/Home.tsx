@@ -6,7 +6,8 @@ import { PaletteIcon, BookIcon, ChecklistIcon, CalendarIcon, HistoryIcon, Sparkl
 import PageShell from '../components/PageShell'
 import { festival } from '../data/festival'
 
-// Q-dance YouTube channel RSS via CORS proxy
+// Cached by GitHub Action daily — falls back to live RSS if empty
+const CACHED_NEWS_URL = `${import.meta.env.BASE_URL}data/qdance-news.json`
 const QDANCE_RSS = 'https://api.allorigins.win/raw?url=' + encodeURIComponent('https://www.youtube.com/feeds/videos.xml?channel_id=UCmT5a_E68D5y7_e8eSBCPtg')
 
 interface VideoItem {
@@ -49,13 +50,26 @@ function NewsWidget() {
   const [failed, setFailed] = useState(false)
 
   useEffect(() => {
-    fetch(QDANCE_RSS)
-      .then((r) => r.text())
-      .then((xml) => {
-        const items = parseRSS(xml)
-        if (items.length === 0) throw new Error('empty')
-        setVideos(items)
+    // Try the GitHub Actions cache first (no CORS proxy needed)
+    fetch(CACHED_NEWS_URL)
+      .then((r) => r.json())
+      .then((data: { videos?: VideoItem[] }) => {
+        if (data.videos && data.videos.length > 0) {
+          setVideos(data.videos)
+          return
+        }
+        throw new Error('empty cache')
       })
+      .catch(() =>
+        // Fall back to live RSS via CORS proxy
+        fetch(QDANCE_RSS)
+          .then((r) => r.text())
+          .then((xml) => {
+            const items = parseRSS(xml)
+            if (items.length === 0) throw new Error('empty')
+            setVideos(items)
+          })
+      )
       .catch(() => setFailed(true))
       .finally(() => setLoading(false))
   }, [])
