@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 import { ExternalLinkIcon } from '../components/Icons'
 import PageShell from '../components/PageShell'
 
@@ -61,6 +62,7 @@ function rainAdvice(maxProb: number): string {
 }
 
 export default function Weather() {
+  const { t } = useTranslation()
   const [current, setCurrent] = useState<CurrentWeather | null>(null)
   const [festivalForecast, setFestivalForecast] = useState<DayForecast[] | null>(null)
   const [loading, setLoading] = useState(true)
@@ -128,8 +130,8 @@ export default function Weather() {
 
   return (
     <PageShell
-      title="Weather"
-      subtitle="Biddinghuizen forecast & festival prep"
+      title={t('weather.title')}
+      subtitle={t('weather.subtitle')}
     >
       <div className="mx-auto w-full max-w-md space-y-4 pb-4">
 

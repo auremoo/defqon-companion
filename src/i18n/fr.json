@@ -37,9 +37,16 @@
     "goingDate": "Defqon.1 2026 \u2014 25\u201328 juin, Biddinghuizen",
     "goingUndo": "Je n'y vais plus",
     "statFirstEdition": "Première\nédition",
-    "statDays": "Jours de\nfestival",
-    "statArtists": "Artistes\nau lineup",
-    "statAttendees": "Festivaliers\npar jour"
+    "statStages": "Scènes\n2026",
+    "statArtists": "Artistes\nlookup 2026",
+    "statAttendees": "Festivaliers\nrecord jour",
+    "qdanceLatest": "Dernières vidéos",
+    "officialLinks": "Liens officiels",
+    "officialSite": "Site Defqon.1",
+    "buyTickets": "Acheter des billets",
+    "officialLineup": "Lineup officiel",
+    "qdanceApp": "App Q-dance",
+    "moreFeatures": "Toutes les fonctionnalités"
   },
   "colors": {
     "title": "Les couleurs de Defqon.1",
@@ -516,5 +523,9 @@
     "noEvents": "Aucun événement à venir.",
     "moreOnYouTube": "Plus sur YouTube",
     "moreOnHardstyle": "Plus sur hardstyle.com"
+  },
+  "more": {
+    "title": "Fonctionnalités",
+    "subtitle": "Tous les outils pour le festival"
   }
 }

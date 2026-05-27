@@ -13,6 +13,14 @@ export const festival = {
     { day: 'Sunday', label: 'Closing Ceremony', hours: '11:00 – 23:00' },
   ],
   ageRestriction: '18+',
+  // Attendance figures — updated manually after each edition (official press releases)
+  attendance: {
+    perDayRecord: 65_000,   // record single day (2019)
+    totalEditionRecord: 230_000, // record total weekend (2019)
+    perDayTypical: 55_000,
+    totalTypical: 220_000,
+  },
+  firstEditionYear: 2003,
 }
 
 export interface ChecklistItem {

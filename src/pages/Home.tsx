@@ -2,9 +2,10 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import CountdownTimer from '../components/CountdownTimer'
-import { PaletteIcon, BookIcon, ChecklistIcon, CalendarIcon, HistoryIcon, SparklesIcon, GridIcon, CloudSunIcon, BrainIcon, WalletIcon, YouTubeIcon, ExternalLinkIcon } from '../components/Icons'
+import { PaletteIcon, BookIcon, ChecklistIcon, CalendarIcon, HistoryIcon, YouTubeIcon, ExternalLinkIcon } from '../components/Icons'
 import PageShell from '../components/PageShell'
 import { festival } from '../data/festival'
+import { lineup } from '../data/lineup'
 import { useAuth } from '../contexts/AuthContext'
 import { db } from '../lib/firebase'
 import { doc, setDoc } from 'firebase/firestore'
@@ -227,20 +228,27 @@ export default function Home() {
         {/* Going widget */}
         <GoingWidget />
 
-        {/* Key stats */}
-        <div className="grid grid-cols-4 gap-2">
-          {[
-            { value: '2003', label: t('home.statFirstEdition') },
-            { value: '4', label: t('home.statDays') },
-            { value: '200+', label: t('home.statArtists') },
-            { value: '55K', label: t('home.statAttendees') },
-          ].map(({ value, label }) => (
-            <div key={label} className="flex flex-col items-center rounded-xl border border-border bg-surface-card py-3">
-              <span className="text-lg font-black text-accent">{value}</span>
-              <span className="mt-0.5 whitespace-pre-line text-center text-[9px] leading-tight text-text-muted">{label}</span>
+        {/* Key stats — artists & stages are computed from lineup data */}
+        {(() => {
+          const artistCount = new Set(lineup.map(s => s.artist)).size
+          const stageCount = new Set(lineup.map(s => s.stage)).size
+          const stats = [
+            { value: String(festival.firstEditionYear), label: t('home.statFirstEdition') },
+            { value: String(stageCount), label: t('home.statStages') },
+            { value: String(artistCount), label: t('home.statArtists') },
+            { value: `${Math.round(festival.attendance.perDayRecord / 1000)}K`, label: t('home.statAttendees') },
+          ]
+          return (
+            <div className="grid grid-cols-4 gap-2">
+              {stats.map(({ value, label }) => (
+                <div key={label} className="flex flex-col items-center rounded-xl border border-border bg-surface-card py-3">
+                  <span className="text-lg font-black text-accent">{value}</span>
+                  <span className="mt-0.5 whitespace-pre-line text-center text-[9px] leading-tight text-text-muted">{label}</span>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          )
+        })()}
 
         {/* Quick links — original */}
         <div>
@@ -250,7 +258,7 @@ export default function Home() {
           <div className="grid gap-2.5">
             {[
               { to: '/colors', Icon: PaletteIcon, label: t('home.exploreColors') },
-              { to: '/timetable', Icon: CalendarIcon, label: 'Timetable' },
+              { to: '/timetable', Icon: CalendarIcon, label: t('nav.timetable') },
               { to: '/guide', Icon: BookIcon, label: t('home.readGuide') },
               { to: '/checklist', Icon: ChecklistIcon, label: t('home.prepChecklist') },
               { to: '/my-editions', Icon: HistoryIcon, label: t('home.myEditions') },
@@ -269,43 +277,19 @@ export default function Home() {
           </div>
         </div>
 
-        {/* New features */}
-        <div>
-          <h2 className="defqon-heading mb-3 text-xs tracking-widest text-text-muted">
-            New Features
-          </h2>
-          <div className="grid grid-cols-2 gap-2.5">
-            {[
-              { to: '/discover', Icon: SparklesIcon, label: 'Discover', desc: 'For You picks', color: '#e040a0' },
-              { to: '/quiz', Icon: BrainIcon, label: 'Quiz', desc: 'Test your knowledge', color: '#4a00e0' },
-              { to: '/bingo', Icon: GridIcon, label: 'Bingo', desc: 'Festival bingo card', color: '#d4a20a' },
-              { to: '/weather', Icon: CloudSunIcon, label: 'Weather', desc: 'Biddinghuizen forecast', color: '#1d3557' },
-              { to: '/budget', Icon: WalletIcon, label: 'Budget', desc: 'Track your spending', color: '#16a34a' },
-            ].map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                className="group flex flex-col gap-2 rounded-xl border border-border bg-surface-card p-4 transition-all hover:border-border-hover hover:bg-surface-alt"
-              >
-                <div
-                  className="flex h-9 w-9 items-center justify-center rounded-lg text-white"
-                  style={{ backgroundColor: link.color + '26', color: link.color }}
-                >
-                  <link.Icon size={18} />
-                </div>
-                <div>
-                  <p className="text-sm font-bold text-text-primary">{link.label}</p>
-                  <p className="text-[11px] text-text-muted">{link.desc}</p>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
+        {/* More features link */}
+        <Link
+          to="/more"
+          className="flex items-center justify-between rounded-xl border border-border bg-surface-card px-4 py-3 transition-all hover:border-border-hover hover:bg-surface-alt"
+        >
+          <span className="text-sm font-semibold text-text-secondary">{t('home.moreFeatures')}</span>
+          <span className="text-text-muted">›</span>
+        </Link>
 
         {/* Q-dance news */}
         <div>
           <div className="mb-3 flex items-center justify-between">
-            <h2 className="defqon-heading text-xs tracking-widest text-text-muted">Q-dance Latest</h2>
+            <h2 className="defqon-heading text-xs tracking-widest text-text-muted">{t('home.qdanceLatest')}</h2>
             <a
               href="https://www.defqon.com"
               target="_blank"
@@ -320,13 +304,13 @@ export default function Home() {
 
         {/* Official links */}
         <div>
-          <h2 className="defqon-heading mb-3 text-xs tracking-widest text-text-muted">Official Links</h2>
+          <h2 className="defqon-heading mb-3 text-xs tracking-widest text-text-muted">{t('home.officialLinks')}</h2>
           <div className="grid grid-cols-2 gap-2">
             {[
-              { label: 'Defqon.1 Website', url: 'https://www.defqon.com', emoji: '🌐' },
-              { label: 'Buy Tickets', url: 'https://www.defqon.com/en/tickets', emoji: '🎟️' },
-              { label: 'Official Lineup', url: 'https://www.defqon.com/en/lineup', emoji: '🎤' },
-              { label: 'Q-dance App', url: 'https://apps.apple.com/app/q-dance/id450147288', emoji: '📱' },
+              { label: t('home.officialSite'), url: 'https://www.defqon.com', emoji: '🌐' },
+              { label: t('home.buyTickets'), url: 'https://www.defqon.com/en/tickets', emoji: '🎟️' },
+              { label: t('home.officialLineup'), url: 'https://www.defqon.com/en/lineup', emoji: '🎤' },
+              { label: t('home.qdanceApp'), url: 'https://apps.apple.com/app/q-dance/id450147288', emoji: '📱' },
             ].map(({ label, url, emoji }) => (
               <a
                 key={label}

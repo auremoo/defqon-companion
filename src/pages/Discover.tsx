@@ -1,5 +1,6 @@
 import { useState, useEffect, useMemo } from 'react'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import PageShell from '../components/PageShell'
 import { SparklesIcon, CalendarIcon, PaletteIcon } from '../components/Icons'
 import { colors } from '../data/colors'
@@ -41,6 +42,7 @@ interface Recommendation {
 }
 
 export default function Discover() {
+  const { t } = useTranslation()
   const edition = useMemo(() => getCurrentEdition(), [])
   const [favorites, setFavorites] = useState<string[]>([])
   const [savedSets, setSavedSets] = useState<string[]>([])
@@ -160,8 +162,8 @@ export default function Discover() {
 
   return (
     <PageShell
-      title="Discover"
-      subtitle="Sets you might love, based on your taste"
+      title={t('discover.title')}
+      subtitle={t('discover.subtitle')}
     >
       <div className="mx-auto w-full max-w-md space-y-5 pb-4">
         {/* Taste profile */}
