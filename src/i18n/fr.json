@@ -35,7 +35,11 @@
     "goingConfirm": "J'y vais !",
     "goingConfirmed": "Tu y vas !",
     "goingDate": "Defqon.1 2026 \u2014 25\u201328 juin, Biddinghuizen",
-    "goingUndo": "Je n'y vais plus"
+    "goingUndo": "Je n'y vais plus",
+    "statFirstEdition": "Première\nédition",
+    "statDays": "Jours de\nfestival",
+    "statArtists": "Artistes\nau lineup",
+    "statAttendees": "Festivaliers\npar jour"
   },
   "colors": {
     "title": "Les couleurs de Defqon.1",

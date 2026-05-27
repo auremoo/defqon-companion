@@ -185,14 +185,6 @@ function NewsWidget() {
           <YouTubeIcon size={14} className="shrink-0 text-red-500" />
         </a>
       ))}
-      <a
-        href="https://www.youtube.com/@qdance"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex items-center justify-center gap-1.5 py-1 text-[11px] text-text-muted underline-offset-2 hover:underline"
-      >
-        More on YouTube <ExternalLinkIcon size={11} />
-      </a>
     </div>
   )
 }
@@ -234,6 +226,21 @@ export default function Home() {
 
         {/* Going widget */}
         <GoingWidget />
+
+        {/* Key stats */}
+        <div className="grid grid-cols-4 gap-2">
+          {[
+            { value: '2003', label: t('home.statFirstEdition') },
+            { value: '4', label: t('home.statDays') },
+            { value: '200+', label: t('home.statArtists') },
+            { value: '55K', label: t('home.statAttendees') },
+          ].map(({ value, label }) => (
+            <div key={label} className="flex flex-col items-center rounded-xl border border-border bg-surface-card py-3">
+              <span className="text-lg font-black text-accent">{value}</span>
+              <span className="mt-0.5 whitespace-pre-line text-center text-[9px] leading-tight text-text-muted">{label}</span>
+            </div>
+          ))}
+        </div>
 
         {/* Quick links — original */}
         <div>
