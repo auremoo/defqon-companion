@@ -5,7 +5,7 @@ import PageShell from '../components/PageShell'
 
 const CACHED_VIDEOS_URL = `${import.meta.env.BASE_URL}data/qdance-news.json`
 const CACHED_ARTICLES_URL = `${import.meta.env.BASE_URL}data/hardstyle-news.json`
-const QDANCE_RSS = 'https://api.allorigins.win/raw?url=' + encodeURIComponent('https://www.youtube.com/feeds/videos.xml?channel_id=UCmT5a_E68D5y7_e8eSBCPtg')
+const QDANCE_RSS = 'https://api.allorigins.win/raw?url=' + encodeURIComponent('https://www.youtube.com/feeds/videos.xml?channel_id=UCAEwCfBRlB3jIY9whEfSP5Q')
 
 interface VideoItem {
   type: 'video'

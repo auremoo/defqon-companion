@@ -23,7 +23,7 @@ interface HardstyleEvent {
 
 // Cached by GitHub Action daily — falls back to live RSS if empty
 const CACHED_NEWS_URL = `${import.meta.env.BASE_URL}data/qdance-news.json`
-const QDANCE_RSS = 'https://api.allorigins.win/raw?url=' + encodeURIComponent('https://www.youtube.com/feeds/videos.xml?channel_id=UCmT5a_E68D5y7_e8eSBCPtg')
+const QDANCE_RSS = 'https://api.allorigins.win/raw?url=' + encodeURIComponent('https://www.youtube.com/feeds/videos.xml?channel_id=UCAEwCfBRlB3jIY9whEfSP5Q')
 
 interface VideoItem {
   id: string

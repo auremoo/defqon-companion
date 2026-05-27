@@ -4,7 +4,7 @@
 
 import { writeFileSync, mkdirSync } from 'fs'
 
-const RSS_URL = 'https://www.youtube.com/feeds/videos.xml?channel_id=UCmT5a_E68D5y7_e8eSBCPtg'
+const RSS_URL = 'https://www.youtube.com/feeds/videos.xml?channel_id=UCAEwCfBRlB3jIY9whEfSP5Q'
 
 const res = await fetch(RSS_URL, {
   headers: { 'User-Agent': 'Mozilla/5.0 (compatible; defqon-companion-bot/1.0)' },

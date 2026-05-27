@@ -28,6 +28,7 @@ jobs:
             echo "changed=false" >> $GITHUB_OUTPUT
           else
             git commit -m "chore: update Q-dance news cache"
+            git pull --rebase origin master
             git push
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
