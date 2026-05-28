@@ -1,10 +1,17 @@
 {
-  "updatedAt": "2026-05-27T14:00:48.362Z",
+  "updatedAt": "2026-05-28T10:42:00.397Z",
   "articles": [
+    {
+      "title": "Decibel outdoor announces WKND line-up",
+      "link": "https://hardstyle.com/en/news/decibel-outdoor-announces-wknd-line-up",
+      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/2026/Mei/SPARK_20250817_120938_DECIBEL_DV_3891.jpg",
+      "date": "2026-05-27",
+      "category": "news,hardstyle"
+    },
     {
       "title": "Frontliner Brings 'The Summer of Frontliner' to Vinyl",
       "link": "https://hardstyle.com/en/news/frontliner-brings-the-summer-of-frontliner-to-vinyl",
-      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/2026/Mei/RV26_0227_233702_AFAS_02072_LorenzoTNC.jpg",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/Mei/RV26_0227_233702_AFAS_02072_LorenzoTNC.jpg",
       "date": "2026-05-26",
       "category": "news,hardstyle"
     },
@@ -32,7 +39,7 @@
     {
       "title": "DJ The Prophet returns to the stage with exclusive show concept",
       "link": "https://hardstyle.com/en/news/dj-the-prophet-returns-to-the-stage-with-exclusive-show-concept",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/Mei/20260415-123347-LorenzoTNC-0081.jpg",
+      "image": null,
       "date": "2026-05-21",
       "category": "news,hardstyle"
     },
@@ -62,13 +69,6 @@
       "link": "https://hardstyle.com/en/news/frontliner-releases-nexus-festival-anthem-no-receta",
       "image": null,
       "date": "2026-05-18",
-      "category": "news,hardstyle"
-    },
-    {
-      "title": "Hard Bass announce a monumental line-up for its one-time-only return",
-      "link": "https://hardstyle.com/en/news/hard-bass-announce-a-monumental-line-up-for-its-one-time-only-return",
-      "image": null,
-      "date": "2026-05-13",
       "category": "news,hardstyle"
     }
   ]
