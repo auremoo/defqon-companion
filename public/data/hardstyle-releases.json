@@ -1,53 +1,53 @@
 {
-  "updatedAt": "2026-05-27T14:20:19.618Z",
+  "updatedAt": "2026-05-28T08:42:59.140Z",
   "releases": [
     {
-      "id": "4c716d22-a955-471e-9363-2a12b8e0ed01",
-      "title": "Hand On Your Heart",
-      "artist": "DTAH",
+      "id": "57cc4dfa-2e13-4613-b0e0-abe021837466",
+      "title": "Voices In My Head",
+      "artist": "Angerfist",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/57cc4dfa-2e13-4613-b0e0-abe021837466/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/57cc4dfa-2e13-4613-b0e0-abe021837466/voices-in-my-head"
+    },
+    {
+      "id": "cb4bc02b-7a9f-4c5b-9d5f-f488ff22d673",
+      "title": "RUN RABBIT RUN",
+      "artist": "NoooN Reveals",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/cb4bc02b-7a9f-4c5b-9d5f-f488ff22d673/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/cb4bc02b-7a9f-4c5b-9d5f-f488ff22d673/run-rabbit-run"
+    },
+    {
+      "id": "b457174c-9553-471e-aa01-b13c3d1f6d04",
+      "title": "Empty Houses",
+      "artist": "Angel Garcia DJ",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/4c716d22-a955-471e-9363-2a12b8e0ed01/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/4c716d22-a955-471e-9363-2a12b8e0ed01/hand-on-your-heart"
+      "image": "https://hardstyle.com/track_image/b457174c-9553-471e-aa01-b13c3d1f6d04/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/b457174c-9553-471e-aa01-b13c3d1f6d04/empty-houses"
     },
     {
-      "id": "c1f17773-fe89-4219-905a-3317ba8ce9db",
-      "title": "Sky Blue",
-      "artist": "Horyzon",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/c1f17773-fe89-4219-905a-3317ba8ce9db/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/c1f17773-fe89-4219-905a-3317ba8ce9db/sky-blue"
+      "id": "6c951ab5-521c-48ec-9363-b3b85b499509",
+      "title": "Experimento",
+      "artist": "Oruam Zior",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/6c951ab5-521c-48ec-9363-b3b85b499509/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/6c951ab5-521c-48ec-9363-b3b85b499509/experimento"
     },
     {
-      "id": "bf25d072-d85c-4901-8c61-e29491676cda",
-      "title": "Reborn",
-      "artist": "Reflect",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/bf25d072-d85c-4901-8c61-e29491676cda/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/bf25d072-d85c-4901-8c61-e29491676cda/reborn"
+      "id": "25d359f3-1e96-4a20-bde5-13388764891f",
+      "title": "Rito",
+      "artist": "Oruam Zior",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/25d359f3-1e96-4a20-bde5-13388764891f/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/25d359f3-1e96-4a20-bde5-13388764891f/rito"
     },
     {
-      "id": "23c9bfd8-347d-4d74-8ea6-3caf91217f2a",
-      "title": "RE:WIND",
-      "artist": "D-Charged",
-      "mix": "Dub Version",
-      "image": "https://hardstyle.com/track_image/23c9bfd8-347d-4d74-8ea6-3caf91217f2a/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/23c9bfd8-347d-4d74-8ea6-3caf91217f2a/re-wind"
-    },
-    {
-      "id": "af05e691-3a9d-4c75-b759-a9bc6e74e72d",
-      "title": "RE:WIND",
-      "artist": "D-Charged",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/af05e691-3a9d-4c75-b759-a9bc6e74e72d/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/af05e691-3a9d-4c75-b759-a9bc6e74e72d/re-wind"
-    },
-    {
-      "id": "ba52f23f-7dc6-4186-987e-f9012e04d1da",
-      "title": "Break The Game",
-      "artist": "Fragment",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/ba52f23f-7dc6-4186-987e-f9012e04d1da/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/ba52f23f-7dc6-4186-987e-f9012e04d1da/break-the-game"
+      "id": "3094338d-2cd9-4639-be3f-06e11e4997bf",
+      "title": "Confuso",
+      "artist": "Oruam Zior",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/3094338d-2cd9-4639-be3f-06e11e4997bf/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/3094338d-2cd9-4639-be3f-06e11e4997bf/confuso"
     },
     {
       "id": "a6f0d5be-d6be-4c8c-809c-84273738422c",
