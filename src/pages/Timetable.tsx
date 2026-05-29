@@ -579,6 +579,11 @@ export default function Timetable() {
         />
       </div>
 
+      <p className="mb-3 flex items-start gap-1.5 rounded-lg border border-white/5 bg-white/5 px-3 py-2 text-xs text-text-muted">
+        <span className="mt-0.5 shrink-0">ℹ️</span>
+        {t('timetable.officialAppNotice')}
+      </p>
+
       {edition.isCurrent && (
         <LiveMode edition={edition} friendSets={friendSets} savedSets={savedSets} />
       )}
