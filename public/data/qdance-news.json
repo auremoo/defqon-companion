@@ -1,12 +1,26 @@
 {
-  "updatedAt": "2026-05-28T10:01:09.186Z",
+  "updatedAt": "2026-05-29T09:59:14.002Z",
   "videos": [
     {
       "id": "QX-KteVJbMw",
       "title": "The Warming-up Mix | Defqon.1 2026",
-      "published": "2026-05-27T17:54:32+00:00",
+      "published": "2026-05-28T19:05:06+00:00",
       "link": "https://www.youtube.com/watch?v=QX-KteVJbMw",
       "thumbnail": "https://i.ytimg.com/vi/QX-KteVJbMw/mqdefault.jpg"
+    },
+    {
+      "id": "_nDIAYHfSac",
+      "title": "The Warming-up | Defqon.1 2026",
+      "published": "2026-05-28T18:00:07+00:00",
+      "link": "https://www.youtube.com/watch?v=_nDIAYHfSac",
+      "thumbnail": "https://i.ytimg.com/vi/_nDIAYHfSac/mqdefault.jpg"
+    },
+    {
+      "id": "1FsJfLDZMFM",
+      "title": "Tonight: The Warming-up!",
+      "published": "2026-05-28T15:47:11+00:00",
+      "link": "https://www.youtube.com/watch?v=1FsJfLDZMFM",
+      "thumbnail": "https://i.ytimg.com/vi/1FsJfLDZMFM/mqdefault.jpg"
     },
     {
       "id": "NyEulY9d-is",
@@ -91,20 +105,6 @@
       "published": "2026-05-07T12:02:15+00:00",
       "link": "https://www.youtube.com/watch?v=hYihEtlJGCM",
       "thumbnail": "https://i.ytimg.com/vi/hYihEtlJGCM/mqdefault.jpg"
-    },
-    {
-      "id": "2whvVP6zIWs",
-      "title": "Next episode, D-Sturb challenges the contenders to remix a classic Defqon.1 anthem #Defqon1 #REDrace",
-      "published": "2026-05-06T14:40:27+00:00",
-      "link": "https://www.youtube.com/watch?v=2whvVP6zIWs",
-      "thumbnail": "https://i.ytimg.com/vi/2whvVP6zIWs/mqdefault.jpg"
-    },
-    {
-      "id": "181oWL6hmkg",
-      "title": "Sub Zero Project returns this year with two massive sets at the RED. #defqon1",
-      "published": "2026-05-06T13:04:15+00:00",
-      "link": "https://www.youtube.com/watch?v=181oWL6hmkg",
-      "thumbnail": "https://i.ytimg.com/vi/181oWL6hmkg/mqdefault.jpg"
     }
   ]
 }
