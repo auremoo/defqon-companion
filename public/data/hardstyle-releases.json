@@ -1,85 +1,85 @@
 {
-  "updatedAt": "2026-05-28T08:42:59.140Z",
+  "updatedAt": "2026-05-29T08:42:36.472Z",
   "releases": [
     {
-      "id": "57cc4dfa-2e13-4613-b0e0-abe021837466",
-      "title": "Voices In My Head",
-      "artist": "Angerfist",
+      "id": "448e7f95-8546-4c5b-ae68-e30db0f9a6da",
+      "title": "Stop and Go",
+      "artist": "MATThimself",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/448e7f95-8546-4c5b-ae68-e30db0f9a6da/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/448e7f95-8546-4c5b-ae68-e30db0f9a6da/stop-and-go"
+    },
+    {
+      "id": "b9c526ce-a3aa-400f-a8e4-6ab229ff66b5",
+      "title": "SOMETHING NEW",
+      "artist": "EQUAL2",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/57cc4dfa-2e13-4613-b0e0-abe021837466/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/57cc4dfa-2e13-4613-b0e0-abe021837466/voices-in-my-head"
+      "image": "https://hardstyle.com/track_image/b9c526ce-a3aa-400f-a8e4-6ab229ff66b5/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/b9c526ce-a3aa-400f-a8e4-6ab229ff66b5/something-new"
     },
     {
-      "id": "cb4bc02b-7a9f-4c5b-9d5f-f488ff22d673",
-      "title": "RUN RABBIT RUN",
-      "artist": "NoooN Reveals",
+      "id": "a45ebe3e-8368-4774-bb61-ca3e9ec24c97",
+      "title": "I_M INSANE",
+      "artist": "EQUAL2",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/a45ebe3e-8368-4774-bb61-ca3e9ec24c97/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/a45ebe3e-8368-4774-bb61-ca3e9ec24c97/i-m-insane"
+    },
+    {
+      "id": "8a284a2d-5184-4bac-8155-cfd0bb0655c0",
+      "title": "WELCOME 2 HELL",
+      "artist": "EQUAL2",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/8a284a2d-5184-4bac-8155-cfd0bb0655c0/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/8a284a2d-5184-4bac-8155-cfd0bb0655c0/welcome-2-hell"
+    },
+    {
+      "id": "5eaf8e29-d4b0-43d6-be86-59c06da783eb",
+      "title": "Where I Belong",
+      "artist": "Endymion",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/5eaf8e29-d4b0-43d6-be86-59c06da783eb/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/5eaf8e29-d4b0-43d6-be86-59c06da783eb/where-i-belong"
+    },
+    {
+      "id": "75e14242-9fb0-42d0-8b19-87711f4642e4",
+      "title": "All I See",
+      "artist": "Samynator",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/75e14242-9fb0-42d0-8b19-87711f4642e4/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/75e14242-9fb0-42d0-8b19-87711f4642e4/all-i-see"
+    },
+    {
+      "id": "4a4948f4-3101-408f-9588-6dc672f12057",
+      "title": "DIMENSIONS",
+      "artist": "Showtek",
       "mix": "",
-      "image": "https://hardstyle.com/track_image/cb4bc02b-7a9f-4c5b-9d5f-f488ff22d673/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/cb4bc02b-7a9f-4c5b-9d5f-f488ff22d673/run-rabbit-run"
+      "image": "https://hardstyle.com/track_image/4a4948f4-3101-408f-9588-6dc672f12057/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/4a4948f4-3101-408f-9588-6dc672f12057"
     },
     {
-      "id": "b457174c-9553-471e-aa01-b13c3d1f6d04",
-      "title": "Empty Houses",
-      "artist": "Angel Garcia DJ",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/b457174c-9553-471e-aa01-b13c3d1f6d04/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/b457174c-9553-471e-aa01-b13c3d1f6d04/empty-houses"
-    },
-    {
-      "id": "6c951ab5-521c-48ec-9363-b3b85b499509",
-      "title": "Experimento",
-      "artist": "Oruam Zior",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/6c951ab5-521c-48ec-9363-b3b85b499509/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/6c951ab5-521c-48ec-9363-b3b85b499509/experimento"
-    },
-    {
-      "id": "25d359f3-1e96-4a20-bde5-13388764891f",
-      "title": "Rito",
-      "artist": "Oruam Zior",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/25d359f3-1e96-4a20-bde5-13388764891f/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/25d359f3-1e96-4a20-bde5-13388764891f/rito"
-    },
-    {
-      "id": "3094338d-2cd9-4639-be3f-06e11e4997bf",
-      "title": "Confuso",
-      "artist": "Oruam Zior",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/3094338d-2cd9-4639-be3f-06e11e4997bf/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/3094338d-2cd9-4639-be3f-06e11e4997bf/confuso"
-    },
-    {
-      "id": "a6f0d5be-d6be-4c8c-809c-84273738422c",
-      "title": "Hard Dance Heat",
+      "id": "8a66e55a-7a06-4ba5-ab4f-f039c70afde2",
+      "title": "Summertime Hardcore Selection",
       "artist": "Various Artists",
       "mix": "",
-      "image": "https://hardstyle.com/track_image/a6f0d5be-d6be-4c8c-809c-84273738422c/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/a6f0d5be-d6be-4c8c-809c-84273738422c"
+      "image": "https://hardstyle.com/track_image/8a66e55a-7a06-4ba5-ab4f-f039c70afde2/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/8a66e55a-7a06-4ba5-ab4f-f039c70afde2"
     },
     {
-      "id": "274253d1-ac69-4648-b697-cf5ae91c3436",
-      "title": "Cyber War",
-      "artist": "Cyber Gunz",
+      "id": "6e3f1f36-4376-49da-b3ed-eb632e3b783a",
+      "title": "RESURGENCE",
+      "artist": "Cryex",
       "mix": "",
-      "image": "https://hardstyle.com/track_image/274253d1-ac69-4648-b697-cf5ae91c3436/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/274253d1-ac69-4648-b697-cf5ae91c3436"
+      "image": "https://hardstyle.com/track_image/6e3f1f36-4376-49da-b3ed-eb632e3b783a/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/6e3f1f36-4376-49da-b3ed-eb632e3b783a"
     },
     {
-      "id": "f2afa50c-abcc-4143-b77b-29fdba9ff9e3",
-      "title": "Dither is G.A.B.B.E.R.",
-      "artist": "Dither",
+      "id": "1fa9a9d1-95f4-46f3-bb84-aeb6c2368333",
+      "title": "Ravelife EP #1",
+      "artist": "Various Artists",
       "mix": "",
-      "image": "https://hardstyle.com/track_image/f2afa50c-abcc-4143-b77b-29fdba9ff9e3/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/f2afa50c-abcc-4143-b77b-29fdba9ff9e3"
-    },
-    {
-      "id": "27b00a98-ea81-40fd-af55-338720d325c7",
-      "title": "Strobe Lit Prophets",
-      "artist": "Armageddon Project",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/27b00a98-ea81-40fd-af55-338720d325c7/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/27b00a98-ea81-40fd-af55-338720d325c7"
+      "image": "https://hardstyle.com/track_image/1fa9a9d1-95f4-46f3-bb84-aeb6c2368333/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/1fa9a9d1-95f4-46f3-bb84-aeb6c2368333"
     }
   ]
 }
