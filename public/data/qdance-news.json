@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-05-29T09:59:14.002Z",
+  "updatedAt": "2026-05-30T08:27:56.767Z",
   "videos": [
+    {
+      "id": "2dQJiPPbRdY",
+      "title": "This is Defqon.1!",
+      "published": "2026-05-29T13:46:34+00:00",
+      "link": "https://www.youtube.com/watch?v=2dQJiPPbRdY",
+      "thumbnail": "https://i.ytimg.com/vi/2dQJiPPbRdY/mqdefault.jpg"
+    },
+    {
+      "id": "keEe5tyEiCI",
+      "title": "This is The Warming-up Mix!",
+      "published": "2026-05-29T12:09:34+00:00",
+      "link": "https://www.youtube.com/watch?v=keEe5tyEiCI",
+      "thumbnail": "https://i.ytimg.com/vi/keEe5tyEiCI/mqdefault.jpg"
+    },
     {
       "id": "QX-KteVJbMw",
       "title": "The Warming-up Mix | Defqon.1 2026",
@@ -91,20 +105,6 @@
       "published": "2026-05-12T13:07:22+00:00",
       "link": "https://www.youtube.com/watch?v=_3VTcvc5MFY",
       "thumbnail": "https://i.ytimg.com/vi/_3VTcvc5MFY/mqdefault.jpg"
-    },
-    {
-      "id": "gAWech2yNmI",
-      "title": "RED Race episode 4 drops this Friday.",
-      "published": "2026-05-12T09:04:55+00:00",
-      "link": "https://www.youtube.com/watch?v=gAWech2yNmI",
-      "thumbnail": "https://i.ytimg.com/vi/gAWech2yNmI/mqdefault.jpg"
-    },
-    {
-      "id": "hYihEtlJGCM",
-      "title": "This year, Showtek returns with a full-blown set at the RED on Saturday. #defqon1",
-      "published": "2026-05-07T12:02:15+00:00",
-      "link": "https://www.youtube.com/watch?v=hYihEtlJGCM",
-      "thumbnail": "https://i.ytimg.com/vi/hYihEtlJGCM/mqdefault.jpg"
     }
   ]
 }
