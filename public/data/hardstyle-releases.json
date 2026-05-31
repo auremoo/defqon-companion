@@ -1,6 +1,14 @@
 {
-  "updatedAt": "2026-05-30T07:41:54.707Z",
+  "updatedAt": "2026-05-31T08:15:14.644Z",
   "releases": [
+    {
+      "id": "e7f67631-3d9c-44f7-a518-3a0db2d4e2e4",
+      "title": "Shamanic Queen",
+      "artist": "Luke PN",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/e7f67631-3d9c-44f7-a518-3a0db2d4e2e4/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/e7f67631-3d9c-44f7-a518-3a0db2d4e2e4/shamanic-queen"
+    },
     {
       "id": "f8da91bd-58b2-4eee-9a52-621bd1ab97b8",
       "title": "Coffee Crisis",
@@ -40,14 +48,6 @@
       "mix": "Original Mix",
       "image": "https://hardstyle.com/track_image/b5bc3a95-c495-4c54-a61c-910df038e969/250x250/335",
       "link": "https://hardstyle.com/en/tracks/b5bc3a95-c495-4c54-a61c-910df038e969/time-space"
-    },
-    {
-      "id": "b4c6cee4-a981-4d99-ba39-7400968349ea",
-      "title": "99 Red Balloons",
-      "artist": "M-Project",
-      "mix": "Makina Mix",
-      "image": "https://hardstyle.com/track_image/b4c6cee4-a981-4d99-ba39-7400968349ea/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/b4c6cee4-a981-4d99-ba39-7400968349ea/99-red-balloons"
     },
     {
       "id": "4a4948f4-3101-408f-9588-6dc672f12057",
