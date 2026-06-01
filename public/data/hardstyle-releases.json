@@ -1,53 +1,61 @@
 {
-  "updatedAt": "2026-05-31T08:15:14.644Z",
+  "updatedAt": "2026-06-01T10:21:38.508Z",
   "releases": [
     {
-      "id": "e7f67631-3d9c-44f7-a518-3a0db2d4e2e4",
-      "title": "Shamanic Queen",
-      "artist": "Luke PN",
+      "id": "d00bd40e-90fb-4e82-8e6f-0c3231763280",
+      "title": "Round & Round",
+      "artist": "Big Ric",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/e7f67631-3d9c-44f7-a518-3a0db2d4e2e4/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/e7f67631-3d9c-44f7-a518-3a0db2d4e2e4/shamanic-queen"
+      "image": "https://hardstyle.com/track_image/d00bd40e-90fb-4e82-8e6f-0c3231763280/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/d00bd40e-90fb-4e82-8e6f-0c3231763280/round-round"
     },
     {
-      "id": "f8da91bd-58b2-4eee-9a52-621bd1ab97b8",
-      "title": "Coffee Crisis",
-      "artist": "Stormrazor",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/f8da91bd-58b2-4eee-9a52-621bd1ab97b8/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/f8da91bd-58b2-4eee-9a52-621bd1ab97b8/coffee-crisis"
+      "id": "251887d8-555b-4438-afcd-abf068bc052f",
+      "title": "Round & Round",
+      "artist": "Big Ric",
+      "mix": "Radio Edit",
+      "image": "https://hardstyle.com/track_image/251887d8-555b-4438-afcd-abf068bc052f/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/251887d8-555b-4438-afcd-abf068bc052f/round-round"
     },
     {
-      "id": "9e497b61-014f-4c02-9992-a74f947ea989",
-      "title": "Wildstyle",
-      "artist": "M-Project",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/9e497b61-014f-4c02-9992-a74f947ea989/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/9e497b61-014f-4c02-9992-a74f947ea989/wildstyle"
+      "id": "cfbfb318-3f74-4dd9-9f06-c0620f1e8d19",
+      "title": "Superman",
+      "artist": "Dropzone",
+      "mix": "Bounce Mix",
+      "image": "https://hardstyle.com/track_image/cfbfb318-3f74-4dd9-9f06-c0620f1e8d19/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/cfbfb318-3f74-4dd9-9f06-c0620f1e8d19/superman"
     },
     {
-      "id": "2562e93d-d888-434f-9a21-5a58322bd413",
-      "title": "Hyper",
-      "artist": "M-Project",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/2562e93d-d888-434f-9a21-5a58322bd413/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/2562e93d-d888-434f-9a21-5a58322bd413/hyper"
+      "id": "3fb11fa0-d96f-4f8d-bc00-84d87228ced4",
+      "title": "Superman",
+      "artist": "Dropzone",
+      "mix": "Bounce Edit",
+      "image": "https://hardstyle.com/track_image/3fb11fa0-d96f-4f8d-bc00-84d87228ced4/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/3fb11fa0-d96f-4f8d-bc00-84d87228ced4/superman"
     },
     {
-      "id": "3f523c74-ffcc-4393-b7dd-433274f67827",
-      "title": "My Galaxy",
-      "artist": "M-Project",
+      "id": "ef73a7cc-6314-435b-910f-0412347920d5",
+      "title": "Superman",
+      "artist": "Dropzone",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/3f523c74-ffcc-4393-b7dd-433274f67827/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/3f523c74-ffcc-4393-b7dd-433274f67827/my-galaxy"
+      "image": "https://hardstyle.com/track_image/ef73a7cc-6314-435b-910f-0412347920d5/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/ef73a7cc-6314-435b-910f-0412347920d5/superman"
     },
     {
-      "id": "b5bc3a95-c495-4c54-a61c-910df038e969",
-      "title": "Time & Space",
-      "artist": "M-Project",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/b5bc3a95-c495-4c54-a61c-910df038e969/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/b5bc3a95-c495-4c54-a61c-910df038e969/time-space"
+      "id": "a9fbe2d4-8c3a-4491-a640-919e8b727a70",
+      "title": "Superman",
+      "artist": "Dropzone",
+      "mix": "Radio Edit",
+      "image": "https://hardstyle.com/track_image/a9fbe2d4-8c3a-4491-a640-919e8b727a70/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/a9fbe2d4-8c3a-4491-a640-919e8b727a70/superman"
+    },
+    {
+      "id": "6af5ddec-1cd9-4858-a29f-2d55f675eb5b",
+      "title": "Polish Punisher II",
+      "artist": "Polish Punisher",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/6af5ddec-1cd9-4858-a29f-2d55f675eb5b/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/6af5ddec-1cd9-4858-a29f-2d55f675eb5b"
     },
     {
       "id": "4a4948f4-3101-408f-9588-6dc672f12057",
@@ -72,14 +80,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/6e3f1f36-4376-49da-b3ed-eb632e3b783a/250x250/335",
       "link": "https://hardstyle.com/en/tracks/6e3f1f36-4376-49da-b3ed-eb632e3b783a"
-    },
-    {
-      "id": "1fa9a9d1-95f4-46f3-bb84-aeb6c2368333",
-      "title": "Ravelife EP #1",
-      "artist": "Various Artists",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/1fa9a9d1-95f4-46f3-bb84-aeb6c2368333/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/1fa9a9d1-95f4-46f3-bb84-aeb6c2368333"
     }
   ]
 }

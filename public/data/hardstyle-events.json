@@ -1,24 +1,6 @@
 {
-  "updatedAt": "2026-05-31T08:15:15.119Z",
+  "updatedAt": "2026-06-01T10:21:39.308Z",
   "events": [
-    {
-      "title": "HARD & HOLLANDS",
-      "link": "https://hardstyle.com/en/events/9fcbd9a5-3354-4327-aed7-b45fc58c76e2/hard-hollands",
-      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/9fcbd9a5-3354-4327-aed7-b45fc58c76e2/images/logo_img.jpg",
-      "location": "Wijchen",
-      "time": "13:00 - 00:00",
-      "date": "2026-05-30",
-      "month": "May"
-    },
-    {
-      "title": "Lost Memories Outdoor Festival 2026",
-      "link": "https://hardstyle.com/en/events/e12636f8-bb89-4a00-88cf-988ec320d245/lost-memories-outdoor-festival-2026",
-      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/e12636f8-bb89-4a00-88cf-988ec320d245/images/logo_img.jpg",
-      "location": "Breda",
-      "time": "14:00 - 00:00",
-      "date": "2026-05-30",
-      "month": "May"
-    },
     {
       "title": "Intents Festival - Rise Of Titans",
       "link": "https://hardstyle.com/en/events/ebb25dcf-0428-4c5f-9c28-0baa7b4f65e8/intents-festival-rise-of-titans",
@@ -137,20 +119,20 @@
       "month": "July"
     },
     {
-      "title": "Dominator Fatal Fortune",
-      "link": "https://hardstyle.com/en/events/0ade02f1-908b-400f-9e83-7de9450e33bb/dominator-fatal-fortune",
-      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/0ade02f1-908b-400f-9e83-7de9450e33bb/images/logo_img.jpg",
-      "location": "Eersel",
-      "time": "13:00 - 23:00",
-      "date": "2026-07-17",
-      "month": "July"
-    },
-    {
       "title": "Parookaville",
       "link": "https://hardstyle.com/en/events/4ebaaa9c-cd25-45d9-a148-998f70937f8d/parookaville",
       "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/4ebaaa9c-cd25-45d9-a148-998f70937f8d/images/logo_img.jpg",
       "location": "Weeze",
       "time": "14:00 - 01:00",
+      "date": "2026-07-17",
+      "month": "July"
+    },
+    {
+      "title": "Dominator Fatal Fortune",
+      "link": "https://hardstyle.com/en/events/0ade02f1-908b-400f-9e83-7de9450e33bb/dominator-fatal-fortune",
+      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/0ade02f1-908b-400f-9e83-7de9450e33bb/images/logo_img.jpg",
+      "location": "Eersel",
+      "time": "13:00 - 23:00",
       "date": "2026-07-17",
       "month": "July"
     },
