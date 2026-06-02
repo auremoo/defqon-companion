@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-01T12:17:18.594Z",
+  "updatedAt": "2026-06-02T11:05:04.855Z",
   "articles": [
     {
       "title": "Decibel outdoor announces WKND line-up",
@@ -23,6 +23,13 @@
       "category": "hardstyle,music"
     },
     {
+      "title": "This week's hardstyle releases [week 22] (1)",
+      "link": "https://hardstyle.com/en/news/this-week-s-hardstyle-releases-week-22-2027",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/Mei/582408269_1401444094875706_5089896207015485031_n.jpg",
+      "date": null,
+      "category": "hardstyle,music"
+    },
+    {
       "title": "Sub Zero Project will bring their exclusive ‘Our World’ concept to Germany next Saturday",
       "link": "https://hardstyle.com/en/news/sub-zero-project-will-bring-their-exclusive-our-world-concept-to-germany-next-saturday",
       "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/Mei/01.jpg",
@@ -32,7 +39,7 @@
     {
       "title": "Cyber Gunz enters new era with debut album 'Cyber War'",
       "link": "https://hardstyle.com/en/news/cyber-gunz-enters-new-era-with-debut-album-cyber-war",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/Mei/original%20(32).jpeg",
+      "image": null,
       "date": "2026-05-22",
       "category": "news,hardstyle"
     },
@@ -63,13 +70,6 @@
       "image": null,
       "date": null,
       "category": "hardstyle,music"
-    },
-    {
-      "title": "Frontliner releases Nexus Festival anthem: ‘No Receta’",
-      "link": "https://hardstyle.com/en/news/frontliner-releases-nexus-festival-anthem-no-receta",
-      "image": null,
-      "date": "2026-05-18",
-      "category": "news,hardstyle"
     }
   ]
 }
