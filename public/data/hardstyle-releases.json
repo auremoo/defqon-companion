@@ -1,53 +1,53 @@
 {
-  "updatedAt": "2026-06-01T10:21:38.508Z",
+  "updatedAt": "2026-06-02T09:08:16.405Z",
   "releases": [
     {
-      "id": "d00bd40e-90fb-4e82-8e6f-0c3231763280",
-      "title": "Round & Round",
-      "artist": "Big Ric",
+      "id": "94b5f88a-16cc-41aa-923e-e682a4b3e88a",
+      "title": "Open Your Eyes",
+      "artist": "DJ OGGY",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/d00bd40e-90fb-4e82-8e6f-0c3231763280/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/d00bd40e-90fb-4e82-8e6f-0c3231763280/round-round"
+      "image": "https://hardstyle.com/track_image/94b5f88a-16cc-41aa-923e-e682a4b3e88a/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/94b5f88a-16cc-41aa-923e-e682a4b3e88a/open-your-eyes"
     },
     {
-      "id": "251887d8-555b-4438-afcd-abf068bc052f",
-      "title": "Round & Round",
-      "artist": "Big Ric",
+      "id": "ddd1eba0-6957-47fb-9a3f-00d790b032f6",
+      "title": "Open Your Eyes",
+      "artist": "DJ OGGY",
       "mix": "Radio Edit",
-      "image": "https://hardstyle.com/track_image/251887d8-555b-4438-afcd-abf068bc052f/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/251887d8-555b-4438-afcd-abf068bc052f/round-round"
+      "image": "https://hardstyle.com/track_image/ddd1eba0-6957-47fb-9a3f-00d790b032f6/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/ddd1eba0-6957-47fb-9a3f-00d790b032f6/open-your-eyes"
     },
     {
-      "id": "cfbfb318-3f74-4dd9-9f06-c0620f1e8d19",
-      "title": "Superman",
-      "artist": "Dropzone",
-      "mix": "Bounce Mix",
-      "image": "https://hardstyle.com/track_image/cfbfb318-3f74-4dd9-9f06-c0620f1e8d19/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/cfbfb318-3f74-4dd9-9f06-c0620f1e8d19/superman"
-    },
-    {
-      "id": "3fb11fa0-d96f-4f8d-bc00-84d87228ced4",
-      "title": "Superman",
-      "artist": "Dropzone",
-      "mix": "Bounce Edit",
-      "image": "https://hardstyle.com/track_image/3fb11fa0-d96f-4f8d-bc00-84d87228ced4/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/3fb11fa0-d96f-4f8d-bc00-84d87228ced4/superman"
-    },
-    {
-      "id": "ef73a7cc-6314-435b-910f-0412347920d5",
-      "title": "Superman",
-      "artist": "Dropzone",
+      "id": "458fe70c-927f-488a-b235-2b0ec6236a7c",
+      "title": "Peace In Silence",
+      "artist": "AscenderZ",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/ef73a7cc-6314-435b-910f-0412347920d5/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/ef73a7cc-6314-435b-910f-0412347920d5/superman"
+      "image": "https://hardstyle.com/track_image/458fe70c-927f-488a-b235-2b0ec6236a7c/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/458fe70c-927f-488a-b235-2b0ec6236a7c/peace-in-silence"
     },
     {
-      "id": "a9fbe2d4-8c3a-4491-a640-919e8b727a70",
-      "title": "Superman",
-      "artist": "Dropzone",
-      "mix": "Radio Edit",
-      "image": "https://hardstyle.com/track_image/a9fbe2d4-8c3a-4491-a640-919e8b727a70/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/a9fbe2d4-8c3a-4491-a640-919e8b727a70/superman"
+      "id": "dec8106f-14c8-44e1-8542-9fed99a11667",
+      "title": "Let Him Cook",
+      "artist": "Strixter",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/dec8106f-14c8-44e1-8542-9fed99a11667/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/dec8106f-14c8-44e1-8542-9fed99a11667/let-him-cook"
+    },
+    {
+      "id": "59dcd987-fdb3-4b85-b84a-6eae97d10b00",
+      "title": "Got That Blow",
+      "artist": "Ruinex",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/59dcd987-fdb3-4b85-b84a-6eae97d10b00/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/59dcd987-fdb3-4b85-b84a-6eae97d10b00/got-that-blow"
+    },
+    {
+      "id": "df943880-6de2-4eb5-8a20-5c7d995d2a9c",
+      "title": "Main Character",
+      "artist": "Missy",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/df943880-6de2-4eb5-8a20-5c7d995d2a9c/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/df943880-6de2-4eb5-8a20-5c7d995d2a9c/main-character"
     },
     {
       "id": "6af5ddec-1cd9-4858-a29f-2d55f675eb5b",
