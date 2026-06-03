@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-06-02T10:23:32.582Z",
+  "updatedAt": "2026-06-03T10:59:16.813Z",
   "videos": [
+    {
+      "id": "kmeA4Olw3gE",
+      "title": "Beer will flow and madness will follow during the craziest POWER HOUR of your life with Bud.",
+      "published": "2026-06-03T10:09:49+00:00",
+      "link": "https://www.youtube.com/watch?v=kmeA4Olw3gE",
+      "thumbnail": "https://i.ytimg.com/vi/kmeA4Olw3gE/mqdefault.jpg"
+    },
+    {
+      "id": "SjB2JDzstMk",
+      "title": "Thursday is dedicated to the tribe.",
+      "published": "2026-06-02T11:02:45+00:00",
+      "link": "https://www.youtube.com/watch?v=SjB2JDzstMk",
+      "thumbnail": "https://i.ytimg.com/vi/SjB2JDzstMk/mqdefault.jpg"
+    },
     {
       "id": "0IiMRKHECAU",
       "title": "This Thursday, the RED Race reaches its conclusion with the very first live finale on YouTube.",
@@ -91,20 +105,6 @@
       "published": "2026-05-20T17:06:42+00:00",
       "link": "https://www.youtube.com/watch?v=a971-ifI8bI",
       "thumbnail": "https://i.ytimg.com/vi/a971-ifI8bI/mqdefault.jpg"
-    },
-    {
-      "id": "P36fRKmy804",
-      "title": "The Wasted Lands never sleep. 🔥",
-      "published": "2026-05-20T12:43:48+00:00",
-      "link": "https://www.youtube.com/watch?v=P36fRKmy804",
-      "thumbnail": "https://i.ytimg.com/vi/P36fRKmy804/mqdefault.jpg"
-    },
-    {
-      "id": "38vkJrgeYfI",
-      "title": "JDX about creating an anthem.",
-      "published": "2026-05-19T10:50:33+00:00",
-      "link": "https://www.youtube.com/watch?v=38vkJrgeYfI",
-      "thumbnail": "https://i.ytimg.com/vi/38vkJrgeYfI/mqdefault.jpg"
     }
   ]
 }
