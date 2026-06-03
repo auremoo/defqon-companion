@@ -1,10 +1,17 @@
 {
-  "updatedAt": "2026-06-02T11:05:04.855Z",
+  "updatedAt": "2026-06-03T11:27:10.100Z",
   "articles": [
+    {
+      "title": "This week's hardstyle releases [week 23]",
+      "link": "https://hardstyle.com/en/news/this-week-s-hardstyle-releases-week-23-2026",
+      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/2026/Mei/481502678_1189897785840519_6009113267345056726_n.jpg",
+      "date": null,
+      "category": "hardstyle,music"
+    },
     {
       "title": "Decibel outdoor announces WKND line-up",
       "link": "https://hardstyle.com/en/news/decibel-outdoor-announces-wknd-line-up",
-      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/2026/Mei/SPARK_20250817_120938_DECIBEL_DV_3891.jpg",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/Mei/SPARK_20250817_120938_DECIBEL_DV_3891.jpg",
       "date": "2026-05-27",
       "category": "news,hardstyle"
     },
@@ -18,13 +25,6 @@
     {
       "title": "This week's hardstyle releases [week 22]",
       "link": "https://hardstyle.com/en/news/this-week-s-hardstyle-releases-week-22-2026",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/Mei/582408269_1401444094875706_5089896207015485031_n.jpg",
-      "date": null,
-      "category": "hardstyle,music"
-    },
-    {
-      "title": "This week's hardstyle releases [week 22] (1)",
-      "link": "https://hardstyle.com/en/news/this-week-s-hardstyle-releases-week-22-2027",
       "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/Mei/582408269_1401444094875706_5089896207015485031_n.jpg",
       "date": null,
       "category": "hardstyle,music"
