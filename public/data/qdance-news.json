@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-06-03T10:59:16.813Z",
+  "updatedAt": "2026-06-04T09:55:38.970Z",
   "videos": [
+    {
+      "id": "c25mxSiNl5Q",
+      "title": "Episode 5 | The Finale | RED Race | Defqon.1 2026",
+      "published": "2026-06-03T19:49:58+00:00",
+      "link": "https://www.youtube.com/watch?v=c25mxSiNl5Q",
+      "thumbnail": "https://i.ytimg.com/vi/c25mxSiNl5Q/mqdefault.jpg"
+    },
+    {
+      "id": "bFRP1AkeDQI",
+      "title": "Ran-D and Adaro back to back at The Gathering to kickstart your weekend with maximum force.",
+      "published": "2026-06-03T15:36:35+00:00",
+      "link": "https://www.youtube.com/watch?v=bFRP1AkeDQI",
+      "thumbnail": "https://i.ytimg.com/vi/bFRP1AkeDQI/mqdefault.jpg"
+    },
     {
       "id": "kmeA4Olw3gE",
       "title": "Beer will flow and madness will follow during the craziest POWER HOUR of your life with Bud.",
@@ -91,20 +105,6 @@
       "published": "2026-05-22T12:31:58+00:00",
       "link": "https://www.youtube.com/watch?v=KiDqZ5m_BUY",
       "thumbnail": "https://i.ytimg.com/vi/KiDqZ5m_BUY/mqdefault.jpg"
-    },
-    {
-      "id": "v6zLHYMXnfc",
-      "title": "Next week: Defqon.1 The Warming-up!",
-      "published": "2026-05-21T16:50:47+00:00",
-      "link": "https://www.youtube.com/watch?v=v6zLHYMXnfc",
-      "thumbnail": "https://i.ytimg.com/vi/v6zLHYMXnfc/mqdefault.jpg"
-    },
-    {
-      "id": "a971-ifI8bI",
-      "title": "The RED Race EP drops next Wednesday.",
-      "published": "2026-05-20T17:06:42+00:00",
-      "link": "https://www.youtube.com/watch?v=a971-ifI8bI",
-      "thumbnail": "https://i.ytimg.com/vi/a971-ifI8bI/mqdefault.jpg"
     }
   ]
 }
