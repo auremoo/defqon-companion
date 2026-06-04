@@ -1,53 +1,53 @@
 {
-  "updatedAt": "2026-06-03T09:27:24.220Z",
+  "updatedAt": "2026-06-04T08:50:24.664Z",
   "releases": [
     {
-      "id": "047fa950-2e96-42ab-a395-6103232015db",
-      "title": "Body Back",
-      "artist": "Latinity",
+      "id": "bff7b48a-1351-401e-9b49-51c794dd60de",
+      "title": "ECHO",
+      "artist": "NINE2NINE",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/047fa950-2e96-42ab-a395-6103232015db/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/047fa950-2e96-42ab-a395-6103232015db/body-back"
+      "image": "https://hardstyle.com/track_image/bff7b48a-1351-401e-9b49-51c794dd60de/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/bff7b48a-1351-401e-9b49-51c794dd60de/echo"
     },
     {
-      "id": "ba441d16-e5bb-4f98-b454-a01e0be8127a",
-      "title": "Far From Home",
-      "artist": "Unsenses",
+      "id": "e5aba6d1-9107-45df-8587-57975dbbd7b3",
+      "title": "Rock Tha Party (NINE2NINE Remix)",
+      "artist": "Rebelion",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/ba441d16-e5bb-4f98-b454-a01e0be8127a/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/ba441d16-e5bb-4f98-b454-a01e0be8127a/far-from-home"
+      "image": "https://hardstyle.com/track_image/e5aba6d1-9107-45df-8587-57975dbbd7b3/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/e5aba6d1-9107-45df-8587-57975dbbd7b3/rock-tha-party-nine2nine-remix"
     },
     {
-      "id": "369fbc92-e99f-49d0-b072-2444d6ced49e",
-      "title": "Calling",
-      "artist": "Alleviate",
+      "id": "8c3ec28e-20b6-4281-86c2-d45260a6331c",
+      "title": "ECHO",
+      "artist": "NINE2NINE",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/369fbc92-e99f-49d0-b072-2444d6ced49e/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/369fbc92-e99f-49d0-b072-2444d6ced49e/calling"
+      "image": "https://hardstyle.com/track_image/8c3ec28e-20b6-4281-86c2-d45260a6331c/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/8c3ec28e-20b6-4281-86c2-d45260a6331c/echo"
     },
     {
-      "id": "61ce051f-96d1-4601-8a26-447de1f117d5",
-      "title": "I Don't Care",
-      "artist": "Dj Neo",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/61ce051f-96d1-4601-8a26-447de1f117d5/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/61ce051f-96d1-4601-8a26-447de1f117d5/i-don-t-care"
-    },
-    {
-      "id": "646e0321-ad5e-4c3b-9e11-eeed8b927bae",
-      "title": "In My Mind",
-      "artist": "Reductionz!",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/646e0321-ad5e-4c3b-9e11-eeed8b927bae/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/646e0321-ad5e-4c3b-9e11-eeed8b927bae/in-my-mind"
-    },
-    {
-      "id": "91291048-3cac-42c5-a421-6599d99a9cb7",
-      "title": "Reality",
-      "artist": "Unsenses",
+      "id": "8005b983-8fa0-4d66-98aa-8bd114a4190b",
+      "title": "Come To Life",
+      "artist": "Refuzion",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/91291048-3cac-42c5-a421-6599d99a9cb7/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/91291048-3cac-42c5-a421-6599d99a9cb7/reality"
+      "image": "https://hardstyle.com/track_image/8005b983-8fa0-4d66-98aa-8bd114a4190b/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/8005b983-8fa0-4d66-98aa-8bd114a4190b/come-to-life"
+    },
+    {
+      "id": "c373cd8c-86c4-4e6d-9dbb-f154767b4cfd",
+      "title": "Superstar",
+      "artist": "Adrenalize",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/c373cd8c-86c4-4e6d-9dbb-f154767b4cfd/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/c373cd8c-86c4-4e6d-9dbb-f154767b4cfd/superstar"
+    },
+    {
+      "id": "ea26c4a5-8ceb-49d8-9e50-d28c2912ffae",
+      "title": "Keep on Fighting",
+      "artist": "Lucid",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/ea26c4a5-8ceb-49d8-9e50-d28c2912ffae/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/ea26c4a5-8ceb-49d8-9e50-d28c2912ffae/keep-on-fighting"
     },
     {
       "id": "6af5ddec-1cd9-4858-a29f-2d55f675eb5b",
