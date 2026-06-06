@@ -1,6 +1,14 @@
 {
-  "updatedAt": "2026-06-05T08:43:56.142Z",
+  "updatedAt": "2026-06-06T07:46:15.738Z",
   "releases": [
+    {
+      "id": "67cc382b-7eaa-4b8f-8c57-9c1cd2997c96",
+      "title": "Dirty Streets",
+      "artist": "Roman Naboka",
+      "mix": "Remastered Mix",
+      "image": "https://hardstyle.com/track_image/67cc382b-7eaa-4b8f-8c57-9c1cd2997c96/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/67cc382b-7eaa-4b8f-8c57-9c1cd2997c96/dirty-streets"
+    },
     {
       "id": "f6063130-9904-4526-94ce-19961ee687c3",
       "title": "Take Control",
@@ -36,18 +44,10 @@
     {
       "id": "db0d0c60-7381-4f75-b1ad-e32ec9272571",
       "title": "In the Fire",
-      "artist": "",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/db0d0c60-7381-4f75-b1ad-e32ec9272571/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/db0d0c60-7381-4f75-b1ad-e32ec9272571/in-the-fire"
-    },
-    {
-      "id": "345f38a2-713a-4442-a160-6df75f1f3a04",
-      "title": "Anchored To Your Love",
       "artist": "Revizion",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/345f38a2-713a-4442-a160-6df75f1f3a04/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/345f38a2-713a-4442-a160-6df75f1f3a04/anchored-to-your-love"
+      "image": "https://hardstyle.com/track_image/db0d0c60-7381-4f75-b1ad-e32ec9272571/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/db0d0c60-7381-4f75-b1ad-e32ec9272571/in-the-fire"
     },
     {
       "id": "004793c8-fb5a-4788-b02d-e97905643a41",
