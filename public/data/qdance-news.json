@@ -1,6 +1,27 @@
 {
-  "updatedAt": "2026-06-05T09:50:12.898Z",
+  "updatedAt": "2026-06-06T08:33:05.187Z",
   "videos": [
+    {
+      "id": "2-zyPWQ8fr0",
+      "title": "Mish b2b Dual Damage at the RED.",
+      "published": "2026-06-05T17:10:00+00:00",
+      "link": "https://www.youtube.com/watch?v=2-zyPWQ8fr0",
+      "thumbnail": "https://i.ytimg.com/vi/2-zyPWQ8fr0/mqdefault.jpg"
+    },
+    {
+      "id": "XMCZgkFkSc0",
+      "title": "The RED Race may have come to an end, but it’s only the beginning for our 2026 winner: Testarossa.",
+      "published": "2026-06-05T15:36:07+00:00",
+      "link": "https://www.youtube.com/watch?v=XMCZgkFkSc0",
+      "thumbnail": "https://i.ytimg.com/vi/XMCZgkFkSc0/mqdefault.jpg"
+    },
+    {
+      "id": "nWAQ8Kx-sIc",
+      "title": "Livestream Trailer | Defqon.1 2026",
+      "published": "2026-06-05T14:21:28+00:00",
+      "link": "https://www.youtube.com/watch?v=nWAQ8Kx-sIc",
+      "thumbnail": "https://i.ytimg.com/vi/nWAQ8Kx-sIc/mqdefault.jpg"
+    },
     {
       "id": "u0rDwiHdkKI",
       "title": "Testarossa wins the RED Race!",
@@ -84,27 +105,6 @@
       "published": "2026-05-29T13:46:34+00:00",
       "link": "https://www.youtube.com/watch?v=2dQJiPPbRdY",
       "thumbnail": "https://i.ytimg.com/vi/2dQJiPPbRdY/mqdefault.jpg"
-    },
-    {
-      "id": "keEe5tyEiCI",
-      "title": "This is The Warming-up Mix!",
-      "published": "2026-05-29T12:09:34+00:00",
-      "link": "https://www.youtube.com/watch?v=keEe5tyEiCI",
-      "thumbnail": "https://i.ytimg.com/vi/keEe5tyEiCI/mqdefault.jpg"
-    },
-    {
-      "id": "QX-KteVJbMw",
-      "title": "The Warming-up Mix | Defqon.1 2026",
-      "published": "2026-05-28T19:05:06+00:00",
-      "link": "https://www.youtube.com/watch?v=QX-KteVJbMw",
-      "thumbnail": "https://i.ytimg.com/vi/QX-KteVJbMw/mqdefault.jpg"
-    },
-    {
-      "id": "_nDIAYHfSac",
-      "title": "The Warming-up | Defqon.1 2026",
-      "published": "2026-05-28T18:00:07+00:00",
-      "link": "https://www.youtube.com/watch?v=_nDIAYHfSac",
-      "thumbnail": "https://i.ytimg.com/vi/_nDIAYHfSac/mqdefault.jpg"
     }
   ]
 }
