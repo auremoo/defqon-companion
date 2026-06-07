@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-06-06T08:33:05.187Z",
+  "updatedAt": "2026-06-07T08:55:31.401Z",
   "videos": [
+    {
+      "id": "_gXJWO4ObP8",
+      "title": "Every night is a new adventure.",
+      "published": "2026-06-06T11:00:19+00:00",
+      "link": "https://www.youtube.com/watch?v=_gXJWO4ObP8",
+      "thumbnail": "https://i.ytimg.com/vi/_gXJWO4ObP8/mqdefault.jpg"
+    },
+    {
+      "id": "P-xE_aeERE0",
+      "title": "Relive Rooler at Defqon.1 2025.",
+      "published": "2026-06-06T09:14:35+00:00",
+      "link": "https://www.youtube.com/watch?v=P-xE_aeERE0",
+      "thumbnail": "https://i.ytimg.com/vi/P-xE_aeERE0/mqdefault.jpg"
+    },
     {
       "id": "2-zyPWQ8fr0",
       "title": "Mish b2b Dual Damage at the RED.",
@@ -91,20 +105,6 @@
       "published": "2026-06-01T12:06:39+00:00",
       "link": "https://www.youtube.com/watch?v=pDQJwHcu59Y",
       "thumbnail": "https://i.ytimg.com/vi/pDQJwHcu59Y/mqdefault.jpg"
-    },
-    {
-      "id": "IOGbZJjeFZU",
-      "title": "MAGENTA Thursday line-up 🎧",
-      "published": "2026-05-30T12:30:27+00:00",
-      "link": "https://www.youtube.com/watch?v=IOGbZJjeFZU",
-      "thumbnail": "https://i.ytimg.com/vi/IOGbZJjeFZU/mqdefault.jpg"
-    },
-    {
-      "id": "2dQJiPPbRdY",
-      "title": "This is Defqon.1!",
-      "published": "2026-05-29T13:46:34+00:00",
-      "link": "https://www.youtube.com/watch?v=2dQJiPPbRdY",
-      "thumbnail": "https://i.ytimg.com/vi/2dQJiPPbRdY/mqdefault.jpg"
     }
   ]
 }
