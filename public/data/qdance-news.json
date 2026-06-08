@@ -1,6 +1,27 @@
 {
-  "updatedAt": "2026-06-07T08:55:31.401Z",
+  "updatedAt": "2026-06-08T10:54:20.081Z",
   "videos": [
+    {
+      "id": "jYj43dueR5A",
+      "title": "Saturday is the originator.",
+      "published": "2026-06-07T13:00:02+00:00",
+      "link": "https://www.youtube.com/watch?v=jYj43dueR5A",
+      "thumbnail": "https://i.ytimg.com/vi/jYj43dueR5A/mqdefault.jpg"
+    },
+    {
+      "id": "V8dnl09AMgQ",
+      "title": "Brennan Heart at Defqon.1 2025!",
+      "published": "2026-06-07T11:00:01+00:00",
+      "link": "https://www.youtube.com/watch?v=V8dnl09AMgQ",
+      "thumbnail": "https://i.ytimg.com/vi/V8dnl09AMgQ/mqdefault.jpg"
+    },
+    {
+      "id": "Yr1RaCVz9BI",
+      "title": "Last year's RED Race contestants Serzo and D-Charged are joining forces for a special B2B set.",
+      "published": "2026-06-07T09:04:34+00:00",
+      "link": "https://www.youtube.com/watch?v=Yr1RaCVz9BI",
+      "thumbnail": "https://i.ytimg.com/vi/Yr1RaCVz9BI/mqdefault.jpg"
+    },
     {
       "id": "_gXJWO4ObP8",
       "title": "Every night is a new adventure.",
@@ -84,27 +105,6 @@
       "published": "2026-06-03T10:09:49+00:00",
       "link": "https://www.youtube.com/watch?v=kmeA4Olw3gE",
       "thumbnail": "https://i.ytimg.com/vi/kmeA4Olw3gE/mqdefault.jpg"
-    },
-    {
-      "id": "SjB2JDzstMk",
-      "title": "Thursday is dedicated to the tribe.",
-      "published": "2026-06-02T11:02:45+00:00",
-      "link": "https://www.youtube.com/watch?v=SjB2JDzstMk",
-      "thumbnail": "https://i.ytimg.com/vi/SjB2JDzstMk/mqdefault.jpg"
-    },
-    {
-      "id": "0IiMRKHECAU",
-      "title": "This Thursday, the RED Race reaches its conclusion with the very first live finale on YouTube.",
-      "published": "2026-06-02T09:46:11+00:00",
-      "link": "https://www.youtube.com/watch?v=0IiMRKHECAU",
-      "thumbnail": "https://i.ytimg.com/vi/0IiMRKHECAU/mqdefault.jpg"
-    },
-    {
-      "id": "pDQJwHcu59Y",
-      "title": "Prepare for the Grand Finale of Viva la Fist!",
-      "published": "2026-06-01T12:06:39+00:00",
-      "link": "https://www.youtube.com/watch?v=pDQJwHcu59Y",
-      "thumbnail": "https://i.ytimg.com/vi/pDQJwHcu59Y/mqdefault.jpg"
     }
   ]
 }
