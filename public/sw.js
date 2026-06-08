@@ -1,9 +1,14 @@
-const CACHE_NAME = 'defqon-companion-v3'
+const CACHE_NAME = 'defqon-companion-v4'
 const BASE = '/defqon-companion/'
+
+// Populated at build time by scripts/inject-sw-precache.mjs
+const PRECACHE_URLS = []
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll([BASE + 'manifest.json']))
+    caches.open(CACHE_NAME).then((cache) =>
+      cache.addAll(PRECACHE_URLS.length ? PRECACHE_URLS : [BASE + 'manifest.json'])
+    )
   )
   self.skipWaiting()
 })
@@ -35,7 +40,7 @@ self.addEventListener('fetch', (event) => {
     return
   }
 
-  // All other assets: stale-while-revalidate
+  // All other assets: cache-first (precached), stale-while-revalidate for the rest
   event.respondWith(
     caches.match(event.request).then((cached) => {
       const fetchPromise = fetch(event.request)
