@@ -1,4 +1,4 @@
-import { lazy, Suspense } from 'react'
+import { lazy, Suspense, Component, type ReactNode } from 'react'
 import { HashRouter, Routes, Route } from 'react-router-dom'
 import { AuthProvider } from './contexts/AuthContext'
 import BottomNav from './components/BottomNav'
@@ -23,11 +23,33 @@ function PageLoader() {
   return <div className="flex flex-1 items-center justify-center"><span className="text-gray-500">...</span></div>
 }
 
+class PageErrorBoundary extends Component<{ children: ReactNode }, { error: boolean }> {
+  state = { error: false }
+  static getDerivedStateFromError() { return { error: true } }
+  render() {
+    if (this.state.error) {
+      return (
+        <div className="flex flex-1 flex-col items-center justify-center gap-4 p-8 text-center">
+          <p className="text-sm text-text-secondary">Page failed to load.</p>
+          <button
+            onClick={() => { this.setState({ error: false }); window.location.reload() }}
+            className="rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-white"
+          >
+            Reload
+          </button>
+        </div>
+      )
+    }
+    return this.props.children
+  }
+}
+
 export default function App() {
   return (
     <AuthProvider>
       <HashRouter>
         <main className="flex-1">
+          <PageErrorBoundary>
           <Suspense fallback={<PageLoader />}>
             <Routes>
               <Route path="/" element={<Home />} />
@@ -47,6 +69,7 @@ export default function App() {
               <Route path="/more" element={<More />} />
             </Routes>
           </Suspense>
+          </PageErrorBoundary>
         </main>
         <BottomNav />
       </HashRouter>

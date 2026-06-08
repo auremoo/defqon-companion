@@ -6,6 +6,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   base: '/defqon-companion/',
   plugins: [react(), tailwindcss()],
+  build: { manifest: true },
   test: {
     environment: 'jsdom',
     globals: true,
