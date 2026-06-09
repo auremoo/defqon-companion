@@ -1,15 +1,6 @@
 {
-  "updatedAt": "2026-06-08T09:23:26.285Z",
+  "updatedAt": "2026-06-09T08:31:06.580Z",
   "events": [
-    {
-      "title": "Intents Festival - Rise Of Titans",
-      "link": "https://hardstyle.com/en/events/ebb25dcf-0428-4c5f-9c28-0baa7b4f65e8/intents-festival-rise-of-titans",
-      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/ebb25dcf-0428-4c5f-9c28-0baa7b4f65e8/images/logo_img.png",
-      "location": "Oisterwijk",
-      "time": "14:00 - 23:00",
-      "date": "2026-06-06",
-      "month": "June"
-    },
     {
       "title": "Just Dance Outdoor 2026 - 10th Edition",
       "link": "https://hardstyle.com/en/events/ce439243-38a4-4706-8a28-18ded0be100b/just-dance-outdoor-2026-10th-edition",
@@ -110,20 +101,20 @@
       "month": "July"
     },
     {
-      "title": "Dominator Fatal Fortune",
-      "link": "https://hardstyle.com/en/events/0ade02f1-908b-400f-9e83-7de9450e33bb/dominator-fatal-fortune",
-      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/0ade02f1-908b-400f-9e83-7de9450e33bb/images/logo_img.jpg",
-      "location": "Eersel",
-      "time": "13:00 - 23:00",
-      "date": "2026-07-17",
-      "month": "July"
-    },
-    {
       "title": "Parookaville",
       "link": "https://hardstyle.com/en/events/4ebaaa9c-cd25-45d9-a148-998f70937f8d/parookaville",
       "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/4ebaaa9c-cd25-45d9-a148-998f70937f8d/images/logo_img.jpg",
       "location": "Weeze",
       "time": "14:00 - 01:00",
+      "date": "2026-07-17",
+      "month": "July"
+    },
+    {
+      "title": "Dominator Fatal Fortune",
+      "link": "https://hardstyle.com/en/events/0ade02f1-908b-400f-9e83-7de9450e33bb/dominator-fatal-fortune",
+      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/0ade02f1-908b-400f-9e83-7de9450e33bb/images/logo_img.jpg",
+      "location": "Eersel",
+      "time": "13:00 - 23:00",
       "date": "2026-07-17",
       "month": "July"
     },
