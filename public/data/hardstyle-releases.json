@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-06-09T08:31:05.986Z",
+  "updatedAt": "2026-06-10T08:50:06.475Z",
   "releases": [
+    {
+      "id": "fb5cef67-eb63-455c-a403-53acabf338d7",
+      "title": "Just Rave",
+      "artist": "Devotion",
+      "mix": "Extended",
+      "image": "https://hardstyle.com/track_image/fb5cef67-eb63-455c-a403-53acabf338d7/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/fb5cef67-eb63-455c-a403-53acabf338d7/just-rave"
+    },
+    {
+      "id": "46622b01-2b79-431d-8a97-1e1c8bebea75",
+      "title": "Naughty Girl",
+      "artist": "Unload",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/46622b01-2b79-431d-8a97-1e1c8bebea75/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/46622b01-2b79-431d-8a97-1e1c8bebea75/naughty-girl"
+    },
+    {
+      "id": "8978bd9a-32e1-41f4-863c-3b06d7e68cda",
+      "title": "So Beautiful",
+      "artist": "Mat Weasel Busters",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/8978bd9a-32e1-41f4-863c-3b06d7e68cda/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/8978bd9a-32e1-41f4-863c-3b06d7e68cda/so-beautiful"
+    },
     {
       "id": "67cc382b-7eaa-4b8f-8c57-9c1cd2997c96",
       "title": "Dirty Streets",
@@ -24,30 +48,6 @@
       "mix": "Extended Mix",
       "image": "https://hardstyle.com/track_image/cdb54742-62fa-43e0-baa1-95f2b26c4409/250x250/335",
       "link": "https://hardstyle.com/en/tracks/cdb54742-62fa-43e0-baa1-95f2b26c4409/voices-in-my-head-x-love-parade"
-    },
-    {
-      "id": "1d47494a-17cd-4fc8-b1f5-33571235d5ad",
-      "title": "Jiiieehaaaa (Warrior Workout 2026 OST)",
-      "artist": "Coone",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/1d47494a-17cd-4fc8-b1f5-33571235d5ad/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/1d47494a-17cd-4fc8-b1f5-33571235d5ad/jiiieehaaaa-warrior-workout-2026-ost"
-    },
-    {
-      "id": "1d9a0cbf-8479-46ce-9307-f123ef157030",
-      "title": "Jiiieehaaaa (Warrior Workout 2026 OST)",
-      "artist": "Coone",
-      "mix": "Instrumental Extended Mix",
-      "image": "https://hardstyle.com/track_image/1d9a0cbf-8479-46ce-9307-f123ef157030/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/1d9a0cbf-8479-46ce-9307-f123ef157030/jiiieehaaaa-warrior-workout-2026-ost"
-    },
-    {
-      "id": "db0d0c60-7381-4f75-b1ad-e32ec9272571",
-      "title": "In the Fire",
-      "artist": "Revizion",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/db0d0c60-7381-4f75-b1ad-e32ec9272571/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/db0d0c60-7381-4f75-b1ad-e32ec9272571/in-the-fire"
     },
     {
       "id": "004793c8-fb5a-4788-b02d-e97905643a41",
