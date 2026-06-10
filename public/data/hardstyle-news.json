@@ -1,10 +1,17 @@
 {
-  "updatedAt": "2026-06-09T10:08:37.377Z",
+  "updatedAt": "2026-06-10T10:40:57.415Z",
   "articles": [
+    {
+      "title": "This week's hardstyle releases [week 24]",
+      "link": "https://hardstyle.com/en/news/this-week-s-hardstyle-releases-week-24-2026",
+      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/2026/Juni/686187817_1517425836421044_4935504756898215324_n.jpg",
+      "date": null,
+      "category": "hardstyle,music"
+    },
     {
       "title": "This week's hardstyle releases [week 23]",
       "link": "https://hardstyle.com/en/news/this-week-s-hardstyle-releases-week-23-2026",
-      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/2026/Mei/481502678_1189897785840519_6009113267345056726_n.jpg",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/Mei/481502678_1189897785840519_6009113267345056726_n.jpg",
       "date": null,
       "category": "hardstyle,music"
     },
@@ -32,7 +39,7 @@
     {
       "title": "Sub Zero Project will bring their exclusive ‘Our World’ concept to Germany next Saturday",
       "link": "https://hardstyle.com/en/news/sub-zero-project-will-bring-their-exclusive-our-world-concept-to-germany-next-saturday",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/Mei/01.jpg",
+      "image": null,
       "date": "2026-05-22",
       "category": "news,hardstyle"
     },
@@ -63,13 +70,6 @@
       "image": null,
       "date": "2026-05-19",
       "category": "news,hardstyle"
-    },
-    {
-      "title": "This week's hardstyle releases [week 21]",
-      "link": "https://hardstyle.com/en/news/this-week-s-hardstyle-releases-week-21-2026",
-      "image": null,
-      "date": null,
-      "category": "hardstyle,music"
     }
   ]
 }
