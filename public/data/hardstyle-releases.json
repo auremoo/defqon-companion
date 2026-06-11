@@ -1,53 +1,61 @@
 {
-  "updatedAt": "2026-06-10T08:50:06.475Z",
+  "updatedAt": "2026-06-11T09:12:42.593Z",
   "releases": [
     {
-      "id": "fb5cef67-eb63-455c-a403-53acabf338d7",
-      "title": "Just Rave",
-      "artist": "Devotion",
-      "mix": "Extended",
-      "image": "https://hardstyle.com/track_image/fb5cef67-eb63-455c-a403-53acabf338d7/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/fb5cef67-eb63-455c-a403-53acabf338d7/just-rave"
-    },
-    {
-      "id": "46622b01-2b79-431d-8a97-1e1c8bebea75",
-      "title": "Naughty Girl",
-      "artist": "Unload",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/46622b01-2b79-431d-8a97-1e1c8bebea75/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/46622b01-2b79-431d-8a97-1e1c8bebea75/naughty-girl"
-    },
-    {
-      "id": "8978bd9a-32e1-41f4-863c-3b06d7e68cda",
-      "title": "So Beautiful",
-      "artist": "Mat Weasel Busters",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/8978bd9a-32e1-41f4-863c-3b06d7e68cda/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/8978bd9a-32e1-41f4-863c-3b06d7e68cda/so-beautiful"
-    },
-    {
-      "id": "67cc382b-7eaa-4b8f-8c57-9c1cd2997c96",
-      "title": "Dirty Streets",
-      "artist": "Roman Naboka",
-      "mix": "Remastered Mix",
-      "image": "https://hardstyle.com/track_image/67cc382b-7eaa-4b8f-8c57-9c1cd2997c96/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/67cc382b-7eaa-4b8f-8c57-9c1cd2997c96/dirty-streets"
-    },
-    {
-      "id": "f6063130-9904-4526-94ce-19961ee687c3",
-      "title": "Take Control",
-      "artist": "Diztorted",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/f6063130-9904-4526-94ce-19961ee687c3/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/f6063130-9904-4526-94ce-19961ee687c3/take-control"
-    },
-    {
-      "id": "cdb54742-62fa-43e0-baa1-95f2b26c4409",
-      "title": "Voices In My Head x Love Parade",
-      "artist": "DRS",
+      "id": "12aae081-7856-4435-abb4-6a26ad4d1d41",
+      "title": "BODY MOVE",
+      "artist": "Hard Driver",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/cdb54742-62fa-43e0-baa1-95f2b26c4409/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/cdb54742-62fa-43e0-baa1-95f2b26c4409/voices-in-my-head-x-love-parade"
+      "image": "https://hardstyle.com/track_image/12aae081-7856-4435-abb4-6a26ad4d1d41/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/12aae081-7856-4435-abb4-6a26ad4d1d41/body-move"
+    },
+    {
+      "id": "4499ebf3-6c70-4ede-b477-09d3cb2be74d",
+      "title": "The Curse",
+      "artist": "The Ancients",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/4499ebf3-6c70-4ede-b477-09d3cb2be74d/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/4499ebf3-6c70-4ede-b477-09d3cb2be74d/the-curse"
+    },
+    {
+      "id": "c9ad46c0-eda9-4095-b4f6-b2f1129dc939",
+      "title": "Flyin' High",
+      "artist": "High Resistance",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/c9ad46c0-eda9-4095-b4f6-b2f1129dc939/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/c9ad46c0-eda9-4095-b4f6-b2f1129dc939/flyin-high"
+    },
+    {
+      "id": "5d38f6b7-21c5-4d80-86ad-3c16266874ce",
+      "title": "We Are Louder (Official Louder Generation 2026 Anthem)",
+      "artist": "Cardination",
+      "mix": "Pro Mix",
+      "image": "https://hardstyle.com/track_image/5d38f6b7-21c5-4d80-86ad-3c16266874ce/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/5d38f6b7-21c5-4d80-86ad-3c16266874ce/we-are-louder-official-louder-generation-2026-anthem"
+    },
+    {
+      "id": "2006714b-a6a2-43c2-a229-3380f9674e9c",
+      "title": "So Damn Good",
+      "artist": "KidEast",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/2006714b-a6a2-43c2-a229-3380f9674e9c/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/2006714b-a6a2-43c2-a229-3380f9674e9c/so-damn-good"
+    },
+    {
+      "id": "2d3f98de-d9cd-4b46-b935-dc31a9935bda",
+      "title": "Terrified",
+      "artist": "Imthox",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/2d3f98de-d9cd-4b46-b935-dc31a9935bda/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/2d3f98de-d9cd-4b46-b935-dc31a9935bda/terrified"
+    },
+    {
+      "id": "2f492a30-9e57-49a2-befe-6cd47d87d00f",
+      "title": "Lost and Found (Deluxe Album)",
+      "artist": "The Pitcher",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/2f492a30-9e57-49a2-befe-6cd47d87d00f/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/2f492a30-9e57-49a2-befe-6cd47d87d00f"
     },
     {
       "id": "004793c8-fb5a-4788-b02d-e97905643a41",
@@ -72,14 +80,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/6af5ddec-1cd9-4858-a29f-2d55f675eb5b/250x250/335",
       "link": "https://hardstyle.com/en/tracks/6af5ddec-1cd9-4858-a29f-2d55f675eb5b"
-    },
-    {
-      "id": "4a4948f4-3101-408f-9588-6dc672f12057",
-      "title": "DIMENSIONS",
-      "artist": "Showtek",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/4a4948f4-3101-408f-9588-6dc672f12057/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/4a4948f4-3101-408f-9588-6dc672f12057"
     }
   ]
 }
