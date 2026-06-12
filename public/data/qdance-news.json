@@ -1,6 +1,34 @@
 {
-  "updatedAt": "2026-06-11T10:23:40.308Z",
+  "updatedAt": "2026-06-12T10:13:05.983Z",
   "videos": [
+    {
+      "id": "aVQsEUv7N8E",
+      "title": "You snooze, you lose! Defqon.1 is almost sold out, and the final Weekend Tickets are going fast.",
+      "published": "2026-06-11T17:00:37+00:00",
+      "link": "https://www.youtube.com/watch?v=aVQsEUv7N8E",
+      "thumbnail": "https://i.ytimg.com/vi/aVQsEUv7N8E/mqdefault.jpg"
+    },
+    {
+      "id": "FwueP8uZjfU",
+      "title": "The Defqon.1 Legends call upon you to honor the origin of our sound.",
+      "published": "2026-06-11T15:00:00+00:00",
+      "link": "https://www.youtube.com/watch?v=FwueP8uZjfU",
+      "thumbnail": "https://i.ytimg.com/vi/FwueP8uZjfU/mqdefault.jpg"
+    },
+    {
+      "id": "1kfKbRUWv3Q",
+      "title": "Outsiders at Defqon.1 2025!",
+      "published": "2026-06-11T13:33:24+00:00",
+      "link": "https://www.youtube.com/watch?v=1kfKbRUWv3Q",
+      "thumbnail": "https://i.ytimg.com/vi/1kfKbRUWv3Q/mqdefault.jpg"
+    },
+    {
+      "id": "Qa6CYe_bqts",
+      "title": "On Sunday, all bets are off. Go bigger, brighter and bolder than ever before.",
+      "published": "2026-06-11T11:18:53+00:00",
+      "link": "https://www.youtube.com/watch?v=Qa6CYe_bqts",
+      "thumbnail": "https://i.ytimg.com/vi/Qa6CYe_bqts/mqdefault.jpg"
+    },
     {
       "id": "e5fiI8y0GRc",
       "title": "Welcome to Q-Beach by BeatBox: the ultimate summer hotspot on the Holy Grounds.",
@@ -77,34 +105,6 @@
       "published": "2026-06-06T11:00:19+00:00",
       "link": "https://www.youtube.com/watch?v=_gXJWO4ObP8",
       "thumbnail": "https://i.ytimg.com/vi/_gXJWO4ObP8/mqdefault.jpg"
-    },
-    {
-      "id": "P-xE_aeERE0",
-      "title": "Relive Rooler at Defqon.1 2025.",
-      "published": "2026-06-06T09:14:35+00:00",
-      "link": "https://www.youtube.com/watch?v=P-xE_aeERE0",
-      "thumbnail": "https://i.ytimg.com/vi/P-xE_aeERE0/mqdefault.jpg"
-    },
-    {
-      "id": "2-zyPWQ8fr0",
-      "title": "Mish b2b Dual Damage at the RED.",
-      "published": "2026-06-05T17:10:00+00:00",
-      "link": "https://www.youtube.com/watch?v=2-zyPWQ8fr0",
-      "thumbnail": "https://i.ytimg.com/vi/2-zyPWQ8fr0/mqdefault.jpg"
-    },
-    {
-      "id": "XMCZgkFkSc0",
-      "title": "The RED Race may have come to an end, but it’s only the beginning for our 2026 winner: Testarossa.",
-      "published": "2026-06-05T15:36:07+00:00",
-      "link": "https://www.youtube.com/watch?v=XMCZgkFkSc0",
-      "thumbnail": "https://i.ytimg.com/vi/XMCZgkFkSc0/mqdefault.jpg"
-    },
-    {
-      "id": "nWAQ8Kx-sIc",
-      "title": "Livestream Trailer | Defqon.1 2026",
-      "published": "2026-06-05T14:21:28+00:00",
-      "link": "https://www.youtube.com/watch?v=nWAQ8Kx-sIc",
-      "thumbnail": "https://i.ytimg.com/vi/nWAQ8Kx-sIc/mqdefault.jpg"
     }
   ]
 }
