@@ -1,10 +1,24 @@
 {
-  "updatedAt": "2026-06-11T11:09:09.983Z",
+  "updatedAt": "2026-06-12T10:48:48.098Z",
   "articles": [
+    {
+      "title": "Level One unveils his new alias EXIT REAL1TY with a new release: ‘Sacrifice’",
+      "link": "https://hardstyle.com/en/news/level-one-unveils-his-new-alias-exit-real1ty-with-a-new-release-sacrifice",
+      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/2026/Juni/Decibel_2024_1544.jpg",
+      "date": "2026-06-12",
+      "category": "news,hardstyle"
+    },
+    {
+      "title": "Jay Reeve pres. Melodic Madness is back with their fourth edition",
+      "link": "https://hardstyle.com/en/news/jay-reeve-pres-melodic-madness-is-back-with-their-fourth-edition",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/Juni/20250927_181847_MelodicMadness_HR_ReflectionOfAmbition_.jpg",
+      "date": "2026-06-11",
+      "category": "news,hardstyle"
+    },
     {
       "title": "This week's hardstyle releases [week 24]",
       "link": "https://hardstyle.com/en/news/this-week-s-hardstyle-releases-week-24-2026",
-      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/2026/Juni/686187817_1517425836421044_4935504756898215324_n.jpg",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/Juni/686187817_1517425836421044_4935504756898215324_n.jpg",
       "date": null,
       "category": "hardstyle,music"
     },
@@ -25,14 +39,14 @@
     {
       "title": "Decibel outdoor announces WKND line-up",
       "link": "https://hardstyle.com/en/news/decibel-outdoor-announces-wknd-line-up",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/Mei/SPARK_20250817_120938_DECIBEL_DV_3891.jpg",
+      "image": null,
       "date": "2026-05-27",
       "category": "news,hardstyle"
     },
     {
       "title": "Frontliner Brings 'The Summer of Frontliner' to Vinyl",
       "link": "https://hardstyle.com/en/news/frontliner-brings-the-summer-of-frontliner-to-vinyl",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/Mei/RV26_0227_233702_AFAS_02072_LorenzoTNC.jpg",
+      "image": null,
       "date": "2026-05-26",
       "category": "news,hardstyle"
     },
@@ -55,20 +69,6 @@
       "link": "https://hardstyle.com/en/news/cyber-gunz-enters-new-era-with-debut-album-cyber-war",
       "image": null,
       "date": "2026-05-22",
-      "category": "news,hardstyle"
-    },
-    {
-      "title": "DJ The Prophet returns to the stage with exclusive show concept",
-      "link": "https://hardstyle.com/en/news/dj-the-prophet-returns-to-the-stage-with-exclusive-show-concept",
-      "image": null,
-      "date": "2026-05-21",
-      "category": "news,hardstyle"
-    },
-    {
-      "title": "Full lineup revealed for 15 Years of Gunz For Hire",
-      "link": "https://hardstyle.com/en/news/full-lineup-revealed-for-15-years-of-gunz-for-hire",
-      "image": null,
-      "date": "2026-05-19",
       "category": "news,hardstyle"
     }
   ]
