@@ -1,53 +1,61 @@
 {
-  "updatedAt": "2026-06-12T08:57:54.053Z",
+  "updatedAt": "2026-06-13T08:21:21.443Z",
   "releases": [
     {
-      "id": "678787b1-1637-4240-8541-792aa8634772",
-      "title": "Watching The Sunrise",
-      "artist": "Audiofreq",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/678787b1-1637-4240-8541-792aa8634772/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/678787b1-1637-4240-8541-792aa8634772/watching-the-sunrise"
-    },
-    {
-      "id": "5dfefd3b-3e5a-49c9-a6c7-8e320287a1f9",
-      "title": "Resurrection",
-      "artist": "Dark Phoenix",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/5dfefd3b-3e5a-49c9-a6c7-8e320287a1f9/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/5dfefd3b-3e5a-49c9-a6c7-8e320287a1f9/resurrection"
-    },
-    {
-      "id": "628a9112-55d0-45e4-8426-4548db9eea11",
-      "title": "Black Sails",
-      "artist": "Manifest Destiny",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/628a9112-55d0-45e4-8426-4548db9eea11/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/628a9112-55d0-45e4-8426-4548db9eea11/black-sails"
-    },
-    {
-      "id": "dd474734-9082-453d-b8dc-dc6af4ddb9a5",
-      "title": "Lords Of The Underground",
-      "artist": "Jur Terreur",
+      "id": "da34236c-9fc8-4563-bc8d-bb5287e6da37",
+      "title": "Corruption",
+      "artist": "AVLM",
       "mix": "",
-      "image": "https://hardstyle.com/track_image/dd474734-9082-453d-b8dc-dc6af4ddb9a5/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/dd474734-9082-453d-b8dc-dc6af4ddb9a5/lords-of-the-underground"
+      "image": "https://hardstyle.com/track_image/da34236c-9fc8-4563-bc8d-bb5287e6da37/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/da34236c-9fc8-4563-bc8d-bb5287e6da37/corruption"
     },
     {
-      "id": "b0a52e9f-212f-4e06-8e88-546afd089cda",
-      "title": "BLUE SKIES",
-      "artist": "Revelation",
+      "id": "61410367-8dd2-404b-ae45-eea4e2443428",
+      "title": "Outbreak",
+      "artist": "AVLM",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/61410367-8dd2-404b-ae45-eea4e2443428/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/61410367-8dd2-404b-ae45-eea4e2443428/outbreak"
+    },
+    {
+      "id": "d10c2834-93f5-4c6c-82bd-4c802e396c45",
+      "title": "Soul Survivor",
+      "artist": "V-Bounce",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/b0a52e9f-212f-4e06-8e88-546afd089cda/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/b0a52e9f-212f-4e06-8e88-546afd089cda/blue-skies"
+      "image": "https://hardstyle.com/track_image/d10c2834-93f5-4c6c-82bd-4c802e396c45/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/d10c2834-93f5-4c6c-82bd-4c802e396c45/soul-survivor"
     },
     {
-      "id": "5be5f909-0880-4dd7-8c9e-6210cfbde9c5",
-      "title": "TRANSC3ND3CE",
-      "artist": "Wavebreaker",
-      "mix": "Pro Mix",
-      "image": "https://hardstyle.com/track_image/5be5f909-0880-4dd7-8c9e-6210cfbde9c5/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/5be5f909-0880-4dd7-8c9e-6210cfbde9c5/transc3nd3ce"
+      "id": "683d3a7c-721f-4d1d-8832-43337719ebd4",
+      "title": "Soul Survivor",
+      "artist": "V-Bounce",
+      "mix": "Radio Edit",
+      "image": "https://hardstyle.com/track_image/683d3a7c-721f-4d1d-8832-43337719ebd4/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/683d3a7c-721f-4d1d-8832-43337719ebd4/soul-survivor"
+    },
+    {
+      "id": "f584c870-9823-4e89-b738-70b4f285a9b4",
+      "title": "Hold My Hand (Raindrops)",
+      "artist": "V-Bounce",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/f584c870-9823-4e89-b738-70b4f285a9b4/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/f584c870-9823-4e89-b738-70b4f285a9b4/hold-my-hand-raindrops"
+    },
+    {
+      "id": "b0541073-0ab7-43ef-a5a1-a0597eca4d03",
+      "title": "Hold My Hand (Raindrops)",
+      "artist": "V-Bounce",
+      "mix": "Radio Edit",
+      "image": "https://hardstyle.com/track_image/b0541073-0ab7-43ef-a5a1-a0597eca4d03/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/b0541073-0ab7-43ef-a5a1-a0597eca4d03/hold-my-hand-raindrops"
+    },
+    {
+      "id": "a2bc877c-c754-44db-82b5-2d9276eb63ad",
+      "title": "Midnight Sun",
+      "artist": "Klub Kollective",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/a2bc877c-c754-44db-82b5-2d9276eb63ad/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/a2bc877c-c754-44db-82b5-2d9276eb63ad"
     },
     {
       "id": "2f492a30-9e57-49a2-befe-6cd47d87d00f",
@@ -72,14 +80,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/9c6b28b4-2790-463d-b598-20efb2d44f02/250x250/335",
       "link": "https://hardstyle.com/en/tracks/9c6b28b4-2790-463d-b598-20efb2d44f02"
-    },
-    {
-      "id": "6af5ddec-1cd9-4858-a29f-2d55f675eb5b",
-      "title": "Polish Punisher II",
-      "artist": "Polish Punisher",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/6af5ddec-1cd9-4858-a29f-2d55f675eb5b/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/6af5ddec-1cd9-4858-a29f-2d55f675eb5b"
     }
   ]
 }
