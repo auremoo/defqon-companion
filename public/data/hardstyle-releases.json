@@ -1,6 +1,14 @@
 {
-  "updatedAt": "2026-06-13T08:21:21.443Z",
+  "updatedAt": "2026-06-14T08:41:26.126Z",
   "releases": [
+    {
+      "id": "2609a3eb-c901-4074-aa1a-75d231fe7190",
+      "title": "Dystopian",
+      "artist": "Luke PN",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/2609a3eb-c901-4074-aa1a-75d231fe7190/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/2609a3eb-c901-4074-aa1a-75d231fe7190/dystopian"
+    },
     {
       "id": "da34236c-9fc8-4563-bc8d-bb5287e6da37",
       "title": "Corruption",
@@ -40,14 +48,6 @@
       "mix": "Extended Mix",
       "image": "https://hardstyle.com/track_image/f584c870-9823-4e89-b738-70b4f285a9b4/250x250/335",
       "link": "https://hardstyle.com/en/tracks/f584c870-9823-4e89-b738-70b4f285a9b4/hold-my-hand-raindrops"
-    },
-    {
-      "id": "b0541073-0ab7-43ef-a5a1-a0597eca4d03",
-      "title": "Hold My Hand (Raindrops)",
-      "artist": "V-Bounce",
-      "mix": "Radio Edit",
-      "image": "https://hardstyle.com/track_image/b0541073-0ab7-43ef-a5a1-a0597eca4d03/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/b0541073-0ab7-43ef-a5a1-a0597eca4d03/hold-my-hand-raindrops"
     },
     {
       "id": "a2bc877c-c754-44db-82b5-2d9276eb63ad",
