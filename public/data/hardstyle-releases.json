@@ -1,6 +1,46 @@
 {
-  "updatedAt": "2026-06-14T08:41:26.126Z",
+  "updatedAt": "2026-06-15T10:55:27.323Z",
   "releases": [
+    {
+      "id": "ea17fac5-82d7-4ef6-88dc-fea74fa361aa",
+      "title": "Dirty Streets",
+      "artist": "Roman Naboka",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/ea17fac5-82d7-4ef6-88dc-fea74fa361aa/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/ea17fac5-82d7-4ef6-88dc-fea74fa361aa/dirty-streets"
+    },
+    {
+      "id": "ba048752-ac44-4d33-903c-c29657b0ed37",
+      "title": "War Chants",
+      "artist": "Luke PN",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/ba048752-ac44-4d33-903c-c29657b0ed37/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/ba048752-ac44-4d33-903c-c29657b0ed37/war-chants"
+    },
+    {
+      "id": "edb9240e-da52-4c39-8be0-51aa4f61b5f5",
+      "title": "Rise Of The Titans",
+      "artist": "Clockartz",
+      "mix": "Endshow Version",
+      "image": "https://hardstyle.com/track_image/edb9240e-da52-4c39-8be0-51aa4f61b5f5/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/edb9240e-da52-4c39-8be0-51aa4f61b5f5/rise-of-the-titans"
+    },
+    {
+      "id": "38821d1c-a388-4a41-91b0-cebb9ddf13f3",
+      "title": "Rise Of The Titans",
+      "artist": "Clockartz",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/38821d1c-a388-4a41-91b0-cebb9ddf13f3/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/38821d1c-a388-4a41-91b0-cebb9ddf13f3/rise-of-the-titans"
+    },
+    {
+      "id": "74d9c031-0046-4677-9a7e-ee5058401ebd",
+      "title": "MeZale",
+      "artist": "DON LUCIANO",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/74d9c031-0046-4677-9a7e-ee5058401ebd/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/74d9c031-0046-4677-9a7e-ee5058401ebd/mezale"
+    },
     {
       "id": "2609a3eb-c901-4074-aa1a-75d231fe7190",
       "title": "Dystopian",
@@ -8,46 +48,6 @@
       "mix": "Original Mix",
       "image": "https://hardstyle.com/track_image/2609a3eb-c901-4074-aa1a-75d231fe7190/250x250/335",
       "link": "https://hardstyle.com/en/tracks/2609a3eb-c901-4074-aa1a-75d231fe7190/dystopian"
-    },
-    {
-      "id": "da34236c-9fc8-4563-bc8d-bb5287e6da37",
-      "title": "Corruption",
-      "artist": "AVLM",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/da34236c-9fc8-4563-bc8d-bb5287e6da37/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/da34236c-9fc8-4563-bc8d-bb5287e6da37/corruption"
-    },
-    {
-      "id": "61410367-8dd2-404b-ae45-eea4e2443428",
-      "title": "Outbreak",
-      "artist": "AVLM",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/61410367-8dd2-404b-ae45-eea4e2443428/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/61410367-8dd2-404b-ae45-eea4e2443428/outbreak"
-    },
-    {
-      "id": "d10c2834-93f5-4c6c-82bd-4c802e396c45",
-      "title": "Soul Survivor",
-      "artist": "V-Bounce",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/d10c2834-93f5-4c6c-82bd-4c802e396c45/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/d10c2834-93f5-4c6c-82bd-4c802e396c45/soul-survivor"
-    },
-    {
-      "id": "683d3a7c-721f-4d1d-8832-43337719ebd4",
-      "title": "Soul Survivor",
-      "artist": "V-Bounce",
-      "mix": "Radio Edit",
-      "image": "https://hardstyle.com/track_image/683d3a7c-721f-4d1d-8832-43337719ebd4/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/683d3a7c-721f-4d1d-8832-43337719ebd4/soul-survivor"
-    },
-    {
-      "id": "f584c870-9823-4e89-b738-70b4f285a9b4",
-      "title": "Hold My Hand (Raindrops)",
-      "artist": "V-Bounce",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/f584c870-9823-4e89-b738-70b4f285a9b4/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/f584c870-9823-4e89-b738-70b4f285a9b4/hold-my-hand-raindrops"
     },
     {
       "id": "a2bc877c-c754-44db-82b5-2d9276eb63ad",

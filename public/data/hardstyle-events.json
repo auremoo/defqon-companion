@@ -1,15 +1,6 @@
 {
-  "updatedAt": "2026-06-14T08:41:26.892Z",
+  "updatedAt": "2026-06-15T10:55:28.005Z",
   "events": [
-    {
-      "title": "Just Dance Outdoor 2026 - 10th Edition",
-      "link": "https://hardstyle.com/en/events/ce439243-38a4-4706-8a28-18ded0be100b/just-dance-outdoor-2026-10th-edition",
-      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/ce439243-38a4-4706-8a28-18ded0be100b/images/logo_img.png",
-      "location": "Etten-Leur",
-      "time": "14:00 - 00:00",
-      "date": "2026-06-13",
-      "month": "June"
-    },
     {
       "title": "Dual Damage Built 2 Break - Bootshaus",
       "link": "https://hardstyle.com/en/events/c0424433-652c-4057-9e6a-531b9c812548/dual-damage-built-2-break-bootshaus",
@@ -101,20 +92,20 @@
       "month": "July"
     },
     {
-      "title": "Parookaville",
-      "link": "https://hardstyle.com/en/events/4ebaaa9c-cd25-45d9-a148-998f70937f8d/parookaville",
-      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/4ebaaa9c-cd25-45d9-a148-998f70937f8d/images/logo_img.jpg",
-      "location": "Weeze",
-      "time": "14:00 - 01:00",
-      "date": "2026-07-17",
-      "month": "July"
-    },
-    {
       "title": "Dominator Fatal Fortune",
       "link": "https://hardstyle.com/en/events/0ade02f1-908b-400f-9e83-7de9450e33bb/dominator-fatal-fortune",
       "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/0ade02f1-908b-400f-9e83-7de9450e33bb/images/logo_img.jpg",
       "location": "Eersel",
       "time": "13:00 - 23:00",
+      "date": "2026-07-17",
+      "month": "July"
+    },
+    {
+      "title": "Parookaville",
+      "link": "https://hardstyle.com/en/events/4ebaaa9c-cd25-45d9-a148-998f70937f8d/parookaville",
+      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/4ebaaa9c-cd25-45d9-a148-998f70937f8d/images/logo_img.jpg",
+      "location": "Weeze",
+      "time": "14:00 - 01:00",
       "date": "2026-07-17",
       "month": "July"
     },
