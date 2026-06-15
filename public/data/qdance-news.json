@@ -1,6 +1,27 @@
 {
-  "updatedAt": "2026-06-14T09:33:46.170Z",
+  "updatedAt": "2026-06-15T12:13:22.745Z",
   "videos": [
+    {
+      "id": "se3jhGKxd2c",
+      "title": "Noiseflow at Defqon.1 2025!",
+      "published": "2026-06-15T11:34:48+00:00",
+      "link": "https://www.youtube.com/watch?v=se3jhGKxd2c",
+      "thumbnail": "https://i.ytimg.com/vi/se3jhGKxd2c/mqdefault.jpg"
+    },
+    {
+      "id": "PXAUvaZWg8s",
+      "title": "A new sidequest awaits.",
+      "published": "2026-06-15T10:06:42+00:00",
+      "link": "https://www.youtube.com/watch?v=PXAUvaZWg8s",
+      "thumbnail": "https://i.ytimg.com/vi/PXAUvaZWg8s/mqdefault.jpg"
+    },
+    {
+      "id": "ahl9zULfqiE",
+      "title": "Sound Rush at Defqon.1 2025!",
+      "published": "2026-06-14T10:00:03+00:00",
+      "link": "https://www.youtube.com/watch?v=ahl9zULfqiE",
+      "thumbnail": "https://i.ytimg.com/vi/ahl9zULfqiE/mqdefault.jpg"
+    },
     {
       "id": "S4jCYTCyysc",
       "title": "In two weeks, the biggest festival workout in the world returns to the mighty RED.",
@@ -84,27 +105,6 @@
       "published": "2026-06-09T11:00:11+00:00",
       "link": "https://www.youtube.com/watch?v=fHZzQWzzU_M",
       "thumbnail": "https://i.ytimg.com/vi/fHZzQWzzU_M/mqdefault.jpg"
-    },
-    {
-      "id": "KBFGKJePpPE",
-      "title": "Charly Lownoise & Mental Theo at Defqon.1 2025!",
-      "published": "2026-06-08T11:00:02+00:00",
-      "link": "https://www.youtube.com/watch?v=KBFGKJePpPE",
-      "thumbnail": "https://i.ytimg.com/vi/KBFGKJePpPE/mqdefault.jpg"
-    },
-    {
-      "id": "jYj43dueR5A",
-      "title": "Saturday is the originator.",
-      "published": "2026-06-07T13:00:02+00:00",
-      "link": "https://www.youtube.com/watch?v=jYj43dueR5A",
-      "thumbnail": "https://i.ytimg.com/vi/jYj43dueR5A/mqdefault.jpg"
-    },
-    {
-      "id": "V8dnl09AMgQ",
-      "title": "Brennan Heart at Defqon.1 2025!",
-      "published": "2026-06-07T11:00:01+00:00",
-      "link": "https://www.youtube.com/watch?v=V8dnl09AMgQ",
-      "thumbnail": "https://i.ytimg.com/vi/V8dnl09AMgQ/mqdefault.jpg"
     }
   ]
 }
