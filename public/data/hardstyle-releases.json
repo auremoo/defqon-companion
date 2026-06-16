@@ -1,53 +1,61 @@
 {
-  "updatedAt": "2026-06-15T10:55:27.323Z",
+  "updatedAt": "2026-06-16T10:08:32.198Z",
   "releases": [
     {
-      "id": "ea17fac5-82d7-4ef6-88dc-fea74fa361aa",
-      "title": "Dirty Streets",
-      "artist": "Roman Naboka",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/ea17fac5-82d7-4ef6-88dc-fea74fa361aa/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/ea17fac5-82d7-4ef6-88dc-fea74fa361aa/dirty-streets"
-    },
-    {
-      "id": "ba048752-ac44-4d33-903c-c29657b0ed37",
-      "title": "War Chants",
-      "artist": "Luke PN",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/ba048752-ac44-4d33-903c-c29657b0ed37/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/ba048752-ac44-4d33-903c-c29657b0ed37/war-chants"
-    },
-    {
-      "id": "edb9240e-da52-4c39-8be0-51aa4f61b5f5",
-      "title": "Rise Of The Titans",
-      "artist": "Clockartz",
-      "mix": "Endshow Version",
-      "image": "https://hardstyle.com/track_image/edb9240e-da52-4c39-8be0-51aa4f61b5f5/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/edb9240e-da52-4c39-8be0-51aa4f61b5f5/rise-of-the-titans"
-    },
-    {
-      "id": "38821d1c-a388-4a41-91b0-cebb9ddf13f3",
-      "title": "Rise Of The Titans",
-      "artist": "Clockartz",
+      "id": "a23950a2-434c-4da8-9a6b-a815a1694204",
+      "title": "Lift Me Up",
+      "artist": "Aria",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/38821d1c-a388-4a41-91b0-cebb9ddf13f3/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/38821d1c-a388-4a41-91b0-cebb9ddf13f3/rise-of-the-titans"
+      "image": "https://hardstyle.com/track_image/a23950a2-434c-4da8-9a6b-a815a1694204/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/a23950a2-434c-4da8-9a6b-a815a1694204/lift-me-up"
     },
     {
-      "id": "74d9c031-0046-4677-9a7e-ee5058401ebd",
-      "title": "MeZale",
-      "artist": "DON LUCIANO",
+      "id": "906cde3e-6b22-4ccb-97e5-96f8b4b21225",
+      "title": "Fade Away",
+      "artist": "Vinylgroover",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/906cde3e-6b22-4ccb-97e5-96f8b4b21225/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/906cde3e-6b22-4ccb-97e5-96f8b4b21225/fade-away"
+    },
+    {
+      "id": "9294f00b-59fc-4522-8773-69256aed70c3",
+      "title": "Bassface",
+      "artist": "Vinylgroover",
+      "mix": "Extended Album VIP Mix",
+      "image": "https://hardstyle.com/track_image/9294f00b-59fc-4522-8773-69256aed70c3/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/9294f00b-59fc-4522-8773-69256aed70c3/bassface"
+    },
+    {
+      "id": "3ad96049-16f5-4557-89e0-1a4849c3a13e",
+      "title": "Wherever I Go",
+      "artist": "Vinylgroover",
+      "mix": "Extended Hybrid VIP Mix",
+      "image": "https://hardstyle.com/track_image/3ad96049-16f5-4557-89e0-1a4849c3a13e/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/3ad96049-16f5-4557-89e0-1a4849c3a13e/wherever-i-go"
+    },
+    {
+      "id": "e6d550e2-d36e-4e97-9c2a-a71ce29fdd74",
+      "title": "Love Baby",
+      "artist": "Vinylgroover",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/e6d550e2-d36e-4e97-9c2a-a71ce29fdd74/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/e6d550e2-d36e-4e97-9c2a-a71ce29fdd74/love-baby"
+    },
+    {
+      "id": "4ebfe8be-1986-489f-be06-69cc9cf0dd03",
+      "title": "Rocket",
+      "artist": "Vinylgroover",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/4ebfe8be-1986-489f-be06-69cc9cf0dd03/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/4ebfe8be-1986-489f-be06-69cc9cf0dd03/rocket"
+    },
+    {
+      "id": "a78c87a0-47de-4bfa-b901-7b5b44331140",
+      "title": "The World Of Vinylgroover Part 3",
+      "artist": "Vinylgroover",
       "mix": "",
-      "image": "https://hardstyle.com/track_image/74d9c031-0046-4677-9a7e-ee5058401ebd/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/74d9c031-0046-4677-9a7e-ee5058401ebd/mezale"
-    },
-    {
-      "id": "2609a3eb-c901-4074-aa1a-75d231fe7190",
-      "title": "Dystopian",
-      "artist": "Luke PN",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/2609a3eb-c901-4074-aa1a-75d231fe7190/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/2609a3eb-c901-4074-aa1a-75d231fe7190/dystopian"
+      "image": "https://hardstyle.com/track_image/a78c87a0-47de-4bfa-b901-7b5b44331140/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/a78c87a0-47de-4bfa-b901-7b5b44331140"
     },
     {
       "id": "a2bc877c-c754-44db-82b5-2d9276eb63ad",
@@ -72,14 +80,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/004793c8-fb5a-4788-b02d-e97905643a41/250x250/335",
       "link": "https://hardstyle.com/en/tracks/004793c8-fb5a-4788-b02d-e97905643a41"
-    },
-    {
-      "id": "9c6b28b4-2790-463d-b598-20efb2d44f02",
-      "title": "Intents Festival 2026 Rise Of Titans",
-      "artist": "Intents Festival",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/9c6b28b4-2790-463d-b598-20efb2d44f02/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/9c6b28b4-2790-463d-b598-20efb2d44f02"
     }
   ]
 }
