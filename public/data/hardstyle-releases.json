@@ -1,53 +1,53 @@
 {
-  "updatedAt": "2026-06-17T09:51:24.247Z",
+  "updatedAt": "2026-06-18T09:14:34.555Z",
   "releases": [
     {
-      "id": "8973be11-c5e3-4fc4-8462-3032d7503248",
-      "title": "Words",
-      "artist": "Sylence",
+      "id": "aff1a2de-b4da-4f68-ad57-e05f3536c108",
+      "title": "EAT SLEEP NOISE REPEAT",
+      "artist": "TOZA",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/8973be11-c5e3-4fc4-8462-3032d7503248/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/8973be11-c5e3-4fc4-8462-3032d7503248/words"
+      "image": "https://hardstyle.com/track_image/aff1a2de-b4da-4f68-ad57-e05f3536c108/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/aff1a2de-b4da-4f68-ad57-e05f3536c108/eat-sleep-noise-repeat"
     },
     {
-      "id": "9fe1ea55-d19e-4c4c-a663-ea7d1347842a",
-      "title": "To The Ground",
-      "artist": "JNW",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/9fe1ea55-d19e-4c4c-a663-ea7d1347842a/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/9fe1ea55-d19e-4c4c-a663-ea7d1347842a/to-the-ground"
-    },
-    {
-      "id": "0e9e1bdf-5020-4a34-b416-ce9b01121faf",
-      "title": "DARKNESS",
-      "artist": "Dark Entities",
+      "id": "15467179-b7a5-43d5-84f3-d1988d1c15ee",
+      "title": "Don't Wake Me Up",
+      "artist": "Resilience",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/0e9e1bdf-5020-4a34-b416-ce9b01121faf/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/0e9e1bdf-5020-4a34-b416-ce9b01121faf/darkness"
+      "image": "https://hardstyle.com/track_image/15467179-b7a5-43d5-84f3-d1988d1c15ee/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/15467179-b7a5-43d5-84f3-d1988d1c15ee/don-t-wake-me-up"
     },
     {
-      "id": "31c3db94-1613-4b44-9e82-0a56c4c17d50",
-      "title": "Hardcore Gebied",
-      "artist": "Rosbeek",
+      "id": "5b7c849a-b4a1-4db9-8f81-2f62fe017eeb",
+      "title": "Down The Rabbit Hole",
+      "artist": "Aerobey",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/31c3db94-1613-4b44-9e82-0a56c4c17d50/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/31c3db94-1613-4b44-9e82-0a56c4c17d50/hardcore-gebied"
+      "image": "https://hardstyle.com/track_image/5b7c849a-b4a1-4db9-8f81-2f62fe017eeb/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/5b7c849a-b4a1-4db9-8f81-2f62fe017eeb/down-the-rabbit-hole"
     },
     {
-      "id": "14602083-d8d5-4b7e-a6ed-7c5638f7c8c9",
-      "title": "Planéta ZEM",
-      "artist": "Luke PN",
+      "id": "f72f3361-cca7-4f89-9542-7f147edf69b3",
+      "title": "Boom",
+      "artist": "The Freaky Bastard",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/14602083-d8d5-4b7e-a6ed-7c5638f7c8c9/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/14602083-d8d5-4b7e-a6ed-7c5638f7c8c9/planeta-zem"
+      "image": "https://hardstyle.com/track_image/f72f3361-cca7-4f89-9542-7f147edf69b3/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/f72f3361-cca7-4f89-9542-7f147edf69b3/boom"
     },
     {
-      "id": "976c4945-49a1-496e-92b2-85f05fac8200",
-      "title": "Who I Am",
-      "artist": "Digital Punk",
+      "id": "4a10d11f-06c1-4cc7-9d35-aef5fe2c59bd",
+      "title": "Overdose Stomp 2026",
+      "artist": "Chaos Clan",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/4a10d11f-06c1-4cc7-9d35-aef5fe2c59bd/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/4a10d11f-06c1-4cc7-9d35-aef5fe2c59bd/overdose-stomp-2026"
+    },
+    {
+      "id": "e0fc2b12-a358-4b27-8312-9b7db1c0ae2c",
+      "title": "Execute",
+      "artist": "Refold",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/976c4945-49a1-496e-92b2-85f05fac8200/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/976c4945-49a1-496e-92b2-85f05fac8200/who-i-am"
+      "image": "https://hardstyle.com/track_image/e0fc2b12-a358-4b27-8312-9b7db1c0ae2c/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/e0fc2b12-a358-4b27-8312-9b7db1c0ae2c/execute"
     },
     {
       "id": "a78c87a0-47de-4bfa-b901-7b5b44331140",
