@@ -1,6 +1,13 @@
 {
-  "updatedAt": "2026-06-17T10:55:46.178Z",
+  "updatedAt": "2026-06-18T10:20:20.905Z",
   "videos": [
+    {
+      "id": "Lp59Co7Q3w0",
+      "title": "B-Front at Defqon.1 2025!",
+      "published": "2026-06-17T15:00:33+00:00",
+      "link": "https://www.youtube.com/watch?v=Lp59Co7Q3w0",
+      "thumbnail": "https://i.ytimg.com/vi/Lp59Co7Q3w0/mqdefault.jpg"
+    },
     {
       "id": "NpUY8vomHSw",
       "title": "After three days of raving, there's no better way to recharge than at the Open Air Bed Concert.",
@@ -98,13 +105,6 @@
       "published": "2026-06-11T13:33:24+00:00",
       "link": "https://www.youtube.com/watch?v=1kfKbRUWv3Q",
       "thumbnail": "https://i.ytimg.com/vi/1kfKbRUWv3Q/mqdefault.jpg"
-    },
-    {
-      "id": "Qa6CYe_bqts",
-      "title": "On Sunday, all bets are off. Go bigger, brighter and bolder than ever before.",
-      "published": "2026-06-11T11:18:53+00:00",
-      "link": "https://www.youtube.com/watch?v=Qa6CYe_bqts",
-      "thumbnail": "https://i.ytimg.com/vi/Qa6CYe_bqts/mqdefault.jpg"
     }
   ]
 }
