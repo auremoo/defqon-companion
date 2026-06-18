@@ -1,10 +1,17 @@
 {
-  "updatedAt": "2026-06-17T11:20:58.294Z",
+  "updatedAt": "2026-06-18T10:53:35.550Z",
   "articles": [
+    {
+      "title": "Adaro and Unresolved release ‘Original Gangsters (Raw And Mean)’, their first collab ever",
+      "link": "https://hardstyle.com/en/news/adaro-and-unresolved-release-original-gangsters-raw-and-mean-their-first-collab-ever",
+      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/2026/Juni/250626_175856_DQ1_KateDuijts_09945.jpg",
+      "date": "2026-06-18",
+      "category": "news,hardstyle"
+    },
     {
       "title": "This week's hardstyle releases [week 25]",
       "link": "https://hardstyle.com/en/news/this-week-s-hardstyle-releases-week-25",
-      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/2026/Juni/640417986_18569820262021724_1844166600619013188_n.jpg",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/Juni/640417986_18569820262021724_1844166600619013188_n.jpg",
       "date": null,
       "category": "hardstyle,music"
     },
@@ -32,7 +39,7 @@
     {
       "title": "Supremacy's 2026 lineup turns heads",
       "link": "https://hardstyle.com/en/news/supremacy-s-2026-lineup-turns-heads",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/Mei/623364779_1494561085362412_3687498371297186586_n.jpg",
+      "image": null,
       "date": "2026-06-03",
       "category": "news,hardstyle"
     },
@@ -63,13 +70,6 @@
       "image": null,
       "date": null,
       "category": "hardstyle,music"
-    },
-    {
-      "title": "Sub Zero Project will bring their exclusive ‘Our World’ concept to Germany next Saturday",
-      "link": "https://hardstyle.com/en/news/sub-zero-project-will-bring-their-exclusive-our-world-concept-to-germany-next-saturday",
-      "image": null,
-      "date": "2026-05-22",
-      "category": "news,hardstyle"
     }
   ]
 }
