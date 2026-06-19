@@ -47,11 +47,15 @@ export const defaultChecklist: ChecklistItem[] = [
   { id: 'cash',        category: 'essentials', labelKey: 'cash',        label: 'Liquide / carte bancaire', checked: false },
   { id: 'earplugs',    category: 'essentials', labelKey: 'earplugs',    label: 'Bouchons d\'oreilles', checked: false },
   { id: 'bumbag',      category: 'essentials', labelKey: 'bumbag',      label: 'Banane', checked: false },
+  { id: 'backpack',    category: 'essentials', labelKey: 'backpack',    label: 'Sac à dos', checked: false },
+  { id: 'powerstrip',  category: 'essentials', labelKey: 'powerstrip',  label: 'Multiprise / adaptateur', checked: false },
 
   // Camping
   { id: 'tent',           category: 'camping', labelKey: 'tent',          label: 'Tente', checked: false },
   { id: 'sleeping-bag',   category: 'camping', labelKey: 'sleepingBag',   label: 'Sac de couchage', checked: false },
   { id: 'mattress',       category: 'camping', labelKey: 'mattress',      label: 'Matelas gonflable', checked: false },
+  { id: 'mattress-pump',  category: 'camping', labelKey: 'mattressPump',  label: 'Pompe pour matelas gonflable', checked: false },
+  { id: 'pillow',         category: 'camping', labelKey: 'pillow',        label: 'Oreiller', checked: false },
   { id: 'flashlight',     category: 'camping', labelKey: 'flashlight',    label: 'Lampe de poche / frontale', checked: false },
   { id: 'towel',          category: 'camping', labelKey: 'towel',         label: 'Serviette', checked: false },
   { id: 'meals',          category: 'camping', labelKey: 'meals',         label: 'Repas', checked: false },
@@ -59,13 +63,15 @@ export const defaultChecklist: ChecklistItem[] = [
   { id: 'padlock',        category: 'camping', labelKey: 'padlock',       label: 'Cadenas', checked: false },
   { id: 'cutlery',        category: 'camping', labelKey: 'cutlery',       label: 'Couverts', checked: false },
   { id: 'ground-mat',     category: 'camping', labelKey: 'groundMat',     label: 'Tapis pour s\'asseoir', checked: false },
+  { id: 'groundsheet',    category: 'camping', labelKey: 'groundsheet',   label: 'Tapis de sol pour la tente', checked: false },
+  { id: 'garbage-bags',   category: 'camping', labelKey: 'garbageBags',   label: 'Sacs poubelle', checked: false },
   { id: 'defqon-goodies', category: 'camping', labelKey: 'defqonGoodies', label: 'Goodies Defqon de l\'an passé', checked: false },
 
   // Vêtements
   { id: 'tshirts',    category: 'vetements', labelKey: 'tshirts',    label: '5 t-shirts', checked: false },
   { id: 'underwear',  category: 'vetements', labelKey: 'underwear',  label: '5 caleçons et chaussettes', checked: false },
   { id: 'sweaters',   category: 'vetements', labelKey: 'sweaters',   label: '2 pulls', checked: false },
-  { id: 'shorts',     category: 'vetements', labelKey: 'shorts',     label: 'Shorts', checked: false },
+  { id: 'shorts',     category: 'vetements', labelKey: 'shorts',     label: '2 shorts', checked: false },
   { id: 'jogger',     category: 'vetements', labelKey: 'jogger',     label: 'Jogging ou pantalon', checked: false },
   { id: 'cap',        category: 'vetements', labelKey: 'cap',        label: 'Casquette', checked: false },
   { id: 'gloves',     category: 'vetements', labelKey: 'gloves',     label: 'Gants', checked: false },
@@ -74,6 +80,8 @@ export const defaultChecklist: ChecklistItem[] = [
 
   // Hygiène
   { id: 'soap',          category: 'hygiene', labelKey: 'soap',          label: 'Savon', checked: false },
+  { id: 'deodorant',     category: 'hygiene', labelKey: 'deodorant',     label: 'Désodorant', checked: false },
+  { id: 'wet-wipes',     category: 'hygiene', labelKey: 'wetWipes',      label: 'Lingettes / gel hydroalcoolique', checked: false },
   { id: 'toilet-paper',  category: 'hygiene', labelKey: 'toiletPaper',   label: 'Papier toilette', checked: false },
   { id: 'toothbrush',    category: 'hygiene', labelKey: 'toothbrush',    label: 'Brosse à dent et dentifrice', checked: false },
   { id: 'moisturizer',   category: 'hygiene', labelKey: 'moisturizer',   label: 'Crème hydratante', checked: false },
@@ -81,7 +89,7 @@ export const defaultChecklist: ChecklistItem[] = [
   // Confort & Santé
   { id: 'sunscreen',   category: 'comfort', labelKey: 'sunscreen',  label: 'Crème solaire', checked: false },
   { id: 'rain-gear',   category: 'comfort', labelKey: 'rainGear',   label: 'Poncho / veste de pluie', checked: false },
-  { id: 'glasses',     category: 'comfort', labelKey: 'glasses',    label: 'Lunettes', checked: false },
+  { id: 'glasses',     category: 'comfort', labelKey: 'glasses',    label: 'Lunettes de soleil', checked: false },
   { id: 'water-bottle',category: 'comfort', labelKey: 'waterBottle',label: 'Bouteille d\'eau réutilisable', checked: false },
   { id: 'first-aid',   category: 'comfort', labelKey: 'firstAid',   label: 'Trousse de premiers secours (doliprane, ibuprofène, antihistaminique, désensibilisation)', checked: false },
   { id: 'caffeine',    category: 'comfort', labelKey: 'caffeine',   label: 'Sachets de caféine', checked: false },
