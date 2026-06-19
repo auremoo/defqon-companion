@@ -1,7 +1,15 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
+import { doc, getDoc, setDoc } from 'firebase/firestore'
 import { defaultChecklist, type ChecklistItem } from '../data/festival'
 import PageShell from '../components/PageShell'
+import { useAuth } from '../contexts/AuthContext'
+import { db } from '../lib/firebase'
+
+interface FirestoreChecklist {
+  checkedIds: string[]
+  customItems: ChecklistItem[]
+}
 
 function getStoredChecklist(): ChecklistItem[] {
   try {
@@ -11,16 +19,59 @@ function getStoredChecklist(): ChecklistItem[] {
   return defaultChecklist.map((item) => ({ ...item }))
 }
 
+function applyFirestoreState(checkedIds: string[], customItems: ChecklistItem[]): ChecklistItem[] {
+  const base = defaultChecklist.map((item) => ({
+    ...item,
+    checked: checkedIds.includes(item.id),
+  }))
+  const customs = customItems.map((item) => ({
+    ...item,
+    checked: checkedIds.includes(item.id),
+  }))
+  return [...base, ...customs]
+}
+
 export default function Checklist() {
   const { t } = useTranslation()
+  const { user } = useAuth()
   const [items, setItems] = useState<ChecklistItem[]>(getStoredChecklist)
   const [newItem, setNewItem] = useState('')
+  const syncTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   useEffect(() => { document.title = 'Festival Checklist — Defqon Companion' }, [])
 
+  // Persist to localStorage on every change
   useEffect(() => {
     localStorage.setItem('defqon-checklist', JSON.stringify(items))
   }, [items])
+
+  // Sync FROM Firestore when user logs in
+  useEffect(() => {
+    if (!db || !user) return
+    getDoc(doc(db, 'user_checklist', user.uid))
+      .then((snap) => {
+        if (!snap.exists()) return
+        const data = snap.data() as FirestoreChecklist
+        const merged = applyFirestoreState(data.checkedIds ?? [], data.customItems ?? [])
+        setItems(merged)
+      })
+      .catch(() => { /* keep localStorage state */ })
+  }, [user])
+
+  // Debounced sync TO Firestore on every items change
+  useEffect(() => {
+    if (!db || !user) return
+    if (syncTimer.current) clearTimeout(syncTimer.current)
+    syncTimer.current = setTimeout(() => {
+      const checkedIds = items.filter((i) => i.checked).map((i) => i.id)
+      const customItems = items.filter((i) => i.custom)
+      setDoc(doc(db!, 'user_checklist', user.uid), { checkedIds, customItems })
+        .catch(() => { /* silent — localStorage already updated */ })
+    }, 1000)
+    return () => {
+      if (syncTimer.current) clearTimeout(syncTimer.current)
+    }
+  }, [items, user])
 
   const toggle = (id: string) => {
     setItems((prev) =>
@@ -45,7 +96,7 @@ export default function Checklist() {
   }
 
   const checkedCount = items.filter((i) => i.checked).length
-  const categories = ['bracelet', 'essentials', 'camping', 'comfort'] as const
+  const categories = ['bracelet', 'essentials', 'camping', 'vetements', 'hygiene', 'comfort'] as const
 
   const progressSection = (
     <>
@@ -84,7 +135,7 @@ export default function Checklist() {
                           : 'border-gray-600 text-transparent hover:border-gray-400'
                       }`}
                     >
-                      {'\u2713'}
+                      {'✓'}
                     </button>
                     <span
                       className={`flex-1 text-sm ${
@@ -98,7 +149,7 @@ export default function Checklist() {
                         onClick={() => removeItem(item.id)}
                         className="text-xs text-gray-600 hover:text-red-400"
                       >
-                        {'\u2715'}
+                        {'✕'}
                       </button>
                     )}
                   </div>
