@@ -1,53 +1,61 @@
 {
-  "updatedAt": "2026-06-18T09:14:34.555Z",
+  "updatedAt": "2026-06-19T09:28:08.055Z",
   "releases": [
     {
-      "id": "aff1a2de-b4da-4f68-ad57-e05f3536c108",
-      "title": "EAT SLEEP NOISE REPEAT",
-      "artist": "TOZA",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/aff1a2de-b4da-4f68-ad57-e05f3536c108/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/aff1a2de-b4da-4f68-ad57-e05f3536c108/eat-sleep-noise-repeat"
+      "id": "b3a1b71f-3ff6-4456-bdcd-229f3e3826d3",
+      "title": "Swing Doctor",
+      "artist": "Binum",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/b3a1b71f-3ff6-4456-bdcd-229f3e3826d3/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/b3a1b71f-3ff6-4456-bdcd-229f3e3826d3/swing-doctor"
     },
     {
-      "id": "15467179-b7a5-43d5-84f3-d1988d1c15ee",
-      "title": "Don't Wake Me Up",
-      "artist": "Resilience",
+      "id": "15d520ae-d511-402b-b165-524cd4b5ce4d",
+      "title": "Matennaaier (Reflexx Remix)",
+      "artist": "DRS",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/15467179-b7a5-43d5-84f3-d1988d1c15ee/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/15467179-b7a5-43d5-84f3-d1988d1c15ee/don-t-wake-me-up"
+      "image": "https://hardstyle.com/track_image/15d520ae-d511-402b-b165-524cd4b5ce4d/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/15d520ae-d511-402b-b165-524cd4b5ce4d/matennaaier-reflexx-remix"
     },
     {
-      "id": "5b7c849a-b4a1-4db9-8f81-2f62fe017eeb",
-      "title": "Down The Rabbit Hole",
-      "artist": "Aerobey",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/5b7c849a-b4a1-4db9-8f81-2f62fe017eeb/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/5b7c849a-b4a1-4db9-8f81-2f62fe017eeb/down-the-rabbit-hole"
+      "id": "f29e29dd-1d10-4de9-a668-431af1c6eb03",
+      "title": "Suck My",
+      "artist": "Radical Redemption",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/f29e29dd-1d10-4de9-a668-431af1c6eb03/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/f29e29dd-1d10-4de9-a668-431af1c6eb03/suck-my"
     },
     {
-      "id": "f72f3361-cca7-4f89-9542-7f147edf69b3",
-      "title": "Boom",
-      "artist": "The Freaky Bastard",
+      "id": "08df2034-2441-4c8f-aa48-9ead41d9fda8",
+      "title": "Data Corrupted",
+      "artist": "Radical Redemption",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/08df2034-2441-4c8f-aa48-9ead41d9fda8/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/08df2034-2441-4c8f-aa48-9ead41d9fda8/data-corrupted"
+    },
+    {
+      "id": "ec3ed5ed-e6a7-4d05-97af-0bca25b4ea35",
+      "title": "Dimension",
+      "artist": "Dimitri K",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/ec3ed5ed-e6a7-4d05-97af-0bca25b4ea35/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/ec3ed5ed-e6a7-4d05-97af-0bca25b4ea35/dimension"
+    },
+    {
+      "id": "006b1a7c-d176-4067-8491-a076f77744a3",
+      "title": "Piece Of Shit",
+      "artist": "Mortis",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/f72f3361-cca7-4f89-9542-7f147edf69b3/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/f72f3361-cca7-4f89-9542-7f147edf69b3/boom"
+      "image": "https://hardstyle.com/track_image/006b1a7c-d176-4067-8491-a076f77744a3/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/006b1a7c-d176-4067-8491-a076f77744a3/piece-of-shit"
     },
     {
-      "id": "4a10d11f-06c1-4cc7-9d35-aef5fe2c59bd",
-      "title": "Overdose Stomp 2026",
-      "artist": "Chaos Clan",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/4a10d11f-06c1-4cc7-9d35-aef5fe2c59bd/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/4a10d11f-06c1-4cc7-9d35-aef5fe2c59bd/overdose-stomp-2026"
-    },
-    {
-      "id": "e0fc2b12-a358-4b27-8312-9b7db1c0ae2c",
-      "title": "Execute",
-      "artist": "Refold",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/e0fc2b12-a358-4b27-8312-9b7db1c0ae2c/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/e0fc2b12-a358-4b27-8312-9b7db1c0ae2c/execute"
+      "id": "8d9dd50c-dc96-4d1f-a4b1-2542e098a05d",
+      "title": "Thoughts",
+      "artist": "LAUDER",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/8d9dd50c-dc96-4d1f-a4b1-2542e098a05d/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/8d9dd50c-dc96-4d1f-a4b1-2542e098a05d"
     },
     {
       "id": "a78c87a0-47de-4bfa-b901-7b5b44331140",
@@ -72,14 +80,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/2f492a30-9e57-49a2-befe-6cd47d87d00f/250x250/335",
       "link": "https://hardstyle.com/en/tracks/2f492a30-9e57-49a2-befe-6cd47d87d00f"
-    },
-    {
-      "id": "004793c8-fb5a-4788-b02d-e97905643a41",
-      "title": "The Early Uptempo Album",
-      "artist": "F. Noize",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/004793c8-fb5a-4788-b02d-e97905643a41/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/004793c8-fb5a-4788-b02d-e97905643a41"
     }
   ]
 }
