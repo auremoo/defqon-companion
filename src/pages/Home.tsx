@@ -8,7 +8,7 @@ import { festival } from '../data/festival'
 import { lineup } from '../data/lineup'
 import { useAuth } from '../contexts/AuthContext'
 import { db } from '../lib/firebase'
-import { doc, setDoc } from 'firebase/firestore'
+import { doc, setDoc, getDoc } from 'firebase/firestore'
 
 // Cached by GitHub Action daily — falls back to live RSS if empty
 const CACHED_NEWS_URL = `${import.meta.env.BASE_URL}data/qdance-news.json`
@@ -53,6 +53,26 @@ function GoingWidget() {
   const { user } = useAuth()
   const [going, setGoing] = useState(() => localStorage.getItem('defqon-going-2026') === 'true')
 
+  // Sync from Firestore on mount so the widget reflects the account state
+  // across devices, not just the current device's localStorage.
+  useEffect(() => {
+    if (!db || !user) return
+    getDoc(doc(db, 'user_editions', `${user.uid}_2026`))
+      .then((snap) => {
+        const attended = snap.exists() && snap.data().attended_festival === true
+        if (attended) {
+          localStorage.setItem('defqon-going-2026', 'true')
+          setGoing(true)
+        } else if (!snap.exists()) {
+          // No Firestore record — trust localStorage as-is
+        } else {
+          localStorage.removeItem('defqon-going-2026')
+          setGoing(false)
+        }
+      })
+      .catch(() => { /* Firestore unavailable — keep localStorage state */ })
+  }, [user])
+
   const confirm = async () => {
     localStorage.setItem('defqon-going-2026', 'true')
     setGoing(true)
@@ -65,13 +85,20 @@ function GoingWidget() {
           notes: null,
           rating: null,
         }, { merge: true })
-      } catch { /* saved to localStorage — Firestore sync is optional */ }
+      } catch { /* localStorage already updated */ }
     }
   }
 
-  const undo = () => {
+  const undo = async () => {
     localStorage.removeItem('defqon-going-2026')
     setGoing(false)
+    if (db && user) {
+      try {
+        await setDoc(doc(db, 'user_editions', `${user.uid}_2026`), {
+          attended_festival: false,
+        }, { merge: true })
+      } catch { /* localStorage already updated */ }
+    }
   }
 
   if (going) {
