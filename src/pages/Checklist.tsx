@@ -45,7 +45,7 @@ export default function Checklist() {
   }
 
   const checkedCount = items.filter((i) => i.checked).length
-  const categories = ['bracelet', 'essentials', 'camping', 'comfort'] as const
+  const categories = ['bracelet', 'essentials', 'camping', 'vetements', 'hygiene', 'comfort'] as const
 
   const progressSection = (
     <>
