@@ -1,6 +1,14 @@
 {
-  "updatedAt": "2026-06-19T09:28:08.055Z",
+  "updatedAt": "2026-06-20T08:21:57.876Z",
   "releases": [
+    {
+      "id": "2d79f607-a1bf-4d4c-9b78-6653faf1c9b3",
+      "title": "Running In Circles",
+      "artist": "DarkMain",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/2d79f607-a1bf-4d4c-9b78-6653faf1c9b3/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/2d79f607-a1bf-4d4c-9b78-6653faf1c9b3/running-in-circles"
+    },
     {
       "id": "b3a1b71f-3ff6-4456-bdcd-229f3e3826d3",
       "title": "Swing Doctor",
@@ -37,17 +45,9 @@
       "id": "ec3ed5ed-e6a7-4d05-97af-0bca25b4ea35",
       "title": "Dimension",
       "artist": "Dimitri K",
-      "mix": "",
+      "mix": "Original Mix",
       "image": "https://hardstyle.com/track_image/ec3ed5ed-e6a7-4d05-97af-0bca25b4ea35/250x250/335",
       "link": "https://hardstyle.com/en/tracks/ec3ed5ed-e6a7-4d05-97af-0bca25b4ea35/dimension"
-    },
-    {
-      "id": "006b1a7c-d176-4067-8491-a076f77744a3",
-      "title": "Piece Of Shit",
-      "artist": "Mortis",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/006b1a7c-d176-4067-8491-a076f77744a3/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/006b1a7c-d176-4067-8491-a076f77744a3/piece-of-shit"
     },
     {
       "id": "8d9dd50c-dc96-4d1f-a4b1-2542e098a05d",
