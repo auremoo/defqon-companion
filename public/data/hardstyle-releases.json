@@ -1,6 +1,46 @@
 {
-  "updatedAt": "2026-06-20T08:21:57.876Z",
+  "updatedAt": "2026-06-21T08:57:38.683Z",
   "releases": [
+    {
+      "id": "8bd74744-0b51-48d3-8ab9-6fb40601cb6f",
+      "title": "Ultrasound",
+      "artist": "K.H.D.",
+      "mix": "Instrumental Mix",
+      "image": "https://hardstyle.com/track_image/8bd74744-0b51-48d3-8ab9-6fb40601cb6f/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/8bd74744-0b51-48d3-8ab9-6fb40601cb6f/ultrasound"
+    },
+    {
+      "id": "34350169-a473-441b-9254-aa8c47259556",
+      "title": "Lightwave",
+      "artist": "K.H.D.",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/34350169-a473-441b-9254-aa8c47259556/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/34350169-a473-441b-9254-aa8c47259556/lightwave"
+    },
+    {
+      "id": "775bf59c-76c3-4f3e-a144-d8b85e8870b7",
+      "title": "Artificial Jungle",
+      "artist": "K.H.D.",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/775bf59c-76c3-4f3e-a144-d8b85e8870b7/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/775bf59c-76c3-4f3e-a144-d8b85e8870b7/artificial-jungle"
+    },
+    {
+      "id": "b53b528a-7a44-4d03-8a06-3b6c374d589e",
+      "title": "Ultrasound",
+      "artist": "K.H.D.",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/b53b528a-7a44-4d03-8a06-3b6c374d589e/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/b53b528a-7a44-4d03-8a06-3b6c374d589e/ultrasound"
+    },
+    {
+      "id": "16500933-e024-487c-a846-bbccbca5e2b5",
+      "title": "Drahomíra",
+      "artist": "Luke PN",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/16500933-e024-487c-a846-bbccbca5e2b5/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/16500933-e024-487c-a846-bbccbca5e2b5/drahomira"
+    },
     {
       "id": "2d79f607-a1bf-4d4c-9b78-6653faf1c9b3",
       "title": "Running In Circles",
@@ -8,46 +48,6 @@
       "mix": "Original Mix",
       "image": "https://hardstyle.com/track_image/2d79f607-a1bf-4d4c-9b78-6653faf1c9b3/250x250/335",
       "link": "https://hardstyle.com/en/tracks/2d79f607-a1bf-4d4c-9b78-6653faf1c9b3/running-in-circles"
-    },
-    {
-      "id": "b3a1b71f-3ff6-4456-bdcd-229f3e3826d3",
-      "title": "Swing Doctor",
-      "artist": "Binum",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/b3a1b71f-3ff6-4456-bdcd-229f3e3826d3/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/b3a1b71f-3ff6-4456-bdcd-229f3e3826d3/swing-doctor"
-    },
-    {
-      "id": "15d520ae-d511-402b-b165-524cd4b5ce4d",
-      "title": "Matennaaier (Reflexx Remix)",
-      "artist": "DRS",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/15d520ae-d511-402b-b165-524cd4b5ce4d/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/15d520ae-d511-402b-b165-524cd4b5ce4d/matennaaier-reflexx-remix"
-    },
-    {
-      "id": "f29e29dd-1d10-4de9-a668-431af1c6eb03",
-      "title": "Suck My",
-      "artist": "Radical Redemption",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/f29e29dd-1d10-4de9-a668-431af1c6eb03/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/f29e29dd-1d10-4de9-a668-431af1c6eb03/suck-my"
-    },
-    {
-      "id": "08df2034-2441-4c8f-aa48-9ead41d9fda8",
-      "title": "Data Corrupted",
-      "artist": "Radical Redemption",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/08df2034-2441-4c8f-aa48-9ead41d9fda8/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/08df2034-2441-4c8f-aa48-9ead41d9fda8/data-corrupted"
-    },
-    {
-      "id": "ec3ed5ed-e6a7-4d05-97af-0bca25b4ea35",
-      "title": "Dimension",
-      "artist": "Dimitri K",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/ec3ed5ed-e6a7-4d05-97af-0bca25b4ea35/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/ec3ed5ed-e6a7-4d05-97af-0bca25b4ea35/dimension"
     },
     {
       "id": "8d9dd50c-dc96-4d1f-a4b1-2542e098a05d",
