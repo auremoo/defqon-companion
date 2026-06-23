@@ -1,3 +1,6 @@
+> Créé par **Aurélien Moote - Moo - 2026**. Logiciel libre (licence MIT) :
+> réutilisable à condition de conserver la mention de l'auteur.
+
 # Defqon Companion
 
 Mobile-first web companion app for the **Defqon.1** hardstyle festival. Built with React, TypeScript, Tailwind CSS, and Supabase.
@@ -76,3 +79,8 @@ supabase/        # Database migrations
 - [ ] Phase 3: Playlists / Radio companion
 - [ ] Phase 4: Push notifications
 - [ ] Future: Advanced social features, admin panel
+
+## Auteur & licence
+
+Créé par **Aurélien Moote - Moo - 2026**.
+Distribué sous [licence MIT](./LICENSE) — réutilisable à condition de conserver la mention de l'auteur.

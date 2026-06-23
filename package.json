@@ -2,6 +2,7 @@
   "name": "defqon-companion",
   "private": true,
   "version": "0.0.0",
+  "author": "Aurélien Moote - Moo - 2026",
   "type": "module",
   "scripts": {
     "dev": "vite",
