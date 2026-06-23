@@ -47,6 +47,7 @@ export default function Checklist() {
   const [items, setItems] = useState<ChecklistItem[]>(getStoredChecklist)
   const [newItem, setNewItem] = useState('')
   const syncTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const [syncStatus, setSyncStatus] = useState<'idle' | 'saving' | 'saved' | 'error'>('idle')
 
   useEffect(() => { document.title = 'Festival Checklist — Defqon Companion' }, [])
 
@@ -71,11 +72,18 @@ export default function Checklist() {
   useEffect(() => {
     if (!db || !user) return
     if (syncTimer.current) clearTimeout(syncTimer.current)
-    syncTimer.current = setTimeout(() => {
+    setSyncStatus('saving')
+    syncTimer.current = setTimeout(async () => {
       const checkedIds = items.filter((i) => i.checked).map((i) => i.id)
       const customItems = items.filter((i) => i.custom)
-      setDoc(doc(db!, 'user_checklist', user.uid), { checkedIds, customItems })
-        .catch(() => { /* silent — localStorage already updated */ })
+      try {
+        await setDoc(doc(db!, 'user_checklist', user.uid), { checkedIds, customItems })
+        setSyncStatus('saved')
+        setTimeout(() => setSyncStatus('idle'), 2000)
+      } catch (e) {
+        console.error('[Checklist] Firestore sync failed:', e)
+        setSyncStatus('error')
+      }
     }, 1000)
     return () => {
       if (syncTimer.current) clearTimeout(syncTimer.current)
@@ -107,10 +115,24 @@ export default function Checklist() {
   const checkedCount = items.filter((i) => i.checked).length
   const categories = ['bracelet', 'essentials', 'camping', 'vetements', 'hygiene', 'comfort', 'autre'] as const
 
+  const syncLabel = user
+    ? syncStatus === 'saving' ? '⏳ Sync…'
+    : syncStatus === 'saved'  ? '✓ Synchronisé'
+    : syncStatus === 'error'  ? '⚠ Erreur sync'
+    : null
+    : null
+
   const progressSection = (
     <>
-      <span className="mt-3 block text-xs text-text-muted">{t('checklist.progress', { checked: checkedCount, total: items.length })}</span>
-      <div className="mt-3 h-2 overflow-hidden rounded-full bg-surface-alt">
+      <div className="mt-3 flex items-center justify-between">
+        <span className="text-xs text-text-muted">{t('checklist.progress', { checked: checkedCount, total: items.length })}</span>
+        {syncLabel && (
+          <span className={`text-[10px] ${syncStatus === 'error' ? 'text-red-400' : 'text-text-muted'}`}>
+            {syncLabel}
+          </span>
+        )}
+      </div>
+      <div className="mt-2 h-2 overflow-hidden rounded-full bg-surface-alt">
         <div
           className="h-full rounded-full bg-accent transition-all duration-300"
           style={{ width: `${items.length ? (checkedCount / items.length) * 100 : 0}%` }}
