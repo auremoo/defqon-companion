@@ -11,30 +11,34 @@ interface FirestoreChecklist {
   customItems: ChecklistItem[]
 }
 
-function migrateCustomItems(items: ChecklistItem[]): ChecklistItem[] {
-  return items.map((item) =>
-    item.custom && item.category === 'comfort' ? { ...item, category: 'autre' } : item
-  )
+// Always rebuild from current defaultChecklist so that new default items
+// always appear, regardless of what was cached in localStorage or Firestore.
+function buildFromCache(checkedIds: string[], customItems: ChecklistItem[]): ChecklistItem[] {
+  const base = defaultChecklist.map((item) => ({
+    ...item,
+    checked: checkedIds.includes(item.id),
+  }))
+  const migratedCustoms = customItems
+    .filter((i) => i.custom)
+    .map((item) => ({
+      ...item,
+      category: (item.category === 'comfort' ? 'autre' : item.category) as ChecklistItem['category'],
+      checked: checkedIds.includes(item.id),
+    }))
+  return [...base, ...migratedCustoms]
 }
 
 function getStoredChecklist(): ChecklistItem[] {
   try {
     const stored = localStorage.getItem('defqon-checklist')
-    if (stored) return migrateCustomItems(JSON.parse(stored))
+    if (stored) {
+      const storedItems: ChecklistItem[] = JSON.parse(stored)
+      const checkedIds = storedItems.filter((i) => i.checked).map((i) => i.id)
+      const customItems = storedItems.filter((i) => i.custom)
+      return buildFromCache(checkedIds, customItems)
+    }
   } catch { /* ignore */ }
   return defaultChecklist.map((item) => ({ ...item }))
-}
-
-function applyFirestoreState(checkedIds: string[], customItems: ChecklistItem[]): ChecklistItem[] {
-  const base = defaultChecklist.map((item) => ({
-    ...item,
-    checked: checkedIds.includes(item.id),
-  }))
-  const customs = migrateCustomItems(customItems).map((item) => ({
-    ...item,
-    checked: checkedIds.includes(item.id),
-  }))
-  return [...base, ...customs]
 }
 
 export default function Checklist() {
@@ -58,8 +62,7 @@ export default function Checklist() {
       .then((snap) => {
         if (!snap.exists()) return
         const data = snap.data() as FirestoreChecklist
-        const merged = applyFirestoreState(data.checkedIds ?? [], data.customItems ?? [])
-        setItems(merged)
+        setItems(buildFromCache(data.checkedIds ?? [], data.customItems ?? []))
       })
       .catch(() => { /* keep localStorage state */ })
   }, [user])
