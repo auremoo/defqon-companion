@@ -25,7 +25,7 @@ export const festival = {
 
 export interface ChecklistItem {
   id: string
-  category: 'bracelet' | 'essentials' | 'camping' | 'vetements' | 'hygiene' | 'comfort'
+  category: 'bracelet' | 'essentials' | 'camping' | 'vetements' | 'hygiene' | 'comfort' | 'autre'
   labelKey: string
   label: string
   checked: boolean

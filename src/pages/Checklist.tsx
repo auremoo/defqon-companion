@@ -11,10 +11,16 @@ interface FirestoreChecklist {
   customItems: ChecklistItem[]
 }
 
+function migrateCustomItems(items: ChecklistItem[]): ChecklistItem[] {
+  return items.map((item) =>
+    item.custom && item.category === 'comfort' ? { ...item, category: 'autre' } : item
+  )
+}
+
 function getStoredChecklist(): ChecklistItem[] {
   try {
     const stored = localStorage.getItem('defqon-checklist')
-    if (stored) return JSON.parse(stored)
+    if (stored) return migrateCustomItems(JSON.parse(stored))
   } catch { /* ignore */ }
   return defaultChecklist.map((item) => ({ ...item }))
 }
@@ -24,7 +30,7 @@ function applyFirestoreState(checkedIds: string[], customItems: ChecklistItem[])
     ...item,
     checked: checkedIds.includes(item.id),
   }))
-  const customs = customItems.map((item) => ({
+  const customs = migrateCustomItems(customItems).map((item) => ({
     ...item,
     checked: checkedIds.includes(item.id),
   }))
@@ -83,7 +89,7 @@ export default function Checklist() {
     const text = newItem.trim()
     if (!text) return
     const id = `custom-${Date.now()}`
-    setItems((prev) => [...prev, { id, category: 'comfort', labelKey: '', label: text, checked: false, custom: true }])
+    setItems((prev) => [...prev, { id, category: 'autre', labelKey: '', label: text, checked: false, custom: true }])
     setNewItem('')
   }
 
@@ -96,7 +102,7 @@ export default function Checklist() {
   }
 
   const checkedCount = items.filter((i) => i.checked).length
-  const categories = ['bracelet', 'essentials', 'camping', 'vetements', 'hygiene', 'comfort'] as const
+  const categories = ['bracelet', 'essentials', 'camping', 'vetements', 'hygiene', 'comfort', 'autre'] as const
 
   const progressSection = (
     <>
