@@ -204,6 +204,7 @@
     "vetements": "Clothing",
     "hygiene": "Hygiene",
     "comfort": "Comfort & Health",
+    "autre": "Other",
     "addItem": "Add item...",
     "add": "Add",
     "reset": "Reset All",
