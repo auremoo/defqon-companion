@@ -1,53 +1,53 @@
 {
-  "updatedAt": "2026-06-24T08:22:28.388Z",
+  "updatedAt": "2026-06-25T08:23:33.379Z",
   "releases": [
     {
-      "id": "874ca0b0-9a94-490e-8bc6-b464d173c23c",
-      "title": "Don't Wanna Know",
-      "artist": "Wildness Project",
-      "mix": "Hardstyle Remix",
-      "image": "https://hardstyle.com/track_image/874ca0b0-9a94-490e-8bc6-b464d173c23c/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/874ca0b0-9a94-490e-8bc6-b464d173c23c/don-t-wanna-know"
-    },
-    {
-      "id": "d9e5d1ac-9d66-484d-a91f-936a67e40201",
-      "title": "The Zone",
-      "artist": "David Navas",
+      "id": "5c10f7a7-aa8d-4a9a-9458-4b0abfdec9d1",
+      "title": "Lost In Space",
+      "artist": "Garbie Project",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/d9e5d1ac-9d66-484d-a91f-936a67e40201/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/d9e5d1ac-9d66-484d-a91f-936a67e40201/the-zone"
+      "image": "https://hardstyle.com/track_image/5c10f7a7-aa8d-4a9a-9458-4b0abfdec9d1/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/5c10f7a7-aa8d-4a9a-9458-4b0abfdec9d1/lost-in-space"
     },
     {
-      "id": "372b5222-3a23-4905-9907-d3126eb2d8c6",
-      "title": "Take It All",
-      "artist": "Abaddon",
+      "id": "e04a5f0c-5987-42e9-9185-182a7d475bef",
+      "title": "No Scape",
+      "artist": "Cristina Ferrer",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/e04a5f0c-5987-42e9-9185-182a7d475bef/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/e04a5f0c-5987-42e9-9185-182a7d475bef/no-scape"
+    },
+    {
+      "id": "661d04a5-cb19-4288-866b-8b3c586157f4",
+      "title": "The Business",
+      "artist": "Sonic Rampage",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/661d04a5-cb19-4288-866b-8b3c586157f4/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/661d04a5-cb19-4288-866b-8b3c586157f4/the-business"
+    },
+    {
+      "id": "3cfdf358-e062-4a94-ba9e-678812c66bb6",
+      "title": "STORM IS COMING",
+      "artist": "Fraw",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/372b5222-3a23-4905-9907-d3126eb2d8c6/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/372b5222-3a23-4905-9907-d3126eb2d8c6/take-it-all"
+      "image": "https://hardstyle.com/track_image/3cfdf358-e062-4a94-ba9e-678812c66bb6/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/3cfdf358-e062-4a94-ba9e-678812c66bb6/storm-is-coming"
     },
     {
-      "id": "dc5a1ff2-33ea-42da-b910-46e42b2370b8",
-      "title": "Don't Wanna Go Home",
-      "artist": "Cally",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/dc5a1ff2-33ea-42da-b910-46e42b2370b8/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/dc5a1ff2-33ea-42da-b910-46e42b2370b8/don-t-wanna-go-home"
-    },
-    {
-      "id": "31a22f32-0c8c-4c45-8136-13a450cbb053",
-      "title": "Ona Je PLAMEŇ",
-      "artist": "Luke PN",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/31a22f32-0c8c-4c45-8136-13a450cbb053/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/31a22f32-0c8c-4c45-8136-13a450cbb053/ona-je-plamen"
-    },
-    {
-      "id": "ccd610c1-48ab-4d72-9542-42ffd762cb2e",
-      "title": "Don't Look Back",
-      "artist": "Jeff Jackz",
+      "id": "f8f4bdc5-da58-48c3-a07c-42feb9b8da56",
+      "title": "Set Me Free",
+      "artist": "Superior Core",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/ccd610c1-48ab-4d72-9542-42ffd762cb2e/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/ccd610c1-48ab-4d72-9542-42ffd762cb2e/don-t-look-back"
+      "image": "https://hardstyle.com/track_image/f8f4bdc5-da58-48c3-a07c-42feb9b8da56/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/f8f4bdc5-da58-48c3-a07c-42feb9b8da56/set-me-free"
+    },
+    {
+      "id": "29c5cec2-8e35-4122-a252-928d1a5d6f13",
+      "title": "RESIST",
+      "artist": "Amduscias",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/29c5cec2-8e35-4122-a252-928d1a5d6f13/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/29c5cec2-8e35-4122-a252-928d1a5d6f13/resist"
     },
     {
       "id": "8d9dd50c-dc96-4d1f-a4b1-2542e098a05d",
