@@ -273,7 +273,7 @@ function SetCard({ set, saved, friendCount, vote, onToggle, onVote }: {
       </div>
       {saved && (
         <div className="flex items-center gap-1.5 border-t border-white/5 px-3 py-1.5">
-          <span className="mr-auto text-[10px] text-text-muted">Rate this set:</span>
+          <span className="mr-auto text-[10px] text-text-muted">{t('timetable.rateSet')} :</span>
           <button
             onClick={() => onVote('fire')}
             className={`flex items-center gap-1 rounded-full px-2.5 py-1 text-[11px] font-semibold transition-all ${

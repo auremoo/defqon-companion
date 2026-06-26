@@ -14,7 +14,7 @@ export interface Set {
 export const stageColors: Record<Stage, string> = {
   RED: '#e63946',
   BLUE: '#1d3557',
-  BLACK: '#111111',
+  BLACK: '#888888',
   UV: '#7c3aed',
   MAGENTA: '#e040a0',
   INDIGO: '#4a00e0',
