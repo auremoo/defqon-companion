@@ -38,29 +38,37 @@ export default function LiveMode({ edition, friendSets, savedSets }: LiveModePro
 
   useEffect(() => {
     function update() {
+      if (edition.cancelled) { setIsLive(false); setCurrentSets([]); return }
       const now = new Date()
       const start = new Date(edition.startDate)
       const end = new Date(edition.endDate)
       const live = now >= start && now <= end
-
       setIsLive(live)
-      if (live) {
-        setCurrentSets(getCurrentSets(edition.lineup))
-      } else {
-        setCurrentSets([])
-      }
+      setCurrentSets(live ? getCurrentSets(edition.lineup) : [])
     }
-
     update()
     const interval = setInterval(update, 60_000)
     return () => clearInterval(interval)
   }, [edition])
 
+  // Cancelled edition: show finished banner
+  if (edition.cancelled) {
+    const isPast = new Date() > new Date(edition.startDate)
+    if (!isPast) return null
+    return (
+      <div className="mb-4 rounded-xl border border-gray-700/50 bg-gray-900/30 p-3 text-center">
+        <p className="text-xs font-semibold uppercase tracking-widest text-gray-400">{t('timetable.finished')}</p>
+        {edition.keyFacts && (
+          <p className="mt-1 text-[10px] text-text-muted">{edition.keyFacts[0]}</p>
+        )}
+      </div>
+    )
+  }
+
   if (!isLive) return null
 
   return (
     <div className="mb-4 rounded-xl border border-red-800/50 bg-red-950/30 p-4">
-      {/* LIVE badge */}
       <div className="mb-3 flex items-center gap-2">
         <span className="relative flex h-3 w-3">
           <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-500 opacity-75" />
@@ -70,12 +78,9 @@ export default function LiveMode({ edition, friendSets, savedSets }: LiveModePro
           {t('timetable.live')}
         </span>
       </div>
-
-      {/* Now playing */}
       <h3 className="mb-2 text-xs font-semibold uppercase tracking-wider text-text-muted">
         {t('timetable.nowPlaying')}
       </h3>
-
       {currentSets.length === 0 ? (
         <p className="text-sm text-text-muted">{t('timetable.noSetsNow')}</p>
       ) : (
@@ -84,31 +89,14 @@ export default function LiveMode({ edition, friendSets, savedSets }: LiveModePro
             const isSaved = savedSets.includes(set.id)
             const friends = friendSets[set.id]
             const friendCount = friends?.length || 0
-
             return (
-              <div
-                key={set.id}
-                className={`flex items-center gap-2 rounded-lg px-3 py-2 ${
-                  isSaved ? 'bg-accent/15 border border-accent/30' : 'bg-white/5'
-                }`}
-              >
-                <span
-                  className="h-2.5 w-2.5 shrink-0 rounded-full"
-                  style={{ backgroundColor: stageColors[set.stage] }}
-                />
+              <div key={set.id} className={`flex items-center gap-2 rounded-lg px-3 py-2 ${isSaved ? 'bg-accent/15 border border-accent/30' : 'bg-white/5'}`}>
+                <span className="h-2.5 w-2.5 shrink-0 rounded-full" style={{ backgroundColor: stageColors[set.stage] }} />
                 <div className="flex-1 min-w-0">
-                  <p className="truncate text-sm font-medium text-text-primary">
-                    {set.artist}
-                  </p>
-                  <p className="text-[10px] text-text-muted">
-                    {set.stage} &middot; {set.startTime} – {set.endTime}
-                  </p>
+                  <p className="truncate text-sm font-medium text-text-primary">{set.artist}</p>
+                  <p className="text-[10px] text-text-muted">{set.stage} &middot; {set.startTime} – {set.endTime}</p>
                 </div>
-                {isSaved && (
-                  <span className="shrink-0 text-[9px] font-bold uppercase tracking-wider text-accent">
-                    {t('timetable.yourSet')}
-                  </span>
-                )}
+                {isSaved && <span className="shrink-0 text-[9px] font-bold uppercase tracking-wider text-accent">{t('timetable.yourSet')}</span>}
                 {friendCount > 0 && (
                   <span className="inline-flex shrink-0 items-center gap-1 rounded-full bg-blue-900/40 px-2 py-0.5 text-xs text-blue-300">
                     {friendCount} <UsersIcon size={11} />

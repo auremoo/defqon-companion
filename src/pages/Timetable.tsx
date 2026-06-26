@@ -9,6 +9,7 @@ import {
 import { UsersIcon, FlameIcon, SnowflakeIcon } from '../components/Icons'
 import PageShell from '../components/PageShell'
 import LiveMode from '../components/LiveMode'
+import GridTimetable from '../components/GridTimetable'
 import { days, stageColors, type Day, type Stage, type Set } from '../data/lineup'
 import { editionMetas, getCurrentEdition, loadEdition, type Edition } from '../data/editions'
 
@@ -313,6 +314,7 @@ export default function Timetable() {
   const [viewingBuddy, setViewingBuddy] = useState<{ id: string; name: string } | null>(null)
   const [buddySetIds, setBuddySetIds] = useState<string[]>([])
   const [votes, setVotes] = useState<Record<string, VoteType>>(() => getLocalVotes(getCurrentEdition().year))
+  const [layoutMode, setLayoutMode] = useState<'list' | 'grid'>('list')
 
   useEffect(() => { document.title = 'Timetable — Defqon Companion' }, [])
 
@@ -599,55 +601,85 @@ export default function Timetable() {
         </div>
       ) : viewMode === 'timetable' ? (
         <>
-          <div className="mb-3 grid grid-cols-4 gap-1.5">
-            {days.map((day) => (
+          <div className="mb-3 flex items-center gap-2">
+            <div className="flex-1 grid grid-cols-4 gap-1.5">
+              {days.map((day) => (
+                <button
+                  key={day.key}
+                  onClick={() => { setActiveDay(day.key); setActiveStage('ALL') }}
+                  className={`rounded-lg py-2.5 text-center transition-colors ${
+                    activeDay === day.key ? 'bg-accent text-text-primary' : 'bg-surface-card border border-border text-text-muted hover:text-text-primary'
+                  }`}
+                >
+                  <span className="block text-[10px] font-bold uppercase tracking-wider">{t(`timetable.days.${day.key}`).slice(0, 3)}</span>
+                  <span className="block text-[9px] text-text-muted mt-0.5">{day.date.split(' ')[1]}</span>
+                </button>
+              ))}
+            </div>
+            <div className="flex rounded-lg border border-border bg-surface-card">
               <button
-                key={day.key}
-                onClick={() => { setActiveDay(day.key); setActiveStage('ALL') }}
-                className={`rounded-lg py-2.5 text-center transition-colors ${
-                  activeDay === day.key ? 'bg-accent text-text-primary' : 'bg-surface-card border border-border text-text-muted hover:text-text-primary'
-                }`}
+                onClick={() => setLayoutMode('list')}
+                title="List view"
+                className={`px-2.5 py-2 text-xs transition-colors rounded-l-lg ${layoutMode === 'list' ? 'bg-accent text-text-primary' : 'text-text-muted hover:text-text-primary'}`}
               >
-                <span className="block text-[10px] font-bold uppercase tracking-wider">{t(`timetable.days.${day.key}`).slice(0, 3)}</span>
-                <span className="block text-[9px] text-text-muted mt-0.5">{day.date.split(' ')[1]}</span>
+                ☰
               </button>
-            ))}
+              <button
+                onClick={() => setLayoutMode('grid')}
+                title="Grid view"
+                className={`px-2.5 py-2 text-xs transition-colors rounded-r-lg border-l border-border ${layoutMode === 'grid' ? 'bg-accent text-text-primary' : 'text-text-muted hover:text-text-primary'}`}
+              >
+                ⊞
+              </button>
+            </div>
           </div>
 
-          <div className="mb-4 flex gap-1 overflow-x-auto pb-1">
-            <button
-              onClick={() => setActiveStage('ALL')}
-              className={`shrink-0 rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-wider transition-colors ${
-                activeStage === 'ALL' ? 'bg-text-primary text-surface' : 'bg-surface-card text-text-muted hover:text-text-primary'
-              }`}
-            >
-              {t('timetable.allStages')}
-            </button>
-            {stages.map((stage) => (
-              <button
-                key={stage}
-                onClick={() => setActiveStage(stage)}
-                className="shrink-0 flex items-center gap-1 rounded-full px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider transition-colors"
-                style={{
-                  backgroundColor: activeStage === stage ? stageColors[stage] : 'var(--color-surface-card)',
-                  color: activeStage === stage ? '#fff' : 'var(--color-text-muted)',
-                }}
-              >
-                <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: stageColors[stage] }} />
-                {stage}
-              </button>
-            ))}
-          </div>
+          {layoutMode === 'grid' ? (
+            <GridTimetable
+              sets={edition.lineup.filter((s) => s.day === activeDay)}
+              stages={stages}
+              savedSets={savedSets}
+              friendSets={friendSets}
+              onToggle={toggleSet}
+            />
+          ) : (
+            <>
+              <div className="mb-4 flex gap-1 overflow-x-auto pb-1">
+                <button
+                  onClick={() => setActiveStage('ALL')}
+                  className={`shrink-0 rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-wider transition-colors ${
+                    activeStage === 'ALL' ? 'bg-text-primary text-surface' : 'bg-surface-card text-text-muted hover:text-text-primary'
+                  }`}
+                >
+                  {t('timetable.allStages')}
+                </button>
+                {stages.map((stage) => (
+                  <button
+                    key={stage}
+                    onClick={() => setActiveStage(stage)}
+                    className="shrink-0 flex items-center gap-1 rounded-full px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider transition-colors"
+                    style={{
+                      backgroundColor: activeStage === stage ? stageColors[stage] : 'var(--color-surface-card)',
+                      color: activeStage === stage ? '#fff' : 'var(--color-text-muted)',
+                    }}
+                  >
+                    <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: stageColors[stage] }} />
+                    {stage}
+                  </button>
+                ))}
+              </div>
 
-          <div className="mx-auto w-full max-w-md space-y-2">
-            {filteredSets.length === 0 ? (
-              <p className="py-8 text-center text-sm text-gray-500">{t('timetable.noSets')}</p>
-            ) : (
-              filteredSets.map((set) => (
-                <SetCard key={set.id} set={set} saved={savedSets.includes(set.id)} friendCount={friendSets[set.id]?.length || 0} vote={votes[set.id]} onToggle={() => toggleSet(set.id)} onVote={(type) => voteSet(set.id, type)} />
-              ))
-            )}
-          </div>
+              <div className="mx-auto w-full max-w-md space-y-2">
+                {filteredSets.length === 0 ? (
+                  <p className="py-8 text-center text-sm text-gray-500">{t('timetable.noSets')}</p>
+                ) : (
+                  filteredSets.map((set) => (
+                    <SetCard key={set.id} set={set} saved={savedSets.includes(set.id)} friendCount={friendSets[set.id]?.length || 0} vote={votes[set.id]} onToggle={() => toggleSet(set.id)} onVote={(type) => voteSet(set.id, type)} />
+                  ))
+                )}
+              </div>
+            </>
+          )}
         </>
       ) : viewMode === 'my-schedule' ? (
         <div className="mx-auto w-full max-w-md">
