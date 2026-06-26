@@ -21,6 +21,10 @@ export const festival = {
     totalTypical: 220_000,
   },
   firstEditionYear: 2003,
+  // The Gathering (Thursday) took place. Festival cancelled at midnight 26/06 due to
+  // first-ever Code Red heat warning in the Netherlands (38–40 °C). Full ticket refunds issued.
+  cancelled: true,
+  cancelledDate: '2026-06-26',
 }
 
 export interface ChecklistItem {

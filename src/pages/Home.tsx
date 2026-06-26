@@ -252,6 +252,22 @@ export default function Home() {
     <PageShell title={t('home.title')} headerContent={headerContent}>
       <div className="mx-auto w-full max-w-md space-y-6">
 
+        {/* Cancellation notice */}
+        {festival.cancelled && (
+          <div className="rounded-xl border border-red-800/60 bg-red-900/20 p-4">
+            <p className="text-sm font-bold text-red-400">⚠️ {t('home.cancelledTitle')}</p>
+            <p className="mt-1 text-xs leading-relaxed text-text-muted">{t('home.cancelledBody')}</p>
+            <a
+              href="https://www.q-dance.com/l/defqon1-2026-faq"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 inline-block text-xs text-red-400 underline underline-offset-2 hover:text-red-300"
+            >
+              {t('home.cancelledFAQ')} →
+            </a>
+          </div>
+        )}
+
         {/* Going widget */}
         <GoingWidget />
 
@@ -335,9 +351,9 @@ export default function Home() {
           <div className="grid grid-cols-2 gap-2">
             {[
               { label: t('home.officialSite'), url: 'https://www.defqon.com', emoji: '🌐' },
-              { label: t('home.buyTickets'), url: 'https://www.defqon.com/en/tickets', emoji: '🎟️' },
+              { label: t('home.buyTickets'), url: 'https://www.q-dance.com/l/defqon1-2026-faq', emoji: '🎟️' },
               { label: t('home.officialLineup'), url: 'https://www.defqon.com/en/lineup', emoji: '🎤' },
-              { label: t('home.qdanceApp'), url: 'https://apps.apple.com/app/q-dance/id450147288', emoji: '📱' },
+              { label: t('home.qdanceApp'), url: 'https://apps.apple.com/us/app/defqon-1/id957425293', emoji: '📱' },
             ].map(({ label, url, emoji }) => (
               <a
                 key={label}

@@ -36,6 +36,13 @@ export default function CountdownTimer() {
   }, [])
 
   if (timeLeft === 'live') {
+    if (festival.cancelled) {
+      return (
+        <div className="rounded-xl border border-red-800/50 bg-red-900/15 p-6 text-center">
+          <p className="defqon-heading text-xl text-red-400">{t('home.countdown.past')}</p>
+        </div>
+      )
+    }
     return (
       <div className="accent-glow rounded-xl border border-accent bg-accent/10 p-6 text-center">
         <p className="defqon-heading text-2xl text-accent animate-pulse">
