@@ -507,31 +507,22 @@ export default function Timetable() {
 
   const headerContent = (
     <>
-      <div className="mt-3 flex items-center justify-between">
-        <div className="flex gap-1.5">
-          {editionMetas.map((em) => (
-            <button
-              key={em.year}
-              onClick={async () => {
-                const ed = await loadEdition(em.year)
-                setEdition(ed); setActiveDay('friday'); setActiveStage('ALL')
-              }}
-              className={`rounded-md px-2.5 py-1 text-xs font-bold uppercase tracking-wider transition-colors ${
-                edition.year === em.year ? 'bg-accent text-text-primary' : 'bg-white/5 text-text-muted hover:text-text-primary'
-              }`}
-            >
-              {em.year}
-            </button>
-          ))}
-        </div>
-        {configured && user && (
+      <div className="mt-3 flex gap-1.5">
+        {editionMetas.map((em) => (
           <button
-            onClick={() => setShowFriends(true)}
-            className="inline-flex items-center gap-1.5 rounded-md bg-white/5 px-2.5 py-1 text-xs font-medium text-text-secondary hover:text-text-primary"
+            key={em.year}
+            onClick={async () => {
+              const ed = await loadEdition(em.year)
+              setEdition(ed); setActiveDay('friday'); setActiveStage('ALL')
+              if (!ed.isCurrent && viewMode === 'my-schedule') setViewMode('timetable')
+            }}
+            className={`rounded-md px-2.5 py-1 text-xs font-bold uppercase tracking-wider transition-colors ${
+              edition.year === em.year ? 'bg-accent text-text-primary' : 'bg-white/5 text-text-muted hover:text-text-primary'
+            }`}
           >
-            <UsersIcon size={13} /> {t('timetable.friends')}
+            {em.year}
           </button>
-        )}
+        ))}
       </div>
 
       {!edition.isCurrent && (
@@ -547,14 +538,16 @@ export default function Timetable() {
         >
           {t('timetable.fullLineup')}
         </button>
-        <button
-          onClick={() => setViewMode('my-schedule')}
-          className={`flex-1 rounded-md py-1.5 text-[10px] font-semibold uppercase tracking-wider transition-colors ${
-            viewMode === 'my-schedule' ? 'bg-accent text-text-primary' : 'text-text-muted hover:text-text-primary'
-          }`}
-        >
-          {t('timetable.mySchedule')} ({savedSets.length})
-        </button>
+        {edition.isCurrent && (
+          <button
+            onClick={() => setViewMode('my-schedule')}
+            className={`flex-1 rounded-md py-1.5 text-[10px] font-semibold uppercase tracking-wider transition-colors ${
+              viewMode === 'my-schedule' ? 'bg-accent text-text-primary' : 'text-text-muted hover:text-text-primary'
+            }`}
+          >
+            {t('timetable.mySchedule')} ({savedSets.length})
+          </button>
+        )}
         {configured && user && (
           <button
             onClick={() => setViewMode('friends')}
@@ -728,15 +721,17 @@ export default function Timetable() {
         </div>
       ) : viewMode === 'friends' ? (
         <div className="mx-auto w-full max-w-md">
+          {configured && user && (
+            <button
+              onClick={() => setShowFriends(true)}
+              className="mb-3 inline-flex w-full items-center justify-center gap-1.5 rounded-xl border border-border bg-surface-card py-2.5 text-xs font-semibold uppercase tracking-wider text-text-secondary transition-colors hover:border-accent/50 hover:text-accent"
+            >
+              <UsersIcon size={13} /> {t('timetable.friends')}
+            </button>
+          )}
           {friendsViewSets.length === 0 ? (
             <div className="py-12 text-center">
               <p className="text-sm text-text-muted">{t('timetable.noFriendSets')}</p>
-              <button
-                onClick={() => setShowFriends(true)}
-                className="mt-3 rounded-lg bg-surface-card px-4 py-2 text-xs font-semibold uppercase tracking-wider text-accent hover:bg-surface-alt"
-              >
-                {t('timetable.manageBuddies')}
-              </button>
             </div>
           ) : (
             <div className="space-y-4">
