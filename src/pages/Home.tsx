@@ -279,10 +279,12 @@ export default function Home() {
             { value: String(festival.firstEditionYear), label: t('home.statFirstEdition') },
             { value: String(stageCount), label: t('home.statStages') },
             { value: String(artistCount), label: t('home.statArtists') },
-            { value: `${Math.round(festival.attendance.perDayRecord / 1000)}K`, label: t('home.statAttendees') },
+            { value: `${Math.round(festival.attendance.totalEditionRecord / 1000)}K`, label: t('home.statRecordTotal', { year: festival.attendance.totalEditionRecordYear }) },
+            { value: `${Math.round(festival.attendance.perDayTypical / 1000)}K`, label: t('home.statAvgDay') },
+            { value: `${Math.round(festival.attendance.perDayRecord / 1000)}K`, label: t('home.statRecordDay') },
           ]
           return (
-            <div className="grid grid-cols-4 gap-2">
+            <div className="grid grid-cols-3 gap-2">
               {stats.map(({ value, label }) => (
                 <div key={label} className="flex flex-col items-center rounded-xl border border-border bg-surface-card py-3">
                   <span className="text-lg font-black text-accent">{value}</span>

@@ -15,8 +15,9 @@ export const festival = {
   ageRestriction: '18+',
   // Attendance figures — updated manually after each edition (official press releases)
   attendance: {
-    perDayRecord: 65_000,   // record single day (2019)
-    totalEditionRecord: 230_000, // record total weekend (2019)
+    perDayRecord: 65_000,          // record single day (est. 2025)
+    totalEditionRecord: 230_000,   // record total weekend (est. 2025 — update with official figure)
+    totalEditionRecordYear: 2025,
     perDayTypical: 55_000,
     totalTypical: 220_000,
   },
