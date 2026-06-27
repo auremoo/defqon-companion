@@ -15,9 +15,9 @@ export const festival = {
   ageRestriction: '18+',
   // Attendance figures — updated manually after each edition (official press releases)
   attendance: {
-    perDayRecord: 65_000,          // record single day (est. 2025)
-    totalEditionRecord: 230_000,   // record total weekend (est. 2025 — update with official figure)
-    totalEditionRecordYear: 2025,
+    perDayRecord: 65_000,       // record single day (est.)
+    totalEditionRecord: 250_000, // 2024 — 20th anniversary, confirmed by multiple sources
+    totalEditionRecordYear: 2024,
     perDayTypical: 55_000,
     totalTypical: 220_000,
   },
@@ -27,6 +27,42 @@ export const festival = {
   cancelled: true,
   cancelledDate: '2026-06-26',
 }
+
+export interface AttendanceEntry {
+  year: number
+  total?: number      // total weekend visitors (confirmed)
+  cancelled?: boolean
+  note?: string       // optional context
+}
+
+// Sources: Q-dance press releases, hardstyle.com, hardcorenews.nl, EDM.com
+// Update after each edition with official Q-dance press release figures.
+export const attendanceHistory: AttendanceEntry[] = [
+  { year: 2003, note: 'Première édition — Ahoy Rotterdam (indoor)' },
+  { year: 2004, note: 'Indoor' },
+  { year: 2005, note: 'Indoor' },
+  { year: 2006, note: 'Indoor' },
+  { year: 2007, note: 'Indoor' },
+  { year: 2008 },
+  { year: 2009 },
+  { year: 2010 },
+  { year: 2011 },
+  { year: 2012 },
+  { year: 2013 },
+  { year: 2014 },
+  { year: 2015 },
+  { year: 2016 },
+  { year: 2017 },
+  { year: 2018 },
+  { year: 2019, note: 'Record all-time à cette date' },
+  { year: 2020, cancelled: true, note: 'COVID-19' },
+  { year: 2021, cancelled: true, note: 'COVID-19' },
+  { year: 2022, note: 'Retour en présentiel' },
+  { year: 2023 },
+  { year: 2024, total: 250_000, note: '20e anniversaire · record all-time' },
+  { year: 2025 },
+  { year: 2026, cancelled: true, note: 'Code Rouge chaleur (38–40 °C)' },
+]
 
 export interface ChecklistItem {
   id: string

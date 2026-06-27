@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 import CountdownTimer from '../components/CountdownTimer'
 import { PaletteIcon, BookIcon, ChecklistIcon, CalendarIcon, HistoryIcon, YouTubeIcon, ExternalLinkIcon } from '../components/Icons'
 import PageShell from '../components/PageShell'
-import { festival } from '../data/festival'
+import { festival, attendanceHistory } from '../data/festival'
 import { lineup } from '../data/lineup'
 import { useAuth } from '../contexts/AuthContext'
 import { db } from '../lib/firebase'
@@ -294,6 +294,39 @@ export default function Home() {
             </div>
           )
         })()}
+
+        {/* Attendance history */}
+        <div>
+          <h2 className="defqon-heading mb-3 text-xs tracking-widest text-text-muted">
+            {t('home.attendanceHistory')}
+          </h2>
+          <div className="overflow-hidden rounded-xl border border-border bg-surface-card">
+            {[...attendanceHistory].reverse().map((entry, i) => (
+              <div
+                key={entry.year}
+                className={`flex items-center gap-3 px-3 py-2 ${i % 2 === 0 ? '' : 'bg-white/3'} ${entry.total ? 'border-l-2 border-accent' : ''}`}
+              >
+                <span className={`w-9 shrink-0 text-xs font-bold ${entry.cancelled ? 'text-text-muted' : 'text-text-primary'}`}>
+                  {entry.year}
+                </span>
+                <div className="flex flex-1 items-center justify-between gap-2 min-w-0">
+                  {entry.cancelled ? (
+                    <span className="text-[10px] text-red-400/80">{t('home.attendanceCancelled')}</span>
+                  ) : entry.total ? (
+                    <span className="text-xs font-semibold text-accent">
+                      {(entry.total / 1000).toFixed(0)} 000 {t('home.attendanceVisitors')}
+                    </span>
+                  ) : (
+                    <span className="text-[10px] text-text-muted">{t('home.attendanceNA')}</span>
+                  )}
+                  {entry.note && (
+                    <span className="shrink-0 text-[9px] text-text-muted truncate max-w-[140px]">{entry.note}</span>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
 
         {/* Quick links — original */}
         <div>
