@@ -15,10 +15,10 @@ export const festival = {
   ageRestriction: '18+',
   // Attendance figures — updated manually after each edition (official press releases)
   attendance: {
-    perDayRecord: 65_000,       // record single day (est.)
+    perDayRecord: 65_000,        // record single day (est.)
     totalEditionRecord: 250_000, // 2024 — 20th anniversary, confirmed by multiple sources
     totalEditionRecordYear: 2024,
-    perDayTypical: 55_000,
+    perDayTypical: 62_500,       // 250K / 4 days (2024 baseline)
     totalTypical: 220_000,
   },
   firstEditionYear: 2003,
@@ -35,8 +35,9 @@ export interface AttendanceEntry {
   note?: string       // optional context
 }
 
-// Sources: Q-dance press releases, hardstyle.com, hardcorenews.nl, EDM.com
+// Sources: Omroep Flevoland, FindYourSounds, EDM Identity, Q-dance press releases
 // Update after each edition with official Q-dance press release figures.
+// Note: figures vary by source (day-count vs unique visitors vs total headcount).
 export const attendanceHistory: AttendanceEntry[] = [
   { year: 2003, note: 'Première édition — Ahoy Rotterdam (indoor)' },
   { year: 2004, note: 'Indoor' },
@@ -50,16 +51,16 @@ export const attendanceHistory: AttendanceEntry[] = [
   { year: 2012 },
   { year: 2013 },
   { year: 2014 },
-  { year: 2015 },
+  { year: 2015, total: 60_000, note: '13e édition · Omroep Flevoland' },
   { year: 2016 },
   { year: 2017 },
   { year: 2018 },
-  { year: 2019, note: 'Record all-time à cette date' },
+  { year: 2019, total: 77_000, note: 'Record de l\'époque · Omroep Flevoland (année approx.)' },
   { year: 2020, cancelled: true, note: 'COVID-19' },
   { year: 2021, cancelled: true, note: 'COVID-19' },
-  { year: 2022, note: 'Retour en présentiel' },
-  { year: 2023 },
-  { year: 2024, total: 250_000, note: '20e anniversaire · record all-time' },
+  { year: 2022, total: 100_000, note: 'Retour en présentiel — capacité réduite' },
+  { year: 2023, total: 100_000, note: 'Source : EDM Identity' },
+  { year: 2024, total: 250_000, note: '20e anniversaire · record all-time ✓' },
   { year: 2025 },
   { year: 2026, cancelled: true, note: 'Code Rouge chaleur (38–40 °C)' },
 ]
