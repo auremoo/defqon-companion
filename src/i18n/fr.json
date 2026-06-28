@@ -596,5 +596,28 @@
   "more": {
     "title": "Fonctionnalités",
     "subtitle": "Tous les outils pour le festival"
+  },
+  "path": {
+    "label": "The Path",
+    "empty": "Pas encore configuré",
+    "update": "Modifier",
+    "setup": "Configurer",
+    "rank": "Rang",
+    "rankTitle": "Titre",
+    "totalXP": "XP total",
+    "nextRankXP": "XP rang suivant",
+    "badges": "Badges",
+    "badge": {
+      "orange": "Orange",
+      "gold": "Or",
+      "silver": "Argent",
+      "bronze": "Bronze"
+    },
+    "toNextRank": "vers le rang suivant",
+    "cancel": "Annuler",
+    "save": "Sauvegarder",
+    "saved": "Sauvegardé",
+    "nextMilestone": "Prochain palier",
+    "rank3Choice": "Choix : Berserker, Gardien ou Chaman"
   }
 }
