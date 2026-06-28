@@ -51,76 +51,100 @@ function timeAgo(isoDate: string): string {
 function GoingWidget() {
   const { t } = useTranslation()
   const { user } = useAuth()
-  const [going, setGoing] = useState(() => localStorage.getItem('defqon-going-2026') === 'true')
+  const year = festival.year
+  const lsKey = `defqon-going-${year}`
+  const [going, setGoing] = useState(() => localStorage.getItem(lsKey) === 'true')
 
-  // Sync from Firestore on mount so the widget reflects the account state
-  // across devices, not just the current device's localStorage.
+  // Festival is "past" once it ends — for cancelled editions use the cancellation date
+  const effectiveEnd = festival.cancelled && festival.cancelledDate
+    ? new Date(festival.cancelledDate + 'T23:59:59+02:00')
+    : new Date(festival.endDate)
+  const isPast = new Date() > effectiveEnd
+
   useEffect(() => {
     if (!db || !user) return
-    getDoc(doc(db, 'user_editions', `${user.uid}_2026`))
+    getDoc(doc(db, 'user_editions', `${user.uid}_${year}`))
       .then((snap) => {
         const attended = snap.exists() && snap.data().attended_festival === true
         if (attended) {
-          localStorage.setItem('defqon-going-2026', 'true')
+          localStorage.setItem(lsKey, 'true')
           setGoing(true)
-        } else if (!snap.exists()) {
-          // No Firestore record — trust localStorage as-is
-        } else {
-          localStorage.removeItem('defqon-going-2026')
+        } else if (snap.exists()) {
+          localStorage.removeItem(lsKey)
           setGoing(false)
         }
       })
-      .catch(() => { /* Firestore unavailable — keep localStorage state */ })
-  }, [user])
+      .catch(() => {})
+  }, [user, year, lsKey])
 
   const confirm = async () => {
-    localStorage.setItem('defqon-going-2026', 'true')
+    localStorage.setItem(lsKey, 'true')
     setGoing(true)
     if (db && user) {
       try {
-        await setDoc(doc(db, 'user_editions', `${user.uid}_2026`), {
+        await setDoc(doc(db, 'user_editions', `${user.uid}_${year}`), {
           user_id: user.uid,
-          edition_year: 2026,
+          edition_year: year,
           attended_festival: true,
           notes: null,
           rating: null,
         }, { merge: true })
-      } catch { /* localStorage already updated */ }
+      } catch {}
     }
   }
 
   const undo = async () => {
-    localStorage.removeItem('defqon-going-2026')
+    localStorage.removeItem(lsKey)
     setGoing(false)
     if (db && user) {
       try {
-        await setDoc(doc(db, 'user_editions', `${user.uid}_2026`), {
+        await setDoc(doc(db, 'user_editions', `${user.uid}_${year}`), {
           attended_festival: false,
         }, { merge: true })
-      } catch { /* localStorage already updated */ }
+      } catch {}
     }
   }
 
-  if (going) {
-    return (
+  if (isPast) {
+    const isGathering = !!festival.cancelled
+    return going ? (
       <div className="rounded-xl border border-green-800/50 bg-green-900/15 p-4 text-center">
-        <p className="text-base font-bold text-green-400">{t('home.goingConfirmed')} 🤘</p>
-        <p className="mt-0.5 text-xs text-text-muted">{t('home.goingDate')}</p>
+        <p className="text-base font-bold text-green-400">
+          {isGathering ? t('home.gatheringConfirmed') : t('home.attendedConfirmed')} 🤘
+        </p>
+        <p className="mt-0.5 text-xs text-text-muted">{t('home.attendedYear', { year })}</p>
         <button onClick={undo} className="mt-2 text-[10px] text-text-muted underline underline-offset-2 hover:text-text-secondary">
-          {t('home.goingUndo')}
+          {t('home.attendedUndo')}
+        </button>
+      </div>
+    ) : (
+      <div className="rounded-xl border border-accent/30 bg-accent/5 p-4 text-center">
+        <p className="text-sm font-bold text-text-primary">
+          {isGathering ? t('home.gatheringTitle') : t('home.attendedTitle', { year })}
+        </p>
+        <p className="mt-0.5 text-xs text-text-muted">
+          {isGathering ? t('home.gatheringSubtitle') : t('home.attendedSubtitle', { year })}
+        </p>
+        <button onClick={confirm} className="mt-3 rounded-lg bg-accent px-5 py-2 text-sm font-bold text-text-primary transition-colors hover:bg-accent/80">
+          {isGathering ? t('home.gatheringConfirm') : t('home.attendedConfirm')} 🤘
         </button>
       </div>
     )
   }
 
-  return (
+  return going ? (
+    <div className="rounded-xl border border-green-800/50 bg-green-900/15 p-4 text-center">
+      <p className="text-base font-bold text-green-400">{t('home.goingConfirmed')} 🤘</p>
+      <p className="mt-0.5 text-xs text-text-muted">{t('home.goingDate')}</p>
+      <button onClick={undo} className="mt-2 text-[10px] text-text-muted underline underline-offset-2 hover:text-text-secondary">
+        {t('home.goingUndo')}
+      </button>
+    </div>
+  ) : (
     <div className="rounded-xl border border-accent/30 bg-accent/5 p-4 text-center">
       <p className="text-sm font-bold text-text-primary">{t('home.goingTitle')}</p>
-      <p className="mt-0.5 text-xs text-text-muted">{t('home.goingSubtitle')}</p>
-      <button
-        onClick={confirm}
-        className="mt-3 rounded-lg bg-accent px-5 py-2 text-sm font-bold text-text-primary transition-colors hover:bg-accent/80"
-      >
+      <p className="mt-0.5 text-xs text-text-muted">{t('home.goingSubtitle', { year })}</p>
+      <button onClick={confirm} className="mt-3 rounded-lg bg-accent px-5 py-2 text-sm font-bold text-text-primary transition-colors hover:bg-accent/80">
         {t('home.goingConfirm')} 🤘
       </button>
     </div>
