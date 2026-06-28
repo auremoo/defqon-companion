@@ -318,13 +318,6 @@ export default function Home() {
           )
         })()}
 
-        {/* Logo origin */}
-        <div className="rounded-xl border border-border bg-surface-card p-4">
-          <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-text-muted">{t('home.logoTitle')}</p>
-          <p className="text-xs leading-relaxed text-text-secondary">{t('home.logoDefcon')}</p>
-          <p className="mt-2 text-xs leading-relaxed text-text-secondary">{t('home.logoQ')}</p>
-        </div>
-
         {/* Attendance history — bar chart */}
         {(() => {
           const maxTotal = Math.max(...attendanceHistory.filter(e => e.total).map(e => e.total!))

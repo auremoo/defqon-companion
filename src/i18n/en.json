@@ -69,10 +69,7 @@
     "buyTickets": "Buy Tickets",
     "officialLineup": "Official Lineup",
     "qdanceApp": "Q-dance App",
-    "moreFeatures": "All features",
-    "logoTitle": "Behind the logo",
-    "logoDefcon": "\"Defqon\" comes from DEFCON — the US military's Defense Readiness Condition scale. DEFCON 1 is the most extreme alert level. The name signals maximum intensity, exactly matching the energy of hardstyle. The \".1\" confirms the ambition: to be number one.",
-    "logoQ": "The Q in Q-dance? On a DJ mixer, a knob rotated 120° to the right traces the letter Q — symbolising quality. Four arrows converging inward on the logo represent the unity of festival-goers."
+    "moreFeatures": "All features"
   },
   "festival": {
     "hubTitle": "Festival",
@@ -169,6 +166,9 @@
     "subtitle": "Everything you need to know before your first Defqon.1",
     "history": {
       "title": "History of Defqon.1",
+      "logoTitle": "Behind the Logo",
+      "logoDefcon": "\"Defqon\" is a stylisation of DEFCON — the US military's Defense Readiness Condition scale. DEFCON 1 is the highest alert level, signalling maximum intensity. The \".1\" doubles down on that ambition: to be number one.",
+      "logoQ": "The Q in Q-dance comes from a DJ mixer knob: rotated 120° to the right, the arc it traces forms the letter Q — standing for quality.",
       "originTitle": "Origin of the Name",
       "originText": "The name Defqon.1 comes from DEFCON, the American military alert level system. It's a stylization of DEFCON 1, which represents the maximum alert level. The idea behind this name is to convey an image of power, intensity and maximum tension, in line with the very hard and energetic universe of the festival.",
       "whyOneTitle": "Why the Number \"1\"?",

@@ -1,11 +1,12 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { SparklesIcon, BrainIcon, GridIcon, HistoryIcon } from '../components/Icons'
+import { SparklesIcon, BrainIcon, GridIcon, HistoryIcon, BookIcon } from '../components/Icons'
 import PageShell from '../components/PageShell'
 
 const features = [
   { to: '/discover',    Icon: SparklesIcon, titleKey: 'discover.title',    subtitleKey: 'discover.subtitle',    color: '#e040a0' },
+  { to: '/guide',       Icon: BookIcon,     titleKey: 'guide.title',       subtitleKey: 'guide.subtitle',       color: '#4a90d9' },
   { to: '/quiz',        Icon: BrainIcon,    titleKey: 'quiz.title',        subtitleKey: 'quiz.subtitle',        color: '#7c3aed' },
   { to: '/bingo',       Icon: GridIcon,     titleKey: 'bingo.title',       subtitleKey: 'bingo.subtitle',       color: '#d4a20a' },
   { to: '/my-editions', Icon: HistoryIcon,  titleKey: 'myEditions.title',  subtitleKey: 'myEditions.subtitle',  color: '#6b7280' },

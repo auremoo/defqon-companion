@@ -2,11 +2,10 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import PageShell from '../components/PageShell'
-import { CalendarIcon, PaletteIcon, BookIcon, ChecklistIcon, CloudSunIcon, WalletIcon, ChevronRightIcon } from '../components/Icons'
+import { CalendarIcon, PaletteIcon, ChecklistIcon, CloudSunIcon, WalletIcon, ChevronRightIcon } from '../components/Icons'
 
 const secondaryFeatures = [
   { to: '/colors',    Icon: PaletteIcon,   titleKey: 'nav.colors',      descKey: 'festival.colorsDesc',    color: '#e040a0' },
-  { to: '/guide',     Icon: BookIcon,      titleKey: 'guide.title',     descKey: 'festival.guideDesc',     color: '#4a90d9' },
   { to: '/checklist', Icon: ChecklistIcon, titleKey: 'checklist.title', descKey: 'festival.checklistDesc', color: '#16a34a' },
   { to: '/weather',   Icon: CloudSunIcon,  titleKey: 'weather.title',   descKey: 'festival.weatherDesc',   color: '#1d86c7' },
   { to: '/budget',    Icon: WalletIcon,    titleKey: 'budget.title',    descKey: 'festival.budgetDesc',    color: '#d97706' },

@@ -69,10 +69,7 @@
     "officialLineup": "Lineup officiel",
     "qdanceApp": "App Q-dance",
     "moreSection": "Explorer plus",
-    "moreFeatures": "Toutes les fonctionnalités",
-    "logoTitle": "Derrière le logo",
-    "logoDefcon": "« Defqon » vient de DEFCON — l'échelle de préparation militaire américaine (Defense Readiness Condition). Le DEFCON 1 est le niveau d'alerte maximale. Le nom signale une intensité maximale, en parfait accord avec l'énergie du hardstyle. Le « .1 » confirme l'ambition : être numéro un.",
-    "logoQ": "Le Q de Q-dance ? Sur une console de DJ, un bouton tourné de 120° vers la droite trace la lettre Q — symbole de qualité. Les quatre flèches qui convergent vers l'intérieur sur le logo représentent l'unité des festivaliers."
+    "moreFeatures": "Toutes les fonctionnalités"
   },
   "festival": {
     "hubTitle": "Festival",
@@ -169,6 +166,9 @@
     "subtitle": "Tout ce qu\u2019il faut savoir avant ton premier Defqon.1",
     "history": {
       "title": "Histoire de Defqon.1",
+      "logoTitle": "Derrière le logo",
+      "logoDefcon": "« Defqon » est une stylisation de DEFCON — l'échelle d'alerte militaire américaine (Defense Readiness Condition). Le DEFCON 1 est le niveau d'alerte maximal, qui signale une intensité maximale. Le « .1 » renforce cette ambition : être numéro un.",
+      "logoQ": "Le Q de Q-dance vient d'un bouton de table de mixage : tourné de 120° vers la droite, l'arc qu'il trace forme la lettre Q — symbole de qualité.",
       "originTitle": "Origine du nom",
       "originText": "Le nom Defqon.1 vient de DEFCON, le syst\u00e8me d\u2019alerte militaire am\u00e9ricain. C\u2019est une stylisation de DEFCON 1, le niveau d\u2019alerte maximal. L\u2019id\u00e9e : transmettre une image de puissance, d\u2019intensit\u00e9 et de tension maximale, \u00e0 l\u2019image de l\u2019univers du festival.",
       "whyOneTitle": "Pourquoi le chiffre \u00ab\u00a01\u00a0\u00bb ?",
