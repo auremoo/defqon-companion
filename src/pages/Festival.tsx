@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import PageShell from '../components/PageShell'
 import { CalendarIcon, PaletteIcon, ChecklistIcon, CloudSunIcon, WalletIcon, ChevronRightIcon } from '../components/Icons'
+import ThePathWidget from '../components/ThePathWidget'
 
 const secondaryFeatures = [
   { to: '/colors',    Icon: PaletteIcon,   titleKey: 'nav.colors',      descKey: 'festival.colorsDesc',    color: '#e040a0' },
@@ -34,6 +35,9 @@ export default function Festival() {
           </div>
           <ChevronRightIcon size={18} className="shrink-0 text-accent transition-transform group-hover:translate-x-0.5" />
         </Link>
+
+        {/* The Path — Q-dance XP tracker */}
+        <ThePathWidget />
 
         {/* Secondary features grid */}
         <div className="grid grid-cols-2 gap-2.5">

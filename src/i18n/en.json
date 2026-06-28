@@ -596,5 +596,28 @@
   "more": {
     "title": "Features",
     "subtitle": "All tools for the festival"
+  },
+  "path": {
+    "label": "The Path",
+    "empty": "Not set up yet",
+    "update": "Update",
+    "setup": "Set up",
+    "rank": "Rank",
+    "rankTitle": "Title",
+    "totalXP": "Total XP",
+    "nextRankXP": "XP for next rank",
+    "badges": "Badges",
+    "badge": {
+      "orange": "Orange",
+      "gold": "Gold",
+      "silver": "Silver",
+      "bronze": "Bronze"
+    },
+    "toNextRank": "to next rank",
+    "cancel": "Cancel",
+    "save": "Save",
+    "saved": "Saved",
+    "nextMilestone": "Next milestone",
+    "rank3Choice": "Choose: Berserker, Guardian or Shaman"
   }
 }
