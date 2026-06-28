@@ -35,32 +35,32 @@ export interface AttendanceEntry {
   note?: string       // optional context
 }
 
-// Sources: Omroep Flevoland, FindYourSounds, EDM Identity, Q-dance press releases
+// Sources: Wikipedia, Omroep Flevoland, FindYourSounds, EDM Identity, Q-dance press releases
 // Update after each edition with official Q-dance press release figures.
-// Note: figures vary by source (day-count vs unique visitors vs total headcount).
+// 2003–2010: Almeerderstrand, Almere, NL. 2011+: Biddinghuizen (Walibi Holland), NL.
 export const attendanceHistory: AttendanceEntry[] = [
-  { year: 2003, note: 'Première édition — Ahoy Rotterdam (indoor)' },
-  { year: 2004, note: 'Indoor' },
-  { year: 2005, note: 'Indoor' },
-  { year: 2006, note: 'Indoor' },
-  { year: 2007, note: 'Indoor' },
+  { year: 2003, total: 8_000,  note: 'Première édition — Almere' },
+  { year: 2004 },
+  { year: 2005 },
+  { year: 2006 },
+  { year: 2007 },
   { year: 2008 },
   { year: 2009 },
-  { year: 2010 },
-  { year: 2011 },
+  { year: 2010, total: 40_000, note: 'Sold out en 39 min — Almere' },
+  { year: 2011, note: 'Déménagement à Biddinghuizen' },
   { year: 2012 },
   { year: 2013 },
-  { year: 2014 },
-  { year: 2015, total: 60_000, note: '13e édition · Omroep Flevoland' },
+  { year: 2014, total: 55_000 },
+  { year: 2015, total: 60_000, note: '13e édition' },
   { year: 2016 },
   { year: 2017 },
   { year: 2018 },
-  { year: 2019, total: 77_000, note: 'Record de l\'époque · Omroep Flevoland (année approx.)' },
+  { year: 2019, total: 77_000, note: 'Record all-time à cette date' },
   { year: 2020, cancelled: true, note: 'COVID-19' },
   { year: 2021, cancelled: true, note: 'COVID-19' },
-  { year: 2022, total: 100_000, note: 'Retour en présentiel — capacité réduite' },
-  { year: 2023, total: 100_000, note: 'Source : EDM Identity' },
-  { year: 2024, total: 250_000, note: '20e anniversaire · record all-time ✓' },
+  { year: 2022, total: 100_000, note: 'Retour en présentiel' },
+  { year: 2023, total: 100_000 },
+  { year: 2024, total: 250_000, note: '20e anniversaire · record all-time' },
   { year: 2025 },
   { year: 2026, cancelled: true, note: 'Code Rouge chaleur (38–40 °C)' },
 ]
