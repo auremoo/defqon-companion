@@ -3,8 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { useAuth } from '../contexts/AuthContext'
 import { db } from '../lib/firebase'
 import {
-  collection, doc, getDocs, setDoc, deleteDoc, query, where,
-  onSnapshot, getDoc,
+  collection, doc, getDocs, setDoc, deleteDoc, query, where, onSnapshot, getDoc,
 } from 'firebase/firestore'
 import { UsersIcon, FlameIcon, SnowflakeIcon } from '../components/Icons'
 import PageShell from '../components/PageShell'
@@ -346,16 +345,20 @@ export default function Timetable() {
     })
   }, [edition.year])
 
-  // Charger les sets sauvegardés depuis Firestore
+  // Sync saved sets with Firestore in real-time
   useEffect(() => {
     if (!db || !user) return
-    getDocs(query(
-      collection(db, 'timetable_entries'),
-      where('user_id', '==', user.uid),
-      where('edition_year', '==', edition.year)
-    )).then((snaps) => {
-      if (!snaps.empty) setSavedSets(snaps.docs.map((d) => d.data().set_id as string))
-    })
+    const unsub = onSnapshot(
+      query(
+        collection(db, 'timetable_entries'),
+        where('user_id', '==', user.uid),
+        where('edition_year', '==', edition.year)
+      ),
+      (snaps) => {
+        setSavedSets(snaps.docs.map((d) => d.data().set_id as string))
+      }
+    )
+    return unsub
   }, [user, edition.year])
 
   // Écouter en temps réel les sets des buddies
@@ -410,16 +413,24 @@ export default function Timetable() {
     if (isSaved) {
       setSavedSets((prev) => prev.filter((id) => id !== setId))
       if (db && user) {
-        await deleteDoc(doc(db, 'timetable_entries', `${user.uid}_${edition.year}_${setId}`))
+        try {
+          await deleteDoc(doc(db, 'timetable_entries', `${user.uid}_${edition.year}_${setId}`))
+        } catch {
+          setSavedSets((prev) => [...prev, setId])
+        }
       }
     } else {
       setSavedSets((prev) => [...prev, setId])
       if (db && user) {
-        await setDoc(doc(db, 'timetable_entries', `${user.uid}_${edition.year}_${setId}`), {
-          user_id: user.uid,
-          set_id: setId,
-          edition_year: edition.year,
-        })
+        try {
+          await setDoc(doc(db, 'timetable_entries', `${user.uid}_${edition.year}_${setId}`), {
+            user_id: user.uid,
+            set_id: setId,
+            edition_year: edition.year,
+          })
+        } catch {
+          setSavedSets((prev) => prev.filter((id) => id !== setId))
+        }
       }
     }
   }
