@@ -2,12 +2,11 @@ import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { ExternalLinkIcon } from '../components/Icons'
 import PageShell from '../components/PageShell'
+import { festival } from '../data/festival'
 
-// Biddinghuizen, Netherlands coordinates
 const LAT = 52.4508
 const LON = 5.7181
 
-// WMO weather code → emoji + label
 function decodeWeather(code: number): { emoji: string; label: string } {
   if (code === 0) return { emoji: '☀️', label: 'Clear sky' }
   if (code === 1) return { emoji: '🌤️', label: 'Mainly clear' }
@@ -38,20 +37,29 @@ interface CurrentWeather {
   windspeed: number
 }
 
-// Historical averages for Biddinghuizen, late June
-const historicalNorms: DayForecast[] = [
-  { date: '2026-06-25', label: 'Thursday', weatherCode: 2, tempMax: 20, tempMin: 13, rainProbability: 40 },
-  { date: '2026-06-26', label: 'Friday', weatherCode: 1, tempMax: 21, tempMin: 13, rainProbability: 35 },
-  { date: '2026-06-27', label: 'Saturday', weatherCode: 2, tempMax: 22, tempMin: 14, rainProbability: 42 },
-  { date: '2026-06-28', label: 'Sunday', weatherCode: 3, tempMax: 19, tempMin: 12, rainProbability: 50 },
-]
+// Compute festival dates from festival data
+const festivalStart = new Date(festival.startDate)
+const festivalDates = Array.from({ length: 4 }, (_, i) => {
+  const d = new Date(festivalStart)
+  d.setDate(d.getDate() + i)
+  return d.toISOString().slice(0, 10)
+})
 
-const festivalDates = ['2026-06-25', '2026-06-26', '2026-06-27', '2026-06-28']
+// Historical averages for late June in Biddinghuizen
+const historicalNorms: DayForecast[] = festivalDates.map((date, i) => ({
+  date,
+  label: ['Thursday', 'Friday', 'Saturday', 'Sunday'][i],
+  weatherCode: [2, 1, 2, 3][i],
+  tempMax: [20, 21, 22, 19][i],
+  tempMin: [13, 13, 14, 12][i],
+  rainProbability: [40, 35, 42, 50][i],
+}))
 
-// Days until forecast is available (Open-Meteo gives 16 days)
+// 16-day forecast window opens 16 days before festival start
 function daysUntilForecast(): number {
   const today = new Date()
-  const forecastStart = new Date('2026-06-09') // 16 days before Jun 25
+  const forecastStart = new Date(festivalStart)
+  forecastStart.setDate(forecastStart.getDate() - 16)
   return Math.max(0, Math.ceil((forecastStart.getTime() - today.getTime()) / 86_400_000))
 }
 
@@ -95,7 +103,6 @@ export default function Weather() {
         windspeed: Math.round(data.current.windspeed_10m),
       })
 
-      // Try to extract festival dates from forecast
       const dailyDates: string[] = data.daily.time
       const forecastMap: Record<string, DayForecast> = {}
       dailyDates.forEach((date: string, i: number) => {
@@ -129,18 +136,15 @@ export default function Weather() {
   const maxRain = Math.max(...displayForecast.map((d) => d.rainProbability))
 
   return (
-    <PageShell
-      title={t('weather.title')}
-      subtitle={t('weather.subtitle')}
-    >
+    <PageShell title={t('weather.title')} subtitle={t('weather.subtitle')}>
       <div className="mx-auto w-full max-w-md space-y-4 pb-4">
 
         {/* Current weather */}
         <div className="rounded-xl border border-border bg-surface-card p-4">
-          <p className="mb-1 text-xs font-semibold uppercase tracking-widest text-text-muted">Now in Biddinghuizen</p>
-          {loading && <p className="text-sm text-text-muted">Loading...</p>}
+          <p className="mb-1 text-xs font-semibold uppercase tracking-widest text-text-muted">{t('weather.now')}</p>
+          {loading && <p className="text-sm text-text-muted">{t('weather.loading')}</p>}
           {error && !loading && (
-            <p className="text-sm text-text-muted">Could not load live data. Check your connection.</p>
+            <p className="text-sm text-text-muted">{t('weather.error')}</p>
           )}
           {current && !loading && (
             <div className="flex items-center gap-4">
@@ -148,35 +152,31 @@ export default function Weather() {
               <div>
                 <p className="text-2xl font-bold text-text-primary">{current.temp}°C</p>
                 <p className="text-sm text-text-secondary">{decodeWeather(current.weatherCode).label}</p>
-                <p className="text-xs text-text-muted">Wind {current.windspeed} km/h</p>
+                <p className="text-xs text-text-muted">{t('weather.wind', { speed: current.windspeed })}</p>
               </div>
             </div>
           )}
         </div>
 
-        {/* Festival forecast banner */}
+        {/* Forecast status banner */}
         {!isRealForecast && (
           <div className="rounded-xl border border-accent/30 bg-accent/10 p-3">
             <p className="text-xs font-medium text-accent">
-              {forecastAvailable
-                ? 'Festival forecast should be available — check again soon.'
-                : `Festival forecast unlocks in ~${daysLeft} days (around June 9)`}
+              {forecastAvailable ? t('weather.forecastSoon') : t('weather.forecastUnlocks', { days: daysLeft })}
             </p>
-            <p className="mt-0.5 text-[11px] text-text-muted">
-              Showing historical averages for late June in Biddinghuizen.
-            </p>
+            <p className="mt-0.5 text-[11px] text-text-muted">{t('weather.historicalNote')}</p>
           </div>
         )}
         {isRealForecast && (
           <div className="rounded-xl border border-green-500/30 bg-green-500/10 p-3">
-            <p className="text-xs font-medium text-green-400">Live forecast — updated daily</p>
+            <p className="text-xs font-medium text-green-400">{t('weather.liveForecast')}</p>
           </div>
         )}
 
         {/* Festival days forecast */}
         <div>
           <h2 className="defqon-heading mb-2 text-xs tracking-widest text-text-muted">
-            {isRealForecast ? 'Festival Forecast (June 25–28)' : 'Historical Averages (June 25–28)'}
+            {isRealForecast ? t('weather.festivalForecast') : t('weather.historicalAvg')}
           </h2>
           <div className="grid grid-cols-2 gap-2">
             {displayForecast.map((day) => {
@@ -187,19 +187,14 @@ export default function Weather() {
                   <p className="text-[11px] text-text-muted">Jun {day.date.slice(8)}</p>
                   <div className="my-2 text-2xl">{w.emoji}</div>
                   <p className="text-xs font-medium text-text-secondary">{w.label}</p>
-                  <p className="mt-1 text-sm font-bold text-text-primary">
-                    {day.tempMax}° / {day.tempMin}°C
-                  </p>
+                  <p className="mt-1 text-sm font-bold text-text-primary">{day.tempMax}° / {day.tempMin}°C</p>
                   <div className="mt-1.5 flex items-center gap-1.5">
                     <div className="h-1 flex-1 overflow-hidden rounded-full bg-surface-alt">
-                      <div
-                        className="h-full rounded-full bg-blue-500"
-                        style={{ width: `${day.rainProbability}%` }}
-                      />
+                      <div className="h-full rounded-full bg-blue-500" style={{ width: `${day.rainProbability}%` }} />
                     </div>
                     <span className="text-[10px] text-text-muted">{day.rainProbability}%</span>
                   </div>
-                  <p className="mt-0.5 text-[10px] text-text-muted">rain chance</p>
+                  <p className="mt-0.5 text-[10px] text-text-muted">{t('weather.rainChance')}</p>
                 </div>
               )
             })}
@@ -208,7 +203,7 @@ export default function Weather() {
 
         {/* Advice */}
         <div className="rounded-xl border border-border bg-surface-card p-4">
-          <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-text-muted">Pack advice</p>
+          <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-text-muted">{t('weather.packAdvice')}</p>
           <p className="text-sm text-text-secondary">{rainAdvice(maxRain)}</p>
           <ul className="mt-3 space-y-1.5">
             {maxRain >= 40 && (
@@ -234,7 +229,7 @@ export default function Weather() {
 
         {/* Official weather links */}
         <div>
-          <h2 className="defqon-heading mb-2 text-xs tracking-widest text-text-muted">External Forecasts</h2>
+          <h2 className="defqon-heading mb-2 text-xs tracking-widest text-text-muted">{t('weather.externalForecasts')}</h2>
           <div className="space-y-2">
             {[
               { label: 'Buienradar (NL)', url: 'https://www.buienradar.nl/weer/biddinghuizen/nl/2756521', desc: 'Dutch rain radar — best for hourly precision' },

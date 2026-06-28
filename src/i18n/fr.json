@@ -66,6 +66,7 @@
     "buyTickets": "Acheter des billets",
     "officialLineup": "Lineup officiel",
     "qdanceApp": "App Q-dance",
+    "moreSection": "Explorer plus",
     "moreFeatures": "Toutes les fonctionnalités"
   },
   "colors": {
@@ -475,7 +476,10 @@
     "popular": "Coups de c\u0153ur des fans",
     "buildProfile": "Construis ton profil",
     "buildProfileDesc": "Ajoute des couleurs en favoris ou sauvegarde des sets \u2014 on sugg\u00e8rera ce que tu rates.",
-    "openTimetable": "Ouvrir le programme pour sauvegarder des sets"
+    "openTimetable": "Ouvrir le programme pour sauvegarder des sets",
+    "favoriteStageReason": "Tu as mis la scène {{stage}} en favori",
+    "similarReason": "{{subgenre}} — similaire à ce que tu écoutes",
+    "fanFavourite": "Artiste favori des fans"
   },
   "bingo": {
     "title": "Bingo Festival",
@@ -486,7 +490,9 @@
     "newCardConfirm": "G\u00e9n\u00e9rer une nouvelle carte ?",
     "newCardWarning": "Ta progression actuelle sera perdue.",
     "cancel": "Annuler",
-    "tip": "Appuie sur une case pour la cocher. 5 en ligne = BINGO !"
+    "tip": "Appuie sur une case pour la cocher. 5 en ligne = BINGO !",
+    "shareTextBingo": "J'ai fait BINGO à Defqon.1 {{year}} ! 🎉 {{checked}}/{{total}} cases. #Defqon1",
+    "shareTextProgress": "Bingo Festival Defqon.1 {{year}} — {{checked}}/{{total}} cases ! #Defqon1"
   },
   "weather": {
     "title": "M\u00e9t\u00e9o",
@@ -499,7 +505,11 @@
     "liveForecast": "Pr\u00e9visions en direct \u2014 mises \u00e0 jour quotidiennement",
     "rainChance": "risque de pluie",
     "packAdvice": "Conseils d\u2019emballage",
-    "externalForecasts": "M\u00e9t\u00e9os externes"
+    "externalForecasts": "M\u00e9t\u00e9os externes",
+    "error": "Impossible de charger la m\u00e9t\u00e9o. V\u00e9rifie ta connexion.",
+    "wind": "Vent {{speed}} km/h",
+    "forecastSoon": "Les pr\u00e9visions festival devraient \u00eatre disponibles \u2014 r\u00e9essaie bient\u00f4t.",
+    "historicalNote": "Moyennes historiques pour fin juin \u00e0 Biddinghuizen."
   },
   "quiz": {
     "title": "Quiz Hardstyle",
@@ -535,7 +545,12 @@
     "tapToSet": "Appuyer pour saisir",
     "save": "Enregistrer",
     "moneyTips": "Astuces \u00e9conomies",
-    "budgetUsed": "% du budget utilis\u00e9"
+    "budgetUsed": "du budget utilis\u00e9",
+    "tip1": "Les points de remplissage d'eau sont gratuits \u2014 prends une gourde r\u00e9utilisable.",
+    "tip2": "Ach\u00e8te des jetons boissons en ligne pour \u00e9viter les files et \u00e9conomiser ~10 %.",
+    "tip3": "Le merch officiel part vite \u2014 ach\u00e8te t\u00f4t le vendredi.",
+    "tip4": "Faire ses courses au supermarch\u00e9 du camping revient moins cher que la nourriture du festival.",
+    "tip5": "Le covoiturage depuis les grandes villes r\u00e9duit consid\u00e9rablement les frais de transport."
   },
   "news": {
     "title": "Actus",
@@ -548,7 +563,8 @@
     "noResults": "Rien dans cette catégorie.",
     "noEvents": "Aucun événement à venir.",
     "moreOnYouTube": "Plus sur YouTube",
-    "moreOnHardstyle": "Plus sur hardstyle.com"
+    "moreOnHardstyle": "Plus sur hardstyle.com",
+    "qdanceEvent": "Q-dance"
   },
   "more": {
     "title": "Fonctionnalités",

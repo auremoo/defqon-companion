@@ -1,6 +1,10 @@
 import { useState, useEffect, useCallback } from 'react'
+import { useTranslation } from 'react-i18next'
 import PageShell from '../components/PageShell'
 import { WalletIcon, PlusIcon, XIcon } from '../components/Icons'
+import { festival } from '../data/festival'
+
+const STORAGE_KEY = `defqon-budget-${festival.year}`
 
 interface BudgetCategory {
   id: string
@@ -22,10 +26,9 @@ const defaultCategories: BudgetCategory[] = [
 
 function loadBudget(): BudgetCategory[] {
   try {
-    const raw = localStorage.getItem('defqon-budget-2026')
+    const raw = localStorage.getItem(STORAGE_KEY)
     if (!raw) return defaultCategories
     const saved: BudgetCategory[] = JSON.parse(raw)
-    // Merge with defaults so new categories appear
     return defaultCategories.map((def) => {
       const found = saved.find((s) => s.id === def.id)
       return found ? { ...def, planned: found.planned, spent: found.spent } : def
@@ -36,10 +39,11 @@ function loadBudget(): BudgetCategory[] {
 }
 
 function saveBudget(cats: BudgetCategory[]) {
-  localStorage.setItem('defqon-budget-2026', JSON.stringify(cats))
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(cats))
 }
 
 export default function Budget() {
+  const { t } = useTranslation()
   const [categories, setCategories] = useState<BudgetCategory[]>(loadBudget)
   const [editing, setEditing] = useState<string | null>(null)
   const [editValues, setEditValues] = useState({ planned: '', spent: '' })
@@ -63,11 +67,7 @@ export default function Budget() {
     setCategories((prev) => {
       const next = prev.map((c) =>
         c.id === editing
-          ? {
-              ...c,
-              planned: parseFloat(editValues.planned) || 0,
-              spent: parseFloat(editValues.spent) || 0,
-            }
+          ? { ...c, planned: parseFloat(editValues.planned) || 0, spent: parseFloat(editValues.spent) || 0 }
           : c
       )
       saveBudget(next)
@@ -84,35 +84,32 @@ export default function Budget() {
   }
 
   const tips = [
-    'Festival water refill stations are free — bring a reusable bottle.',
-    'Pre-buy drinks tokens online to skip queues and save ~10%.',
-    'Official merch sells out fast — buy early on Friday.',
-    'Camping supermarket runs are cheaper than festival food.',
-    'Rideshare from major cities cuts travel cost significantly.',
+    t('budget.tip1'),
+    t('budget.tip2'),
+    t('budget.tip3'),
+    t('budget.tip4'),
+    t('budget.tip5'),
   ]
 
   return (
-    <PageShell
-      title="Festival Budget"
-      subtitle="Track your Defqon.1 2026 spending"
-    >
+    <PageShell title={t('budget.title')} subtitle={t('budget.subtitle')}>
       <div className="mx-auto w-full max-w-md space-y-4 pb-4">
 
         {/* Summary card */}
         <div className="rounded-xl border border-border bg-surface-card p-4">
           <div className="grid grid-cols-3 gap-3 text-center">
             <div>
-              <p className="text-xs text-text-muted">Planned</p>
+              <p className="text-xs text-text-muted">{t('budget.planned')}</p>
               <p className="text-lg font-bold text-text-primary">€{totalPlanned.toFixed(0)}</p>
             </div>
             <div>
-              <p className="text-xs text-text-muted">Spent</p>
+              <p className="text-xs text-text-muted">{t('budget.spent')}</p>
               <p className={`text-lg font-bold ${totalSpent > totalPlanned && totalPlanned > 0 ? 'text-red-400' : 'text-text-primary'}`}>
                 €{totalSpent.toFixed(0)}
               </p>
             </div>
             <div>
-              <p className="text-xs text-text-muted">Remaining</p>
+              <p className="text-xs text-text-muted">{t('budget.remaining')}</p>
               <p className={`text-lg font-bold ${remaining < 0 ? 'text-red-400' : 'text-green-400'}`}>
                 {remaining < 0 ? '-' : ''}€{Math.abs(remaining).toFixed(0)}
               </p>
@@ -128,7 +125,7 @@ export default function Budget() {
                 />
               </div>
               <p className="mt-1 text-right text-[11px] text-text-muted">
-                {Math.round((totalSpent / totalPlanned) * 100)}% of budget used
+                {Math.round((totalSpent / totalPlanned) * 100)}% {t('budget.budgetUsed')}
               </p>
             </div>
           )}
@@ -137,12 +134,9 @@ export default function Budget() {
         {/* Category rows */}
         <div className="space-y-2">
           <div className="flex items-center justify-between">
-            <h2 className="defqon-heading text-xs tracking-widest text-text-muted">Categories</h2>
-            <button
-              onClick={reset}
-              className="text-[11px] text-text-muted underline underline-offset-2"
-            >
-              Reset all
+            <h2 className="defqon-heading text-xs tracking-widest text-text-muted">{t('budget.categories')}</h2>
+            <button onClick={reset} className="text-[11px] text-text-muted underline underline-offset-2">
+              {t('budget.resetAll')}
             </button>
           </div>
 
@@ -151,11 +145,7 @@ export default function Budget() {
             const over = cat.spent > cat.planned && cat.planned > 0
 
             return (
-              <div
-                key={cat.id}
-                className="overflow-hidden rounded-xl border border-border bg-surface-card"
-                style={{ borderLeft: `3px solid ${cat.color}` }}
-              >
+              <div key={cat.id} className="overflow-hidden rounded-xl border border-border bg-surface-card" style={{ borderLeft: `3px solid ${cat.color}` }}>
                 {editing === cat.id ? (
                   <div className="p-3">
                     <div className="mb-2 flex items-center gap-2">
@@ -167,40 +157,30 @@ export default function Budget() {
                     </div>
                     <div className="grid grid-cols-2 gap-2">
                       <div>
-                        <label className="text-[11px] text-text-muted">Planned (€)</label>
+                        <label className="text-[11px] text-text-muted">{t('budget.planned')} (€)</label>
                         <input
-                          type="number"
-                          min="0"
-                          value={editValues.planned}
+                          type="number" min="0" value={editValues.planned}
                           onChange={(e) => setEditValues((v) => ({ ...v, planned: e.target.value }))}
                           placeholder="0"
                           className="mt-1 w-full rounded-lg border border-border bg-surface-alt px-2.5 py-2 text-sm text-text-primary outline-none focus:border-accent"
                         />
                       </div>
                       <div>
-                        <label className="text-[11px] text-text-muted">Spent (€)</label>
+                        <label className="text-[11px] text-text-muted">{t('budget.spent')} (€)</label>
                         <input
-                          type="number"
-                          min="0"
-                          value={editValues.spent}
+                          type="number" min="0" value={editValues.spent}
                           onChange={(e) => setEditValues((v) => ({ ...v, spent: e.target.value }))}
                           placeholder="0"
                           className="mt-1 w-full rounded-lg border border-border bg-surface-alt px-2.5 py-2 text-sm text-text-primary outline-none focus:border-accent"
                         />
                       </div>
                     </div>
-                    <button
-                      onClick={saveEdit}
-                      className="mt-2 w-full rounded-lg bg-accent py-2 text-xs font-bold text-white"
-                    >
-                      Save
+                    <button onClick={saveEdit} className="mt-2 w-full rounded-lg bg-accent py-2 text-xs font-bold text-white">
+                      {t('budget.save')}
                     </button>
                   </div>
                 ) : (
-                  <button
-                    className="flex w-full items-center gap-3 p-3 text-left"
-                    onClick={() => startEdit(cat)}
-                  >
+                  <button className="flex w-full items-center gap-3 p-3 text-left" onClick={() => startEdit(cat)}>
                     <span className="text-xl">{cat.emoji}</span>
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between">
@@ -209,8 +189,8 @@ export default function Budget() {
                           {cat.planned > 0
                             ? `€${cat.spent} / €${cat.planned}`
                             : cat.spent > 0
-                            ? `€${cat.spent} spent`
-                            : 'Tap to set'}
+                            ? `€${cat.spent} ${t('budget.spent').toLowerCase()}`
+                            : t('budget.tapToSet')}
                         </p>
                       </div>
                       {cat.planned > 0 && (
@@ -234,7 +214,7 @@ export default function Budget() {
         <div className="rounded-xl border border-border bg-surface-card p-4">
           <div className="flex items-center gap-2 mb-3">
             <WalletIcon size={16} className="text-accent" />
-            <p className="text-xs font-semibold uppercase tracking-widest text-text-muted">Money-saving tips</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-text-muted">{t('budget.moneyTips')}</p>
           </div>
           <ul className="space-y-2">
             {tips.map((tip, i) => (

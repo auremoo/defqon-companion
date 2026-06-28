@@ -1,10 +1,13 @@
 import { useState, useEffect, useCallback } from 'react'
+import { useTranslation } from 'react-i18next'
 import PageShell from '../components/PageShell'
 import { GridIcon, RefreshIcon, TrophyIcon, ShareIcon } from '../components/Icons'
 import { bingoItems } from '../data/bingo'
+import { festival } from '../data/festival'
 
 const GRID_SIZE = 5
-const FREE_INDEX = 12 // center of 5×5
+const FREE_INDEX = 12
+const STORAGE_KEY = `defqon-bingo-${festival.year}`
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr]
@@ -25,25 +28,20 @@ function generateCard(): string[] {
 function checkBingo(checked: boolean[]): boolean {
   const rows = GRID_SIZE
   const cols = GRID_SIZE
-
-  // Check rows
   for (let r = 0; r < rows; r++) {
     if (Array.from({ length: cols }, (_, c) => checked[r * cols + c]).every(Boolean)) return true
   }
-  // Check cols
   for (let c = 0; c < cols; c++) {
     if (Array.from({ length: rows }, (_, r) => checked[r * cols + c]).every(Boolean)) return true
   }
-  // Check diagonals
   if (Array.from({ length: rows }, (_, i) => checked[i * cols + i]).every(Boolean)) return true
   if (Array.from({ length: rows }, (_, i) => checked[i * cols + (cols - 1 - i)]).every(Boolean)) return true
-
   return false
 }
 
 function loadSaved(): { card: string[]; checked: boolean[] } | null {
   try {
-    const raw = localStorage.getItem('defqon-bingo-2026')
+    const raw = localStorage.getItem(STORAGE_KEY)
     if (!raw) return null
     return JSON.parse(raw)
   } catch {
@@ -52,6 +50,7 @@ function loadSaved(): { card: string[]; checked: boolean[] } | null {
 }
 
 export default function Bingo() {
+  const { t } = useTranslation()
   const [card, setCard] = useState<string[]>([])
   const [checked, setChecked] = useState<boolean[]>([])
   const [hasBingo, setHasBingo] = useState(false)
@@ -74,7 +73,9 @@ export default function Bingo() {
   }, [])
 
   const save = useCallback((c: string[], ch: boolean[]) => {
-    localStorage.setItem('defqon-bingo-2026', JSON.stringify({ card: c, checked: ch }))
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({ card: c, checked: ch }))
+    } catch {}
   }, [])
 
   const toggle = (i: number) => {
@@ -100,14 +101,14 @@ export default function Bingo() {
   }
 
   const checkedCount = checked.filter(Boolean).length
-  const totalCount = GRID_SIZE * GRID_SIZE - 1 // minus FREE
+  const totalCount = GRID_SIZE * GRID_SIZE - 1
 
   const shareCard = async () => {
     const text = hasBingo
-      ? `I got BINGO at Defqon.1 2026! 🎉 ${checkedCount}/${totalCount} squares checked. #Defqon1 #SacredOath`
-      : `Festival Bingo at Defqon.1 2026 — ${checkedCount}/${totalCount} squares checked! #Defqon1`
+      ? t('bingo.shareTextBingo', { year: festival.year, checked: checkedCount, total: totalCount })
+      : t('bingo.shareTextProgress', { year: festival.year, checked: checkedCount, total: totalCount })
     if (navigator.share) {
-      await navigator.share({ title: 'Defqon.1 Festival Bingo', text })
+      await navigator.share({ title: `Defqon.1 Festival Bingo`, text })
     } else {
       await navigator.clipboard.writeText(text)
     }
@@ -116,15 +117,12 @@ export default function Bingo() {
   if (card.length === 0) return null
 
   return (
-    <PageShell
-      title="Festival Bingo"
-      subtitle="Mark what you experience at Defqon.1 2026"
-    >
+    <PageShell title={t('bingo.title')} subtitle={t('bingo.subtitle')}>
       <div className="mx-auto w-full max-w-md space-y-4 pb-4">
         {/* Stats bar */}
         <div className="flex items-center justify-between rounded-xl border border-border bg-surface-card p-3">
           <div>
-            <p className="text-xs text-text-muted">Progress</p>
+            <p className="text-xs text-text-muted">{t('bingo.progress')}</p>
             <p className="text-sm font-bold text-text-primary">{checkedCount} / {totalCount}</p>
           </div>
           {hasBingo && (
@@ -139,14 +137,14 @@ export default function Bingo() {
               className="flex items-center gap-1.5 rounded-lg bg-surface-alt px-2.5 py-1.5 text-xs font-medium text-text-secondary"
             >
               <ShareIcon size={13} />
-              Share
+              {t('bingo.share')}
             </button>
             <button
               onClick={() => setShowConfirm(true)}
               className="flex items-center gap-1.5 rounded-lg bg-surface-alt px-2.5 py-1.5 text-xs font-medium text-text-secondary"
             >
               <RefreshIcon size={13} />
-              New
+              {t('bingo.newCard')}
             </button>
           </div>
         </div>
@@ -163,34 +161,30 @@ export default function Bingo() {
         {showConfirm && (
           <div className="rounded-xl border border-border bg-surface-card p-4 text-center">
             <GridIcon size={24} className="mx-auto mb-2 text-text-muted" />
-            <p className="text-sm font-semibold text-text-primary">Generate a new card?</p>
-            <p className="mt-1 text-xs text-text-muted">Your current progress will be lost.</p>
+            <p className="text-sm font-semibold text-text-primary">{t('bingo.newCardConfirm')}</p>
+            <p className="mt-1 text-xs text-text-muted">{t('bingo.newCardWarning')}</p>
             <div className="mt-3 flex justify-center gap-3">
               <button
                 onClick={() => setShowConfirm(false)}
                 className="rounded-lg bg-surface-alt px-4 py-2 text-xs font-medium text-text-secondary"
               >
-                Cancel
+                {t('bingo.cancel')}
               </button>
               <button
                 onClick={newCard}
                 className="rounded-lg bg-accent px-4 py-2 text-xs font-bold text-white"
               >
-                New Card
+                {t('bingo.newCard')}
               </button>
             </div>
           </div>
         )}
 
         {/* Bingo grid */}
-        <div
-          className="grid gap-1.5"
-          style={{ gridTemplateColumns: `repeat(${GRID_SIZE}, 1fr)` }}
-        >
+        <div className="grid gap-1.5" style={{ gridTemplateColumns: `repeat(${GRID_SIZE}, 1fr)` }}>
           {card.map((item, i) => {
             const isFree = i === FREE_INDEX
             const isChecked = checked[i]
-
             return (
               <button
                 key={i}
@@ -209,14 +203,9 @@ export default function Bingo() {
                 ) : (
                   <>
                     {isChecked && (
-                      <span className="mb-0.5 text-base leading-none text-accent">✓</span>
+                      <span className="mb-0.5 text-sm leading-none text-accent">✓</span>
                     )}
-                    <span
-                      className={`text-[9px] leading-tight ${
-                        isChecked ? 'font-semibold text-accent' : 'text-text-secondary'
-                      }`}
-                      style={{ fontSize: '8px' }}
-                    >
+                    <span className={`leading-tight text-[11px] ${isChecked ? 'font-semibold text-accent' : 'text-text-secondary'}`}>
                       {item}
                     </span>
                   </>
@@ -227,9 +216,7 @@ export default function Bingo() {
         </div>
 
         {/* Tip */}
-        <p className="text-center text-[11px] text-text-muted">
-          Tap a square to mark it. Get 5 in a row to win!
-        </p>
+        <p className="text-center text-[11px] text-text-muted">{t('bingo.tip')}</p>
       </div>
     </PageShell>
   )

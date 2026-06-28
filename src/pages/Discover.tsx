@@ -8,7 +8,6 @@ import { artists } from '../data/artists'
 import { stageColors, type Stage } from '../data/lineup'
 import { getCurrentEdition } from '../data/editions'
 
-// Map color IDs to stage names
 const colorToStage: Record<string, Stage> = {
   red: 'RED', blue: 'BLUE', black: 'BLACK', yellow: 'YELLOW',
   indigo: 'INDIGO', magenta: 'MAGENTA', silver: 'SILVER',
@@ -23,7 +22,6 @@ function getSavedSets(year: number): string[] {
   try { return JSON.parse(localStorage.getItem(`defqon-timetable-${year}`) || '[]') } catch { return [] }
 }
 
-// Extract stage from set ID (format: "{day}-{STAGE}-{index}")
 function stageFromId(id: string): Stage | null {
   const parts = id.split('-')
   if (parts.length < 3) return null
@@ -54,14 +52,11 @@ export default function Discover() {
   }, [edition.year])
 
   const { recommendations, profile, hasData } = useMemo(() => {
-    // Build taste profile from saved sets
     const stageCounts: Record<string, number> = {}
     for (const id of savedSets) {
       const stage = stageFromId(id)
       if (stage) stageCounts[stage] = (stageCounts[stage] || 0) + 1
     }
-
-    // Add weight from favorite colors
     for (const colorId of favorites) {
       const stage = colorToStage[colorId]
       if (stage) stageCounts[stage] = (stageCounts[stage] || 0) + 3
@@ -74,7 +69,6 @@ export default function Discover() {
 
     const hasData = favorites.length > 0 || savedSets.length > 0
 
-    // Build artist name set for saved sets
     const savedArtistNames = new Set(
       savedSets.map((id) => {
         const set = edition.lineup.find((s) => s.id === id)
@@ -82,7 +76,6 @@ export default function Discover() {
       })
     )
 
-    // Find recommendations: unsaved sets on user's top stages
     const recs: Recommendation[] = []
     const seen = new Set<string>()
 
@@ -93,8 +86,8 @@ export default function Discover() {
 
       const color = colors.find((c) => colorToStage[c.id] === stage)
       const reason = favorites.includes(color?.id ?? '')
-        ? `You favorited the ${stage} stage`
-        : `You saved ${stageCounts[stage]} set${stageCounts[stage] > 1 ? 's' : ''} on ${stage}`
+        ? t('discover.favoriteStageReason', { stage })
+        : t('discover.similarReason', { subgenre: stageCounts[stage] > 1 ? `${stageCounts[stage]} sets` : stage })
 
       for (const set of stageSets) {
         if (!seen.has(set.id)) {
@@ -113,7 +106,6 @@ export default function Discover() {
       }
     }
 
-    // Add some well-known artists not yet saved
     const knownArtists = artists.filter((a) => !savedArtistNames.has(a.name.toLowerCase()))
     for (const artist of knownArtists.slice(0, 5)) {
       const setInLineup = edition.lineup.find(
@@ -128,48 +120,26 @@ export default function Discover() {
           startTime: setInLineup.startTime,
           endTime: setInLineup.endTime,
           setId: setInLineup.id,
-          reason: `${artist.subgenre} — similar to what you like`,
+          reason: hasData
+            ? t('discover.similarReason', { subgenre: artist.subgenre })
+            : t('discover.fanFavourite'),
           reasonType: 'discovery',
         })
       }
     }
 
-    // If no profile data yet, return popular picks
-    if (!hasData) {
-      const popularPicks = ['Headhunterz', 'Angerfist', 'Sefa', 'D-Block & S-te-Fan', 'Rebelion', 'Wildstylez']
-      for (const name of popularPicks) {
-        const set = edition.lineup.find((s) => s.artist.toLowerCase().includes(name.toLowerCase()))
-        if (set && !seen.has(set.id)) {
-          seen.add(set.id)
-          recs.push({
-            artist: set.artist,
-            stage: set.stage,
-            day: set.day,
-            startTime: set.startTime,
-            endTime: set.endTime,
-            setId: set.id,
-            reason: 'Fan favourite artist',
-            reasonType: 'discovery',
-          })
-        }
-      }
-    }
-
     return { recommendations: recs.slice(0, 12), profile: topStages, hasData }
-  }, [favorites, savedSets, edition])
+  }, [favorites, savedSets, edition, t])
 
   const dayLabel = (day: string) => day.charAt(0).toUpperCase() + day.slice(1)
 
   return (
-    <PageShell
-      title={t('discover.title')}
-      subtitle={t('discover.subtitle')}
-    >
+    <PageShell title={t('discover.title')} subtitle={t('discover.subtitle')}>
       <div className="mx-auto w-full max-w-md space-y-5 pb-4">
         {/* Taste profile */}
         {profile.length > 0 && (
           <div className="rounded-xl border border-border bg-surface-card p-4">
-            <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-text-muted">Your stage profile</p>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-text-muted">{t('discover.stageProfile')}</p>
             <div className="flex flex-wrap gap-2">
               {profile.map((stage) => (
                 <span
@@ -182,7 +152,7 @@ export default function Discover() {
               ))}
             </div>
             <p className="mt-2 text-xs text-text-muted">
-              Based on {favorites.length} favorite color{favorites.length !== 1 ? 's' : ''} and {savedSets.length} saved set{savedSets.length !== 1 ? 's' : ''}
+              {t('discover.basedOn', { favorites: favorites.length, saved: savedSets.length })}
             </p>
           </div>
         )}
@@ -191,16 +161,14 @@ export default function Discover() {
         {!hasData && (
           <div className="rounded-xl border border-dashed border-border p-6 text-center">
             <SparklesIcon size={28} className="mx-auto mb-3 text-accent" />
-            <p className="text-sm font-medium text-text-primary">Build your taste profile</p>
-            <p className="mt-1 text-xs text-text-muted">
-              Favorite some color stages or save sets in your timetable — we'll suggest what you might be missing.
-            </p>
+            <p className="text-sm font-medium text-text-primary">{t('discover.buildProfile')}</p>
+            <p className="mt-1 text-xs text-text-muted">{t('discover.buildProfileDesc')}</p>
             <div className="mt-4 flex justify-center gap-3">
               <Link to="/colors" className="flex items-center gap-1.5 rounded-lg bg-surface-alt px-3 py-2 text-xs font-medium text-text-secondary">
-                <PaletteIcon size={14} /> Colors
+                <PaletteIcon size={14} /> {t('nav.colors')}
               </Link>
               <Link to="/timetable" className="flex items-center gap-1.5 rounded-lg bg-surface-alt px-3 py-2 text-xs font-medium text-text-secondary">
-                <CalendarIcon size={14} /> Timetable
+                <CalendarIcon size={14} /> {t('nav.timetable')}
               </Link>
             </div>
           </div>
@@ -210,7 +178,7 @@ export default function Discover() {
         {recommendations.length > 0 && (
           <div className="space-y-2.5">
             <h2 className="defqon-heading text-xs tracking-widest text-text-muted">
-              {hasData ? 'Recommended for you' : 'Fan favourites to start with'}
+              {hasData ? t('discover.recommended') : t('discover.popular')}
             </h2>
             {recommendations.map((rec) => (
               <div
@@ -250,7 +218,7 @@ export default function Discover() {
             className="flex items-center justify-center gap-2 rounded-xl border border-accent/30 bg-accent/10 py-3 text-sm font-semibold text-accent"
           >
             <CalendarIcon size={16} />
-            Open Timetable to save sets
+            {t('discover.openTimetable')}
           </Link>
         )}
       </div>

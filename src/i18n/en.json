@@ -56,6 +56,7 @@
     "statRecordTotal": "Record total\n{{year}} edition",
     "statAvgDay": "Avg / day",
     "statRecordDay": "Record\nsingle day",
+    "moreSection": "Explore More",
     "attendanceHistory": "Attendance history",
     "attendanceNA": "Data unavailable",
     "attendanceCancelled": "Cancelled",
@@ -475,7 +476,10 @@
     "popular": "Fan favourites to start with",
     "buildProfile": "Build your taste profile",
     "buildProfileDesc": "Favorite some color stages or save sets — we'll suggest what you're missing.",
-    "openTimetable": "Open Timetable to save sets"
+    "openTimetable": "Open Timetable to save sets",
+    "favoriteStageReason": "You favorited the {{stage}} stage",
+    "similarReason": "{{subgenre}} — similar to what you like",
+    "fanFavourite": "Fan favourite artist"
   },
   "bingo": {
     "title": "Festival Bingo",
@@ -486,7 +490,9 @@
     "newCardConfirm": "Generate a new card?",
     "newCardWarning": "Your current progress will be lost.",
     "cancel": "Cancel",
-    "tip": "Tap a square to mark it. Get 5 in a row to win!"
+    "tip": "Tap a square to mark it. Get 5 in a row to win!",
+    "shareTextBingo": "I got BINGO at Defqon.1 {{year}}! 🎉 {{checked}}/{{total}} squares. #Defqon1",
+    "shareTextProgress": "Festival Bingo at Defqon.1 {{year}} — {{checked}}/{{total}} squares! #Defqon1"
   },
   "weather": {
     "title": "Weather",
@@ -499,7 +505,11 @@
     "liveForecast": "Live forecast — updated daily",
     "rainChance": "rain chance",
     "packAdvice": "Pack advice",
-    "externalForecasts": "External Forecasts"
+    "externalForecasts": "External Forecasts",
+    "error": "Could not load weather data. Check your connection.",
+    "wind": "Wind {{speed}} km/h",
+    "forecastSoon": "Festival forecast should be available — check again soon.",
+    "historicalNote": "Historical averages for late June in Biddinghuizen."
   },
   "quiz": {
     "title": "Hardstyle Quiz",
@@ -535,7 +545,12 @@
     "tapToSet": "Tap to set",
     "save": "Save",
     "moneyTips": "Money-saving tips",
-    "budgetUsed": "% of budget used"
+    "budgetUsed": "of budget used",
+    "tip1": "Festival water refill stations are free — bring a reusable bottle.",
+    "tip2": "Pre-buy drinks tokens online to skip queues and save ~10%.",
+    "tip3": "Official merch sells out fast — buy early on Friday.",
+    "tip4": "Camping supermarket runs are cheaper than festival food.",
+    "tip5": "Rideshare from major cities cuts travel cost significantly."
   },
   "news": {
     "title": "News",
@@ -548,7 +563,8 @@
     "noResults": "Nothing in this category.",
     "noEvents": "No upcoming events found.",
     "moreOnYouTube": "More on YouTube",
-    "moreOnHardstyle": "More on hardstyle.com"
+    "moreOnHardstyle": "More on hardstyle.com",
+    "qdanceEvent": "Q-dance"
   },
   "more": {
     "title": "Features",

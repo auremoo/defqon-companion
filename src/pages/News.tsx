@@ -113,36 +113,60 @@ function EventsView() {
     return <p className="py-12 text-center text-sm text-text-muted">{t('news.noEvents')}</p>
   }
 
-  // Group by month
+  const isQdanceEvent = (title: string) =>
+    /q-dance|qlimax|q-base|defqon/i.test(title)
+
+  // Q-dance events pinned at top, rest grouped by month
+  const qdanceEvents = events.filter((ev) => isQdanceEvent(ev.title))
+  const otherEvents = events.filter((ev) => !isQdanceEvent(ev.title))
+
   const byMonth: Record<string, HardstyleEvent[]> = {}
-  for (const ev of events) {
+  for (const ev of otherEvents) {
     const key = ev.month || ev.date.slice(0, 7)
     ;(byMonth[key] ??= []).push(ev)
   }
 
+  const EventCard = ({ ev }: { ev: HardstyleEvent }) => (
+    <a key={ev.link} href={ev.link} target="_blank" rel="noopener noreferrer"
+      className="flex items-center gap-3 rounded-xl border border-border bg-surface-card p-3 transition-colors hover:border-border-hover">
+      {ev.image ? (
+        <img src={ev.image} alt="" loading="lazy"
+          className="h-12 w-12 shrink-0 rounded-lg object-cover bg-surface-alt" />
+      ) : (
+        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-surface-alt text-text-muted">
+          <CalendarIcon size={18} />
+        </div>
+      )}
+      <div className="min-w-0 flex-1">
+        <p className="truncate text-xs font-semibold text-text-primary">{ev.title}</p>
+        <p className="text-[10px] text-text-muted">{ev.location} &middot; {ev.date.slice(5).replace('-', '/')}{ev.time ? ` · ${ev.time}` : ''}</p>
+      </div>
+      <ExternalLinkIcon size={12} className="shrink-0 text-text-muted" />
+    </a>
+  )
+
   return (
     <div className="space-y-6">
+      {/* Q-dance events pinned at top */}
+      {qdanceEvents.length > 0 && (
+        <div>
+          <h2 className="defqon-heading mb-2 text-xs tracking-widest text-accent">{t('news.qdanceEvent')}</h2>
+          <div className="space-y-2">
+            {qdanceEvents.map((ev) => (
+              <div key={ev.link} className="rounded-xl border border-accent/30 bg-accent/5">
+                <EventCard ev={ev} />
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
       {Object.entries(byMonth).map(([month, evs]) => (
         <div key={month}>
           <h2 className="defqon-heading mb-2 text-xs tracking-widest text-text-muted">{month}</h2>
           <div className="space-y-2">
             {evs.map((ev) => (
-              <a key={ev.link} href={ev.link} target="_blank" rel="noopener noreferrer"
-                className="flex items-center gap-3 rounded-xl border border-border bg-surface-card p-3 transition-colors hover:border-border-hover">
-                {ev.image ? (
-                  <img src={ev.image} alt="" loading="lazy"
-                    className="h-12 w-12 shrink-0 rounded-lg object-cover bg-surface-alt" />
-                ) : (
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-surface-alt text-text-muted">
-                    <CalendarIcon size={18} />
-                  </div>
-                )}
-                <div className="min-w-0 flex-1">
-                  <p className="truncate text-xs font-semibold text-text-primary">{ev.title}</p>
-                  <p className="text-[10px] text-text-muted">{ev.location} &middot; {ev.date.slice(5).replace('-', '/')}{ev.time ? ` · ${ev.time}` : ''}</p>
-                </div>
-                <ExternalLinkIcon size={12} className="shrink-0 text-text-muted" />
-              </a>
+              <EventCard key={ev.link} ev={ev} />
             ))}
           </div>
         </div>

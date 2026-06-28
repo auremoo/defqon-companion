@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import CountdownTimer from '../components/CountdownTimer'
-import { PaletteIcon, BookIcon, ChecklistIcon, CalendarIcon, HistoryIcon, YouTubeIcon, ExternalLinkIcon } from '../components/Icons'
+import { PaletteIcon, BookIcon, ChecklistIcon, CalendarIcon, HistoryIcon, YouTubeIcon, ExternalLinkIcon, SparklesIcon, BrainIcon, GridIcon, CloudSunIcon, WalletIcon } from '../components/Icons'
 import PageShell from '../components/PageShell'
 import { festival, attendanceHistory } from '../data/festival'
 import { lineup } from '../data/lineup'
@@ -379,14 +379,37 @@ export default function Home() {
           </div>
         </div>
 
-        {/* More features link */}
-        <Link
-          to="/more"
-          className="flex items-center justify-between rounded-xl border border-border bg-surface-card px-4 py-3 transition-all hover:border-border-hover hover:bg-surface-alt"
-        >
-          <span className="text-sm font-semibold text-text-secondary">{t('home.moreFeatures')}</span>
-          <span className="text-text-muted">›</span>
-        </Link>
+        {/* More features grid */}
+        <div>
+          <h2 className="defqon-heading mb-3 text-xs tracking-widest text-text-muted">{t('home.moreSection')}</h2>
+          <div className="grid grid-cols-2 gap-2">
+            {[
+              { to: '/discover', Icon: SparklesIcon, label: t('discover.title'), sub: t('discover.subtitle'), color: '#e040a0' },
+              { to: '/weather',  Icon: CloudSunIcon,  label: t('weather.title'),  sub: t('weather.subtitle'),  color: '#1d86c7' },
+              { to: '/bingo',    Icon: GridIcon,      label: t('bingo.title'),    sub: t('bingo.subtitle'),    color: '#d4a20a' },
+              { to: '/budget',   Icon: WalletIcon,    label: t('budget.title'),   sub: t('budget.subtitle'),   color: '#16a34a' },
+              { to: '/quiz',     Icon: BrainIcon,     label: t('quiz.title'),     sub: t('quiz.subtitle'),     color: '#7c3aed' },
+              { to: '/news',     Icon: YouTubeIcon,   label: t('news.title'),     sub: t('news.subtitle'),     color: '#ef4444' },
+            ].map(({ to, Icon, label, sub, color }) => (
+              <Link
+                key={to}
+                to={to}
+                className="flex items-center gap-3 rounded-xl border border-border bg-surface-card p-3 transition-all hover:border-border-hover hover:bg-surface-alt"
+              >
+                <div
+                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl"
+                  style={{ backgroundColor: color + '26', color }}
+                >
+                  <Icon size={18} />
+                </div>
+                <div className="min-w-0">
+                  <p className="text-xs font-bold text-text-primary">{label}</p>
+                  <p className="truncate text-[10px] text-text-muted">{sub}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
 
         {/* Q-dance news */}
         <div>
