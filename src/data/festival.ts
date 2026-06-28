@@ -16,8 +16,8 @@ export const festival = {
   // Attendance figures — updated manually after each edition (official press releases)
   attendance: {
     perDayRecord: 65_000,        // record single day (est.)
-    totalEditionRecord: 250_000, // 2024 — 20th anniversary, confirmed by multiple sources
-    totalEditionRecordYear: 2024,
+    totalEditionRecord: 250_000, // first reached in 2023, matched in 2024 & 2025
+    totalEditionRecordYear: 2023,
     perDayTypical: 62_500,       // 250K / 4 days (2024 baseline)
     totalTypical: 220_000,
   },
@@ -58,10 +58,10 @@ export const attendanceHistory: AttendanceEntry[] = [
   { year: 2019, total: 77_000, note: 'Record all-time à cette date' },
   { year: 2020, cancelled: true, note: 'COVID-19' },
   { year: 2021, cancelled: true, note: 'COVID-19' },
-  { year: 2022, total: 100_000, note: 'Retour en présentiel' },
-  { year: 2023, total: 100_000 },
-  { year: 2024, total: 250_000, note: '20e anniversaire · record all-time' },
-  { year: 2025 },
+  { year: 2022, total: 100_000, note: 'Retour en présentiel — capacité réduite' },
+  { year: 2023, total: 250_000, note: 'Retour à pleine capacité · record all-time' },
+  { year: 2024, total: 250_000, note: '20e anniversaire' },
+  { year: 2025, total: 250_000, note: 'Where Legends Rise' },
   { year: 2026, cancelled: true, note: 'Code Rouge chaleur (38–40 °C)' },
 ]
 
