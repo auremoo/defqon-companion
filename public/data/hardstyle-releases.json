@@ -1,6 +1,14 @@
 {
-  "updatedAt": "2026-06-27T07:50:10.893Z",
+  "updatedAt": "2026-06-28T08:21:40.089Z",
   "releases": [
+    {
+      "id": "648a3802-2876-4df9-a4a0-2a4598a17826",
+      "title": "Toxic Vengeance",
+      "artist": "Luke PN",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/648a3802-2876-4df9-a4a0-2a4598a17826/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/648a3802-2876-4df9-a4a0-2a4598a17826/toxic-vengeance"
+    },
     {
       "id": "800a6bdf-7370-4151-a2fe-4ed097896d0a",
       "title": "Higher",
@@ -40,14 +48,6 @@
       "mix": "Original Mix",
       "image": "https://hardstyle.com/track_image/a437e6ba-7817-480b-84b3-c7e3ea1c6f8e/250x250/335",
       "link": "https://hardstyle.com/en/tracks/a437e6ba-7817-480b-84b3-c7e3ea1c6f8e/sputnik"
-    },
-    {
-      "id": "67953f7c-fabe-427b-bc94-635c29f3c40c",
-      "title": "You Are My Therapy",
-      "artist": "Dave Fantasy",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/67953f7c-fabe-427b-bc94-635c29f3c40c/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/67953f7c-fabe-427b-bc94-635c29f3c40c/you-are-my-therapy"
     },
     {
       "id": "8d9dd50c-dc96-4d1f-a4b1-2542e098a05d",
