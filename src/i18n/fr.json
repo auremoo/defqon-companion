@@ -467,7 +467,9 @@
     "rating": "Ta note",
     "notes": "Tes notes",
     "notesPlaceholder": "Meilleurs moments, souvenirs, avec qui tu \u00e9tais\u2026",
-    "save": "Sauvegarder"
+    "save": "Sauvegarder",
+    "saved": "Sauvegardé",
+    "saveError": "Échec de la sauvegarde — vérifie ta connexion et réessaie."
   },
   "settings": {
     "title": "Param\u00e8tres",

@@ -36,7 +36,7 @@ export default function MyEditions() {
   const [attended, setAttended] = useState(false)
   const [notes, setNotes] = useState('')
   const [rating, setRating] = useState<number | null>(null)
-  const [saving, setSaving] = useState(false)
+  const [saveStatus, setSaveStatus] = useState<'idle' | 'saving' | 'success' | 'error'>('idle')
   const [showClearConfirm, setShowClearConfirm] = useState(false)
 
   useEffect(() => { document.title = 'My Editions — Defqon Companion' }, [])
@@ -51,6 +51,7 @@ export default function MyEditions() {
   const loadEditionData = async (year: number) => {
     setSelectedYear(year)
     setShowClearConfirm(false)
+    setSaveStatus('idle')
     const ed = await loadEdition(year)
     setSelectedEdition(ed)
 
@@ -124,7 +125,7 @@ export default function MyEditions() {
 
   const saveEditionNotes = async () => {
     if (!db || !user || !selectedYear) return
-    setSaving(true)
+    setSaveStatus('saving')
     try {
       await setDoc(doc(db, 'user_editions', `${user.uid}_${selectedYear}`), {
         user_id: user.uid,
@@ -139,8 +140,12 @@ export default function MyEditions() {
         if (exists) return prev.map((h) => h.edition_year === selectedYear! ? { ...h, notes: notes || null, rating, attended_festival: true } : h)
         return [...prev, { edition_year: selectedYear!, attended_festival: true, notes: notes || null, rating }]
       })
-    } catch {}
-    setSaving(false)
+      setSaveStatus('success')
+      setTimeout(() => setSaveStatus('idle'), 2500)
+    } catch {
+      setSaveStatus('error')
+      setTimeout(() => setSaveStatus('idle'), 3000)
+    }
   }
 
   const savedSetsData: Set[] = selectedEdition
@@ -344,12 +349,21 @@ export default function MyEditions() {
                             className="w-full rounded-lg border border-border bg-surface-alt px-3 py-2 text-sm text-text-primary placeholder-text-muted outline-none focus:border-accent/50 resize-none"
                           />
                         </div>
+                        {saveStatus === 'error' && (
+                          <p className="rounded-lg border border-red-800/40 bg-red-900/15 px-3 py-2 text-xs text-red-400">
+                            {t('myEditions.saveError')}
+                          </p>
+                        )}
                         <button
                           onClick={saveEditionNotes}
-                          disabled={saving}
-                          className="w-full rounded-lg bg-accent py-2 text-xs font-semibold uppercase tracking-wider text-text-primary disabled:opacity-50"
+                          disabled={saveStatus === 'saving'}
+                          className={`w-full rounded-lg py-2 text-xs font-semibold uppercase tracking-wider transition-colors disabled:opacity-50 ${
+                            saveStatus === 'success'
+                              ? 'bg-green-600 text-white'
+                              : 'bg-accent text-text-primary'
+                          }`}
                         >
-                          {saving ? '...' : t('myEditions.save')}
+                          {saveStatus === 'saving' ? '…' : saveStatus === 'success' ? '✓ ' + t('myEditions.saved') : t('myEditions.save')}
                         </button>
                       </div>
                     )}

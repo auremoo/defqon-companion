@@ -467,7 +467,9 @@
     "rating": "Your Rating",
     "notes": "Your Notes",
     "notesPlaceholder": "Best moments, memories, who you were with...",
-    "save": "Save"
+    "save": "Save",
+    "saved": "Saved",
+    "saveError": "Failed to save — check your connection and try again."
   },
   "settings": {
     "title": "Settings",
