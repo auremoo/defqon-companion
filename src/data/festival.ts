@@ -15,11 +15,11 @@ export const festival = {
   ageRestriction: '18+',
   // Attendance figures — updated manually after each edition (official press releases)
   attendance: {
-    perDayRecord: 65_000,        // record single day (est.)
-    totalEditionRecord: 250_000, // first reached in 2023, matched in 2024 & 2025
-    totalEditionRecordYear: 2023,
-    perDayTypical: 62_500,       // 250K / 4 days (2024 baseline)
-    totalTypical: 220_000,
+    perDayRecord: 67_059,        // 268 236 / 4 days (2025 record, Wikipedia)
+    totalEditionRecord: 268_236, // 2025 record per Wikipedia
+    totalEditionRecordYear: 2025,
+    perDayTypical: 62_500,       // 250K / 4 days (2023/2024 baseline)
+    totalTypical: 250_000,
   },
   firstEditionYear: 2003,
   // The Gathering (Thursday) took place. Festival cancelled at midnight 26/06 due to
@@ -39,29 +39,29 @@ export interface AttendanceEntry {
 // Update after each edition with official Q-dance press release figures.
 // 2003–2010: Almeerderstrand, Almere, NL. 2011+: Biddinghuizen (Walibi Holland), NL.
 export const attendanceHistory: AttendanceEntry[] = [
-  { year: 2003, total: 8_000,  note: 'Première édition — Almere' },
-  { year: 2004 },
-  { year: 2005 },
-  { year: 2006 },
-  { year: 2007 },
-  { year: 2008 },
-  { year: 2009 },
+  { year: 2003, total: 25_000, note: 'Première édition — Almere' },
+  { year: 2004, total: 25_000 },
+  { year: 2005, total: 25_000 },
+  { year: 2006, total: 27_500 },
+  { year: 2007, total: 30_000 },
+  { year: 2008, total: 30_000 },
+  { year: 2009, total: 35_000 },
   { year: 2010, total: 40_000, note: 'Sold out en 39 min — Almere' },
-  { year: 2011, note: 'Déménagement à Biddinghuizen' },
-  { year: 2012 },
-  { year: 2013 },
-  { year: 2014, total: 55_000 },
-  { year: 2015, total: 60_000, note: '13e édition' },
-  { year: 2016 },
-  { year: 2017 },
-  { year: 2018 },
-  { year: 2019, total: 77_000, note: 'Record all-time à cette date' },
+  { year: 2011, total: 45_000, note: 'Déménagement à Biddinghuizen' },
+  { year: 2012, total: 55_000, note: 'Première édition 3 jours' },
+  { year: 2013, total: 60_000 },
+  { year: 2014, total: 60_000 },
+  { year: 2015, total: 60_000 },
+  { year: 2016, total: 100_000 },
+  { year: 2017, total: 150_000 },
+  { year: 2018, total: 185_000 },
+  { year: 2019, total: 78_000, note: 'Visiteurs uniques · record à cette date' },
   { year: 2020, cancelled: true, note: 'COVID-19' },
   { year: 2021, cancelled: true, note: 'COVID-19' },
-  { year: 2022, total: 100_000, note: 'Retour en présentiel — capacité réduite' },
-  { year: 2023, total: 250_000, note: 'Retour à pleine capacité · record all-time' },
-  { year: 2024, total: 250_000, note: '20e anniversaire' },
-  { year: 2025, total: 250_000, note: 'Where Legends Rise' },
+  { year: 2022, total: 100_000, note: 'Retour en présentiel' },
+  { year: 2023, total: 250_000, note: 'Retour à pleine capacité' },
+  { year: 2024, total: 250_000, note: '20e édition tenue' },
+  { year: 2025, total: 268_236, note: 'Where Legends Rise · record all-time' },
   { year: 2026, cancelled: true, note: 'Code Rouge chaleur (38–40 °C)' },
 ]
 
