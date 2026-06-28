@@ -1,13 +1,15 @@
 {
   "nav": {
     "home": "Accueil",
+    "festival": "Festival",
     "colors": "Couleurs",
     "guide": "Guide",
     "nowListening": "\u00c9couter",
     "music": "Musique",
     "checklist": "Checklist",
     "timetable": "Programme",
-    "news": "Actus"
+    "news": "Actus",
+    "more": "Plus"
   },
   "home": {
     "title": "Defqon Companion",
@@ -67,7 +69,20 @@
     "officialLineup": "Lineup officiel",
     "qdanceApp": "App Q-dance",
     "moreSection": "Explorer plus",
-    "moreFeatures": "Toutes les fonctionnalités"
+    "moreFeatures": "Toutes les fonctionnalités",
+    "logoTitle": "Derrière le logo",
+    "logoDefcon": "« Defqon » vient de DEFCON — l'échelle de préparation militaire américaine (Defense Readiness Condition). Le DEFCON 1 est le niveau d'alerte maximale. Le nom signale une intensité maximale, en parfait accord avec l'énergie du hardstyle. Le « .1 » confirme l'ambition : être numéro un.",
+    "logoQ": "Le Q de Q-dance ? Sur une console de DJ, un bouton tourné de 120° vers la droite trace la lettre Q — symbole de qualité. Les quatre flèches qui convergent vers l'intérieur sur le logo représentent l'unité des festivaliers."
+  },
+  "festival": {
+    "hubTitle": "Festival",
+    "hubSubtitle": "Tout ce qu'il te faut pour Defqon.1",
+    "timetableDesc": "Planifie tes sets et synchronise avec tes amis",
+    "colorsDesc": "Scènes, genres et styles musicaux",
+    "guideDesc": "Guide de survie et culture hardstyle",
+    "checklistDesc": "N'oublie rien",
+    "weatherDesc": "Météo et conseils pour faire sa valise",
+    "budgetDesc": "Suis tes dépenses au festival"
   },
   "colors": {
     "title": "Les couleurs de Defqon.1",

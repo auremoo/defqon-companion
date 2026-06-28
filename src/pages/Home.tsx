@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import CountdownTimer from '../components/CountdownTimer'
-import { PaletteIcon, BookIcon, ChecklistIcon, CalendarIcon, HistoryIcon, YouTubeIcon, ExternalLinkIcon, SparklesIcon, BrainIcon, GridIcon, CloudSunIcon, WalletIcon } from '../components/Icons'
+import { YouTubeIcon, ExternalLinkIcon } from '../components/Icons'
 import PageShell from '../components/PageShell'
 import { festival, attendanceHistory } from '../data/festival'
 import { lineup } from '../data/lineup'
@@ -319,97 +318,60 @@ export default function Home() {
           )
         })()}
 
-        {/* Attendance history */}
-        <div>
-          <h2 className="defqon-heading mb-3 text-xs tracking-widest text-text-muted">
-            {t('home.attendanceHistory')}
-          </h2>
-          <div className="overflow-hidden rounded-xl border border-border bg-surface-card">
-            {[...attendanceHistory].reverse().map((entry, i) => (
-              <div
-                key={entry.year}
-                className={`flex items-center gap-3 px-3 py-2 ${i % 2 === 0 ? '' : 'bg-white/3'} ${entry.total ? 'border-l-2 border-accent' : ''}`}
-              >
-                <span className={`w-9 shrink-0 text-xs font-bold ${entry.cancelled ? 'text-text-muted' : 'text-text-primary'}`}>
-                  {entry.year}
-                </span>
-                <div className="flex flex-1 items-center justify-between gap-2 min-w-0">
-                  {entry.cancelled ? (
-                    <span className="text-[10px] text-red-400/80">{t('home.attendanceCancelled')}</span>
-                  ) : entry.total ? (
-                    <span className="text-xs font-semibold text-accent">
-                      {(entry.total / 1000).toFixed(0)} 000 {t('home.attendanceVisitors')}
-                    </span>
-                  ) : (
-                    <span className="text-[10px] text-text-muted">{t('home.attendanceNA')}</span>
-                  )}
-                  {entry.note && (
-                    <span className="shrink-0 text-[9px] text-text-muted truncate max-w-[140px]">{entry.note}</span>
-                  )}
-                </div>
+        {/* Logo origin */}
+        <div className="rounded-xl border border-border bg-surface-card p-4">
+          <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-text-muted">{t('home.logoTitle')}</p>
+          <p className="text-xs leading-relaxed text-text-secondary">{t('home.logoDefcon')}</p>
+          <p className="mt-2 text-xs leading-relaxed text-text-secondary">{t('home.logoQ')}</p>
+        </div>
+
+        {/* Attendance history — bar chart */}
+        {(() => {
+          const maxTotal = Math.max(...attendanceHistory.filter(e => e.total).map(e => e.total!))
+          return (
+            <div>
+              <h2 className="defqon-heading mb-3 text-xs tracking-widest text-text-muted">
+                {t('home.attendanceHistory')}
+              </h2>
+              <div className="rounded-xl border border-border bg-surface-card px-4 py-3 space-y-1">
+                {[...attendanceHistory].reverse().map((entry) => {
+                  const pct = entry.total ? (entry.total / maxTotal) * 100 : 0
+                  const isRecord = entry.total === maxTotal
+                  return (
+                    <div key={entry.year} className="flex items-center gap-2 py-0.5">
+                      <span className={`w-9 shrink-0 text-right text-[11px] font-mono ${entry.cancelled ? 'text-red-400/70' : isRecord ? 'font-bold text-accent' : 'text-text-muted'}`}>
+                        {entry.year}
+                      </span>
+                      <div className="relative flex-1 h-3.5">
+                        {entry.cancelled ? (
+                          <div className="flex h-full items-center gap-1.5">
+                            <span className="h-px flex-1 border-t border-dashed border-red-800/50" />
+                            <span className="text-[9px] text-red-400/80 shrink-0">{entry.note ?? t('home.attendanceCancelled')}</span>
+                          </div>
+                        ) : (
+                          <div
+                            className={`h-full rounded-r transition-all ${isRecord ? 'bg-accent' : 'bg-accent/35'}`}
+                            style={{ width: `${pct}%` }}
+                          />
+                        )}
+                      </div>
+                      {!entry.cancelled && entry.total && (
+                        <span className={`w-14 shrink-0 text-right text-[10px] ${isRecord ? 'font-bold text-accent' : 'text-text-muted'}`}>
+                          {entry.total >= 1000
+                            ? `${(entry.total / 1000).toFixed(0)}K`
+                            : String(entry.total)}
+                        </span>
+                      )}
+                    </div>
+                  )
+                })}
+                <p className="pt-1 text-[9px] text-text-muted text-right">
+                  Record: {(maxTotal / 1000).toFixed(0)}K — {festival.attendance.totalEditionRecordYear}
+                </p>
               </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Quick links — original */}
-        <div>
-          <h2 className="defqon-heading mb-3 text-xs tracking-widest text-text-muted">
-            {t('home.quickLinks')}
-          </h2>
-          <div className="grid gap-2.5">
-            {[
-              { to: '/colors', Icon: PaletteIcon, label: t('home.exploreColors') },
-              { to: '/timetable', Icon: CalendarIcon, label: t('nav.timetable') },
-              { to: '/guide', Icon: BookIcon, label: t('home.readGuide') },
-              { to: '/checklist', Icon: ChecklistIcon, label: t('home.prepChecklist') },
-              { to: '/my-editions', Icon: HistoryIcon, label: t('home.myEditions') },
-            ].map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                className="group flex items-center gap-3 rounded-xl border border-border bg-surface-card p-4 transition-all hover:border-border-hover hover:bg-surface-alt"
-              >
-                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent/10 text-accent transition-colors group-hover:bg-accent/20">
-                  <link.Icon size={18} />
-                </div>
-                <span className="text-sm font-semibold uppercase tracking-wide text-text-primary">{link.label}</span>
-              </Link>
-            ))}
-          </div>
-        </div>
-
-        {/* More features grid */}
-        <div>
-          <h2 className="defqon-heading mb-3 text-xs tracking-widest text-text-muted">{t('home.moreSection')}</h2>
-          <div className="grid grid-cols-2 gap-2">
-            {[
-              { to: '/discover', Icon: SparklesIcon, label: t('discover.title'), sub: t('discover.subtitle'), color: '#e040a0' },
-              { to: '/weather',  Icon: CloudSunIcon,  label: t('weather.title'),  sub: t('weather.subtitle'),  color: '#1d86c7' },
-              { to: '/bingo',    Icon: GridIcon,      label: t('bingo.title'),    sub: t('bingo.subtitle'),    color: '#d4a20a' },
-              { to: '/budget',   Icon: WalletIcon,    label: t('budget.title'),   sub: t('budget.subtitle'),   color: '#16a34a' },
-              { to: '/quiz',     Icon: BrainIcon,     label: t('quiz.title'),     sub: t('quiz.subtitle'),     color: '#7c3aed' },
-              { to: '/news',     Icon: YouTubeIcon,   label: t('news.title'),     sub: t('news.subtitle'),     color: '#ef4444' },
-            ].map(({ to, Icon, label, sub, color }) => (
-              <Link
-                key={to}
-                to={to}
-                className="flex items-center gap-3 rounded-xl border border-border bg-surface-card p-3 transition-all hover:border-border-hover hover:bg-surface-alt"
-              >
-                <div
-                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl"
-                  style={{ backgroundColor: color + '26', color }}
-                >
-                  <Icon size={18} />
-                </div>
-                <div className="min-w-0">
-                  <p className="text-xs font-bold text-text-primary">{label}</p>
-                  <p className="truncate text-[10px] text-text-muted">{sub}</p>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
+            </div>
+          )
+        })()}
 
         {/* Q-dance news */}
         <div>

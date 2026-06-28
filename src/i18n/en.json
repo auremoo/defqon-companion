@@ -1,13 +1,15 @@
 {
   "nav": {
     "home": "Home",
+    "festival": "Festival",
     "colors": "Colors",
     "guide": "Guide",
     "nowListening": "Listen now",
     "music": "Music",
     "checklist": "Checklist",
     "timetable": "Timetable",
-    "news": "News"
+    "news": "News",
+    "more": "More"
   },
   "home": {
     "title": "Defqon Companion",
@@ -67,7 +69,20 @@
     "buyTickets": "Buy Tickets",
     "officialLineup": "Official Lineup",
     "qdanceApp": "Q-dance App",
-    "moreFeatures": "All features"
+    "moreFeatures": "All features",
+    "logoTitle": "Behind the logo",
+    "logoDefcon": "\"Defqon\" comes from DEFCON — the US military's Defense Readiness Condition scale. DEFCON 1 is the most extreme alert level. The name signals maximum intensity, exactly matching the energy of hardstyle. The \".1\" confirms the ambition: to be number one.",
+    "logoQ": "The Q in Q-dance? On a DJ mixer, a knob rotated 120° to the right traces the letter Q — symbolising quality. Four arrows converging inward on the logo represent the unity of festival-goers."
+  },
+  "festival": {
+    "hubTitle": "Festival",
+    "hubSubtitle": "Everything you need for Defqon.1",
+    "timetableDesc": "Plan your sets & sync with friends",
+    "colorsDesc": "Stages, genres & music styles",
+    "guideDesc": "Survival guide & hardstyle culture",
+    "checklistDesc": "Make sure you don't forget anything",
+    "weatherDesc": "Forecast & packing advice",
+    "budgetDesc": "Track your festival spending"
   },
   "colors": {
     "title": "Colors of Defqon.1",

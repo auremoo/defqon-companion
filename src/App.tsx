@@ -17,6 +17,7 @@ const Weather = lazy(() => import('./pages/Weather'))
 const Quiz = lazy(() => import('./pages/Quiz'))
 const Budget = lazy(() => import('./pages/Budget'))
 const News = lazy(() => import('./pages/News'))
+const Festival = lazy(() => import('./pages/Festival'))
 const More = lazy(() => import('./pages/More'))
 
 function PageLoader() {
@@ -66,6 +67,7 @@ export default function App() {
               <Route path="/quiz" element={<Quiz />} />
               <Route path="/budget" element={<Budget />} />
               <Route path="/news" element={<News />} />
+              <Route path="/festival" element={<Festival />} />
               <Route path="/more" element={<More />} />
             </Routes>
           </Suspense>

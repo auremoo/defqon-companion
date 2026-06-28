@@ -359,3 +359,23 @@ export function ExternalLinkIcon(props: IconProps) {
     </Icon>
   )
 }
+
+export function TentIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <path d="M3.5 21 12 4 20.5 21z" />
+      <path d="M12 4v17" />
+      <path d="M8.5 21v-5a3.5 3.5 0 0 1 7 0v5" />
+    </Icon>
+  )
+}
+
+export function MoreIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <circle cx="5" cy="12" r="1" fill="currentColor" />
+      <circle cx="12" cy="12" r="1" fill="currentColor" />
+      <circle cx="19" cy="12" r="1" fill="currentColor" />
+    </Icon>
+  )
+}
