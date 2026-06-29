@@ -115,13 +115,13 @@ function FriendsPanel({ onClose, editionYear, onViewSchedule }: {
   }
 
   const acceptRequest = async (friendshipId: string) => {
-    if (!db) return
+    if (!db || !user) return
     await setDoc(doc(db, 'friendships', friendshipId), { status: 'accepted' }, { merge: true })
     loadFriends()
   }
 
   const removeFriend = async (friendshipId: string) => {
-    if (!db) return
+    if (!db || !user) return
     await deleteDoc(doc(db, 'friendships', friendshipId))
     loadFriends()
   }
