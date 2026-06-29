@@ -1,6 +1,38 @@
 {
-  "updatedAt": "2026-06-28T08:21:40.089Z",
+  "updatedAt": "2026-06-29T09:26:32.623Z",
   "releases": [
+    {
+      "id": "d9870521-37dd-41fa-8c14-aa5f47c32c2d",
+      "title": "Born Free",
+      "artist": "Crazyhutz",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/d9870521-37dd-41fa-8c14-aa5f47c32c2d/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/d9870521-37dd-41fa-8c14-aa5f47c32c2d/born-free"
+    },
+    {
+      "id": "fe747565-cb55-4678-be82-f2ae0440f257",
+      "title": "Sunshine",
+      "artist": "Roman Naboka",
+      "mix": "Remastering Mix",
+      "image": "https://hardstyle.com/track_image/fe747565-cb55-4678-be82-f2ae0440f257/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/fe747565-cb55-4678-be82-f2ae0440f257/sunshine"
+    },
+    {
+      "id": "cdb2b760-1862-4203-887a-8ef682fece04",
+      "title": "Catch Me",
+      "artist": "Akkurate",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/cdb2b760-1862-4203-887a-8ef682fece04/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/cdb2b760-1862-4203-887a-8ef682fece04/catch-me"
+    },
+    {
+      "id": "c845f61b-d7cb-4bc0-a7ec-9d8f64d7cf8e",
+      "title": "Lethal Agent",
+      "artist": "Akkurate",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/c845f61b-d7cb-4bc0-a7ec-9d8f64d7cf8e/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/c845f61b-d7cb-4bc0-a7ec-9d8f64d7cf8e/lethal-agent"
+    },
     {
       "id": "648a3802-2876-4df9-a4a0-2a4598a17826",
       "title": "Toxic Vengeance",
@@ -16,38 +48,6 @@
       "mix": "Extended Mix",
       "image": "https://hardstyle.com/track_image/800a6bdf-7370-4151-a2fe-4ed097896d0a/250x250/335",
       "link": "https://hardstyle.com/en/tracks/800a6bdf-7370-4151-a2fe-4ed097896d0a/higher"
-    },
-    {
-      "id": "72e5d3c2-dfff-4c15-a6aa-5c6bd050a01f",
-      "title": "Hands High",
-      "artist": "Unproven",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/72e5d3c2-dfff-4c15-a6aa-5c6bd050a01f/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/72e5d3c2-dfff-4c15-a6aa-5c6bd050a01f/hands-high"
-    },
-    {
-      "id": "b94f8975-aeeb-4475-804c-078f9dede6c6",
-      "title": "Be The One",
-      "artist": "Unproven",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/b94f8975-aeeb-4475-804c-078f9dede6c6/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/b94f8975-aeeb-4475-804c-078f9dede6c6/be-the-one"
-    },
-    {
-      "id": "e5e1623e-ef0d-480d-a519-88c5af3d7827",
-      "title": "Not Here Forever",
-      "artist": "Sparkz",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/e5e1623e-ef0d-480d-a519-88c5af3d7827/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/e5e1623e-ef0d-480d-a519-88c5af3d7827/not-here-forever"
-    },
-    {
-      "id": "a437e6ba-7817-480b-84b3-c7e3ea1c6f8e",
-      "title": "Sputnik",
-      "artist": "Roman Naboka",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/a437e6ba-7817-480b-84b3-c7e3ea1c6f8e/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/a437e6ba-7817-480b-84b3-c7e3ea1c6f8e/sputnik"
     },
     {
       "id": "8d9dd50c-dc96-4d1f-a4b1-2542e098a05d",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-28T08:21:40.658Z",
+  "updatedAt": "2026-06-29T09:26:33.218Z",
   "events": [
     {
       "title": "Defqon 2026 Sacred Oath",
@@ -8,15 +8,6 @@
       "location": "Biddinghuizen",
       "time": "18:00 - 23:00",
       "date": "2026-06-25",
-      "month": "June"
-    },
-    {
-      "title": "Sunrise Festival 2026",
-      "link": "https://hardstyle.com/en/events/a1b19dcb-9230-4c8a-954c-76c940c76cc9/sunrise-festival-2026",
-      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/a1b19dcb-9230-4c8a-954c-76c940c76cc9/images/logo_img.jpg",
-      "location": "Gierle",
-      "time": "14:00 - 00:00",
-      "date": "2026-06-26",
       "month": "June"
     },
     {
@@ -47,15 +38,6 @@
       "month": "July"
     },
     {
-      "title": "Dreamfields Festival - The Final Dream",
-      "link": "https://hardstyle.com/en/events/3f9769bd-a158-4aef-8bee-023ac231578e/dreamfields-festival-the-final-dream",
-      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/3f9769bd-a158-4aef-8bee-023ac231578e/images/logo_img.jpg",
-      "location": "Lathum",
-      "time": "13:00 - 00:00",
-      "date": "2026-07-11",
-      "month": "July"
-    },
-    {
       "title": "Vroeger Was Alles Beter Festival 2026 - The Classics Cup",
       "link": "https://hardstyle.com/en/events/6fc45345-e01c-44db-8bf3-6c13107c302c/vroeger-was-alles-beter-festival-2026-the-classics-cup",
       "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/6fc45345-e01c-44db-8bf3-6c13107c302c/images/logo_img.jpg",
@@ -65,11 +47,20 @@
       "month": "July"
     },
     {
-      "title": "Dominator Fatal Fortune",
-      "link": "https://hardstyle.com/en/events/0ade02f1-908b-400f-9e83-7de9450e33bb/dominator-fatal-fortune",
-      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/0ade02f1-908b-400f-9e83-7de9450e33bb/images/logo_img.jpg",
-      "location": "Eersel",
-      "time": "13:00 - 23:00",
+      "title": "Dreamfields Festival - The Final Dream",
+      "link": "https://hardstyle.com/en/events/3f9769bd-a158-4aef-8bee-023ac231578e/dreamfields-festival-the-final-dream",
+      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/3f9769bd-a158-4aef-8bee-023ac231578e/images/logo_img.jpg",
+      "location": "Lathum",
+      "time": "13:00 - 00:00",
+      "date": "2026-07-11",
+      "month": "July"
+    },
+    {
+      "title": "Tomorrowland Belgium 2026 | Week 1",
+      "link": "https://hardstyle.com/en/events/e20cfd47-386e-4788-ac7e-972307215691/tomorrowland-belgium-2026-week-1",
+      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/e20cfd47-386e-4788-ac7e-972307215691/images/logo_img.png",
+      "location": "Boom",
+      "time": "12:00 - 00:00",
       "date": "2026-07-17",
       "month": "July"
     },
@@ -83,11 +74,11 @@
       "month": "July"
     },
     {
-      "title": "Tomorrowland Belgium 2026 | Week 1",
-      "link": "https://hardstyle.com/en/events/e20cfd47-386e-4788-ac7e-972307215691/tomorrowland-belgium-2026-week-1",
-      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/e20cfd47-386e-4788-ac7e-972307215691/images/logo_img.png",
-      "location": "Boom",
-      "time": "12:00 - 00:00",
+      "title": "Dominator Fatal Fortune",
+      "link": "https://hardstyle.com/en/events/0ade02f1-908b-400f-9e83-7de9450e33bb/dominator-fatal-fortune",
+      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/0ade02f1-908b-400f-9e83-7de9450e33bb/images/logo_img.jpg",
+      "location": "Eersel",
+      "time": "13:00 - 23:00",
       "date": "2026-07-17",
       "month": "July"
     },
