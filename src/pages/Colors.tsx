@@ -73,6 +73,25 @@ function ColorCard({ color, isFavorite, onToggleFavorite }: {
             </div>
           </div>
 
+          {/* Spotify embed — typical track for this style */}
+          {color.spotifyTrackId && (
+            <div className="overflow-hidden rounded-xl">
+              <p className="mb-1.5 text-[10px] font-bold uppercase tracking-wider text-text-muted">
+                {t('colors.typicalSound')}
+              </p>
+              <iframe
+                src={`https://open.spotify.com/embed/track/${color.spotifyTrackId}?utm_source=generator&theme=0`}
+                width="100%"
+                height="80"
+                frameBorder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+                title={color.spotifyTrackLabel}
+                className="rounded-xl"
+              />
+            </div>
+          )}
+
           {/* Multi-platform links */}
           <div className="flex flex-wrap gap-2 pt-1">
             {color.spotify && (
