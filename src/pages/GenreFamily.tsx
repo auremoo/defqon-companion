@@ -166,8 +166,82 @@ const SCENES = [
   { label: 'Clubs / Warehouses', items: 'Hard Techno, Industrial Techno, Schranz…', color: '#6b7280' },
 ]
 
+const OTHER_FAMILIES = [
+  {
+    name: 'House',
+    color: '#60a5fa',
+    bpm: '120–130',
+    desc: "Née à Chicago dans les années 80, la house est l'une des familles les plus larges de la musique électronique. Groove 4×4, piano chords, mélodies funky. De la Deep House aux raves, elle reste la base de nombreux genres modernes.",
+    sub: ['Deep House', 'Tech House', 'Progressive House', 'Electro House', 'Bass House', 'Future House'],
+  },
+  {
+    name: 'Techno',
+    color: '#a78bfa',
+    bpm: '130–160',
+    desc: "Née à Detroit dans les années 80, importée en Europe via Berlin. Hypnotique, répétitive, industrielle. Le pilier des clubs underground : Berghain, Tresor, fabric. Schranz, Industrial Techno et Hard Techno sont ses variantes les plus agressives.",
+    sub: ['Minimal Techno', 'Detroit Techno', 'Industrial Techno', 'Hard Techno', 'Schranz', 'Peak Time Techno'],
+  },
+  {
+    name: 'Trance',
+    color: '#818cf8',
+    bpm: '128–145',
+    desc: "Née en Allemagne au début des années 90. Mélodies épiques, montées longues, atmosphères planantes. L'Uplifting Trance et la Psytrance ont des points communs avec la hard music par leur intensité et leur BPM.",
+    sub: ['Uplifting Trance', 'Progressive Trance', 'Psytrance', 'Hard Trance', 'Tech Trance', 'Dark Psy'],
+  },
+  {
+    name: 'Drum & Bass',
+    color: '#34d399',
+    bpm: '160–180',
+    desc: "Née à Londres au début des années 90, du jungle et du breakbeat. Breakbeats rapides, basses profondes, culture très urbaine et soudée. Présente à Defqon.1 depuis 2025 avec sa propre scène.",
+    sub: ['Liquid DnB', 'Neurofunk', 'Jump Up', 'Darkstep', 'Rollers', 'Drumstep'],
+  },
+  {
+    name: 'Dubstep / Riddim',
+    color: '#7c3aed',
+    bpm: '138–142',
+    desc: "Né à South London fin des années 90, popularisé mondialement autour de 2010. Half-time, wobs massifs, drops lourds. Riddim est sa variante la plus répétitive et agressive. Crossover fréquent avec la hard music.",
+    sub: ['Brostep', 'Riddim', 'Melodic Dubstep', 'Tearout', 'Deathstep'],
+  },
+  {
+    name: 'Trap / Bass Music',
+    color: '#f472b6',
+    bpm: '70–150',
+    desc: "Issu du hip-hop américain du début des années 2000. Future Bass, Wave et Hybrid Trap sont des variantes électroniques très populaires sur la scène festival. Souvent crossover avec d'autres genres.",
+    sub: ['Future Bass', 'Wave', 'Hybrid Trap', 'Melodic Bass', 'Phonk'],
+  },
+  {
+    name: 'Breakbeat',
+    color: '#fb923c',
+    bpm: '120–140',
+    desc: "L'un des premiers genres électroniques de club, né en Angleterre fin des années 80. Rythmes syncopés et cassés. À l'origine de nombreux genres hard (le hardcore en est issu). Big Beat, Nu-Skool, Breaks.",
+    sub: ['Nu-Skool Breaks', 'Big Beat', 'Breaks', 'Electro Breaks'],
+  },
+  {
+    name: 'Future Rave',
+    color: '#c084fc',
+    bpm: '130–145',
+    desc: "Genre hybride popularisé par Hardwell et David Guetta vers 2021–2022. Croise la techno mélodique avec l'énergie des gros festivals EDM. Situé entre la hard music et l'EDM mainstream — une zone grise intéressante.",
+    sub: ['Melodic Techno × EDM', 'Big Room Techno', 'Festival Techno'],
+  },
+  {
+    name: 'Ambient / IDM',
+    color: '#6ee7b7',
+    bpm: '60–120',
+    desc: "Musique électronique introspective et atmosphérique. Aphex Twin, Boards of Canada, Burial. Aux antipodes de la hard music sur le plan de l'intensité, mais souvent influente sur les sound designs (samples, textures).",
+    sub: ['Ambient', 'IDM', 'Downtempo', 'Glitch', 'Electronica', 'Dark Ambient'],
+  },
+  {
+    name: 'EDM',
+    color: '#06b6d4',
+    bpm: '126–135',
+    desc: "L'EDM commercial (Avicii, David Guetta, Martin Garrix, Calvin Harris) partage la même racine électronique mais appartient à une culture totalement différente — pop, mainstream, festival de masse. Showtek est passé du hardstyle à l'EDM mainstream et la communauté hardstyle lui en a tenu rigueur. C'est pourquoi l'EDM ne figure pas dans l'arbre de la hard music, même si techniquement c'est de la musique électronique dansante.",
+    sub: ['Big Room House', 'Progressive House', 'Electro House', 'Future House', 'Pop Electronic'],
+  },
+]
+
 export default function GenreFamily() {
   const [expanded, setExpanded] = useState<string | null>(null)
+  const [expandedFamily, setExpandedFamily] = useState<string | null>(null)
 
   useEffect(() => { document.title = 'Famille de la Hard Music — Defqon Companion' }, [])
 
@@ -189,42 +263,52 @@ export default function GenreFamily() {
           </div>
         </div>
 
-        {/* ── Other families (compact) ──────────────────────── */}
-        <div className="space-y-3">
-          <div>
-            <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.2em] text-text-muted">Autres familles électroniques</p>
-            <div className="flex flex-wrap gap-1.5">
-              {[
-                { name: 'House', color: '#60a5fa', sub: 'Deep, Tech, Progressive, Bass House…' },
-                { name: 'Techno', color: '#a78bfa', sub: 'Minimal, Detroit, Industrial, Schranz…' },
-                { name: 'Trance', color: '#818cf8', sub: 'Uplifting, Progressive, Psy, Hard Trance…' },
-                { name: 'Drum & Bass', color: '#34d399', sub: 'Liquid, Neurofunk, Jump Up, Darkstep…' },
-                { name: 'Dubstep / Riddim', color: '#818cf8', sub: 'Brostep, Riddim, Melodic Dubstep…' },
-                { name: 'Trap / Bass Music', color: '#f472b6', sub: 'Future Bass, Hybrid Trap, Wave…' },
-                { name: 'Breakbeat', color: '#fb923c', sub: 'Nu-Skool, Breaks, Big Beat…' },
-                { name: 'Electro', color: '#fbbf24', sub: 'Electro House, Complextro…' },
-                { name: 'Ambient / IDM', color: '#6ee7b7', sub: 'Downtempo, Glitch, Electronica…' },
-                { name: 'Future Rave', color: '#c084fc', sub: 'Melodic Techno + EDM, Hardwell era…' },
-              ].map((f) => (
-                <span
+        {/* ── Other families (interactive chips) ───────────── */}
+        <div>
+          <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.2em] text-text-muted">
+            Autres familles électroniques <span className="normal-case font-normal">(appuie pour en savoir plus)</span>
+          </p>
+          <div className="flex flex-wrap gap-1.5">
+            {OTHER_FAMILIES.map((f) => {
+              const active = expandedFamily === f.name
+              return (
+                <button
                   key={f.name}
-                  className="rounded-full border px-2.5 py-1 text-[10px] font-semibold"
-                  style={{ borderColor: f.color + '50', color: f.color, backgroundColor: f.color + '12' }}
-                  title={f.sub}
+                  onClick={() => setExpandedFamily(active ? null : f.name)}
+                  className="rounded-full border px-2.5 py-1 text-[10px] font-semibold transition-all"
+                  style={{
+                    borderColor: active ? f.color + 'aa' : f.color + '50',
+                    color: f.color,
+                    backgroundColor: active ? f.color + '28' : f.color + '12',
+                  }}
                 >
                   {f.name}
-                </span>
-              ))}
-            </div>
+                </button>
+              )
+            })}
           </div>
 
-          {/* EDM callout */}
-          <div className="rounded-xl border border-yellow-900/40 bg-yellow-950/20 p-3">
-            <p className="text-[10px] font-black uppercase tracking-wider text-yellow-500">EDM Commercial — pourquoi absent ?</p>
-            <p className="mt-1 text-[11px] leading-relaxed text-text-muted">
-              L'EDM (Electronic Dance Music) au sens commercial — Avicii, David Guetta, Martin Garrix, big room, future house — est une branche <span className="text-text-secondary font-semibold">séparée</span> de la hard music. Les deux partagent la même racine électronique mais leurs cultures, leurs scènes et leurs communautés ne se mélangent pas. Showtek, par exemple, est passé du hardstyle à l'EDM mainstream — et la communauté hardstyle lui a reproché. L'EDM commercial n'appartient pas à l'arbre de la hard music.
-            </p>
-          </div>
+          {/* Info panel for selected family */}
+          {expandedFamily && (() => {
+            const f = OTHER_FAMILIES.find((x) => x.name === expandedFamily)!
+            return (
+              <div
+                className="mt-3 rounded-xl border p-3 space-y-2"
+                style={{ borderColor: f.color + '40', backgroundColor: f.color + '0a' }}
+              >
+                <div className="flex items-baseline justify-between gap-2">
+                  <p className="text-xs font-black uppercase tracking-wider" style={{ color: f.color }}>{f.name}</p>
+                  <p className="font-mono text-[10px] text-text-muted">~{f.bpm} BPM</p>
+                </div>
+                <p className="text-[11px] leading-relaxed text-text-muted">{f.desc}</p>
+                <div className="flex flex-wrap gap-1">
+                  {f.sub.map((s) => (
+                    <span key={s} className="rounded px-1.5 py-0.5 text-[9px] text-text-secondary" style={{ backgroundColor: f.color + '18' }}>{s}</span>
+                  ))}
+                </div>
+              </div>
+            )
+          })()}
         </div>
 
         {/* ── Hard Music header ─────────────────────────────── */}
