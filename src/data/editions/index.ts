@@ -21,11 +21,28 @@ export interface EditionMeta {
 }
 
 export const editionMetas: EditionMeta[] = [
-  { year: 2026, theme: 'Sacred Oath', isCurrent: true },
-  { year: 2025, theme: 'Where Legends Rise', isCurrent: false },
-  { year: 2024, theme: 'Power of the Tribe', isCurrent: false },
-  { year: 2023, theme: 'Path of the Warrior', isCurrent: false },
-  { year: 2022, theme: 'Primal Energy', isCurrent: false },
+  { year: 2026, theme: 'Sacred Oath',           isCurrent: true  },
+  { year: 2025, theme: 'Where Legends Rise',     isCurrent: false },
+  { year: 2024, theme: 'Power of the Tribe',     isCurrent: false },
+  { year: 2023, theme: 'Path of the Warrior',    isCurrent: false },
+  { year: 2022, theme: 'Primal Energy',          isCurrent: false },
+  { year: 2019, theme: 'One Tribe',              isCurrent: false },
+  { year: 2018, theme: 'Maximum Force',          isCurrent: false },
+  { year: 2017, theme: 'Victory Forever',        isCurrent: false },
+  { year: 2016, theme: 'Dragonblood',            isCurrent: false },
+  { year: 2015, theme: 'No Guts No Glory',       isCurrent: false },
+  { year: 2014, theme: 'Survival of the Fittest',isCurrent: false },
+  { year: 2013, theme: 'Weekend Warriors',       isCurrent: false },
+  { year: 2012, theme: 'World of Madness',       isCurrent: false },
+  { year: 2011, theme: 'Psychedelic Wasteland',  isCurrent: false },
+  { year: 2010, theme: 'No Time To Waste',       isCurrent: false },
+  { year: 2009, theme: 'Scrap Attack',           isCurrent: false },
+  { year: 2008, theme: 'Biological Insanity',    isCurrent: false },
+  { year: 2007, theme: 'Get Wasted',             isCurrent: false },
+  { year: 2006, theme: 'The Colour of the Harder Styles', isCurrent: false },
+  { year: 2005, theme: 'Emergency Call',         isCurrent: false },
+  { year: 2004, theme: 'Demolition',             isCurrent: false },
+  { year: 2003, theme: '30 Minutes',             isCurrent: false },
 ]
 
 const cache = new Map<number, Edition>()
