@@ -1,53 +1,53 @@
 {
-  "updatedAt": "2026-06-29T09:26:32.623Z",
+  "updatedAt": "2026-06-30T08:30:31.148Z",
   "releases": [
     {
-      "id": "d9870521-37dd-41fa-8c14-aa5f47c32c2d",
-      "title": "Born Free",
-      "artist": "Crazyhutz",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/d9870521-37dd-41fa-8c14-aa5f47c32c2d/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/d9870521-37dd-41fa-8c14-aa5f47c32c2d/born-free"
-    },
-    {
-      "id": "fe747565-cb55-4678-be82-f2ae0440f257",
-      "title": "Sunshine",
-      "artist": "Roman Naboka",
-      "mix": "Remastering Mix",
-      "image": "https://hardstyle.com/track_image/fe747565-cb55-4678-be82-f2ae0440f257/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/fe747565-cb55-4678-be82-f2ae0440f257/sunshine"
-    },
-    {
-      "id": "cdb2b760-1862-4203-887a-8ef682fece04",
-      "title": "Catch Me",
-      "artist": "Akkurate",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/cdb2b760-1862-4203-887a-8ef682fece04/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/cdb2b760-1862-4203-887a-8ef682fece04/catch-me"
-    },
-    {
-      "id": "c845f61b-d7cb-4bc0-a7ec-9d8f64d7cf8e",
-      "title": "Lethal Agent",
-      "artist": "Akkurate",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/c845f61b-d7cb-4bc0-a7ec-9d8f64d7cf8e/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/c845f61b-d7cb-4bc0-a7ec-9d8f64d7cf8e/lethal-agent"
-    },
-    {
-      "id": "648a3802-2876-4df9-a4a0-2a4598a17826",
-      "title": "Toxic Vengeance",
-      "artist": "Luke PN",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/648a3802-2876-4df9-a4a0-2a4598a17826/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/648a3802-2876-4df9-a4a0-2a4598a17826/toxic-vengeance"
-    },
-    {
-      "id": "800a6bdf-7370-4151-a2fe-4ed097896d0a",
-      "title": "Higher",
-      "artist": "DTAILZ",
+      "id": "b28868a9-5092-4492-a5d6-c00b8169c8bf",
+      "title": "Wherever We Go",
+      "artist": "Valyant",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/800a6bdf-7370-4151-a2fe-4ed097896d0a/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/800a6bdf-7370-4151-a2fe-4ed097896d0a/higher"
+      "image": "https://hardstyle.com/track_image/b28868a9-5092-4492-a5d6-c00b8169c8bf/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/b28868a9-5092-4492-a5d6-c00b8169c8bf/wherever-we-go"
+    },
+    {
+      "id": "e48391e2-4856-4523-ad2e-518738d2f51f",
+      "title": "Flying So High",
+      "artist": "DJ OGGY",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/e48391e2-4856-4523-ad2e-518738d2f51f/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/e48391e2-4856-4523-ad2e-518738d2f51f/flying-so-high"
+    },
+    {
+      "id": "04338acf-092c-4787-9be9-d0ea81cbe63c",
+      "title": "Flying So High",
+      "artist": "DJ OGGY",
+      "mix": "Radio Edit",
+      "image": "https://hardstyle.com/track_image/04338acf-092c-4787-9be9-d0ea81cbe63c/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/04338acf-092c-4787-9be9-d0ea81cbe63c/flying-so-high"
+    },
+    {
+      "id": "2485fc8e-0be6-4d78-8996-2df9a668e1c2",
+      "title": "Super Mega Massacre",
+      "artist": "Nagazaki",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/2485fc8e-0be6-4d78-8996-2df9a668e1c2/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/2485fc8e-0be6-4d78-8996-2df9a668e1c2/super-mega-massacre"
+    },
+    {
+      "id": "ef588094-359c-4ae9-b3cb-4431b1e5077a",
+      "title": "Shellshock",
+      "artist": "Nagazaki",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/ef588094-359c-4ae9-b3cb-4431b1e5077a/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/ef588094-359c-4ae9-b3cb-4431b1e5077a/shellshock"
+    },
+    {
+      "id": "eaedf7f6-9f9b-46a3-8ca4-a82a15e6bf51",
+      "title": "Turbokillah",
+      "artist": "Nagazaki",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/eaedf7f6-9f9b-46a3-8ca4-a82a15e6bf51/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/eaedf7f6-9f9b-46a3-8ca4-a82a15e6bf51/turbokillah"
     },
     {
       "id": "8d9dd50c-dc96-4d1f-a4b1-2542e098a05d",
