@@ -174,6 +174,7 @@ export default function ThePathWidget() {
               <input
                 type="number" min={1}
                 value={form.rank}
+                onFocus={(e) => e.target.select()}
                 onChange={(e) => setForm((f) => ({ ...f, rank: Math.max(1, Number(e.target.value)) }))}
                 className="w-full rounded-lg border border-border bg-surface-alt px-3 py-2 text-sm text-text-primary outline-none focus:border-accent/50"
               />
@@ -200,6 +201,7 @@ export default function ThePathWidget() {
               <input
                 type="number" min={0}
                 value={form.xp}
+                onFocus={(e) => e.target.select()}
                 onChange={(e) => setForm((f) => ({ ...f, xp: Math.max(0, Number(e.target.value)) }))}
                 className="w-full rounded-lg border border-border bg-surface-alt px-3 py-2 text-sm text-text-primary outline-none focus:border-accent/50"
               />
@@ -211,6 +213,7 @@ export default function ThePathWidget() {
               <input
                 type="number" min={1}
                 value={form.xpNextRank}
+                onFocus={(e) => e.target.select()}
                 onChange={(e) => setForm((f) => ({ ...f, xpNextRank: Math.max(1, Number(e.target.value)) }))}
                 className="w-full rounded-lg border border-border bg-surface-alt px-3 py-2 text-sm text-text-primary outline-none focus:border-accent/50"
               />
@@ -228,6 +231,7 @@ export default function ThePathWidget() {
                   <input
                     type="number" min={0}
                     value={form.badges[color]}
+                    onFocus={(e) => e.target.select()}
                     onChange={(e) => setForm((f) => ({
                       ...f,
                       badges: { ...f.badges, [color]: Math.max(0, Number(e.target.value)) },
