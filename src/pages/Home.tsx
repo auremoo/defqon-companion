@@ -4,6 +4,7 @@ import CountdownTimer from '../components/CountdownTimer'
 import { YouTubeIcon, ExternalLinkIcon } from '../components/Icons'
 import PageShell from '../components/PageShell'
 import { festival, attendanceHistory } from '../data/festival'
+import { editionMetas } from '../data/editions/index'
 import { lineup } from '../data/lineup'
 import { useAuth } from '../contexts/AuthContext'
 import { db } from '../lib/firebase'
@@ -321,6 +322,7 @@ export default function Home() {
         {/* Attendance history — bar chart */}
         {(() => {
           const maxTotal = Math.max(...attendanceHistory.filter(e => e.total).map(e => e.total!))
+          const themeByYear = new Map(editionMetas.map((m) => [m.year, m.theme]))
           return (
             <div>
               <h2 className="defqon-heading mb-3 text-xs tracking-widest text-text-muted">
@@ -330,30 +332,38 @@ export default function Home() {
                 {[...attendanceHistory].reverse().map((entry) => {
                   const pct = entry.total ? (entry.total / maxTotal) * 100 : 0
                   const isRecord = entry.total === maxTotal
+                  const theme = themeByYear.get(entry.year)
                   return (
-                    <div key={entry.year} className="flex items-center gap-2 py-0.5">
-                      <span className={`w-9 shrink-0 text-right text-[11px] font-mono ${entry.cancelled ? 'text-red-400/70' : isRecord ? 'font-bold text-accent' : 'text-text-muted'}`}>
-                        {entry.year}
-                      </span>
-                      <div className="relative flex-1 h-3.5">
-                        {entry.cancelled ? (
-                          <div className="flex h-full items-center gap-1.5">
-                            <span className="h-px flex-1 border-t border-dashed border-red-800/50" />
-                            <span className="text-[9px] text-red-400/80 shrink-0">{entry.note ?? t('home.attendanceCancelled')}</span>
-                          </div>
-                        ) : (
-                          <div
-                            className={`h-full rounded-r transition-all ${isRecord ? 'bg-accent' : 'bg-accent/35'}`}
-                            style={{ width: `${pct}%` }}
-                          />
+                    <div key={entry.year} className="py-0.5">
+                      <div className="flex items-center gap-2">
+                        <span className={`w-9 shrink-0 text-right text-[11px] font-mono ${entry.cancelled ? 'text-red-400/70' : isRecord ? 'font-bold text-accent' : 'text-text-muted'}`}>
+                          {entry.year}
+                        </span>
+                        <div className="relative flex-1 h-3.5">
+                          {entry.cancelled ? (
+                            <div className="flex h-full items-center gap-1.5">
+                              <span className="h-px flex-1 border-t border-dashed border-red-800/50" />
+                              <span className="text-[9px] text-red-400/80 shrink-0">{entry.note ?? t('home.attendanceCancelled')}</span>
+                            </div>
+                          ) : (
+                            <div
+                              className={`h-full rounded-r transition-all ${isRecord ? 'bg-accent' : 'bg-accent/35'}`}
+                              style={{ width: `${pct}%` }}
+                            />
+                          )}
+                        </div>
+                        {!entry.cancelled && entry.total && (
+                          <span className={`w-14 shrink-0 text-right text-[10px] ${isRecord ? 'font-bold text-accent' : 'text-text-muted'}`}>
+                            {entry.total >= 1000
+                              ? `${(entry.total / 1000).toFixed(0)}K`
+                              : String(entry.total)}
+                          </span>
                         )}
                       </div>
-                      {!entry.cancelled && entry.total && (
-                        <span className={`w-14 shrink-0 text-right text-[10px] ${isRecord ? 'font-bold text-accent' : 'text-text-muted'}`}>
-                          {entry.total >= 1000
-                            ? `${(entry.total / 1000).toFixed(0)}K`
-                            : String(entry.total)}
-                        </span>
+                      {theme && (
+                        <p className="ml-11 text-[9px] italic text-text-muted/70 leading-none mt-0.5">
+                          {theme}
+                        </p>
                       )}
                     </div>
                   )
