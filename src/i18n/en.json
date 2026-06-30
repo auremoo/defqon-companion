@@ -607,6 +607,10 @@
     "title": "Features",
     "subtitle": "All tools for the festival"
   },
+  "genreFamily": {
+    "title": "Hard Music Family Tree",
+    "subtitle": "Complete tree of genres and sub-genres"
+  },
   "path": {
     "label": "The Path",
     "empty": "Not set up yet",

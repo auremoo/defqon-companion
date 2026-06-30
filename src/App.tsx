@@ -19,6 +19,7 @@ const Budget = lazy(() => import('./pages/Budget'))
 const News = lazy(() => import('./pages/News'))
 const Festival = lazy(() => import('./pages/Festival'))
 const More = lazy(() => import('./pages/More'))
+const GenreFamily = lazy(() => import('./pages/GenreFamily'))
 
 function PageLoader() {
   return <div className="flex flex-1 items-center justify-center"><span className="text-gray-500">...</span></div>
@@ -69,6 +70,7 @@ export default function App() {
               <Route path="/news" element={<News />} />
               <Route path="/festival" element={<Festival />} />
               <Route path="/more" element={<More />} />
+              <Route path="/genre-family" element={<GenreFamily />} />
             </Routes>
           </Suspense>
           </PageErrorBoundary>

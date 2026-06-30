@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { SparklesIcon, BrainIcon, GridIcon, HistoryIcon, BookIcon } from '../components/Icons'
+import { SparklesIcon, BrainIcon, GridIcon, HistoryIcon, BookIcon, TreeIcon } from '../components/Icons'
 import PageShell from '../components/PageShell'
 
 const features = [
@@ -9,7 +9,8 @@ const features = [
   { to: '/guide',       Icon: BookIcon,     titleKey: 'guide.title',       subtitleKey: 'guide.subtitle',       color: '#4a90d9' },
   { to: '/quiz',        Icon: BrainIcon,    titleKey: 'quiz.title',        subtitleKey: 'quiz.subtitle',        color: '#7c3aed' },
   { to: '/bingo',       Icon: GridIcon,     titleKey: 'bingo.title',       subtitleKey: 'bingo.subtitle',       color: '#d4a20a' },
-  { to: '/my-editions', Icon: HistoryIcon,  titleKey: 'myEditions.title',  subtitleKey: 'myEditions.subtitle',  color: '#6b7280' },
+  { to: '/my-editions',   Icon: HistoryIcon, titleKey: 'myEditions.title',    subtitleKey: 'myEditions.subtitle',    color: '#6b7280' },
+  { to: '/genre-family',  Icon: TreeIcon,    titleKey: 'genreFamily.title',   subtitleKey: 'genreFamily.subtitle',   color: '#e63946' },
 ]
 
 export default function More() {

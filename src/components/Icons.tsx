@@ -379,3 +379,21 @@ export function MoreIcon(props: IconProps) {
     </Icon>
   )
 }
+
+export function TreeIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <path d="M12 2v20" />
+      <path d="M2 9h10" />
+      <path d="M2 15h10" />
+      <path d="M22 6h-6" />
+      <path d="M22 12h-6" />
+      <path d="M22 18h-6" />
+      <circle cx="2" cy="9" r="1.5" fill="currentColor" stroke="none" />
+      <circle cx="2" cy="15" r="1.5" fill="currentColor" stroke="none" />
+      <circle cx="22" cy="6" r="1.5" fill="currentColor" stroke="none" />
+      <circle cx="22" cy="12" r="1.5" fill="currentColor" stroke="none" />
+      <circle cx="22" cy="18" r="1.5" fill="currentColor" stroke="none" />
+    </Icon>
+  )
+}

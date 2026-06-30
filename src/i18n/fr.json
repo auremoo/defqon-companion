@@ -607,6 +607,10 @@
     "title": "Fonctionnalités",
     "subtitle": "Tous les outils pour le festival"
   },
+  "genreFamily": {
+    "title": "Famille de la Hard Music",
+    "subtitle": "Arbre complet des genres et sous-genres"
+  },
   "path": {
     "label": "The Path",
     "empty": "Pas encore configuré",
