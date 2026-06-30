@@ -147,6 +147,7 @@ export default function MyEditions() {
         notes: notes || null,
         rating,
       })
+      localStorage.setItem(`defqon-going-${selectedYear}`, 'true')
       setAttended(true)
       setEditionHistories((prev) => {
         const exists = prev.find((h) => h.edition_year === selectedYear!)

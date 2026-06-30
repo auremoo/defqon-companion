@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import PageShell from '../components/PageShell'
-import { CalendarIcon, PaletteIcon, ChecklistIcon, CloudSunIcon, WalletIcon, ChevronRightIcon } from '../components/Icons'
+import { CalendarIcon, PaletteIcon, ChecklistIcon, CloudSunIcon, WalletIcon, ChevronRightIcon, HistoryIcon } from '../components/Icons'
 import ThePathWidget from '../components/ThePathWidget'
 
 const secondaryFeatures = [
@@ -60,6 +60,21 @@ export default function Festival() {
             </Link>
           ))}
         </div>
+
+        {/* Mes Éditions — full-width */}
+        <Link
+          to="/my-editions"
+          className="group flex items-center gap-4 rounded-xl border border-border bg-surface-card p-4 transition-all hover:border-border-hover hover:bg-surface-alt"
+        >
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#6b7280]/15 text-[#9ca3af]">
+            <HistoryIcon size={20} />
+          </div>
+          <div className="min-w-0 flex-1">
+            <p className="text-sm font-bold text-text-primary">{t('myEditions.title')}</p>
+            <p className="text-xs text-text-muted">{t('myEditions.subtitle')}</p>
+          </div>
+          <ChevronRightIcon size={16} className="shrink-0 text-text-muted transition-transform group-hover:translate-x-0.5" />
+        </Link>
 
       </div>
     </PageShell>
