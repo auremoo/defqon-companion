@@ -190,25 +190,40 @@ export default function GenreFamily() {
         </div>
 
         {/* ── Other families (compact) ──────────────────────── */}
-        <div>
-          <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.2em] text-text-muted">Autres familles électroniques</p>
-          <div className="flex flex-wrap gap-1.5">
-            {[
-              { name: 'House', color: '#60a5fa' },
-              { name: 'Techno', color: '#a78bfa' },
-              { name: 'Trance', color: '#818cf8' },
-              { name: 'Drum & Bass', color: '#34d399' },
-              { name: 'Electro', color: '#fbbf24' },
-              { name: 'Breakbeat', color: '#fb923c' },
-            ].map((f) => (
-              <span
-                key={f.name}
-                className="rounded-full border px-2.5 py-1 text-[10px] font-semibold"
-                style={{ borderColor: f.color + '50', color: f.color, backgroundColor: f.color + '12' }}
-              >
-                {f.name}
-              </span>
-            ))}
+        <div className="space-y-3">
+          <div>
+            <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.2em] text-text-muted">Autres familles électroniques</p>
+            <div className="flex flex-wrap gap-1.5">
+              {[
+                { name: 'House', color: '#60a5fa', sub: 'Deep, Tech, Progressive, Bass House…' },
+                { name: 'Techno', color: '#a78bfa', sub: 'Minimal, Detroit, Industrial, Schranz…' },
+                { name: 'Trance', color: '#818cf8', sub: 'Uplifting, Progressive, Psy, Hard Trance…' },
+                { name: 'Drum & Bass', color: '#34d399', sub: 'Liquid, Neurofunk, Jump Up, Darkstep…' },
+                { name: 'Dubstep / Riddim', color: '#818cf8', sub: 'Brostep, Riddim, Melodic Dubstep…' },
+                { name: 'Trap / Bass Music', color: '#f472b6', sub: 'Future Bass, Hybrid Trap, Wave…' },
+                { name: 'Breakbeat', color: '#fb923c', sub: 'Nu-Skool, Breaks, Big Beat…' },
+                { name: 'Electro', color: '#fbbf24', sub: 'Electro House, Complextro…' },
+                { name: 'Ambient / IDM', color: '#6ee7b7', sub: 'Downtempo, Glitch, Electronica…' },
+                { name: 'Future Rave', color: '#c084fc', sub: 'Melodic Techno + EDM, Hardwell era…' },
+              ].map((f) => (
+                <span
+                  key={f.name}
+                  className="rounded-full border px-2.5 py-1 text-[10px] font-semibold"
+                  style={{ borderColor: f.color + '50', color: f.color, backgroundColor: f.color + '12' }}
+                  title={f.sub}
+                >
+                  {f.name}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* EDM callout */}
+          <div className="rounded-xl border border-yellow-900/40 bg-yellow-950/20 p-3">
+            <p className="text-[10px] font-black uppercase tracking-wider text-yellow-500">EDM Commercial — pourquoi absent ?</p>
+            <p className="mt-1 text-[11px] leading-relaxed text-text-muted">
+              L'EDM (Electronic Dance Music) au sens commercial — Avicii, David Guetta, Martin Garrix, big room, future house — est une branche <span className="text-text-secondary font-semibold">séparée</span> de la hard music. Les deux partagent la même racine électronique mais leurs cultures, leurs scènes et leurs communautés ne se mélangent pas. Showtek, par exemple, est passé du hardstyle à l'EDM mainstream — et la communauté hardstyle lui a reproché. L'EDM commercial n'appartient pas à l'arbre de la hard music.
+            </p>
           </div>
         </div>
 
