@@ -470,7 +470,16 @@
     "notesPlaceholder": "Meilleurs moments, souvenirs, avec qui tu \u00e9tais\u2026",
     "save": "Sauvegarder",
     "saved": "Sauvegardé",
-    "saveError": "Échec de la sauvegarde — vérifie ta connexion et réessaie."
+    "saveError": "Échec de la sauvegarde — vérifie ta connexion et réessaie.",
+    "braceletTitle": "Bracelet",
+    "braceletLinked": "Bracelet lié",
+    "braceletUnlink": "Délier",
+    "braceletScan": "Scanner mon bracelet",
+    "braceletScanning": "Approche le bracelet de ton téléphone...",
+    "braceletNfcNote": "NFC · Chrome Android uniquement",
+    "braceletIosNote": "Saisis le numéro imprimé sur ton bracelet",
+    "braceletManualPlaceholder": "Ex : A1B2C3D4",
+    "braceletSave": "Lier"
   },
   "settings": {
     "title": "Param\u00e8tres",

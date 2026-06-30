@@ -470,7 +470,16 @@
     "notesPlaceholder": "Best moments, memories, who you were with...",
     "save": "Save",
     "saved": "Saved",
-    "saveError": "Failed to save — check your connection and try again."
+    "saveError": "Failed to save — check your connection and try again.",
+    "braceletTitle": "Bracelet",
+    "braceletLinked": "Bracelet linked",
+    "braceletUnlink": "Unlink",
+    "braceletScan": "Scan my bracelet",
+    "braceletScanning": "Hold your bracelet against your phone...",
+    "braceletNfcNote": "NFC · Android Chrome only",
+    "braceletIosNote": "Enter the number printed on your bracelet",
+    "braceletManualPlaceholder": "Ex: A1B2C3D4",
+    "braceletSave": "Link"
   },
   "settings": {
     "title": "Settings",

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useAuth } from '../contexts/AuthContext'
 import { db } from '../lib/firebase'
@@ -13,6 +13,7 @@ interface EditionHistory {
   attended_festival: boolean
   notes: string | null
   rating: number | null
+  bracelet_uid?: string | null
 }
 
 interface SavedSet {
@@ -20,10 +21,13 @@ interface SavedSet {
 }
 
 type ActiveTab = 'sets' | 'lineup'
+type NfcState = 'idle' | 'scanning'
 
 function isAttendedLocally(year: number): boolean {
   return localStorage.getItem(`defqon-going-${year}`) === 'true'
 }
+
+const nfcSupported = typeof window !== 'undefined' && 'NDEFReader' in window
 
 export default function MyEditions() {
   const { t } = useTranslation()
@@ -38,8 +42,13 @@ export default function MyEditions() {
   const [rating, setRating] = useState<number | null>(null)
   const [saveStatus, setSaveStatus] = useState<'idle' | 'saving' | 'success' | 'error'>('idle')
   const [showClearConfirm, setShowClearConfirm] = useState(false)
+  const [braceletUid, setBraceletUid] = useState<string | null>(null)
+  const [braceletInput, setBraceletInput] = useState('')
+  const [nfcState, setNfcState] = useState<NfcState>('idle')
+  const nfcAbortRef = useRef<AbortController | null>(null)
 
   useEffect(() => { document.title = 'My Editions — Defqon Companion' }, [])
+  useEffect(() => () => { nfcAbortRef.current?.abort() }, [])
 
   useEffect(() => {
     if (!db || !user) return
@@ -49,9 +58,12 @@ export default function MyEditions() {
   }, [user])
 
   const loadEditionData = async (year: number) => {
+    nfcAbortRef.current?.abort()
+    setNfcState('idle')
     setSelectedYear(year)
     setShowClearConfirm(false)
     setSaveStatus('idle')
+    setBraceletInput('')
     const ed = await loadEdition(year)
     setSelectedEdition(ed)
 
@@ -77,6 +89,7 @@ export default function MyEditions() {
     setAttended(att)
     setNotes(history?.notes || '')
     setRating(history?.rating || null)
+    setBraceletUid(history?.bracelet_uid || null)
   }
 
   const removeSet = async (setId: string) => {
@@ -148,6 +161,51 @@ export default function MyEditions() {
     }
   }
 
+  const linkBracelet = async (uid: string) => {
+    setBraceletUid(uid)
+    setBraceletInput('')
+    setNfcState('idle')
+    if (db && user && selectedYear) {
+      try {
+        await setDoc(doc(db, 'user_editions', `${user.uid}_${selectedYear}`), { bracelet_uid: uid }, { merge: true })
+      } catch {}
+    }
+  }
+
+  const unlinkBracelet = async () => {
+    setBraceletUid(null)
+    if (db && user && selectedYear) {
+      try {
+        await setDoc(doc(db, 'user_editions', `${user.uid}_${selectedYear}`), { bracelet_uid: null }, { merge: true })
+      } catch {}
+    }
+  }
+
+  const scanBracelet = async () => {
+    setNfcState('scanning')
+    nfcAbortRef.current?.abort()
+    nfcAbortRef.current = new AbortController()
+    try {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const reader = new (window as any).NDEFReader()
+      await reader.scan({ signal: nfcAbortRef.current.signal })
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      reader.onreading = (event: any) => {
+        nfcAbortRef.current?.abort()
+        const uid = String(event.serialNumber).toUpperCase().replace(/:/g, '')
+        linkBracelet(uid)
+      }
+      reader.onerror = () => setNfcState('idle')
+    } catch {
+      setNfcState('idle')
+    }
+  }
+
+  const cancelScan = () => {
+    nfcAbortRef.current?.abort()
+    setNfcState('idle')
+  }
+
   const savedSetsData: Set[] = selectedEdition
     ? selectedEdition.lineup
         .filter((s) => savedSets.some((ss) => ss.set_id === s.id))
@@ -194,6 +252,9 @@ export default function MyEditions() {
                   <div className="text-right space-y-1">
                     {wasAttended && (
                       <p className="text-[10px] font-bold uppercase tracking-wider text-green-400">{t('myEditions.attended')}</p>
+                    )}
+                    {history?.bracelet_uid && (
+                      <p className="text-[10px] text-text-muted">⬡ {t('myEditions.braceletLinked')}</p>
                     )}
                     {history?.rating && (
                       <p className="text-xs text-defqon-gold">{'★'.repeat(history.rating)}{'☆'.repeat(5 - history.rating)}</p>
@@ -322,9 +383,70 @@ export default function MyEditions() {
                       </div>
                     )}
 
-                    {/* Notes & rating (logged in only) */}
+                    {/* Notes, rating & bracelet (logged in only) */}
                     {configured && user && (
                       <div className="space-y-3 border-t border-border pt-3">
+
+                        {/* Bracelet NFC */}
+                        <div className="space-y-2">
+                          <p className="text-xs font-bold uppercase tracking-wider text-text-muted">
+                            {t('myEditions.braceletTitle')}
+                          </p>
+                          {braceletUid ? (
+                            <div className="flex items-center justify-between rounded-lg border border-green-800/30 bg-green-900/10 px-3 py-2">
+                              <div>
+                                <p className="text-xs font-semibold text-green-400">⬡ {t('myEditions.braceletLinked')}</p>
+                                <p className="mt-0.5 font-mono text-[10px] text-text-muted">{braceletUid}</p>
+                              </div>
+                              <button
+                                onClick={unlinkBracelet}
+                                className="text-[11px] text-text-muted underline-offset-2 hover:text-red-400 hover:underline"
+                              >
+                                {t('myEditions.braceletUnlink')}
+                              </button>
+                            </div>
+                          ) : nfcState === 'scanning' ? (
+                            <div className="rounded-lg border border-accent/30 bg-accent/5 px-3 py-3 text-center space-y-2">
+                              <p className="animate-pulse text-xs text-accent">{t('myEditions.braceletScanning')}</p>
+                              <button onClick={cancelScan} className="text-[11px] text-text-muted hover:text-red-400 hover:underline underline-offset-2">
+                                {t('myEditions.cancel')}
+                              </button>
+                            </div>
+                          ) : nfcSupported ? (
+                            <div className="space-y-1.5">
+                              <button
+                                onClick={scanBracelet}
+                                className="w-full rounded-lg border border-border bg-surface-alt py-2 text-xs font-semibold text-text-secondary transition-colors hover:border-accent/40 hover:text-text-primary"
+                              >
+                                {t('myEditions.braceletScan')}
+                              </button>
+                              <p className="text-center text-[10px] text-text-muted">{t('myEditions.braceletNfcNote')}</p>
+                            </div>
+                          ) : (
+                            <div className="space-y-1.5">
+                              <p className="text-[11px] text-text-muted">{t('myEditions.braceletIosNote')}</p>
+                              <div className="flex gap-2">
+                                <input
+                                  type="text"
+                                  value={braceletInput}
+                                  onChange={(e) => setBraceletInput(e.target.value.toUpperCase())}
+                                  placeholder={t('myEditions.braceletManualPlaceholder')}
+                                  maxLength={24}
+                                  className="flex-1 rounded-lg border border-border bg-surface-alt px-3 py-2 font-mono text-xs text-text-primary placeholder-text-muted outline-none focus:border-accent/50"
+                                />
+                                <button
+                                  onClick={() => braceletInput.trim() && linkBracelet(braceletInput.trim())}
+                                  disabled={!braceletInput.trim()}
+                                  className="rounded-lg bg-accent px-3 py-2 text-xs font-semibold text-text-primary disabled:opacity-40"
+                                >
+                                  {t('myEditions.braceletSave')}
+                                </button>
+                              </div>
+                            </div>
+                          )}
+                        </div>
+
+                        {/* Rating */}
                         <div>
                           <p className="mb-1 text-xs font-bold uppercase tracking-wider text-text-muted">{t('myEditions.rating')}</p>
                           <div className="flex gap-1">
@@ -339,6 +461,8 @@ export default function MyEditions() {
                             ))}
                           </div>
                         </div>
+
+                        {/* Notes */}
                         <div>
                           <p className="mb-1 text-xs font-bold uppercase tracking-wider text-text-muted">{t('myEditions.notes')}</p>
                           <textarea
@@ -346,9 +470,10 @@ export default function MyEditions() {
                             onChange={(e) => setNotes(e.target.value)}
                             placeholder={t('myEditions.notesPlaceholder')}
                             rows={3}
-                            className="w-full rounded-lg border border-border bg-surface-alt px-3 py-2 text-sm text-text-primary placeholder-text-muted outline-none focus:border-accent/50 resize-none"
+                            className="w-full resize-none rounded-lg border border-border bg-surface-alt px-3 py-2 text-sm text-text-primary placeholder-text-muted outline-none focus:border-accent/50"
                           />
                         </div>
+
                         {saveStatus === 'error' && (
                           <p className="rounded-lg border border-red-800/40 bg-red-900/15 px-3 py-2 text-xs text-red-400">
                             {t('myEditions.saveError')}
