@@ -1,53 +1,53 @@
 {
-  "updatedAt": "2026-06-30T08:30:31.148Z",
+  "updatedAt": "2026-07-01T08:50:06.438Z",
   "releases": [
     {
-      "id": "b28868a9-5092-4492-a5d6-c00b8169c8bf",
-      "title": "Wherever We Go",
-      "artist": "Valyant",
+      "id": "2856f164-25c6-4bfa-9e9e-e7c07914047a",
+      "title": "Dark Side Of The Moon",
+      "artist": "Sub Sonik",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/b28868a9-5092-4492-a5d6-c00b8169c8bf/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/b28868a9-5092-4492-a5d6-c00b8169c8bf/wherever-we-go"
+      "image": "https://hardstyle.com/track_image/2856f164-25c6-4bfa-9e9e-e7c07914047a/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/2856f164-25c6-4bfa-9e9e-e7c07914047a/dark-side-of-the-moon"
     },
     {
-      "id": "e48391e2-4856-4523-ad2e-518738d2f51f",
-      "title": "Flying So High",
-      "artist": "DJ OGGY",
+      "id": "d6119e65-d488-441a-9c80-d8e5b0881430",
+      "title": "No Fear",
+      "artist": "Dulehec",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/d6119e65-d488-441a-9c80-d8e5b0881430/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/d6119e65-d488-441a-9c80-d8e5b0881430/no-fear"
+    },
+    {
+      "id": "114c082c-e943-4a58-9890-c5dd34dfd723",
+      "title": "So Alive",
+      "artist": "Deviation",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/114c082c-e943-4a58-9890-c5dd34dfd723/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/114c082c-e943-4a58-9890-c5dd34dfd723/so-alive"
+    },
+    {
+      "id": "239de6f6-ae0f-4817-b58a-ff04ec3cf50f",
+      "title": "Cocaine Blues",
+      "artist": "Craigy B!",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/e48391e2-4856-4523-ad2e-518738d2f51f/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/e48391e2-4856-4523-ad2e-518738d2f51f/flying-so-high"
+      "image": "https://hardstyle.com/track_image/239de6f6-ae0f-4817-b58a-ff04ec3cf50f/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/239de6f6-ae0f-4817-b58a-ff04ec3cf50f/cocaine-blues"
     },
     {
-      "id": "04338acf-092c-4787-9be9-d0ea81cbe63c",
-      "title": "Flying So High",
-      "artist": "DJ OGGY",
+      "id": "0206f7a8-c2c5-4e5a-bae0-01e28c90f666",
+      "title": "Cocaine Blues",
+      "artist": "Craigy B!",
       "mix": "Radio Edit",
-      "image": "https://hardstyle.com/track_image/04338acf-092c-4787-9be9-d0ea81cbe63c/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/04338acf-092c-4787-9be9-d0ea81cbe63c/flying-so-high"
+      "image": "https://hardstyle.com/track_image/0206f7a8-c2c5-4e5a-bae0-01e28c90f666/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/0206f7a8-c2c5-4e5a-bae0-01e28c90f666/cocaine-blues"
     },
     {
-      "id": "2485fc8e-0be6-4d78-8996-2df9a668e1c2",
-      "title": "Super Mega Massacre",
-      "artist": "Nagazaki",
+      "id": "f773d38a-f658-4f23-abbc-0addd45d6fbe",
+      "title": "It's Cool",
+      "artist": "Sharkey",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/2485fc8e-0be6-4d78-8996-2df9a668e1c2/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/2485fc8e-0be6-4d78-8996-2df9a668e1c2/super-mega-massacre"
-    },
-    {
-      "id": "ef588094-359c-4ae9-b3cb-4431b1e5077a",
-      "title": "Shellshock",
-      "artist": "Nagazaki",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/ef588094-359c-4ae9-b3cb-4431b1e5077a/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/ef588094-359c-4ae9-b3cb-4431b1e5077a/shellshock"
-    },
-    {
-      "id": "eaedf7f6-9f9b-46a3-8ca4-a82a15e6bf51",
-      "title": "Turbokillah",
-      "artist": "Nagazaki",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/eaedf7f6-9f9b-46a3-8ca4-a82a15e6bf51/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/eaedf7f6-9f9b-46a3-8ca4-a82a15e6bf51/turbokillah"
+      "image": "https://hardstyle.com/track_image/f773d38a-f658-4f23-abbc-0addd45d6fbe/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/f773d38a-f658-4f23-abbc-0addd45d6fbe/it-s-cool"
     },
     {
       "id": "8d9dd50c-dc96-4d1f-a4b1-2542e098a05d",
