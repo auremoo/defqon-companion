@@ -1,10 +1,17 @@
 {
-  "updatedAt": "2026-06-30T10:06:43.154Z",
+  "updatedAt": "2026-07-01T10:29:36.772Z",
   "articles": [
+    {
+      "title": "This week's hardstyle releases [week 27]",
+      "link": "https://hardstyle.com/en/news/this-week-s-hardstyle-releases-week-27",
+      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/2026/Juni/718062111_18427290367133733_6339893426757904503_n.jpg",
+      "date": null,
+      "category": "hardstyle,music"
+    },
     {
       "title": "Breaking News: Defqon.1 is cancelled",
       "link": "https://hardstyle.com/en/news/defqon1-is-cancelled",
-      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/2026/6%20june/731044888_1732937554384752_3226165092250338552_n-png.jpg",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/6%20june/731044888_1732937554384752_3226165092250338552_n-png.jpg",
       "date": "2026-06-26",
       "category": "news,hardstyle"
     },
@@ -32,7 +39,7 @@
     {
       "title": "Jay Reeve pres. Melodic Madness is back with their fourth edition",
       "link": "https://hardstyle.com/en/news/jay-reeve-pres-melodic-madness-is-back-with-their-fourth-edition",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/Juni/20250927_181847_MelodicMadness_HR_ReflectionOfAmbition_.jpg",
+      "image": null,
       "date": "2026-06-11",
       "category": "news,hardstyle"
     },
@@ -62,13 +69,6 @@
       "link": "https://hardstyle.com/en/news/decibel-outdoor-announces-wknd-line-up",
       "image": null,
       "date": "2026-05-27",
-      "category": "news,hardstyle"
-    },
-    {
-      "title": "Frontliner Brings 'The Summer of Frontliner' to Vinyl",
-      "link": "https://hardstyle.com/en/news/frontliner-brings-the-summer-of-frontliner-to-vinyl",
-      "image": null,
-      "date": "2026-05-26",
       "category": "news,hardstyle"
     }
   ]
