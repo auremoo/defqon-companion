@@ -27,12 +27,22 @@ function isAttendedLocally(year: number): boolean {
   return localStorage.getItem(`defqon-going-${year}`) === 'true'
 }
 
+const LS_HISTORIES = 'defqon-edition-histories'
+
+function loadHistoriesFromCache(): EditionHistory[] {
+  try { return JSON.parse(localStorage.getItem(LS_HISTORIES) || '[]') } catch { return [] }
+}
+
+function saveHistoriesToCache(h: EditionHistory[]) {
+  try { localStorage.setItem(LS_HISTORIES, JSON.stringify(h)) } catch {}
+}
+
 const nfcSupported = typeof window !== 'undefined' && 'NDEFReader' in window
 
 export default function MyEditions() {
   const { t } = useTranslation()
   const { user, configured } = useAuth()
-  const [editionHistories, setEditionHistories] = useState<EditionHistory[]>([])
+  const [editionHistories, setEditionHistories] = useState<EditionHistory[]>(loadHistoriesFromCache)
   const [selectedYear, setSelectedYear] = useState<number | null>(null)
   const [selectedEdition, setSelectedEdition] = useState<Edition | null>(null)
   const [savedSets, setSavedSets] = useState<SavedSet[]>([])
@@ -53,7 +63,9 @@ export default function MyEditions() {
   useEffect(() => {
     if (!db || !user) return
     getDocs(query(collection(db, 'user_editions'), where('user_id', '==', user.uid))).then((snaps) => {
-      setEditionHistories(snaps.docs.map((d) => d.data() as EditionHistory))
+      const data = snaps.docs.map((d) => d.data() as EditionHistory)
+      setEditionHistories(data)
+      saveHistoriesToCache(data)
     })
   }, [user])
 
@@ -92,6 +104,14 @@ export default function MyEditions() {
     setBraceletUid(history?.bracelet_uid || null)
   }
 
+  const updateHistories = (updater: (prev: EditionHistory[]) => EditionHistory[]) => {
+    setEditionHistories((prev) => {
+      const next = updater(prev)
+      saveHistoriesToCache(next)
+      return next
+    })
+  }
+
   const removeSet = async (setId: string) => {
     if (!selectedYear) return
     setSavedSets((prev) => prev.filter((s) => s.set_id !== setId))
@@ -126,7 +146,7 @@ export default function MyEditions() {
     if (!selectedYear) return
     localStorage.removeItem(`defqon-going-${selectedYear}`)
     setAttended(false)
-    setEditionHistories((prev) =>
+    updateHistories((prev) =>
       prev.map((h) => h.edition_year === selectedYear ? { ...h, attended_festival: false } : h)
     )
     if (db && user) {
@@ -150,7 +170,7 @@ export default function MyEditions() {
       }, { merge: true })
       localStorage.setItem(`defqon-going-${selectedYear}`, 'true')
       setAttended(true)
-      setEditionHistories((prev) => {
+      updateHistories((prev) => {
         const exists = prev.find((h) => h.edition_year === selectedYear!)
         if (exists) return prev.map((h) => h.edition_year === selectedYear! ? { ...h, notes: notes || null, rating, attended_festival: true, bracelet_uid: braceletUid } : h)
         return [...prev, { edition_year: selectedYear!, attended_festival: true, notes: notes || null, rating, bracelet_uid: braceletUid }]
@@ -167,7 +187,7 @@ export default function MyEditions() {
     setBraceletUid(uid)
     setBraceletInput('')
     setNfcState('idle')
-    setEditionHistories((prev) => {
+    updateHistories((prev) => {
       const exists = prev.find((h) => h.edition_year === selectedYear!)
       if (exists) return prev.map((h) => h.edition_year === selectedYear! ? { ...h, bracelet_uid: uid } : h)
       return [...prev, { edition_year: selectedYear!, attended_festival: false, notes: null, rating: null, bracelet_uid: uid }]
@@ -185,7 +205,7 @@ export default function MyEditions() {
 
   const unlinkBracelet = async () => {
     setBraceletUid(null)
-    setEditionHistories((prev) =>
+    updateHistories((prev) =>
       prev.map((h) => h.edition_year === selectedYear! ? { ...h, bracelet_uid: null } : h)
     )
     if (db && user && selectedYear) {
