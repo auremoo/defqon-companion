@@ -146,13 +146,14 @@ export default function MyEditions() {
         attended_festival: true,
         notes: notes || null,
         rating,
-      })
+        bracelet_uid: braceletUid ?? null,
+      }, { merge: true })
       localStorage.setItem(`defqon-going-${selectedYear}`, 'true')
       setAttended(true)
       setEditionHistories((prev) => {
         const exists = prev.find((h) => h.edition_year === selectedYear!)
-        if (exists) return prev.map((h) => h.edition_year === selectedYear! ? { ...h, notes: notes || null, rating, attended_festival: true } : h)
-        return [...prev, { edition_year: selectedYear!, attended_festival: true, notes: notes || null, rating }]
+        if (exists) return prev.map((h) => h.edition_year === selectedYear! ? { ...h, notes: notes || null, rating, attended_festival: true, bracelet_uid: braceletUid } : h)
+        return [...prev, { edition_year: selectedYear!, attended_festival: true, notes: notes || null, rating, bracelet_uid: braceletUid }]
       })
       setSaveStatus('success')
       setTimeout(() => setSaveStatus('idle'), 2500)
@@ -166,15 +167,27 @@ export default function MyEditions() {
     setBraceletUid(uid)
     setBraceletInput('')
     setNfcState('idle')
+    setEditionHistories((prev) => {
+      const exists = prev.find((h) => h.edition_year === selectedYear!)
+      if (exists) return prev.map((h) => h.edition_year === selectedYear! ? { ...h, bracelet_uid: uid } : h)
+      return [...prev, { edition_year: selectedYear!, attended_festival: false, notes: null, rating: null, bracelet_uid: uid }]
+    })
     if (db && user && selectedYear) {
       try {
-        await setDoc(doc(db, 'user_editions', `${user.uid}_${selectedYear}`), { bracelet_uid: uid }, { merge: true })
+        await setDoc(doc(db, 'user_editions', `${user.uid}_${selectedYear}`), {
+          user_id: user.uid,
+          edition_year: selectedYear,
+          bracelet_uid: uid,
+        }, { merge: true })
       } catch {}
     }
   }
 
   const unlinkBracelet = async () => {
     setBraceletUid(null)
+    setEditionHistories((prev) =>
+      prev.map((h) => h.edition_year === selectedYear! ? { ...h, bracelet_uid: null } : h)
+    )
     if (db && user && selectedYear) {
       try {
         await setDoc(doc(db, 'user_editions', `${user.uid}_${selectedYear}`), { bracelet_uid: null }, { merge: true })
