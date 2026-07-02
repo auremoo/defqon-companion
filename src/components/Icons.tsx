@@ -380,6 +380,16 @@ export function MoreIcon(props: IconProps) {
   )
 }
 
+export function FilmIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <rect x="2" y="6" width="20" height="12" rx="2" />
+      <path d="M6 6v12M10 6v12M14 6v12M18 6v12" />
+      <path d="M2 10h4M2 14h4M18 10h4M18 14h4" />
+    </Icon>
+  )
+}
+
 export function TreeIcon(props: IconProps) {
   return (
     <Icon {...props}>

@@ -611,6 +611,12 @@
     "title": "Famille de la Hard Music",
     "subtitle": "Arbre complet des genres et sous-genres"
   },
+  "mainstage": {
+    "title": "MainStage",
+    "subtitle": "Aftermovies officiels · 2007–2025",
+    "noVideo": "Pas d'aftermovie",
+    "credit": "Aftermovies officiels par Q-dance sur YouTube"
+  },
   "path": {
     "label": "The Path",
     "empty": "Pas encore configuré",

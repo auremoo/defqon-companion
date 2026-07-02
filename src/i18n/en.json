@@ -611,6 +611,12 @@
     "title": "Hard Music Family Tree",
     "subtitle": "Complete tree of genres and sub-genres"
   },
+  "mainstage": {
+    "title": "MainStage",
+    "subtitle": "Official aftermovies · 2007–2025",
+    "noVideo": "No aftermovie",
+    "credit": "Official aftermovies by Q-dance on YouTube"
+  },
   "path": {
     "label": "The Path",
     "empty": "Not set up yet",
