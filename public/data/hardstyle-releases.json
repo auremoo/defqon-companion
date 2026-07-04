@@ -1,6 +1,38 @@
 {
-  "updatedAt": "2026-07-03T08:09:49.642Z",
+  "updatedAt": "2026-07-04T07:46:54.663Z",
   "releases": [
+    {
+      "id": "89f77e1a-4f23-48b1-baae-d9f656e9b58c",
+      "title": "TATRAN Prešov",
+      "artist": "Luke PN",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/89f77e1a-4f23-48b1-baae-d9f656e9b58c/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/89f77e1a-4f23-48b1-baae-d9f656e9b58c/tatran-presov"
+    },
+    {
+      "id": "bafddbaf-3b46-4524-9993-6867a589f67b",
+      "title": "Angels",
+      "artist": "DJ Juanma",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/bafddbaf-3b46-4524-9993-6867a589f67b/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/bafddbaf-3b46-4524-9993-6867a589f67b/angels"
+    },
+    {
+      "id": "986cf06f-5ce9-42d7-a559-2da238bcfe82",
+      "title": "Hype",
+      "artist": "Essociaal",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/986cf06f-5ce9-42d7-a559-2da238bcfe82/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/986cf06f-5ce9-42d7-a559-2da238bcfe82/hype"
+    },
+    {
+      "id": "0c5162c7-6562-423d-8c41-8e662ba762e0",
+      "title": "Keep The Rave Alive",
+      "artist": "Be Stronger",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/0c5162c7-6562-423d-8c41-8e662ba762e0/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/0c5162c7-6562-423d-8c41-8e662ba762e0/keep-the-rave-alive"
+    },
     {
       "id": "1637da97-7470-427f-9857-8414bea7da8d",
       "title": "Burning in the Rain",
@@ -16,38 +48,6 @@
       "mix": "Extended",
       "image": "https://hardstyle.com/track_image/ab0b22e7-410d-4073-9f81-66aed2d8391c/250x250/335",
       "link": "https://hardstyle.com/en/tracks/ab0b22e7-410d-4073-9f81-66aed2d8391c/burning-in-the-rain"
-    },
-    {
-      "id": "17321d9d-5983-490a-a90f-4b628cda604e",
-      "title": "Bring that shit back",
-      "artist": "Wasting Program",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/17321d9d-5983-490a-a90f-4b628cda604e/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/17321d9d-5983-490a-a90f-4b628cda604e/bring-that-shit-back"
-    },
-    {
-      "id": "366f402a-424e-48dc-ba74-ebc05c0ae171",
-      "title": "You have nothing left but destruction",
-      "artist": "Wasting Program",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/366f402a-424e-48dc-ba74-ebc05c0ae171/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/366f402a-424e-48dc-ba74-ebc05c0ae171/you-have-nothing-left-but-destruction"
-    },
-    {
-      "id": "1fb1dae4-7aff-437f-8baa-8e7c16de3e8a",
-      "title": "Jazz sacrilege",
-      "artist": "Wasting Program",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/1fb1dae4-7aff-437f-8baa-8e7c16de3e8a/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/1fb1dae4-7aff-437f-8baa-8e7c16de3e8a/jazz-sacrilege"
-    },
-    {
-      "id": "b92a56ab-477e-4a3a-8acb-b1dc0ef79fce",
-      "title": "In The Cold",
-      "artist": "Atmozfears",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/b92a56ab-477e-4a3a-8acb-b1dc0ef79fce/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/b92a56ab-477e-4a3a-8acb-b1dc0ef79fce/in-the-cold"
     },
     {
       "id": "8d9dd50c-dc96-4d1f-a4b1-2542e098a05d",
