@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-04T07:46:54.663Z",
+  "updatedAt": "2026-07-05T07:57:11.894Z",
   "releases": [
     {
       "id": "89f77e1a-4f23-48b1-baae-d9f656e9b58c",
@@ -8,6 +8,14 @@
       "mix": "Original Mix",
       "image": "https://hardstyle.com/track_image/89f77e1a-4f23-48b1-baae-d9f656e9b58c/250x250/335",
       "link": "https://hardstyle.com/en/tracks/89f77e1a-4f23-48b1-baae-d9f656e9b58c/tatran-presov"
+    },
+    {
+      "id": "4f5fc5a6-850c-4af0-9960-0f7e4505f566",
+      "title": "BODIES IN THE BASEMENT",
+      "artist": "N-Vitral",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/4f5fc5a6-850c-4af0-9960-0f7e4505f566/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/4f5fc5a6-850c-4af0-9960-0f7e4505f566/bodies-in-the-basement"
     },
     {
       "id": "bafddbaf-3b46-4524-9993-6867a589f67b",
@@ -37,17 +45,9 @@
       "id": "1637da97-7470-427f-9857-8414bea7da8d",
       "title": "Burning in the Rain",
       "artist": "ARDA",
-      "mix": "",
+      "mix": "Extended",
       "image": "https://hardstyle.com/track_image/1637da97-7470-427f-9857-8414bea7da8d/250x250/335",
       "link": "https://hardstyle.com/en/tracks/1637da97-7470-427f-9857-8414bea7da8d/burning-in-the-rain"
-    },
-    {
-      "id": "ab0b22e7-410d-4073-9f81-66aed2d8391c",
-      "title": "Burning In The Rain",
-      "artist": "ARDA",
-      "mix": "Extended",
-      "image": "https://hardstyle.com/track_image/ab0b22e7-410d-4073-9f81-66aed2d8391c/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/ab0b22e7-410d-4073-9f81-66aed2d8391c/burning-in-the-rain"
     },
     {
       "id": "8d9dd50c-dc96-4d1f-a4b1-2542e098a05d",
