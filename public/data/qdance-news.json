@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-07-05T08:51:55.933Z",
+  "updatedAt": "2026-07-06T10:20:25.617Z",
   "videos": [
+    {
+      "id": "WomeRyabC0c",
+      "title": "A classic by Frontliner, reimagined by Galactixx. Coming soon on Defqon.1 Records x Scantraxx.",
+      "published": "2026-07-06T09:06:18+00:00",
+      "link": "https://www.youtube.com/watch?v=WomeRyabC0c",
+      "thumbnail": "https://i.ytimg.com/vi/WomeRyabC0c/mqdefault.jpg"
+    },
+    {
+      "id": "3G6sBBl5Tsw",
+      "title": "Relive this unforgettable moment from The Endshow as D-Block & S-te-Fan's &quot;Embers&quot; lit up the sky.",
+      "published": "2026-07-05T11:09:22+00:00",
+      "link": "https://www.youtube.com/watch?v=3G6sBBl5Tsw",
+      "thumbnail": "https://i.ytimg.com/vi/3G6sBBl5Tsw/mqdefault.jpg"
+    },
     {
       "id": "H76mZ3q8eVk",
       "title": "After taking the internet by storm, the Losse Polsjes Anthem became part of Defqon.1 2026 history.",
@@ -91,20 +105,6 @@
       "published": "2026-06-16T10:05:24+00:00",
       "link": "https://www.youtube.com/watch?v=3X8DX2lTG6E",
       "thumbnail": "https://i.ytimg.com/vi/3X8DX2lTG6E/mqdefault.jpg"
-    },
-    {
-      "id": "L0yy-JZuEvM",
-      "title": "DJ Isaac at Defqon.1 2025!",
-      "published": "2026-06-16T08:02:53+00:00",
-      "link": "https://www.youtube.com/watch?v=L0yy-JZuEvM",
-      "thumbnail": "https://i.ytimg.com/vi/L0yy-JZuEvM/mqdefault.jpg"
-    },
-    {
-      "id": "KZhEG8Jv7BA",
-      "title": "Warriors, thank you for your legendary dedication. Defqon.1 2026 Sacred Oath is completely sold out!",
-      "published": "2026-06-15T17:00:27+00:00",
-      "link": "https://www.youtube.com/watch?v=KZhEG8Jv7BA",
-      "thumbnail": "https://i.ytimg.com/vi/KZhEG8Jv7BA/mqdefault.jpg"
     }
   ]
 }
