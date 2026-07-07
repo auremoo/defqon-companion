@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-06T08:59:58.821Z",
+  "updatedAt": "2026-07-07T08:23:38.882Z",
   "tracks": [
     {
       "position": 1,
@@ -23,7 +23,7 @@
       "label": "Ravage Records",
       "image": "https://hardstyle.com/track_image/6517102b-5269-48a0-867b-a3541e58ed59/250x250/335",
       "link": "https://hardstyle.com/en/tracks/6517102b-5269-48a0-867b-a3541e58ed59/tomorrow-can-wait",
-      "lastWeek": "4",
+      "lastWeek": "2",
       "peak": "2",
       "weeksOnChart": "1"
     },
@@ -36,22 +36,22 @@
       "label": "Gearbox Digital",
       "image": "https://hardstyle.com/track_image/3cfdf358-e062-4a94-ba9e-678812c66bb6/250x250/335",
       "link": "https://hardstyle.com/en/tracks/3cfdf358-e062-4a94-ba9e-678812c66bb6/storm-is-coming",
-      "lastWeek": "9",
+      "lastWeek": "8",
       "peak": "3",
       "weeksOnChart": "1"
     },
     {
       "position": 4,
-      "id": "52790e29-6890-47c4-9335-a3dd08db1aa5",
-      "title": "F YOURSELF",
-      "artist": "Exproz",
+      "id": "f0d61423-800b-4267-9db0-2bf2a380e6db",
+      "title": "2001",
+      "artist": "TNT",
       "mix": "Extended Mix",
-      "label": "Gearbox Digital",
-      "image": "https://hardstyle.com/track_image/52790e29-6890-47c4-9335-a3dd08db1aa5/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/52790e29-6890-47c4-9335-a3dd08db1aa5/f-yourself",
-      "lastWeek": "2",
-      "peak": "2",
-      "weeksOnChart": "2"
+      "label": "Dirty Workz",
+      "image": "https://hardstyle.com/track_image/f0d61423-800b-4267-9db0-2bf2a380e6db/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/f0d61423-800b-4267-9db0-2bf2a380e6db/2001",
+      "lastWeek": "-",
+      "peak": "4",
+      "weeksOnChart": "-"
     },
     {
       "position": 5,
@@ -68,6 +68,19 @@
     },
     {
       "position": 6,
+      "id": "52790e29-6890-47c4-9335-a3dd08db1aa5",
+      "title": "F YOURSELF",
+      "artist": "Exproz",
+      "mix": "Extended Mix",
+      "label": "Gearbox Digital",
+      "image": "https://hardstyle.com/track_image/52790e29-6890-47c4-9335-a3dd08db1aa5/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/52790e29-6890-47c4-9335-a3dd08db1aa5/f-yourself",
+      "lastWeek": "2",
+      "peak": "2",
+      "weeksOnChart": "2"
+    },
+    {
+      "position": 7,
       "id": "96d74dff-400e-40e9-aed6-f209f67a905d",
       "title": "The Loudest City (Decibel outdoor 2026 Anthem)",
       "artist": "Rebelion",
@@ -78,19 +91,6 @@
       "lastWeek": "4",
       "peak": "3",
       "weeksOnChart": "3"
-    },
-    {
-      "position": 7,
-      "id": "f0d61423-800b-4267-9db0-2bf2a380e6db",
-      "title": "2001",
-      "artist": "TNT",
-      "mix": "Extended Mix",
-      "label": "Dirty Workz",
-      "image": "https://hardstyle.com/track_image/f0d61423-800b-4267-9db0-2bf2a380e6db/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/f0d61423-800b-4267-9db0-2bf2a380e6db/2001",
-      "lastWeek": "-",
-      "peak": "7",
-      "weeksOnChart": "-"
     },
     {
       "position": 8,
@@ -116,23 +116,10 @@
       "link": "https://hardstyle.com/en/tracks/1a7973b6-7902-408b-b324-ea7cdf9ffc1c/living-on-the-edge",
       "lastWeek": "-",
       "peak": "9",
-      "weeksOnChart": "-"
+      "weeksOnChart": "1"
     },
     {
       "position": 10,
-      "id": "b998dd22-9467-4451-a381-5744f264b8b1",
-      "title": "Original Gangsters (Raw and Mean)",
-      "artist": "Adaro",
-      "mix": "Extended Mix",
-      "label": "Roughstate",
-      "image": "https://hardstyle.com/track_image/b998dd22-9467-4451-a381-5744f264b8b1/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/b998dd22-9467-4451-a381-5744f264b8b1/original-gangsters-raw-and-mean",
-      "lastWeek": "15",
-      "peak": "8",
-      "weeksOnChart": "2"
-    },
-    {
-      "position": 11,
       "id": "0a257b1f-83f5-471f-909e-57f2b0cff52e",
       "title": "When You’re Gone",
       "artist": "Galactixx",
@@ -142,6 +129,19 @@
       "link": "https://hardstyle.com/en/tracks/0a257b1f-83f5-471f-909e-57f2b0cff52e/when-you-re-gone",
       "lastWeek": "12",
       "peak": "9",
+      "weeksOnChart": "2"
+    },
+    {
+      "position": 11,
+      "id": "b998dd22-9467-4451-a381-5744f264b8b1",
+      "title": "Original Gangsters (Raw and Mean)",
+      "artist": "Adaro",
+      "mix": "Extended Mix",
+      "label": "Roughstate",
+      "image": "https://hardstyle.com/track_image/b998dd22-9467-4451-a381-5744f264b8b1/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/b998dd22-9467-4451-a381-5744f264b8b1/original-gangsters-raw-and-mean",
+      "lastWeek": "15",
+      "peak": "8",
       "weeksOnChart": "2"
     },
     {
@@ -172,32 +172,19 @@
     },
     {
       "position": 14,
-      "id": "da4193b3-25a9-4644-8740-e0271cec6715",
-      "title": "Stompa",
-      "artist": "So Juice",
+      "id": "2856f164-25c6-4bfa-9e9e-e7c07914047a",
+      "title": "Dark Side Of The Moon",
+      "artist": "Sub Sonik",
       "mix": "Extended Mix",
-      "label": "Gearbox Digital",
-      "image": "https://hardstyle.com/track_image/da4193b3-25a9-4644-8740-e0271cec6715/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/da4193b3-25a9-4644-8740-e0271cec6715/stompa",
-      "lastWeek": "10",
-      "peak": "10",
-      "weeksOnChart": "2"
+      "label": "Dirty Workz",
+      "image": "https://hardstyle.com/track_image/2856f164-25c6-4bfa-9e9e-e7c07914047a/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/2856f164-25c6-4bfa-9e9e-e7c07914047a/dark-side-of-the-moon",
+      "lastWeek": "-",
+      "peak": "14",
+      "weeksOnChart": "-"
     },
     {
       "position": 15,
-      "id": "aff1a2de-b4da-4f68-ad57-e05f3536c108",
-      "title": "EAT SLEEP NOISE REPEAT",
-      "artist": "TOZA",
-      "mix": "Extended Mix",
-      "label": "Acid Reign",
-      "image": "https://hardstyle.com/track_image/aff1a2de-b4da-4f68-ad57-e05f3536c108/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/aff1a2de-b4da-4f68-ad57-e05f3536c108/eat-sleep-noise-repeat",
-      "lastWeek": "7",
-      "peak": "7",
-      "weeksOnChart": "2"
-    },
-    {
-      "position": 16,
       "id": "f29e29dd-1d10-4de9-a668-431af1c6eb03",
       "title": "Suck My",
       "artist": "Radical Redemption",
@@ -210,7 +197,33 @@
       "weeksOnChart": "2"
     },
     {
+      "position": 16,
+      "id": "da4193b3-25a9-4644-8740-e0271cec6715",
+      "title": "Stompa",
+      "artist": "So Juice",
+      "mix": "Extended Mix",
+      "label": "Gearbox Digital",
+      "image": "https://hardstyle.com/track_image/da4193b3-25a9-4644-8740-e0271cec6715/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/da4193b3-25a9-4644-8740-e0271cec6715/stompa",
+      "lastWeek": "10",
+      "peak": "10",
+      "weeksOnChart": "2"
+    },
+    {
       "position": 17,
+      "id": "aff1a2de-b4da-4f68-ad57-e05f3536c108",
+      "title": "EAT SLEEP NOISE REPEAT",
+      "artist": "TOZA",
+      "mix": "Extended Mix",
+      "label": "Acid Reign",
+      "image": "https://hardstyle.com/track_image/aff1a2de-b4da-4f68-ad57-e05f3536c108/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/aff1a2de-b4da-4f68-ad57-e05f3536c108/eat-sleep-noise-repeat",
+      "lastWeek": "7",
+      "peak": "7",
+      "weeksOnChart": "2"
+    },
+    {
+      "position": 18,
       "id": "04c76d1e-dfbc-44a3-a3b9-0c115fa8552c",
       "title": "MELO SZN",
       "artist": "Disaster",
@@ -223,33 +236,7 @@
       "weeksOnChart": "-"
     },
     {
-      "position": 18,
-      "id": "2856f164-25c6-4bfa-9e9e-e7c07914047a",
-      "title": "Dark Side Of The Moon",
-      "artist": "Sub Sonik",
-      "mix": "Extended Mix",
-      "label": "Dirty Workz",
-      "image": "https://hardstyle.com/track_image/2856f164-25c6-4bfa-9e9e-e7c07914047a/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/2856f164-25c6-4bfa-9e9e-e7c07914047a/dark-side-of-the-moon",
-      "lastWeek": "-",
-      "peak": "18",
-      "weeksOnChart": "-"
-    },
-    {
       "position": 19,
-      "id": "b0a52e9f-212f-4e06-8e88-546afd089cda",
-      "title": "BLUE SKIES",
-      "artist": "Revelation",
-      "mix": "Extended Mix",
-      "label": "Acid Reign",
-      "image": "https://hardstyle.com/track_image/b0a52e9f-212f-4e06-8e88-546afd089cda/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/b0a52e9f-212f-4e06-8e88-546afd089cda/blue-skies",
-      "lastWeek": "23",
-      "peak": "8",
-      "weeksOnChart": "3"
-    },
-    {
-      "position": 20,
       "id": "d130db48-cbe9-4e58-af41-631ed5306cf3",
       "title": "Carnival Of Death",
       "artist": "Damaxy",
@@ -262,33 +249,20 @@
       "weeksOnChart": "2"
     },
     {
-      "position": 21,
-      "id": "cf87c79b-7e5f-4162-835d-e87df2a9f467",
-      "title": "Are U Here",
-      "artist": "Vexxed",
-      "mix": "Extended Mis",
-      "label": "Acid Reign",
-      "image": "https://hardstyle.com/track_image/cf87c79b-7e5f-4162-835d-e87df2a9f467/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/cf87c79b-7e5f-4162-835d-e87df2a9f467/are-u-here",
-      "lastWeek": "-",
-      "peak": "18",
-      "weeksOnChart": "-"
-    },
-    {
-      "position": 22,
-      "id": "ec28fd14-4253-43b1-9159-448d543eaa29",
-      "title": "Higher Rush",
-      "artist": "Primeshock",
+      "position": 20,
+      "id": "b0a52e9f-212f-4e06-8e88-546afd089cda",
+      "title": "BLUE SKIES",
+      "artist": "Revelation",
       "mix": "Extended Mix",
-      "label": "Dirty Workz",
-      "image": "https://hardstyle.com/track_image/ec28fd14-4253-43b1-9159-448d543eaa29/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/ec28fd14-4253-43b1-9159-448d543eaa29/higher-rush",
-      "lastWeek": "15",
-      "peak": "15",
-      "weeksOnChart": "2"
+      "label": "Acid Reign",
+      "image": "https://hardstyle.com/track_image/b0a52e9f-212f-4e06-8e88-546afd089cda/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/b0a52e9f-212f-4e06-8e88-546afd089cda/blue-skies",
+      "lastWeek": "23",
+      "peak": "8",
+      "weeksOnChart": "3"
     },
     {
-      "position": 23,
+      "position": 21,
       "id": "9cdf24e5-d936-4e2b-bf9b-68b9ec3cecf5",
       "title": "All I Am",
       "artist": "Primeshock",
@@ -301,7 +275,20 @@
       "weeksOnChart": "1"
     },
     {
-      "position": 24,
+      "position": 22,
+      "id": "cf87c79b-7e5f-4162-835d-e87df2a9f467",
+      "title": "Are U Here",
+      "artist": "Vexxed",
+      "mix": "Extended Mis",
+      "label": "Acid Reign",
+      "image": "https://hardstyle.com/track_image/cf87c79b-7e5f-4162-835d-e87df2a9f467/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/cf87c79b-7e5f-4162-835d-e87df2a9f467/are-u-here",
+      "lastWeek": "-",
+      "peak": "18",
+      "weeksOnChart": "-"
+    },
+    {
+      "position": 23,
       "id": "f8f4bdc5-da58-48c3-a07c-42feb9b8da56",
       "title": "Set Me Free",
       "artist": "Superior Core",
@@ -310,24 +297,11 @@
       "image": "https://hardstyle.com/track_image/f8f4bdc5-da58-48c3-a07c-42feb9b8da56/250x250/335",
       "link": "https://hardstyle.com/en/tracks/f8f4bdc5-da58-48c3-a07c-42feb9b8da56/set-me-free",
       "lastWeek": "-",
-      "peak": "24",
+      "peak": "23",
       "weeksOnChart": "-"
     },
     {
-      "position": 25,
-      "id": "5d38f6b7-21c5-4d80-86ad-3c16266874ce",
-      "title": "We Are Louder (Official Louder Generation 2026 Anthem)",
-      "artist": "Cardination",
-      "mix": "Pro Mix",
-      "label": "Ravage Records",
-      "image": "https://hardstyle.com/track_image/5d38f6b7-21c5-4d80-86ad-3c16266874ce/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/5d38f6b7-21c5-4d80-86ad-3c16266874ce/we-are-louder-official-louder-generation-2026-anthem",
-      "lastWeek": "15",
-      "peak": "10",
-      "weeksOnChart": "3"
-    },
-    {
-      "position": 26,
+      "position": 24,
       "id": "1b9e08d2-48fa-4be0-8a98-a8c1cacd68be",
       "title": "Higher Rush",
       "artist": "Primeshock",
@@ -340,17 +314,43 @@
       "weeksOnChart": "1"
     },
     {
-      "position": 27,
-      "id": "7eb8baae-c2ef-411e-93a2-72d13cfc1fc8",
-      "title": "Heavy Machinery",
-      "artist": "Fraw",
+      "position": 25,
+      "id": "ec28fd14-4253-43b1-9159-448d543eaa29",
+      "title": "Higher Rush",
+      "artist": "Primeshock",
       "mix": "Extended Mix",
-      "label": "Gearbox Digital",
-      "image": "https://hardstyle.com/track_image/7eb8baae-c2ef-411e-93a2-72d13cfc1fc8/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/7eb8baae-c2ef-411e-93a2-72d13cfc1fc8/heavy-machinery",
-      "lastWeek": "8",
-      "peak": "3",
-      "weeksOnChart": "4"
+      "label": "Dirty Workz",
+      "image": "https://hardstyle.com/track_image/ec28fd14-4253-43b1-9159-448d543eaa29/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/ec28fd14-4253-43b1-9159-448d543eaa29/higher-rush",
+      "lastWeek": "15",
+      "peak": "15",
+      "weeksOnChart": "2"
+    },
+    {
+      "position": 26,
+      "id": "5d38f6b7-21c5-4d80-86ad-3c16266874ce",
+      "title": "We Are Louder (Official Louder Generation 2026 Anthem)",
+      "artist": "Cardination",
+      "mix": "Pro Mix",
+      "label": "Ravage Records",
+      "image": "https://hardstyle.com/track_image/5d38f6b7-21c5-4d80-86ad-3c16266874ce/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/5d38f6b7-21c5-4d80-86ad-3c16266874ce/we-are-louder-official-louder-generation-2026-anthem",
+      "lastWeek": "16",
+      "peak": "10",
+      "weeksOnChart": "3"
+    },
+    {
+      "position": 27,
+      "id": "3f3f4ada-2529-4b69-956b-97b6d39865cb",
+      "title": "The Dream State",
+      "artist": "Chapter V",
+      "mix": "Extended Mix",
+      "label": "Intents Records",
+      "image": "https://hardstyle.com/track_image/3f3f4ada-2529-4b69-956b-97b6d39865cb/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/3f3f4ada-2529-4b69-956b-97b6d39865cb/the-dream-state",
+      "lastWeek": "-",
+      "peak": "27",
+      "weeksOnChart": "-"
     },
     {
       "position": 28,
@@ -361,7 +361,7 @@
       "label": "Opacity",
       "image": "https://hardstyle.com/track_image/ba385b19-cd0b-4e18-963a-dd2115dbf2fe/250x250/335",
       "link": "https://hardstyle.com/en/tracks/ba385b19-cd0b-4e18-963a-dd2115dbf2fe/in-flames",
-      "lastWeek": "18",
+      "lastWeek": "17",
       "peak": "14",
       "weeksOnChart": "4"
     },
@@ -380,19 +380,6 @@
     },
     {
       "position": 30,
-      "id": "3f3f4ada-2529-4b69-956b-97b6d39865cb",
-      "title": "The Dream State",
-      "artist": "Chapter V",
-      "mix": "Extended Mix",
-      "label": "Intents Records",
-      "image": "https://hardstyle.com/track_image/3f3f4ada-2529-4b69-956b-97b6d39865cb/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/3f3f4ada-2529-4b69-956b-97b6d39865cb/the-dream-state",
-      "lastWeek": "-",
-      "peak": "-",
-      "weeksOnChart": "-"
-    },
-    {
-      "position": 31,
       "id": "0615af4e-30dc-4a10-b5e6-179f5748528b",
       "title": "You're Welcome",
       "artist": "Detailed",
@@ -401,50 +388,24 @@
       "image": "https://hardstyle.com/track_image/0615af4e-30dc-4a10-b5e6-179f5748528b/250x250/335",
       "link": "https://hardstyle.com/en/tracks/0615af4e-30dc-4a10-b5e6-179f5748528b/you-re-welcome",
       "lastWeek": "-",
-      "peak": "31",
+      "peak": "30",
       "weeksOnChart": "-"
     },
     {
-      "position": 32,
-      "id": "5b14d071-18ef-41ac-a422-b1c92e95e53d",
-      "title": "circles",
-      "artist": "Atmozfears",
-      "mix": "",
-      "label": "Inner Circle",
-      "image": "https://hardstyle.com/track_image/5b14d071-18ef-41ac-a422-b1c92e95e53d/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/5b14d071-18ef-41ac-a422-b1c92e95e53d/circles",
-      "lastWeek": "18",
-      "peak": "18",
-      "weeksOnChart": "3"
-    },
-    {
-      "position": 33,
-      "id": "e5e1623e-ef0d-480d-a519-88c5af3d7827",
-      "title": "Not Here Forever",
-      "artist": "Sparkz",
+      "position": 31,
+      "id": "7eb8baae-c2ef-411e-93a2-72d13cfc1fc8",
+      "title": "Heavy Machinery",
+      "artist": "Fraw",
       "mix": "Extended Mix",
       "label": "Gearbox Digital",
-      "image": "https://hardstyle.com/track_image/e5e1623e-ef0d-480d-a519-88c5af3d7827/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/e5e1623e-ef0d-480d-a519-88c5af3d7827/not-here-forever",
-      "lastWeek": "-",
-      "peak": "31",
-      "weeksOnChart": "-"
-    },
-    {
-      "position": 34,
-      "id": "e5aba6d1-9107-45df-8587-57975dbbd7b3",
-      "title": "Rock Tha Party (NINE2NINE Remix)",
-      "artist": "Rebelion",
-      "mix": "Extended Mix",
-      "label": "Acid Reign",
-      "image": "https://hardstyle.com/track_image/e5aba6d1-9107-45df-8587-57975dbbd7b3/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/e5aba6d1-9107-45df-8587-57975dbbd7b3/rock-tha-party-nine2nine-remix",
-      "lastWeek": "26",
-      "peak": "16",
+      "image": "https://hardstyle.com/track_image/7eb8baae-c2ef-411e-93a2-72d13cfc1fc8/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/7eb8baae-c2ef-411e-93a2-72d13cfc1fc8/heavy-machinery",
+      "lastWeek": "8",
+      "peak": "3",
       "weeksOnChart": "4"
     },
     {
-      "position": 35,
+      "position": 32,
       "id": "b6050586-c295-4163-ab88-60de7613b3ab",
       "title": "SET ME FREE",
       "artist": "DEEZL",
@@ -457,7 +418,72 @@
       "weeksOnChart": "3"
     },
     {
+      "position": 33,
+      "id": "915a178d-a11f-47e4-bf0c-15f982dd72bb",
+      "title": "New Style",
+      "artist": "Zatox",
+      "mix": "Extended Mix",
+      "label": "Italian Hardstyle",
+      "image": "https://hardstyle.com/track_image/915a178d-a11f-47e4-bf0c-15f982dd72bb/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/915a178d-a11f-47e4-bf0c-15f982dd72bb/new-style",
+      "lastWeek": "39",
+      "peak": "28",
+      "weeksOnChart": "1"
+    },
+    {
+      "position": 34,
+      "id": "80f42886-4d0b-47ce-bca7-d29dc02b84a0",
+      "title": "Troublemaker",
+      "artist": "Dr Phunk",
+      "mix": "",
+      "label": "I AM HARDSTYLE",
+      "image": "https://hardstyle.com/track_image/80f42886-4d0b-47ce-bca7-d29dc02b84a0/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/80f42886-4d0b-47ce-bca7-d29dc02b84a0/troublemaker",
+      "lastWeek": "49",
+      "peak": "32",
+      "weeksOnChart": "1"
+    },
+    {
+      "position": 35,
+      "id": "5b14d071-18ef-41ac-a422-b1c92e95e53d",
+      "title": "circles",
+      "artist": "Atmozfears",
+      "mix": "",
+      "label": "Inner Circle",
+      "image": "https://hardstyle.com/track_image/5b14d071-18ef-41ac-a422-b1c92e95e53d/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/5b14d071-18ef-41ac-a422-b1c92e95e53d/circles",
+      "lastWeek": "18",
+      "peak": "18",
+      "weeksOnChart": "3"
+    },
+    {
       "position": 36,
+      "id": "e5aba6d1-9107-45df-8587-57975dbbd7b3",
+      "title": "Rock Tha Party (NINE2NINE Remix)",
+      "artist": "Rebelion",
+      "mix": "Extended Mix",
+      "label": "Acid Reign",
+      "image": "https://hardstyle.com/track_image/e5aba6d1-9107-45df-8587-57975dbbd7b3/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/e5aba6d1-9107-45df-8587-57975dbbd7b3/rock-tha-party-nine2nine-remix",
+      "lastWeek": "26",
+      "peak": "16",
+      "weeksOnChart": "4"
+    },
+    {
+      "position": 37,
+      "id": "e5e1623e-ef0d-480d-a519-88c5af3d7827",
+      "title": "Not Here Forever",
+      "artist": "Sparkz",
+      "mix": "Extended Mix",
+      "label": "Gearbox Digital",
+      "image": "https://hardstyle.com/track_image/e5e1623e-ef0d-480d-a519-88c5af3d7827/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/e5e1623e-ef0d-480d-a519-88c5af3d7827/not-here-forever",
+      "lastWeek": "-",
+      "peak": "31",
+      "weeksOnChart": "-"
+    },
+    {
+      "position": 38,
       "id": "1f369c23-27c6-4222-a0ea-a634d09065fa",
       "title": "Angel & Demon",
       "artist": "Dual Damage",
@@ -470,46 +496,7 @@
       "weeksOnChart": "6"
     },
     {
-      "position": 37,
-      "id": "80f42886-4d0b-47ce-bca7-d29dc02b84a0",
-      "title": "Troublemaker",
-      "artist": "Dr Phunk",
-      "mix": "",
-      "label": "I AM HARDSTYLE",
-      "image": "https://hardstyle.com/track_image/80f42886-4d0b-47ce-bca7-d29dc02b84a0/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/80f42886-4d0b-47ce-bca7-d29dc02b84a0/troublemaker",
-      "lastWeek": "-",
-      "peak": "32",
-      "weeksOnChart": "1"
-    },
-    {
-      "position": 38,
-      "id": "915a178d-a11f-47e4-bf0c-15f982dd72bb",
-      "title": "New Style",
-      "artist": "Zatox",
-      "mix": "Extended Mix",
-      "label": "Italian Hardstyle",
-      "image": "https://hardstyle.com/track_image/915a178d-a11f-47e4-bf0c-15f982dd72bb/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/915a178d-a11f-47e4-bf0c-15f982dd72bb/new-style",
-      "lastWeek": "-",
-      "peak": "28",
-      "weeksOnChart": "1"
-    },
-    {
       "position": 39,
-      "id": "efbf6524-afad-44f8-9e10-1204eba05e25",
-      "title": "Blow Your Head Off",
-      "artist": "Infliction",
-      "mix": "Original Mix",
-      "label": "Spoontech Records",
-      "image": "https://hardstyle.com/track_image/efbf6524-afad-44f8-9e10-1204eba05e25/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/efbf6524-afad-44f8-9e10-1204eba05e25/blow-your-head-off",
-      "lastWeek": "7",
-      "peak": "2",
-      "weeksOnChart": "5"
-    },
-    {
-      "position": 40,
       "id": "976c4945-49a1-496e-92b2-85f05fac8200",
       "title": "Who I Am",
       "artist": "Digital Punk",
@@ -522,20 +509,20 @@
       "weeksOnChart": "1"
     },
     {
-      "position": 41,
-      "id": "e547580e-f486-44d2-a3c5-d6f9d75bda0e",
-      "title": "The Evasion (Classified Tool)",
-      "artist": "Disaster",
-      "mix": "Extended Mix",
-      "label": "Classified Records",
-      "image": "https://hardstyle.com/track_image/e547580e-f486-44d2-a3c5-d6f9d75bda0e/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/e547580e-f486-44d2-a3c5-d6f9d75bda0e/the-evasion-classified-tool",
-      "lastWeek": "-",
-      "peak": "41",
-      "weeksOnChart": "-"
+      "position": 40,
+      "id": "efbf6524-afad-44f8-9e10-1204eba05e25",
+      "title": "Blow Your Head Off",
+      "artist": "Infliction",
+      "mix": "Original Mix",
+      "label": "Spoontech Records",
+      "image": "https://hardstyle.com/track_image/efbf6524-afad-44f8-9e10-1204eba05e25/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/efbf6524-afad-44f8-9e10-1204eba05e25/blow-your-head-off",
+      "lastWeek": "8",
+      "peak": "2",
+      "weeksOnChart": "5"
     },
     {
-      "position": 42,
+      "position": 41,
       "id": "38821d1c-a388-4a41-91b0-cebb9ddf13f3",
       "title": "Rise Of The Titans",
       "artist": "Clockartz",
@@ -546,6 +533,19 @@
       "lastWeek": "-",
       "peak": "38",
       "weeksOnChart": "-"
+    },
+    {
+      "position": 42,
+      "id": "1d47494a-17cd-4fc8-b1f5-33571235d5ad",
+      "title": "Jiiieehaaaa (Warrior Workout 2026 OST)",
+      "artist": "Coone",
+      "mix": "Extended Mix",
+      "label": "Defqon.1 Records",
+      "image": "https://hardstyle.com/track_image/1d47494a-17cd-4fc8-b1f5-33571235d5ad/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/1d47494a-17cd-4fc8-b1f5-33571235d5ad/jiiieehaaaa-warrior-workout-2026-ost",
+      "lastWeek": "55",
+      "peak": "41",
+      "weeksOnChart": "2"
     },
     {
       "position": 43,
@@ -562,32 +562,6 @@
     },
     {
       "position": 44,
-      "id": "1d47494a-17cd-4fc8-b1f5-33571235d5ad",
-      "title": "Jiiieehaaaa (Warrior Workout 2026 OST)",
-      "artist": "Coone",
-      "mix": "Extended Mix",
-      "label": "Defqon.1 Records",
-      "image": "https://hardstyle.com/track_image/1d47494a-17cd-4fc8-b1f5-33571235d5ad/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/1d47494a-17cd-4fc8-b1f5-33571235d5ad/jiiieehaaaa-warrior-workout-2026-ost",
-      "lastWeek": "55",
-      "peak": "41",
-      "weeksOnChart": "2"
-    },
-    {
-      "position": 45,
-      "id": "fe457cfc-8ade-43f4-808e-51e2f581d0c3",
-      "title": "BOUNCE",
-      "artist": "Mutilator",
-      "mix": "Extended Mix",
-      "label": "Acid Reign",
-      "image": "https://hardstyle.com/track_image/fe457cfc-8ade-43f4-808e-51e2f581d0c3/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/fe457cfc-8ade-43f4-808e-51e2f581d0c3/bounce",
-      "lastWeek": "12",
-      "peak": "4",
-      "weeksOnChart": "5"
-    },
-    {
-      "position": 46,
       "id": "96b7bdc4-1fce-40b7-b427-44562271d057",
       "title": "Marathon 2.0",
       "artist": "Coldax",
@@ -600,7 +574,46 @@
       "weeksOnChart": "2"
     },
     {
+      "position": 45,
+      "id": "436b748b-3016-4897-87ca-3c73142bca97",
+      "title": "¡MADRID!",
+      "artist": "Frontliner",
+      "mix": "Extended Mix",
+      "label": "This Is Hardstyle",
+      "image": "https://hardstyle.com/track_image/436b748b-3016-4897-87ca-3c73142bca97/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/436b748b-3016-4897-87ca-3c73142bca97/madrid",
+      "lastWeek": "-",
+      "peak": "-",
+      "weeksOnChart": "-"
+    },
+    {
+      "position": 46,
+      "id": "fe457cfc-8ade-43f4-808e-51e2f581d0c3",
+      "title": "BOUNCE",
+      "artist": "Mutilator",
+      "mix": "Extended Mix",
+      "label": "Acid Reign",
+      "image": "https://hardstyle.com/track_image/fe457cfc-8ade-43f4-808e-51e2f581d0c3/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/fe457cfc-8ade-43f4-808e-51e2f581d0c3/bounce",
+      "lastWeek": "13",
+      "peak": "4",
+      "weeksOnChart": "5"
+    },
+    {
       "position": 47,
+      "id": "e547580e-f486-44d2-a3c5-d6f9d75bda0e",
+      "title": "The Evasion (Classified Tool)",
+      "artist": "Disaster",
+      "mix": "Extended Mix",
+      "label": "Classified Records",
+      "image": "https://hardstyle.com/track_image/e547580e-f486-44d2-a3c5-d6f9d75bda0e/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/e547580e-f486-44d2-a3c5-d6f9d75bda0e/the-evasion-classified-tool",
+      "lastWeek": "-",
+      "peak": "41",
+      "weeksOnChart": "1"
+    },
+    {
+      "position": 48,
       "id": "95e834a5-0172-437f-afbc-66402d17df83",
       "title": "Annexation",
       "artist": "Dejection",
@@ -613,7 +626,7 @@
       "weeksOnChart": "2"
     },
     {
-      "position": 48,
+      "position": 49,
       "id": "0120398b-2659-4bf9-bf90-c43fa63636b3",
       "title": "Jurassic",
       "artist": "Exproz",
@@ -621,12 +634,12 @@
       "label": "Gearbox Digital",
       "image": "https://hardstyle.com/track_image/0120398b-2659-4bf9-bf90-c43fa63636b3/250x250/335",
       "link": "https://hardstyle.com/en/tracks/0120398b-2659-4bf9-bf90-c43fa63636b3/jurassic",
-      "lastWeek": "22",
+      "lastWeek": "24",
       "peak": "1",
       "weeksOnChart": "7"
     },
     {
-      "position": 49,
+      "position": 50,
       "id": "c9b5650d-0863-4d4e-a3d5-d1dfe5d6524f",
       "title": "PING PONG BATTLE",
       "artist": "Infliction",
@@ -634,38 +647,38 @@
       "label": "Acid Reign",
       "image": "https://hardstyle.com/track_image/c9b5650d-0863-4d4e-a3d5-d1dfe5d6524f/250x250/335",
       "link": "https://hardstyle.com/en/tracks/c9b5650d-0863-4d4e-a3d5-d1dfe5d6524f/ping-pong-battle",
-      "lastWeek": "26",
+      "lastWeek": "27",
       "peak": "2",
       "weeksOnChart": "7"
     },
     {
-      "position": 50,
-      "id": "df5062f9-eb7c-42e9-92da-80e1e835d45a",
-      "title": "Twilight Love",
-      "artist": "The Pitcher",
-      "mix": "",
-      "label": "I AM HARDSTYLE",
-      "image": "https://hardstyle.com/track_image/df5062f9-eb7c-42e9-92da-80e1e835d45a/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/df5062f9-eb7c-42e9-92da-80e1e835d45a/twilight-love",
-      "lastWeek": "100",
-      "peak": "50",
-      "weeksOnChart": "-"
-    },
-    {
       "position": 51,
-      "id": "f47e3f50-1771-4521-bd04-157a084d35f9",
-      "title": "I AM YOUR END",
-      "artist": "Kruelty",
+      "id": "503fca4c-d142-409b-a771-11d97e864749",
+      "title": "SIDEQUEST (Tetris Mix)",
+      "artist": "The Purge",
       "mix": "Extended Mix",
-      "label": "Unit-13 Industries",
-      "image": "https://hardstyle.com/track_image/f47e3f50-1771-4521-bd04-157a084d35f9/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/f47e3f50-1771-4521-bd04-157a084d35f9/i-am-your-end",
-      "lastWeek": "48",
-      "peak": "11",
+      "label": "Dirty Workz",
+      "image": "https://hardstyle.com/track_image/503fca4c-d142-409b-a771-11d97e864749/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/503fca4c-d142-409b-a771-11d97e864749/sidequest-tetris-mix",
+      "lastWeek": "22",
+      "peak": "5",
       "weeksOnChart": "6"
     },
     {
       "position": 52,
+      "id": "85fe7cee-1fc1-4431-82a9-8b432eb04ebc",
+      "title": "Hard Industry",
+      "artist": "ERABREAK",
+      "mix": "Extended Mix",
+      "label": "Scantraxx",
+      "image": "https://hardstyle.com/track_image/85fe7cee-1fc1-4431-82a9-8b432eb04ebc/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/85fe7cee-1fc1-4431-82a9-8b432eb04ebc/hard-industry",
+      "lastWeek": "-",
+      "peak": "-",
+      "weeksOnChart": "-"
+    },
+    {
+      "position": 53,
       "id": "6cfd3a4d-ab9c-4ca2-838e-193ab5393159",
       "title": "one shot",
       "artist": "Incult",
@@ -676,19 +689,6 @@
       "lastWeek": "29",
       "peak": "9",
       "weeksOnChart": "4"
-    },
-    {
-      "position": 53,
-      "id": "503fca4c-d142-409b-a771-11d97e864749",
-      "title": "SIDEQUEST (Tetris Mix)",
-      "artist": "The Purge",
-      "mix": "Extended Mix",
-      "label": "Dirty Workz",
-      "image": "https://hardstyle.com/track_image/503fca4c-d142-409b-a771-11d97e864749/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/503fca4c-d142-409b-a771-11d97e864749/sidequest-tetris-mix",
-      "lastWeek": "18",
-      "peak": "5",
-      "weeksOnChart": "6"
     },
     {
       "position": 54,
@@ -705,6 +705,32 @@
     },
     {
       "position": 55,
+      "id": "f47e3f50-1771-4521-bd04-157a084d35f9",
+      "title": "I AM YOUR END",
+      "artist": "Kruelty",
+      "mix": "Extended Mix",
+      "label": "Unit-13 Industries",
+      "image": "https://hardstyle.com/track_image/f47e3f50-1771-4521-bd04-157a084d35f9/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/f47e3f50-1771-4521-bd04-157a084d35f9/i-am-your-end",
+      "lastWeek": "48",
+      "peak": "11",
+      "weeksOnChart": "6"
+    },
+    {
+      "position": 56,
+      "id": "74e12572-efb2-4205-bed3-2aa9e006b029",
+      "title": "HATE ME",
+      "artist": "Deluzion",
+      "mix": "Extended Mix",
+      "label": "Minus Is More",
+      "image": "https://hardstyle.com/track_image/74e12572-efb2-4205-bed3-2aa9e006b029/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/74e12572-efb2-4205-bed3-2aa9e006b029/hate-me",
+      "lastWeek": "-",
+      "peak": "46",
+      "weeksOnChart": "-"
+    },
+    {
+      "position": 57,
       "id": "8005b983-8fa0-4d66-98aa-8bd114a4190b",
       "title": "Come To Life",
       "artist": "Refuzion",
@@ -715,32 +741,6 @@
       "lastWeek": "33",
       "peak": "32",
       "weeksOnChart": "4"
-    },
-    {
-      "position": 56,
-      "id": "29bf61eb-26e2-4c14-a58c-fd63bad2fe3d",
-      "title": "Free Your Mind",
-      "artist": "Brennan Heart",
-      "mix": "",
-      "label": "I AM HARDSTYLE",
-      "image": "https://hardstyle.com/track_image/29bf61eb-26e2-4c14-a58c-fd63bad2fe3d/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/29bf61eb-26e2-4c14-a58c-fd63bad2fe3d/free-your-mind",
-      "lastWeek": "23",
-      "peak": "12",
-      "weeksOnChart": "5"
-    },
-    {
-      "position": 57,
-      "id": "1f4cbad9-b974-4761-81d0-b99192eb6b23",
-      "title": "Unfinished Demo",
-      "artist": "The Pitcher",
-      "mix": "",
-      "label": "I AM HARDSTYLE",
-      "image": "https://hardstyle.com/track_image/1f4cbad9-b974-4761-81d0-b99192eb6b23/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/1f4cbad9-b974-4761-81d0-b99192eb6b23/unfinished-demo",
-      "lastWeek": "-",
-      "peak": "-",
-      "weeksOnChart": "-"
     },
     {
       "position": 58,
@@ -757,6 +757,19 @@
     },
     {
       "position": 59,
+      "id": "29bf61eb-26e2-4c14-a58c-fd63bad2fe3d",
+      "title": "Free Your Mind",
+      "artist": "Brennan Heart",
+      "mix": "",
+      "label": "I AM HARDSTYLE",
+      "image": "https://hardstyle.com/track_image/29bf61eb-26e2-4c14-a58c-fd63bad2fe3d/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/29bf61eb-26e2-4c14-a58c-fd63bad2fe3d/free-your-mind",
+      "lastWeek": "23",
+      "peak": "12",
+      "weeksOnChart": "5"
+    },
+    {
+      "position": 60,
       "id": "b729fcb6-10d9-4cb3-98be-2bc9d421e1e1",
       "title": "Jiiieehaaaa (Warrior Workout 2026 OST)",
       "artist": "Coone",
@@ -764,22 +777,9 @@
       "label": "Defqon.1 Records",
       "image": "https://hardstyle.com/track_image/b729fcb6-10d9-4cb3-98be-2bc9d421e1e1/250x250/335",
       "link": "https://hardstyle.com/en/tracks/b729fcb6-10d9-4cb3-98be-2bc9d421e1e1/jiiieehaaaa-warrior-workout-2026-ost",
-      "lastWeek": "48",
+      "lastWeek": "44",
       "peak": "44",
       "weeksOnChart": "1"
-    },
-    {
-      "position": 60,
-      "id": "74e12572-efb2-4205-bed3-2aa9e006b029",
-      "title": "HATE ME",
-      "artist": "Deluzion",
-      "mix": "Extended Mix",
-      "label": "Minus Is More",
-      "image": "https://hardstyle.com/track_image/74e12572-efb2-4205-bed3-2aa9e006b029/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/74e12572-efb2-4205-bed3-2aa9e006b029/hate-me",
-      "lastWeek": "-",
-      "peak": "46",
-      "weeksOnChart": "-"
     },
     {
       "position": 61,
@@ -790,7 +790,7 @@
       "label": "Spoontech Records",
       "image": "https://hardstyle.com/track_image/426723c5-7c8b-4b6a-9318-35c1ead5a29f/250x250/335",
       "link": "https://hardstyle.com/en/tracks/426723c5-7c8b-4b6a-9318-35c1ead5a29f/nightmare",
-      "lastWeek": "34",
+      "lastWeek": "36",
       "peak": "13",
       "weeksOnChart": "5"
     },
@@ -803,12 +803,25 @@
       "label": "Defqon.1 Records",
       "image": "https://hardstyle.com/track_image/061c8922-ccc2-47c4-a06d-83de03a1125a/250x250/335",
       "link": "https://hardstyle.com/en/tracks/061c8922-ccc2-47c4-a06d-83de03a1125a/end-game",
-      "lastWeek": "31",
+      "lastWeek": "34",
       "peak": "14",
       "weeksOnChart": "5"
     },
     {
       "position": 63,
+      "id": "c80a2c94-57e0-46e1-8461-1320082b5f0e",
+      "title": "Screamers",
+      "artist": "Crypsis",
+      "mix": "Extended Mix",
+      "label": "Minus Is More",
+      "image": "https://hardstyle.com/track_image/c80a2c94-57e0-46e1-8461-1320082b5f0e/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/c80a2c94-57e0-46e1-8461-1320082b5f0e/screamers",
+      "lastWeek": "51",
+      "peak": "30",
+      "weeksOnChart": "2"
+    },
+    {
+      "position": 64,
       "id": "0e515405-a025-49e3-afb3-2a0c6b230321",
       "title": "STOP CRYING",
       "artist": "The Straikerz",
@@ -821,7 +834,7 @@
       "weeksOnChart": "8"
     },
     {
-      "position": 64,
+      "position": 65,
       "id": "3f6e45ce-57c5-477c-8d71-fd675095bc7e",
       "title": "DETONATE",
       "artist": "Mish",
@@ -834,7 +847,7 @@
       "weeksOnChart": "8"
     },
     {
-      "position": 65,
+      "position": 66,
       "id": "31fc9b88-c444-43d7-87fa-387a809019b2",
       "title": "Bloodrush",
       "artist": "Act of Rage",
@@ -847,7 +860,7 @@
       "weeksOnChart": "4"
     },
     {
-      "position": 66,
+      "position": 67,
       "id": "88331c75-1730-4127-9685-994a6187d8bd",
       "title": "N0THING",
       "artist": "Chapter V",
@@ -860,7 +873,7 @@
       "weeksOnChart": "2"
     },
     {
-      "position": 67,
+      "position": 68,
       "id": "5b72261c-2c0f-4f27-bf6d-d2a1d3da6a37",
       "title": "The Burnout",
       "artist": "The Smiler",
@@ -868,12 +881,12 @@
       "label": "Spoontech Records",
       "image": "https://hardstyle.com/track_image/5b72261c-2c0f-4f27-bf6d-d2a1d3da6a37/250x250/335",
       "link": "https://hardstyle.com/en/tracks/5b72261c-2c0f-4f27-bf6d-d2a1d3da6a37/the-burnout",
-      "lastWeek": "36",
+      "lastWeek": "34",
       "peak": "19",
       "weeksOnChart": "4"
     },
     {
-      "position": 68,
+      "position": 69,
       "id": "a2c126f6-8e82-4cf0-9f10-de5ef919f751",
       "title": "Bones",
       "artist": "Disaster",
@@ -883,19 +896,6 @@
       "link": "https://hardstyle.com/en/tracks/a2c126f6-8e82-4cf0-9f10-de5ef919f751/bones",
       "lastWeek": "34",
       "peak": "19",
-      "weeksOnChart": "5"
-    },
-    {
-      "position": 69,
-      "id": "7461dabc-395d-423d-9aa0-5d961f5c310c",
-      "title": "Deep Dive (Official Relevatez Anthem 2026)",
-      "artist": "Primeshock",
-      "mix": "Extended Mix",
-      "label": "Dirty Workz",
-      "image": "https://hardstyle.com/track_image/7461dabc-395d-423d-9aa0-5d961f5c310c/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/7461dabc-395d-423d-9aa0-5d961f5c310c/deep-dive-official-relevatez-anthem-2026",
-      "lastWeek": "64",
-      "peak": "27",
       "weeksOnChart": "5"
     },
     {
@@ -913,19 +913,6 @@
     },
     {
       "position": 71,
-      "id": "c80a2c94-57e0-46e1-8461-1320082b5f0e",
-      "title": "Screamers",
-      "artist": "Crypsis",
-      "mix": "Extended Mix",
-      "label": "Minus Is More",
-      "image": "https://hardstyle.com/track_image/c80a2c94-57e0-46e1-8461-1320082b5f0e/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/c80a2c94-57e0-46e1-8461-1320082b5f0e/screamers",
-      "lastWeek": "51",
-      "peak": "30",
-      "weeksOnChart": "2"
-    },
-    {
-      "position": 72,
       "id": "5d44ac03-fd7c-424f-b380-8449aca10643",
       "title": "Our World",
       "artist": "Sub Zero Project",
@@ -938,20 +925,7 @@
       "weeksOnChart": "7"
     },
     {
-      "position": 73,
-      "id": "fcfbded8-3961-4941-996a-2a945c3cfb8b",
-      "title": "Kings Of Reverse Bass",
-      "artist": "TNT",
-      "mix": "Extended Mix",
-      "label": "Dirty Workz",
-      "image": "https://hardstyle.com/track_image/fcfbded8-3961-4941-996a-2a945c3cfb8b/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/fcfbded8-3961-4941-996a-2a945c3cfb8b/kings-of-reverse-bass",
-      "lastWeek": "38",
-      "peak": "8",
-      "weeksOnChart": "7"
-    },
-    {
-      "position": 74,
+      "position": 72,
       "id": "3c4d5b40-6f66-4acc-a416-7962ef7a839d",
       "title": "Bounce (2026 Edit)",
       "artist": "Sparkz",
@@ -964,20 +938,33 @@
       "weeksOnChart": "4"
     },
     {
-      "position": 75,
-      "id": "f0990da4-ab08-4052-b0e5-774af8d31bdb",
-      "title": "Break Down Low",
-      "artist": "Crypsis",
+      "position": 73,
+      "id": "7461dabc-395d-423d-9aa0-5d961f5c310c",
+      "title": "Deep Dive (Official Relevatez Anthem 2026)",
+      "artist": "Primeshock",
       "mix": "Extended Mix",
-      "label": "Minus Is More",
-      "image": "https://hardstyle.com/track_image/f0990da4-ab08-4052-b0e5-774af8d31bdb/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/f0990da4-ab08-4052-b0e5-774af8d31bdb/break-down-low",
-      "lastWeek": "54",
-      "peak": "26",
-      "weeksOnChart": "4"
+      "label": "Dirty Workz",
+      "image": "https://hardstyle.com/track_image/7461dabc-395d-423d-9aa0-5d961f5c310c/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/7461dabc-395d-423d-9aa0-5d961f5c310c/deep-dive-official-relevatez-anthem-2026",
+      "lastWeek": "64",
+      "peak": "27",
+      "weeksOnChart": "5"
     },
     {
-      "position": 76,
+      "position": 74,
+      "id": "fcfbded8-3961-4941-996a-2a945c3cfb8b",
+      "title": "Kings Of Reverse Bass",
+      "artist": "TNT",
+      "mix": "Extended Mix",
+      "label": "Dirty Workz",
+      "image": "https://hardstyle.com/track_image/fcfbded8-3961-4941-996a-2a945c3cfb8b/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/fcfbded8-3961-4941-996a-2a945c3cfb8b/kings-of-reverse-bass",
+      "lastWeek": "38",
+      "peak": "8",
+      "weeksOnChart": "7"
+    },
+    {
+      "position": 75,
       "id": "1ac4e840-2f5c-43c9-9b58-49e54319ca24",
       "title": "one man",
       "artist": "Incult",
@@ -990,33 +977,20 @@
       "weeksOnChart": "4"
     },
     {
-      "position": 77,
-      "id": "4f363c00-71c8-4e0e-9f49-95691abc4dbf",
-      "title": "Alles Verbrennt",
-      "artist": "Zatox",
+      "position": 76,
+      "id": "f0990da4-ab08-4052-b0e5-774af8d31bdb",
+      "title": "Break Down Low",
+      "artist": "Crypsis",
       "mix": "Extended Mix",
-      "label": "Italian Hardstyle",
-      "image": "https://hardstyle.com/track_image/4f363c00-71c8-4e0e-9f49-95691abc4dbf/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/4f363c00-71c8-4e0e-9f49-95691abc4dbf/alles-verbrennt",
-      "lastWeek": "42",
-      "peak": "22",
+      "label": "Minus Is More",
+      "image": "https://hardstyle.com/track_image/f0990da4-ab08-4052-b0e5-774af8d31bdb/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/f0990da4-ab08-4052-b0e5-774af8d31bdb/break-down-low",
+      "lastWeek": "54",
+      "peak": "26",
       "weeksOnChart": "4"
     },
     {
-      "position": 78,
-      "id": "f6fc6fc8-46aa-4a60-a830-1ae5767353a9",
-      "title": "Endless Horizon",
-      "artist": "Sound Rush",
-      "mix": "",
-      "label": "Destination",
-      "image": "https://hardstyle.com/track_image/f6fc6fc8-46aa-4a60-a830-1ae5767353a9/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/f6fc6fc8-46aa-4a60-a830-1ae5767353a9/endless-horizon",
-      "lastWeek": "78",
-      "peak": "10",
-      "weeksOnChart": "7"
-    },
-    {
-      "position": 79,
+      "position": 77,
       "id": "8ffc4bf0-4347-4d4a-a4d5-ed85d29c3a8d",
       "title": "Losing Myself",
       "artist": "D-Sturb",
@@ -1029,7 +1003,7 @@
       "weeksOnChart": "6"
     },
     {
-      "position": 80,
+      "position": 78,
       "id": "06b49634-711d-49f0-8ff7-cd7418404758",
       "title": "Poltergeist",
       "artist": "Anderex",
@@ -1042,17 +1016,43 @@
       "weeksOnChart": "7"
     },
     {
-      "position": 81,
-      "id": "1a547dd1-df16-4bcd-9609-d0b618233f2e",
-      "title": "Hear You Go",
-      "artist": "Rejecta",
+      "position": 79,
+      "id": "b10ee66c-f8cb-4bce-baca-d3b5dbac8cbf",
+      "title": "Hell Of A Night",
+      "artist": "Showtek",
       "mix": "Extended Mix",
-      "label": "REBiRTH Events Records",
-      "image": "https://hardstyle.com/track_image/1a547dd1-df16-4bcd-9609-d0b618233f2e/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/1a547dd1-df16-4bcd-9609-d0b618233f2e/hear-you-go",
-      "lastWeek": "74",
-      "peak": "9",
+      "label": "Q-Dance Records",
+      "image": "https://hardstyle.com/track_image/b10ee66c-f8cb-4bce-baca-d3b5dbac8cbf/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/b10ee66c-f8cb-4bce-baca-d3b5dbac8cbf/hell-of-a-night",
+      "lastWeek": "61",
+      "peak": "42",
+      "weeksOnChart": "3"
+    },
+    {
+      "position": 80,
+      "id": "f6fc6fc8-46aa-4a60-a830-1ae5767353a9",
+      "title": "Endless Horizon",
+      "artist": "Sound Rush",
+      "mix": "",
+      "label": "Destination",
+      "image": "https://hardstyle.com/track_image/f6fc6fc8-46aa-4a60-a830-1ae5767353a9/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/f6fc6fc8-46aa-4a60-a830-1ae5767353a9/endless-horizon",
+      "lastWeek": "78",
+      "peak": "10",
       "weeksOnChart": "7"
+    },
+    {
+      "position": 81,
+      "id": "4f363c00-71c8-4e0e-9f49-95691abc4dbf",
+      "title": "Alles Verbrennt",
+      "artist": "Zatox",
+      "mix": "Extended Mix",
+      "label": "Italian Hardstyle",
+      "image": "https://hardstyle.com/track_image/4f363c00-71c8-4e0e-9f49-95691abc4dbf/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/4f363c00-71c8-4e0e-9f49-95691abc4dbf/alles-verbrennt",
+      "lastWeek": "44",
+      "peak": "22",
+      "weeksOnChart": "5"
     },
     {
       "position": 82,
@@ -1069,29 +1069,29 @@
     },
     {
       "position": 83,
-      "id": "577ea707-37f5-4d27-856b-345cffbf76fd",
-      "title": "Close My Eyes",
-      "artist": "Polish Punisher",
+      "id": "1a547dd1-df16-4bcd-9609-d0b618233f2e",
+      "title": "Hear You Go",
+      "artist": "Rejecta",
       "mix": "Extended Mix",
-      "label": "H4H",
-      "image": "https://hardstyle.com/track_image/577ea707-37f5-4d27-856b-345cffbf76fd/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/577ea707-37f5-4d27-856b-345cffbf76fd/close-my-eyes",
-      "lastWeek": "47",
-      "peak": "47",
-      "weeksOnChart": "2"
+      "label": "REBiRTH Events Records",
+      "image": "https://hardstyle.com/track_image/1a547dd1-df16-4bcd-9609-d0b618233f2e/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/1a547dd1-df16-4bcd-9609-d0b618233f2e/hear-you-go",
+      "lastWeek": "74",
+      "peak": "9",
+      "weeksOnChart": "7"
     },
     {
       "position": 84,
-      "id": "ce527c15-eb4a-44b7-9f26-fc3fabef3623",
-      "title": "GOT YOU A BASS",
-      "artist": "Fraw",
+      "id": "b565e6a7-ae4c-4490-95f0-c16046b143a9",
+      "title": "NOVA-3 (The Experiment)",
+      "artist": "Exoform",
       "mix": "Extended Mix",
-      "label": "Gearbox Digital",
-      "image": "https://hardstyle.com/track_image/ce527c15-eb4a-44b7-9f26-fc3fabef3623/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/ce527c15-eb4a-44b7-9f26-fc3fabef3623/got-you-a-bass",
-      "lastWeek": "74",
-      "peak": "1",
-      "weeksOnChart": "10"
+      "label": "Revolutions",
+      "image": "https://hardstyle.com/track_image/b565e6a7-ae4c-4490-95f0-c16046b143a9/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/b565e6a7-ae4c-4490-95f0-c16046b143a9/nova-3-the-experiment",
+      "lastWeek": "72",
+      "peak": "53",
+      "weeksOnChart": "3"
     },
     {
       "position": 85,
@@ -1108,19 +1108,32 @@
     },
     {
       "position": 86,
-      "id": "b10ee66c-f8cb-4bce-baca-d3b5dbac8cbf",
-      "title": "Hell Of A Night",
-      "artist": "Showtek",
+      "id": "ce527c15-eb4a-44b7-9f26-fc3fabef3623",
+      "title": "GOT YOU A BASS",
+      "artist": "Fraw",
       "mix": "Extended Mix",
-      "label": "Q-Dance Records",
-      "image": "https://hardstyle.com/track_image/b10ee66c-f8cb-4bce-baca-d3b5dbac8cbf/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/b10ee66c-f8cb-4bce-baca-d3b5dbac8cbf/hell-of-a-night",
-      "lastWeek": "57",
-      "peak": "42",
-      "weeksOnChart": "3"
+      "label": "Gearbox Digital",
+      "image": "https://hardstyle.com/track_image/ce527c15-eb4a-44b7-9f26-fc3fabef3623/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/ce527c15-eb4a-44b7-9f26-fc3fabef3623/got-you-a-bass",
+      "lastWeek": "74",
+      "peak": "1",
+      "weeksOnChart": "10"
     },
     {
       "position": 87,
+      "id": "577ea707-37f5-4d27-856b-345cffbf76fd",
+      "title": "Close My Eyes",
+      "artist": "Polish Punisher",
+      "mix": "Extended Mix",
+      "label": "H4H",
+      "image": "https://hardstyle.com/track_image/577ea707-37f5-4d27-856b-345cffbf76fd/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/577ea707-37f5-4d27-856b-345cffbf76fd/close-my-eyes",
+      "lastWeek": "47",
+      "peak": "47",
+      "weeksOnChart": "3"
+    },
+    {
+      "position": 88,
       "id": "f937a304-be18-48c1-8d60-ab608f9c2b44",
       "title": "VOICES IN MY HEAD",
       "artist": "Fraw",
@@ -1133,7 +1146,7 @@
       "weeksOnChart": "8"
     },
     {
-      "position": 88,
+      "position": 89,
       "id": "52aae5b7-338e-4bd4-a63b-b5f004023252",
       "title": "Bring The Pain",
       "artist": "Warface",
@@ -1146,7 +1159,7 @@
       "weeksOnChart": "8"
     },
     {
-      "position": 89,
+      "position": 90,
       "id": "0ac1fecb-c263-403b-a100-44ccdf941696",
       "title": "Open Your Mind",
       "artist": "Bmberjck",
@@ -1159,19 +1172,6 @@
       "weeksOnChart": "8"
     },
     {
-      "position": 90,
-      "id": "a6ea8990-e48a-4768-96d5-819f287b3e3c",
-      "title": "Conduct The Beat",
-      "artist": "Beat Conductors",
-      "mix": "",
-      "label": "Defqon.1 Records",
-      "image": "https://hardstyle.com/track_image/a6ea8990-e48a-4768-96d5-819f287b3e3c/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/a6ea8990-e48a-4768-96d5-819f287b3e3c/conduct-the-beat",
-      "lastWeek": "53",
-      "peak": "28",
-      "weeksOnChart": "5"
-    },
-    {
       "position": 91,
       "id": "813df715-c432-4195-9e34-7bce0a2505c1",
       "title": "Somehow",
@@ -1180,12 +1180,25 @@
       "label": "Classified Records",
       "image": "https://hardstyle.com/track_image/813df715-c432-4195-9e34-7bce0a2505c1/250x250/335",
       "link": "https://hardstyle.com/en/tracks/813df715-c432-4195-9e34-7bce0a2505c1/somehow",
-      "lastWeek": "70",
+      "lastWeek": "72",
       "peak": "28",
       "weeksOnChart": "6"
     },
     {
       "position": 92,
+      "id": "a6ea8990-e48a-4768-96d5-819f287b3e3c",
+      "title": "Conduct The Beat",
+      "artist": "Beat Conductors",
+      "mix": "",
+      "label": "Defqon.1 Records",
+      "image": "https://hardstyle.com/track_image/a6ea8990-e48a-4768-96d5-819f287b3e3c/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/a6ea8990-e48a-4768-96d5-819f287b3e3c/conduct-the-beat",
+      "lastWeek": "57",
+      "peak": "28",
+      "weeksOnChart": "5"
+    },
+    {
+      "position": 93,
       "id": "42c3f16f-55b5-44b4-a038-77f96b46d006",
       "title": "Good Feeling",
       "artist": "Galactixx",
@@ -1196,19 +1209,6 @@
       "lastWeek": "80",
       "peak": "20",
       "weeksOnChart": "9"
-    },
-    {
-      "position": 93,
-      "id": "62f449be-b9c5-4989-8117-b2f2d22e63d3",
-      "title": "Home",
-      "artist": "The Saints",
-      "mix": "Extended Mix",
-      "label": "Dirty Workz",
-      "image": "https://hardstyle.com/track_image/62f449be-b9c5-4989-8117-b2f2d22e63d3/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/62f449be-b9c5-4989-8117-b2f2d22e63d3/home",
-      "lastWeek": "91",
-      "peak": "1",
-      "weeksOnChart": "13"
     },
     {
       "position": 94,
@@ -1225,16 +1225,16 @@
     },
     {
       "position": 95,
-      "id": "2bfad996-756e-4816-bfe1-cb86ac2a0019",
-      "title": "Summer Nights",
-      "artist": "Code Black",
-      "mix": "",
-      "label": "I AM HARDSTYLE",
-      "image": "https://hardstyle.com/track_image/2bfad996-756e-4816-bfe1-cb86ac2a0019/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/2bfad996-756e-4816-bfe1-cb86ac2a0019/summer-nights",
-      "lastWeek": "74",
-      "peak": "16",
-      "weeksOnChart": "8"
+      "id": "62f449be-b9c5-4989-8117-b2f2d22e63d3",
+      "title": "Home",
+      "artist": "The Saints",
+      "mix": "Extended Mix",
+      "label": "Dirty Workz",
+      "image": "https://hardstyle.com/track_image/62f449be-b9c5-4989-8117-b2f2d22e63d3/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/62f449be-b9c5-4989-8117-b2f2d22e63d3/home",
+      "lastWeek": "91",
+      "peak": "1",
+      "weeksOnChart": "13"
     },
     {
       "position": 96,
@@ -1251,32 +1251,19 @@
     },
     {
       "position": 97,
-      "id": "c49b8ccd-1b46-4f4d-9e28-c596b59a6e86",
-      "title": "FEAR",
-      "artist": "Genox",
-      "mix": "Extended Mix",
-      "label": "Revolutions",
-      "image": "https://hardstyle.com/track_image/c49b8ccd-1b46-4f4d-9e28-c596b59a6e86/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/c49b8ccd-1b46-4f4d-9e28-c596b59a6e86/fear",
-      "lastWeek": "-",
-      "peak": "-",
-      "weeksOnChart": "-"
+      "id": "2bfad996-756e-4816-bfe1-cb86ac2a0019",
+      "title": "Summer Nights",
+      "artist": "Code Black",
+      "mix": "",
+      "label": "I AM HARDSTYLE",
+      "image": "https://hardstyle.com/track_image/2bfad996-756e-4816-bfe1-cb86ac2a0019/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/2bfad996-756e-4816-bfe1-cb86ac2a0019/summer-nights",
+      "lastWeek": "74",
+      "peak": "16",
+      "weeksOnChart": "8"
     },
     {
       "position": 98,
-      "id": "a538e1e9-3eb0-483a-9607-32567326301f",
-      "title": "DUMB FKN MUSIC",
-      "artist": "Aversion",
-      "mix": "Pro Mix",
-      "label": "TC Records",
-      "image": "https://hardstyle.com/track_image/a538e1e9-3eb0-483a-9607-32567326301f/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/a538e1e9-3eb0-483a-9607-32567326301f/dumb-fkn-music",
-      "lastWeek": "92",
-      "peak": "3",
-      "weeksOnChart": "10"
-    },
-    {
-      "position": 99,
       "id": "05c9e574-0ed4-4b06-9918-0671dcadd1ef",
       "title": "ANOTHER LIFE",
       "artist": "Revelation",
@@ -1289,6 +1276,19 @@
       "weeksOnChart": "9"
     },
     {
+      "position": 99,
+      "id": "a538e1e9-3eb0-483a-9607-32567326301f",
+      "title": "DUMB FKN MUSIC",
+      "artist": "Aversion",
+      "mix": "Pro Mix",
+      "label": "TC Records",
+      "image": "https://hardstyle.com/track_image/a538e1e9-3eb0-483a-9607-32567326301f/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/a538e1e9-3eb0-483a-9607-32567326301f/dumb-fkn-music",
+      "lastWeek": "92",
+      "peak": "3",
+      "weeksOnChart": "11"
+    },
+    {
       "position": 100,
       "id": "13553db2-4f06-4cf9-9943-35619699c5f1",
       "title": "Awake Me",
@@ -1297,7 +1297,7 @@
       "label": "Intents Records",
       "image": "https://hardstyle.com/track_image/13553db2-4f06-4cf9-9943-35619699c5f1/250x250/335",
       "link": "https://hardstyle.com/en/tracks/13553db2-4f06-4cf9-9943-35619699c5f1/awake-me",
-      "lastWeek": "-",
+      "lastWeek": "100",
       "peak": "97",
       "weeksOnChart": "-"
     }
