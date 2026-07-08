@@ -614,6 +614,10 @@
   "mainstage": {
     "title": "MainStage",
     "subtitle": "Official aftermovies · 2007–2025",
+    "subtitleAfter": "Official aftermovies · 2007–2025",
+    "subtitleAnthems": "Official anthems · 2003–2025",
+    "tabAfter": "Aftermovies",
+    "tabAnthems": "Anthems",
     "noVideo": "No aftermovie",
     "credit": "Official aftermovies by Q-dance on YouTube"
   },
