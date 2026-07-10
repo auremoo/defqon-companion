@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-07-09T09:38:39.226Z",
+  "updatedAt": "2026-07-10T09:33:50.477Z",
   "videos": [
+    {
+      "id": "i_tQ7prJd68",
+      "title": "The Tribute | Defqon.1 2026",
+      "published": "2026-07-09T18:00:14+00:00",
+      "link": "https://www.youtube.com/watch?v=i_tQ7prJd68",
+      "thumbnail": "https://i.ytimg.com/vi/i_tQ7prJd68/mqdefault.jpg"
+    },
+    {
+      "id": "AtsGV7ABwpE",
+      "title": "The Tribute drops tonight 20:00 CEST on the Q-dance YouTube Channel.",
+      "published": "2026-07-09T15:11:11+00:00",
+      "link": "https://www.youtube.com/watch?v=AtsGV7ABwpE",
+      "thumbnail": "https://i.ytimg.com/vi/AtsGV7ABwpE/mqdefault.jpg"
+    },
     {
       "id": "tAnqasjBVRQ",
       "title": "A powerful show moment, brought to life in a way no one expected.",
@@ -91,20 +105,6 @@
       "published": "2026-06-17T15:00:33+00:00",
       "link": "https://www.youtube.com/watch?v=Lp59Co7Q3w0",
       "thumbnail": "https://i.ytimg.com/vi/Lp59Co7Q3w0/mqdefault.jpg"
-    },
-    {
-      "id": "NpUY8vomHSw",
-      "title": "After three days of raving, there's no better way to recharge than at the Open Air Bed Concert.",
-      "published": "2026-06-17T08:22:31+00:00",
-      "link": "https://www.youtube.com/watch?v=NpUY8vomHSw",
-      "thumbnail": "https://i.ytimg.com/vi/NpUY8vomHSw/mqdefault.jpg"
-    },
-    {
-      "id": "qhFPm1bkN5U",
-      "title": "Experience Defqon.1 live on YouTube from June 26 to June 28 🔥",
-      "published": "2026-06-16T12:09:29+00:00",
-      "link": "https://www.youtube.com/watch?v=qhFPm1bkN5U",
-      "thumbnail": "https://i.ytimg.com/vi/qhFPm1bkN5U/mqdefault.jpg"
     }
   ]
 }
