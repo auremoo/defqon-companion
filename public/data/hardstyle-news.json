@@ -1,10 +1,24 @@
 {
-  "updatedAt": "2026-07-09T10:03:35.140Z",
+  "updatedAt": "2026-07-10T09:59:51.292Z",
   "articles": [
+    {
+      "title": "Thyron releases 'i feel like i'm drowning', the third track of his new chapter",
+      "link": "https://hardstyle.com/en/news/thyron-releases-i-feel-like-i-m-drowning-the-third-track-of-his-new-chapter",
+      "image": "https://hardstyle.com/thumbs/1600x0/@0.49x0.21/gfx/news/2026/6%20june/Thyron_press_23.jpg",
+      "date": "2026-07-07",
+      "category": "news,hardstyle"
+    },
+    {
+      "title": "Dominator prepares for the biggest hardcore gathering",
+      "link": "https://hardstyle.com/en/news/dominator-gears-up-for-the-biggest-hardcore-gathering-of-the-summer",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/6%20june/522668294_1180927204063692_2555901344499149781_n.jpg",
+      "date": "2026-07-07",
+      "category": "news,hardstyle"
+    },
     {
       "title": "This week's hardstyle releases [week 27]",
       "link": "https://hardstyle.com/en/news/this-week-s-hardstyle-releases-week-27",
-      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/2026/Juni/718062111_18427290367133733_6339893426757904503_n.jpg",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/Juni/718062111_18427290367133733_6339893426757904503_n.jpg",
       "date": null,
       "category": "hardstyle,music"
     },
@@ -25,14 +39,14 @@
     {
       "title": "This week's hardstyle releases [week 25]",
       "link": "https://hardstyle.com/en/news/this-week-s-hardstyle-releases-week-25",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/Juni/640417986_18569820262021724_1844166600619013188_n.jpg",
+      "image": null,
       "date": null,
       "category": "hardstyle,music"
     },
     {
       "title": "Level One unveils his new alias EXIT REAL1TY with a new release: ‘Sacrifice’",
       "link": "https://hardstyle.com/en/news/level-one-unveils-his-new-alias-exit-real1ty-with-a-new-release-sacrifice",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/Juni/Decibel_2024_1544.jpg",
+      "image": null,
       "date": "2026-06-12",
       "category": "news,hardstyle"
     },
@@ -55,20 +69,6 @@
       "link": "https://hardstyle.com/en/news/supremacy-s-2026-lineup-turns-heads",
       "image": null,
       "date": "2026-06-03",
-      "category": "news,hardstyle"
-    },
-    {
-      "title": "This week's hardstyle releases [week 23]",
-      "link": "https://hardstyle.com/en/news/this-week-s-hardstyle-releases-week-23-2026",
-      "image": null,
-      "date": null,
-      "category": "hardstyle,music"
-    },
-    {
-      "title": "Decibel outdoor announces WKND line-up",
-      "link": "https://hardstyle.com/en/news/decibel-outdoor-announces-wknd-line-up",
-      "image": null,
-      "date": "2026-05-27",
       "category": "news,hardstyle"
     }
   ]
