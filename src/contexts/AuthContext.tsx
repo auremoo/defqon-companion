@@ -15,6 +15,7 @@ export interface Profile {
   display_name: string | null
   defqon_username: string | null
   is_dediqated: boolean
+  dediqated_since: string | null  // ISO date YYYY-MM-DD
 }
 
 interface AuthState {
@@ -25,7 +26,7 @@ interface AuthState {
   signUp: (email: string, password: string, username: string) => Promise<string | null>
   signIn: (email: string, password: string) => Promise<string | null>
   signOut: () => Promise<void>
-  updateProfile: (fields: Partial<Pick<Profile, 'display_name' | 'defqon_username' | 'is_dediqated'>>) => Promise<string | null>
+  updateProfile: (fields: Partial<Pick<Profile, 'display_name' | 'defqon_username' | 'is_dediqated' | 'dediqated_since'>>) => Promise<string | null>
   refreshProfile: () => Promise<void>
 }
 
@@ -80,6 +81,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         display_name: username,
         defqon_username: null,
         is_dediqated: false,
+        dediqated_since: null,
       })
       return null
     } catch (e: unknown) {
@@ -104,7 +106,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setProfile(null)
   }
 
-  async function updateProfile(fields: Partial<Pick<Profile, 'display_name' | 'defqon_username' | 'is_dediqated'>>): Promise<string | null> {
+  async function updateProfile(fields: Partial<Pick<Profile, 'display_name' | 'defqon_username' | 'is_dediqated' | 'dediqated_since'>>): Promise<string | null> {
     if (!db || !user) return 'Not authenticated'
     try {
       await updateDoc(doc(db, 'users', user.uid), fields)

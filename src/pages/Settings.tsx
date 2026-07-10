@@ -30,16 +30,43 @@ export default function Settings() {
   const [platform, setPlatform] = useState(getPreferredPlatform)
   const [defqonUsername, setDefqonUsername] = useState('')
   const [isDediqated, setIsDediqated] = useState(false)
+  const [dediqatedSince, setDediqatedSince] = useState<string>('')
+  const [dateSaveStatus, setDateSaveStatus] = useState<'idle' | 'saving' | 'saved'>('idle')
   const [saveStatus, setSaveStatus] = useState<'idle' | 'saving' | 'saved'>('idle')
+
+  function todayStr() {
+    return new Date().toISOString().split('T')[0]
+  }
+
+  function addOneYear(dateStr: string): string {
+    const d = new Date(dateStr)
+    d.setFullYear(d.getFullYear() + 1)
+    return d.toLocaleDateString('fr-FR', { day: '2-digit', month: 'long', year: 'numeric' })
+  }
+
+  function isExpired(sinceStr: string): boolean {
+    const expiry = new Date(sinceStr)
+    expiry.setFullYear(expiry.getFullYear() + 1)
+    return new Date() > expiry
+  }
 
   useEffect(() => { document.title = 'Settings — Defqon Companion' }, [])
 
-  // Sync local state when profile loads/changes
+  // Sync local state when profile loads/changes + auto-expire dediqated
   useEffect(() => {
-    if (profile) {
-      setDefqonUsername(profile.defqon_username || '')
+    if (!profile) return
+    setDefqonUsername(profile.defqon_username || '')
+    const since = profile.dediqated_since || ''
+    setDediqatedSince(since)
+
+    // Auto-expire: if > 1 year since activation, disable badge
+    if (profile.is_dediqated && since && isExpired(since)) {
+      setIsDediqated(false)
+      updateProfile({ is_dediqated: false, dediqated_since: null })
+    } else {
       setIsDediqated(profile.is_dediqated)
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [profile])
 
   const changePlatform = (id: string) => {
@@ -56,9 +83,19 @@ export default function Settings() {
 
   const toggleDediqated = async () => {
     const newVal = !isDediqated
-    setIsDediqated(newVal) // Optimistic update
-    const err = await updateProfile({ is_dediqated: newVal })
-    if (err) setIsDediqated(!newVal) // Revert on error
+    setIsDediqated(newVal)
+    const since = newVal ? todayStr() : null
+    if (newVal) setDediqatedSince(todayStr())
+    const err = await updateProfile({ is_dediqated: newVal, dediqated_since: since })
+    if (err) { setIsDediqated(!newVal); setDediqatedSince(profile?.dediqated_since || '') }
+  }
+
+  const saveDediqatedSince = async () => {
+    if (!dediqatedSince) return
+    setDateSaveStatus('saving')
+    await updateProfile({ dediqated_since: dediqatedSince })
+    setDateSaveStatus('saved')
+    setTimeout(() => setDateSaveStatus('idle'), 2000)
   }
 
   return (
@@ -151,18 +188,52 @@ export default function Settings() {
                 </div>
               </div>
               {/* Dediqated toggle */}
-              <button
-                onClick={toggleDediqated}
-                className="flex w-full items-center justify-between p-4 transition-colors hover:bg-surface-alt"
-              >
-                <div className="text-left">
-                  <span className="text-sm text-text-primary">{t('settings.dediqated')}</span>
-                  <p className="text-xs text-text-muted">{t('settings.dediqatedDesc')}</p>
-                </div>
-                <div className={`relative h-7 w-12 shrink-0 rounded-full transition-colors duration-200 ${isDediqated ? 'bg-defqon-gold' : 'bg-surface-elevated'}`}>
-                  <div className={`absolute top-1 h-5 w-5 rounded-full bg-white shadow transition-all duration-200 ${isDediqated ? 'left-6' : 'left-1'}`} />
-                </div>
-              </button>
+              <div>
+                <button
+                  onClick={toggleDediqated}
+                  className="flex w-full items-center justify-between p-4 transition-colors hover:bg-surface-alt"
+                >
+                  <div className="text-left">
+                    <span className="text-sm text-text-primary">{t('settings.dediqated')}</span>
+                    <p className="text-xs text-text-muted">{t('settings.dediqatedDesc')}</p>
+                  </div>
+                  <div className={`relative h-7 w-12 shrink-0 rounded-full transition-colors duration-200 ${isDediqated ? 'bg-defqon-gold' : 'bg-surface-elevated'}`}>
+                    <div className={`absolute top-1 h-5 w-5 rounded-full bg-white shadow transition-all duration-200 ${isDediqated ? 'left-6' : 'left-1'}`} />
+                  </div>
+                </button>
+                {isDediqated && (
+                  <div className="border-t border-border px-4 pb-3 pt-2 space-y-2">
+                    <p className="text-[10px] uppercase tracking-wider text-text-muted font-semibold">
+                      {t('settings.dediqatedSince')}
+                    </p>
+                    <div className="flex gap-2 items-center">
+                      <input
+                        type="date"
+                        value={dediqatedSince}
+                        max={todayStr()}
+                        onChange={(e) => setDediqatedSince(e.target.value)}
+                        className="flex-1 rounded-lg border border-border bg-surface-alt px-3 py-1.5 text-sm text-text-primary outline-none focus:border-defqon-gold/50"
+                      />
+                      <button
+                        onClick={saveDediqatedSince}
+                        disabled={dateSaveStatus === 'saving'}
+                        className={`rounded-lg px-3 py-1.5 text-xs font-semibold uppercase transition-colors ${
+                          dateSaveStatus === 'saved'
+                            ? 'bg-green-900/30 text-green-400'
+                            : 'bg-defqon-gold/20 text-defqon-gold disabled:opacity-50'
+                        }`}
+                      >
+                        {dateSaveStatus === 'saving' ? '…' : dateSaveStatus === 'saved' ? '✓' : t('settings.save')}
+                      </button>
+                    </div>
+                    {dediqatedSince && (
+                      <p className="text-[11px] text-text-muted">
+                        {t('settings.dediqatedExpires')} <span className="font-semibold text-defqon-gold/80">{addOneYear(dediqatedSince)}</span>
+                      </p>
+                    )}
+                  </div>
+                )}
+              </div>
             </div>
           </section>
         )}
