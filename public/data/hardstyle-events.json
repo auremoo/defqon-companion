@@ -1,30 +1,12 @@
 {
-  "updatedAt": "2026-07-11T07:11:28.299Z",
+  "updatedAt": "2026-07-12T07:29:01.743Z",
   "events": [
-    {
-      "title": "Airbeat One Festival 2026",
-      "link": "https://hardstyle.com/en/events/83efa029-14fa-4ed1-9d48-0e0d76c0df30/airbeat-one-festival-2026",
-      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/83efa029-14fa-4ed1-9d48-0e0d76c0df30/images/logo_img.png",
-      "location": "Neustadt-Glewe",
-      "time": "19:00 - 05:00",
-      "date": "2026-07-08",
-      "month": "July"
-    },
     {
       "title": "Dreamfields Festival - The Final Dream",
       "link": "https://hardstyle.com/en/events/3f9769bd-a158-4aef-8bee-023ac231578e/dreamfields-festival-the-final-dream",
       "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/3f9769bd-a158-4aef-8bee-023ac231578e/images/logo_img.jpg",
       "location": "Lathum",
       "time": "13:00 - 00:00",
-      "date": "2026-07-11",
-      "month": "July"
-    },
-    {
-      "title": "Vroeger Was Alles Beter Festival 2026 - The Classics Cup",
-      "link": "https://hardstyle.com/en/events/6fc45345-e01c-44db-8bf3-6c13107c302c/vroeger-was-alles-beter-festival-2026-the-classics-cup",
-      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/6fc45345-e01c-44db-8bf3-6c13107c302c/images/logo_img.jpg",
-      "location": "Rosmalen",
-      "time": "13:00 - 23:00",
       "date": "2026-07-11",
       "month": "July"
     },
@@ -101,15 +83,6 @@
       "month": "August"
     },
     {
-      "title": "Shutdown Festival 2026",
-      "link": "https://hardstyle.com/en/events/00241597-49a0-43ba-b88c-11a2cb3256c6/shutdown-festival-2026",
-      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/00241597-49a0-43ba-b88c-11a2cb3256c6/images/logo_img.jpg",
-      "location": "Zwentendorf",
-      "time": "12:00 - 00:00",
-      "date": "2026-08-08",
-      "month": "August"
-    },
-    {
       "title": "Dance Valley Festival 2026",
       "link": "https://hardstyle.com/en/events/6216a3e0-1e37-4117-adc4-3925ca99f4db/dance-valley-festival-2026",
       "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/6216a3e0-1e37-4117-adc4-3925ca99f4db/images/logo_img.jpg",
@@ -124,6 +97,15 @@
       "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/e9e28013-5a73-4195-80cc-c211db3abbdf/images/logo_img.jpg",
       "location": "Reuver",
       "time": "14:00 - 00:00",
+      "date": "2026-08-08",
+      "month": "August"
+    },
+    {
+      "title": "Shutdown Festival 2026",
+      "link": "https://hardstyle.com/en/events/00241597-49a0-43ba-b88c-11a2cb3256c6/shutdown-festival-2026",
+      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/00241597-49a0-43ba-b88c-11a2cb3256c6/images/logo_img.jpg",
+      "location": "Zwentendorf",
+      "time": "12:00 - 00:00",
       "date": "2026-08-08",
       "month": "August"
     },
