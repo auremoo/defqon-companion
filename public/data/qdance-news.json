@@ -1,6 +1,27 @@
 {
-  "updatedAt": "2026-07-11T07:54:46.867Z",
+  "updatedAt": "2026-07-12T08:15:51.934Z",
   "videos": [
+    {
+      "id": "5ZGLIA46KrQ",
+      "title": "The first chapter of our journey has begun, the Tribe reunited for The Gathering with D-Sturb.",
+      "published": "2026-07-12T08:00:02+00:00",
+      "link": "https://www.youtube.com/watch?v=5ZGLIA46KrQ",
+      "thumbnail": "https://i.ytimg.com/vi/5ZGLIA46KrQ/mqdefault.jpg"
+    },
+    {
+      "id": "XgGU48woa8I",
+      "title": "D-Sturb | Defqon.1 2026",
+      "published": "2026-07-11T17:11:04+00:00",
+      "link": "https://www.youtube.com/watch?v=XgGU48woa8I",
+      "thumbnail": "https://i.ytimg.com/vi/XgGU48woa8I/mqdefault.jpg"
+    },
+    {
+      "id": "2xFARCBhgr4",
+      "title": "Relive The Gathering, featuring D-Sturb. Dropping tonight at 18:00 CEST.",
+      "published": "2026-07-11T11:00:03+00:00",
+      "link": "https://www.youtube.com/watch?v=2xFARCBhgr4",
+      "thumbnail": "https://i.ytimg.com/vi/2xFARCBhgr4/mqdefault.jpg"
+    },
     {
       "id": "EZcTw_IoGCk",
       "title": "Relive this year's edition of The Tribute, honoring one of hardstyle's most iconic classics.",
@@ -84,27 +105,6 @@
       "published": "2026-07-02T13:14:57+00:00",
       "link": "https://www.youtube.com/watch?v=-8ZXQkThGog",
       "thumbnail": "https://i.ytimg.com/vi/-8ZXQkThGog/mqdefault.jpg"
-    },
-    {
-      "id": "5scDkPxl3P0",
-      "title": "When the livestream is just too good.",
-      "published": "2026-06-24T14:08:31+00:00",
-      "link": "https://www.youtube.com/watch?v=5scDkPxl3P0",
-      "thumbnail": "https://i.ytimg.com/vi/5scDkPxl3P0/mqdefault.jpg"
-    },
-    {
-      "id": "zhD663WrI78",
-      "title": "Some call it insanity. We call it tradition. LEFT-RIGHT.",
-      "published": "2026-06-22T16:06:13+00:00",
-      "link": "https://www.youtube.com/watch?v=zhD663WrI78",
-      "thumbnail": "https://i.ytimg.com/vi/zhD663WrI78/mqdefault.jpg"
-    },
-    {
-      "id": "mtWeDS44Bfc",
-      "title": "Training for the Warrior Workout starts now. 💪See you there.",
-      "published": "2026-06-18T11:33:58+00:00",
-      "link": "https://www.youtube.com/watch?v=mtWeDS44Bfc",
-      "thumbnail": "https://i.ytimg.com/vi/mtWeDS44Bfc/mqdefault.jpg"
     }
   ]
 }
