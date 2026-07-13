@@ -1,6 +1,13 @@
 {
-  "updatedAt": "2026-07-12T08:15:51.934Z",
+  "updatedAt": "2026-07-13T09:25:32.085Z",
   "videos": [
+    {
+      "id": "QsDRCnn--hk",
+      "title": "Sacred Flame is a reminder that the spirit of the Tribe continues to burn wherever the path may lead",
+      "published": "2026-07-12T11:00:36+00:00",
+      "link": "https://www.youtube.com/watch?v=QsDRCnn--hk",
+      "thumbnail": "https://i.ytimg.com/vi/QsDRCnn--hk/mqdefault.jpg"
+    },
     {
       "id": "5ZGLIA46KrQ",
       "title": "The first chapter of our journey has begun, the Tribe reunited for The Gathering with D-Sturb.",
@@ -98,13 +105,6 @@
       "published": "2026-07-02T18:00:06+00:00",
       "link": "https://www.youtube.com/watch?v=fLWY-Sxb1bE",
       "thumbnail": "https://i.ytimg.com/vi/fLWY-Sxb1bE/mqdefault.jpg"
-    },
-    {
-      "id": "-8ZXQkThGog",
-      "title": "Tonight at 20:00 CEST, The Endshow premieres on the Q-dance YouTube channel.",
-      "published": "2026-07-02T13:14:57+00:00",
-      "link": "https://www.youtube.com/watch?v=-8ZXQkThGog",
-      "thumbnail": "https://i.ytimg.com/vi/-8ZXQkThGog/mqdefault.jpg"
     }
   ]
 }
