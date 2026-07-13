@@ -1,6 +1,38 @@
 {
-  "updatedAt": "2026-07-12T07:29:01.269Z",
+  "updatedAt": "2026-07-13T08:17:16.130Z",
   "releases": [
+    {
+      "id": "3f2f542a-893a-495a-b8a8-216f3e680e9f",
+      "title": "Tample",
+      "artist": "Roman Naboka",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/3f2f542a-893a-495a-b8a8-216f3e680e9f/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/3f2f542a-893a-495a-b8a8-216f3e680e9f/tample"
+    },
+    {
+      "id": "53593005-1832-4135-a8b6-977344c4cee0",
+      "title": "VELVET Beauty",
+      "artist": "Luke PN",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/53593005-1832-4135-a8b6-977344c4cee0/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/53593005-1832-4135-a8b6-977344c4cee0/velvet-beauty"
+    },
+    {
+      "id": "5639b081-b171-4d26-9f9b-a5711347b209",
+      "title": "Rise of the Brave",
+      "artist": "Hexus",
+      "mix": "Extended Version",
+      "image": "https://hardstyle.com/track_image/5639b081-b171-4d26-9f9b-a5711347b209/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/5639b081-b171-4d26-9f9b-a5711347b209/rise-of-the-brave"
+    },
+    {
+      "id": "bc564ee4-74f9-4db5-861b-1c52c2ce3e73",
+      "title": "Rise of the Brave",
+      "artist": "Hexus",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/bc564ee4-74f9-4db5-861b-1c52c2ce3e73/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/bc564ee4-74f9-4db5-861b-1c52c2ce3e73/rise-of-the-brave"
+    },
     {
       "id": "31157f8e-a419-45c0-b404-bd98922eef38",
       "title": "Side To Side",
@@ -16,38 +48,6 @@
       "mix": "Extended Mix",
       "image": "https://hardstyle.com/track_image/abefb72a-5446-47b3-b2d2-4f1ba492e37b/250x250/335",
       "link": "https://hardstyle.com/en/tracks/abefb72a-5446-47b3-b2d2-4f1ba492e37b/side-to-side"
-    },
-    {
-      "id": "ca182200-b69e-48de-97fd-753e3c5ad3e1",
-      "title": "La paresse",
-      "artist": "William Moore",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/ca182200-b69e-48de-97fd-753e3c5ad3e1/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/ca182200-b69e-48de-97fd-753e3c5ad3e1/la-paresse"
-    },
-    {
-      "id": "22ccaa4a-14a7-4e14-b5d0-bc384b0935cb",
-      "title": "La gourmandise",
-      "artist": "William Moore",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/22ccaa4a-14a7-4e14-b5d0-bc384b0935cb/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/22ccaa4a-14a7-4e14-b5d0-bc384b0935cb/la-gourmandise"
-    },
-    {
-      "id": "bae6868f-3fe5-4f5c-8a5e-04a856f2a7aa",
-      "title": "La luxure",
-      "artist": "William Moore",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/bae6868f-3fe5-4f5c-8a5e-04a856f2a7aa/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/bae6868f-3fe5-4f5c-8a5e-04a856f2a7aa/la-luxure"
-    },
-    {
-      "id": "b9b2212d-df19-4f52-ab47-63ce03f1b288",
-      "title": "La colère",
-      "artist": "William Moore",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/b9b2212d-df19-4f52-ab47-63ce03f1b288/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/b9b2212d-df19-4f52-ab47-63ce03f1b288/la-colere"
     },
     {
       "id": "e1257907-14e4-4697-aa86-e46accfff054",
