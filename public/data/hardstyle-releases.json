@@ -1,53 +1,53 @@
 {
-  "updatedAt": "2026-07-14T07:10:27.151Z",
+  "updatedAt": "2026-07-15T07:14:29.773Z",
   "releases": [
     {
-      "id": "f1aa9f10-0943-4c93-bb00-472fdbef5b33",
-      "title": "What I See",
-      "artist": "Quickdrop",
+      "id": "a12a8cf0-a8a6-4921-9505-91ba264155b8",
+      "title": "Let You Go",
+      "artist": "Horyzon",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/f1aa9f10-0943-4c93-bb00-472fdbef5b33/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/f1aa9f10-0943-4c93-bb00-472fdbef5b33/what-i-see"
+      "image": "https://hardstyle.com/track_image/a12a8cf0-a8a6-4921-9505-91ba264155b8/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/a12a8cf0-a8a6-4921-9505-91ba264155b8/let-you-go"
     },
     {
-      "id": "a4cfb044-1d94-47dc-89a6-807edc80c78f",
-      "title": "Look For You",
-      "artist": "DJ OGGY",
+      "id": "ce50d97f-0724-4848-a6c8-6e13c4cf400a",
+      "title": "READY",
+      "artist": "Jase",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/ce50d97f-0724-4848-a6c8-6e13c4cf400a/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/ce50d97f-0724-4848-a6c8-6e13c4cf400a/ready"
+    },
+    {
+      "id": "063897ca-7744-45d0-afe4-0a87d2b5afca",
+      "title": "Gonna Be Okay",
+      "artist": "Alleviate",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/063897ca-7744-45d0-afe4-0a87d2b5afca/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/063897ca-7744-45d0-afe4-0a87d2b5afca/gonna-be-okay"
+    },
+    {
+      "id": "82dd757f-0215-4621-9bca-3871171e43e1",
+      "title": "Different Story",
+      "artist": "DJ Javi Volumen",
+      "mix": "Fest Mix",
+      "image": "https://hardstyle.com/track_image/82dd757f-0215-4621-9bca-3871171e43e1/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/82dd757f-0215-4621-9bca-3871171e43e1/different-story"
+    },
+    {
+      "id": "f0008e4d-20a4-484a-af2b-a638a7af0da6",
+      "title": "Different Story",
+      "artist": "DJ Javi Volumen",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/a4cfb044-1d94-47dc-89a6-807edc80c78f/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/a4cfb044-1d94-47dc-89a6-807edc80c78f/look-for-you"
+      "image": "https://hardstyle.com/track_image/f0008e4d-20a4-484a-af2b-a638a7af0da6/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/f0008e4d-20a4-484a-af2b-a638a7af0da6/different-story"
     },
     {
-      "id": "616ab29f-7196-413a-9934-055aa89b8bfc",
-      "title": "Look For You",
-      "artist": "DJ OGGY",
-      "mix": "Radio Edit",
-      "image": "https://hardstyle.com/track_image/616ab29f-7196-413a-9934-055aa89b8bfc/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/616ab29f-7196-413a-9934-055aa89b8bfc/look-for-you"
-    },
-    {
-      "id": "1ca30908-88c7-404e-9d02-5284495f8c7b",
-      "title": "Not Ment To Be",
-      "artist": "Garbie Project",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/1ca30908-88c7-404e-9d02-5284495f8c7b/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/1ca30908-88c7-404e-9d02-5284495f8c7b/not-ment-to-be"
-    },
-    {
-      "id": "6afb1fb2-db4d-4139-927a-cdf02aab3ebe",
-      "title": "Our DNA (Open Beatz Zone III Anthem)",
-      "artist": "DROPiXX",
+      "id": "6fa88e25-8386-4921-ab26-6751fa306aa3",
+      "title": "Ode To The Rave",
+      "artist": "Dark Individual",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/6afb1fb2-db4d-4139-927a-cdf02aab3ebe/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/6afb1fb2-db4d-4139-927a-cdf02aab3ebe/our-dna-open-beatz-zone-iii-anthem"
-    },
-    {
-      "id": "af5e0401-bada-4717-88c0-4cd135f57c59",
-      "title": "CHEMICAL HIGH",
-      "artist": "Heavy Machinery",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/af5e0401-bada-4717-88c0-4cd135f57c59/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/af5e0401-bada-4717-88c0-4cd135f57c59/chemical-high"
+      "image": "https://hardstyle.com/track_image/6fa88e25-8386-4921-ab26-6751fa306aa3/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/6fa88e25-8386-4921-ab26-6751fa306aa3/ode-to-the-rave"
     },
     {
       "id": "e1257907-14e4-4697-aa86-e46accfff054",
