@@ -1,6 +1,13 @@
 {
-  "updatedAt": "2026-07-16T08:11:46.809Z",
+  "updatedAt": "2026-07-17T08:08:52.576Z",
   "videos": [
+    {
+      "id": "bk_HrjB7KKQ",
+      "title": "Experience the Showcase of 4444 OF A KIND on Youtube!",
+      "published": "2026-07-16T11:07:13+00:00",
+      "link": "https://www.youtube.com/watch?v=bk_HrjB7KKQ",
+      "thumbnail": "https://i.ytimg.com/vi/bk_HrjB7KKQ/mqdefault.jpg"
+    },
     {
       "id": "RGwF-KN21eU",
       "title": "4444 OF A KIND LIVE NOW!",
@@ -98,13 +105,6 @@
       "published": "2026-07-06T09:06:18+00:00",
       "link": "https://www.youtube.com/watch?v=WomeRyabC0c",
       "thumbnail": "https://i.ytimg.com/vi/WomeRyabC0c/mqdefault.jpg"
-    },
-    {
-      "id": "3G6sBBl5Tsw",
-      "title": "Relive this unforgettable moment from The Endshow as D-Block & S-te-Fan's &quot;Embers&quot; lit up the sky.",
-      "published": "2026-07-05T11:09:22+00:00",
-      "link": "https://www.youtube.com/watch?v=3G6sBBl5Tsw",
-      "thumbnail": "https://i.ytimg.com/vi/3G6sBBl5Tsw/mqdefault.jpg"
     }
   ]
 }
