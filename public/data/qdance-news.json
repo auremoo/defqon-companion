@@ -1,6 +1,13 @@
 {
-  "updatedAt": "2026-07-17T08:08:52.576Z",
+  "updatedAt": "2026-07-18T07:48:29.632Z",
   "videos": [
+    {
+      "id": "x8l7C84Rvlg",
+      "title": "‘Sacred Flame’ by Bass Modulators is out now on Defqon.1 Records🔥",
+      "published": "2026-07-17T08:17:49+00:00",
+      "link": "https://www.youtube.com/watch?v=x8l7C84Rvlg",
+      "thumbnail": "https://i.ytimg.com/vi/x8l7C84Rvlg/mqdefault.jpg"
+    },
     {
       "id": "bk_HrjB7KKQ",
       "title": "Experience the Showcase of 4444 OF A KIND on Youtube!",
@@ -98,13 +105,6 @@
       "published": "2026-07-07T08:14:00+00:00",
       "link": "https://www.youtube.com/watch?v=CZWY3qXjw8c",
       "thumbnail": "https://i.ytimg.com/vi/CZWY3qXjw8c/mqdefault.jpg"
-    },
-    {
-      "id": "WomeRyabC0c",
-      "title": "A classic by Frontliner, reimagined by Galactixx. Coming soon on Defqon.1 Records x Scantraxx.",
-      "published": "2026-07-06T09:06:18+00:00",
-      "link": "https://www.youtube.com/watch?v=WomeRyabC0c",
-      "thumbnail": "https://i.ytimg.com/vi/WomeRyabC0c/mqdefault.jpg"
     }
   ]
 }
