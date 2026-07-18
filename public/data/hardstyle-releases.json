@@ -1,6 +1,14 @@
 {
-  "updatedAt": "2026-07-17T07:16:55.759Z",
+  "updatedAt": "2026-07-18T07:00:24.068Z",
   "releases": [
+    {
+      "id": "8f6e787d-b721-497e-8ed5-404330c28213",
+      "title": "Africa Of Hope",
+      "artist": "Luke PN",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/8f6e787d-b721-497e-8ed5-404330c28213/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/8f6e787d-b721-497e-8ed5-404330c28213/africa-of-hope"
+    },
     {
       "id": "ccaf659f-c24d-4dc9-8c8a-883a818174b4",
       "title": "Lions",
@@ -40,14 +48,6 @@
       "mix": "Extended Mix",
       "image": "https://hardstyle.com/track_image/777a9ea8-17ad-4ad6-ab57-6abc57d65e2a/250x250/335",
       "link": "https://hardstyle.com/en/tracks/777a9ea8-17ad-4ad6-ab57-6abc57d65e2a/stronger"
-    },
-    {
-      "id": "af650384-b598-40e7-a4ad-31413e5551b5",
-      "title": "Only A Dream",
-      "artist": "Resilience",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/af650384-b598-40e7-a4ad-31413e5551b5/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/af650384-b598-40e7-a4ad-31413e5551b5/only-a-dream"
     },
     {
       "id": "1f3b54bc-d117-45cc-b24b-7beec3b0a4c0",
