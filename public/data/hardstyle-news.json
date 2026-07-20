@@ -1,10 +1,17 @@
 {
-  "updatedAt": "2026-07-19T08:42:17.788Z",
+  "updatedAt": "2026-07-20T09:41:16.159Z",
   "articles": [
+    {
+      "title": "REBELLiON Indoor announces the line-up for their 2026 edition: 'BREAK THE SYSTEM'",
+      "link": "https://hardstyle.com/en/news/rebellion-indoor-announces-the-line-up-for-their-2026-edition-break-the-system",
+      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/2026/6%20june/744782892_1816694969556163_4983386542515073653_n.jpg",
+      "date": "2026-07-16",
+      "category": "news,hardstyle"
+    },
     {
       "title": "Thyron releases 'i feel like i'm drowning', the third track of his new chapter",
       "link": "https://hardstyle.com/en/news/thyron-releases-i-feel-like-i-m-drowning-the-third-track-of-his-new-chapter",
-      "image": "https://hardstyle.com/thumbs/1600x0/@0.49x0.21/gfx/news/2026/6%20june/Thyron_press_23.jpg",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.49x0.21/gfx/news/2026/6%20june/Thyron_press_23.jpg",
       "date": "2026-07-07",
       "category": "news,hardstyle"
     },
@@ -32,7 +39,7 @@
     {
       "title": "Adaro and Unresolved release ‘Original Gangsters (Raw And Mean)’, their first collab ever",
       "link": "https://hardstyle.com/en/news/adaro-and-unresolved-release-original-gangsters-raw-and-mean-their-first-collab-ever",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/Juni/250626_175856_DQ1_KateDuijts_09945.jpg",
+      "image": null,
       "date": "2026-06-18",
       "category": "news,hardstyle"
     },
@@ -63,13 +70,6 @@
       "image": null,
       "date": null,
       "category": "hardstyle,music"
-    },
-    {
-      "title": "Supremacy's 2026 lineup turns heads",
-      "link": "https://hardstyle.com/en/news/supremacy-s-2026-lineup-turns-heads",
-      "image": null,
-      "date": "2026-06-03",
-      "category": "news,hardstyle"
     }
   ]
 }
