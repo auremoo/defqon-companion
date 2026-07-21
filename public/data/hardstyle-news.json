@@ -1,10 +1,17 @@
 {
-  "updatedAt": "2026-07-20T09:41:16.159Z",
+  "updatedAt": "2026-07-21T09:08:40.744Z",
   "articles": [
+    {
+      "title": "Zany and Adaro release 'The House Is On Fire', their first collab ever",
+      "link": "https://hardstyle.com/en/news/zany-and-adaro-release-the-house-is-on-fire-their-first-collab-ever",
+      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/2026/6%20june/IMG_0272.PNG",
+      "date": "2026-07-20",
+      "category": "news,hardstyle"
+    },
     {
       "title": "REBELLiON Indoor announces the line-up for their 2026 edition: 'BREAK THE SYSTEM'",
       "link": "https://hardstyle.com/en/news/rebellion-indoor-announces-the-line-up-for-their-2026-edition-break-the-system",
-      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/2026/6%20june/744782892_1816694969556163_4983386542515073653_n.jpg",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/6%20june/744782892_1816694969556163_4983386542515073653_n.jpg",
       "date": "2026-07-16",
       "category": "news,hardstyle"
     },
@@ -32,7 +39,7 @@
     {
       "title": "Breaking News: Defqon.1 is cancelled",
       "link": "https://hardstyle.com/en/news/defqon1-is-cancelled",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/6%20june/731044888_1732937554384752_3226165092250338552_n-png.jpg",
+      "image": null,
       "date": "2026-06-26",
       "category": "news,hardstyle"
     },
@@ -63,13 +70,6 @@
       "image": null,
       "date": "2026-06-11",
       "category": "news,hardstyle"
-    },
-    {
-      "title": "This week's hardstyle releases [week 24]",
-      "link": "https://hardstyle.com/en/news/this-week-s-hardstyle-releases-week-24-2026",
-      "image": null,
-      "date": null,
-      "category": "hardstyle,music"
     }
   ]
 }
