@@ -1,10 +1,24 @@
 {
-  "updatedAt": "2026-07-22T09:08:30.321Z",
+  "updatedAt": "2026-07-23T09:06:36.910Z",
   "articles": [
+    {
+      "title": "Frontliner's hit 'Discorecord' gets a fresh new twist with Galactixx' remix",
+      "link": "https://hardstyle.com/en/news/frontliner-s-hit-discorecord-gets-a-fresh-new-twist-with-galactixx-remix",
+      "image": "https://hardstyle.com/thumbs/1600x0/@0.47x0.82/gfx/news/2026/6%20june/740052895_2131179614126640_8989412282464439358_n-png.jpg",
+      "date": "2026-07-22",
+      "category": "news,hardstyle"
+    },
+    {
+      "title": "Hysta showcased the history of hardcore during The Spotlight at Defqon.1",
+      "link": "https://hardstyle.com/en/news/hysta-showcased-the-history-of-hardcore-during-the-spotlight-at-defqon1",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/6%20june/Photo%2025-06-2026%2021%2053%2031.jpg",
+      "date": "2026-07-22",
+      "category": "news,hardstyle"
+    },
     {
       "title": "Zany and Adaro release 'The House Is On Fire', their first collab ever",
       "link": "https://hardstyle.com/en/news/zany-and-adaro-release-the-house-is-on-fire-their-first-collab-ever",
-      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/2026/6%20june/IMG_0272.PNG",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/6%20june/IMG_0272.PNG",
       "date": "2026-07-20",
       "category": "news,hardstyle"
     },
@@ -25,14 +39,14 @@
     {
       "title": "Dominator prepares for the biggest hardcore gathering",
       "link": "https://hardstyle.com/en/news/dominator-gears-up-for-the-biggest-hardcore-gathering-of-the-summer",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/6%20june/522668294_1180927204063692_2555901344499149781_n.jpg",
+      "image": null,
       "date": "2026-07-07",
       "category": "news,hardstyle"
     },
     {
       "title": "This week's hardstyle releases [week 27]",
       "link": "https://hardstyle.com/en/news/this-week-s-hardstyle-releases-week-27",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/Juni/718062111_18427290367133733_6339893426757904503_n.jpg",
+      "image": null,
       "date": null,
       "category": "hardstyle,music"
     },
@@ -56,20 +70,6 @@
       "image": null,
       "date": null,
       "category": "hardstyle,music"
-    },
-    {
-      "title": "Level One unveils his new alias EXIT REAL1TY with a new release: ‘Sacrifice’",
-      "link": "https://hardstyle.com/en/news/level-one-unveils-his-new-alias-exit-real1ty-with-a-new-release-sacrifice",
-      "image": null,
-      "date": "2026-06-12",
-      "category": "news,hardstyle"
-    },
-    {
-      "title": "Jay Reeve pres. Melodic Madness is back with their fourth edition",
-      "link": "https://hardstyle.com/en/news/jay-reeve-pres-melodic-madness-is-back-with-their-fourth-edition",
-      "image": null,
-      "date": "2026-06-11",
-      "category": "news,hardstyle"
     }
   ]
 }
