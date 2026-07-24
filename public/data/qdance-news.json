@@ -1,6 +1,27 @@
 {
-  "updatedAt": "2026-07-23T08:28:31.917Z",
+  "updatedAt": "2026-07-24T08:26:13.044Z",
   "videos": [
+    {
+      "id": "-K_RHjUIQaA",
+      "title": "DJ Isaac | Defqon.1 2026",
+      "published": "2026-07-23T18:00:22+00:00",
+      "link": "https://www.youtube.com/watch?v=-K_RHjUIQaA",
+      "thumbnail": "https://i.ytimg.com/vi/-K_RHjUIQaA/mqdefault.jpg"
+    },
+    {
+      "id": "KX8Dt7I3XSc",
+      "title": "Watch DJ Isaac’s Defqon.1 2026 set now on Q-dance YouTube.#defqon1",
+      "published": "2026-07-23T18:00:16+00:00",
+      "link": "https://www.youtube.com/watch?v=KX8Dt7I3XSc",
+      "thumbnail": "https://i.ytimg.com/vi/KX8Dt7I3XSc/mqdefault.jpg"
+    },
+    {
+      "id": "HV2brIua6sU",
+      "title": "DJ Isaac’s Defqon.1  2026 set drops tonight at 20:00 CEST on Q-dance YouTube.#defqon1",
+      "published": "2026-07-23T15:00:38+00:00",
+      "link": "https://www.youtube.com/watch?v=HV2brIua6sU",
+      "thumbnail": "https://i.ytimg.com/vi/HV2brIua6sU/mqdefault.jpg"
+    },
     {
       "id": "TExK8izvPgg",
       "title": "Relive the powerful melodies, timeless tracks and unmistakable energy on the Q-dance YouTube.",
@@ -84,27 +105,6 @@
       "published": "2026-07-16T11:07:13+00:00",
       "link": "https://www.youtube.com/watch?v=bk_HrjB7KKQ",
       "thumbnail": "https://i.ytimg.com/vi/bk_HrjB7KKQ/mqdefault.jpg"
-    },
-    {
-      "id": "RGwF-KN21eU",
-      "title": "4444 OF A KIND LIVE NOW!",
-      "published": "2026-07-15T18:20:20+00:00",
-      "link": "https://www.youtube.com/watch?v=RGwF-KN21eU",
-      "thumbnail": "https://i.ytimg.com/vi/RGwF-KN21eU/mqdefault.jpg"
-    },
-    {
-      "id": "k0_DCdIj7j8",
-      "title": "4444 OF A KIND | Showcase | Defqon.1 2026",
-      "published": "2026-07-15T18:00:16+00:00",
-      "link": "https://www.youtube.com/watch?v=k0_DCdIj7j8",
-      "thumbnail": "https://i.ytimg.com/vi/k0_DCdIj7j8/mqdefault.jpg"
-    },
-    {
-      "id": "FVqVGIo9N74",
-      "title": "A show you were meant to experience. Warriors, this one is 4 you. Q-dance. Tomorrow. 4444 of a KIND",
-      "published": "2026-07-14T15:07:40+00:00",
-      "link": "https://www.youtube.com/watch?v=FVqVGIo9N74",
-      "thumbnail": "https://i.ytimg.com/vi/FVqVGIo9N74/mqdefault.jpg"
     }
   ]
 }
