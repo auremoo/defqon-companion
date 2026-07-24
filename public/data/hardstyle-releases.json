@@ -1,53 +1,61 @@
 {
-  "updatedAt": "2026-07-23T07:33:16.161Z",
+  "updatedAt": "2026-07-24T07:31:25.120Z",
   "releases": [
     {
-      "id": "fd4e2f88-3ebc-44f5-ac34-78d1096ae052",
-      "title": "Jumpstyle",
-      "artist": "Pinotello",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/fd4e2f88-3ebc-44f5-ac34-78d1096ae052/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/fd4e2f88-3ebc-44f5-ac34-78d1096ae052/jumpstyle"
+      "id": "f0aa93d5-2e22-4332-b677-27db9e68d2ad",
+      "title": "Mala Intencion",
+      "artist": "DSST",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/f0aa93d5-2e22-4332-b677-27db9e68d2ad/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/f0aa93d5-2e22-4332-b677-27db9e68d2ad/mala-intencion"
     },
     {
-      "id": "f5128211-a35e-4729-81d5-d69c72a02b7b",
-      "title": "Earthquake",
-      "artist": "Valhalla",
+      "id": "c28487bf-cbff-49ff-8e77-091a4349d09c",
+      "title": "Mala Intencion",
+      "artist": "DSST",
+      "mix": "Radio Edit",
+      "image": "https://hardstyle.com/track_image/c28487bf-cbff-49ff-8e77-091a4349d09c/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/c28487bf-cbff-49ff-8e77-091a4349d09c/mala-intencion"
+    },
+    {
+      "id": "85304662-9401-491d-a755-0a70e4291c43",
+      "title": "No Time to Waste",
+      "artist": "Creamiiz",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/85304662-9401-491d-a755-0a70e4291c43/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/85304662-9401-491d-a755-0a70e4291c43/no-time-to-waste"
+    },
+    {
+      "id": "5834bc42-71a9-4397-a42f-85773626f5cd",
+      "title": "Wellerman",
+      "artist": "DRS",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/5834bc42-71a9-4397-a42f-85773626f5cd/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/5834bc42-71a9-4397-a42f-85773626f5cd/wellerman"
+    },
+    {
+      "id": "a058a09f-e628-4b63-b790-1a49042a2b5a",
+      "title": "Gremlins (Desolate One Remix)",
+      "artist": "F. Noize",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/a058a09f-e628-4b63-b790-1a49042a2b5a/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/a058a09f-e628-4b63-b790-1a49042a2b5a/gremlins-desolate-one-remix"
+    },
+    {
+      "id": "cb698171-6867-44eb-afb9-a63bf8caa9e3",
+      "title": "Ravers On The Storm",
+      "artist": "D-Fence",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/cb698171-6867-44eb-afb9-a63bf8caa9e3/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/cb698171-6867-44eb-afb9-a63bf8caa9e3/ravers-on-the-storm"
+    },
+    {
+      "id": "f4ec984a-d062-4ef8-b4d9-64ba01bd48af",
+      "title": "Rave All Night EP",
+      "artist": "MERO",
       "mix": "",
-      "image": "https://hardstyle.com/track_image/f5128211-a35e-4729-81d5-d69c72a02b7b/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/f5128211-a35e-4729-81d5-d69c72a02b7b/earthquake"
-    },
-    {
-      "id": "8155f1b0-c788-4d1c-9238-14b27a7056bf",
-      "title": "GREAT WHITE",
-      "artist": "Stratisphere",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/8155f1b0-c788-4d1c-9238-14b27a7056bf/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/8155f1b0-c788-4d1c-9238-14b27a7056bf/great-white"
-    },
-    {
-      "id": "2002a0f3-6dda-4b2c-bae4-313b4a1944a8",
-      "title": "Forever",
-      "artist": "Unresolved",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/2002a0f3-6dda-4b2c-bae4-313b4a1944a8/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/2002a0f3-6dda-4b2c-bae4-313b4a1944a8/forever"
-    },
-    {
-      "id": "fa134cc9-1ee0-4805-ae7e-05b81dd76cb1",
-      "title": "Sleepless Horizons",
-      "artist": "Wasted",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/fa134cc9-1ee0-4805-ae7e-05b81dd76cb1/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/fa134cc9-1ee0-4805-ae7e-05b81dd76cb1/sleepless-horizons"
-    },
-    {
-      "id": "433d76b5-dc21-4233-9277-37d02514478b",
-      "title": "Overcome",
-      "artist": "Audiofreq",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/433d76b5-dc21-4233-9277-37d02514478b/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/433d76b5-dc21-4233-9277-37d02514478b/overcome"
+      "image": "https://hardstyle.com/track_image/f4ec984a-d062-4ef8-b4d9-64ba01bd48af/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/f4ec984a-d062-4ef8-b4d9-64ba01bd48af"
     },
     {
       "id": "1f3b54bc-d117-45cc-b24b-7beec3b0a4c0",
@@ -72,14 +80,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/e1257907-14e4-4697-aa86-e46accfff054/250x250/335",
       "link": "https://hardstyle.com/en/tracks/e1257907-14e4-4697-aa86-e46accfff054"
-    },
-    {
-      "id": "8d9dd50c-dc96-4d1f-a4b1-2542e098a05d",
-      "title": "Thoughts",
-      "artist": "LAUDER",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/8d9dd50c-dc96-4d1f-a4b1-2542e098a05d/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/8d9dd50c-dc96-4d1f-a4b1-2542e098a05d"
     }
   ]
 }
