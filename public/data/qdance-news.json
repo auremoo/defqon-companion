@@ -1,6 +1,34 @@
 {
-  "updatedAt": "2026-07-24T08:26:13.044Z",
+  "updatedAt": "2026-07-25T08:04:59.723Z",
   "videos": [
+    {
+      "id": "EdqcwgN9x00",
+      "title": "This is where impact and emotion unite. Watch their Defqon.1 2026 set now. #defqon1",
+      "published": "2026-07-24T18:00:25+00:00",
+      "link": "https://www.youtube.com/watch?v=EdqcwgN9x00",
+      "thumbnail": "https://i.ytimg.com/vi/EdqcwgN9x00/mqdefault.jpg"
+    },
+    {
+      "id": "tz6vdidusq8",
+      "title": "Evil Activities | Defqon.1 2026",
+      "published": "2026-07-24T18:00:25+00:00",
+      "link": "https://www.youtube.com/watch?v=tz6vdidusq8",
+      "thumbnail": "https://i.ytimg.com/vi/tz6vdidusq8/mqdefault.jpg"
+    },
+    {
+      "id": "_Y44yxE3YZw",
+      "title": "Evil Activities’ Defqon.1 2026 set drops tonight at 20:00 CEST on Q-dance YouTube. #defqon1",
+      "published": "2026-07-24T15:00:05+00:00",
+      "link": "https://www.youtube.com/watch?v=_Y44yxE3YZw",
+      "thumbnail": "https://i.ytimg.com/vi/_Y44yxE3YZw/mqdefault.jpg"
+    },
+    {
+      "id": "vcUycMsZPGk",
+      "title": "Watch DJ Isaac’s Defqon.1 2026 set now on Q-dance YouTube.#defqon1",
+      "published": "2026-07-24T10:15:50+00:00",
+      "link": "https://www.youtube.com/watch?v=vcUycMsZPGk",
+      "thumbnail": "https://i.ytimg.com/vi/vcUycMsZPGk/mqdefault.jpg"
+    },
     {
       "id": "-K_RHjUIQaA",
       "title": "DJ Isaac | Defqon.1 2026",
@@ -77,34 +105,6 @@
       "published": "2026-07-20T11:00:32+00:00",
       "link": "https://www.youtube.com/watch?v=om4NJOIhAeI",
       "thumbnail": "https://i.ytimg.com/vi/om4NJOIhAeI/mqdefault.jpg"
-    },
-    {
-      "id": "FimtkYRX8fc",
-      "title": "Have you witnessed 4444 OF A KIND yet? Watch the showcase on YouTube now. #defqon1",
-      "published": "2026-07-19T08:00:14+00:00",
-      "link": "https://www.youtube.com/watch?v=FimtkYRX8fc",
-      "thumbnail": "https://i.ytimg.com/vi/FimtkYRX8fc/mqdefault.jpg"
-    },
-    {
-      "id": "_zXRsTdr0r0",
-      "title": "The full D-Sturb set is waiting for you.Watch now on YouTube #defqon1",
-      "published": "2026-07-18T08:00:09+00:00",
-      "link": "https://www.youtube.com/watch?v=_zXRsTdr0r0",
-      "thumbnail": "https://i.ytimg.com/vi/_zXRsTdr0r0/mqdefault.jpg"
-    },
-    {
-      "id": "x8l7C84Rvlg",
-      "title": "‘Sacred Flame’ by Bass Modulators is out now on Defqon.1 Records🔥",
-      "published": "2026-07-17T08:17:49+00:00",
-      "link": "https://www.youtube.com/watch?v=x8l7C84Rvlg",
-      "thumbnail": "https://i.ytimg.com/vi/x8l7C84Rvlg/mqdefault.jpg"
-    },
-    {
-      "id": "bk_HrjB7KKQ",
-      "title": "Experience the Showcase of 4444 OF A KIND on Youtube!",
-      "published": "2026-07-16T11:07:13+00:00",
-      "link": "https://www.youtube.com/watch?v=bk_HrjB7KKQ",
-      "thumbnail": "https://i.ytimg.com/vi/bk_HrjB7KKQ/mqdefault.jpg"
     }
   ]
 }
