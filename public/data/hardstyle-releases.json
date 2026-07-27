@@ -1,6 +1,22 @@
 {
-  "updatedAt": "2026-07-26T07:35:27.110Z",
+  "updatedAt": "2026-07-27T08:30:56.066Z",
   "releases": [
+    {
+      "id": "59cc25c5-8a20-4c2f-a79c-65099d064eff",
+      "title": "Out Of My Head",
+      "artist": "DJ OGGY",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/59cc25c5-8a20-4c2f-a79c-65099d064eff/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/59cc25c5-8a20-4c2f-a79c-65099d064eff/out-of-my-head"
+    },
+    {
+      "id": "8bd13b1d-dbe4-4d37-85b6-e442aebaa602",
+      "title": "Out Of My Head",
+      "artist": "DJ OGGY",
+      "mix": "Radio Edit",
+      "image": "https://hardstyle.com/track_image/8bd13b1d-dbe4-4d37-85b6-e442aebaa602/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/8bd13b1d-dbe4-4d37-85b6-e442aebaa602/out-of-my-head"
+    },
     {
       "id": "3a89ae91-7291-4196-8e13-2e16ab94aed4",
       "title": "KÄSIGER MICHAEL",
@@ -32,22 +48,6 @@
       "mix": "Radio Edit",
       "image": "https://hardstyle.com/track_image/422148c6-a5c4-4506-b7da-01a83d10ee07/250x250/335",
       "link": "https://hardstyle.com/en/tracks/422148c6-a5c4-4506-b7da-01a83d10ee07/se-nace-makinero-se-muere-makinero"
-    },
-    {
-      "id": "5f2dc081-1fff-4e11-999a-45b660393bc1",
-      "title": "Se Nace Makinero, Se Muere Makinero",
-      "artist": "DJ Konik",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/5f2dc081-1fff-4e11-999a-45b660393bc1/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/5f2dc081-1fff-4e11-999a-45b660393bc1/se-nace-makinero-se-muere-makinero"
-    },
-    {
-      "id": "78fa769f-4eff-4abf-9e7b-87f157af2c96",
-      "title": "In My Dreams",
-      "artist": "Comando Tropel",
-      "mix": "Makina Mix",
-      "image": "https://hardstyle.com/track_image/78fa769f-4eff-4abf-9e7b-87f157af2c96/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/78fa769f-4eff-4abf-9e7b-87f157af2c96/in-my-dreams"
     },
     {
       "id": "f4ec984a-d062-4ef8-b4d9-64ba01bd48af",
