@@ -1,6 +1,34 @@
 {
-  "updatedAt": "2026-07-27T09:50:38.741Z",
+  "updatedAt": "2026-07-28T08:32:43.693Z",
   "videos": [
+    {
+      "id": "ftuZ23LzLkU",
+      "title": "Watch D-Block & S-te-Fan’s full set now on Q-dance YouTube.#defqon1",
+      "published": "2026-07-27T18:00:37+00:00",
+      "link": "https://www.youtube.com/watch?v=ftuZ23LzLkU",
+      "thumbnail": "https://i.ytimg.com/vi/ftuZ23LzLkU/mqdefault.jpg"
+    },
+    {
+      "id": "IEJUg98lIHs",
+      "title": "D-Block & S-te-Fan | Defqon.1 2026",
+      "published": "2026-07-27T18:00:09+00:00",
+      "link": "https://www.youtube.com/watch?v=IEJUg98lIHs",
+      "thumbnail": "https://i.ytimg.com/vi/IEJUg98lIHs/mqdefault.jpg"
+    },
+    {
+      "id": "cj-hOG22TO4",
+      "title": "D-Block & S-te-Fan’s  Defqon.1 2026 set drops tonight at 20:00 CEST on Q-dance YouTube.#defqon1",
+      "published": "2026-07-27T15:00:13+00:00",
+      "link": "https://www.youtube.com/watch?v=cj-hOG22TO4",
+      "thumbnail": "https://i.ytimg.com/vi/cj-hOG22TO4/mqdefault.jpg"
+    },
+    {
+      "id": "WGSDLFe_PaM",
+      "title": "Watch Gezellige Uptempo’s Defqon.1 2026 set now on Q-dance YouTube. #defqon1",
+      "published": "2026-07-27T11:00:21+00:00",
+      "link": "https://www.youtube.com/watch?v=WGSDLFe_PaM",
+      "thumbnail": "https://i.ytimg.com/vi/WGSDLFe_PaM/mqdefault.jpg"
+    },
     {
       "id": "k6dWApbwEIw",
       "title": "Gezellige Uptempo | Defqon.1 2026",
@@ -77,34 +105,6 @@
       "published": "2026-07-23T15:00:38+00:00",
       "link": "https://www.youtube.com/watch?v=HV2brIua6sU",
       "thumbnail": "https://i.ytimg.com/vi/HV2brIua6sU/mqdefault.jpg"
-    },
-    {
-      "id": "TExK8izvPgg",
-      "title": "Relive the powerful melodies, timeless tracks and unmistakable energy on the Q-dance YouTube.",
-      "published": "2026-07-22T11:00:31+00:00",
-      "link": "https://www.youtube.com/watch?v=TExK8izvPgg",
-      "thumbnail": "https://i.ytimg.com/vi/TExK8izvPgg/mqdefault.jpg"
-    },
-    {
-      "id": "fsHgYLT_FCc",
-      "title": "Coone | Defqon.1 2026",
-      "published": "2026-07-21T18:00:36+00:00",
-      "link": "https://www.youtube.com/watch?v=fsHgYLT_FCc",
-      "thumbnail": "https://i.ytimg.com/vi/fsHgYLT_FCc/mqdefault.jpg"
-    },
-    {
-      "id": "1kgLjy46n-U",
-      "title": "Watch Coone’s Defqon.1 2026 set now on Q-dance YouTube.#defqon1",
-      "published": "2026-07-21T18:00:26+00:00",
-      "link": "https://www.youtube.com/watch?v=1kgLjy46n-U",
-      "thumbnail": "https://i.ytimg.com/vi/1kgLjy46n-U/mqdefault.jpg"
-    },
-    {
-      "id": "z64QSYJUkvc",
-      "title": "Coone’s Defqon.1 2026 set drops tonight at 20:00 CEST on the Q-dance YouTube. #defqon1",
-      "published": "2026-07-21T15:00:13+00:00",
-      "link": "https://www.youtube.com/watch?v=z64QSYJUkvc",
-      "thumbnail": "https://i.ytimg.com/vi/z64QSYJUkvc/mqdefault.jpg"
     }
   ]
 }
