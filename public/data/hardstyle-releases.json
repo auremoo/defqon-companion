@@ -1,53 +1,53 @@
 {
-  "updatedAt": "2026-07-27T08:30:56.066Z",
+  "updatedAt": "2026-07-28T07:39:19.236Z",
   "releases": [
     {
-      "id": "59cc25c5-8a20-4c2f-a79c-65099d064eff",
-      "title": "Out Of My Head",
-      "artist": "DJ OGGY",
+      "id": "68152742-3b12-4280-904c-17ac8ec7a192",
+      "title": "Heaven Will Come",
+      "artist": "Blueline",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/59cc25c5-8a20-4c2f-a79c-65099d064eff/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/59cc25c5-8a20-4c2f-a79c-65099d064eff/out-of-my-head"
+      "image": "https://hardstyle.com/track_image/68152742-3b12-4280-904c-17ac8ec7a192/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/68152742-3b12-4280-904c-17ac8ec7a192/heaven-will-come"
     },
     {
-      "id": "8bd13b1d-dbe4-4d37-85b6-e442aebaa602",
-      "title": "Out Of My Head",
-      "artist": "DJ OGGY",
+      "id": "f3c105ee-cb8e-4a70-908a-b98970670ba0",
+      "title": "Heaven Will Come",
+      "artist": "Blueline",
       "mix": "Radio Edit",
-      "image": "https://hardstyle.com/track_image/8bd13b1d-dbe4-4d37-85b6-e442aebaa602/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/8bd13b1d-dbe4-4d37-85b6-e442aebaa602/out-of-my-head"
+      "image": "https://hardstyle.com/track_image/f3c105ee-cb8e-4a70-908a-b98970670ba0/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/f3c105ee-cb8e-4a70-908a-b98970670ba0/heaven-will-come"
     },
     {
-      "id": "3a89ae91-7291-4196-8e13-2e16ab94aed4",
-      "title": "KÄSIGER MICHAEL",
-      "artist": "NoooN Reveals",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/3a89ae91-7291-4196-8e13-2e16ab94aed4/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/3a89ae91-7291-4196-8e13-2e16ab94aed4/kasiger-michael"
-    },
-    {
-      "id": "3950c80d-7053-479f-b320-345050eea47c",
-      "title": "You're born Makinero, you die Makinero",
-      "artist": "DJ Konik",
-      "mix": "Radio Edit",
-      "image": "https://hardstyle.com/track_image/3950c80d-7053-479f-b320-345050eea47c/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/3950c80d-7053-479f-b320-345050eea47c/you-re-born-makinero-you-die-makinero"
-    },
-    {
-      "id": "0250925e-81ee-4618-b35e-d3df739dcffc",
-      "title": "You're born Makinero, you die Makinero",
-      "artist": "DJ Konik",
+      "id": "1bdcafb6-802e-427c-85f2-53b7858b5871",
+      "title": "Echo",
+      "artist": "Outrageouz",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/0250925e-81ee-4618-b35e-d3df739dcffc/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/0250925e-81ee-4618-b35e-d3df739dcffc/you-re-born-makinero-you-die-makinero"
+      "image": "https://hardstyle.com/track_image/1bdcafb6-802e-427c-85f2-53b7858b5871/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/1bdcafb6-802e-427c-85f2-53b7858b5871/echo"
     },
     {
-      "id": "422148c6-a5c4-4506-b7da-01a83d10ee07",
-      "title": "Se Nace Makinero, Se Muere Makinero",
-      "artist": "DJ Konik",
-      "mix": "Radio Edit",
-      "image": "https://hardstyle.com/track_image/422148c6-a5c4-4506-b7da-01a83d10ee07/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/422148c6-a5c4-4506-b7da-01a83d10ee07/se-nace-makinero-se-muere-makinero"
+      "id": "0826869a-a5ef-467a-ad5f-a7c7621dea2a",
+      "title": "Earthquake",
+      "artist": "Kaimera",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/0826869a-a5ef-467a-ad5f-a7c7621dea2a/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/0826869a-a5ef-467a-ad5f-a7c7621dea2a/earthquake"
+    },
+    {
+      "id": "0df3f236-cbda-49d5-b6b4-75c1b3c61016",
+      "title": "UFO Come Lets Go",
+      "artist": "Vicious Conspiracy",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/0df3f236-cbda-49d5-b6b4-75c1b3c61016/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/0df3f236-cbda-49d5-b6b4-75c1b3c61016/ufo-come-lets-go"
+    },
+    {
+      "id": "3ea9cd12-c2f4-4f83-a7f3-2e4bea971a5a",
+      "title": "Neon Lights",
+      "artist": "Mikey P",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/3ea9cd12-c2f4-4f83-a7f3-2e4bea971a5a/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/3ea9cd12-c2f4-4f83-a7f3-2e4bea971a5a/neon-lights"
     },
     {
       "id": "f4ec984a-d062-4ef8-b4d9-64ba01bd48af",
