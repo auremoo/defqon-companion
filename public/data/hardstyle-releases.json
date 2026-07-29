@@ -1,53 +1,53 @@
 {
-  "updatedAt": "2026-07-28T07:39:19.236Z",
+  "updatedAt": "2026-07-29T07:43:19.575Z",
   "releases": [
     {
-      "id": "68152742-3b12-4280-904c-17ac8ec7a192",
-      "title": "Heaven Will Come",
-      "artist": "Blueline",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/68152742-3b12-4280-904c-17ac8ec7a192/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/68152742-3b12-4280-904c-17ac8ec7a192/heaven-will-come"
-    },
-    {
-      "id": "f3c105ee-cb8e-4a70-908a-b98970670ba0",
-      "title": "Heaven Will Come",
-      "artist": "Blueline",
-      "mix": "Radio Edit",
-      "image": "https://hardstyle.com/track_image/f3c105ee-cb8e-4a70-908a-b98970670ba0/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/f3c105ee-cb8e-4a70-908a-b98970670ba0/heaven-will-come"
-    },
-    {
-      "id": "1bdcafb6-802e-427c-85f2-53b7858b5871",
-      "title": "Echo",
-      "artist": "Outrageouz",
+      "id": "545be31a-f2fa-499e-9514-4d077917e65f",
+      "title": "Dancefloor Maniac",
+      "artist": "Udow",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/1bdcafb6-802e-427c-85f2-53b7858b5871/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/1bdcafb6-802e-427c-85f2-53b7858b5871/echo"
+      "image": "https://hardstyle.com/track_image/545be31a-f2fa-499e-9514-4d077917e65f/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/545be31a-f2fa-499e-9514-4d077917e65f/dancefloor-maniac"
     },
     {
-      "id": "0826869a-a5ef-467a-ad5f-a7c7621dea2a",
-      "title": "Earthquake",
-      "artist": "Kaimera",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/0826869a-a5ef-467a-ad5f-a7c7621dea2a/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/0826869a-a5ef-467a-ad5f-a7c7621dea2a/earthquake"
-    },
-    {
-      "id": "0df3f236-cbda-49d5-b6b4-75c1b3c61016",
-      "title": "UFO Come Lets Go",
-      "artist": "Vicious Conspiracy",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/0df3f236-cbda-49d5-b6b4-75c1b3c61016/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/0df3f236-cbda-49d5-b6b4-75c1b3c61016/ufo-come-lets-go"
-    },
-    {
-      "id": "3ea9cd12-c2f4-4f83-a7f3-2e4bea971a5a",
-      "title": "Neon Lights",
-      "artist": "Mikey P",
+      "id": "8151f0b2-15a5-40d6-b138-a6aea4943cb2",
+      "title": "The Upside Down",
+      "artist": "ReCharged",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/3ea9cd12-c2f4-4f83-a7f3-2e4bea971a5a/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/3ea9cd12-c2f4-4f83-a7f3-2e4bea971a5a/neon-lights"
+      "image": "https://hardstyle.com/track_image/8151f0b2-15a5-40d6-b138-a6aea4943cb2/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/8151f0b2-15a5-40d6-b138-a6aea4943cb2/the-upside-down"
+    },
+    {
+      "id": "7ccb5cc5-a023-4ce4-bae2-cec30843cd42",
+      "title": "Show Me The Way",
+      "artist": "Garbie Project",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/7ccb5cc5-a023-4ce4-bae2-cec30843cd42/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/7ccb5cc5-a023-4ce4-bae2-cec30843cd42/show-me-the-way"
+    },
+    {
+      "id": "79dc2908-b664-4226-97e1-42e64b73945e",
+      "title": "Back 2 Da Beat",
+      "artist": "9 Milliz",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/79dc2908-b664-4226-97e1-42e64b73945e/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/79dc2908-b664-4226-97e1-42e64b73945e/back-2-da-beat"
+    },
+    {
+      "id": "32058bf0-02a7-4c3c-aaff-ebd16e9b4f1e",
+      "title": "Car Wreck",
+      "artist": "SVANE",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/32058bf0-02a7-4c3c-aaff-ebd16e9b4f1e/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/32058bf0-02a7-4c3c-aaff-ebd16e9b4f1e/car-wreck"
+    },
+    {
+      "id": "7b4562f5-2fd1-4fac-8eb3-2fef3aaeda3b",
+      "title": "That's The Way",
+      "artist": "Cally",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/7b4562f5-2fd1-4fac-8eb3-2fef3aaeda3b/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/7b4562f5-2fd1-4fac-8eb3-2fef3aaeda3b/that-s-the-way"
     },
     {
       "id": "f4ec984a-d062-4ef8-b4d9-64ba01bd48af",
