@@ -1,6 +1,13 @@
 {
-  "updatedAt": "2026-07-29T08:39:21.314Z",
+  "updatedAt": "2026-07-30T08:25:07.393Z",
   "videos": [
+    {
+      "id": "z7GE8SrqTAw",
+      "title": "Pure intensity from Noxiouz. Watch his Defqon.1 2026 set now. #defqon1",
+      "published": "2026-07-29T11:00:34+00:00",
+      "link": "https://www.youtube.com/watch?v=z7GE8SrqTAw",
+      "thumbnail": "https://i.ytimg.com/vi/z7GE8SrqTAw/mqdefault.jpg"
+    },
     {
       "id": "pNFF69LDmHE",
       "title": "Noxiouz | Defqon.1 2026",
@@ -98,13 +105,6 @@
       "published": "2026-07-24T18:00:25+00:00",
       "link": "https://www.youtube.com/watch?v=tz6vdidusq8",
       "thumbnail": "https://i.ytimg.com/vi/tz6vdidusq8/mqdefault.jpg"
-    },
-    {
-      "id": "_Y44yxE3YZw",
-      "title": "Evil Activities’ Defqon.1 2026 set drops tonight at 20:00 CEST on Q-dance YouTube. #defqon1",
-      "published": "2026-07-24T15:00:05+00:00",
-      "link": "https://www.youtube.com/watch?v=_Y44yxE3YZw",
-      "thumbnail": "https://i.ytimg.com/vi/_Y44yxE3YZw/mqdefault.jpg"
     }
   ]
 }
