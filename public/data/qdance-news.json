@@ -1,6 +1,27 @@
 {
-  "updatedAt": "2026-07-30T08:25:07.393Z",
+  "updatedAt": "2026-07-31T08:48:10.358Z",
   "videos": [
+    {
+      "id": "OPX77LQI17M",
+      "title": "AniMe | Defqon.1 2026",
+      "published": "2026-07-30T18:00:34+00:00",
+      "link": "https://www.youtube.com/watch?v=OPX77LQI17M",
+      "thumbnail": "https://i.ytimg.com/vi/OPX77LQI17M/mqdefault.jpg"
+    },
+    {
+      "id": "9LtJPBBchUk",
+      "title": "AniMe takes control of the BLACK. Watch her Defqon.1 2026 set now. #defqon1",
+      "published": "2026-07-30T18:00:19+00:00",
+      "link": "https://www.youtube.com/watch?v=9LtJPBBchUk",
+      "thumbnail": "https://i.ytimg.com/vi/9LtJPBBchUk/mqdefault.jpg"
+    },
+    {
+      "id": "YRVaDXzKDm0",
+      "title": "Hardcore refuses to stay in one lane. AniMe’s Defqon.1 2026 set drops tonight at 20:00 CEST.#defqon1",
+      "published": "2026-07-30T15:00:19+00:00",
+      "link": "https://www.youtube.com/watch?v=YRVaDXzKDm0",
+      "thumbnail": "https://i.ytimg.com/vi/YRVaDXzKDm0/mqdefault.jpg"
+    },
     {
       "id": "z7GE8SrqTAw",
       "title": "Pure intensity from Noxiouz. Watch his Defqon.1 2026 set now. #defqon1",
@@ -84,27 +105,6 @@
       "published": "2026-07-26T13:00:30+00:00",
       "link": "https://www.youtube.com/watch?v=hujnkwSH8-k",
       "thumbnail": "https://i.ytimg.com/vi/hujnkwSH8-k/mqdefault.jpg"
-    },
-    {
-      "id": "XVBkBWGQS-c",
-      "title": "Watch Evil Activities’ full Defqon.1 2026 set now on Q-dance YouTube. #defqon1",
-      "published": "2026-07-25T11:00:06+00:00",
-      "link": "https://www.youtube.com/watch?v=XVBkBWGQS-c",
-      "thumbnail": "https://i.ytimg.com/vi/XVBkBWGQS-c/mqdefault.jpg"
-    },
-    {
-      "id": "EdqcwgN9x00",
-      "title": "This is where impact and emotion unite. Watch their Defqon.1 2026 set now. #defqon1",
-      "published": "2026-07-24T18:00:25+00:00",
-      "link": "https://www.youtube.com/watch?v=EdqcwgN9x00",
-      "thumbnail": "https://i.ytimg.com/vi/EdqcwgN9x00/mqdefault.jpg"
-    },
-    {
-      "id": "tz6vdidusq8",
-      "title": "Evil Activities | Defqon.1 2026",
-      "published": "2026-07-24T18:00:25+00:00",
-      "link": "https://www.youtube.com/watch?v=tz6vdidusq8",
-      "thumbnail": "https://i.ytimg.com/vi/tz6vdidusq8/mqdefault.jpg"
     }
   ]
 }
