@@ -1,53 +1,61 @@
 {
-  "updatedAt": "2026-07-30T07:33:28.324Z",
+  "updatedAt": "2026-07-31T07:50:35.633Z",
   "releases": [
     {
-      "id": "15196861-58c5-431d-bd9b-3ec1b511dcfe",
-      "title": "Take Me Away",
-      "artist": "Invated",
+      "id": "2aeb998b-27c3-4785-9977-987ac14e1cc3",
+      "title": "Leaders Of The New School",
+      "artist": "Restrained",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/15196861-58c5-431d-bd9b-3ec1b511dcfe/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/15196861-58c5-431d-bd9b-3ec1b511dcfe/take-me-away"
+      "image": "https://hardstyle.com/track_image/2aeb998b-27c3-4785-9977-987ac14e1cc3/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/2aeb998b-27c3-4785-9977-987ac14e1cc3/leaders-of-the-new-school"
     },
     {
-      "id": "d06ab7e9-991a-4638-9d20-1bc110c021e6",
-      "title": "Final Boss",
-      "artist": "AZDAT",
+      "id": "4b230e5e-7ac3-47ae-bd0f-22e7bbaf0746",
+      "title": "Spill the Blood",
+      "artist": "R3MAX",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/d06ab7e9-991a-4638-9d20-1bc110c021e6/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/d06ab7e9-991a-4638-9d20-1bc110c021e6/final-boss"
+      "image": "https://hardstyle.com/track_image/4b230e5e-7ac3-47ae-bd0f-22e7bbaf0746/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/4b230e5e-7ac3-47ae-bd0f-22e7bbaf0746/spill-the-blood"
     },
     {
-      "id": "54534d47-a285-4ee8-b67f-d3591f2ddc62",
-      "title": "Mountains To Fly",
-      "artist": "Dj Neo",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/54534d47-a285-4ee8-b67f-d3591f2ddc62/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/54534d47-a285-4ee8-b67f-d3591f2ddc62/mountains-to-fly"
-    },
-    {
-      "id": "0d064a18-22da-486f-91d5-34e2ba85f7e9",
-      "title": "The History Of Tomorrow",
-      "artist": "Artphazers",
+      "id": "bf3d48d2-a0cb-4c7d-89b9-6e69eb7ede42",
+      "title": "Can't Let Go",
+      "artist": "Solstice",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/0d064a18-22da-486f-91d5-34e2ba85f7e9/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/0d064a18-22da-486f-91d5-34e2ba85f7e9/the-history-of-tomorrow"
+      "image": "https://hardstyle.com/track_image/bf3d48d2-a0cb-4c7d-89b9-6e69eb7ede42/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/bf3d48d2-a0cb-4c7d-89b9-6e69eb7ede42/can-t-let-go"
     },
     {
-      "id": "2d602dbc-4b8e-46c6-86e2-6ef1047f77dc",
-      "title": "MY WORLD",
-      "artist": "Collusion",
+      "id": "576800d4-a264-4d61-8e5e-dafa6da155ea",
+      "title": "Runaway",
+      "artist": "Audionoizer",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/576800d4-a264-4d61-8e5e-dafa6da155ea/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/576800d4-a264-4d61-8e5e-dafa6da155ea/runaway"
+    },
+    {
+      "id": "db9a0b18-477c-4dbb-9b3d-aaaa1a188449",
+      "title": "Gold Sky",
+      "artist": "Dual Damage",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/db9a0b18-477c-4dbb-9b3d-aaaa1a188449/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/db9a0b18-477c-4dbb-9b3d-aaaa1a188449/gold-sky"
+    },
+    {
+      "id": "b5d8db75-205d-4aba-8376-daa72373b90f",
+      "title": "Angel & Demon",
+      "artist": "Dual Damage",
       "mix": "Pro Mix",
-      "image": "https://hardstyle.com/track_image/2d602dbc-4b8e-46c6-86e2-6ef1047f77dc/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/2d602dbc-4b8e-46c6-86e2-6ef1047f77dc/my-world"
+      "image": "https://hardstyle.com/track_image/b5d8db75-205d-4aba-8376-daa72373b90f/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/b5d8db75-205d-4aba-8376-daa72373b90f/angel-demon"
     },
     {
-      "id": "07a235ff-178c-4ca5-a197-7913f4e031be",
-      "title": "Through The Teeth",
-      "artist": "Tracky",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/07a235ff-178c-4ca5-a197-7913f4e031be/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/07a235ff-178c-4ca5-a197-7913f4e031be/through-the-teeth"
+      "id": "98d33cdf-1054-4fda-828b-ae0bf78c5f06",
+      "title": "Built 2 Break",
+      "artist": "Dual Damage",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/98d33cdf-1054-4fda-828b-ae0bf78c5f06/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/98d33cdf-1054-4fda-828b-ae0bf78c5f06"
     },
     {
       "id": "f4ec984a-d062-4ef8-b4d9-64ba01bd48af",
@@ -72,14 +80,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/ffd46cf2-800f-4e3f-b99d-c4355f6b86f6/250x250/335",
       "link": "https://hardstyle.com/en/tracks/ffd46cf2-800f-4e3f-b99d-c4355f6b86f6"
-    },
-    {
-      "id": "e1257907-14e4-4697-aa86-e46accfff054",
-      "title": "Emoticon",
-      "artist": "Jerry Sampi",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/e1257907-14e4-4697-aa86-e46accfff054/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/e1257907-14e4-4697-aa86-e46accfff054"
     }
   ]
 }
