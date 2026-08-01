@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-07-31T07:50:35.633Z",
+  "updatedAt": "2026-08-01T07:27:29.944Z",
   "releases": [
+    {
+      "id": "96bb489a-d3e8-4208-bb03-9884967fac03",
+      "title": "Blueline",
+      "artist": "Virtuo",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/96bb489a-d3e8-4208-bb03-9884967fac03/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/96bb489a-d3e8-4208-bb03-9884967fac03/blueline"
+    },
+    {
+      "id": "f6a541f6-165a-414c-a60b-fac09fd661d9",
+      "title": "Go Down",
+      "artist": "David Murphy Dj",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/f6a541f6-165a-414c-a60b-fac09fd661d9/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/f6a541f6-165a-414c-a60b-fac09fd661d9/go-down"
+    },
+    {
+      "id": "24384af0-9e7b-4220-a426-cb513f8ab3a1",
+      "title": "Got The Fire",
+      "artist": "Barber",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/24384af0-9e7b-4220-a426-cb513f8ab3a1/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/24384af0-9e7b-4220-a426-cb513f8ab3a1/got-the-fire"
+    },
     {
       "id": "2aeb998b-27c3-4785-9977-987ac14e1cc3",
       "title": "Leaders Of The New School",
@@ -24,30 +48,6 @@
       "mix": "Extended Mix",
       "image": "https://hardstyle.com/track_image/bf3d48d2-a0cb-4c7d-89b9-6e69eb7ede42/250x250/335",
       "link": "https://hardstyle.com/en/tracks/bf3d48d2-a0cb-4c7d-89b9-6e69eb7ede42/can-t-let-go"
-    },
-    {
-      "id": "576800d4-a264-4d61-8e5e-dafa6da155ea",
-      "title": "Runaway",
-      "artist": "Audionoizer",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/576800d4-a264-4d61-8e5e-dafa6da155ea/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/576800d4-a264-4d61-8e5e-dafa6da155ea/runaway"
-    },
-    {
-      "id": "db9a0b18-477c-4dbb-9b3d-aaaa1a188449",
-      "title": "Gold Sky",
-      "artist": "Dual Damage",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/db9a0b18-477c-4dbb-9b3d-aaaa1a188449/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/db9a0b18-477c-4dbb-9b3d-aaaa1a188449/gold-sky"
-    },
-    {
-      "id": "b5d8db75-205d-4aba-8376-daa72373b90f",
-      "title": "Angel & Demon",
-      "artist": "Dual Damage",
-      "mix": "Pro Mix",
-      "image": "https://hardstyle.com/track_image/b5d8db75-205d-4aba-8376-daa72373b90f/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/b5d8db75-205d-4aba-8376-daa72373b90f/angel-demon"
     },
     {
       "id": "98d33cdf-1054-4fda-828b-ae0bf78c5f06",
