@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-08-02T07:31:33.194Z",
+  "updatedAt": "2026-08-03T08:29:17.620Z",
   "releases": [
+    {
+      "id": "037c1aca-687b-49b6-a329-9a48a752f403",
+      "title": "We are the dynacore",
+      "artist": "DJ Lancinhouse",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/037c1aca-687b-49b6-a329-9a48a752f403/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/037c1aca-687b-49b6-a329-9a48a752f403/we-are-the-dynacore"
+    },
+    {
+      "id": "e28587e3-6458-4a5c-9314-1e5d02800016",
+      "title": "Fuckin' sweat",
+      "artist": "DJ Lancinhouse",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/e28587e3-6458-4a5c-9314-1e5d02800016/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/e28587e3-6458-4a5c-9314-1e5d02800016/fuckin-sweat"
+    },
+    {
+      "id": "a87a7047-3fba-4a48-8a70-64a2cb7aa649",
+      "title": "Cold's getting bigger",
+      "artist": "DJ Lancinhouse",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/a87a7047-3fba-4a48-8a70-64a2cb7aa649/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/a87a7047-3fba-4a48-8a70-64a2cb7aa649/cold-s-getting-bigger"
+    },
     {
       "id": "96bb489a-d3e8-4208-bb03-9884967fac03",
       "title": "Blueline",
@@ -24,30 +48,6 @@
       "mix": "Extended Mix",
       "image": "https://hardstyle.com/track_image/24384af0-9e7b-4220-a426-cb513f8ab3a1/250x250/335",
       "link": "https://hardstyle.com/en/tracks/24384af0-9e7b-4220-a426-cb513f8ab3a1/got-the-fire"
-    },
-    {
-      "id": "2aeb998b-27c3-4785-9977-987ac14e1cc3",
-      "title": "Leaders Of The New School",
-      "artist": "Restrained",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/2aeb998b-27c3-4785-9977-987ac14e1cc3/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/2aeb998b-27c3-4785-9977-987ac14e1cc3/leaders-of-the-new-school"
-    },
-    {
-      "id": "4b230e5e-7ac3-47ae-bd0f-22e7bbaf0746",
-      "title": "Spill the Blood",
-      "artist": "R3MAX",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/4b230e5e-7ac3-47ae-bd0f-22e7bbaf0746/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/4b230e5e-7ac3-47ae-bd0f-22e7bbaf0746/spill-the-blood"
-    },
-    {
-      "id": "bf3d48d2-a0cb-4c7d-89b9-6e69eb7ede42",
-      "title": "Can't Let Go",
-      "artist": "Solstice",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/bf3d48d2-a0cb-4c7d-89b9-6e69eb7ede42/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/bf3d48d2-a0cb-4c7d-89b9-6e69eb7ede42/can-t-let-go"
     },
     {
       "id": "98d33cdf-1054-4fda-828b-ae0bf78c5f06",
