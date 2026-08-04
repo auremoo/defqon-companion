@@ -1,6 +1,14 @@
 {
-  "updatedAt": "2026-08-03T08:29:17.620Z",
+  "updatedAt": "2026-08-04T07:39:58.034Z",
   "releases": [
+    {
+      "id": "76ad1da2-3146-4ac5-a8bd-6bcc33f1fe5c",
+      "title": "juniper june",
+      "artist": "Wiqtory",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/76ad1da2-3146-4ac5-a8bd-6bcc33f1fe5c/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/76ad1da2-3146-4ac5-a8bd-6bcc33f1fe5c/juniper-june"
+    },
     {
       "id": "037c1aca-687b-49b6-a329-9a48a752f403",
       "title": "We are the dynacore",
@@ -42,12 +50,12 @@
       "link": "https://hardstyle.com/en/tracks/f6a541f6-165a-414c-a60b-fac09fd661d9/go-down"
     },
     {
-      "id": "24384af0-9e7b-4220-a426-cb513f8ab3a1",
-      "title": "Got The Fire",
-      "artist": "Barber",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/24384af0-9e7b-4220-a426-cb513f8ab3a1/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/24384af0-9e7b-4220-a426-cb513f8ab3a1/got-the-fire"
+      "id": "3969d90d-d415-421d-bdc5-09b5fbcaff7c",
+      "title": "TOOLBOX VOLUME 4",
+      "artist": "Various Artists",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/3969d90d-d415-421d-bdc5-09b5fbcaff7c/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/3969d90d-d415-421d-bdc5-09b5fbcaff7c"
     },
     {
       "id": "98d33cdf-1054-4fda-828b-ae0bf78c5f06",
@@ -72,14 +80,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/1f3b54bc-d117-45cc-b24b-7beec3b0a4c0/250x250/335",
       "link": "https://hardstyle.com/en/tracks/1f3b54bc-d117-45cc-b24b-7beec3b0a4c0"
-    },
-    {
-      "id": "ffd46cf2-800f-4e3f-b99d-c4355f6b86f6",
-      "title": "Speaker Attack",
-      "artist": "Catscan",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/ffd46cf2-800f-4e3f-b99d-c4355f6b86f6/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/ffd46cf2-800f-4e3f-b99d-c4355f6b86f6"
     }
   ]
 }
