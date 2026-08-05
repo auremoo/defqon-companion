@@ -1,53 +1,53 @@
 {
-  "updatedAt": "2026-08-04T07:39:58.034Z",
+  "updatedAt": "2026-08-05T07:39:13.651Z",
   "releases": [
     {
-      "id": "76ad1da2-3146-4ac5-a8bd-6bcc33f1fe5c",
-      "title": "juniper june",
-      "artist": "Wiqtory",
+      "id": "8a25cc67-593b-406a-86f7-464ed92bfe16",
+      "title": "To The Grave",
+      "artist": "The Dispatcher",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/76ad1da2-3146-4ac5-a8bd-6bcc33f1fe5c/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/76ad1da2-3146-4ac5-a8bd-6bcc33f1fe5c/juniper-june"
+      "image": "https://hardstyle.com/track_image/8a25cc67-593b-406a-86f7-464ed92bfe16/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/8a25cc67-593b-406a-86f7-464ed92bfe16/to-the-grave"
     },
     {
-      "id": "037c1aca-687b-49b6-a329-9a48a752f403",
-      "title": "We are the dynacore",
-      "artist": "DJ Lancinhouse",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/037c1aca-687b-49b6-a329-9a48a752f403/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/037c1aca-687b-49b6-a329-9a48a752f403/we-are-the-dynacore"
-    },
-    {
-      "id": "e28587e3-6458-4a5c-9314-1e5d02800016",
-      "title": "Fuckin' sweat",
-      "artist": "DJ Lancinhouse",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/e28587e3-6458-4a5c-9314-1e5d02800016/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/e28587e3-6458-4a5c-9314-1e5d02800016/fuckin-sweat"
-    },
-    {
-      "id": "a87a7047-3fba-4a48-8a70-64a2cb7aa649",
-      "title": "Cold's getting bigger",
-      "artist": "DJ Lancinhouse",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/a87a7047-3fba-4a48-8a70-64a2cb7aa649/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/a87a7047-3fba-4a48-8a70-64a2cb7aa649/cold-s-getting-bigger"
-    },
-    {
-      "id": "96bb489a-d3e8-4208-bb03-9884967fac03",
-      "title": "Blueline",
-      "artist": "Virtuo",
+      "id": "3c0306a5-0b63-4c91-ac35-5c6df8ff49ea",
+      "title": "REAL CRIMINALS",
+      "artist": "Markor",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/96bb489a-d3e8-4208-bb03-9884967fac03/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/96bb489a-d3e8-4208-bb03-9884967fac03/blueline"
+      "image": "https://hardstyle.com/track_image/3c0306a5-0b63-4c91-ac35-5c6df8ff49ea/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/3c0306a5-0b63-4c91-ac35-5c6df8ff49ea/real-criminals"
     },
     {
-      "id": "f6a541f6-165a-414c-a60b-fac09fd661d9",
-      "title": "Go Down",
-      "artist": "David Murphy Dj",
+      "id": "33eb5eda-bafa-435a-bb00-b6edcff3fc72",
+      "title": "In The Shadows",
+      "artist": "Brett Cooper",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/33eb5eda-bafa-435a-bb00-b6edcff3fc72/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/33eb5eda-bafa-435a-bb00-b6edcff3fc72/in-the-shadows"
+    },
+    {
+      "id": "c0744971-d0c4-4e4a-b629-49d1301ef5cc",
+      "title": "Rage",
+      "artist": "Machine Command",
+      "mix": "Vocoder Dub Mix",
+      "image": "https://hardstyle.com/track_image/c0744971-d0c4-4e4a-b629-49d1301ef5cc/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/c0744971-d0c4-4e4a-b629-49d1301ef5cc/rage"
+    },
+    {
+      "id": "3524a6c1-81db-42eb-a301-35fdaa4815e6",
+      "title": "Rage",
+      "artist": "Machine Command",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/f6a541f6-165a-414c-a60b-fac09fd661d9/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/f6a541f6-165a-414c-a60b-fac09fd661d9/go-down"
+      "image": "https://hardstyle.com/track_image/3524a6c1-81db-42eb-a301-35fdaa4815e6/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/3524a6c1-81db-42eb-a301-35fdaa4815e6/rage"
+    },
+    {
+      "id": "82502057-2ab6-4c03-8c54-6bf16efd97b2",
+      "title": "Rave All Night",
+      "artist": "Akyra",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/82502057-2ab6-4c03-8c54-6bf16efd97b2/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/82502057-2ab6-4c03-8c54-6bf16efd97b2/rave-all-night"
     },
     {
       "id": "3969d90d-d415-421d-bdc5-09b5fbcaff7c",
