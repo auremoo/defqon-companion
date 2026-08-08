@@ -1,6 +1,14 @@
 {
-  "updatedAt": "2026-08-07T06:09:03.966Z",
+  "updatedAt": "2026-08-08T05:42:03.417Z",
   "releases": [
+    {
+      "id": "2cb6ae36-7baa-453e-bade-e72001dfaffd",
+      "title": "Tutto quello che ho",
+      "artist": "Klif",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/2cb6ae36-7baa-453e-bade-e72001dfaffd/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/2cb6ae36-7baa-453e-bade-e72001dfaffd/tutto-quello-che-ho"
+    },
     {
       "id": "5353148c-1d8b-4c3d-a292-172dce51bc37",
       "title": "This is Ecstasy",
@@ -40,14 +48,6 @@
       "mix": "Extended Mix",
       "image": "https://hardstyle.com/track_image/7ac24857-cebb-4ef5-b1d6-1b377c913e1d/250x250/335",
       "link": "https://hardstyle.com/en/tracks/7ac24857-cebb-4ef5-b1d6-1b377c913e1d/cosmic-carousel"
-    },
-    {
-      "id": "254ff00b-f926-4945-ad28-e6118f0a6596",
-      "title": "FCK Cinderella",
-      "artist": "Furyan",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/254ff00b-f926-4945-ad28-e6118f0a6596/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/254ff00b-f926-4945-ad28-e6118f0a6596/fck-cinderella"
     },
     {
       "id": "3969d90d-d415-421d-bdc5-09b5fbcaff7c",
