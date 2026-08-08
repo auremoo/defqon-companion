@@ -1,10 +1,17 @@
 {
-  "updatedAt": "2026-08-07T07:51:54.060Z",
+  "updatedAt": "2026-08-08T07:28:45.308Z",
   "articles": [
+    {
+      "title": "Tatanka goes back to his roots with 'Beyond Time'",
+      "link": "https://hardstyle.com/en/news/tatanka-goes-back-to-his-roots-with-beyond-time",
+      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/2026/6%20june/683639222_18393830182154166_4519771147123083130_n.jpg",
+      "date": "2026-08-07",
+      "category": "news,hardstyle"
+    },
     {
       "title": "Frontliner's hit 'Discorecord' gets a fresh new twist with Galactixx' remix",
       "link": "https://hardstyle.com/en/news/frontliner-s-hit-discorecord-gets-a-fresh-new-twist-with-galactixx-remix",
-      "image": "https://hardstyle.com/thumbs/1600x0/@0.47x0.82/gfx/news/2026/6%20june/740052895_2131179614126640_8989412282464439358_n-png.jpg",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.47x0.82/gfx/news/2026/6%20june/740052895_2131179614126640_8989412282464439358_n-png.jpg",
       "date": "2026-07-22",
       "category": "news,hardstyle"
     },
@@ -32,7 +39,7 @@
     {
       "title": "Thyron releases 'i feel like i'm drowning', the third track of his new chapter",
       "link": "https://hardstyle.com/en/news/thyron-releases-i-feel-like-i-m-drowning-the-third-track-of-his-new-chapter",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.49x0.21/gfx/news/2026/6%20june/Thyron_press_23.jpg",
+      "image": null,
       "date": "2026-07-07",
       "category": "news,hardstyle"
     },
@@ -63,13 +70,6 @@
       "image": null,
       "date": "2026-06-18",
       "category": "news,hardstyle"
-    },
-    {
-      "title": "This week's hardstyle releases [week 25]",
-      "link": "https://hardstyle.com/en/news/this-week-s-hardstyle-releases-week-25",
-      "image": null,
-      "date": null,
-      "category": "hardstyle,music"
     }
   ]
 }
