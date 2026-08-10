@@ -1,53 +1,61 @@
 {
-  "updatedAt": "2026-08-09T05:46:46.520Z",
+  "updatedAt": "2026-08-10T06:10:20.168Z",
   "releases": [
     {
-      "id": "2cb6ae36-7baa-453e-bade-e72001dfaffd",
-      "title": "Tutto quello che ho",
-      "artist": "Klif",
+      "id": "db1d5f74-f51b-477a-8283-1ea1d6b06093",
+      "title": "BadMan",
+      "artist": "OrenWaves",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/db1d5f74-f51b-477a-8283-1ea1d6b06093/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/db1d5f74-f51b-477a-8283-1ea1d6b06093/badman"
+    },
+    {
+      "id": "fb3ac651-ee2b-4f47-b2b8-33fe6d2d02de",
+      "title": "Take My Hand",
+      "artist": "Ronnie C",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/fb3ac651-ee2b-4f47-b2b8-33fe6d2d02de/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/fb3ac651-ee2b-4f47-b2b8-33fe6d2d02de/take-my-hand"
+    },
+    {
+      "id": "b5cce547-ce72-4487-9e11-85a67cc049e7",
+      "title": "Odd-Beats by S44R",
+      "artist": "DJ Triple D",
       "mix": "",
-      "image": "https://hardstyle.com/track_image/2cb6ae36-7baa-453e-bade-e72001dfaffd/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/2cb6ae36-7baa-453e-bade-e72001dfaffd/tutto-quello-che-ho"
+      "image": "https://hardstyle.com/track_image/b5cce547-ce72-4487-9e11-85a67cc049e7/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/b5cce547-ce72-4487-9e11-85a67cc049e7/odd-beats-by-s44r"
     },
     {
-      "id": "5353148c-1d8b-4c3d-a292-172dce51bc37",
-      "title": "This is Ecstasy",
-      "artist": "Panic",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/5353148c-1d8b-4c3d-a292-172dce51bc37/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/5353148c-1d8b-4c3d-a292-172dce51bc37/this-is-ecstasy"
+      "id": "85fa7509-3b3d-40c8-8522-b344cdd95306",
+      "title": "Gabbexx",
+      "artist": "Starbanger",
+      "mix": "DJ Jordens Mix",
+      "image": "https://hardstyle.com/track_image/85fa7509-3b3d-40c8-8522-b344cdd95306/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/85fa7509-3b3d-40c8-8522-b344cdd95306/gabbexx"
     },
     {
-      "id": "033c9dca-3093-4d7e-a2c5-3feccd61ca61",
-      "title": "Ecstasy",
-      "artist": "Resilience",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/033c9dca-3093-4d7e-a2c5-3feccd61ca61/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/033c9dca-3093-4d7e-a2c5-3feccd61ca61/ecstasy"
+      "id": "46ddd4ef-3402-485b-b2ba-83892159600b",
+      "title": "The Rabbit",
+      "artist": "Bionic Commanders",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/46ddd4ef-3402-485b-b2ba-83892159600b/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/46ddd4ef-3402-485b-b2ba-83892159600b/the-rabbit"
     },
     {
-      "id": "0d8c172b-c3df-4838-a98f-9426b958342b",
-      "title": "Hey Ho Song",
-      "artist": "Dj Ghost",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/0d8c172b-c3df-4838-a98f-9426b958342b/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/0d8c172b-c3df-4838-a98f-9426b958342b/hey-ho-song"
+      "id": "fb435d8c-0bba-4980-ae81-56dcf52d0141",
+      "title": "Temptated 2 You 2016",
+      "artist": "DJ Jordens",
+      "mix": "Hardnoiser Remix",
+      "image": "https://hardstyle.com/track_image/fb435d8c-0bba-4980-ae81-56dcf52d0141/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/fb435d8c-0bba-4980-ae81-56dcf52d0141/temptated-2-you-2016"
     },
     {
-      "id": "6296f20d-880a-430e-9355-6bee8559cfde",
-      "title": "Better Love",
-      "artist": "Deviation",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/6296f20d-880a-430e-9355-6bee8559cfde/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/6296f20d-880a-430e-9355-6bee8559cfde/better-love"
-    },
-    {
-      "id": "7ac24857-cebb-4ef5-b1d6-1b377c913e1d",
-      "title": "Cosmic Carousel",
-      "artist": "Chrizens",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/7ac24857-cebb-4ef5-b1d6-1b377c913e1d/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/7ac24857-cebb-4ef5-b1d6-1b377c913e1d/cosmic-carousel"
+      "id": "9f586be9-bc55-498d-a798-22c22eca26ca",
+      "title": "L4G4CY",
+      "artist": "Various Artists",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/9f586be9-bc55-498d-a798-22c22eca26ca/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/9f586be9-bc55-498d-a798-22c22eca26ca"
     },
     {
       "id": "3969d90d-d415-421d-bdc5-09b5fbcaff7c",
@@ -72,14 +80,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/f4ec984a-d062-4ef8-b4d9-64ba01bd48af/250x250/335",
       "link": "https://hardstyle.com/en/tracks/f4ec984a-d062-4ef8-b4d9-64ba01bd48af"
-    },
-    {
-      "id": "1f3b54bc-d117-45cc-b24b-7beec3b0a4c0",
-      "title": "Rave Till Dusk",
-      "artist": "UNIFYD",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/1f3b54bc-d117-45cc-b24b-7beec3b0a4c0/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/1f3b54bc-d117-45cc-b24b-7beec3b0a4c0"
     }
   ]
 }
