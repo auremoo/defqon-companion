@@ -1,53 +1,53 @@
 {
-  "updatedAt": "2026-08-11T05:52:52.226Z",
+  "updatedAt": "2026-08-12T06:14:23.267Z",
   "releases": [
     {
-      "id": "7ec23d29-9012-479d-892d-a85f441a13e3",
-      "title": "Don't Stop Believin",
-      "artist": "DJ Viya",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/7ec23d29-9012-479d-892d-a85f441a13e3/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/7ec23d29-9012-479d-892d-a85f441a13e3/don-t-stop-believin"
+      "id": "7aead03c-eed8-4b8a-8d6c-a621bb84e54a",
+      "title": "Escape From Reality",
+      "artist": "Day-Mar",
+      "mix": "Dark Version",
+      "image": "https://hardstyle.com/track_image/7aead03c-eed8-4b8a-8d6c-a621bb84e54a/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/7aead03c-eed8-4b8a-8d6c-a621bb84e54a/escape-from-reality"
     },
     {
-      "id": "2d961244-950c-4646-a35c-3c5863910335",
-      "title": "Let it Burn",
-      "artist": "Diztorted",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/2d961244-950c-4646-a35c-3c5863910335/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/2d961244-950c-4646-a35c-3c5863910335/let-it-burn"
-    },
-    {
-      "id": "9d77c4e0-b3a1-4ded-a63f-d22387c6efc7",
-      "title": "Kryptonite",
-      "artist": "DJ OGGY",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/9d77c4e0-b3a1-4ded-a63f-d22387c6efc7/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/9d77c4e0-b3a1-4ded-a63f-d22387c6efc7/kryptonite"
-    },
-    {
-      "id": "d68d9557-5a83-4712-8ba4-58e61ddd7365",
-      "title": "Kryptonite",
-      "artist": "DJ OGGY",
-      "mix": "Radio Edit",
-      "image": "https://hardstyle.com/track_image/d68d9557-5a83-4712-8ba4-58e61ddd7365/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/d68d9557-5a83-4712-8ba4-58e61ddd7365/kryptonite"
-    },
-    {
-      "id": "db1d5f74-f51b-477a-8283-1ea1d6b06093",
-      "title": "BadMan",
-      "artist": "OrenWaves",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/db1d5f74-f51b-477a-8283-1ea1d6b06093/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/db1d5f74-f51b-477a-8283-1ea1d6b06093/badman"
-    },
-    {
-      "id": "fb3ac651-ee2b-4f47-b2b8-33fe6d2d02de",
-      "title": "Take My Hand",
-      "artist": "Ronnie C",
+      "id": "b253037d-d73f-4c0f-abd8-6499e24dd5b4",
+      "title": "Escape From Reality",
+      "artist": "Day-Mar",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/fb3ac651-ee2b-4f47-b2b8-33fe6d2d02de/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/fb3ac651-ee2b-4f47-b2b8-33fe6d2d02de/take-my-hand"
+      "image": "https://hardstyle.com/track_image/b253037d-d73f-4c0f-abd8-6499e24dd5b4/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/b253037d-d73f-4c0f-abd8-6499e24dd5b4/escape-from-reality"
+    },
+    {
+      "id": "3049c103-22b6-42c0-8dff-cd46530aec65",
+      "title": "Burning Skies",
+      "artist": "Oblivion",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/3049c103-22b6-42c0-8dff-cd46530aec65/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/3049c103-22b6-42c0-8dff-cd46530aec65/burning-skies"
+    },
+    {
+      "id": "bfdb0d88-c97a-42b1-a23e-72270c0cef78",
+      "title": "Addicted To The Bass",
+      "artist": "Tharoza",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/bfdb0d88-c97a-42b1-a23e-72270c0cef78/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/bfdb0d88-c97a-42b1-a23e-72270c0cef78/addicted-to-the-bass"
+    },
+    {
+      "id": "0474d0c9-d918-4e11-93a5-f5da4a3ee36c",
+      "title": "Never Lookin' Back",
+      "artist": "Danny Ores",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/0474d0c9-d918-4e11-93a5-f5da4a3ee36c/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/0474d0c9-d918-4e11-93a5-f5da4a3ee36c/never-lookin-back"
+    },
+    {
+      "id": "6ee790ca-042b-4327-9184-cdcf34fa6f96",
+      "title": "Energy",
+      "artist": "Transcend",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/6ee790ca-042b-4327-9184-cdcf34fa6f96/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/6ee790ca-042b-4327-9184-cdcf34fa6f96/energy"
     },
     {
       "id": "e63d5de2-e7ce-444c-9f53-d2eccf18233f",
