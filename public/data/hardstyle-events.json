@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-12T06:14:23.928Z",
+  "updatedAt": "2026-08-13T06:16:34.167Z",
   "events": [
     {
       "title": "Decibel Outdoor Natures Rhythm",
@@ -18,6 +18,24 @@
       "time": "12:00 - 23:30",
       "date": "2026-09-05",
       "month": "September"
+    },
+    {
+      "title": "RAVEMANIA // SUMMER CLOSING",
+      "link": "https://hardstyle.com/en/events/94c6ceb4-7277-4a16-ad76-f69115403e1c/ravemania-summer-closing",
+      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/94c6ceb4-7277-4a16-ad76-f69115403e1c/images/logo_img.jpg",
+      "location": "Düsseldorf",
+      "time": "23:00 - 06:00",
+      "date": "2026-09-05",
+      "month": "September"
+    },
+    {
+      "title": "Knockout Outdoor 2026",
+      "link": "https://hardstyle.com/en/events/b548c6dc-5d0a-40d3-83b7-fec003ab0b5a/knockout-outdoor-2026",
+      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/b548c6dc-5d0a-40d3-83b7-fec003ab0b5a/images/logo_img.png",
+      "location": "Sydney",
+      "time": "14:00 - 23:00",
+      "date": "2026-10-03",
+      "month": "October"
     },
     {
       "title": "Loudness 2026",
