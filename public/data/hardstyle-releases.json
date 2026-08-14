@@ -1,53 +1,61 @@
 {
-  "updatedAt": "2026-08-13T06:16:33.664Z",
+  "updatedAt": "2026-08-14T06:13:42.692Z",
   "releases": [
     {
-      "id": "1f9dbb95-b704-42fa-a3e9-e589f1c0e40a",
-      "title": "HUMANS",
-      "artist": "Superior Core",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/1f9dbb95-b704-42fa-a3e9-e589f1c0e40a/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/1f9dbb95-b704-42fa-a3e9-e589f1c0e40a/humans"
-    },
-    {
-      "id": "02109fa4-2cd0-4ce0-82fe-e0d5d0951f7b",
-      "title": "THE GAME",
-      "artist": "Alex M",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/02109fa4-2cd0-4ce0-82fe-e0d5d0951f7b/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/02109fa4-2cd0-4ce0-82fe-e0d5d0951f7b/the-game"
-    },
-    {
-      "id": "36f44f81-c5ec-4311-a11e-45ef95acee68",
-      "title": "From Heaven",
-      "artist": "DJ Oskar",
-      "mix": "DJ Chris Davies Remix",
-      "image": "https://hardstyle.com/track_image/36f44f81-c5ec-4311-a11e-45ef95acee68/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/36f44f81-c5ec-4311-a11e-45ef95acee68/from-heaven"
-    },
-    {
-      "id": "2dbf0eb0-efac-4de5-a87e-433ef57040c1",
-      "title": "Dreams Over Stars",
-      "artist": "David Navas",
+      "id": "d5eaff20-56a9-48d1-8b7a-1e99247b4457",
+      "title": "Summer",
+      "artist": "Isaac Sanchez",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/2dbf0eb0-efac-4de5-a87e-433ef57040c1/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/2dbf0eb0-efac-4de5-a87e-433ef57040c1/dreams-over-stars"
+      "image": "https://hardstyle.com/track_image/d5eaff20-56a9-48d1-8b7a-1e99247b4457/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/d5eaff20-56a9-48d1-8b7a-1e99247b4457/summer"
     },
     {
-      "id": "5d531c71-2ccf-403c-9703-8bb0f2171dc7",
-      "title": "Taste",
-      "artist": "X-CITE",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/5d531c71-2ccf-403c-9703-8bb0f2171dc7/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/5d531c71-2ccf-403c-9703-8bb0f2171dc7/taste"
-    },
-    {
-      "id": "b525b8c9-9962-4086-813d-874faf6b767b",
-      "title": "Lost",
-      "artist": "Refold",
+      "id": "fc81558a-c851-446b-8af7-95a01fb8e0c8",
+      "title": "Architects Of Destiny",
+      "artist": "DRS",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/b525b8c9-9962-4086-813d-874faf6b767b/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/b525b8c9-9962-4086-813d-874faf6b767b/lost"
+      "image": "https://hardstyle.com/track_image/fc81558a-c851-446b-8af7-95a01fb8e0c8/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/fc81558a-c851-446b-8af7-95a01fb8e0c8/architects-of-destiny"
+    },
+    {
+      "id": "60542619-93fd-4f3d-8d48-92f7779f6f7b",
+      "title": "The Anger In Us OST",
+      "artist": "Revealer",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/60542619-93fd-4f3d-8d48-92f7779f6f7b/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/60542619-93fd-4f3d-8d48-92f7779f6f7b/the-anger-in-us-ost"
+    },
+    {
+      "id": "4c974dd2-67bc-45d9-b2ac-95f5ee4f06bf",
+      "title": "Ocean Blue",
+      "artist": "Stephen Game",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/4c974dd2-67bc-45d9-b2ac-95f5ee4f06bf/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/4c974dd2-67bc-45d9-b2ac-95f5ee4f06bf/ocean-blue"
+    },
+    {
+      "id": "1322969e-4565-4120-854e-816007c5e44b",
+      "title": "I Know You Want It",
+      "artist": "Serzo",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/1322969e-4565-4120-854e-816007c5e44b/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/1322969e-4565-4120-854e-816007c5e44b/i-know-you-want-it"
+    },
+    {
+      "id": "4d4dc8be-2ae6-48c7-beaf-54a04e557897",
+      "title": "Let Them Know",
+      "artist": "INVADE",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/4d4dc8be-2ae6-48c7-beaf-54a04e557897/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/4d4dc8be-2ae6-48c7-beaf-54a04e557897/let-them-know"
+    },
+    {
+      "id": "e5bf7d9d-2be4-48d2-9223-e5841bc35fb1",
+      "title": "Complete Madness EP",
+      "artist": "Dysistor",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/e5bf7d9d-2be4-48d2-9223-e5841bc35fb1/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/e5bf7d9d-2be4-48d2-9223-e5841bc35fb1"
     },
     {
       "id": "e63d5de2-e7ce-444c-9f53-d2eccf18233f",
@@ -72,14 +80,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/3969d90d-d415-421d-bdc5-09b5fbcaff7c/250x250/335",
       "link": "https://hardstyle.com/en/tracks/3969d90d-d415-421d-bdc5-09b5fbcaff7c"
-    },
-    {
-      "id": "98d33cdf-1054-4fda-828b-ae0bf78c5f06",
-      "title": "Built 2 Break",
-      "artist": "Dual Damage",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/98d33cdf-1054-4fda-828b-ae0bf78c5f06/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/98d33cdf-1054-4fda-828b-ae0bf78c5f06"
     }
   ]
 }
