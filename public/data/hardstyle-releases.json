@@ -1,6 +1,46 @@
 {
-  "updatedAt": "2026-08-15T05:24:29.354Z",
+  "updatedAt": "2026-08-16T05:28:09.191Z",
   "releases": [
+    {
+      "id": "d222e753-2f54-456c-a054-637eb7c73a3f",
+      "title": "Kill The Pilot",
+      "artist": "Das SPEZIAL",
+      "mix": "HLZ Remix",
+      "image": "https://hardstyle.com/track_image/d222e753-2f54-456c-a054-637eb7c73a3f/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/d222e753-2f54-456c-a054-637eb7c73a3f/kill-the-pilot"
+    },
+    {
+      "id": "bd2056ae-d3e2-40ba-9693-7ff5972bf018",
+      "title": "My Eyes",
+      "artist": "Das SPEZIAL",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/bd2056ae-d3e2-40ba-9693-7ff5972bf018/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/bd2056ae-d3e2-40ba-9693-7ff5972bf018/my-eyes"
+    },
+    {
+      "id": "0cb9e4c3-8978-4c08-b6b7-31354da55f65",
+      "title": "Kill The Pilot",
+      "artist": "Das SPEZIAL",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/0cb9e4c3-8978-4c08-b6b7-31354da55f65/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/0cb9e4c3-8978-4c08-b6b7-31354da55f65/kill-the-pilot"
+    },
+    {
+      "id": "6b9c3033-4c6c-4076-9900-74c1f457d779",
+      "title": "Cobra Mist",
+      "artist": "Das SPEZIAL",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/6b9c3033-4c6c-4076-9900-74c1f457d779/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/6b9c3033-4c6c-4076-9900-74c1f457d779/cobra-mist"
+    },
+    {
+      "id": "dfd5672b-27d2-45e4-9c27-77e0e7b86c67",
+      "title": "Thief",
+      "artist": "Das SPEZIAL",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/dfd5672b-27d2-45e4-9c27-77e0e7b86c67/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/dfd5672b-27d2-45e4-9c27-77e0e7b86c67/thief"
+    },
     {
       "id": "d5eaff20-56a9-48d1-8b7a-1e99247b4457",
       "title": "Summer",
@@ -8,46 +48,6 @@
       "mix": "Original Mix",
       "image": "https://hardstyle.com/track_image/d5eaff20-56a9-48d1-8b7a-1e99247b4457/250x250/335",
       "link": "https://hardstyle.com/en/tracks/d5eaff20-56a9-48d1-8b7a-1e99247b4457/summer"
-    },
-    {
-      "id": "fc81558a-c851-446b-8af7-95a01fb8e0c8",
-      "title": "Architects Of Destiny",
-      "artist": "DRS",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/fc81558a-c851-446b-8af7-95a01fb8e0c8/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/fc81558a-c851-446b-8af7-95a01fb8e0c8/architects-of-destiny"
-    },
-    {
-      "id": "60542619-93fd-4f3d-8d48-92f7779f6f7b",
-      "title": "The Anger In Us OST",
-      "artist": "Revealer",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/60542619-93fd-4f3d-8d48-92f7779f6f7b/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/60542619-93fd-4f3d-8d48-92f7779f6f7b/the-anger-in-us-ost"
-    },
-    {
-      "id": "4c974dd2-67bc-45d9-b2ac-95f5ee4f06bf",
-      "title": "Ocean Blue",
-      "artist": "Stephen Game",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/4c974dd2-67bc-45d9-b2ac-95f5ee4f06bf/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/4c974dd2-67bc-45d9-b2ac-95f5ee4f06bf/ocean-blue"
-    },
-    {
-      "id": "1322969e-4565-4120-854e-816007c5e44b",
-      "title": "I Know You Want It",
-      "artist": "Serzo",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/1322969e-4565-4120-854e-816007c5e44b/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/1322969e-4565-4120-854e-816007c5e44b/i-know-you-want-it"
-    },
-    {
-      "id": "4d4dc8be-2ae6-48c7-beaf-54a04e557897",
-      "title": "Let Them Know",
-      "artist": "INVADE",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/4d4dc8be-2ae6-48c7-beaf-54a04e557897/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/4d4dc8be-2ae6-48c7-beaf-54a04e557897/let-them-know"
     },
     {
       "id": "e5bf7d9d-2be4-48d2-9223-e5841bc35fb1",
