@@ -1,53 +1,53 @@
 {
-  "updatedAt": "2026-08-16T05:28:09.191Z",
+  "updatedAt": "2026-08-17T05:35:01.649Z",
   "releases": [
     {
-      "id": "d222e753-2f54-456c-a054-637eb7c73a3f",
-      "title": "Kill The Pilot",
-      "artist": "Das SPEZIAL",
+      "id": "80285d25-28f4-4ceb-a7f7-e7f09c68a96b",
+      "title": "No Angel",
+      "artist": "Big Ric",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/80285d25-28f4-4ceb-a7f7-e7f09c68a96b/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/80285d25-28f4-4ceb-a7f7-e7f09c68a96b/no-angel"
+    },
+    {
+      "id": "863690d7-6de1-410c-aebf-e80afa51d3f4",
+      "title": "No Angel",
+      "artist": "Big Ric",
+      "mix": "Radio Edit",
+      "image": "https://hardstyle.com/track_image/863690d7-6de1-410c-aebf-e80afa51d3f4/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/863690d7-6de1-410c-aebf-e80afa51d3f4/no-angel"
+    },
+    {
+      "id": "1ca2117b-669d-4a21-9b6f-6ccc371d9818",
+      "title": "Bassline Warrior",
+      "artist": "FLANDERS",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/1ca2117b-669d-4a21-9b6f-6ccc371d9818/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/1ca2117b-669d-4a21-9b6f-6ccc371d9818/bassline-warrior"
+    },
+    {
+      "id": "995a39e5-5a2d-4f9a-93ec-949717348561",
+      "title": "Wherever You Will Go",
+      "artist": "SethroW",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/995a39e5-5a2d-4f9a-93ec-949717348561/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/995a39e5-5a2d-4f9a-93ec-949717348561/wherever-you-will-go"
+    },
+    {
+      "id": "2076e466-e76b-4b1b-9f1d-2aa04e8c63c5",
+      "title": "Walk the Line",
+      "artist": "The Recluse",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/2076e466-e76b-4b1b-9f1d-2aa04e8c63c5/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/2076e466-e76b-4b1b-9f1d-2aa04e8c63c5/walk-the-line"
+    },
+    {
+      "id": "a93ed9eb-e874-4f53-98b1-f48c2e7d38b3",
+      "title": "Nothing else will stand",
+      "artist": "The Stunned Guys",
       "mix": "HLZ Remix",
-      "image": "https://hardstyle.com/track_image/d222e753-2f54-456c-a054-637eb7c73a3f/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/d222e753-2f54-456c-a054-637eb7c73a3f/kill-the-pilot"
-    },
-    {
-      "id": "bd2056ae-d3e2-40ba-9693-7ff5972bf018",
-      "title": "My Eyes",
-      "artist": "Das SPEZIAL",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/bd2056ae-d3e2-40ba-9693-7ff5972bf018/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/bd2056ae-d3e2-40ba-9693-7ff5972bf018/my-eyes"
-    },
-    {
-      "id": "0cb9e4c3-8978-4c08-b6b7-31354da55f65",
-      "title": "Kill The Pilot",
-      "artist": "Das SPEZIAL",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/0cb9e4c3-8978-4c08-b6b7-31354da55f65/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/0cb9e4c3-8978-4c08-b6b7-31354da55f65/kill-the-pilot"
-    },
-    {
-      "id": "6b9c3033-4c6c-4076-9900-74c1f457d779",
-      "title": "Cobra Mist",
-      "artist": "Das SPEZIAL",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/6b9c3033-4c6c-4076-9900-74c1f457d779/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/6b9c3033-4c6c-4076-9900-74c1f457d779/cobra-mist"
-    },
-    {
-      "id": "dfd5672b-27d2-45e4-9c27-77e0e7b86c67",
-      "title": "Thief",
-      "artist": "Das SPEZIAL",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/dfd5672b-27d2-45e4-9c27-77e0e7b86c67/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/dfd5672b-27d2-45e4-9c27-77e0e7b86c67/thief"
-    },
-    {
-      "id": "d5eaff20-56a9-48d1-8b7a-1e99247b4457",
-      "title": "Summer",
-      "artist": "Isaac Sanchez",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/d5eaff20-56a9-48d1-8b7a-1e99247b4457/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/d5eaff20-56a9-48d1-8b7a-1e99247b4457/summer"
+      "image": "https://hardstyle.com/track_image/a93ed9eb-e874-4f53-98b1-f48c2e7d38b3/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/a93ed9eb-e874-4f53-98b1-f48c2e7d38b3/nothing-else-will-stand"
     },
     {
       "id": "e5bf7d9d-2be4-48d2-9223-e5841bc35fb1",
