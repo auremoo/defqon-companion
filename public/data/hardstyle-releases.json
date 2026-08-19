@@ -1,53 +1,53 @@
 {
-  "updatedAt": "2026-08-18T05:29:38.725Z",
+  "updatedAt": "2026-08-19T05:30:55.544Z",
   "releases": [
     {
-      "id": "5ea8617e-6389-4245-8141-b430d95560fb",
-      "title": "TAKE CONTROL",
-      "artist": "Heavy Machinery",
+      "id": "b4f1c542-5290-49eb-a764-c7c88ee16105",
+      "title": "Lost Control",
+      "artist": "JNW",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/5ea8617e-6389-4245-8141-b430d95560fb/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/5ea8617e-6389-4245-8141-b430d95560fb/take-control"
+      "image": "https://hardstyle.com/track_image/b4f1c542-5290-49eb-a764-c7c88ee16105/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/b4f1c542-5290-49eb-a764-c7c88ee16105/lost-control"
     },
     {
-      "id": "617f1d92-2b4e-4be4-9c78-53f4537c9490",
-      "title": "Love Sensation",
-      "artist": "DJ Addo",
-      "mix": "Fest Mix",
-      "image": "https://hardstyle.com/track_image/617f1d92-2b4e-4be4-9c78-53f4537c9490/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/617f1d92-2b4e-4be4-9c78-53f4537c9490/love-sensation"
-    },
-    {
-      "id": "eaca2dd5-7e23-4e02-b9e6-1ec014b7f4c5",
-      "title": "Love Sensation",
-      "artist": "DJ Addo",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/eaca2dd5-7e23-4e02-b9e6-1ec014b7f4c5/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/eaca2dd5-7e23-4e02-b9e6-1ec014b7f4c5/love-sensation"
-    },
-    {
-      "id": "44dd64f4-d5e0-4055-8eba-bea3a50edfb6",
-      "title": "Piece Of U",
-      "artist": "Avi8",
+      "id": "3cd0a4dc-6b62-4bb7-a09f-db79efbb7d1a",
+      "title": "PSYKO",
+      "artist": "Katalyze",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/44dd64f4-d5e0-4055-8eba-bea3a50edfb6/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/44dd64f4-d5e0-4055-8eba-bea3a50edfb6/piece-of-u"
+      "image": "https://hardstyle.com/track_image/3cd0a4dc-6b62-4bb7-a09f-db79efbb7d1a/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/3cd0a4dc-6b62-4bb7-a09f-db79efbb7d1a/psyko"
     },
     {
-      "id": "80285d25-28f4-4ceb-a7f7-e7f09c68a96b",
-      "title": "No Angel",
-      "artist": "Big Ric",
+      "id": "e0ad8d3b-3c8f-4ba2-865f-4b4ad1557ee2",
+      "title": "SUMMER RAIN",
+      "artist": "NOCTURNAL",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/e0ad8d3b-3c8f-4ba2-865f-4b4ad1557ee2/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/e0ad8d3b-3c8f-4ba2-865f-4b4ad1557ee2/summer-rain"
+    },
+    {
+      "id": "c61106e0-05d3-4ea7-ad40-b03610360ec7",
+      "title": "I Am Morvius",
+      "artist": "MorVius",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/80285d25-28f4-4ceb-a7f7-e7f09c68a96b/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/80285d25-28f4-4ceb-a7f7-e7f09c68a96b/no-angel"
+      "image": "https://hardstyle.com/track_image/c61106e0-05d3-4ea7-ad40-b03610360ec7/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/c61106e0-05d3-4ea7-ad40-b03610360ec7/i-am-morvius"
     },
     {
-      "id": "863690d7-6de1-410c-aebf-e80afa51d3f4",
-      "title": "No Angel",
-      "artist": "Big Ric",
-      "mix": "Radio Edit",
-      "image": "https://hardstyle.com/track_image/863690d7-6de1-410c-aebf-e80afa51d3f4/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/863690d7-6de1-410c-aebf-e80afa51d3f4/no-angel"
+      "id": "76920f1f-dd2e-4aa5-b6b4-66d2eb36ff79",
+      "title": "Play It Loud",
+      "artist": "Garbie Project",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/76920f1f-dd2e-4aa5-b6b4-66d2eb36ff79/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/76920f1f-dd2e-4aa5-b6b4-66d2eb36ff79/play-it-loud"
+    },
+    {
+      "id": "ad9f94fc-b5aa-46b4-b04b-7d28c698e670",
+      "title": "All In Me",
+      "artist": "Ducal",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/ad9f94fc-b5aa-46b4-b04b-7d28c698e670/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/ad9f94fc-b5aa-46b4-b04b-7d28c698e670/all-in-me"
     },
     {
       "id": "e5bf7d9d-2be4-48d2-9223-e5841bc35fb1",
