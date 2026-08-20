@@ -1,53 +1,61 @@
 {
-  "updatedAt": "2026-08-19T05:30:55.544Z",
+  "updatedAt": "2026-08-20T05:31:18.760Z",
   "releases": [
     {
-      "id": "b4f1c542-5290-49eb-a764-c7c88ee16105",
-      "title": "Lost Control",
-      "artist": "JNW",
+      "id": "1c476164-5a21-490b-bc15-b2866d5cf8a0",
+      "title": "TAKE ME 2 THE RAVE",
+      "artist": "Mish",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/b4f1c542-5290-49eb-a764-c7c88ee16105/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/b4f1c542-5290-49eb-a764-c7c88ee16105/lost-control"
+      "image": "https://hardstyle.com/track_image/1c476164-5a21-490b-bc15-b2866d5cf8a0/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/1c476164-5a21-490b-bc15-b2866d5cf8a0/take-me-2-the-rave"
     },
     {
-      "id": "3cd0a4dc-6b62-4bb7-a09f-db79efbb7d1a",
-      "title": "PSYKO",
-      "artist": "Katalyze",
+      "id": "b7658a21-757c-4b32-b0d4-cc0980cfe8d6",
+      "title": "From The Grave",
+      "artist": "The Ancients",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/3cd0a4dc-6b62-4bb7-a09f-db79efbb7d1a/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/3cd0a4dc-6b62-4bb7-a09f-db79efbb7d1a/psyko"
+      "image": "https://hardstyle.com/track_image/b7658a21-757c-4b32-b0d4-cc0980cfe8d6/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/b7658a21-757c-4b32-b0d4-cc0980cfe8d6/from-the-grave"
     },
     {
-      "id": "e0ad8d3b-3c8f-4ba2-865f-4b4ad1557ee2",
-      "title": "SUMMER RAIN",
-      "artist": "NOCTURNAL",
+      "id": "d737e50f-5a0b-48b0-bdf6-a4cee60b744c",
+      "title": "The Curse",
+      "artist": "The Ancients",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/e0ad8d3b-3c8f-4ba2-865f-4b4ad1557ee2/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/e0ad8d3b-3c8f-4ba2-865f-4b4ad1557ee2/summer-rain"
+      "image": "https://hardstyle.com/track_image/d737e50f-5a0b-48b0-bdf6-a4cee60b744c/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/d737e50f-5a0b-48b0-bdf6-a4cee60b744c/the-curse"
     },
     {
-      "id": "c61106e0-05d3-4ea7-ad40-b03610360ec7",
-      "title": "I Am Morvius",
-      "artist": "MorVius",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/c61106e0-05d3-4ea7-ad40-b03610360ec7/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/c61106e0-05d3-4ea7-ad40-b03610360ec7/i-am-morvius"
-    },
-    {
-      "id": "76920f1f-dd2e-4aa5-b6b4-66d2eb36ff79",
-      "title": "Play It Loud",
-      "artist": "Garbie Project",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/76920f1f-dd2e-4aa5-b6b4-66d2eb36ff79/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/76920f1f-dd2e-4aa5-b6b4-66d2eb36ff79/play-it-loud"
-    },
-    {
-      "id": "ad9f94fc-b5aa-46b4-b04b-7d28c698e670",
-      "title": "All In Me",
-      "artist": "Ducal",
+      "id": "f198a3bf-fd3b-49eb-8546-2485ec10d1fa",
+      "title": "The Serpent Song",
+      "artist": "The Ancients",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/ad9f94fc-b5aa-46b4-b04b-7d28c698e670/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/ad9f94fc-b5aa-46b4-b04b-7d28c698e670/all-in-me"
+      "image": "https://hardstyle.com/track_image/f198a3bf-fd3b-49eb-8546-2485ec10d1fa/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/f198a3bf-fd3b-49eb-8546-2485ec10d1fa/the-serpent-song"
+    },
+    {
+      "id": "3247d359-cabc-4c3e-b7e2-79c2cdccc9d7",
+      "title": "Beats Of The Damned",
+      "artist": "The Ancients",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/3247d359-cabc-4c3e-b7e2-79c2cdccc9d7/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/3247d359-cabc-4c3e-b7e2-79c2cdccc9d7/beats-of-the-damned"
+    },
+    {
+      "id": "5c6b2e43-151f-4df0-a119-c10f445e85cf",
+      "title": "Sacrifice",
+      "artist": "The Ancients",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/5c6b2e43-151f-4df0-a119-c10f445e85cf/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/5c6b2e43-151f-4df0-a119-c10f445e85cf/sacrifice"
+    },
+    {
+      "id": "6d359eef-adfd-48b1-8008-a0346ab325d5",
+      "title": "W.A.T.A.",
+      "artist": "The Ancients",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/6d359eef-adfd-48b1-8008-a0346ab325d5/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/6d359eef-adfd-48b1-8008-a0346ab325d5"
     },
     {
       "id": "e5bf7d9d-2be4-48d2-9223-e5841bc35fb1",
@@ -72,14 +80,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/3969d90d-d415-421d-bdc5-09b5fbcaff7c/250x250/335",
       "link": "https://hardstyle.com/en/tracks/3969d90d-d415-421d-bdc5-09b5fbcaff7c"
-    },
-    {
-      "id": "98d33cdf-1054-4fda-828b-ae0bf78c5f06",
-      "title": "Built 2 Break",
-      "artist": "Dual Damage",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/98d33cdf-1054-4fda-828b-ae0bf78c5f06/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/98d33cdf-1054-4fda-828b-ae0bf78c5f06"
     }
   ]
 }
