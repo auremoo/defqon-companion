@@ -1,10 +1,17 @@
 {
-  "updatedAt": "2026-08-20T07:22:31.229Z",
+  "updatedAt": "2026-08-21T07:23:18.553Z",
   "articles": [
+    {
+      "title": "Into The Madness gears up for its 5th anniversary",
+      "link": "https://hardstyle.com/en/news/into-the-madness-gears-up-for-its-5th-anniversary",
+      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/2026/augustus/685265467_961149846673392_3570787567949819979_n_2.jpg",
+      "date": "2026-08-20",
+      "category": "news,hardstyle"
+    },
     {
       "title": "Tatanka goes back to his roots with 'Beyond Time'",
       "link": "https://hardstyle.com/en/news/tatanka-goes-back-to-his-roots-with-beyond-time",
-      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/2026/6%20june/683639222_18393830182154166_4519771147123083130_n.jpg",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/6%20june/683639222_18393830182154166_4519771147123083130_n.jpg",
       "date": "2026-08-07",
       "category": "news,hardstyle"
     },
@@ -32,7 +39,7 @@
     {
       "title": "REBELLiON Indoor announces the line-up for their 2026 edition: 'BREAK THE SYSTEM'",
       "link": "https://hardstyle.com/en/news/rebellion-indoor-announces-the-line-up-for-their-2026-edition-break-the-system",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/6%20june/744782892_1816694969556163_4983386542515073653_n.jpg",
+      "image": null,
       "date": "2026-07-16",
       "category": "news,hardstyle"
     },
@@ -62,13 +69,6 @@
       "link": "https://hardstyle.com/en/news/defqon1-is-cancelled",
       "image": null,
       "date": "2026-06-26",
-      "category": "news,hardstyle"
-    },
-    {
-      "title": "Adaro and Unresolved release ‘Original Gangsters (Raw And Mean)’, their first collab ever",
-      "link": "https://hardstyle.com/en/news/adaro-and-unresolved-release-original-gangsters-raw-and-mean-their-first-collab-ever",
-      "image": null,
-      "date": "2026-06-18",
       "category": "news,hardstyle"
     }
   ]
