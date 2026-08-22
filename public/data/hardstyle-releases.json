@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-08-21T05:32:48.489Z",
+  "updatedAt": "2026-08-22T05:27:42.761Z",
   "releases": [
+    {
+      "id": "b712c34d-1296-445a-a122-e005cc231cb6",
+      "title": "Let It Go",
+      "artist": "RYZEN",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/b712c34d-1296-445a-a122-e005cc231cb6/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/b712c34d-1296-445a-a122-e005cc231cb6/let-it-go"
+    },
+    {
+      "id": "a75b8ea9-c31a-4864-b9d0-c61bb50174cb",
+      "title": "Let It Go",
+      "artist": "RYZEN",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/a75b8ea9-c31a-4864-b9d0-c61bb50174cb/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/a75b8ea9-c31a-4864-b9d0-c61bb50174cb/let-it-go"
+    },
+    {
+      "id": "db0d7ce2-e55b-48af-a882-d3c2b2c606b5",
+      "title": "Neon Skies",
+      "artist": "Genic",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/db0d7ce2-e55b-48af-a882-d3c2b2c606b5/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/db0d7ce2-e55b-48af-a882-d3c2b2c606b5/neon-skies"
+    },
     {
       "id": "cacba9b8-b646-40b9-a991-6dba5efebc84",
       "title": "House Wins - 200 bpm",
@@ -24,30 +48,6 @@
       "mix": "Extended Mix",
       "image": "https://hardstyle.com/track_image/a0caa8da-8c1e-4a27-ac49-194329f78fde/250x250/335",
       "link": "https://hardstyle.com/en/tracks/a0caa8da-8c1e-4a27-ac49-194329f78fde/never-come-down"
-    },
-    {
-      "id": "a91c9883-0601-49b6-bd05-9e50f5d868a5",
-      "title": "MF Fastlane",
-      "artist": "Barber",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/a91c9883-0601-49b6-bd05-9e50f5d868a5/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/a91c9883-0601-49b6-bd05-9e50f5d868a5/mf-fastlane"
-    },
-    {
-      "id": "b78ed6fa-e7f1-47d6-8066-dca4f040b734",
-      "title": "Ill Behaviour",
-      "artist": "Sound Enhancers",
-      "mix": "Furyan REFIX",
-      "image": "https://hardstyle.com/track_image/b78ed6fa-e7f1-47d6-8066-dca4f040b734/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/b78ed6fa-e7f1-47d6-8066-dca4f040b734/ill-behaviour"
-    },
-    {
-      "id": "0c1856d3-5986-424a-8ba7-be2d949ead86",
-      "title": "Rise of the Pack",
-      "artist": "Hysta",
-      "mix": "Official Syndicate 2026 Anthem",
-      "image": "https://hardstyle.com/track_image/0c1856d3-5986-424a-8ba7-be2d949ead86/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/0c1856d3-5986-424a-8ba7-be2d949ead86/rise-of-the-pack"
     },
     {
       "id": "ddd054c9-1761-4283-9d8d-bddd47b5486f",
