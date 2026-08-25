@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-08-24T05:38:12.737Z",
+  "updatedAt": "2026-08-25T05:31:59.707Z",
   "releases": [
+    {
+      "id": "10fe6b3b-6dda-4495-b712-9955914e75ae",
+      "title": "Don't Stop",
+      "artist": "Missy",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/10fe6b3b-6dda-4495-b712-9955914e75ae/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/10fe6b3b-6dda-4495-b712-9955914e75ae/don-t-stop"
+    },
+    {
+      "id": "81280f1e-62b1-4f01-84b7-d80e643b5f40",
+      "title": "Never Again",
+      "artist": "Denile",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/81280f1e-62b1-4f01-84b7-d80e643b5f40/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/81280f1e-62b1-4f01-84b7-d80e643b5f40/never-again"
+    },
+    {
+      "id": "1f608c53-8429-4eb9-9ecc-5c27b3b9825c",
+      "title": "Silence",
+      "artist": "Unmute",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/1f608c53-8429-4eb9-9ecc-5c27b3b9825c/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/1f608c53-8429-4eb9-9ecc-5c27b3b9825c/silence"
+    },
     {
       "id": "b712c34d-1296-445a-a122-e005cc231cb6",
       "title": "Let It Go",
@@ -26,28 +50,12 @@
       "link": "https://hardstyle.com/en/tracks/db0d7ce2-e55b-48af-a882-d3c2b2c606b5/neon-skies"
     },
     {
-      "id": "cacba9b8-b646-40b9-a991-6dba5efebc84",
-      "title": "House Wins - 200 bpm",
-      "artist": "Dream Pixx",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/cacba9b8-b646-40b9-a991-6dba5efebc84/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/cacba9b8-b646-40b9-a991-6dba5efebc84/house-wins-200-bpm"
-    },
-    {
-      "id": "fd2de8bf-9fae-4cd4-bd12-60bee7fd9127",
-      "title": "Casino Of Synthesis - 195 bpm",
-      "artist": "Dream Pixx",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/fd2de8bf-9fae-4cd4-bd12-60bee7fd9127/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/fd2de8bf-9fae-4cd4-bd12-60bee7fd9127/casino-of-synthesis-195-bpm"
-    },
-    {
-      "id": "a0caa8da-8c1e-4a27-ac49-194329f78fde",
-      "title": "Never Come Down",
-      "artist": "Bulletproof",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/a0caa8da-8c1e-4a27-ac49-194329f78fde/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/a0caa8da-8c1e-4a27-ac49-194329f78fde/never-come-down"
+      "id": "8f57b4f6-14c7-43af-81bf-0265ae4bd89a",
+      "title": "Groove Compilation",
+      "artist": "Various Artists",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/8f57b4f6-14c7-43af-81bf-0265ae4bd89a/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/8f57b4f6-14c7-43af-81bf-0265ae4bd89a"
     },
     {
       "id": "ddd054c9-1761-4283-9d8d-bddd47b5486f",
@@ -72,14 +80,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/e5bf7d9d-2be4-48d2-9223-e5841bc35fb1/250x250/335",
       "link": "https://hardstyle.com/en/tracks/e5bf7d9d-2be4-48d2-9223-e5841bc35fb1"
-    },
-    {
-      "id": "e63d5de2-e7ce-444c-9f53-d2eccf18233f",
-      "title": "Hard House & Dance Compilation",
-      "artist": "Various Artists",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/e63d5de2-e7ce-444c-9f53-d2eccf18233f/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/e63d5de2-e7ce-444c-9f53-d2eccf18233f"
     }
   ]
 }
