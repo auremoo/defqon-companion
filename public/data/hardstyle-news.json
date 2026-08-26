@@ -1,10 +1,17 @@
 {
-  "updatedAt": "2026-08-25T07:24:34.910Z",
+  "updatedAt": "2026-08-26T07:24:48.561Z",
   "articles": [
+    {
+      "title": "Supremacy Classics returns with a massive rawstyle line-up",
+      "link": "https://hardstyle.com/en/news/supremacy-classics-returns-with-a-massive-rawstyle-line-up",
+      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/2026/augustus/623221142_1494558038696050_6924224014553943139_n.jpg",
+      "date": "2026-08-25",
+      "category": "news,hardstyle"
+    },
     {
       "title": "D-Block & S-te-Fan & Phuture Noize finally unleash ‘Arcadia’",
       "link": "https://hardstyle.com/en/news/d-block-en-s-te-fan-en-phuture-noize-finally-unleash-arcadia",
-      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/2026/augustus/(c)LuisaArt_DBSTF-PhutureNoize_Studio-LA1_5663-Enhanced-NR.jpg",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/augustus/(c)LuisaArt_DBSTF-PhutureNoize_Studio-LA1_5663-Enhanced-NR.jpg",
       "date": "2026-08-21",
       "category": "news,hardstyle"
     },
@@ -32,7 +39,7 @@
     {
       "title": "Hysta showcased the history of hardcore during The Spotlight at Defqon.1",
       "link": "https://hardstyle.com/en/news/hysta-showcased-the-history-of-hardcore-during-the-spotlight-at-defqon1",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/6%20june/Photo%2025-06-2026%2021%2053%2031.jpg",
+      "image": null,
       "date": "2026-07-22",
       "category": "news,hardstyle"
     },
@@ -63,13 +70,6 @@
       "image": null,
       "date": "2026-07-07",
       "category": "news,hardstyle"
-    },
-    {
-      "title": "This week's hardstyle releases [week 27]",
-      "link": "https://hardstyle.com/en/news/this-week-s-hardstyle-releases-week-27",
-      "image": null,
-      "date": null,
-      "category": "hardstyle,music"
     }
   ]
 }
