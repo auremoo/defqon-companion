@@ -1,53 +1,53 @@
 {
-  "updatedAt": "2026-08-25T05:31:59.707Z",
+  "updatedAt": "2026-08-26T05:34:43.485Z",
   "releases": [
     {
-      "id": "10fe6b3b-6dda-4495-b712-9955914e75ae",
-      "title": "Don't Stop",
-      "artist": "Missy",
+      "id": "3c2bc4d8-deaf-4d05-b815-ebc7a1993d66",
+      "title": "Listen To This",
+      "artist": "Lycosa",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/3c2bc4d8-deaf-4d05-b815-ebc7a1993d66/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/3c2bc4d8-deaf-4d05-b815-ebc7a1993d66/listen-to-this"
+    },
+    {
+      "id": "98ffc216-08bd-400c-9d48-edac98de330a",
+      "title": "You Gotta Burn",
+      "artist": "161",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/10fe6b3b-6dda-4495-b712-9955914e75ae/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/10fe6b3b-6dda-4495-b712-9955914e75ae/don-t-stop"
+      "image": "https://hardstyle.com/track_image/98ffc216-08bd-400c-9d48-edac98de330a/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/98ffc216-08bd-400c-9d48-edac98de330a/you-gotta-burn"
     },
     {
-      "id": "81280f1e-62b1-4f01-84b7-d80e643b5f40",
-      "title": "Never Again",
-      "artist": "Denile",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/81280f1e-62b1-4f01-84b7-d80e643b5f40/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/81280f1e-62b1-4f01-84b7-d80e643b5f40/never-again"
-    },
-    {
-      "id": "1f608c53-8429-4eb9-9ecc-5c27b3b9825c",
-      "title": "Silence",
-      "artist": "Unmute",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/1f608c53-8429-4eb9-9ecc-5c27b3b9825c/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/1f608c53-8429-4eb9-9ecc-5c27b3b9825c/silence"
-    },
-    {
-      "id": "b712c34d-1296-445a-a122-e005cc231cb6",
-      "title": "Let It Go",
-      "artist": "RYZEN",
+      "id": "8c36417b-36c4-4213-ab17-98e5d6f04c9d",
+      "title": "Stinky Cadaver",
+      "artist": "161",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/b712c34d-1296-445a-a122-e005cc231cb6/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/b712c34d-1296-445a-a122-e005cc231cb6/let-it-go"
+      "image": "https://hardstyle.com/track_image/8c36417b-36c4-4213-ab17-98e5d6f04c9d/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/8c36417b-36c4-4213-ab17-98e5d6f04c9d/stinky-cadaver"
     },
     {
-      "id": "a75b8ea9-c31a-4864-b9d0-c61bb50174cb",
-      "title": "Let It Go",
-      "artist": "RYZEN",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/a75b8ea9-c31a-4864-b9d0-c61bb50174cb/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/a75b8ea9-c31a-4864-b9d0-c61bb50174cb/let-it-go"
-    },
-    {
-      "id": "db0d7ce2-e55b-48af-a882-d3c2b2c606b5",
-      "title": "Neon Skies",
-      "artist": "Genic",
+      "id": "07f8ea47-7359-4676-9810-4a4c2f9e6105",
+      "title": "Smile for the Camera",
+      "artist": "161",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/db0d7ce2-e55b-48af-a882-d3c2b2c606b5/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/db0d7ce2-e55b-48af-a882-d3c2b2c606b5/neon-skies"
+      "image": "https://hardstyle.com/track_image/07f8ea47-7359-4676-9810-4a4c2f9e6105/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/07f8ea47-7359-4676-9810-4a4c2f9e6105/smile-for-the-camera"
+    },
+    {
+      "id": "89bb4558-23e2-49ba-9ba7-fd038b40dae0",
+      "title": "Back In The Day",
+      "artist": "Udow",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/89bb4558-23e2-49ba-9ba7-fd038b40dae0/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/89bb4558-23e2-49ba-9ba7-fd038b40dae0/back-in-the-day"
+    },
+    {
+      "id": "620b183a-677a-47c8-92d8-9783ff08f435",
+      "title": "Demons are Fond of Christians",
+      "artist": "The Peoples Republic Of Europe",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/620b183a-677a-47c8-92d8-9783ff08f435/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/620b183a-677a-47c8-92d8-9783ff08f435/demons-are-fond-of-christians"
     },
     {
       "id": "8f57b4f6-14c7-43af-81bf-0265ae4bd89a",
