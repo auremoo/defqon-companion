@@ -1,53 +1,53 @@
 {
-  "updatedAt": "2026-08-26T05:34:43.485Z",
+  "updatedAt": "2026-08-27T16:09:25.354Z",
   "releases": [
     {
-      "id": "3c2bc4d8-deaf-4d05-b815-ebc7a1993d66",
-      "title": "Listen To This",
-      "artist": "Lycosa",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/3c2bc4d8-deaf-4d05-b815-ebc7a1993d66/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/3c2bc4d8-deaf-4d05-b815-ebc7a1993d66/listen-to-this"
-    },
-    {
-      "id": "98ffc216-08bd-400c-9d48-edac98de330a",
-      "title": "You Gotta Burn",
-      "artist": "161",
+      "id": "95acf9fa-a8b3-4a33-b34a-ce709b09a38f",
+      "title": "Poison",
+      "artist": "Aidos",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/98ffc216-08bd-400c-9d48-edac98de330a/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/98ffc216-08bd-400c-9d48-edac98de330a/you-gotta-burn"
+      "image": "https://hardstyle.com/track_image/95acf9fa-a8b3-4a33-b34a-ce709b09a38f/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/95acf9fa-a8b3-4a33-b34a-ce709b09a38f/poison"
     },
     {
-      "id": "8c36417b-36c4-4213-ab17-98e5d6f04c9d",
-      "title": "Stinky Cadaver",
-      "artist": "161",
+      "id": "3a18a8c6-6fdc-4142-8b09-61ae38c454ec",
+      "title": "Your Place",
+      "artist": "Ian Howard",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/8c36417b-36c4-4213-ab17-98e5d6f04c9d/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/8c36417b-36c4-4213-ab17-98e5d6f04c9d/stinky-cadaver"
+      "image": "https://hardstyle.com/track_image/3a18a8c6-6fdc-4142-8b09-61ae38c454ec/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/3a18a8c6-6fdc-4142-8b09-61ae38c454ec/your-place"
     },
     {
-      "id": "07f8ea47-7359-4676-9810-4a4c2f9e6105",
-      "title": "Smile for the Camera",
-      "artist": "161",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/07f8ea47-7359-4676-9810-4a4c2f9e6105/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/07f8ea47-7359-4676-9810-4a4c2f9e6105/smile-for-the-camera"
-    },
-    {
-      "id": "89bb4558-23e2-49ba-9ba7-fd038b40dae0",
-      "title": "Back In The Day",
-      "artist": "Udow",
+      "id": "661cf87f-c0e8-445e-85d1-b800ba19965e",
+      "title": "Are U Ready?!",
+      "artist": "Exoform",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/89bb4558-23e2-49ba-9ba7-fd038b40dae0/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/89bb4558-23e2-49ba-9ba7-fd038b40dae0/back-in-the-day"
+      "image": "https://hardstyle.com/track_image/661cf87f-c0e8-445e-85d1-b800ba19965e/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/661cf87f-c0e8-445e-85d1-b800ba19965e/are-u-ready"
     },
     {
-      "id": "620b183a-677a-47c8-92d8-9783ff08f435",
-      "title": "Demons are Fond of Christians",
-      "artist": "The Peoples Republic Of Europe",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/620b183a-677a-47c8-92d8-9783ff08f435/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/620b183a-677a-47c8-92d8-9783ff08f435/demons-are-fond-of-christians"
+      "id": "ee8aa5d9-59fa-4aff-80d0-15284b7bd65e",
+      "title": "LET IT BURN",
+      "artist": "KNTRLVRLST",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/ee8aa5d9-59fa-4aff-80d0-15284b7bd65e/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/ee8aa5d9-59fa-4aff-80d0-15284b7bd65e/let-it-burn"
+    },
+    {
+      "id": "7de1437e-787b-4614-81cd-7cb25685d0a9",
+      "title": "MAKE ME FEEL",
+      "artist": "Sickmode",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/7de1437e-787b-4614-81cd-7cb25685d0a9/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/7de1437e-787b-4614-81cd-7cb25685d0a9/make-me-feel"
+    },
+    {
+      "id": "365eefbf-5cb9-4bc8-8251-20dcd8c798bf",
+      "title": "Maze Of Scars",
+      "artist": "Unresolved",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/365eefbf-5cb9-4bc8-8251-20dcd8c798bf/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/365eefbf-5cb9-4bc8-8251-20dcd8c798bf/maze-of-scars"
     },
     {
       "id": "8f57b4f6-14c7-43af-81bf-0265ae4bd89a",
