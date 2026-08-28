@@ -1,53 +1,61 @@
 {
-  "updatedAt": "2026-08-27T16:09:25.354Z",
+  "updatedAt": "2026-08-28T17:10:50.196Z",
   "releases": [
     {
-      "id": "95acf9fa-a8b3-4a33-b34a-ce709b09a38f",
-      "title": "Poison",
-      "artist": "Aidos",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/95acf9fa-a8b3-4a33-b34a-ce709b09a38f/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/95acf9fa-a8b3-4a33-b34a-ce709b09a38f/poison"
+      "id": "8e67146c-0d8c-4338-a824-4998b0680b5c",
+      "title": "My Mind",
+      "artist": "Lucion",
+      "mix": "Pro Mix",
+      "image": "https://hardstyle.com/track_image/8e67146c-0d8c-4338-a824-4998b0680b5c/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/8e67146c-0d8c-4338-a824-4998b0680b5c/my-mind"
     },
     {
-      "id": "3a18a8c6-6fdc-4142-8b09-61ae38c454ec",
-      "title": "Your Place",
-      "artist": "Ian Howard",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/3a18a8c6-6fdc-4142-8b09-61ae38c454ec/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/3a18a8c6-6fdc-4142-8b09-61ae38c454ec/your-place"
-    },
-    {
-      "id": "661cf87f-c0e8-445e-85d1-b800ba19965e",
-      "title": "Are U Ready?!",
-      "artist": "Exoform",
+      "id": "6bfe7580-884b-45fd-8fda-6e406ecc1272",
+      "title": "HEAR THE CROWD",
+      "artist": "Reller",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/661cf87f-c0e8-445e-85d1-b800ba19965e/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/661cf87f-c0e8-445e-85d1-b800ba19965e/are-u-ready"
+      "image": "https://hardstyle.com/track_image/6bfe7580-884b-45fd-8fda-6e406ecc1272/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/6bfe7580-884b-45fd-8fda-6e406ecc1272/hear-the-crowd"
     },
     {
-      "id": "ee8aa5d9-59fa-4aff-80d0-15284b7bd65e",
-      "title": "LET IT BURN",
-      "artist": "KNTRLVRLST",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/ee8aa5d9-59fa-4aff-80d0-15284b7bd65e/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/ee8aa5d9-59fa-4aff-80d0-15284b7bd65e/let-it-burn"
+      "id": "eb481af8-5a88-49ae-b25a-011ed6a2f136",
+      "title": "Stars",
+      "artist": "Comando Tropel",
+      "mix": "Makina Mix",
+      "image": "https://hardstyle.com/track_image/eb481af8-5a88-49ae-b25a-011ed6a2f136/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/eb481af8-5a88-49ae-b25a-011ed6a2f136/stars"
     },
     {
-      "id": "7de1437e-787b-4614-81cd-7cb25685d0a9",
-      "title": "MAKE ME FEEL",
-      "artist": "Sickmode",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/7de1437e-787b-4614-81cd-7cb25685d0a9/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/7de1437e-787b-4614-81cd-7cb25685d0a9/make-me-feel"
+      "id": "5ddf2e0c-27c8-4562-9bf3-649144b76b4d",
+      "title": "The Night",
+      "artist": "Comando Tropel",
+      "mix": "Dance Mix",
+      "image": "https://hardstyle.com/track_image/5ddf2e0c-27c8-4562-9bf3-649144b76b4d/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/5ddf2e0c-27c8-4562-9bf3-649144b76b4d/the-night"
     },
     {
-      "id": "365eefbf-5cb9-4bc8-8251-20dcd8c798bf",
-      "title": "Maze Of Scars",
-      "artist": "Unresolved",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/365eefbf-5cb9-4bc8-8251-20dcd8c798bf/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/365eefbf-5cb9-4bc8-8251-20dcd8c798bf/maze-of-scars"
+      "id": "7416fd6e-1efa-4e0f-afc0-4bb201a0846e",
+      "title": "The Night",
+      "artist": "Comando Tropel",
+      "mix": "Makina Mix",
+      "image": "https://hardstyle.com/track_image/7416fd6e-1efa-4e0f-afc0-4bb201a0846e/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/7416fd6e-1efa-4e0f-afc0-4bb201a0846e/the-night"
+    },
+    {
+      "id": "7061fef8-f479-4d0c-afcf-5a4af14a0bac",
+      "title": "It's A Battle Everyday",
+      "artist": "Bulletproof",
+      "mix": "Rosbeek Remix",
+      "image": "https://hardstyle.com/track_image/7061fef8-f479-4d0c-afcf-5a4af14a0bac/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/7061fef8-f479-4d0c-afcf-5a4af14a0bac/it-s-a-battle-everyday"
+    },
+    {
+      "id": "c0ff8755-7c0d-40cd-978d-d1f610f12cfc",
+      "title": "The Fly Is Still Alive",
+      "artist": "Doctor X",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/c0ff8755-7c0d-40cd-978d-d1f610f12cfc/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/c0ff8755-7c0d-40cd-978d-d1f610f12cfc"
     },
     {
       "id": "8f57b4f6-14c7-43af-81bf-0265ae4bd89a",
@@ -72,14 +80,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/6d359eef-adfd-48b1-8008-a0346ab325d5/250x250/335",
       "link": "https://hardstyle.com/en/tracks/6d359eef-adfd-48b1-8008-a0346ab325d5"
-    },
-    {
-      "id": "e5bf7d9d-2be4-48d2-9223-e5841bc35fb1",
-      "title": "Complete Madness EP",
-      "artist": "Dysistor",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/e5bf7d9d-2be4-48d2-9223-e5841bc35fb1/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/e5bf7d9d-2be4-48d2-9223-e5841bc35fb1"
     }
   ]
 }
