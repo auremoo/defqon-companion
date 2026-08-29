@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-08-28T17:10:50.196Z",
+  "updatedAt": "2026-08-29T11:29:31.488Z",
   "releases": [
+    {
+      "id": "7e874dfd-2042-4800-81bc-3c7ffed94cbb",
+      "title": "Ragged Wings",
+      "artist": "Dreaman",
+      "mix": "Radio Mix",
+      "image": "https://hardstyle.com/track_image/7e874dfd-2042-4800-81bc-3c7ffed94cbb/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/7e874dfd-2042-4800-81bc-3c7ffed94cbb/ragged-wings"
+    },
+    {
+      "id": "9ca2a87c-f6b3-4b6f-845f-8ed644b1ce7e",
+      "title": "Ragged Wings",
+      "artist": "Dreaman",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/9ca2a87c-f6b3-4b6f-845f-8ed644b1ce7e/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/9ca2a87c-f6b3-4b6f-845f-8ed644b1ce7e/ragged-wings"
+    },
+    {
+      "id": "fc07febc-023b-45b2-a4b3-e4d172351132",
+      "title": "CULT",
+      "artist": "DEEZL",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/fc07febc-023b-45b2-a4b3-e4d172351132/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/fc07febc-023b-45b2-a4b3-e4d172351132/cult"
+    },
     {
       "id": "8e67146c-0d8c-4338-a824-4998b0680b5c",
       "title": "My Mind",
@@ -24,30 +48,6 @@
       "mix": "Makina Mix",
       "image": "https://hardstyle.com/track_image/eb481af8-5a88-49ae-b25a-011ed6a2f136/250x250/335",
       "link": "https://hardstyle.com/en/tracks/eb481af8-5a88-49ae-b25a-011ed6a2f136/stars"
-    },
-    {
-      "id": "5ddf2e0c-27c8-4562-9bf3-649144b76b4d",
-      "title": "The Night",
-      "artist": "Comando Tropel",
-      "mix": "Dance Mix",
-      "image": "https://hardstyle.com/track_image/5ddf2e0c-27c8-4562-9bf3-649144b76b4d/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/5ddf2e0c-27c8-4562-9bf3-649144b76b4d/the-night"
-    },
-    {
-      "id": "7416fd6e-1efa-4e0f-afc0-4bb201a0846e",
-      "title": "The Night",
-      "artist": "Comando Tropel",
-      "mix": "Makina Mix",
-      "image": "https://hardstyle.com/track_image/7416fd6e-1efa-4e0f-afc0-4bb201a0846e/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/7416fd6e-1efa-4e0f-afc0-4bb201a0846e/the-night"
-    },
-    {
-      "id": "7061fef8-f479-4d0c-afcf-5a4af14a0bac",
-      "title": "It's A Battle Everyday",
-      "artist": "Bulletproof",
-      "mix": "Rosbeek Remix",
-      "image": "https://hardstyle.com/track_image/7061fef8-f479-4d0c-afcf-5a4af14a0bac/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/7061fef8-f479-4d0c-afcf-5a4af14a0bac/it-s-a-battle-everyday"
     },
     {
       "id": "c0ff8755-7c0d-40cd-978d-d1f610f12cfc",
