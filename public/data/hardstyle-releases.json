@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-08-30T10:17:25.083Z",
+  "updatedAt": "2026-08-31T11:24:12.809Z",
   "releases": [
+    {
+      "id": "b1304957-a672-4960-8c77-db51ee8ec383",
+      "title": "Nothing Left To Lose",
+      "artist": "Steff Little",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/b1304957-a672-4960-8c77-db51ee8ec383/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/b1304957-a672-4960-8c77-db51ee8ec383/nothing-left-to-lose"
+    },
+    {
+      "id": "d56b0fd0-5956-4cb9-a6de-81cce0395bbf",
+      "title": "Run Into The Light",
+      "artist": "Nandi Dj",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/d56b0fd0-5956-4cb9-a6de-81cce0395bbf/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/d56b0fd0-5956-4cb9-a6de-81cce0395bbf/run-into-the-light"
+    },
+    {
+      "id": "67d0ce9f-51d2-4fc7-8269-874b8dbfd83d",
+      "title": "just dance",
+      "artist": "Monkey Monsta",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/67d0ce9f-51d2-4fc7-8269-874b8dbfd83d/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/67d0ce9f-51d2-4fc7-8269-874b8dbfd83d/just-dance"
+    },
     {
       "id": "121d8344-e37a-4c64-80fb-4c7aae2a361a",
       "title": "Naughty",
@@ -24,30 +48,6 @@
       "mix": "Original Mix",
       "image": "https://hardstyle.com/track_image/9ca2a87c-f6b3-4b6f-845f-8ed644b1ce7e/250x250/335",
       "link": "https://hardstyle.com/en/tracks/9ca2a87c-f6b3-4b6f-845f-8ed644b1ce7e/ragged-wings"
-    },
-    {
-      "id": "fc07febc-023b-45b2-a4b3-e4d172351132",
-      "title": "CULT",
-      "artist": "DEEZL",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/fc07febc-023b-45b2-a4b3-e4d172351132/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/fc07febc-023b-45b2-a4b3-e4d172351132/cult"
-    },
-    {
-      "id": "8e67146c-0d8c-4338-a824-4998b0680b5c",
-      "title": "My Mind",
-      "artist": "Lucion",
-      "mix": "Pro Mix",
-      "image": "https://hardstyle.com/track_image/8e67146c-0d8c-4338-a824-4998b0680b5c/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/8e67146c-0d8c-4338-a824-4998b0680b5c/my-mind"
-    },
-    {
-      "id": "6bfe7580-884b-45fd-8fda-6e406ecc1272",
-      "title": "HEAR THE CROWD",
-      "artist": "Reller",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/6bfe7580-884b-45fd-8fda-6e406ecc1272/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/6bfe7580-884b-45fd-8fda-6e406ecc1272/hear-the-crowd"
     },
     {
       "id": "c0ff8755-7c0d-40cd-978d-d1f610f12cfc",
