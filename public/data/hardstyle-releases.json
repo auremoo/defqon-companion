@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-08-31T11:24:12.809Z",
+  "updatedAt": "2026-09-01T09:47:26.858Z",
   "releases": [
+    {
+      "id": "e25cc2b3-3fc9-435f-83a6-a87cfdcea264",
+      "title": "Phoenix",
+      "artist": "Fran Deliro",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/e25cc2b3-3fc9-435f-83a6-a87cfdcea264/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/e25cc2b3-3fc9-435f-83a6-a87cfdcea264/phoenix"
+    },
+    {
+      "id": "0c191015-c09f-40e9-bf13-3bc3d0348dbf",
+      "title": "Phoenix",
+      "artist": "Fran Deliro",
+      "mix": "Radio Edit",
+      "image": "https://hardstyle.com/track_image/0c191015-c09f-40e9-bf13-3bc3d0348dbf/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/0c191015-c09f-40e9-bf13-3bc3d0348dbf/phoenix"
+    },
+    {
+      "id": "32719a76-41f0-4fb1-abd2-82bee2448102",
+      "title": "Virtual Dreams",
+      "artist": "Vinylgroover",
+      "mix": "DJ Evo Extended Remix",
+      "image": "https://hardstyle.com/track_image/32719a76-41f0-4fb1-abd2-82bee2448102/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/32719a76-41f0-4fb1-abd2-82bee2448102/virtual-dreams"
+    },
     {
       "id": "b1304957-a672-4960-8c77-db51ee8ec383",
       "title": "Nothing Left To Lose",
@@ -21,33 +45,9 @@
       "id": "67d0ce9f-51d2-4fc7-8269-874b8dbfd83d",
       "title": "just dance",
       "artist": "Monkey Monsta",
-      "mix": "",
+      "mix": "Original Mix",
       "image": "https://hardstyle.com/track_image/67d0ce9f-51d2-4fc7-8269-874b8dbfd83d/250x250/335",
       "link": "https://hardstyle.com/en/tracks/67d0ce9f-51d2-4fc7-8269-874b8dbfd83d/just-dance"
-    },
-    {
-      "id": "121d8344-e37a-4c64-80fb-4c7aae2a361a",
-      "title": "Naughty",
-      "artist": "David Murphy Dj",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/121d8344-e37a-4c64-80fb-4c7aae2a361a/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/121d8344-e37a-4c64-80fb-4c7aae2a361a/naughty"
-    },
-    {
-      "id": "7e874dfd-2042-4800-81bc-3c7ffed94cbb",
-      "title": "Ragged Wings",
-      "artist": "Dreaman",
-      "mix": "Radio Mix",
-      "image": "https://hardstyle.com/track_image/7e874dfd-2042-4800-81bc-3c7ffed94cbb/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/7e874dfd-2042-4800-81bc-3c7ffed94cbb/ragged-wings"
-    },
-    {
-      "id": "9ca2a87c-f6b3-4b6f-845f-8ed644b1ce7e",
-      "title": "Ragged Wings",
-      "artist": "Dreaman",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/9ca2a87c-f6b3-4b6f-845f-8ed644b1ce7e/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/9ca2a87c-f6b3-4b6f-845f-8ed644b1ce7e/ragged-wings"
     },
     {
       "id": "c0ff8755-7c0d-40cd-978d-d1f610f12cfc",
