@@ -1,53 +1,61 @@
 {
-  "updatedAt": "2026-09-01T09:47:26.858Z",
+  "updatedAt": "2026-09-02T09:19:44.530Z",
   "releases": [
     {
-      "id": "e25cc2b3-3fc9-435f-83a6-a87cfdcea264",
-      "title": "Phoenix",
-      "artist": "Fran Deliro",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/e25cc2b3-3fc9-435f-83a6-a87cfdcea264/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/e25cc2b3-3fc9-435f-83a6-a87cfdcea264/phoenix"
+      "id": "08c5deb0-1432-4053-9c7a-d70ab581c02b",
+      "title": "Higher",
+      "artist": "Jesse Jax",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/08c5deb0-1432-4053-9c7a-d70ab581c02b/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/08c5deb0-1432-4053-9c7a-d70ab581c02b/higher"
     },
     {
-      "id": "0c191015-c09f-40e9-bf13-3bc3d0348dbf",
-      "title": "Phoenix",
-      "artist": "Fran Deliro",
-      "mix": "Radio Edit",
-      "image": "https://hardstyle.com/track_image/0c191015-c09f-40e9-bf13-3bc3d0348dbf/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/0c191015-c09f-40e9-bf13-3bc3d0348dbf/phoenix"
+      "id": "1e917c53-4805-41f4-9c8b-252400f7c1d8",
+      "title": "Walk Away",
+      "artist": "Bass Shaker",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/1e917c53-4805-41f4-9c8b-252400f7c1d8/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/1e917c53-4805-41f4-9c8b-252400f7c1d8/walk-away"
     },
     {
-      "id": "32719a76-41f0-4fb1-abd2-82bee2448102",
-      "title": "Virtual Dreams",
-      "artist": "Vinylgroover",
-      "mix": "DJ Evo Extended Remix",
-      "image": "https://hardstyle.com/track_image/32719a76-41f0-4fb1-abd2-82bee2448102/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/32719a76-41f0-4fb1-abd2-82bee2448102/virtual-dreams"
+      "id": "a6cb646b-c2e9-4866-b44b-829e4bff5508",
+      "title": "Hold Me",
+      "artist": "KVN",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/a6cb646b-c2e9-4866-b44b-829e4bff5508/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/a6cb646b-c2e9-4866-b44b-829e4bff5508/hold-me"
     },
     {
-      "id": "b1304957-a672-4960-8c77-db51ee8ec383",
-      "title": "Nothing Left To Lose",
-      "artist": "Steff Little",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/b1304957-a672-4960-8c77-db51ee8ec383/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/b1304957-a672-4960-8c77-db51ee8ec383/nothing-left-to-lose"
+      "id": "e57e1bef-1de3-424b-8b5f-fa0509043f09",
+      "title": "Old Town Road",
+      "artist": "KVN",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/e57e1bef-1de3-424b-8b5f-fa0509043f09/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/e57e1bef-1de3-424b-8b5f-fa0509043f09/old-town-road"
     },
     {
-      "id": "d56b0fd0-5956-4cb9-a6de-81cce0395bbf",
-      "title": "Run Into The Light",
-      "artist": "Nandi Dj",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/d56b0fd0-5956-4cb9-a6de-81cce0395bbf/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/d56b0fd0-5956-4cb9-a6de-81cce0395bbf/run-into-the-light"
+      "id": "89c58399-104e-44cf-89da-b5aaafc3d1af",
+      "title": "Secret Smile",
+      "artist": "KVN",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/89c58399-104e-44cf-89da-b5aaafc3d1af/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/89c58399-104e-44cf-89da-b5aaafc3d1af/secret-smile"
     },
     {
-      "id": "67d0ce9f-51d2-4fc7-8269-874b8dbfd83d",
-      "title": "just dance",
-      "artist": "Monkey Monsta",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/67d0ce9f-51d2-4fc7-8269-874b8dbfd83d/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/67d0ce9f-51d2-4fc7-8269-874b8dbfd83d/just-dance"
+      "id": "12d05113-7f40-4f79-af45-18f4293831da",
+      "title": "The Flyin' Dutchman",
+      "artist": "KVN",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/12d05113-7f40-4f79-af45-18f4293831da/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/12d05113-7f40-4f79-af45-18f4293831da/the-flyin-dutchman"
+    },
+    {
+      "id": "65dc0e2e-5554-4adc-a638-8b38f2d85b95",
+      "title": "Bass Demon",
+      "artist": "KVN",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/65dc0e2e-5554-4adc-a638-8b38f2d85b95/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/65dc0e2e-5554-4adc-a638-8b38f2d85b95"
     },
     {
       "id": "c0ff8755-7c0d-40cd-978d-d1f610f12cfc",
@@ -72,14 +80,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/ddd054c9-1761-4283-9d8d-bddd47b5486f/250x250/335",
       "link": "https://hardstyle.com/en/tracks/ddd054c9-1761-4283-9d8d-bddd47b5486f"
-    },
-    {
-      "id": "6d359eef-adfd-48b1-8008-a0346ab325d5",
-      "title": "W.A.T.A.",
-      "artist": "The Ancients",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/6d359eef-adfd-48b1-8008-a0346ab325d5/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/6d359eef-adfd-48b1-8008-a0346ab325d5"
     }
   ]
 }
