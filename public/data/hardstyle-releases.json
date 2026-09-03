@@ -1,53 +1,53 @@
 {
-  "updatedAt": "2026-09-02T09:19:44.530Z",
+  "updatedAt": "2026-09-03T09:29:33.241Z",
   "releases": [
     {
-      "id": "08c5deb0-1432-4053-9c7a-d70ab581c02b",
-      "title": "Higher",
-      "artist": "Jesse Jax",
+      "id": "c75f8dd1-f040-4110-8d5b-6c586dad97f9",
+      "title": "SYMBIOSIS",
+      "artist": "Unproven",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/08c5deb0-1432-4053-9c7a-d70ab581c02b/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/08c5deb0-1432-4053-9c7a-d70ab581c02b/higher"
+      "image": "https://hardstyle.com/track_image/c75f8dd1-f040-4110-8d5b-6c586dad97f9/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/c75f8dd1-f040-4110-8d5b-6c586dad97f9/symbiosis"
     },
     {
-      "id": "1e917c53-4805-41f4-9c8b-252400f7c1d8",
-      "title": "Walk Away",
-      "artist": "Bass Shaker",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/1e917c53-4805-41f4-9c8b-252400f7c1d8/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/1e917c53-4805-41f4-9c8b-252400f7c1d8/walk-away"
+      "id": "dce88914-3504-4bac-b2dd-fb6c3420f725",
+      "title": "Grand Masta",
+      "artist": "Kritikal Mass",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/dce88914-3504-4bac-b2dd-fb6c3420f725/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/dce88914-3504-4bac-b2dd-fb6c3420f725/grand-masta"
     },
     {
-      "id": "a6cb646b-c2e9-4866-b44b-829e4bff5508",
-      "title": "Hold Me",
-      "artist": "KVN",
+      "id": "964748df-de0c-4886-8fe4-0c6e484734ed",
+      "title": "End Of Days",
+      "artist": "Visionized",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/a6cb646b-c2e9-4866-b44b-829e4bff5508/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/a6cb646b-c2e9-4866-b44b-829e4bff5508/hold-me"
+      "image": "https://hardstyle.com/track_image/964748df-de0c-4886-8fe4-0c6e484734ed/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/964748df-de0c-4886-8fe4-0c6e484734ed/end-of-days"
     },
     {
-      "id": "e57e1bef-1de3-424b-8b5f-fa0509043f09",
-      "title": "Old Town Road",
-      "artist": "KVN",
+      "id": "90a25a2a-6585-4a68-b8da-6743fe7a486e",
+      "title": "Out Of My Head",
+      "artist": "Be Stronger",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/e57e1bef-1de3-424b-8b5f-fa0509043f09/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/e57e1bef-1de3-424b-8b5f-fa0509043f09/old-town-road"
+      "image": "https://hardstyle.com/track_image/90a25a2a-6585-4a68-b8da-6743fe7a486e/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/90a25a2a-6585-4a68-b8da-6743fe7a486e/out-of-my-head"
     },
     {
-      "id": "89c58399-104e-44cf-89da-b5aaafc3d1af",
-      "title": "Secret Smile",
-      "artist": "KVN",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/89c58399-104e-44cf-89da-b5aaafc3d1af/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/89c58399-104e-44cf-89da-b5aaafc3d1af/secret-smile"
+      "id": "14be37c6-ddca-4ef2-816f-509cd4e4113c",
+      "title": "CONTROL FREAK",
+      "artist": "Catalyst",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/14be37c6-ddca-4ef2-816f-509cd4e4113c/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/14be37c6-ddca-4ef2-816f-509cd4e4113c/control-freak"
     },
     {
-      "id": "12d05113-7f40-4f79-af45-18f4293831da",
-      "title": "The Flyin' Dutchman",
-      "artist": "KVN",
+      "id": "fa811acf-9821-4fcc-b696-8b56c954a2d5",
+      "title": "Monster",
+      "artist": "Vexxed",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/12d05113-7f40-4f79-af45-18f4293831da/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/12d05113-7f40-4f79-af45-18f4293831da/the-flyin-dutchman"
+      "image": "https://hardstyle.com/track_image/fa811acf-9821-4fcc-b696-8b56c954a2d5/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/fa811acf-9821-4fcc-b696-8b56c954a2d5/monster"
     },
     {
       "id": "65dc0e2e-5554-4adc-a638-8b38f2d85b95",
