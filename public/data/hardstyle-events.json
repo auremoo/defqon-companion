@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03T09:29:33.941Z",
+  "updatedAt": "2026-09-04T09:21:31.184Z",
   "events": [
     {
       "title": "Into The Madness Outdoor Festival 2026",
@@ -20,6 +20,51 @@
       "month": "September"
     },
     {
+      "title": "Bmberjck B-Day Bash",
+      "link": "https://hardstyle.com/en/events/5b12967f-aa23-497e-aa5d-ec88176100b1/bmberjck-b-day-bash",
+      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/5b12967f-aa23-497e-aa5d-ec88176100b1/images/logo_img.jpg",
+      "location": "Helden",
+      "time": "20:00 - 03:00",
+      "date": "2026-09-11",
+      "month": "September"
+    },
+    {
+      "title": "Raveolution - The Outdoor Reunion",
+      "link": "https://hardstyle.com/en/events/5794a40d-dd16-4050-9fe7-dd1947bd0440/raveolution-the-outdoor-reunion",
+      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/5794a40d-dd16-4050-9fe7-dd1947bd0440/images/logo_img.jpg",
+      "location": "Oss``",
+      "time": "12:00 - 00:00",
+      "date": "2026-09-12",
+      "month": "September"
+    },
+    {
+      "title": "Reignite Festival – Rise of the Phoenix",
+      "link": "https://hardstyle.com/en/events/9727da8a-847e-42a9-b589-80cb9068de8a/reignite-festival-rise-of-the-phoenix",
+      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/9727da8a-847e-42a9-b589-80cb9068de8a/images/logo_img.jpg",
+      "location": "Vinkel",
+      "time": "12:00 - 23:00",
+      "date": "2026-09-12",
+      "month": "September"
+    },
+    {
+      "title": "Jay Reeve presents Melodic Madness – We Are The Melody",
+      "link": "https://hardstyle.com/en/events/631c5ee0-80a1-48d9-956f-5c567e6041eb/jay-reeve-presents-melodic-madness-we-are-the-melody",
+      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/631c5ee0-80a1-48d9-956f-5c567e6041eb/images/logo_img.jpg",
+      "location": "Tilburg",
+      "time": "13:00 - 00:00",
+      "date": "2026-09-26",
+      "month": "September"
+    },
+    {
+      "title": "Supremacy 2026 – State of Distortion",
+      "link": "https://hardstyle.com/en/events/337cc3b7-e2f5-4fb4-8153-a0633cfadc7c/supremacy-2026-state-of-distortion",
+      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/337cc3b7-e2f5-4fb4-8153-a0633cfadc7c/images/logo_img.jpg",
+      "location": "'S-Hertogenbosch",
+      "time": "13:00 - 23:00",
+      "date": "2026-09-26",
+      "month": "September"
+    },
+    {
       "title": "Knockout Outdoor 2026",
       "link": "https://hardstyle.com/en/events/b548c6dc-5d0a-40d3-83b7-fec003ab0b5a/knockout-outdoor-2026",
       "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/b548c6dc-5d0a-40d3-83b7-fec003ab0b5a/images/logo_img.png",
@@ -29,6 +74,42 @@
       "month": "October"
     },
     {
+      "title": "Hard Bass 2026 – Journey Through Hardstyle",
+      "link": "https://hardstyle.com/en/events/4756b919-3c09-486b-b706-86d02ff08815/hard-bass-2026-journey-through-hardstyle",
+      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/4756b919-3c09-486b-b706-86d02ff08815/images/logo_img.png",
+      "location": "Arnhem",
+      "time": "21:00 - 07:00",
+      "date": "2026-10-10",
+      "month": "October"
+    },
+    {
+      "title": "Classified Outdoor: Off The Grid",
+      "link": "https://hardstyle.com/en/events/7cdcdb71-d4f9-4c7a-a33d-b48fb13777e8/classified-outdoor-off-the-grid",
+      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/7cdcdb71-d4f9-4c7a-a33d-b48fb13777e8/images/logo_img.jpg",
+      "location": "Elst",
+      "time": "12:00 - 23:00",
+      "date": "2026-10-17",
+      "month": "October"
+    },
+    {
+      "title": "Paul Elstak Presents ‘Wanna Play?’",
+      "link": "https://hardstyle.com/en/events/da7119a8-fe49-47af-907e-a01670cc5849/paul-elstak-presents-wanna-play",
+      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/da7119a8-fe49-47af-907e-a01670cc5849/images/logo_img.jpg",
+      "location": "Rotterdam",
+      "time": "15:00 - 23:00",
+      "date": "2026-11-07",
+      "month": "November"
+    },
+    {
+      "title": "REBELLiON Indoor 2026 – Break The System",
+      "link": "https://hardstyle.com/en/events/ede35774-6ce9-4627-ac80-ae2c4b381236/rebellion-indoor-2026-break-the-system",
+      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/ede35774-6ce9-4627-ac80-ae2c4b381236/images/logo_img.jpg",
+      "location": "Haaren",
+      "time": "11:30 - 00:00",
+      "date": "2026-11-14",
+      "month": "November"
+    },
+    {
       "title": "Loudness 2026",
       "link": "https://hardstyle.com/en/events/bd80582c-08e0-45de-be26-7387e5a12adc/loudness-2026",
       "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/bd80582c-08e0-45de-be26-7387e5a12adc/images/logo_img.png",
@@ -36,6 +117,15 @@
       "time": "23:00 - 07:00",
       "date": "2026-11-28",
       "month": "November"
+    },
+    {
+      "title": "Supremacy – Return to the Classics 2027",
+      "link": "https://hardstyle.com/en/events/dceb175b-dfbe-463d-992d-8c2269e81d89/supremacy-return-to-the-classics-2027",
+      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/dceb175b-dfbe-463d-992d-8c2269e81d89/images/logo_img.jpg",
+      "location": "Utrecht",
+      "time": "13:00 - 23:00",
+      "date": "2027-01-16",
+      "month": "January"
     }
   ]
 }

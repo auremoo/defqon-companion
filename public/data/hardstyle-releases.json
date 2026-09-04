@@ -1,53 +1,61 @@
 {
-  "updatedAt": "2026-09-03T09:29:33.241Z",
+  "updatedAt": "2026-09-04T09:21:30.496Z",
   "releases": [
     {
-      "id": "c75f8dd1-f040-4110-8d5b-6c586dad97f9",
-      "title": "SYMBIOSIS",
-      "artist": "Unproven",
+      "id": "54d85762-9f36-43ce-96ab-c5e15f7ab415",
+      "title": "Human Consciousness",
+      "artist": "Diztorted",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/c75f8dd1-f040-4110-8d5b-6c586dad97f9/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/c75f8dd1-f040-4110-8d5b-6c586dad97f9/symbiosis"
+      "image": "https://hardstyle.com/track_image/54d85762-9f36-43ce-96ab-c5e15f7ab415/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/54d85762-9f36-43ce-96ab-c5e15f7ab415/human-consciousness"
     },
     {
-      "id": "dce88914-3504-4bac-b2dd-fb6c3420f725",
-      "title": "Grand Masta",
-      "artist": "Kritikal Mass",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/dce88914-3504-4bac-b2dd-fb6c3420f725/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/dce88914-3504-4bac-b2dd-fb6c3420f725/grand-masta"
-    },
-    {
-      "id": "964748df-de0c-4886-8fe4-0c6e484734ed",
-      "title": "End Of Days",
-      "artist": "Visionized",
+      "id": "8f744da4-6588-4fef-a8fe-42759f9f11ba",
+      "title": "Turbo (Satirized & Aalst Turbo Saté Remix)",
+      "artist": "New Kids",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/964748df-de0c-4886-8fe4-0c6e484734ed/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/964748df-de0c-4886-8fe4-0c6e484734ed/end-of-days"
+      "image": "https://hardstyle.com/track_image/8f744da4-6588-4fef-a8fe-42759f9f11ba/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/8f744da4-6588-4fef-a8fe-42759f9f11ba/turbo-satirized-en-aalst-turbo-sate-remix"
     },
     {
-      "id": "90a25a2a-6585-4a68-b8da-6743fe7a486e",
-      "title": "Out Of My Head",
-      "artist": "Be Stronger",
+      "id": "db98a289-98e7-49c7-813f-69d71756401a",
+      "title": "Ey Buurman!",
+      "artist": "D-Stroy",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/90a25a2a-6585-4a68-b8da-6743fe7a486e/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/90a25a2a-6585-4a68-b8da-6743fe7a486e/out-of-my-head"
+      "image": "https://hardstyle.com/track_image/db98a289-98e7-49c7-813f-69d71756401a/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/db98a289-98e7-49c7-813f-69d71756401a/ey-buurman"
     },
     {
-      "id": "14be37c6-ddca-4ef2-816f-509cd4e4113c",
-      "title": "CONTROL FREAK",
-      "artist": "Catalyst",
+      "id": "ed894416-81d9-4e7a-be9b-aa31a17c4f09",
+      "title": "DO IT AGAIN",
+      "artist": "Silky Noize",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/ed894416-81d9-4e7a-be9b-aa31a17c4f09/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/ed894416-81d9-4e7a-be9b-aa31a17c4f09/do-it-again"
+    },
+    {
+      "id": "bca204cf-423e-484c-904d-466223d3e37f",
+      "title": "Underground",
+      "artist": "Desolate One",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/bca204cf-423e-484c-904d-466223d3e37f/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/bca204cf-423e-484c-904d-466223d3e37f/underground"
+    },
+    {
+      "id": "d41c01ef-0d25-4ae8-9709-abb8aa1c1e48",
+      "title": "Stay Here Forever",
+      "artist": "ANGUZ",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/d41c01ef-0d25-4ae8-9709-abb8aa1c1e48/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/d41c01ef-0d25-4ae8-9709-abb8aa1c1e48/stay-here-forever"
+    },
+    {
+      "id": "f36c32d4-56ba-4f6c-b28b-ac98768d451e",
+      "title": "Pulse Respond",
+      "artist": "Embrionyc",
       "mix": "",
-      "image": "https://hardstyle.com/track_image/14be37c6-ddca-4ef2-816f-509cd4e4113c/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/14be37c6-ddca-4ef2-816f-509cd4e4113c/control-freak"
-    },
-    {
-      "id": "fa811acf-9821-4fcc-b696-8b56c954a2d5",
-      "title": "Monster",
-      "artist": "Vexxed",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/fa811acf-9821-4fcc-b696-8b56c954a2d5/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/fa811acf-9821-4fcc-b696-8b56c954a2d5/monster"
+      "image": "https://hardstyle.com/track_image/f36c32d4-56ba-4f6c-b28b-ac98768d451e/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/f36c32d4-56ba-4f6c-b28b-ac98768d451e"
     },
     {
       "id": "65dc0e2e-5554-4adc-a638-8b38f2d85b95",
@@ -72,14 +80,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/8f57b4f6-14c7-43af-81bf-0265ae4bd89a/250x250/335",
       "link": "https://hardstyle.com/en/tracks/8f57b4f6-14c7-43af-81bf-0265ae4bd89a"
-    },
-    {
-      "id": "ddd054c9-1761-4283-9d8d-bddd47b5486f",
-      "title": "Choosin' Texas(Remixes)",
-      "artist": "Whiskee Blazer",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/ddd054c9-1761-4283-9d8d-bddd47b5486f/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/ddd054c9-1761-4283-9d8d-bddd47b5486f"
     }
   ]
 }
