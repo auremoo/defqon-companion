@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-09-04T09:21:30.496Z",
+  "updatedAt": "2026-09-05T08:51:02.481Z",
   "releases": [
+    {
+      "id": "2eba3493-8b5f-486a-95ed-c394e3f8d1b5",
+      "title": "Change",
+      "artist": "S S Khan Video Factory",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/2eba3493-8b5f-486a-95ed-c394e3f8d1b5/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/2eba3493-8b5f-486a-95ed-c394e3f8d1b5/change"
+    },
+    {
+      "id": "10ba5306-2004-4c11-ba49-140b8bf2a7c7",
+      "title": "Pareshan",
+      "artist": "S S Khan Video Factory",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/10ba5306-2004-4c11-ba49-140b8bf2a7c7/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/10ba5306-2004-4c11-ba49-140b8bf2a7c7/pareshan"
+    },
+    {
+      "id": "9981ce59-7d02-42ec-b995-fa624af0bba0",
+      "title": "Don't Look Back",
+      "artist": "Malcolm Jack",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/9981ce59-7d02-42ec-b995-fa624af0bba0/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/9981ce59-7d02-42ec-b995-fa624af0bba0/don-t-look-back"
+    },
     {
       "id": "54d85762-9f36-43ce-96ab-c5e15f7ab415",
       "title": "Human Consciousness",
@@ -24,30 +48,6 @@
       "mix": "Extended Mix",
       "image": "https://hardstyle.com/track_image/db98a289-98e7-49c7-813f-69d71756401a/250x250/335",
       "link": "https://hardstyle.com/en/tracks/db98a289-98e7-49c7-813f-69d71756401a/ey-buurman"
-    },
-    {
-      "id": "ed894416-81d9-4e7a-be9b-aa31a17c4f09",
-      "title": "DO IT AGAIN",
-      "artist": "Silky Noize",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/ed894416-81d9-4e7a-be9b-aa31a17c4f09/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/ed894416-81d9-4e7a-be9b-aa31a17c4f09/do-it-again"
-    },
-    {
-      "id": "bca204cf-423e-484c-904d-466223d3e37f",
-      "title": "Underground",
-      "artist": "Desolate One",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/bca204cf-423e-484c-904d-466223d3e37f/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/bca204cf-423e-484c-904d-466223d3e37f/underground"
-    },
-    {
-      "id": "d41c01ef-0d25-4ae8-9709-abb8aa1c1e48",
-      "title": "Stay Here Forever",
-      "artist": "ANGUZ",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/d41c01ef-0d25-4ae8-9709-abb8aa1c1e48/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/d41c01ef-0d25-4ae8-9709-abb8aa1c1e48/stay-here-forever"
     },
     {
       "id": "f36c32d4-56ba-4f6c-b28b-ac98768d451e",
