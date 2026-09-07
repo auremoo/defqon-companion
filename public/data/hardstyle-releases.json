@@ -1,53 +1,53 @@
 {
-  "updatedAt": "2026-09-06T09:10:33.706Z",
+  "updatedAt": "2026-09-07T09:58:39.503Z",
   "releases": [
     {
-      "id": "2eba3493-8b5f-486a-95ed-c394e3f8d1b5",
-      "title": "Change",
-      "artist": "S S Khan Video Factory",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/2eba3493-8b5f-486a-95ed-c394e3f8d1b5/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/2eba3493-8b5f-486a-95ed-c394e3f8d1b5/change"
-    },
-    {
-      "id": "10ba5306-2004-4c11-ba49-140b8bf2a7c7",
-      "title": "Pareshan",
-      "artist": "S S Khan Video Factory",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/10ba5306-2004-4c11-ba49-140b8bf2a7c7/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/10ba5306-2004-4c11-ba49-140b8bf2a7c7/pareshan"
-    },
-    {
-      "id": "9981ce59-7d02-42ec-b995-fa624af0bba0",
-      "title": "Don't Look Back",
-      "artist": "Malcolm Jack",
+      "id": "2ff82d1e-7384-4242-88f3-0eda5456f8e9",
+      "title": "Pégate Más A Mí",
+      "artist": "DJ OGGY",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/9981ce59-7d02-42ec-b995-fa624af0bba0/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/9981ce59-7d02-42ec-b995-fa624af0bba0/don-t-look-back"
+      "image": "https://hardstyle.com/track_image/2ff82d1e-7384-4242-88f3-0eda5456f8e9/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/2ff82d1e-7384-4242-88f3-0eda5456f8e9/pegate-mas-a-mi"
     },
     {
-      "id": "54d85762-9f36-43ce-96ab-c5e15f7ab415",
-      "title": "Human Consciousness",
-      "artist": "Diztorted",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/54d85762-9f36-43ce-96ab-c5e15f7ab415/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/54d85762-9f36-43ce-96ab-c5e15f7ab415/human-consciousness"
+      "id": "b3dbf39f-a05f-497e-9ea5-e57ec6a8decd",
+      "title": "Pégate Más A Mí",
+      "artist": "DJ OGGY",
+      "mix": "Radio Edit",
+      "image": "https://hardstyle.com/track_image/b3dbf39f-a05f-497e-9ea5-e57ec6a8decd/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/b3dbf39f-a05f-497e-9ea5-e57ec6a8decd/pegate-mas-a-mi"
     },
     {
-      "id": "8f744da4-6588-4fef-a8fe-42759f9f11ba",
-      "title": "Turbo (Satirized & Aalst Turbo Saté Remix)",
-      "artist": "New Kids",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/8f744da4-6588-4fef-a8fe-42759f9f11ba/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/8f744da4-6588-4fef-a8fe-42759f9f11ba/turbo-satirized-en-aalst-turbo-sate-remix"
+      "id": "17b4c5c2-a085-49d8-bd5c-a246caaaa385",
+      "title": "HOLD YOU AGAIN",
+      "artist": "Squibz",
+      "mix": "Sunset Slammers",
+      "image": "https://hardstyle.com/track_image/17b4c5c2-a085-49d8-bd5c-a246caaaa385/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/17b4c5c2-a085-49d8-bd5c-a246caaaa385/hold-you-again"
     },
     {
-      "id": "db98a289-98e7-49c7-813f-69d71756401a",
-      "title": "Ey Buurman!",
-      "artist": "D-Stroy",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/db98a289-98e7-49c7-813f-69d71756401a/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/db98a289-98e7-49c7-813f-69d71756401a/ey-buurman"
+      "id": "d3a78758-bb47-423b-b2e0-2ce4d667529c",
+      "title": "MIDNIGHT",
+      "artist": "Stilts",
+      "mix": "Sunset Slammers",
+      "image": "https://hardstyle.com/track_image/d3a78758-bb47-423b-b2e0-2ce4d667529c/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/d3a78758-bb47-423b-b2e0-2ce4d667529c/midnight"
+    },
+    {
+      "id": "b97a374d-3f95-4de3-9208-0a71284ef217",
+      "title": "VICTORIAS BELIEVERS",
+      "artist": "HONOKA",
+      "mix": "Sunset Slammers",
+      "image": "https://hardstyle.com/track_image/b97a374d-3f95-4de3-9208-0a71284ef217/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/b97a374d-3f95-4de3-9208-0a71284ef217/victorias-believers"
+    },
+    {
+      "id": "517e6923-a1b0-4d20-8f7b-31a4887ebc64",
+      "title": "HIGHER",
+      "artist": "Driftphase",
+      "mix": "Sunset Slammers",
+      "image": "https://hardstyle.com/track_image/517e6923-a1b0-4d20-8f7b-31a4887ebc64/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/517e6923-a1b0-4d20-8f7b-31a4887ebc64/higher"
     },
     {
       "id": "f36c32d4-56ba-4f6c-b28b-ac98768d451e",
