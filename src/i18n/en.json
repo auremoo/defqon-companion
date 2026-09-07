@@ -24,7 +24,7 @@
       "past": "See you next year!"
     },
     "theme": "Sacred Oath",
-    "dates": "June 25 \u2013 28, 2026",
+    "dates": "June 25 – 28, 2026",
     "location": "Biddinghuizen, Netherlands",
     "playlist": "Get Hyped",
     "quickLinks": "Quick Links",
@@ -100,7 +100,7 @@
     "listenOnSoundCloud": "SoundCloud",
     "red": {
       "style": "Euphoric Hardstyle",
-      "subtitle": "Main stage \u2014 the heart of Defqon.1",
+      "subtitle": "Main stage — the heart of Defqon.1",
       "short": "The legendary main stage where the biggest names in hardstyle perform.",
       "long": "RED is where the magic happens. The main stage hosts the most iconic hardstyle artists, delivering euphoric melodies and powerful kicks to tens of thousands of fans. This is where the opening ceremonies, anthem reveals, and legendary closing shows take place.",
       "vibe": "Euphoric, epic, emotional"
@@ -116,7 +116,7 @@
       "style": "Hardcore",
       "subtitle": "Pure hardcore",
       "short": "Faster, harder, louder. The home of hardcore.",
-      "long": "BLACK is the domain of hardcore \u2014 faster BPMs, distorted kicks, and relentless energy. This stage pushes the limits of intensity and is beloved by the most dedicated hardcore fans.",
+      "long": "BLACK is the domain of hardcore — faster BPMs, distorted kicks, and relentless energy. This stage pushes the limits of intensity and is beloved by the most dedicated hardcore fans.",
       "vibe": "Extreme, relentless, powerful"
     },
     "yellow": {
@@ -144,7 +144,7 @@
       "style": "Industrial Hardcore",
       "subtitle": "Mechanical, metallic, industrial",
       "short": "Where hardcore meets industrial. Cold, hard, metallic.",
-      "long": "SILVER channels an industrial aesthetic \u2014 think mechanical rhythms, metallic textures, and hardcore beats that feel like they belong in a dystopian factory. A niche but fiercely loyal audience.",
+      "long": "SILVER channels an industrial aesthetic — think mechanical rhythms, metallic textures, and hardcore beats that feel like they belong in a dystopian factory. A niche but fiercely loyal audience.",
       "vibe": "Mechanical, cold, dystopian"
     },
     "gold": {
@@ -183,20 +183,20 @@
       "title": "What is Hardstyle?",
       "text": "Hardstyle is a genre of electronic dance music born in the early 2000s in the Netherlands. It's characterized by its hard-hitting kick drums, euphoric melodies, and intense energy. The genre typically ranges from 150 to 160 BPM.",
       "subgenres": "Subgenres at Defqon.1",
-      "euphoric": "Euphoric Hardstyle (RED) \u2014 Melodic, uplifting, emotional. The most accessible subgenre with beautiful melodies over powerful kicks. 150\u2013160 BPM.",
-      "raw": "Raw Hardstyle (BLUE) \u2014 Darker, more aggressive kicks and screeches. Less melody, more raw energy and industrial sounds. 150\u2013160 BPM.",
-      "extraRaw": "Extra Raw (INDIGO) \u2014 Raw hardstyle pushed to the extreme. Industrial textures, brutal kicks, underground atmosphere. 150\u2013165 BPM.",
-      "hardcore": "Hardcore (BLACK) \u2014 Faster, harder, more extreme. Distorted kicks at 160\u2013200+ BPM. A genre of its own with deep roots in the Netherlands.",
-      "frenchcore": "Frenchcore (YELLOW) \u2014 Born in France, 190\u2013210 BPM, distorted kicks and intense drops. Pure energy on the dance floor.",
-      "uptempo": "Uptempo (YELLOW) \u2014 The bridge between hardcore and frenchcore. 180\u2013220 BPM, relentless tempo with bouncy kicks.",
-      "terror": "Terror (YELLOW) \u2014 The most extreme tempo: 200\u2013300+ BPM. Noisy, chaotic, not for the faint of heart.",
-      "industrial": "Industrial Hardcore (SILVER) \u2014 Where hardcore meets industrial music. Mechanical rhythms, metallic textures, dystopian vibes. 170\u2013200 BPM.",
-      "classic": "Classic/Early Hardstyle (MAGENTA) \u2014 The original sound from 2000\u20132008. Reverse bass, simpler melodies, nostalgic vibes. 140\u2013155 BPM.",
-      "earlyRave": "Early Rave / Gabber (GOLD) \u2014 The roots of the rave scene. 90s and early 2000s anthems, old-school gabber, millennium hardcore. 150\u2013180 BPM.",
-      "hardTrance": "Hard Trance (ORANGE) \u2014 Where trance meets hard dance. Driving basslines, euphoric builds and acid synths. The roots of many hardstyle artists.",
-      "hardTechno": "Hard Techno (GREEN) \u2014 The current crossover wave. Industrial techno meets hard dance energy. Some hardstyle artists' alter egos perform here.",
-      "dnb": "Drum & Bass (PINK) \u2014 Fast breakbeats at 170\u2013180 BPM. Introduced at Defqon.1 in 2025 with its own dedicated stage.",
-      "happyHardcore": "Happy Hardcore (UV) \u2014 Fast, joyful, and uplifting. 160\u2013180 BPM with pitched-up vocals and euphoric piano melodies. Think Darren Styles and Da Tweekaz crossovers."
+      "euphoric": "Euphoric Hardstyle (RED) — Melodic, uplifting, emotional. The most accessible subgenre with beautiful melodies over powerful kicks. 150–160 BPM.",
+      "raw": "Raw Hardstyle (BLUE) — Darker, more aggressive kicks and screeches. Less melody, more raw energy and industrial sounds. 150–160 BPM.",
+      "extraRaw": "Extra Raw (INDIGO) — Raw hardstyle pushed to the extreme. Industrial textures, brutal kicks, underground atmosphere. 150–165 BPM.",
+      "hardcore": "Hardcore (BLACK) — Faster, harder, more extreme. Distorted kicks at 160–200+ BPM. A genre of its own with deep roots in the Netherlands.",
+      "frenchcore": "Frenchcore (YELLOW) — Born in France, 190–210 BPM, distorted kicks and intense drops. Pure energy on the dance floor.",
+      "uptempo": "Uptempo (YELLOW) — The bridge between hardcore and frenchcore. 180–220 BPM, relentless tempo with bouncy kicks.",
+      "terror": "Terror (YELLOW) — The most extreme tempo: 200–300+ BPM. Noisy, chaotic, not for the faint of heart.",
+      "industrial": "Industrial Hardcore (SILVER) — Where hardcore meets industrial music. Mechanical rhythms, metallic textures, dystopian vibes. 170–200 BPM.",
+      "classic": "Classic/Early Hardstyle (MAGENTA) — The original sound from 2000–2008. Reverse bass, simpler melodies, nostalgic vibes. 140–155 BPM.",
+      "earlyRave": "Early Rave / Gabber (GOLD) — The roots of the rave scene. 90s and early 2000s anthems, old-school gabber, millennium hardcore. 150–180 BPM.",
+      "hardTrance": "Hard Trance (ORANGE) — Where trance meets hard dance. Driving basslines, euphoric builds and acid synths. The roots of many hardstyle artists.",
+      "hardTechno": "Hard Techno (GREEN) — The current crossover wave. Industrial techno meets hard dance energy. Some hardstyle artists' alter egos perform here.",
+      "dnb": "Drum & Bass (PINK) — Fast breakbeats at 170–180 BPM. Introduced at Defqon.1 in 2025 with its own dedicated stage.",
+      "happyHardcore": "Happy Hardcore (UV) — Fast, joyful, and uplifting. 160–180 BPM with pitched-up vocals and euphoric piano melodies. Think Darren Styles and Da Tweekaz crossovers."
     },
     "practical": {
       "title": "Practical Info",
@@ -215,21 +215,21 @@
     },
     "vocabulary": {
       "title": "Vocabulary",
-      "kick": "Kick \u2014 The heavy bass drum hit that defines hardstyle. The most important element of any track.",
-      "reverseBass": "Reverse Bass \u2014 A kick technique where the bass tail plays before the punch. Signature of early hardstyle.",
-      "breakdown": "Breakdown \u2014 The melodic mid-section of a track, building tension before the climax.",
-      "climax": "Climax \u2014 The peak moment when melody and kicks combine at full power. The moment everyone waits for.",
-      "screeches": "Screeches \u2014 High-pitched, distorted synthesizer sounds typical of raw hardstyle.",
-      "antiClimactic": "Anti-climax \u2014 When the build-up leads to a raw/unexpected drop instead of a melody. A raw hardstyle signature move.",
-      "bpm": "BPM \u2014 Beats Per Minute. Hardstyle is 150\u2013160, hardcore 160\u2013200+, frenchcore 190\u2013210, terror can go 300+.",
-      "gabber": "Gabber \u2014 Dutch hardcore movement from the 90s. Fast, aggressive, distorted. The ancestor of today's hardcore scene.",
-      "shuffle": "Melbourne Shuffle \u2014 The iconic dance style associated with hardstyle. Quick footwork, heel-toe sliding movements.",
-      "anthem": "Anthem \u2014 The official track of a festival edition, revealed at the event. Being chosen as anthem creator is the highest honor.",
-      "endshow": "Endshow \u2014 The spectacular closing performance of a stage, featuring fireworks, pyro, and a special DJ set.",
-      "powerHour": "POWER HOUR \u2014 Defqon.1's legendary moment: one hour of back-to-back hits, fireworks, and the famous left-right crowd movement.",
-      "qdance": "Q-dance \u2014 The Dutch event organizer behind Defqon.1, Qlimax, and many other hardstyle events. Founded in 1999.",
-      "hardBass": "Hardbass \u2014 Not to be confused with hardstyle. A fast, Russian electronic style. Sometimes jokingly played at festivals.",
-      "set": "Set \u2014 A DJ's performance. Typically 60 minutes at festivals. A B2B set means two DJs playing back-to-back."
+      "kick": "Kick — The heavy bass drum hit that defines hardstyle. The most important element of any track.",
+      "reverseBass": "Reverse Bass — A kick technique where the bass tail plays before the punch. Signature of early hardstyle.",
+      "breakdown": "Breakdown — The melodic mid-section of a track, building tension before the climax.",
+      "climax": "Climax — The peak moment when melody and kicks combine at full power. The moment everyone waits for.",
+      "screeches": "Screeches — High-pitched, distorted synthesizer sounds typical of raw hardstyle.",
+      "antiClimactic": "Anti-climax — When the build-up leads to a raw/unexpected drop instead of a melody. A raw hardstyle signature move.",
+      "bpm": "BPM — Beats Per Minute. Hardstyle is 150–160, hardcore 160–200+, frenchcore 190–210, terror can go 300+.",
+      "gabber": "Gabber — Dutch hardcore movement from the 90s. Fast, aggressive, distorted. The ancestor of today's hardcore scene.",
+      "shuffle": "Melbourne Shuffle — The iconic dance style associated with hardstyle. Quick footwork, heel-toe sliding movements.",
+      "anthem": "Anthem — The official track of a festival edition, revealed at the event. Being chosen as anthem creator is the highest honor.",
+      "endshow": "Endshow — The spectacular closing performance of a stage, featuring fireworks, pyro, and a special DJ set.",
+      "powerHour": "POWER HOUR — Defqon.1's legendary moment: one hour of back-to-back hits, fireworks, and the famous left-right crowd movement.",
+      "qdance": "Q-dance — The Dutch event organizer behind Defqon.1, Qlimax, and many other hardstyle events. Founded in 1999.",
+      "hardBass": "Hardbass — Not to be confused with hardstyle. A fast, Russian electronic style. Sometimes jokingly played at festivals.",
+      "set": "Set — A DJ's performance. Typically 60 minutes at festivals. A B2B set means two DJs playing back-to-back."
     }
   },
   "checklist": {
@@ -259,7 +259,7 @@
     "passwordMismatch": "Passwords don't match",
     "checkEmail": "Account created! Check your email to confirm your address, then log in.",
     "signupHint": "Your username is how friends find you",
-    "usernameHint": "Lowercase letters, numbers, - and _ only (3\u201320 chars)",
+    "usernameHint": "Lowercase letters, numbers, - and _ only (3–20 chars)",
     "loginPrompt": "Log in to sync with friends",
     "noAccount": "Don't have an account? Sign up",
     "hasAccount": "Already have an account? Log in"
@@ -305,7 +305,7 @@
     "markAttended": "I was there",
     "attended": "Attended",
     "goingTogether": "Going",
-    "buddyActive": "Going together this year \u2014 tap to remove",
+    "buddyActive": "Going together this year — tap to remove",
     "buddyInactive": "Tap to mark as going together this year",
     "officialAppNotice": "Exact set times may vary. Check the official Q-dance app for the up-to-date timetable.",
     "live": "LIVE",
@@ -333,7 +333,7 @@
     "rawHardstyle": "Raw Hardstyle 2026",
     "classics": "Hardstyle Classics",
     "hardcore2026": "Hardcore 2026",
-    "warriorWorkout": "Warrior Workout \u2014 Hardstyle Gym",
+    "warriorWorkout": "Warrior Workout — Hardstyle Gym",
     "top40": "Hardstyle Top 40",
     "qlimax": "Qlimax",
     "playlistsTab": "Playlists",
@@ -357,7 +357,7 @@
       "dbstf": {
         "bio": "Active since 2004, one of the longest-running and most respected duos in hardstyle. Celebrated for exceptional musicality, cinematic productions, and pioneering full-scale narrative live shows.",
         "fact": "Created the Defqon.1 2024 anthem and multiple other major festival anthems.",
-        "ghostStories": "Ghost Stories is a cinematic live show concept featuring D-Block & S-te-Fan alongside vocalist Evelyn Bakker \u2014 Diederik's sister, who started as a dancer before lending her voice to the project. The show features an original storyline, custom visuals, and exclusive tracks for each edition. Three chapters: Ghost Stories 1 (2022, AFAS Live Amsterdam), Ghost Stories 2 (2023), and Ghost Stories 3 (2024), each with its own narrative arc and soundtrack album. The final show took place in November 2025 for DBSTF's 20th anniversary. Widely considered one of the greatest hardstyle show concepts ever \u2014 it elevated the genre into a full narrative experience with film-quality storytelling."
+        "ghostStories": "Ghost Stories is a cinematic live show concept featuring D-Block & S-te-Fan alongside vocalist Evelyn Bakker — Diederik's sister, who started as a dancer before lending her voice to the project. The show features an original storyline, custom visuals, and exclusive tracks for each edition. Three chapters: Ghost Stories 1 (2022, AFAS Live Amsterdam), Ghost Stories 2 (2023), and Ghost Stories 3 (2024), each with its own narrative arc and soundtrack album. The final show took place in November 2025 for DBSTF's 20th anniversary. Widely considered one of the greatest hardstyle show concepts ever — it elevated the genre into a full narrative experience with film-quality storytelling."
       },
       "sound-rush": {
         "bio": "Quickly rose through the ranks with high-energy euphoric productions. Signed to Dirty Workz, they became one of the most consistent hitmakers in modern euphoric hardstyle.",
@@ -616,12 +616,20 @@
   "mainstage": {
     "title": "MainStage",
     "subtitle": "Official aftermovies · 2007–2025",
+    "subtitlePhotos": "Mainstage through the years · 2003–2026",
     "subtitleAfter": "Official aftermovies · 2007–2025",
     "subtitleAnthems": "Official anthems · 2003–2025",
     "tabAfter": "Aftermovies",
     "tabAnthems": "Anthems",
+    "tabPhotos": "Photos",
     "noVideo": "No aftermovie",
-    "credit": "Official aftermovies by Q-dance on YouTube"
+    "credit": "Official aftermovies by Q-dance on YouTube",
+    "photosEmpty": "No photos yet. Drop them in photos-src/mainstages/ and run npm run photos.",
+    "photosError": "Photos unavailable offline.",
+    "photosCredit": "Mainstage designs by Q-dance · personal archive",
+    "photoPrev": "Previous photo",
+    "photoNext": "Next photo",
+    "photoClose": "Close"
   },
   "path": {
     "label": "The Path",

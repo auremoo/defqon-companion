@@ -45,6 +45,22 @@ npm run build
 npm run preview
 ```
 
+## Mainstage photos
+
+The **Photos** tab of the MainStage page shows one card per edition, built from
+optimized images in `public/mainstages/`.
+
+To add or replace photos, drop the originals in `photos-src/mainstages/`
+(either `2024.jpg` for a single photo per edition, or a `2024/` folder for
+several), then run:
+
+```bash
+npm run photos
+```
+
+This regenerates the WebP output and `public/data/mainstage-photos.json`.
+Originals are not committed — see `photos-src/mainstages/README.md`.
+
 ## Tech stack
 
 | Layer | Technology |
@@ -68,6 +84,8 @@ src/
   lib/           # External service clients
   i18n/          # Translation files (en.json, fr.json)
 public/          # Static assets, PWA manifest, service worker
+  mainstages/    # Optimized mainstage photos, one folder per edition
+photos-src/      # Photo originals (not committed) — input for `npm run photos`
 docs/            # Specifications, architecture docs
 supabase/        # Database migrations
 ```

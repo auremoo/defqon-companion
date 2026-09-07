@@ -8,6 +8,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build && node scripts/inject-sw-precache.mjs",
     "lint": "eslint .",
+    "photos": "node scripts/build-mainstage-photos.mjs",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest"

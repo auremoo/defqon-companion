@@ -1,0 +1,247 @@
+{
+  "generatedAt": "2026-09-07T14:16:41.124Z",
+  "years": [
+    {
+      "year": 2026,
+      "photos": [
+        {
+          "src": "mainstages/2026/2026.webp",
+          "thumb": "mainstages/2026/2026-thumb.webp",
+          "width": 720,
+          "height": 405
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "photos": [
+        {
+          "src": "mainstages/2025/2025.webp",
+          "thumb": "mainstages/2025/2025-thumb.webp",
+          "width": 1024,
+          "height": 683
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "photos": [
+        {
+          "src": "mainstages/2024/2024.webp",
+          "thumb": "mainstages/2024/2024-thumb.webp",
+          "width": 1600,
+          "height": 1000
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "photos": [
+        {
+          "src": "mainstages/2023/2023.webp",
+          "thumb": "mainstages/2023/2023-thumb.webp",
+          "width": 1400,
+          "height": 933
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "photos": [
+        {
+          "src": "mainstages/2022/2022.webp",
+          "thumb": "mainstages/2022/2022-thumb.webp",
+          "width": 1024,
+          "height": 576
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "photos": [
+        {
+          "src": "mainstages/2019/2019.webp",
+          "thumb": "mainstages/2019/2019-thumb.webp",
+          "width": 1600,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "photos": [
+        {
+          "src": "mainstages/2018/2018.webp",
+          "thumb": "mainstages/2018/2018-thumb.webp",
+          "width": 1440,
+          "height": 810
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "photos": [
+        {
+          "src": "mainstages/2017/2017.webp",
+          "thumb": "mainstages/2017/2017-thumb.webp",
+          "width": 1600,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "photos": [
+        {
+          "src": "mainstages/2016/2016.webp",
+          "thumb": "mainstages/2016/2016-thumb.webp",
+          "width": 664,
+          "height": 385
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "photos": [
+        {
+          "src": "mainstages/2015/2015.webp",
+          "thumb": "mainstages/2015/2015-thumb.webp",
+          "width": 400,
+          "height": 225
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "photos": [
+        {
+          "src": "mainstages/2014/2014.webp",
+          "thumb": "mainstages/2014/2014-thumb.webp",
+          "width": 516,
+          "height": 387
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "photos": [
+        {
+          "src": "mainstages/2013/2013.webp",
+          "thumb": "mainstages/2013/2013-thumb.webp",
+          "width": 400,
+          "height": 267
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "photos": [
+        {
+          "src": "mainstages/2012/2012.webp",
+          "thumb": "mainstages/2012/2012-thumb.webp",
+          "width": 700,
+          "height": 344
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "photos": [
+        {
+          "src": "mainstages/2011/2011.webp",
+          "thumb": "mainstages/2011/2011-thumb.webp",
+          "width": 547,
+          "height": 365
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "photos": [
+        {
+          "src": "mainstages/2010/2010.webp",
+          "thumb": "mainstages/2010/2010-thumb.webp",
+          "width": 542,
+          "height": 369
+        }
+      ]
+    },
+    {
+      "year": 2009,
+      "photos": [
+        {
+          "src": "mainstages/2009/2009.webp",
+          "thumb": "mainstages/2009/2009-thumb.webp",
+          "width": 800,
+          "height": 533
+        }
+      ]
+    },
+    {
+      "year": 2008,
+      "photos": [
+        {
+          "src": "mainstages/2008/2008.webp",
+          "thumb": "mainstages/2008/2008-thumb.webp",
+          "width": 574,
+          "height": 348
+        }
+      ]
+    },
+    {
+      "year": 2007,
+      "photos": [
+        {
+          "src": "mainstages/2007/2007.webp",
+          "thumb": "mainstages/2007/2007-thumb.webp",
+          "width": 399,
+          "height": 501
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "photos": [
+        {
+          "src": "mainstages/2006/2006.webp",
+          "thumb": "mainstages/2006/2006-thumb.webp",
+          "width": 320,
+          "height": 240
+        }
+      ]
+    },
+    {
+      "year": 2005,
+      "photos": [
+        {
+          "src": "mainstages/2005/2005.webp",
+          "thumb": "mainstages/2005/2005-thumb.webp",
+          "width": 516,
+          "height": 387
+        }
+      ]
+    },
+    {
+      "year": 2004,
+      "photos": [
+        {
+          "src": "mainstages/2004/2004.webp",
+          "thumb": "mainstages/2004/2004-thumb.webp",
+          "width": 516,
+          "height": 387
+        }
+      ]
+    },
+    {
+      "year": 2003,
+      "photos": [
+        {
+          "src": "mainstages/2003/2003.webp",
+          "thumb": "mainstages/2003/2003-thumb.webp",
+          "width": 399,
+          "height": 501
+        }
+      ]
+    }
+  ]
+}

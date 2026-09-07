@@ -27,3 +27,8 @@ npm-debug.log*
 
 # TypeScript cache
 *.tsbuildinfo
+
+# Mainstage photo originals — only the optimized output in public/mainstages/ is versioned
+photos-src/**
+!photos-src/**/
+!photos-src/**/README.md

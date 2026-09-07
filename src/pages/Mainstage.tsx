@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import PageShell from '../components/PageShell'
 import { editionMetas } from '../data/editions'
+import MainstagePhotos from '../components/MainstagePhotos'
 
 // Verified against Q-dance official YouTube channel, July 2026
 const AFTERMOVIES: Record<number, string> = {
@@ -95,33 +96,52 @@ function AnthemRow({ a }: { a: Anthem }) {
   )
 }
 
-type Tab = 'aftermovies' | 'anthems'
+type Tab = 'photos' | 'aftermovies' | 'anthems'
+
+const TAB_LABEL_KEY: Record<Tab, string> = {
+  photos:      'mainstage.tabPhotos',
+  aftermovies: 'mainstage.tabAfter',
+  anthems:     'mainstage.tabAnthems',
+}
+
+const SUBTITLE_KEY: Record<Tab, string> = {
+  photos:      'mainstage.subtitlePhotos',
+  aftermovies: 'mainstage.subtitleAfter',
+  anthems:     'mainstage.subtitleAnthems',
+}
 
 export default function Mainstage() {
   const { t } = useTranslation()
-  const [tab, setTab] = useState<Tab>('aftermovies')
+  const [tab, setTab] = useState<Tab>('photos')
   const themeByYear = new Map(editionMetas.map((m) => [m.year, m.theme]))
+  const anthemByYear = useMemo(
+    () => new Map(ANTHEMS_NL.filter((a) => !a.note).map((a) => [a.year, `${a.artist} — ${a.title}`])),
+    []
+  )
 
   useEffect(() => { document.title = t('mainstage.title') + ' — Defqon Companion' }, [t])
 
   return (
-    <PageShell title={t('mainstage.title')} subtitle={tab === 'aftermovies' ? t('mainstage.subtitleAfter') : t('mainstage.subtitleAnthems')}>
+    <PageShell title={t('mainstage.title')} subtitle={t(SUBTITLE_KEY[tab])}>
       <div className="mx-auto w-full max-w-md">
 
         {/* Tab bar */}
         <div className="mb-4 flex rounded-xl border border-border bg-surface-card overflow-hidden">
-          {(['aftermovies', 'anthems'] as Tab[]).map((t_) => (
+          {(['photos', 'aftermovies', 'anthems'] as Tab[]).map((t_) => (
             <button
               key={t_}
               onClick={() => setTab(t_)}
-              className={`flex-1 py-2.5 text-xs font-semibold uppercase tracking-wider transition-colors ${
+              className={`flex-1 py-2.5 text-[11px] font-semibold uppercase tracking-wider transition-colors ${
                 tab === t_ ? 'bg-accent/15 text-accent' : 'text-text-muted hover:text-text-secondary'
               }`}
             >
-              {t_ === 'aftermovies' ? t('mainstage.tabAfter') : t('mainstage.tabAnthems')}
+              {t(TAB_LABEL_KEY[t_])}
             </button>
           ))}
         </div>
+
+        {/* ── Mainstage photos ─────────────────────────────── */}
+        {tab === 'photos' && <MainstagePhotos anthemByYear={anthemByYear} />}
 
         {/* ── Aftermovies grid ─────────────────────────────── */}
         {tab === 'aftermovies' && (
