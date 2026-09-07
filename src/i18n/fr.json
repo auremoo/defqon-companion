@@ -634,6 +634,8 @@
   "path": {
     "label": "The Path",
     "empty": "Pas encore configuré",
+    "loadError": "Chargement de ton Path impossible",
+    "retry": "Réessayer",
     "update": "Modifier",
     "setup": "Configurer",
     "rank": "Rang",

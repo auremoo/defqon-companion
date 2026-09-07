@@ -634,6 +634,8 @@
   "path": {
     "label": "The Path",
     "empty": "Not set up yet",
+    "loadError": "Couldn't load your Path",
+    "retry": "Retry",
     "update": "Update",
     "setup": "Set up",
     "rank": "Rank",
