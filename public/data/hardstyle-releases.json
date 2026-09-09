@@ -1,53 +1,61 @@
 {
-  "updatedAt": "2026-09-08T09:23:59.556Z",
+  "updatedAt": "2026-09-09T09:25:28.390Z",
   "releases": [
     {
-      "id": "afb37da9-694d-4d95-ab6e-20bc2924f73d",
-      "title": "Play The Game",
-      "artist": "DonkMan",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/afb37da9-694d-4d95-ab6e-20bc2924f73d/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/afb37da9-694d-4d95-ab6e-20bc2924f73d/play-the-game"
-    },
-    {
-      "id": "52d7886d-9d4f-4978-af2a-dceae27a83e6",
-      "title": "Beyond The Storm",
-      "artist": "Dj Neo",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/52d7886d-9d4f-4978-af2a-dceae27a83e6/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/52d7886d-9d4f-4978-af2a-dceae27a83e6/beyond-the-storm"
-    },
-    {
-      "id": "771e87ef-bdda-4a92-a66f-54b8f79099cd",
-      "title": "Don't Give A Fuck",
-      "artist": "SethroW",
+      "id": "037325d6-fae9-4ae4-896b-369d9e743ef8",
+      "title": "Gimme Bass",
+      "artist": "Jeff Jackz",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/771e87ef-bdda-4a92-a66f-54b8f79099cd/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/771e87ef-bdda-4a92-a66f-54b8f79099cd/don-t-give-a-fuck"
+      "image": "https://hardstyle.com/track_image/037325d6-fae9-4ae4-896b-369d9e743ef8/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/037325d6-fae9-4ae4-896b-369d9e743ef8/gimme-bass"
     },
     {
-      "id": "7655f0ad-7742-47ea-89c4-d693faf2aed8",
-      "title": "Nobody Likes The Records That You Play",
-      "artist": "SethroW",
+      "id": "bf2bcb77-c278-4fa2-af1b-3e00b8a72cf3",
+      "title": "Nature's Call",
+      "artist": "Codex",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/7655f0ad-7742-47ea-89c4-d693faf2aed8/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/7655f0ad-7742-47ea-89c4-d693faf2aed8/nobody-likes-the-records-that-you-play"
+      "image": "https://hardstyle.com/track_image/bf2bcb77-c278-4fa2-af1b-3e00b8a72cf3/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/bf2bcb77-c278-4fa2-af1b-3e00b8a72cf3/nature-s-call"
     },
     {
-      "id": "a53d2eb1-c700-41c8-bacb-3bd948ab5f9c",
-      "title": "A Little Higher",
-      "artist": "GHA",
+      "id": "f060a49b-9a6a-47ae-8ae7-58d615e3e358",
+      "title": "Hoover Time",
+      "artist": "Dj Tourist",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/a53d2eb1-c700-41c8-bacb-3bd948ab5f9c/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/a53d2eb1-c700-41c8-bacb-3bd948ab5f9c/a-little-higher"
+      "image": "https://hardstyle.com/track_image/f060a49b-9a6a-47ae-8ae7-58d615e3e358/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/f060a49b-9a6a-47ae-8ae7-58d615e3e358/hoover-time"
     },
     {
-      "id": "d1e6878f-9d6a-428a-8eaa-543a10d4229f",
-      "title": "Thunder Underground",
-      "artist": "GHA",
+      "id": "9c490028-4d40-488b-b795-8983628f73c4",
+      "title": "Requiem",
+      "artist": "DTAH",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/d1e6878f-9d6a-428a-8eaa-543a10d4229f/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/d1e6878f-9d6a-428a-8eaa-543a10d4229f/thunder-underground"
+      "image": "https://hardstyle.com/track_image/9c490028-4d40-488b-b795-8983628f73c4/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/9c490028-4d40-488b-b795-8983628f73c4/requiem"
+    },
+    {
+      "id": "29b414a8-bd8e-4ce8-b251-48216e02db41",
+      "title": "Fight Back",
+      "artist": "Cosy Nghtmre",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/29b414a8-bd8e-4ce8-b251-48216e02db41/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/29b414a8-bd8e-4ce8-b251-48216e02db41/fight-back"
+    },
+    {
+      "id": "28821e9a-ac35-4f78-b11f-140718609d1d",
+      "title": "Techno",
+      "artist": "Cosy Nghtmre",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/28821e9a-ac35-4f78-b11f-140718609d1d/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/28821e9a-ac35-4f78-b11f-140718609d1d/techno"
+    },
+    {
+      "id": "7d4890bc-b746-45e7-a3fd-d2ac5e45f861",
+      "title": "H-Core",
+      "artist": "Fear-E",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/7d4890bc-b746-45e7-a3fd-d2ac5e45f861/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/7d4890bc-b746-45e7-a3fd-d2ac5e45f861"
     },
     {
       "id": "f36c32d4-56ba-4f6c-b28b-ac98768d451e",
@@ -72,14 +80,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/c0ff8755-7c0d-40cd-978d-d1f610f12cfc/250x250/335",
       "link": "https://hardstyle.com/en/tracks/c0ff8755-7c0d-40cd-978d-d1f610f12cfc"
-    },
-    {
-      "id": "8f57b4f6-14c7-43af-81bf-0265ae4bd89a",
-      "title": "Groove Compilation",
-      "artist": "Various Artists",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/8f57b4f6-14c7-43af-81bf-0265ae4bd89a/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/8f57b4f6-14c7-43af-81bf-0265ae4bd89a"
     }
   ]
 }
