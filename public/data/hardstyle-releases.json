@@ -1,53 +1,61 @@
 {
-  "updatedAt": "2026-09-10T09:24:38.541Z",
+  "updatedAt": "2026-09-11T09:23:06.363Z",
   "releases": [
     {
-      "id": "1e70778a-5ba6-4f1d-9a31-6015c2854438",
-      "title": "BASSLINE WARRIOR",
-      "artist": "T.M.O.",
+      "id": "e750e173-73ba-40bf-8a9e-3c7a4358aaa9",
+      "title": "LOSE CONTROL",
+      "artist": "DRS",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/1e70778a-5ba6-4f1d-9a31-6015c2854438/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/1e70778a-5ba6-4f1d-9a31-6015c2854438/bassline-warrior"
+      "image": "https://hardstyle.com/track_image/e750e173-73ba-40bf-8a9e-3c7a4358aaa9/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/e750e173-73ba-40bf-8a9e-3c7a4358aaa9/lose-control"
     },
     {
-      "id": "0509ccc9-8d46-4546-9f87-ad6afb1867d6",
-      "title": "Start The Revolution",
-      "artist": "Intrust",
+      "id": "64eec4f2-4ce5-4dd9-9515-5ef1c0c06cd7",
+      "title": "From The Z",
+      "artist": "DIMMA",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/0509ccc9-8d46-4546-9f87-ad6afb1867d6/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/0509ccc9-8d46-4546-9f87-ad6afb1867d6/start-the-revolution"
+      "image": "https://hardstyle.com/track_image/64eec4f2-4ce5-4dd9-9515-5ef1c0c06cd7/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/64eec4f2-4ce5-4dd9-9515-5ef1c0c06cd7/from-the-z"
     },
     {
-      "id": "5393e8c6-2f79-40b8-8459-f3758d296fa9",
-      "title": "The Squeeze",
-      "artist": "ZIZA",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/5393e8c6-2f79-40b8-8459-f3758d296fa9/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/5393e8c6-2f79-40b8-8459-f3758d296fa9/the-squeeze"
+      "id": "3266f212-a78d-4f80-8f16-3b0c0861f8cf",
+      "title": "Cold As Ice",
+      "artist": "F. Noize",
+      "mix": "(Deviation Remix)",
+      "image": "https://hardstyle.com/track_image/3266f212-a78d-4f80-8f16-3b0c0861f8cf/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/3266f212-a78d-4f80-8f16-3b0c0861f8cf/cold-as-ice"
     },
     {
-      "id": "7b63e786-fc29-4ff9-b0ec-f77e6d2255cb",
-      "title": "HIGH OFF YOU",
-      "artist": "The Purge",
+      "id": "ddfaec15-188d-48de-91d3-96c3fa0288c4",
+      "title": "Blow Up The Spot",
+      "artist": "Karun",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/7b63e786-fc29-4ff9-b0ec-f77e6d2255cb/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/7b63e786-fc29-4ff9-b0ec-f77e6d2255cb/high-off-you"
+      "image": "https://hardstyle.com/track_image/ddfaec15-188d-48de-91d3-96c3fa0288c4/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/ddfaec15-188d-48de-91d3-96c3fa0288c4/blow-up-the-spot"
     },
     {
-      "id": "99c35d33-8dac-45a4-86f4-9ab819d35711",
-      "title": "Ascension",
-      "artist": "Krysis",
+      "id": "875b6ee8-e46c-4d02-ae12-25204d1559f7",
+      "title": "Ferrari",
+      "artist": "STV",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/99c35d33-8dac-45a4-86f4-9ab819d35711/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/99c35d33-8dac-45a4-86f4-9ab819d35711/ascension"
+      "image": "https://hardstyle.com/track_image/875b6ee8-e46c-4d02-ae12-25204d1559f7/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/875b6ee8-e46c-4d02-ae12-25204d1559f7/ferrari"
     },
     {
-      "id": "90eabc76-513a-4ef4-b603-e677e45ee9c9",
-      "title": "Plastic Crown",
-      "artist": "CDuggyz",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/90eabc76-513a-4ef4-b603-e677e45ee9c9/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/90eabc76-513a-4ef4-b603-e677e45ee9c9/plastic-crown"
+      "id": "cf85792a-0312-4cb7-b188-a93a10f08bd5",
+      "title": "The Storm",
+      "artist": "Sakyra",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/cf85792a-0312-4cb7-b188-a93a10f08bd5/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/cf85792a-0312-4cb7-b188-a93a10f08bd5/the-storm"
+    },
+    {
+      "id": "4e970487-4425-4c10-b23b-9956f05b5bac",
+      "title": "TOOLBOX VOLUME 4",
+      "artist": "Various Artists",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/4e970487-4425-4c10-b23b-9956f05b5bac/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/4e970487-4425-4c10-b23b-9956f05b5bac"
     },
     {
       "id": "7d4890bc-b746-45e7-a3fd-d2ac5e45f861",
@@ -72,14 +80,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/65dc0e2e-5554-4adc-a638-8b38f2d85b95/250x250/335",
       "link": "https://hardstyle.com/en/tracks/65dc0e2e-5554-4adc-a638-8b38f2d85b95"
-    },
-    {
-      "id": "c0ff8755-7c0d-40cd-978d-d1f610f12cfc",
-      "title": "The Fly Is Still Alive",
-      "artist": "Doctor X",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/c0ff8755-7c0d-40cd-978d-d1f610f12cfc/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/c0ff8755-7c0d-40cd-978d-d1f610f12cfc"
     }
   ]
 }
