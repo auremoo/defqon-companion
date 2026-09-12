@@ -1,6 +1,22 @@
 {
-  "updatedAt": "2026-09-11T09:23:06.363Z",
+  "updatedAt": "2026-09-12T09:02:53.488Z",
   "releases": [
+    {
+      "id": "69061172-bdaf-4c36-8d16-38f02a0bf88b",
+      "title": "Echoes Of My Doubt",
+      "artist": "Eightyone",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/69061172-bdaf-4c36-8d16-38f02a0bf88b/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/69061172-bdaf-4c36-8d16-38f02a0bf88b/echoes-of-my-doubt"
+    },
+    {
+      "id": "d800a2c5-3363-4a52-a194-b45f8a9127c2",
+      "title": "Echoes Of My Doubt",
+      "artist": "Eightyone",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/d800a2c5-3363-4a52-a194-b45f8a9127c2/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/d800a2c5-3363-4a52-a194-b45f8a9127c2/echoes-of-my-doubt"
+    },
     {
       "id": "e750e173-73ba-40bf-8a9e-3c7a4358aaa9",
       "title": "LOSE CONTROL",
@@ -32,22 +48,6 @@
       "mix": "Extended Mix",
       "image": "https://hardstyle.com/track_image/ddfaec15-188d-48de-91d3-96c3fa0288c4/250x250/335",
       "link": "https://hardstyle.com/en/tracks/ddfaec15-188d-48de-91d3-96c3fa0288c4/blow-up-the-spot"
-    },
-    {
-      "id": "875b6ee8-e46c-4d02-ae12-25204d1559f7",
-      "title": "Ferrari",
-      "artist": "STV",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/875b6ee8-e46c-4d02-ae12-25204d1559f7/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/875b6ee8-e46c-4d02-ae12-25204d1559f7/ferrari"
-    },
-    {
-      "id": "cf85792a-0312-4cb7-b188-a93a10f08bd5",
-      "title": "The Storm",
-      "artist": "Sakyra",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/cf85792a-0312-4cb7-b188-a93a10f08bd5/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/cf85792a-0312-4cb7-b188-a93a10f08bd5/the-storm"
     },
     {
       "id": "4e970487-4425-4c10-b23b-9956f05b5bac",
