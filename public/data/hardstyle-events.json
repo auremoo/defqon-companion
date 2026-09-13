@@ -1,30 +1,12 @@
 {
-  "updatedAt": "2026-09-12T09:02:54.035Z",
+  "updatedAt": "2026-09-13T10:01:39.918Z",
   "events": [
-    {
-      "title": "Bmberjck B-Day Bash",
-      "link": "https://hardstyle.com/en/events/5b12967f-aa23-497e-aa5d-ec88176100b1/bmberjck-b-day-bash",
-      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/5b12967f-aa23-497e-aa5d-ec88176100b1/images/logo_img.jpg",
-      "location": "Helden",
-      "time": "20:00 - 03:00",
-      "date": "2026-09-11",
-      "month": "September"
-    },
     {
       "title": "Raveolution - The Outdoor Reunion",
       "link": "https://hardstyle.com/en/events/5794a40d-dd16-4050-9fe7-dd1947bd0440/raveolution-the-outdoor-reunion",
       "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/5794a40d-dd16-4050-9fe7-dd1947bd0440/images/logo_img.jpg",
       "location": "Oss``",
       "time": "12:00 - 00:00",
-      "date": "2026-09-12",
-      "month": "September"
-    },
-    {
-      "title": "Reignite Festival – Rise of the Phoenix",
-      "link": "https://hardstyle.com/en/events/9727da8a-847e-42a9-b589-80cb9068de8a/reignite-festival-rise-of-the-phoenix",
-      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/9727da8a-847e-42a9-b589-80cb9068de8a/images/logo_img.jpg",
-      "location": "Vinkel",
-      "time": "12:00 - 23:00",
       "date": "2026-09-12",
       "month": "September"
     },
