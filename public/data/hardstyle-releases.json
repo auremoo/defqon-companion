@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-09-13T10:01:39.023Z",
+  "updatedAt": "2026-09-14T10:21:25.442Z",
   "releases": [
+    {
+      "id": "a1086e87-14f5-4f56-aded-a9a14dc78c9a",
+      "title": "World Of The Rave",
+      "artist": "AscenderZ",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/a1086e87-14f5-4f56-aded-a9a14dc78c9a/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/a1086e87-14f5-4f56-aded-a9a14dc78c9a/world-of-the-rave"
+    },
+    {
+      "id": "db442dd4-304f-4f6d-a08c-c46e8002d1a8",
+      "title": "This Feeling",
+      "artist": "DJ OGGY",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/db442dd4-304f-4f6d-a08c-c46e8002d1a8/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/db442dd4-304f-4f6d-a08c-c46e8002d1a8/this-feeling"
+    },
+    {
+      "id": "7bb4d4ec-2b34-4abe-8ea1-cd0a8facdd4d",
+      "title": "This Feeling",
+      "artist": "DJ OGGY",
+      "mix": "Radio Edit",
+      "image": "https://hardstyle.com/track_image/7bb4d4ec-2b34-4abe-8ea1-cd0a8facdd4d/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/7bb4d4ec-2b34-4abe-8ea1-cd0a8facdd4d/this-feeling"
+    },
     {
       "id": "69061172-bdaf-4c36-8d16-38f02a0bf88b",
       "title": "Echoes Of My Doubt",
@@ -24,30 +48,6 @@
       "mix": "Extended Mix",
       "image": "https://hardstyle.com/track_image/e750e173-73ba-40bf-8a9e-3c7a4358aaa9/250x250/335",
       "link": "https://hardstyle.com/en/tracks/e750e173-73ba-40bf-8a9e-3c7a4358aaa9/lose-control"
-    },
-    {
-      "id": "64eec4f2-4ce5-4dd9-9515-5ef1c0c06cd7",
-      "title": "From The Z",
-      "artist": "DIMMA",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/64eec4f2-4ce5-4dd9-9515-5ef1c0c06cd7/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/64eec4f2-4ce5-4dd9-9515-5ef1c0c06cd7/from-the-z"
-    },
-    {
-      "id": "3266f212-a78d-4f80-8f16-3b0c0861f8cf",
-      "title": "Cold As Ice",
-      "artist": "F. Noize",
-      "mix": "(Deviation Remix)",
-      "image": "https://hardstyle.com/track_image/3266f212-a78d-4f80-8f16-3b0c0861f8cf/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/3266f212-a78d-4f80-8f16-3b0c0861f8cf/cold-as-ice"
-    },
-    {
-      "id": "ddfaec15-188d-48de-91d3-96c3fa0288c4",
-      "title": "Blow Up The Spot",
-      "artist": "Karun",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/ddfaec15-188d-48de-91d3-96c3fa0288c4/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/ddfaec15-188d-48de-91d3-96c3fa0288c4/blow-up-the-spot"
     },
     {
       "id": "4e970487-4425-4c10-b23b-9956f05b5bac",
