@@ -1,53 +1,53 @@
 {
-  "updatedAt": "2026-09-15T09:48:01.858Z",
+  "updatedAt": "2026-09-16T09:43:29.434Z",
   "releases": [
     {
-      "id": "dba48b9e-7574-4589-8dae-bea64a1fb7c2",
-      "title": "Stay With Me",
-      "artist": "AZ tronaut",
+      "id": "984ba93a-d6c1-4a7d-b22f-fd3772bfa489",
+      "title": "Ghost Town",
+      "artist": "Domin8",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/dba48b9e-7574-4589-8dae-bea64a1fb7c2/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/dba48b9e-7574-4589-8dae-bea64a1fb7c2/stay-with-me"
+      "image": "https://hardstyle.com/track_image/984ba93a-d6c1-4a7d-b22f-fd3772bfa489/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/984ba93a-d6c1-4a7d-b22f-fd3772bfa489/ghost-town"
     },
     {
-      "id": "222e8056-5f8f-4856-9818-f68437bb1af8",
-      "title": "Always On My Mind",
-      "artist": "T-Jay",
+      "id": "d79110c4-6578-4348-89d6-728574eab249",
+      "title": "I Feel Myself",
+      "artist": "David Navas",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/222e8056-5f8f-4856-9818-f68437bb1af8/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/222e8056-5f8f-4856-9818-f68437bb1af8/always-on-my-mind"
+      "image": "https://hardstyle.com/track_image/d79110c4-6578-4348-89d6-728574eab249/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/d79110c4-6578-4348-89d6-728574eab249/i-feel-myself"
     },
     {
-      "id": "179575fd-3710-4b58-99b3-3087e84b4d4d",
-      "title": "Always On My Mind",
-      "artist": "T-Jay",
-      "mix": "Radio Edit",
-      "image": "https://hardstyle.com/track_image/179575fd-3710-4b58-99b3-3087e84b4d4d/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/179575fd-3710-4b58-99b3-3087e84b4d4d/always-on-my-mind"
+      "id": "7b8eb0fe-3252-42db-957f-00f031eb0195",
+      "title": "The Groove",
+      "artist": "Udow",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/7b8eb0fe-3252-42db-957f-00f031eb0195/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/7b8eb0fe-3252-42db-957f-00f031eb0195/the-groove"
     },
     {
-      "id": "3b61a8be-8b61-428b-a78b-cc053c7dbf7c",
-      "title": "MY LIFE",
-      "artist": "Badkick",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/3b61a8be-8b61-428b-a78b-cc053c7dbf7c/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/3b61a8be-8b61-428b-a78b-cc053c7dbf7c/my-life"
+      "id": "017794cc-427a-499d-9226-07d4eb73cd24",
+      "title": "Ressurection",
+      "artist": "Guardelion",
+      "mix": "Extended",
+      "image": "https://hardstyle.com/track_image/017794cc-427a-499d-9226-07d4eb73cd24/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/017794cc-427a-499d-9226-07d4eb73cd24/ressurection"
     },
     {
-      "id": "6b07353a-637e-4352-a2e8-d04f3572c4a8",
-      "title": "FLEX",
-      "artist": "Badkick",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/6b07353a-637e-4352-a2e8-d04f3572c4a8/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/6b07353a-637e-4352-a2e8-d04f3572c4a8/flex"
+      "id": "92839538-2973-45b8-a442-51ba79994204",
+      "title": "YOU PUNK!",
+      "artist": "Incinerate",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/92839538-2973-45b8-a442-51ba79994204/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/92839538-2973-45b8-a442-51ba79994204/you-punk"
     },
     {
-      "id": "b8121dc0-4d0b-472c-b53e-80be192b8b03",
-      "title": "CLOSE MY EYES",
-      "artist": "Badkick",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/b8121dc0-4d0b-472c-b53e-80be192b8b03/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/b8121dc0-4d0b-472c-b53e-80be192b8b03/close-my-eyes"
+      "id": "2e6cb382-c5f4-4567-8a03-d098bdfb55a6",
+      "title": "Cold War",
+      "artist": "Alex M",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/2e6cb382-c5f4-4567-8a03-d098bdfb55a6/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/2e6cb382-c5f4-4567-8a03-d098bdfb55a6/cold-war"
     },
     {
       "id": "4e970487-4425-4c10-b23b-9956f05b5bac",
