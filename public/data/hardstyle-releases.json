@@ -1,53 +1,53 @@
 {
-  "updatedAt": "2026-09-21T10:25:57.357Z",
+  "updatedAt": "2026-09-22T09:39:22.586Z",
   "releases": [
     {
-      "id": "227b9e96-067a-475a-a719-5a6ac082a902",
-      "title": "Flying High",
-      "artist": "DTAH",
+      "id": "c96986f4-967c-4d58-8202-76f4a1bbb61c",
+      "title": "EXECUTE YOU",
+      "artist": "Heavy Machinery",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/c96986f4-967c-4d58-8202-76f4a1bbb61c/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/c96986f4-967c-4d58-8202-76f4a1bbb61c/execute-you"
+    },
+    {
+      "id": "e7771818-cbb3-4a49-bdb4-a5aab89b1207",
+      "title": "Just Not Meant To Be",
+      "artist": "BL-73",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/227b9e96-067a-475a-a719-5a6ac082a902/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/227b9e96-067a-475a-a719-5a6ac082a902/flying-high"
+      "image": "https://hardstyle.com/track_image/e7771818-cbb3-4a49-bdb4-a5aab89b1207/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/e7771818-cbb3-4a49-bdb4-a5aab89b1207/just-not-meant-to-be"
     },
     {
-      "id": "478ca375-7960-453e-93f7-e060e8955d07",
-      "title": "The First Rebirth",
-      "artist": "Mikey P",
+      "id": "1336a099-785f-42c6-88ad-b8f2069c816a",
+      "title": "Una Noche",
+      "artist": "DJ OGGY",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/1336a099-785f-42c6-88ad-b8f2069c816a/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/1336a099-785f-42c6-88ad-b8f2069c816a/una-noche"
+    },
+    {
+      "id": "80f2e72b-c710-405b-9ab5-c44413143a7d",
+      "title": "Una Noche",
+      "artist": "DJ OGGY",
+      "mix": "Radio Edit",
+      "image": "https://hardstyle.com/track_image/80f2e72b-c710-405b-9ab5-c44413143a7d/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/80f2e72b-c710-405b-9ab5-c44413143a7d/una-noche"
+    },
+    {
+      "id": "ea3e4094-010b-4a94-9494-aad5b02a9908",
+      "title": "Accelerated",
+      "artist": "Harduz",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/478ca375-7960-453e-93f7-e060e8955d07/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/478ca375-7960-453e-93f7-e060e8955d07/the-first-rebirth"
+      "image": "https://hardstyle.com/track_image/ea3e4094-010b-4a94-9494-aad5b02a9908/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/ea3e4094-010b-4a94-9494-aad5b02a9908/accelerated"
     },
     {
-      "id": "9964b348-1fc5-4f7d-ae42-924310a1133f",
-      "title": "BUNNYGIRL",
-      "artist": "RETRO V",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/9964b348-1fc5-4f7d-ae42-924310a1133f/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/9964b348-1fc5-4f7d-ae42-924310a1133f/bunnygirl"
-    },
-    {
-      "id": "4c2cabed-dbbd-4d95-8427-87bbc7edf149",
-      "title": "EDGTS",
-      "artist": "RETRO V",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/4c2cabed-dbbd-4d95-8427-87bbc7edf149/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/4c2cabed-dbbd-4d95-8427-87bbc7edf149/edgts"
-    },
-    {
-      "id": "58ee464d-4421-4aca-ae00-65f99e1db0d3",
-      "title": "DEMONI RISORTI",
-      "artist": "RETRO V",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/58ee464d-4421-4aca-ae00-65f99e1db0d3/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/58ee464d-4421-4aca-ae00-65f99e1db0d3/demoni-risorti"
-    },
-    {
-      "id": "e06ebdec-fe0c-4204-9a74-a3d03aaf1b33",
-      "title": "Override",
-      "artist": "Rogue Zero",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/e06ebdec-fe0c-4204-9a74-a3d03aaf1b33/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/e06ebdec-fe0c-4204-9a74-a3d03aaf1b33/override"
+      "id": "3494955a-5f5b-4b13-95a0-6e4f9f0fe412",
+      "title": "Hurricane",
+      "artist": "Missy",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/3494955a-5f5b-4b13-95a0-6e4f9f0fe412/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/3494955a-5f5b-4b13-95a0-6e4f9f0fe412/hurricane"
     },
     {
       "id": "4e970487-4425-4c10-b23b-9956f05b5bac",
