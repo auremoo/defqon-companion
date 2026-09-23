@@ -1,53 +1,53 @@
 {
-  "updatedAt": "2026-09-22T09:39:22.586Z",
+  "updatedAt": "2026-09-23T09:46:49.121Z",
   "releases": [
     {
-      "id": "c96986f4-967c-4d58-8202-76f4a1bbb61c",
-      "title": "EXECUTE YOU",
-      "artist": "Heavy Machinery",
+      "id": "5ca3f239-afe3-476f-bb75-f2227a93ecfb",
+      "title": "Rescue Me",
+      "artist": "JNW",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/5ca3f239-afe3-476f-bb75-f2227a93ecfb/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/5ca3f239-afe3-476f-bb75-f2227a93ecfb/rescue-me"
+    },
+    {
+      "id": "8c085b91-e94c-49b6-843a-951d55a69e43",
+      "title": "Running In A Dream",
+      "artist": "Stephen Game",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/c96986f4-967c-4d58-8202-76f4a1bbb61c/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/c96986f4-967c-4d58-8202-76f4a1bbb61c/execute-you"
+      "image": "https://hardstyle.com/track_image/8c085b91-e94c-49b6-843a-951d55a69e43/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/8c085b91-e94c-49b6-843a-951d55a69e43/running-in-a-dream"
     },
     {
-      "id": "e7771818-cbb3-4a49-bdb4-a5aab89b1207",
-      "title": "Just Not Meant To Be",
-      "artist": "BL-73",
+      "id": "cedb353e-80db-4846-be47-f0a04009aee2",
+      "title": "Silent Blue",
+      "artist": "Dropzone",
+      "mix": "Bounce Mix",
+      "image": "https://hardstyle.com/track_image/cedb353e-80db-4846-be47-f0a04009aee2/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/cedb353e-80db-4846-be47-f0a04009aee2/silent-blue"
+    },
+    {
+      "id": "219367af-f09a-4d4a-bb86-d117bce81d7a",
+      "title": "Silent Blue",
+      "artist": "Dropzone",
+      "mix": "Bounce Edit",
+      "image": "https://hardstyle.com/track_image/219367af-f09a-4d4a-bb86-d117bce81d7a/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/219367af-f09a-4d4a-bb86-d117bce81d7a/silent-blue"
+    },
+    {
+      "id": "2359d687-a204-4e34-9a87-52fba55f7ba1",
+      "title": "Silent Blue",
+      "artist": "Dropzone",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/e7771818-cbb3-4a49-bdb4-a5aab89b1207/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/e7771818-cbb3-4a49-bdb4-a5aab89b1207/just-not-meant-to-be"
+      "image": "https://hardstyle.com/track_image/2359d687-a204-4e34-9a87-52fba55f7ba1/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/2359d687-a204-4e34-9a87-52fba55f7ba1/silent-blue"
     },
     {
-      "id": "1336a099-785f-42c6-88ad-b8f2069c816a",
-      "title": "Una Noche",
-      "artist": "DJ OGGY",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/1336a099-785f-42c6-88ad-b8f2069c816a/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/1336a099-785f-42c6-88ad-b8f2069c816a/una-noche"
-    },
-    {
-      "id": "80f2e72b-c710-405b-9ab5-c44413143a7d",
-      "title": "Una Noche",
-      "artist": "DJ OGGY",
+      "id": "783ce367-d47b-47d7-8ef1-0d79601afc99",
+      "title": "Silent Blue",
+      "artist": "Dropzone",
       "mix": "Radio Edit",
-      "image": "https://hardstyle.com/track_image/80f2e72b-c710-405b-9ab5-c44413143a7d/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/80f2e72b-c710-405b-9ab5-c44413143a7d/una-noche"
-    },
-    {
-      "id": "ea3e4094-010b-4a94-9494-aad5b02a9908",
-      "title": "Accelerated",
-      "artist": "Harduz",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/ea3e4094-010b-4a94-9494-aad5b02a9908/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/ea3e4094-010b-4a94-9494-aad5b02a9908/accelerated"
-    },
-    {
-      "id": "3494955a-5f5b-4b13-95a0-6e4f9f0fe412",
-      "title": "Hurricane",
-      "artist": "Missy",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/3494955a-5f5b-4b13-95a0-6e4f9f0fe412/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/3494955a-5f5b-4b13-95a0-6e4f9f0fe412/hurricane"
+      "image": "https://hardstyle.com/track_image/783ce367-d47b-47d7-8ef1-0d79601afc99/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/783ce367-d47b-47d7-8ef1-0d79601afc99/silent-blue"
     },
     {
       "id": "4e970487-4425-4c10-b23b-9956f05b5bac",

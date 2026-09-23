@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T09:39:23.219Z",
+  "updatedAt": "2026-09-23T09:46:49.810Z",
   "events": [
     {
       "title": "Jay Reeve presents Melodic Madness – We Are The Melody",
@@ -44,6 +44,15 @@
       "location": "Elst",
       "time": "12:00 - 23:00",
       "date": "2026-10-17",
+      "month": "October"
+    },
+    {
+      "title": "Vroeger Was Alles Beter Indoor 2026",
+      "link": "https://hardstyle.com/en/events/7c07f28e-f617-4402-80e2-4b2ff2a68d93/vroeger-was-alles-beter-indoor-2026",
+      "image": "https://hardstyle.com/thumbs/300x300/@0.5x0.5/gfx/events/7c07f28e-f617-4402-80e2-4b2ff2a68d93/images/logo_img.jpg",
+      "location": "'s-Hertogenbosch",
+      "time": "12:30 - 00:00",
+      "date": "2026-10-24",
       "month": "October"
     },
     {
