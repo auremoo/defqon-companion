@@ -1,53 +1,61 @@
 {
-  "updatedAt": "2026-09-23T09:46:49.121Z",
+  "updatedAt": "2026-09-24T09:43:52.887Z",
   "releases": [
     {
-      "id": "5ca3f239-afe3-476f-bb75-f2227a93ecfb",
-      "title": "Rescue Me",
-      "artist": "JNW",
+      "id": "731bf13f-e233-483c-bb2f-1fff0299caaa",
+      "title": "Un Luogo",
+      "artist": "VUBI",
       "mix": "",
-      "image": "https://hardstyle.com/track_image/5ca3f239-afe3-476f-bb75-f2227a93ecfb/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/5ca3f239-afe3-476f-bb75-f2227a93ecfb/rescue-me"
+      "image": "https://hardstyle.com/track_image/731bf13f-e233-483c-bb2f-1fff0299caaa/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/731bf13f-e233-483c-bb2f-1fff0299caaa/un-luogo"
     },
     {
-      "id": "8c085b91-e94c-49b6-843a-951d55a69e43",
-      "title": "Running In A Dream",
-      "artist": "Stephen Game",
+      "id": "e017f0be-5234-4adf-b2e9-e7a9cff2ed59",
+      "title": "Rimorsi",
+      "artist": "VUBI",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/e017f0be-5234-4adf-b2e9-e7a9cff2ed59/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/e017f0be-5234-4adf-b2e9-e7a9cff2ed59/rimorsi"
+    },
+    {
+      "id": "df34d7d8-dc0e-4fd4-8f89-69c4d60554c3",
+      "title": "Piccolo Principe interludio (feat. Phara)",
+      "artist": "VUBI",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/df34d7d8-dc0e-4fd4-8f89-69c4d60554c3/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/df34d7d8-dc0e-4fd4-8f89-69c4d60554c3/piccolo-principe-interludio-feat-phara"
+    },
+    {
+      "id": "226830c7-e6bd-4600-ace7-61386ecedf69",
+      "title": "I Miei Modi",
+      "artist": "VUBI",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/226830c7-e6bd-4600-ace7-61386ecedf69/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/226830c7-e6bd-4600-ace7-61386ecedf69/i-miei-modi"
+    },
+    {
+      "id": "88ad98bb-b1ee-40b0-9087-635a18b1ecc7",
+      "title": "Un Bacio Di Troppo",
+      "artist": "VUBI",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/88ad98bb-b1ee-40b0-9087-635a18b1ecc7/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/88ad98bb-b1ee-40b0-9087-635a18b1ecc7/un-bacio-di-troppo"
+    },
+    {
+      "id": "09b9e5ed-93da-44ac-a06c-52b7414013cb",
+      "title": "Benvenuti (Nel Mio Petto)",
+      "artist": "VUBI",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/8c085b91-e94c-49b6-843a-951d55a69e43/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/8c085b91-e94c-49b6-843a-951d55a69e43/running-in-a-dream"
+      "image": "https://hardstyle.com/track_image/09b9e5ed-93da-44ac-a06c-52b7414013cb/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/09b9e5ed-93da-44ac-a06c-52b7414013cb/benvenuti-nel-mio-petto"
     },
     {
-      "id": "cedb353e-80db-4846-be47-f0a04009aee2",
-      "title": "Silent Blue",
-      "artist": "Dropzone",
-      "mix": "Bounce Mix",
-      "image": "https://hardstyle.com/track_image/cedb353e-80db-4846-be47-f0a04009aee2/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/cedb353e-80db-4846-be47-f0a04009aee2/silent-blue"
-    },
-    {
-      "id": "219367af-f09a-4d4a-bb86-d117bce81d7a",
-      "title": "Silent Blue",
-      "artist": "Dropzone",
-      "mix": "Bounce Edit",
-      "image": "https://hardstyle.com/track_image/219367af-f09a-4d4a-bb86-d117bce81d7a/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/219367af-f09a-4d4a-bb86-d117bce81d7a/silent-blue"
-    },
-    {
-      "id": "2359d687-a204-4e34-9a87-52fba55f7ba1",
-      "title": "Silent Blue",
-      "artist": "Dropzone",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/2359d687-a204-4e34-9a87-52fba55f7ba1/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/2359d687-a204-4e34-9a87-52fba55f7ba1/silent-blue"
-    },
-    {
-      "id": "783ce367-d47b-47d7-8ef1-0d79601afc99",
-      "title": "Silent Blue",
-      "artist": "Dropzone",
-      "mix": "Radio Edit",
-      "image": "https://hardstyle.com/track_image/783ce367-d47b-47d7-8ef1-0d79601afc99/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/783ce367-d47b-47d7-8ef1-0d79601afc99/silent-blue"
+      "id": "ecc5147c-a11c-48b1-a097-620ea1240338",
+      "title": "Un Posto",
+      "artist": "VUBI",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/ecc5147c-a11c-48b1-a097-620ea1240338/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/ecc5147c-a11c-48b1-a097-620ea1240338"
     },
     {
       "id": "4e970487-4425-4c10-b23b-9956f05b5bac",
@@ -72,14 +80,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/f36c32d4-56ba-4f6c-b28b-ac98768d451e/250x250/335",
       "link": "https://hardstyle.com/en/tracks/f36c32d4-56ba-4f6c-b28b-ac98768d451e"
-    },
-    {
-      "id": "65dc0e2e-5554-4adc-a638-8b38f2d85b95",
-      "title": "Bass Demon",
-      "artist": "KVN",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/65dc0e2e-5554-4adc-a638-8b38f2d85b95/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/65dc0e2e-5554-4adc-a638-8b38f2d85b95"
     }
   ]
 }
