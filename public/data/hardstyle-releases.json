@@ -1,53 +1,77 @@
 {
-  "updatedAt": "2026-09-24T09:43:52.887Z",
+  "updatedAt": "2026-09-25T10:01:38.793Z",
   "releases": [
     {
-      "id": "731bf13f-e233-483c-bb2f-1fff0299caaa",
-      "title": "Un Luogo",
-      "artist": "VUBI",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/731bf13f-e233-483c-bb2f-1fff0299caaa/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/731bf13f-e233-483c-bb2f-1fff0299caaa/un-luogo"
-    },
-    {
-      "id": "e017f0be-5234-4adf-b2e9-e7a9cff2ed59",
-      "title": "Rimorsi",
-      "artist": "VUBI",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/e017f0be-5234-4adf-b2e9-e7a9cff2ed59/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/e017f0be-5234-4adf-b2e9-e7a9cff2ed59/rimorsi"
-    },
-    {
-      "id": "df34d7d8-dc0e-4fd4-8f89-69c4d60554c3",
-      "title": "Piccolo Principe interludio (feat. Phara)",
-      "artist": "VUBI",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/df34d7d8-dc0e-4fd4-8f89-69c4d60554c3/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/df34d7d8-dc0e-4fd4-8f89-69c4d60554c3/piccolo-principe-interludio-feat-phara"
-    },
-    {
-      "id": "226830c7-e6bd-4600-ace7-61386ecedf69",
-      "title": "I Miei Modi",
-      "artist": "VUBI",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/226830c7-e6bd-4600-ace7-61386ecedf69/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/226830c7-e6bd-4600-ace7-61386ecedf69/i-miei-modi"
-    },
-    {
-      "id": "88ad98bb-b1ee-40b0-9087-635a18b1ecc7",
-      "title": "Un Bacio Di Troppo",
-      "artist": "VUBI",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/88ad98bb-b1ee-40b0-9087-635a18b1ecc7/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/88ad98bb-b1ee-40b0-9087-635a18b1ecc7/un-bacio-di-troppo"
-    },
-    {
-      "id": "09b9e5ed-93da-44ac-a06c-52b7414013cb",
-      "title": "Benvenuti (Nel Mio Petto)",
-      "artist": "VUBI",
+      "id": "6455c823-be33-453e-8dc2-326fc9e54574",
+      "title": "2 Da Rootz",
+      "artist": "Ghostriderz",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/09b9e5ed-93da-44ac-a06c-52b7414013cb/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/09b9e5ed-93da-44ac-a06c-52b7414013cb/benvenuti-nel-mio-petto"
+      "image": "https://hardstyle.com/track_image/6455c823-be33-453e-8dc2-326fc9e54574/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/6455c823-be33-453e-8dc2-326fc9e54574/2-da-rootz"
+    },
+    {
+      "id": "44dd2a6c-0899-40a7-8bc1-eee7e94fa1f5",
+      "title": "Hit The Road Jack",
+      "artist": "Cloud Seven",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/44dd2a6c-0899-40a7-8bc1-eee7e94fa1f5/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/44dd2a6c-0899-40a7-8bc1-eee7e94fa1f5/hit-the-road-jack"
+    },
+    {
+      "id": "fede3a31-4288-49c1-b3a1-bc6f092acb66",
+      "title": "Hit The Road Jack",
+      "artist": "Cloud Seven",
+      "mix": "Radio Edit",
+      "image": "https://hardstyle.com/track_image/fede3a31-4288-49c1-b3a1-bc6f092acb66/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/fede3a31-4288-49c1-b3a1-bc6f092acb66/hit-the-road-jack"
+    },
+    {
+      "id": "e02bcab0-cb5b-4760-aaaa-51977e6b0c71",
+      "title": "Where Are U Now",
+      "artist": "F. Noize",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/e02bcab0-cb5b-4760-aaaa-51977e6b0c71/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/e02bcab0-cb5b-4760-aaaa-51977e6b0c71/where-are-u-now"
+    },
+    {
+      "id": "635318c1-58d9-42d2-917e-8f56718944c8",
+      "title": "Chaos, Disorder or Violent Disruption",
+      "artist": "Marshals of Mayhem",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/635318c1-58d9-42d2-917e-8f56718944c8/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/635318c1-58d9-42d2-917e-8f56718944c8/chaos-disorder-or-violent-disruption"
+    },
+    {
+      "id": "bf344b63-cb2d-49fc-927a-9f98172c7a08",
+      "title": "The Thing",
+      "artist": "Oxya",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/bf344b63-cb2d-49fc-927a-9f98172c7a08/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/bf344b63-cb2d-49fc-927a-9f98172c7a08/the-thing"
+    },
+    {
+      "id": "5bf5e35c-5b30-4d31-9121-e5bc9b0c799b",
+      "title": "Razor Riot",
+      "artist": "Barber",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/5bf5e35c-5b30-4d31-9121-e5bc9b0c799b/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/5bf5e35c-5b30-4d31-9121-e5bc9b0c799b"
+    },
+    {
+      "id": "36d56e07-4451-4709-8133-c6d60b4cf1a5",
+      "title": "Welcome To Madness Vol. II",
+      "artist": "House Of Madness",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/36d56e07-4451-4709-8133-c6d60b4cf1a5/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/36d56e07-4451-4709-8133-c6d60b4cf1a5"
+    },
+    {
+      "id": "f08e5b85-b345-44a1-bfcc-bb57489c53ef",
+      "title": "The Summoning",
+      "artist": "Bokkenrijders",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/f08e5b85-b345-44a1-bfcc-bb57489c53ef/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/f08e5b85-b345-44a1-bfcc-bb57489c53ef"
     },
     {
       "id": "ecc5147c-a11c-48b1-a097-620ea1240338",
@@ -56,30 +80,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/ecc5147c-a11c-48b1-a097-620ea1240338/250x250/335",
       "link": "https://hardstyle.com/en/tracks/ecc5147c-a11c-48b1-a097-620ea1240338"
-    },
-    {
-      "id": "4e970487-4425-4c10-b23b-9956f05b5bac",
-      "title": "TOOLBOX VOLUME 4",
-      "artist": "Various Artists",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/4e970487-4425-4c10-b23b-9956f05b5bac/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/4e970487-4425-4c10-b23b-9956f05b5bac"
-    },
-    {
-      "id": "7d4890bc-b746-45e7-a3fd-d2ac5e45f861",
-      "title": "H-Core",
-      "artist": "Fear-E",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/7d4890bc-b746-45e7-a3fd-d2ac5e45f861/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/7d4890bc-b746-45e7-a3fd-d2ac5e45f861"
-    },
-    {
-      "id": "f36c32d4-56ba-4f6c-b28b-ac98768d451e",
-      "title": "Pulse Respond",
-      "artist": "Embrionyc",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/f36c32d4-56ba-4f6c-b28b-ac98768d451e/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/f36c32d4-56ba-4f6c-b28b-ac98768d451e"
     }
   ]
 }
