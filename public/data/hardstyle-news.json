@@ -1,10 +1,17 @@
 {
-  "updatedAt": "2026-09-24T12:03:56.189Z",
+  "updatedAt": "2026-09-25T12:04:13.110Z",
   "articles": [
+    {
+      "title": "If you love zaagkicks and uptempo, Slow Down is the event for you",
+      "link": "https://hardstyle.com/en/news/if-you-love-zaagkicks-and-uptempo-slow-down-is-the-event-for-you",
+      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/2026/September/Energy-nonconforme-187.jpg",
+      "date": "2026-09-24",
+      "category": "news,hardstyle"
+    },
     {
       "title": "Resilience & ERABREAK about ‘BLOW’: “Our ideas align perfectly”",
       "link": "https://hardstyle.com/en/news/resilience-en-erabreak-about-blow-our-ideas-align-perfectly",
-      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/2026/augustus/Rebirth%202026%20by%20Wanyama-photo-11465.jpg",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/augustus/Rebirth%202026%20by%20Wanyama-photo-11465.jpg",
       "date": "2026-08-28",
       "category": "news,hardstyle"
     },
@@ -32,7 +39,7 @@
     {
       "title": "Tatanka goes back to his roots with 'Beyond Time'",
       "link": "https://hardstyle.com/en/news/tatanka-goes-back-to-his-roots-with-beyond-time",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/6%20june/683639222_18393830182154166_4519771147123083130_n.jpg",
+      "image": null,
       "date": "2026-08-07",
       "category": "news,hardstyle"
     },
@@ -62,13 +69,6 @@
       "link": "https://hardstyle.com/en/news/rebellion-indoor-announces-the-line-up-for-their-2026-edition-break-the-system",
       "image": null,
       "date": "2026-07-16",
-      "category": "news,hardstyle"
-    },
-    {
-      "title": "Thyron releases 'i feel like i'm drowning', the third track of his new chapter",
-      "link": "https://hardstyle.com/en/news/thyron-releases-i-feel-like-i-m-drowning-the-third-track-of-his-new-chapter",
-      "image": null,
-      "date": "2026-07-07",
       "category": "news,hardstyle"
     }
   ]
