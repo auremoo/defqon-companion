@@ -1,6 +1,38 @@
 {
-  "updatedAt": "2026-09-27T10:22:59.896Z",
+  "updatedAt": "2026-09-28T11:29:30.781Z",
   "releases": [
+    {
+      "id": "edaabb4c-52ba-47bc-ac60-09cf39d03ea8",
+      "title": "Jazz 11",
+      "artist": "Kkursivom",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/edaabb4c-52ba-47bc-ac60-09cf39d03ea8/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/edaabb4c-52ba-47bc-ac60-09cf39d03ea8/jazz-11"
+    },
+    {
+      "id": "63e64b48-e54b-4fcf-8e5a-34aed2acd634",
+      "title": "Dark Souls",
+      "artist": "Roman Naboka",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/63e64b48-e54b-4fcf-8e5a-34aed2acd634/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/63e64b48-e54b-4fcf-8e5a-34aed2acd634/dark-souls"
+    },
+    {
+      "id": "0d08c75d-c26a-4748-ad19-0efddfc5cfd7",
+      "title": "We Rave Together",
+      "artist": "Alphrax",
+      "mix": "Extended Version",
+      "image": "https://hardstyle.com/track_image/0d08c75d-c26a-4748-ad19-0efddfc5cfd7/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/0d08c75d-c26a-4748-ad19-0efddfc5cfd7/we-rave-together"
+    },
+    {
+      "id": "9d980923-09f7-4c37-bc56-d9a3128889ad",
+      "title": "We Rave Together",
+      "artist": "Alphrax",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/9d980923-09f7-4c37-bc56-d9a3128889ad/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/9d980923-09f7-4c37-bc56-d9a3128889ad/we-rave-together"
+    },
     {
       "id": "68b5359d-e9a5-495f-bb3d-4fc0cf4e33d0",
       "title": "FEEL THE GROOVE",
@@ -16,38 +48,6 @@
       "mix": "Extended Mix",
       "image": "https://hardstyle.com/track_image/18b142f8-8b6c-43cf-8eab-f3bd96124391/250x250/335",
       "link": "https://hardstyle.com/en/tracks/18b142f8-8b6c-43cf-8eab-f3bd96124391/move-your-body"
-    },
-    {
-      "id": "4035475b-5825-4dda-8f63-314cce0f0094",
-      "title": "BOUNCE WITH ME",
-      "artist": "BIG K",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/4035475b-5825-4dda-8f63-314cce0f0094/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/4035475b-5825-4dda-8f63-314cce0f0094/bounce-with-me"
-    },
-    {
-      "id": "6455c823-be33-453e-8dc2-326fc9e54574",
-      "title": "2 Da Rootz",
-      "artist": "Ghostriderz",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/6455c823-be33-453e-8dc2-326fc9e54574/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/6455c823-be33-453e-8dc2-326fc9e54574/2-da-rootz"
-    },
-    {
-      "id": "44dd2a6c-0899-40a7-8bc1-eee7e94fa1f5",
-      "title": "Hit The Road Jack",
-      "artist": "Cloud Seven",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/44dd2a6c-0899-40a7-8bc1-eee7e94fa1f5/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/44dd2a6c-0899-40a7-8bc1-eee7e94fa1f5/hit-the-road-jack"
-    },
-    {
-      "id": "fede3a31-4288-49c1-b3a1-bc6f092acb66",
-      "title": "Hit The Road Jack",
-      "artist": "Cloud Seven",
-      "mix": "Radio Edit",
-      "image": "https://hardstyle.com/track_image/fede3a31-4288-49c1-b3a1-bc6f092acb66/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/fede3a31-4288-49c1-b3a1-bc6f092acb66/hit-the-road-jack"
     },
     {
       "id": "3deb7366-7022-4dba-8216-5dbe192b63b6",
