@@ -1,53 +1,53 @@
 {
-  "updatedAt": "2026-09-28T11:29:30.781Z",
+  "updatedAt": "2026-09-29T11:10:02.541Z",
   "releases": [
     {
-      "id": "edaabb4c-52ba-47bc-ac60-09cf39d03ea8",
-      "title": "Jazz 11",
-      "artist": "Kkursivom",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/edaabb4c-52ba-47bc-ac60-09cf39d03ea8/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/edaabb4c-52ba-47bc-ac60-09cf39d03ea8/jazz-11"
-    },
-    {
-      "id": "63e64b48-e54b-4fcf-8e5a-34aed2acd634",
-      "title": "Dark Souls",
-      "artist": "Roman Naboka",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/63e64b48-e54b-4fcf-8e5a-34aed2acd634/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/63e64b48-e54b-4fcf-8e5a-34aed2acd634/dark-souls"
-    },
-    {
-      "id": "0d08c75d-c26a-4748-ad19-0efddfc5cfd7",
-      "title": "We Rave Together",
-      "artist": "Alphrax",
-      "mix": "Extended Version",
-      "image": "https://hardstyle.com/track_image/0d08c75d-c26a-4748-ad19-0efddfc5cfd7/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/0d08c75d-c26a-4748-ad19-0efddfc5cfd7/we-rave-together"
-    },
-    {
-      "id": "9d980923-09f7-4c37-bc56-d9a3128889ad",
-      "title": "We Rave Together",
-      "artist": "Alphrax",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/9d980923-09f7-4c37-bc56-d9a3128889ad/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/9d980923-09f7-4c37-bc56-d9a3128889ad/we-rave-together"
-    },
-    {
-      "id": "68b5359d-e9a5-495f-bb3d-4fc0cf4e33d0",
-      "title": "FEEL THE GROOVE",
-      "artist": "BIG K",
+      "id": "d08ad0f0-0d91-45cd-abf4-c2632dc5b9e8",
+      "title": "Find Myself",
+      "artist": "Aria",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/68b5359d-e9a5-495f-bb3d-4fc0cf4e33d0/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/68b5359d-e9a5-495f-bb3d-4fc0cf4e33d0/feel-the-groove"
+      "image": "https://hardstyle.com/track_image/d08ad0f0-0d91-45cd-abf4-c2632dc5b9e8/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/d08ad0f0-0d91-45cd-abf4-c2632dc5b9e8/find-myself"
     },
     {
-      "id": "18b142f8-8b6c-43cf-8eab-f3bd96124391",
-      "title": "MOVE YOUR BODY!!",
-      "artist": "BIG K",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/18b142f8-8b6c-43cf-8eab-f3bd96124391/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/18b142f8-8b6c-43cf-8eab-f3bd96124391/move-your-body"
+      "id": "806f1f23-8df3-4504-88b1-497dd8693790",
+      "title": "Rasputin",
+      "artist": "Bounce Alliance",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/806f1f23-8df3-4504-88b1-497dd8693790/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/806f1f23-8df3-4504-88b1-497dd8693790/rasputin"
+    },
+    {
+      "id": "411708de-8f04-4a3e-b456-95b4494c3cd7",
+      "title": "Rasputin",
+      "artist": "Bounce Alliance",
+      "mix": "Radio Edit",
+      "image": "https://hardstyle.com/track_image/411708de-8f04-4a3e-b456-95b4494c3cd7/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/411708de-8f04-4a3e-b456-95b4494c3cd7/rasputin"
+    },
+    {
+      "id": "8bdaa8d2-60eb-4b87-b439-5267cea061ae",
+      "title": "Stay Forever Tonight",
+      "artist": "Select",
+      "mix": "Original Extended Mix",
+      "image": "https://hardstyle.com/track_image/8bdaa8d2-60eb-4b87-b439-5267cea061ae/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/8bdaa8d2-60eb-4b87-b439-5267cea061ae/stay-forever-tonight"
+    },
+    {
+      "id": "299e48b0-77e1-47f2-967b-a1106c57e7d5",
+      "title": "Stay Forever Tonight",
+      "artist": "Select",
+      "mix": "Back To The 90's Extended Mix",
+      "image": "https://hardstyle.com/track_image/299e48b0-77e1-47f2-967b-a1106c57e7d5/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/299e48b0-77e1-47f2-967b-a1106c57e7d5/stay-forever-tonight"
+    },
+    {
+      "id": "a73d5e22-24ae-4702-a026-cfbf7a91025e",
+      "title": "Fuck Everybody",
+      "artist": "Technohead",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/a73d5e22-24ae-4702-a026-cfbf7a91025e/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/a73d5e22-24ae-4702-a026-cfbf7a91025e/fuck-everybody"
     },
     {
       "id": "3deb7366-7022-4dba-8216-5dbe192b63b6",
