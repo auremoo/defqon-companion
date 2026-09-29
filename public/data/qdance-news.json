@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-09-28T13:01:10.297Z",
+  "updatedAt": "2026-09-29T12:12:24.983Z",
   "videos": [
+    {
+      "id": "IIiV5VQ84i4",
+      "title": "Something special is coming.🧡🐉",
+      "published": "2026-09-29T11:00:30+00:00",
+      "link": "https://www.youtube.com/watch?v=IIiV5VQ84i4",
+      "thumbnail": "https://i.ytimg.com/vi/IIiV5VQ84i4/mqdefault.jpg"
+    },
+    {
+      "id": "K8JoMGmqnJI",
+      "title": "Our new journey begins this Thursday at 20:00 CEST on the Q-dance YouTube channel.#defqon1",
+      "published": "2026-09-29T08:00:16+00:00",
+      "link": "https://www.youtube.com/watch?v=K8JoMGmqnJI",
+      "thumbnail": "https://i.ytimg.com/vi/K8JoMGmqnJI/mqdefault.jpg"
+    },
     {
       "id": "fCZ3AfXKQQQ",
       "title": "Behind Defqon.1 | Up Close with D-Sturb",
@@ -91,20 +105,6 @@
       "published": "2026-07-31T15:00:09+00:00",
       "link": "https://www.youtube.com/watch?v=uYa3mElGC_c",
       "thumbnail": "https://i.ytimg.com/vi/uYa3mElGC_c/mqdefault.jpg"
-    },
-    {
-      "id": "zCSY0hS4cQk",
-      "title": "Like your hardcore fast, fierce and direct? Watch AniMe’s set at Defqon.1 2026 now. #defqon1",
-      "published": "2026-07-31T11:00:09+00:00",
-      "link": "https://www.youtube.com/watch?v=zCSY0hS4cQk",
-      "thumbnail": "https://i.ytimg.com/vi/zCSY0hS4cQk/mqdefault.jpg"
-    },
-    {
-      "id": "OPX77LQI17M",
-      "title": "AniMe | Defqon.1 2026",
-      "published": "2026-07-30T18:00:34+00:00",
-      "link": "https://www.youtube.com/watch?v=OPX77LQI17M",
-      "thumbnail": "https://i.ytimg.com/vi/OPX77LQI17M/mqdefault.jpg"
     }
   ]
 }
