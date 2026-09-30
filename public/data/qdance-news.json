@@ -1,6 +1,27 @@
 {
-  "updatedAt": "2026-09-29T12:12:24.983Z",
+  "updatedAt": "2026-09-30T11:59:08.050Z",
   "videos": [
+    {
+      "id": "sjqULe88uHM",
+      "title": "Watch Behind Defqon.1 | Up Close with D-Sturb now #defqon.1",
+      "published": "2026-09-29T18:00:17+00:00",
+      "link": "https://www.youtube.com/watch?v=sjqULe88uHM",
+      "thumbnail": "https://i.ytimg.com/vi/sjqULe88uHM/mqdefault.jpg"
+    },
+    {
+      "id": "Vwl44XSnbbU",
+      "title": "The Defqon.1 Wishlist opens this Thursday. At 20:00 CEST, during Defqon.1 The Kick-off!",
+      "published": "2026-09-29T17:00:13+00:00",
+      "link": "https://www.youtube.com/watch?v=Vwl44XSnbbU",
+      "thumbnail": "https://i.ytimg.com/vi/Vwl44XSnbbU/mqdefault.jpg"
+    },
+    {
+      "id": "1oA3nlkpPh0",
+      "title": "Watch Behind Defqon.1 | Up Close with D-Sturb now #defqon.1",
+      "published": "2026-09-29T12:15:17+00:00",
+      "link": "https://www.youtube.com/watch?v=1oA3nlkpPh0",
+      "thumbnail": "https://i.ytimg.com/vi/1oA3nlkpPh0/mqdefault.jpg"
+    },
     {
       "id": "IIiV5VQ84i4",
       "title": "Something special is coming.🧡🐉",
@@ -84,27 +105,6 @@
       "published": "2026-08-01T09:00:19+00:00",
       "link": "https://www.youtube.com/watch?v=2adVGs8jg7M",
       "thumbnail": "https://i.ytimg.com/vi/2adVGs8jg7M/mqdefault.jpg"
-    },
-    {
-      "id": "jz6tjICfTpU",
-      "title": "Heavyweight kicks and dark atmospheres. Watch Ran-D & Adaro's Defqon.1 2026 set now. #defqon1",
-      "published": "2026-07-31T18:00:36+00:00",
-      "link": "https://www.youtube.com/watch?v=jz6tjICfTpU",
-      "thumbnail": "https://i.ytimg.com/vi/jz6tjICfTpU/mqdefault.jpg"
-    },
-    {
-      "id": "w4QJvock5Rk",
-      "title": "Ran-D & Adaro | Defqon.1 2026",
-      "published": "2026-07-31T18:00:11+00:00",
-      "link": "https://www.youtube.com/watch?v=w4QJvock5Rk",
-      "thumbnail": "https://i.ytimg.com/vi/w4QJvock5Rk/mqdefault.jpg"
-    },
-    {
-      "id": "uYa3mElGC_c",
-      "title": "Raw hardstyle runs deep. Ran-D & Adaro's Defqon.1 2026 set drops tonight at 20:00 CEST. #defqon1",
-      "published": "2026-07-31T15:00:09+00:00",
-      "link": "https://www.youtube.com/watch?v=uYa3mElGC_c",
-      "thumbnail": "https://i.ytimg.com/vi/uYa3mElGC_c/mqdefault.jpg"
     }
   ]
 }
