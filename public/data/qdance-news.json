@@ -1,6 +1,48 @@
 {
-  "updatedAt": "2026-09-30T11:59:08.050Z",
+  "updatedAt": "2026-10-01T12:31:31.528Z",
   "videos": [
+    {
+      "id": "PTtoN4ZDykc",
+      "title": "Watch Behind Defqon.1 | Up Close with D-Sturb now #defqon.1",
+      "published": "2026-10-01T09:00:35+00:00",
+      "link": "https://www.youtube.com/watch?v=PTtoN4ZDykc",
+      "thumbnail": "https://i.ytimg.com/vi/PTtoN4ZDykc/mqdefault.jpg"
+    },
+    {
+      "id": "fVuT8wylDM8",
+      "title": "Our new chapter begins tonight with Defqon.1 The Kick-off 2027 at 20:00 CEST. #defqon1",
+      "published": "2026-10-01T07:00:37+00:00",
+      "link": "https://www.youtube.com/watch?v=fVuT8wylDM8",
+      "thumbnail": "https://i.ytimg.com/vi/fVuT8wylDM8/mqdefault.jpg"
+    },
+    {
+      "id": "43KDANPL-Ck",
+      "title": "The Kick-Off | Defqon.1 2027",
+      "published": "2026-09-30T17:25:57+00:00",
+      "link": "https://www.youtube.com/watch?v=43KDANPL-Ck",
+      "thumbnail": "https://i.ytimg.com/vi/43KDANPL-Ck/mqdefault.jpg"
+    },
+    {
+      "id": "6t8sAw6Obkk",
+      "title": "Watch Behind Defqon.1 | Up Close with D-Sturb now #defqon.1",
+      "published": "2026-09-30T16:00:33+00:00",
+      "link": "https://www.youtube.com/watch?v=6t8sAw6Obkk",
+      "thumbnail": "https://i.ytimg.com/vi/6t8sAw6Obkk/mqdefault.jpg"
+    },
+    {
+      "id": "9vqkVfvhl1k",
+      "title": "Defqon.1 Special 🧡🐉",
+      "published": "2026-09-30T14:34:15+00:00",
+      "link": "https://www.youtube.com/watch?v=9vqkVfvhl1k",
+      "thumbnail": "https://i.ytimg.com/vi/9vqkVfvhl1k/mqdefault.jpg"
+    },
+    {
+      "id": "4r1tdEmJ8sY",
+      "title": "Watch Behind Defqon.1 | Up Close with D-Sturb now #defqon.1",
+      "published": "2026-09-30T12:00:02+00:00",
+      "link": "https://www.youtube.com/watch?v=4r1tdEmJ8sY",
+      "thumbnail": "https://i.ytimg.com/vi/4r1tdEmJ8sY/mqdefault.jpg"
+    },
     {
       "id": "sjqULe88uHM",
       "title": "Watch Behind Defqon.1 | Up Close with D-Sturb now #defqon.1",
@@ -63,48 +105,6 @@
       "published": "2026-08-04T15:00:35+00:00",
       "link": "https://www.youtube.com/watch?v=tm9ADfaPl7o",
       "thumbnail": "https://i.ytimg.com/vi/tm9ADfaPl7o/mqdefault.jpg"
-    },
-    {
-      "id": "qUoqWywvuT4",
-      "title": "Even in silence, The Endshow lives on. Experience the full Defqon.1 2026 Endshow now. #defqon1",
-      "published": "2026-08-03T15:00:08+00:00",
-      "link": "https://www.youtube.com/watch?v=qUoqWywvuT4",
-      "thumbnail": "https://i.ytimg.com/vi/qUoqWywvuT4/mqdefault.jpg"
-    },
-    {
-      "id": "sQRjDyyUzv4",
-      "title": "Step back into the sound and energy of Miss K8. Watch the full set now. #defqon1",
-      "published": "2026-08-02T11:00:34+00:00",
-      "link": "https://www.youtube.com/watch?v=sQRjDyyUzv4",
-      "thumbnail": "https://i.ytimg.com/vi/sQRjDyyUzv4/mqdefault.jpg"
-    },
-    {
-      "id": "fE4EYaw0410",
-      "title": "Hardcore intensity defines every Miss K8 performance. Watch her Defqon.1 2026 set now. #defqon1",
-      "published": "2026-08-01T16:00:28+00:00",
-      "link": "https://www.youtube.com/watch?v=fE4EYaw0410",
-      "thumbnail": "https://i.ytimg.com/vi/fE4EYaw0410/mqdefault.jpg"
-    },
-    {
-      "id": "sFzdmFvTF8A",
-      "title": "Miss K8 | Defqon.1 2026",
-      "published": "2026-08-01T16:00:21+00:00",
-      "link": "https://www.youtube.com/watch?v=sFzdmFvTF8A",
-      "thumbnail": "https://i.ytimg.com/vi/sFzdmFvTF8A/mqdefault.jpg"
-    },
-    {
-      "id": "_Dk2Gt8-ttk",
-      "title": "Hardcore at full force. Miss K8's set drops tonight at 18:00 CEST. #defqon1",
-      "published": "2026-08-01T13:00:19+00:00",
-      "link": "https://www.youtube.com/watch?v=_Dk2Gt8-ttk",
-      "thumbnail": "https://i.ytimg.com/vi/_Dk2Gt8-ttk/mqdefault.jpg"
-    },
-    {
-      "id": "2adVGs8jg7M",
-      "title": "Ran-D & Adaro brought raw hardstyle to the BLUE. Watch their Defqon.1 2026 performance now. #defqon1",
-      "published": "2026-08-01T09:00:19+00:00",
-      "link": "https://www.youtube.com/watch?v=2adVGs8jg7M",
-      "thumbnail": "https://i.ytimg.com/vi/2adVGs8jg7M/mqdefault.jpg"
     }
   ]
 }
