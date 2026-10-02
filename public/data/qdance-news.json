@@ -1,6 +1,55 @@
 {
-  "updatedAt": "2026-10-01T12:31:31.528Z",
+  "updatedAt": "2026-10-02T11:57:54.618Z",
   "videos": [
+    {
+      "id": "n86W9H4DqsI",
+      "title": "Watch Behind Defqon.1 | Up Close with D-Sturb now #defqon.1",
+      "published": "2026-10-02T09:00:13+00:00",
+      "link": "https://www.youtube.com/watch?v=n86W9H4DqsI",
+      "thumbnail": "https://i.ytimg.com/vi/n86W9H4DqsI/mqdefault.jpg"
+    },
+    {
+      "id": "BWatLdlpKeo",
+      "title": "The Deepening | Defqon.1 2027 Theme",
+      "published": "2026-10-02T07:00:12+00:00",
+      "link": "https://www.youtube.com/watch?v=BWatLdlpKeo",
+      "thumbnail": "https://i.ytimg.com/vi/BWatLdlpKeo/mqdefault.jpg"
+    },
+    {
+      "id": "kMPZDaDajE8",
+      "title": "Heart of a Dragon, a special Defqon.1 track by Ran-D, Brennan Heart, Floor Jansen & Rogier Tromp.",
+      "published": "2026-10-01T19:30:10+00:00",
+      "link": "https://www.youtube.com/watch?v=kMPZDaDajE8",
+      "thumbnail": "https://i.ytimg.com/vi/kMPZDaDajE8/mqdefault.jpg"
+    },
+    {
+      "id": "nMsC1EIhwcU",
+      "title": "Warriors, salute the Defqon.1 2027 Anthem Creators: Rebelion!#defqon1",
+      "published": "2026-10-01T19:00:07+00:00",
+      "link": "https://www.youtube.com/watch?v=nMsC1EIhwcU",
+      "thumbnail": "https://i.ytimg.com/vi/nMsC1EIhwcU/mqdefault.jpg"
+    },
+    {
+      "id": "9vqkVfvhl1k",
+      "title": "Ran-D & Brennan Heart ft. Floor Jansen - Heart Of A Dragon | Defqon.1 Special",
+      "published": "2026-10-01T19:00:06+00:00",
+      "link": "https://www.youtube.com/watch?v=9vqkVfvhl1k",
+      "thumbnail": "https://i.ytimg.com/vi/9vqkVfvhl1k/mqdefault.jpg"
+    },
+    {
+      "id": "43KDANPL-Ck",
+      "title": "The Kick-Off | Defqon.1 2027",
+      "published": "2026-10-01T18:00:09+00:00",
+      "link": "https://www.youtube.com/watch?v=43KDANPL-Ck",
+      "thumbnail": "https://i.ytimg.com/vi/43KDANPL-Ck/mqdefault.jpg"
+    },
+    {
+      "id": "u6lOcibRvgU",
+      "title": "Watch Behind Defqon.1 | Up Close with D-Sturb now #defqon.1",
+      "published": "2026-10-01T15:00:22+00:00",
+      "link": "https://www.youtube.com/watch?v=u6lOcibRvgU",
+      "thumbnail": "https://i.ytimg.com/vi/u6lOcibRvgU/mqdefault.jpg"
+    },
     {
       "id": "PTtoN4ZDykc",
       "title": "Watch Behind Defqon.1 | Up Close with D-Sturb now #defqon.1",
@@ -16,25 +65,11 @@
       "thumbnail": "https://i.ytimg.com/vi/fVuT8wylDM8/mqdefault.jpg"
     },
     {
-      "id": "43KDANPL-Ck",
-      "title": "The Kick-Off | Defqon.1 2027",
-      "published": "2026-09-30T17:25:57+00:00",
-      "link": "https://www.youtube.com/watch?v=43KDANPL-Ck",
-      "thumbnail": "https://i.ytimg.com/vi/43KDANPL-Ck/mqdefault.jpg"
-    },
-    {
       "id": "6t8sAw6Obkk",
       "title": "Watch Behind Defqon.1 | Up Close with D-Sturb now #defqon.1",
       "published": "2026-09-30T16:00:33+00:00",
       "link": "https://www.youtube.com/watch?v=6t8sAw6Obkk",
       "thumbnail": "https://i.ytimg.com/vi/6t8sAw6Obkk/mqdefault.jpg"
-    },
-    {
-      "id": "9vqkVfvhl1k",
-      "title": "Defqon.1 Special 🧡🐉",
-      "published": "2026-09-30T14:34:15+00:00",
-      "link": "https://www.youtube.com/watch?v=9vqkVfvhl1k",
-      "thumbnail": "https://i.ytimg.com/vi/9vqkVfvhl1k/mqdefault.jpg"
     },
     {
       "id": "4r1tdEmJ8sY",
@@ -70,41 +105,6 @@
       "published": "2026-09-29T11:00:30+00:00",
       "link": "https://www.youtube.com/watch?v=IIiV5VQ84i4",
       "thumbnail": "https://i.ytimg.com/vi/IIiV5VQ84i4/mqdefault.jpg"
-    },
-    {
-      "id": "K8JoMGmqnJI",
-      "title": "Our new journey begins this Thursday at 20:00 CEST on the Q-dance YouTube channel.#defqon1",
-      "published": "2026-09-29T08:00:16+00:00",
-      "link": "https://www.youtube.com/watch?v=K8JoMGmqnJI",
-      "thumbnail": "https://i.ytimg.com/vi/K8JoMGmqnJI/mqdefault.jpg"
-    },
-    {
-      "id": "fCZ3AfXKQQQ",
-      "title": "Behind Defqon.1 | Up Close with D-Sturb",
-      "published": "2026-09-24T18:00:10+00:00",
-      "link": "https://www.youtube.com/watch?v=fCZ3AfXKQQQ",
-      "thumbnail": "https://i.ytimg.com/vi/fCZ3AfXKQQQ/mqdefault.jpg"
-    },
-    {
-      "id": "BXHR6zeFf3U",
-      "title": "This Thursday, we dive into the untold story of the Defqon.1 2026 anthem creator D-Sturb.",
-      "published": "2026-09-22T14:00:17+00:00",
-      "link": "https://www.youtube.com/watch?v=BXHR6zeFf3U",
-      "thumbnail": "https://i.ytimg.com/vi/BXHR6zeFf3U/mqdefault.jpg"
-    },
-    {
-      "id": "VIKQ_podyvU",
-      "title": "Tune in to Defqon.1 The Kick-off 2027 on October 1st at 20:00 CEST.",
-      "published": "2026-09-18T11:00:32+00:00",
-      "link": "https://www.youtube.com/watch?v=VIKQ_podyvU",
-      "thumbnail": "https://i.ytimg.com/vi/VIKQ_podyvU/mqdefault.jpg"
-    },
-    {
-      "id": "tm9ADfaPl7o",
-      "title": "A legendary melody returned to the Holy Grounds. Experience The Tribute now. #defqon1",
-      "published": "2026-08-04T15:00:35+00:00",
-      "link": "https://www.youtube.com/watch?v=tm9ADfaPl7o",
-      "thumbnail": "https://i.ytimg.com/vi/tm9ADfaPl7o/mqdefault.jpg"
     }
   ]
 }
