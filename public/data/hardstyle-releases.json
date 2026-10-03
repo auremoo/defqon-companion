@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-10-02T10:54:22.242Z",
+  "updatedAt": "2026-10-03T10:14:42.356Z",
   "releases": [
+    {
+      "id": "f378040c-b342-4c49-b6a5-019287de7279",
+      "title": "Omnidirectional",
+      "artist": "Jadekill",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/f378040c-b342-4c49-b6a5-019287de7279/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/f378040c-b342-4c49-b6a5-019287de7279/omnidirectional"
+    },
+    {
+      "id": "8ecf0390-a9a0-48f0-9f23-ed75fafd388e",
+      "title": "Omnidirectional",
+      "artist": "Jadekill",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/8ecf0390-a9a0-48f0-9f23-ed75fafd388e/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/8ecf0390-a9a0-48f0-9f23-ed75fafd388e/omnidirectional"
+    },
+    {
+      "id": "aa19c69c-b352-4426-a6d1-d98621bd6ed3",
+      "title": "eye of the storm",
+      "artist": "Atmozfears",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/aa19c69c-b352-4426-a6d1-d98621bd6ed3/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/aa19c69c-b352-4426-a6d1-d98621bd6ed3/eye-of-the-storm"
+    },
     {
       "id": "fa33147d-615b-4a28-a77a-0472bd6d70ab",
       "title": "UNDERGROUND",
@@ -24,30 +48,6 @@
       "mix": "Original Mix",
       "image": "https://hardstyle.com/track_image/c55d395c-ccfa-4d63-b04c-dcee17118067/250x250/335",
       "link": "https://hardstyle.com/en/tracks/c55d395c-ccfa-4d63-b04c-dcee17118067/grotesque"
-    },
-    {
-      "id": "f68baf4c-0263-4596-b0af-c2330ac98c17",
-      "title": "Vertigo",
-      "artist": "Diffuse",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/f68baf4c-0263-4596-b0af-c2330ac98c17/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/f68baf4c-0263-4596-b0af-c2330ac98c17/vertigo"
-    },
-    {
-      "id": "9b47bd8e-89f5-467d-b719-78001c47407d",
-      "title": "Crazy Train",
-      "artist": "Diztorted",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/9b47bd8e-89f5-467d-b719-78001c47407d/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/9b47bd8e-89f5-467d-b719-78001c47407d/crazy-train"
-    },
-    {
-      "id": "62e14fa7-a6bd-4fef-8efc-d3aa21256c81",
-      "title": "Finish Him",
-      "artist": "Desolate One",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/62e14fa7-a6bd-4fef-8efc-d3aa21256c81/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/62e14fa7-a6bd-4fef-8efc-d3aa21256c81/finish-him"
     },
     {
       "id": "3deb7366-7022-4dba-8216-5dbe192b63b6",
