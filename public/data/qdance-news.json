@@ -1,6 +1,41 @@
 {
-  "updatedAt": "2026-10-02T11:57:54.618Z",
+  "updatedAt": "2026-10-03T11:10:16.306Z",
   "videos": [
+    {
+      "id": "NobOk86cOCc",
+      "title": "Watch Behind Defqon.1 | Up Close with D-Sturb now #defqon.1",
+      "published": "2026-10-03T09:00:27+00:00",
+      "link": "https://www.youtube.com/watch?v=NobOk86cOCc",
+      "thumbnail": "https://i.ytimg.com/vi/NobOk86cOCc/mqdefault.jpg"
+    },
+    {
+      "id": "P7T90qnj-R4",
+      "title": "This was Defqon.1 2026.",
+      "published": "2026-10-03T08:00:35+00:00",
+      "link": "https://www.youtube.com/watch?v=P7T90qnj-R4",
+      "thumbnail": "https://i.ytimg.com/vi/P7T90qnj-R4/mqdefault.jpg"
+    },
+    {
+      "id": "-cYIKvezBVQ",
+      "title": "Forever One Tribe. This was Defqon.1 2026. Warriors, thank you. See you at Defqon.1 2027! #defqon1",
+      "published": "2026-10-03T08:00:28+00:00",
+      "link": "https://www.youtube.com/watch?v=-cYIKvezBVQ",
+      "thumbnail": "https://i.ytimg.com/vi/-cYIKvezBVQ/mqdefault.jpg"
+    },
+    {
+      "id": "zoBohE6Ufzc",
+      "title": "Watch Behind Defqon.1 | Up Close with D-Sturb now #defqon.1",
+      "published": "2026-10-02T15:00:16+00:00",
+      "link": "https://www.youtube.com/watch?v=zoBohE6Ufzc",
+      "thumbnail": "https://i.ytimg.com/vi/zoBohE6Ufzc/mqdefault.jpg"
+    },
+    {
+      "id": "WDYyFo7hnTM",
+      "title": "Embrace the Flame with the new Defqon.1 2027 Kick-off Collection, now in the Q-dance Store. #defqon1",
+      "published": "2026-10-02T12:00:10+00:00",
+      "link": "https://www.youtube.com/watch?v=WDYyFo7hnTM",
+      "thumbnail": "https://i.ytimg.com/vi/WDYyFo7hnTM/mqdefault.jpg"
+    },
     {
       "id": "n86W9H4DqsI",
       "title": "Watch Behind Defqon.1 | Up Close with D-Sturb now #defqon.1",
@@ -70,41 +105,6 @@
       "published": "2026-09-30T16:00:33+00:00",
       "link": "https://www.youtube.com/watch?v=6t8sAw6Obkk",
       "thumbnail": "https://i.ytimg.com/vi/6t8sAw6Obkk/mqdefault.jpg"
-    },
-    {
-      "id": "4r1tdEmJ8sY",
-      "title": "Watch Behind Defqon.1 | Up Close with D-Sturb now #defqon.1",
-      "published": "2026-09-30T12:00:02+00:00",
-      "link": "https://www.youtube.com/watch?v=4r1tdEmJ8sY",
-      "thumbnail": "https://i.ytimg.com/vi/4r1tdEmJ8sY/mqdefault.jpg"
-    },
-    {
-      "id": "sjqULe88uHM",
-      "title": "Watch Behind Defqon.1 | Up Close with D-Sturb now #defqon.1",
-      "published": "2026-09-29T18:00:17+00:00",
-      "link": "https://www.youtube.com/watch?v=sjqULe88uHM",
-      "thumbnail": "https://i.ytimg.com/vi/sjqULe88uHM/mqdefault.jpg"
-    },
-    {
-      "id": "Vwl44XSnbbU",
-      "title": "The Defqon.1 Wishlist opens this Thursday. At 20:00 CEST, during Defqon.1 The Kick-off!",
-      "published": "2026-09-29T17:00:13+00:00",
-      "link": "https://www.youtube.com/watch?v=Vwl44XSnbbU",
-      "thumbnail": "https://i.ytimg.com/vi/Vwl44XSnbbU/mqdefault.jpg"
-    },
-    {
-      "id": "1oA3nlkpPh0",
-      "title": "Watch Behind Defqon.1 | Up Close with D-Sturb now #defqon.1",
-      "published": "2026-09-29T12:15:17+00:00",
-      "link": "https://www.youtube.com/watch?v=1oA3nlkpPh0",
-      "thumbnail": "https://i.ytimg.com/vi/1oA3nlkpPh0/mqdefault.jpg"
-    },
-    {
-      "id": "IIiV5VQ84i4",
-      "title": "Something special is coming.🧡🐉",
-      "published": "2026-09-29T11:00:30+00:00",
-      "link": "https://www.youtube.com/watch?v=IIiV5VQ84i4",
-      "thumbnail": "https://i.ytimg.com/vi/IIiV5VQ84i4/mqdefault.jpg"
     }
   ]
 }
