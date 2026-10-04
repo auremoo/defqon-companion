@@ -1,6 +1,14 @@
 {
-  "updatedAt": "2026-10-03T10:14:42.356Z",
+  "updatedAt": "2026-10-04T10:56:46.681Z",
   "releases": [
+    {
+      "id": "c56d20c8-56af-44e7-a54e-c953b296a6cc",
+      "title": "THE ABYSS (Official Alpha Spectrum 2026 Anthem)",
+      "artist": "Tommy Vans",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/c56d20c8-56af-44e7-a54e-c953b296a6cc/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/c56d20c8-56af-44e7-a54e-c953b296a6cc/the-abyss-official-alpha-spectrum-2026-anthem"
+    },
     {
       "id": "f378040c-b342-4c49-b6a5-019287de7279",
       "title": "Omnidirectional",
@@ -40,14 +48,6 @@
       "mix": "Original Mix",
       "image": "https://hardstyle.com/track_image/11b4d42a-e9f1-454f-a66e-e5665696f398/250x250/335",
       "link": "https://hardstyle.com/en/tracks/11b4d42a-e9f1-454f-a66e-e5665696f398/sacramentum"
-    },
-    {
-      "id": "c55d395c-ccfa-4d63-b04c-dcee17118067",
-      "title": "Grotesque",
-      "artist": "Diffuse",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/c55d395c-ccfa-4d63-b04c-dcee17118067/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/c55d395c-ccfa-4d63-b04c-dcee17118067/grotesque"
     },
     {
       "id": "3deb7366-7022-4dba-8216-5dbe192b63b6",
