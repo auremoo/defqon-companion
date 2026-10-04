@@ -1,6 +1,34 @@
 {
-  "updatedAt": "2026-10-03T11:10:16.306Z",
+  "updatedAt": "2026-10-04T11:50:08.123Z",
   "videos": [
+    {
+      "id": "yLHhscf9-AM",
+      "title": "Embrace the flame. 🔥 Go behind the scenes of the Defqon.1 2027 Kick-off Collection shoot. #defqon1",
+      "published": "2026-10-04T11:00:36+00:00",
+      "link": "https://www.youtube.com/watch?v=yLHhscf9-AM",
+      "thumbnail": "https://i.ytimg.com/vi/yLHhscf9-AM/mqdefault.jpg"
+    },
+    {
+      "id": "r-Uwi7ssHt0",
+      "title": "The RED Race returns for Season 3. Will you go for glory? Submissions open October 21st. #defqon1",
+      "published": "2026-10-04T08:00:12+00:00",
+      "link": "https://www.youtube.com/watch?v=r-Uwi7ssHt0",
+      "thumbnail": "https://i.ytimg.com/vi/r-Uwi7ssHt0/mqdefault.jpg"
+    },
+    {
+      "id": "tyqoBrdxVdQ",
+      "title": "Watch Behind Defqon.1 | Up Close with D-Sturb now #defqon.1",
+      "published": "2026-10-04T07:00:14+00:00",
+      "link": "https://www.youtube.com/watch?v=tyqoBrdxVdQ",
+      "thumbnail": "https://i.ytimg.com/vi/tyqoBrdxVdQ/mqdefault.jpg"
+    },
+    {
+      "id": "_EGMaZLiBzU",
+      "title": "Watch Behind Defqon.1 | Up Close with D-Sturb now #defqon.1",
+      "published": "2026-10-03T14:00:38+00:00",
+      "link": "https://www.youtube.com/watch?v=_EGMaZLiBzU",
+      "thumbnail": "https://i.ytimg.com/vi/_EGMaZLiBzU/mqdefault.jpg"
+    },
     {
       "id": "NobOk86cOCc",
       "title": "Watch Behind Defqon.1 | Up Close with D-Sturb now #defqon.1",
@@ -77,34 +105,6 @@
       "published": "2026-10-01T18:00:09+00:00",
       "link": "https://www.youtube.com/watch?v=43KDANPL-Ck",
       "thumbnail": "https://i.ytimg.com/vi/43KDANPL-Ck/mqdefault.jpg"
-    },
-    {
-      "id": "u6lOcibRvgU",
-      "title": "Watch Behind Defqon.1 | Up Close with D-Sturb now #defqon.1",
-      "published": "2026-10-01T15:00:22+00:00",
-      "link": "https://www.youtube.com/watch?v=u6lOcibRvgU",
-      "thumbnail": "https://i.ytimg.com/vi/u6lOcibRvgU/mqdefault.jpg"
-    },
-    {
-      "id": "PTtoN4ZDykc",
-      "title": "Watch Behind Defqon.1 | Up Close with D-Sturb now #defqon.1",
-      "published": "2026-10-01T09:00:35+00:00",
-      "link": "https://www.youtube.com/watch?v=PTtoN4ZDykc",
-      "thumbnail": "https://i.ytimg.com/vi/PTtoN4ZDykc/mqdefault.jpg"
-    },
-    {
-      "id": "fVuT8wylDM8",
-      "title": "Our new chapter begins tonight with Defqon.1 The Kick-off 2027 at 20:00 CEST. #defqon1",
-      "published": "2026-10-01T07:00:37+00:00",
-      "link": "https://www.youtube.com/watch?v=fVuT8wylDM8",
-      "thumbnail": "https://i.ytimg.com/vi/fVuT8wylDM8/mqdefault.jpg"
-    },
-    {
-      "id": "6t8sAw6Obkk",
-      "title": "Watch Behind Defqon.1 | Up Close with D-Sturb now #defqon.1",
-      "published": "2026-09-30T16:00:33+00:00",
-      "link": "https://www.youtube.com/watch?v=6t8sAw6Obkk",
-      "thumbnail": "https://i.ytimg.com/vi/6t8sAw6Obkk/mqdefault.jpg"
     }
   ]
 }
