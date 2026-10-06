@@ -1,6 +1,38 @@
 {
-  "updatedAt": "2026-10-05T12:04:46.761Z",
+  "updatedAt": "2026-10-06T11:49:45.162Z",
   "releases": [
+    {
+      "id": "8b77f02e-ed83-477f-9b39-f123c820ef28",
+      "title": "I Got Stoned And I Missed It",
+      "artist": "DTAH",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/8b77f02e-ed83-477f-9b39-f123c820ef28/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/8b77f02e-ed83-477f-9b39-f123c820ef28/i-got-stoned-and-i-missed-it"
+    },
+    {
+      "id": "ffdf6e2c-e5f0-4f78-9c09-a1c8df8e6e17",
+      "title": "I Got Stoned And I Missed It",
+      "artist": "DTAH",
+      "mix": "Radio Edit",
+      "image": "https://hardstyle.com/track_image/ffdf6e2c-e5f0-4f78-9c09-a1c8df8e6e17/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/ffdf6e2c-e5f0-4f78-9c09-a1c8df8e6e17/i-got-stoned-and-i-missed-it"
+    },
+    {
+      "id": "f6ac4286-897b-454e-b3f7-35e7387fd9f3",
+      "title": "Listen With Your Heart",
+      "artist": "Big Ric",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/f6ac4286-897b-454e-b3f7-35e7387fd9f3/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/f6ac4286-897b-454e-b3f7-35e7387fd9f3/listen-with-your-heart"
+    },
+    {
+      "id": "b00244e8-5278-4d4e-a450-8e2ec3bcebfc",
+      "title": "Listen With Your Heart",
+      "artist": "Big Ric",
+      "mix": "Radio Edit",
+      "image": "https://hardstyle.com/track_image/b00244e8-5278-4d4e-a450-8e2ec3bcebfc/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/b00244e8-5278-4d4e-a450-8e2ec3bcebfc/listen-with-your-heart"
+    },
     {
       "id": "1c9cae24-091a-43f6-bf09-4b1b0b197538",
       "title": "Blue Screen Love",
@@ -16,38 +48,6 @@
       "mix": "Bounce Edit",
       "image": "https://hardstyle.com/track_image/20ebb0c8-56b4-40c4-95ce-938b942472ca/250x250/335",
       "link": "https://hardstyle.com/en/tracks/20ebb0c8-56b4-40c4-95ce-938b942472ca/blue-screen-love"
-    },
-    {
-      "id": "16d1d743-a5f4-497f-bd78-66679455502c",
-      "title": "Blue Screen Love",
-      "artist": "Dropzone",
-      "mix": "Extended mix",
-      "image": "https://hardstyle.com/track_image/16d1d743-a5f4-497f-bd78-66679455502c/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/16d1d743-a5f4-497f-bd78-66679455502c/blue-screen-love"
-    },
-    {
-      "id": "4f59c0ec-f941-480c-b2d0-cde196f0ba43",
-      "title": "Blue Screen Love",
-      "artist": "Dropzone",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/4f59c0ec-f941-480c-b2d0-cde196f0ba43/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/4f59c0ec-f941-480c-b2d0-cde196f0ba43/blue-screen-love"
-    },
-    {
-      "id": "75469dec-8486-4ccd-8be6-86aa3f73e8e4",
-      "title": "Interstellar",
-      "artist": "Roman Naboka",
-      "mix": "Remastered Mix",
-      "image": "https://hardstyle.com/track_image/75469dec-8486-4ccd-8be6-86aa3f73e8e4/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/75469dec-8486-4ccd-8be6-86aa3f73e8e4/interstellar"
-    },
-    {
-      "id": "3b493f56-fae5-4245-94f1-9385169f1c46",
-      "title": "Coming Off The Hinge",
-      "artist": "SethroW",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/3b493f56-fae5-4245-94f1-9385169f1c46/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/3b493f56-fae5-4245-94f1-9385169f1c46/coming-off-the-hinge"
     },
     {
       "id": "3deb7366-7022-4dba-8216-5dbe192b63b6",
