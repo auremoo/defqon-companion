@@ -3,14 +3,14 @@ import { festival, defaultChecklist } from '../data/festival'
 
 describe('Festival data', () => {
   it('has correct year', () => {
-    expect(festival.year).toBe(2026)
+    expect(festival.year).toBe(2027)
   })
 
   it('has valid dates', () => {
     const start = new Date(festival.startDate)
     const end = new Date(festival.endDate)
     expect(start.getTime()).toBeLessThan(end.getTime())
-    expect(start.getFullYear()).toBe(2026)
+    expect(start.getFullYear()).toBe(2027)
   })
 
   it('has location', () => {
@@ -18,7 +18,7 @@ describe('Festival data', () => {
   })
 
   it('has theme', () => {
-    expect(festival.theme).toBe('Sacred Oath')
+    expect(festival.theme).toBe('The Deepening')
   })
 
   it('has schedule entries', () => {

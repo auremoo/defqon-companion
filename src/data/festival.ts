@@ -1,9 +1,12 @@
 export const festival = {
   name: 'Defqon.1',
-  year: 2026,
-  theme: 'Sacred Oath',
-  startDate: '2026-06-25T18:00:00+02:00',
-  endDate: '2026-06-28T23:00:00+02:00',
+  year: 2027,
+  theme: 'The Deepening',
+  anthem: 'Rebelion', // anthem creator — track revealed at "The Release" in 2027
+  // Dates confirmed by Q-dance (June 24–27, 2027). Hours not yet announced —
+  // assumed identical to 2026 until the official timetable is out.
+  startDate: '2027-06-24T18:00:00+02:00',
+  endDate: '2027-06-27T23:00:00+02:00',
   location: 'Biddinghuizen, Netherlands',
   venue: 'Walibi Holland',
   schedule: [
@@ -22,10 +25,16 @@ export const festival = {
     totalTypical: 250_000,
   },
   firstEditionYear: 2003,
-  // The Gathering (Thursday) took place. Festival cancelled at midnight 26/06 due to
-  // first-ever Code Red heat warning in the Netherlands (38–40 °C). Full ticket refunds issued.
-  cancelled: true,
-  cancelledDate: '2026-06-26',
+  // Set these when an edition is cancelled (see 2026: Code Red heat warning)
+  cancelled: false as boolean,
+  cancelledDate: undefined as string | undefined,
+  // 2027 ticket sales (Q-dance). 2026 ticket holders could transfer to 2027,
+  // so only ~25% of tickets go on sale; DEDIQATED sale capped at 2 tickets/order.
+  ticketSales: [
+    { key: 'dediqated',   date: '2026-10-27' },
+    { key: 'travelStay',  date: '2026-10-29' },
+    { key: 'general',     date: '2026-10-31' },
+  ],
 }
 
 export interface AttendanceEntry {

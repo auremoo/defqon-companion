@@ -60,6 +60,14 @@ export const questions: QuizQuestion[] = [
     explanation: '"Sacred Oath" is the official theme of Defqon.1 2026.',
   },
   {
+    id: 'h6b',
+    category: 'history',
+    question: 'Who was chosen to create the Defqon.1 2027 anthem ("The Deepening")?',
+    answers: ['D-Sturb', 'Rebelion', 'Sub Zero Project', 'Phuture Noize'],
+    correct: 1,
+    explanation: 'Rebelion was revealed as the 2027 anthem creator at The Kick-off on October 1, 2026 — the bagpipes gave it away.',
+  },
+  {
     id: 'h7',
     category: 'history',
     question: 'Q-dance was founded in which year?',

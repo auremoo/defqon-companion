@@ -13,9 +13,9 @@
   },
   "home": {
     "title": "Defqon Companion",
-    "subtitle": "Ton compagnon pour Defqon.1 2026",
+    "subtitle": "Ton compagnon pour Defqon.1 2027",
     "countdown": {
-      "title": "Compte à rebours — Defqon.1 2026",
+      "title": "Compte à rebours — Defqon.1 2027",
       "days": "jours",
       "hours": "heures",
       "minutes": "min",
@@ -23,8 +23,8 @@
       "live": "Defqon.1, c’est MAINTENANT !",
       "past": "À l’année prochaine !"
     },
-    "theme": "Sacred Oath",
-    "dates": "25 – 28 juin 2026",
+    "theme": "The Deepening",
+    "dates": "24 – 27 juin 2027",
     "location": "Biddinghuizen, Pays-Bas",
     "playlist": "Get Hyped",
     "quickLinks": "Accès rapide",
@@ -36,10 +36,10 @@
     "cancelledBody": "Suite à la première alerte canicule Code Rouge de l'histoire des Pays-Bas (38–40 °C), Q-dance a annulé le festival à minuit le 26 juin. The Gathering (jeudi) a bien eu lieu. Remboursement intégral des billets prévu.",
     "cancelledFAQ": "Infos remboursement (FAQ Q-dance)",
     "goingTitle": "Bracelet reçu ?",
-    "goingSubtitle": "Confirme ta présence à Defqon.1 2026",
+    "goingSubtitle": "Confirme ta présence à Defqon.1 2027",
     "goingConfirm": "J'y vais !",
     "goingConfirmed": "Tu y vas !",
-    "goingDate": "Defqon.1 2026 — 25–28 juin, Biddinghuizen",
+    "goingDate": "Defqon.1 2027 — 24–27 juin, Biddinghuizen",
     "goingUndo": "Je n'y vais plus",
     "attendedTitle": "Tu étais à Defqon.1 {{year}} ?",
     "attendedSubtitle": "L'édition {{year}} est terminée — tu y as assisté ?",
@@ -53,7 +53,7 @@
     "gatheringConfirmed": "Tu étais au Gathering !",
     "statFirstEdition": "Première\nédition",
     "statStages": "Scènes\n2026",
-    "statArtists": "Artistes\nlookup 2026",
+    "statArtists": "Artistes\nline-up 2026",
     "statAttendees": "Festivaliers\nrecord jour",
     "statRecordTotal": "Record total\nédition {{year}}",
     "statAvgDay": "Moy. / jour",
@@ -69,7 +69,15 @@
     "officialLineup": "Lineup officiel",
     "qdanceApp": "App Q-dance",
     "moreSection": "Explorer plus",
-    "moreFeatures": "Toutes les fonctionnalités"
+    "moreFeatures": "Toutes les fonctionnalités",
+    "ticketSalesTitle": "Billetterie Defqon.1 {{year}}",
+    "ticketSales": {
+      "dediqated": "Vente DEDIQATED (membres)",
+      "travelStay": "Vente Travel & Stay",
+      "general": "Vente générale"
+    },
+    "ticketSalesNote": "Les détenteurs d'un billet 2026 ont pu le reporter sur 2027 : il ne reste qu'environ 25 % des billets. Max 2 billets par commande pendant la vente DEDIQATED. Ajoute l'événement à ta Wishlist avant.",
+    "ticketSalesLink": "Billets (Q-dance)"
   },
   "festival": {
     "hubTitle": "Festival",

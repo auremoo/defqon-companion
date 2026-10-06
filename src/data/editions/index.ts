@@ -20,6 +20,8 @@ export interface EditionMeta {
   isCurrent: boolean
 }
 
+// 2026 stays the "current" lineup edition until the 2027 lineup is announced.
+// The upcoming festival (2027: The Deepening) lives in data/festival.ts.
 export const editionMetas: EditionMeta[] = [
   { year: 2026, theme: 'Sacred Oath',           isCurrent: true  },
   { year: 2025, theme: 'Where Legends Rise',     isCurrent: false },

@@ -13,7 +13,8 @@ const edition2026: Edition = {
   keyFacts: [
     'First-ever Code Red heat warning in Netherlands history (38–40 °C)',
     'The Gathering (Thursday) took place — festival cancelled at midnight 26/06',
-    'Full ticket refunds issued by Q-dance',
+    'Ticket holders chose between a full refund or a guaranteed transfer to 2027',
+    'Endshow recording released by Q-dance after the cancellation',
     'Anthem: D-Sturb ft. E-Life — Sacred Oath',
   ],
   stagesPerDay,

@@ -13,9 +13,9 @@
   },
   "home": {
     "title": "Defqon Companion",
-    "subtitle": "Your companion for Defqon.1 2026",
+    "subtitle": "Your companion for Defqon.1 2027",
     "countdown": {
-      "title": "Countdown to Defqon.1 2026",
+      "title": "Countdown to Defqon.1 2027",
       "days": "days",
       "hours": "hours",
       "minutes": "min",
@@ -23,8 +23,8 @@
       "live": "Defqon.1 is happening NOW!",
       "past": "See you next year!"
     },
-    "theme": "Sacred Oath",
-    "dates": "June 25 – 28, 2026",
+    "theme": "The Deepening",
+    "dates": "June 24 – 27, 2027",
     "location": "Biddinghuizen, Netherlands",
     "playlist": "Get Hyped",
     "quickLinks": "Quick Links",
@@ -36,10 +36,10 @@
     "cancelledBody": "Due to a historic Code Red heat warning (38–40 °C), Q-dance cancelled the festival at midnight on June 26. The Gathering (Thursday) took place. Full ticket refunds will be processed.",
     "cancelledFAQ": "Refund info (Q-dance FAQ)",
     "goingTitle": "Got your bracelet?",
-    "goingSubtitle": "Mark yourself as attending Defqon.1 2026",
+    "goingSubtitle": "Mark yourself as attending Defqon.1 2027",
     "goingConfirm": "I'm going!",
     "goingConfirmed": "You're going!",
-    "goingDate": "Defqon.1 2026 — June 25–28, Biddinghuizen",
+    "goingDate": "Defqon.1 2027 — June 24–27, Biddinghuizen",
     "goingUndo": "Not going anymore",
     "attendedTitle": "Were you at Defqon.1 {{year}}?",
     "attendedSubtitle": "The {{year}} edition is over — did you make it?",
@@ -69,7 +69,15 @@
     "buyTickets": "Buy Tickets",
     "officialLineup": "Official Lineup",
     "qdanceApp": "Q-dance App",
-    "moreFeatures": "All features"
+    "moreFeatures": "All features",
+    "ticketSalesTitle": "Defqon.1 {{year}} ticket sales",
+    "ticketSales": {
+      "dediqated": "DEDIQATED Sale (members)",
+      "travelStay": "Travel & Stay Sale",
+      "general": "General Sale"
+    },
+    "ticketSalesNote": "2026 ticket holders could transfer to 2027, so only ~25% of tickets are left. Max 2 tickets per order during the DEDIQATED Sale. Add the event to your Wishlist beforehand.",
+    "ticketSalesLink": "Tickets (Q-dance)"
   },
   "festival": {
     "hubTitle": "Festival",

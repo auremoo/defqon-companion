@@ -287,12 +287,12 @@ export default function Settings() {
             {t('settings.officialLinks')}
           </h2>
           <div className="rounded-2xl border border-border bg-surface-card overflow-hidden divide-y divide-border">
-            <a href="https://www.q-dance.com/l/defqon1-2026" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.q-dance.com/l/defqon1-2027" target="_blank" rel="noopener noreferrer"
               className="flex items-center justify-between p-4 text-sm text-text-primary transition-colors hover:bg-surface-alt">
               <span>{t('settings.defqonWebsite')}</span>
               <span className="text-text-muted">&rarr;</span>
             </a>
-            <a href="https://www.q-dance.com/l/defqon1-2026-tickets" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.q-dance.com/l/defqon1-2027-tickets" target="_blank" rel="noopener noreferrer"
               className="flex items-center justify-between p-4 text-sm text-text-primary transition-colors hover:bg-surface-alt">
               <span>{t('settings.defqonTickets')}</span>
               <span className="text-text-muted">&rarr;</span>
