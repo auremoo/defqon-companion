@@ -1,53 +1,61 @@
 {
-  "updatedAt": "2026-10-06T11:49:45.162Z",
+  "updatedAt": "2026-10-07T11:34:37.545Z",
   "releases": [
     {
-      "id": "8b77f02e-ed83-477f-9b39-f123c820ef28",
-      "title": "I Got Stoned And I Missed It",
-      "artist": "DTAH",
+      "id": "c7e8d3dc-7d0d-4915-9432-dfa34829574f",
+      "title": "All I Need Is You",
+      "artist": "Aurede",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/c7e8d3dc-7d0d-4915-9432-dfa34829574f/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/c7e8d3dc-7d0d-4915-9432-dfa34829574f/all-i-need-is-you"
+    },
+    {
+      "id": "c55291be-3d0d-460b-bf27-d61daf5fe577",
+      "title": "Addiction",
+      "artist": "RefreqX",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/c55291be-3d0d-460b-bf27-d61daf5fe577/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/c55291be-3d0d-460b-bf27-d61daf5fe577/addiction"
+    },
+    {
+      "id": "68eb3a58-a0a8-4b5d-8c04-029469396a83",
+      "title": "When I'm Gone",
+      "artist": "Craigy B!",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/8b77f02e-ed83-477f-9b39-f123c820ef28/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/8b77f02e-ed83-477f-9b39-f123c820ef28/i-got-stoned-and-i-missed-it"
+      "image": "https://hardstyle.com/track_image/68eb3a58-a0a8-4b5d-8c04-029469396a83/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/68eb3a58-a0a8-4b5d-8c04-029469396a83/when-i-m-gone"
     },
     {
-      "id": "ffdf6e2c-e5f0-4f78-9c09-a1c8df8e6e17",
-      "title": "I Got Stoned And I Missed It",
-      "artist": "DTAH",
+      "id": "7b275582-83cc-408e-8844-ff9dc89135f4",
+      "title": "When I'm Gone",
+      "artist": "Craigy B!",
       "mix": "Radio Edit",
-      "image": "https://hardstyle.com/track_image/ffdf6e2c-e5f0-4f78-9c09-a1c8df8e6e17/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/ffdf6e2c-e5f0-4f78-9c09-a1c8df8e6e17/i-got-stoned-and-i-missed-it"
+      "image": "https://hardstyle.com/track_image/7b275582-83cc-408e-8844-ff9dc89135f4/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/7b275582-83cc-408e-8844-ff9dc89135f4/when-i-m-gone"
     },
     {
-      "id": "f6ac4286-897b-454e-b3f7-35e7387fd9f3",
-      "title": "Listen With Your Heart",
-      "artist": "Big Ric",
+      "id": "638b2342-b5e1-4a6a-9763-5aa5b78a26a6",
+      "title": "Into The Flames",
+      "artist": "Persecute",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/f6ac4286-897b-454e-b3f7-35e7387fd9f3/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/f6ac4286-897b-454e-b3f7-35e7387fd9f3/listen-with-your-heart"
+      "image": "https://hardstyle.com/track_image/638b2342-b5e1-4a6a-9763-5aa5b78a26a6/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/638b2342-b5e1-4a6a-9763-5aa5b78a26a6/into-the-flames"
     },
     {
-      "id": "b00244e8-5278-4d4e-a450-8e2ec3bcebfc",
-      "title": "Listen With Your Heart",
-      "artist": "Big Ric",
-      "mix": "Radio Edit",
-      "image": "https://hardstyle.com/track_image/b00244e8-5278-4d4e-a450-8e2ec3bcebfc/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/b00244e8-5278-4d4e-a450-8e2ec3bcebfc/listen-with-your-heart"
+      "id": "3f7a4e5f-46df-4bd6-95f3-8eea7149e425",
+      "title": "Bathed In Hatred",
+      "artist": "Persecute",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/3f7a4e5f-46df-4bd6-95f3-8eea7149e425/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/3f7a4e5f-46df-4bd6-95f3-8eea7149e425/bathed-in-hatred"
     },
     {
-      "id": "1c9cae24-091a-43f6-bf09-4b1b0b197538",
-      "title": "Blue Screen Love",
-      "artist": "Dropzone",
-      "mix": "Bounce Mix",
-      "image": "https://hardstyle.com/track_image/1c9cae24-091a-43f6-bf09-4b1b0b197538/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/1c9cae24-091a-43f6-bf09-4b1b0b197538/blue-screen-love"
-    },
-    {
-      "id": "20ebb0c8-56b4-40c4-95ce-938b942472ca",
-      "title": "Blue Screen Love",
-      "artist": "Dropzone",
-      "mix": "Bounce Edit",
-      "image": "https://hardstyle.com/track_image/20ebb0c8-56b4-40c4-95ce-938b942472ca/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/20ebb0c8-56b4-40c4-95ce-938b942472ca/blue-screen-love"
+      "id": "38701704-ef53-4103-a374-8fc9e955a8dc",
+      "title": "BEST OF SCARRED SUMMER 2026",
+      "artist": "Various Artists",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/38701704-ef53-4103-a374-8fc9e955a8dc/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/38701704-ef53-4103-a374-8fc9e955a8dc"
     },
     {
       "id": "3deb7366-7022-4dba-8216-5dbe192b63b6",
@@ -72,14 +80,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/36d56e07-4451-4709-8133-c6d60b4cf1a5/250x250/335",
       "link": "https://hardstyle.com/en/tracks/36d56e07-4451-4709-8133-c6d60b4cf1a5"
-    },
-    {
-      "id": "f08e5b85-b345-44a1-bfcc-bb57489c53ef",
-      "title": "The Summoning",
-      "artist": "Bokkenrijders",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/f08e5b85-b345-44a1-bfcc-bb57489c53ef/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/f08e5b85-b345-44a1-bfcc-bb57489c53ef"
     }
   ]
 }
