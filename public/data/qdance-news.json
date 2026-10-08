@@ -1,6 +1,27 @@
 {
-  "updatedAt": "2026-10-07T12:43:38.120Z",
+  "updatedAt": "2026-10-08T12:52:59.973Z",
   "videos": [
+    {
+      "id": "6lQLeE2bLV0",
+      "title": "Defqon.1 News: The Warrior Workout returns in 2027! #defqon1",
+      "published": "2026-10-08T09:00:34+00:00",
+      "link": "https://www.youtube.com/watch?v=6lQLeE2bLV0",
+      "thumbnail": "https://i.ytimg.com/vi/6lQLeE2bLV0/mqdefault.jpg"
+    },
+    {
+      "id": "AqKKaJ9vu-k",
+      "title": "The Reveal with Rebelion premieres tomorrow at 20:00 CEST on the Q-dance YouTube channel.#defqon1",
+      "published": "2026-10-07T18:00:35+00:00",
+      "link": "https://www.youtube.com/watch?v=AqKKaJ9vu-k",
+      "thumbnail": "https://i.ytimg.com/vi/AqKKaJ9vu-k/mqdefault.jpg"
+    },
+    {
+      "id": "JmnRvy4dXHc",
+      "title": "Rebelion | The Reveal | Defqon.1 2027",
+      "published": "2026-10-07T09:00:19+00:00",
+      "link": "https://www.youtube.com/watch?v=JmnRvy4dXHc",
+      "thumbnail": "https://i.ytimg.com/vi/JmnRvy4dXHc/mqdefault.jpg"
+    },
     {
       "id": "5cmH8vju6Fg",
       "title": "On Friday of Defqon.1, we will open the gates to the RED during The Opening Ceremony. #defqon1",
@@ -84,27 +105,6 @@
       "published": "2026-10-03T08:00:28+00:00",
       "link": "https://www.youtube.com/watch?v=-cYIKvezBVQ",
       "thumbnail": "https://i.ytimg.com/vi/-cYIKvezBVQ/mqdefault.jpg"
-    },
-    {
-      "id": "zoBohE6Ufzc",
-      "title": "Watch Behind Defqon.1 | Up Close with D-Sturb now #defqon.1",
-      "published": "2026-10-02T15:00:16+00:00",
-      "link": "https://www.youtube.com/watch?v=zoBohE6Ufzc",
-      "thumbnail": "https://i.ytimg.com/vi/zoBohE6Ufzc/mqdefault.jpg"
-    },
-    {
-      "id": "WDYyFo7hnTM",
-      "title": "Embrace the Flame with the new Defqon.1 2027 Kick-off Collection, now in the Q-dance Store. #defqon1",
-      "published": "2026-10-02T12:00:10+00:00",
-      "link": "https://www.youtube.com/watch?v=WDYyFo7hnTM",
-      "thumbnail": "https://i.ytimg.com/vi/WDYyFo7hnTM/mqdefault.jpg"
-    },
-    {
-      "id": "n86W9H4DqsI",
-      "title": "Watch Behind Defqon.1 | Up Close with D-Sturb now #defqon.1",
-      "published": "2026-10-02T09:00:13+00:00",
-      "link": "https://www.youtube.com/watch?v=n86W9H4DqsI",
-      "thumbnail": "https://i.ytimg.com/vi/n86W9H4DqsI/mqdefault.jpg"
     }
   ]
 }
