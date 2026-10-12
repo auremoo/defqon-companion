@@ -1,6 +1,38 @@
 {
-  "updatedAt": "2026-10-11T11:15:53.479Z",
+  "updatedAt": "2026-10-12T12:48:32.673Z",
   "releases": [
+    {
+      "id": "db4b0c1e-8434-4d5d-afa5-750632c45332",
+      "title": "Huntin",
+      "artist": "Sasha F",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/db4b0c1e-8434-4d5d-afa5-750632c45332/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/db4b0c1e-8434-4d5d-afa5-750632c45332/huntin"
+    },
+    {
+      "id": "bcbcd2ff-fb57-4a17-a1e4-78cfcb864762",
+      "title": "Playaz Never Die",
+      "artist": "Sasha F",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/bcbcd2ff-fb57-4a17-a1e4-78cfcb864762/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/bcbcd2ff-fb57-4a17-a1e4-78cfcb864762/playaz-never-die"
+    },
+    {
+      "id": "603a44e4-24e5-40b2-82f4-41abd708e5a2",
+      "title": "Lawnmover Man",
+      "artist": "Sasha F",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/603a44e4-24e5-40b2-82f4-41abd708e5a2/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/603a44e4-24e5-40b2-82f4-41abd708e5a2/lawnmover-man"
+    },
+    {
+      "id": "f7e8fb28-e773-4f11-b612-327869a1ebdc",
+      "title": "Resistance Is Futile",
+      "artist": "Sasha F",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/f7e8fb28-e773-4f11-b612-327869a1ebdc/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/f7e8fb28-e773-4f11-b612-327869a1ebdc/resistance-is-futile"
+    },
     {
       "id": "5bd0be69-c662-4249-976d-12e245783795",
       "title": "Set Me Free",
@@ -16,38 +48,6 @@
       "mix": "Extended Mix",
       "image": "https://hardstyle.com/track_image/8b265059-b0ce-43bb-87df-7490da6ee601/250x250/335",
       "link": "https://hardstyle.com/en/tracks/8b265059-b0ce-43bb-87df-7490da6ee601/targeted-therapy"
-    },
-    {
-      "id": "0fafcac8-310b-44f5-8405-9d7a70657f87",
-      "title": "Party Rock",
-      "artist": "DRS",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/0fafcac8-310b-44f5-8405-9d7a70657f87/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/0fafcac8-310b-44f5-8405-9d7a70657f87/party-rock"
-    },
-    {
-      "id": "8afe5f6f-75bb-46cf-85dd-8bfa67db2dff",
-      "title": "Anima Tenebris",
-      "artist": "Spiritvs",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/8afe5f6f-75bb-46cf-85dd-8bfa67db2dff/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/8afe5f6f-75bb-46cf-85dd-8bfa67db2dff/anima-tenebris"
-    },
-    {
-      "id": "46a3bc13-f91f-42b1-a41e-857028d1f855",
-      "title": "Freak",
-      "artist": "DDRCK",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/46a3bc13-f91f-42b1-a41e-857028d1f855/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/46a3bc13-f91f-42b1-a41e-857028d1f855/freak"
-    },
-    {
-      "id": "bda0c07d-5747-4f59-9acb-f3eca6415067",
-      "title": "Orcheal (Sodom & Gomorrah Remix)",
-      "artist": "DJ Francois",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/bda0c07d-5747-4f59-9acb-f3eca6415067/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/bda0c07d-5747-4f59-9acb-f3eca6415067/orcheal-sodom-gomorrah-remix"
     },
     {
       "id": "38701704-ef53-4103-a374-8fc9e955a8dc",
