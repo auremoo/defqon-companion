@@ -1,10 +1,17 @@
 {
-  "updatedAt": "2026-10-12T15:52:56.596Z",
+  "updatedAt": "2026-10-13T14:27:51.480Z",
   "articles": [
+    {
+      "title": "Hard Bass 2026: the GelreDome reminded us what hardstyle is all about",
+      "link": "https://hardstyle.com/en/news/hard-bass-2026-review",
+      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/events/hard%20bass%202026/HB26_1011_05_00_25_R52_9039_KEV.jpg",
+      "date": "2026-10-13",
+      "category": "hardstyle,report"
+    },
     {
       "title": "If you love zaagkicks and uptempo, Slow Down is the event for you",
       "link": "https://hardstyle.com/en/news/if-you-love-zaagkicks-and-uptempo-slow-down-is-the-event-for-you",
-      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/2026/September/Energy-nonconforme-187.jpg",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/September/Energy-nonconforme-187.jpg",
       "date": "2026-09-24",
       "category": "news,hardstyle"
     },
@@ -32,7 +39,7 @@
     {
       "title": "Into The Madness gears up for its 5th anniversary",
       "link": "https://hardstyle.com/en/news/into-the-madness-gears-up-for-its-5th-anniversary",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/augustus/685265467_961149846673392_3570787567949819979_n_2.jpg",
+      "image": null,
       "date": "2026-08-20",
       "category": "news,hardstyle"
     },
@@ -62,13 +69,6 @@
       "link": "https://hardstyle.com/en/news/zany-and-adaro-release-the-house-is-on-fire-their-first-collab-ever",
       "image": null,
       "date": "2026-07-20",
-      "category": "news,hardstyle"
-    },
-    {
-      "title": "REBELLiON Indoor announces the line-up for their 2026 edition: 'BREAK THE SYSTEM'",
-      "link": "https://hardstyle.com/en/news/rebellion-indoor-announces-the-line-up-for-their-2026-edition-break-the-system",
-      "image": null,
-      "date": "2026-07-16",
       "category": "news,hardstyle"
     }
   ]
