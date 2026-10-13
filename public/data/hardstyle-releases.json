@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-10-12T12:48:32.673Z",
+  "updatedAt": "2026-10-13T12:29:22.285Z",
   "releases": [
+    {
+      "id": "76499f1f-1e03-4ae7-ba8d-53b81fd7658b",
+      "title": "Shapeshift",
+      "artist": "SOREN",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/76499f1f-1e03-4ae7-ba8d-53b81fd7658b/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/76499f1f-1e03-4ae7-ba8d-53b81fd7658b/shapeshift"
+    },
+    {
+      "id": "69bc232d-e506-4bca-a05f-ff3d0c9159b5",
+      "title": "Miracle",
+      "artist": "Exoform",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/69bc232d-e506-4bca-a05f-ff3d0c9159b5/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/69bc232d-e506-4bca-a05f-ff3d0c9159b5/miracle"
+    },
+    {
+      "id": "b9496cf9-f488-40e1-87af-b7ec12b2b04a",
+      "title": "Loving A Ghost",
+      "artist": "Vinylgroover",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/b9496cf9-f488-40e1-87af-b7ec12b2b04a/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/b9496cf9-f488-40e1-87af-b7ec12b2b04a/loving-a-ghost"
+    },
     {
       "id": "db4b0c1e-8434-4d5d-afa5-750632c45332",
       "title": "Huntin",
@@ -24,30 +48,6 @@
       "mix": "Original Mix",
       "image": "https://hardstyle.com/track_image/603a44e4-24e5-40b2-82f4-41abd708e5a2/250x250/335",
       "link": "https://hardstyle.com/en/tracks/603a44e4-24e5-40b2-82f4-41abd708e5a2/lawnmover-man"
-    },
-    {
-      "id": "f7e8fb28-e773-4f11-b612-327869a1ebdc",
-      "title": "Resistance Is Futile",
-      "artist": "Sasha F",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/f7e8fb28-e773-4f11-b612-327869a1ebdc/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/f7e8fb28-e773-4f11-b612-327869a1ebdc/resistance-is-futile"
-    },
-    {
-      "id": "5bd0be69-c662-4249-976d-12e245783795",
-      "title": "Set Me Free",
-      "artist": "Steff Little",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/5bd0be69-c662-4249-976d-12e245783795/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/5bd0be69-c662-4249-976d-12e245783795/set-me-free"
-    },
-    {
-      "id": "8b265059-b0ce-43bb-87df-7490da6ee601",
-      "title": "Targeted Therapy",
-      "artist": "TukkerTempo",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/8b265059-b0ce-43bb-87df-7490da6ee601/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/8b265059-b0ce-43bb-87df-7490da6ee601/targeted-therapy"
     },
     {
       "id": "38701704-ef53-4103-a374-8fc9e955a8dc",
