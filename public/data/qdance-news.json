@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-10-14T11:17:04.089Z",
+  "updatedAt": "2026-10-15T10:55:05.399Z",
   "videos": [
+    {
+      "id": "ZgQ89Ofejlw",
+      "title": "Go hard or go home. This is The Spotlight at the BLACK!",
+      "published": "2026-10-15T10:30:02+00:00",
+      "link": "https://www.youtube.com/watch?v=ZgQ89Ofejlw",
+      "thumbnail": "https://i.ytimg.com/vi/ZgQ89Ofejlw/mqdefault.jpg"
+    },
+    {
+      "id": "-TQtfbQQFIQ",
+      "title": "This is the Thursday of Defqon.1!  #defqon1",
+      "published": "2026-10-15T07:00:36+00:00",
+      "link": "https://www.youtube.com/watch?v=-TQtfbQQFIQ",
+      "thumbnail": "https://i.ytimg.com/vi/-TQtfbQQFIQ/mqdefault.jpg"
+    },
     {
       "id": "GuFhfdbxLQI",
       "title": "Stay tuned for more information about the first online Warrior Workout. #defqon1 #warriorworkout",
@@ -91,20 +105,6 @@
       "published": "2026-10-04T11:00:36+00:00",
       "link": "https://www.youtube.com/watch?v=yLHhscf9-AM",
       "thumbnail": "https://i.ytimg.com/vi/yLHhscf9-AM/mqdefault.jpg"
-    },
-    {
-      "id": "r-Uwi7ssHt0",
-      "title": "The RED Race returns for Season 3. Will you go for glory? Submissions open October 21st. #defqon1",
-      "published": "2026-10-04T08:00:12+00:00",
-      "link": "https://www.youtube.com/watch?v=r-Uwi7ssHt0",
-      "thumbnail": "https://i.ytimg.com/vi/r-Uwi7ssHt0/mqdefault.jpg"
-    },
-    {
-      "id": "tyqoBrdxVdQ",
-      "title": "Watch Behind Defqon.1 | Up Close with D-Sturb now #defqon.1",
-      "published": "2026-10-04T07:00:14+00:00",
-      "link": "https://www.youtube.com/watch?v=tyqoBrdxVdQ",
-      "thumbnail": "https://i.ytimg.com/vi/tyqoBrdxVdQ/mqdefault.jpg"
     }
   ]
 }
