@@ -1,53 +1,61 @@
 {
-  "updatedAt": "2026-10-14T09:56:40.565Z",
+  "updatedAt": "2026-10-15T09:38:26.634Z",
   "releases": [
     {
-      "id": "7f7d944b-b0f5-4416-bb4a-8a11ebc1e7c3",
-      "title": "Help Me Up",
-      "artist": "DJ OGGY",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/7f7d944b-b0f5-4416-bb4a-8a11ebc1e7c3/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/7f7d944b-b0f5-4416-bb4a-8a11ebc1e7c3/help-me-up"
+      "id": "5028d238-5410-47d3-8fde-6095def30f60",
+      "title": "WHY WON'T YOU DIE",
+      "artist": "Superior Core",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/5028d238-5410-47d3-8fde-6095def30f60/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/5028d238-5410-47d3-8fde-6095def30f60/why-won-t-you-die"
     },
     {
-      "id": "2a10d151-ea26-4c14-bf26-880dd52c5d2f",
-      "title": "Bop Bop Baby",
-      "artist": "DTAH",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/2a10d151-ea26-4c14-bf26-880dd52c5d2f/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/2a10d151-ea26-4c14-bf26-880dd52c5d2f/bop-bop-baby"
+      "id": "2bc762f2-6074-4460-8a25-387d01c7ffcf",
+      "title": "DEVIL'S SIGHT",
+      "artist": "Genox",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/2bc762f2-6074-4460-8a25-387d01c7ffcf/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/2bc762f2-6074-4460-8a25-387d01c7ffcf/devil-s-sight"
     },
     {
-      "id": "705226fe-f0b1-4c6d-bc25-f076e8fb8967",
-      "title": "Bop Bop Baby",
-      "artist": "DTAH",
-      "mix": "Radio Edit",
-      "image": "https://hardstyle.com/track_image/705226fe-f0b1-4c6d-bc25-f076e8fb8967/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/705226fe-f0b1-4c6d-bc25-f076e8fb8967/bop-bop-baby"
+      "id": "24388233-0928-46af-9a6e-a5ff43040fc1",
+      "title": "Thunderdoom",
+      "artist": "Catscan",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/24388233-0928-46af-9a6e-a5ff43040fc1/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/24388233-0928-46af-9a6e-a5ff43040fc1/thunderdoom"
     },
     {
-      "id": "24dbdc2a-1c39-4ca6-9405-aab50d276fe5",
+      "id": "a70bef1d-c31c-4f35-84ab-09e473cd5b03",
       "title": "Chaos",
       "artist": "Catscan",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/24dbdc2a-1c39-4ca6-9405-aab50d276fe5/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/24dbdc2a-1c39-4ca6-9405-aab50d276fe5/chaos"
+      "image": "https://hardstyle.com/track_image/a70bef1d-c31c-4f35-84ab-09e473cd5b03/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/a70bef1d-c31c-4f35-84ab-09e473cd5b03/chaos"
     },
     {
-      "id": "6acb916c-11f3-4323-bfff-bf989b8ffed6",
-      "title": "Lost",
-      "artist": "Distinction",
+      "id": "d515b85d-2f2c-43c0-954a-c943fd8d47c0",
+      "title": "EPACOT",
+      "artist": "Unexist",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/6acb916c-11f3-4323-bfff-bf989b8ffed6/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/6acb916c-11f3-4323-bfff-bf989b8ffed6/lost"
+      "image": "https://hardstyle.com/track_image/d515b85d-2f2c-43c0-954a-c943fd8d47c0/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/d515b85d-2f2c-43c0-954a-c943fd8d47c0/epacot"
     },
     {
-      "id": "450d70ba-e992-441e-a3e3-551507bdf87e",
-      "title": "Never Look Back",
-      "artist": "Zane",
+      "id": "907969bf-d3e2-45c1-a2fd-90d1894c72ce",
+      "title": "Order",
+      "artist": "Unexist",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/450d70ba-e992-441e-a3e3-551507bdf87e/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/450d70ba-e992-441e-a3e3-551507bdf87e/never-look-back"
+      "image": "https://hardstyle.com/track_image/907969bf-d3e2-45c1-a2fd-90d1894c72ce/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/907969bf-d3e2-45c1-a2fd-90d1894c72ce/order"
+    },
+    {
+      "id": "1841a853-b620-4f88-ab6e-9da15a6d931f",
+      "title": "Order & Chaos",
+      "artist": "Unexist",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/1841a853-b620-4f88-ab6e-9da15a6d931f/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/1841a853-b620-4f88-ab6e-9da15a6d931f"
     },
     {
       "id": "38701704-ef53-4103-a374-8fc9e955a8dc",
@@ -72,14 +80,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/5bf5e35c-5b30-4d31-9121-e5bc9b0c799b/250x250/335",
       "link": "https://hardstyle.com/en/tracks/5bf5e35c-5b30-4d31-9121-e5bc9b0c799b"
-    },
-    {
-      "id": "36d56e07-4451-4709-8133-c6d60b4cf1a5",
-      "title": "Welcome To Madness Vol. II",
-      "artist": "House Of Madness",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/36d56e07-4451-4709-8133-c6d60b4cf1a5/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/36d56e07-4451-4709-8133-c6d60b4cf1a5"
     }
   ]
 }
