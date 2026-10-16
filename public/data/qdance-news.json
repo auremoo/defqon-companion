@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-10-15T10:55:05.399Z",
+  "updatedAt": "2026-10-16T10:47:02.715Z",
   "videos": [
+    {
+      "id": "jpSuOle5v6k",
+      "title": "On Thursday, we honor a legendary track during The Tribute at Defqon.1!",
+      "published": "2026-10-16T10:30:05+00:00",
+      "link": "https://www.youtube.com/watch?v=jpSuOle5v6k",
+      "thumbnail": "https://i.ytimg.com/vi/jpSuOle5v6k/mqdefault.jpg"
+    },
+    {
+      "id": "SrG0dTeI65M",
+      "title": "On Friday, we unleash the RED during The Opening Ceremony.",
+      "published": "2026-10-16T07:00:05+00:00",
+      "link": "https://www.youtube.com/watch?v=SrG0dTeI65M",
+      "thumbnail": "https://i.ytimg.com/vi/SrG0dTeI65M/mqdefault.jpg"
+    },
     {
       "id": "ZgQ89Ofejlw",
       "title": "Go hard or go home. This is The Spotlight at the BLACK!",
@@ -91,20 +105,6 @@
       "published": "2026-10-05T14:01:01+00:00",
       "link": "https://www.youtube.com/watch?v=Lly9xwQOvb0",
       "thumbnail": "https://i.ytimg.com/vi/Lly9xwQOvb0/mqdefault.jpg"
-    },
-    {
-      "id": "Puv4EWjGsLI",
-      "title": "Watch Behind Defqon.1 | Up Close with D-Sturb now #defqon.1",
-      "published": "2026-10-04T15:00:13+00:00",
-      "link": "https://www.youtube.com/watch?v=Puv4EWjGsLI",
-      "thumbnail": "https://i.ytimg.com/vi/Puv4EWjGsLI/mqdefault.jpg"
-    },
-    {
-      "id": "yLHhscf9-AM",
-      "title": "Embrace the flame. 🔥 Go behind the scenes of the Defqon.1 2027 Kick-off Collection shoot. #defqon1",
-      "published": "2026-10-04T11:00:36+00:00",
-      "link": "https://www.youtube.com/watch?v=yLHhscf9-AM",
-      "thumbnail": "https://i.ytimg.com/vi/yLHhscf9-AM/mqdefault.jpg"
     }
   ]
 }
