@@ -1,53 +1,69 @@
 {
-  "updatedAt": "2026-10-15T09:38:26.634Z",
+  "updatedAt": "2026-10-16T09:31:45.354Z",
   "releases": [
     {
-      "id": "5028d238-5410-47d3-8fde-6095def30f60",
-      "title": "WHY WON'T YOU DIE",
-      "artist": "Superior Core",
+      "id": "85cdc96d-e7ec-476c-bd0b-1db62a86fdeb",
+      "title": "Live Ammunition (Nosferatu Remix)",
+      "artist": "Evil Activities",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/5028d238-5410-47d3-8fde-6095def30f60/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/5028d238-5410-47d3-8fde-6095def30f60/why-won-t-you-die"
+      "image": "https://hardstyle.com/track_image/85cdc96d-e7ec-476c-bd0b-1db62a86fdeb/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/85cdc96d-e7ec-476c-bd0b-1db62a86fdeb/live-ammunition-nosferatu-remix"
     },
     {
-      "id": "2bc762f2-6074-4460-8a25-387d01c7ffcf",
-      "title": "DEVIL'S SIGHT",
-      "artist": "Genox",
+      "id": "6b6ddcbc-a37e-4e2b-b847-73242f0e20f5",
+      "title": "Bass Drop",
+      "artist": "Manifest Destiny",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/2bc762f2-6074-4460-8a25-387d01c7ffcf/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/2bc762f2-6074-4460-8a25-387d01c7ffcf/devil-s-sight"
+      "image": "https://hardstyle.com/track_image/6b6ddcbc-a37e-4e2b-b847-73242f0e20f5/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/6b6ddcbc-a37e-4e2b-b847-73242f0e20f5/bass-drop"
     },
     {
-      "id": "24388233-0928-46af-9a6e-a5ff43040fc1",
-      "title": "Thunderdoom",
-      "artist": "Catscan",
+      "id": "3f8c428c-660e-421c-b60f-7b9086b992a0",
+      "title": "Drive Master",
+      "artist": "Samynator",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/3f8c428c-660e-421c-b60f-7b9086b992a0/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/3f8c428c-660e-421c-b60f-7b9086b992a0/drive-master"
+    },
+    {
+      "id": "853130f9-850b-4766-b6ab-90297f9f12c0",
+      "title": "Naughty Boys",
+      "artist": "Spitnoise",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/853130f9-850b-4766-b6ab-90297f9f12c0/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/853130f9-850b-4766-b6ab-90297f9f12c0/naughty-boys"
+    },
+    {
+      "id": "aaaa686f-2ee5-4975-b6d0-b08558236013",
+      "title": "Round & Round",
+      "artist": "Revizion",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/aaaa686f-2ee5-4975-b6d0-b08558236013/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/aaaa686f-2ee5-4975-b6d0-b08558236013/round-round"
+    },
+    {
+      "id": "076cd6aa-9e9d-4ddc-a26b-6c0659a09db9",
+      "title": "Gabber I'm G",
+      "artist": "Double Trouble",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/076cd6aa-9e9d-4ddc-a26b-6c0659a09db9/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/076cd6aa-9e9d-4ddc-a26b-6c0659a09db9/gabber-i-m-g"
+    },
+    {
+      "id": "b7b1d5ff-c5ad-4242-ba1a-045fdba75e6c",
+      "title": "SPACEHOPPER (Every Bounce), Pt. 1",
+      "artist": "Nik Denton",
       "mix": "",
-      "image": "https://hardstyle.com/track_image/24388233-0928-46af-9a6e-a5ff43040fc1/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/24388233-0928-46af-9a6e-a5ff43040fc1/thunderdoom"
+      "image": "https://hardstyle.com/track_image/b7b1d5ff-c5ad-4242-ba1a-045fdba75e6c/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/b7b1d5ff-c5ad-4242-ba1a-045fdba75e6c"
     },
     {
-      "id": "a70bef1d-c31c-4f35-84ab-09e473cd5b03",
-      "title": "Chaos",
-      "artist": "Catscan",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/a70bef1d-c31c-4f35-84ab-09e473cd5b03/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/a70bef1d-c31c-4f35-84ab-09e473cd5b03/chaos"
-    },
-    {
-      "id": "d515b85d-2f2c-43c0-954a-c943fd8d47c0",
-      "title": "EPACOT",
-      "artist": "Unexist",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/d515b85d-2f2c-43c0-954a-c943fd8d47c0/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/d515b85d-2f2c-43c0-954a-c943fd8d47c0/epacot"
-    },
-    {
-      "id": "907969bf-d3e2-45c1-a2fd-90d1894c72ce",
-      "title": "Order",
-      "artist": "Unexist",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/907969bf-d3e2-45c1-a2fd-90d1894c72ce/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/907969bf-d3e2-45c1-a2fd-90d1894c72ce/order"
+      "id": "35a4de60-99e3-4b55-9575-d9198239c342",
+      "title": "The World Of Happy Hardcore",
+      "artist": "Various Artists",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/35a4de60-99e3-4b55-9575-d9198239c342/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/35a4de60-99e3-4b55-9575-d9198239c342"
     },
     {
       "id": "1841a853-b620-4f88-ab6e-9da15a6d931f",
@@ -64,22 +80,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/38701704-ef53-4103-a374-8fc9e955a8dc/250x250/335",
       "link": "https://hardstyle.com/en/tracks/38701704-ef53-4103-a374-8fc9e955a8dc"
-    },
-    {
-      "id": "3deb7366-7022-4dba-8216-5dbe192b63b6",
-      "title": "VIBE CHECK",
-      "artist": "BIG K",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/3deb7366-7022-4dba-8216-5dbe192b63b6/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/3deb7366-7022-4dba-8216-5dbe192b63b6"
-    },
-    {
-      "id": "5bf5e35c-5b30-4d31-9121-e5bc9b0c799b",
-      "title": "Razor Riot",
-      "artist": "Barber",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/5bf5e35c-5b30-4d31-9121-e5bc9b0c799b/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/5bf5e35c-5b30-4d31-9121-e5bc9b0c799b"
     }
   ]
 }
