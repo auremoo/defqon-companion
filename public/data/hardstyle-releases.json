@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-10-16T09:31:45.354Z",
+  "updatedAt": "2026-10-17T09:02:27.663Z",
   "releases": [
+    {
+      "id": "b5b79010-776e-4dad-a0ea-433a72a8e628",
+      "title": "Static Decay",
+      "artist": "aM.IT",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/b5b79010-776e-4dad-a0ea-433a72a8e628/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/b5b79010-776e-4dad-a0ea-433a72a8e628/static-decay"
+    },
+    {
+      "id": "53ec7e5b-b860-4304-ae3f-5edc1c803037",
+      "title": "XXM",
+      "artist": "Is:end",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/53ec7e5b-b860-4304-ae3f-5edc1c803037/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/53ec7e5b-b860-4304-ae3f-5edc1c803037/xxm"
+    },
+    {
+      "id": "cd71974f-0dde-47e6-928c-a3ed2a147f33",
+      "title": "In Time",
+      "artist": "Nobody",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/cd71974f-0dde-47e6-928c-a3ed2a147f33/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/cd71974f-0dde-47e6-928c-a3ed2a147f33/in-time"
+    },
     {
       "id": "85cdc96d-e7ec-476c-bd0b-1db62a86fdeb",
       "title": "Live Ammunition (Nosferatu Remix)",
@@ -24,30 +48,6 @@
       "mix": "Extended Mix",
       "image": "https://hardstyle.com/track_image/3f8c428c-660e-421c-b60f-7b9086b992a0/250x250/335",
       "link": "https://hardstyle.com/en/tracks/3f8c428c-660e-421c-b60f-7b9086b992a0/drive-master"
-    },
-    {
-      "id": "853130f9-850b-4766-b6ab-90297f9f12c0",
-      "title": "Naughty Boys",
-      "artist": "Spitnoise",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/853130f9-850b-4766-b6ab-90297f9f12c0/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/853130f9-850b-4766-b6ab-90297f9f12c0/naughty-boys"
-    },
-    {
-      "id": "aaaa686f-2ee5-4975-b6d0-b08558236013",
-      "title": "Round & Round",
-      "artist": "Revizion",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/aaaa686f-2ee5-4975-b6d0-b08558236013/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/aaaa686f-2ee5-4975-b6d0-b08558236013/round-round"
-    },
-    {
-      "id": "076cd6aa-9e9d-4ddc-a26b-6c0659a09db9",
-      "title": "Gabber I'm G",
-      "artist": "Double Trouble",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/076cd6aa-9e9d-4ddc-a26b-6c0659a09db9/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/076cd6aa-9e9d-4ddc-a26b-6c0659a09db9/gabber-i-m-g"
     },
     {
       "id": "b7b1d5ff-c5ad-4242-ba1a-045fdba75e6c",
