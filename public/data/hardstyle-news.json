@@ -1,10 +1,17 @@
 {
-  "updatedAt": "2026-10-16T11:45:08.703Z",
+  "updatedAt": "2026-10-17T11:02:35.157Z",
   "articles": [
+    {
+      "title": "Reverze 2027 shifts partly to daytime",
+      "link": "https://hardstyle.com/en/news/reverze-2027-shifts-partly-to-daytime",
+      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/643574159_18362053642202636_5414209898065884435_n.jpg",
+      "date": "2026-10-16",
+      "category": "hardstyle,event"
+    },
     {
       "title": "Hard Bass 2026: the GelreDome reminded us what hardstyle is all about",
       "link": "https://hardstyle.com/en/news/hard-bass-2026-review",
-      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/events/hard%20bass%202026/HB26_1011_05_00_25_R52_9039_KEV.jpg",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/events/hard%20bass%202026/HB26_1011_05_00_25_R52_9039_KEV.jpg",
       "date": "2026-10-13",
       "category": "hardstyle,report"
     },
@@ -32,7 +39,7 @@
     {
       "title": "D-Block & S-te-Fan & Phuture Noize finally unleash ‘Arcadia’",
       "link": "https://hardstyle.com/en/news/d-block-en-s-te-fan-en-phuture-noize-finally-unleash-arcadia",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/augustus/(c)LuisaArt_DBSTF-PhutureNoize_Studio-LA1_5663-Enhanced-NR.jpg",
+      "image": null,
       "date": "2026-08-21",
       "category": "news,hardstyle"
     },
@@ -62,13 +69,6 @@
       "link": "https://hardstyle.com/en/news/hysta-showcased-the-history-of-hardcore-during-the-spotlight-at-defqon1",
       "image": null,
       "date": "2026-07-22",
-      "category": "news,hardstyle"
-    },
-    {
-      "title": "Zany and Adaro release 'The House Is On Fire', their first collab ever",
-      "link": "https://hardstyle.com/en/news/zany-and-adaro-release-the-house-is-on-fire-their-first-collab-ever",
-      "image": null,
-      "date": "2026-07-20",
       "category": "news,hardstyle"
     }
   ]
