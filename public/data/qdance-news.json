@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-10-17T10:12:27.393Z",
+  "updatedAt": "2026-10-18T10:27:56.988Z",
   "videos": [
+    {
+      "id": "2OC-6XWtVxs",
+      "title": "YES YES, HERE WE GO! This is POWER HOUR.",
+      "published": "2026-10-18T07:00:33+00:00",
+      "link": "https://www.youtube.com/watch?v=2OC-6XWtVxs",
+      "thumbnail": "https://i.ytimg.com/vi/2OC-6XWtVxs/mqdefault.jpg"
+    },
+    {
+      "id": "vzccoSSVnmI",
+      "title": "Afterparty Warriors, welcome to Defqon.1 at night!",
+      "published": "2026-10-17T10:30:24+00:00",
+      "link": "https://www.youtube.com/watch?v=vzccoSSVnmI",
+      "thumbnail": "https://i.ytimg.com/vi/vzccoSSVnmI/mqdefault.jpg"
+    },
     {
       "id": "QIwri9quejQ",
       "title": "Only two weeks until the General Sale of Defqon.1 2027.Create your Wishlist now at defqon1.com.",
@@ -91,20 +105,6 @@
       "published": "2026-10-07T18:00:35+00:00",
       "link": "https://www.youtube.com/watch?v=AqKKaJ9vu-k",
       "thumbnail": "https://i.ytimg.com/vi/AqKKaJ9vu-k/mqdefault.jpg"
-    },
-    {
-      "id": "5cmH8vju6Fg",
-      "title": "On Friday of Defqon.1, we will open the gates to the RED during The Opening Ceremony. #defqon1",
-      "published": "2026-10-06T17:00:37+00:00",
-      "link": "https://www.youtube.com/watch?v=5cmH8vju6Fg",
-      "thumbnail": "https://i.ytimg.com/vi/5cmH8vju6Fg/mqdefault.jpg"
-    },
-    {
-      "id": "MUEEmLxW3Os",
-      "title": "This is what The Deepening means to E-Life. What's your take?  #defqon1",
-      "published": "2026-10-06T15:00:28+00:00",
-      "link": "https://www.youtube.com/watch?v=MUEEmLxW3Os",
-      "thumbnail": "https://i.ytimg.com/vi/MUEEmLxW3Os/mqdefault.jpg"
     }
   ]
 }
