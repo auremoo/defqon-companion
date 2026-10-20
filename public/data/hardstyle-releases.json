@@ -1,6 +1,46 @@
 {
-  "updatedAt": "2026-10-19T10:32:41.501Z",
+  "updatedAt": "2026-10-20T09:49:48.200Z",
   "releases": [
+    {
+      "id": "cc28b502-536c-4b20-b848-7d869a4d683d",
+      "title": "Fire Inside",
+      "artist": "Wasted",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/cc28b502-536c-4b20-b848-7d869a4d683d/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/cc28b502-536c-4b20-b848-7d869a4d683d/fire-inside"
+    },
+    {
+      "id": "8ec200be-0371-4bce-8d3c-2bb48c4fb7c0",
+      "title": "Rainy Day",
+      "artist": "CODE93",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/8ec200be-0371-4bce-8d3c-2bb48c4fb7c0/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/8ec200be-0371-4bce-8d3c-2bb48c4fb7c0/rainy-day"
+    },
+    {
+      "id": "bbf6c8d4-433e-4d2e-a0d1-0e07c73b27fc",
+      "title": "Tremors",
+      "artist": "Mike Smash",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/bbf6c8d4-433e-4d2e-a0d1-0e07c73b27fc/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/bbf6c8d4-433e-4d2e-a0d1-0e07c73b27fc/tremors"
+    },
+    {
+      "id": "2e94b27b-5c37-43a0-b6c6-c475d59652f2",
+      "title": "Shapes",
+      "artist": "Mike Smash",
+      "mix": "Ruff Mix",
+      "image": "https://hardstyle.com/track_image/2e94b27b-5c37-43a0-b6c6-c475d59652f2/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/2e94b27b-5c37-43a0-b6c6-c475d59652f2/shapes"
+    },
+    {
+      "id": "d7cde132-8c6e-4009-9008-77d6e7ebd6ee",
+      "title": "Reality",
+      "artist": "Mike Smash",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/d7cde132-8c6e-4009-9008-77d6e7ebd6ee/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/d7cde132-8c6e-4009-9008-77d6e7ebd6ee/reality"
+    },
     {
       "id": "d376537c-7773-4ed0-b4a9-dbebf0c6de88",
       "title": "Believe",
@@ -8,46 +48,6 @@
       "mix": "Original Mix",
       "image": "https://hardstyle.com/track_image/d376537c-7773-4ed0-b4a9-dbebf0c6de88/250x250/335",
       "link": "https://hardstyle.com/en/tracks/d376537c-7773-4ed0-b4a9-dbebf0c6de88/believe"
-    },
-    {
-      "id": "83f3f97d-ca32-40a1-b41c-889d8860a3d3",
-      "title": "Take My Hand",
-      "artist": "Dj Gary MC",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/83f3f97d-ca32-40a1-b41c-889d8860a3d3/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/83f3f97d-ca32-40a1-b41c-889d8860a3d3/take-my-hand"
-    },
-    {
-      "id": "36a2a18b-32e9-48b4-b158-c915d6def5a8",
-      "title": "Won't Look back",
-      "artist": "Mikey P",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/36a2a18b-32e9-48b4-b158-c915d6def5a8/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/36a2a18b-32e9-48b4-b158-c915d6def5a8/won-t-look-back"
-    },
-    {
-      "id": "994589b4-a7d0-4c50-9ce8-5e682aa59d42",
-      "title": "And Deny",
-      "artist": "Sergey Bolkov",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/994589b4-a7d0-4c50-9ce8-5e682aa59d42/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/994589b4-a7d0-4c50-9ce8-5e682aa59d42/and-deny"
-    },
-    {
-      "id": "676592a6-ec37-4c09-8d00-346c8808c2ea",
-      "title": "Real Tough",
-      "artist": "Sergey Bolkov",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/676592a6-ec37-4c09-8d00-346c8808c2ea/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/676592a6-ec37-4c09-8d00-346c8808c2ea/real-tough"
-    },
-    {
-      "id": "eafbbf8b-ba8b-409d-8ff8-3e31ab3fd870",
-      "title": "You Never Gonna Stop it",
-      "artist": "Sergey Bolkov",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/eafbbf8b-ba8b-409d-8ff8-3e31ab3fd870/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/eafbbf8b-ba8b-409d-8ff8-3e31ab3fd870/you-never-gonna-stop-it"
     },
     {
       "id": "b6176d9d-0259-4ecd-b096-841c12b576d8",
