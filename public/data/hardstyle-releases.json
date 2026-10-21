@@ -1,53 +1,53 @@
 {
-  "updatedAt": "2026-10-20T09:49:48.200Z",
+  "updatedAt": "2026-10-21T09:51:32.132Z",
   "releases": [
     {
-      "id": "cc28b502-536c-4b20-b848-7d869a4d683d",
-      "title": "Fire Inside",
-      "artist": "Wasted",
+      "id": "ff6b3e0b-a937-43eb-ba01-cc9ea622fe7c",
+      "title": "Raggen",
+      "artist": "Violent Suspect",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/cc28b502-536c-4b20-b848-7d869a4d683d/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/cc28b502-536c-4b20-b848-7d869a4d683d/fire-inside"
+      "image": "https://hardstyle.com/track_image/ff6b3e0b-a937-43eb-ba01-cc9ea622fe7c/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/ff6b3e0b-a937-43eb-ba01-cc9ea622fe7c/raggen"
     },
     {
-      "id": "8ec200be-0371-4bce-8d3c-2bb48c4fb7c0",
-      "title": "Rainy Day",
-      "artist": "CODE93",
+      "id": "35c2c759-adaa-4d83-bba8-e8656b1c5ce8",
+      "title": "Don't Stop",
+      "artist": "Violent Suspect",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/35c2c759-adaa-4d83-bba8-e8656b1c5ce8/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/35c2c759-adaa-4d83-bba8-e8656b1c5ce8/don-t-stop"
+    },
+    {
+      "id": "c3a42f21-dda4-49b4-829b-d6d225737852",
+      "title": "Before We Knew Our Names",
+      "artist": "Dj Neo",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/8ec200be-0371-4bce-8d3c-2bb48c4fb7c0/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/8ec200be-0371-4bce-8d3c-2bb48c4fb7c0/rainy-day"
+      "image": "https://hardstyle.com/track_image/c3a42f21-dda4-49b4-829b-d6d225737852/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/c3a42f21-dda4-49b4-829b-d6d225737852/before-we-knew-our-names"
     },
     {
-      "id": "bbf6c8d4-433e-4d2e-a0d1-0e07c73b27fc",
-      "title": "Tremors",
-      "artist": "Mike Smash",
+      "id": "7f7a0e2c-c9d1-4026-a773-ac6c677e6c03",
+      "title": "The Weekend",
+      "artist": "Udow",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/7f7a0e2c-c9d1-4026-a773-ac6c677e6c03/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/7f7a0e2c-c9d1-4026-a773-ac6c677e6c03/the-weekend"
+    },
+    {
+      "id": "14bf476d-b052-40ee-864e-c5756f7f0120",
+      "title": "BACK OFF",
+      "artist": "SVANE",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/14bf476d-b052-40ee-864e-c5756f7f0120/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/14bf476d-b052-40ee-864e-c5756f7f0120/back-off"
+    },
+    {
+      "id": "e4aafede-84ea-4a20-ada8-f5d87c56e7b9",
+      "title": "Dance You Got The Chance",
+      "artist": "Sam Laxton",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/bbf6c8d4-433e-4d2e-a0d1-0e07c73b27fc/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/bbf6c8d4-433e-4d2e-a0d1-0e07c73b27fc/tremors"
-    },
-    {
-      "id": "2e94b27b-5c37-43a0-b6c6-c475d59652f2",
-      "title": "Shapes",
-      "artist": "Mike Smash",
-      "mix": "Ruff Mix",
-      "image": "https://hardstyle.com/track_image/2e94b27b-5c37-43a0-b6c6-c475d59652f2/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/2e94b27b-5c37-43a0-b6c6-c475d59652f2/shapes"
-    },
-    {
-      "id": "d7cde132-8c6e-4009-9008-77d6e7ebd6ee",
-      "title": "Reality",
-      "artist": "Mike Smash",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/d7cde132-8c6e-4009-9008-77d6e7ebd6ee/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/d7cde132-8c6e-4009-9008-77d6e7ebd6ee/reality"
-    },
-    {
-      "id": "d376537c-7773-4ed0-b4a9-dbebf0c6de88",
-      "title": "Believe",
-      "artist": "SethroW",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/d376537c-7773-4ed0-b4a9-dbebf0c6de88/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/d376537c-7773-4ed0-b4a9-dbebf0c6de88/believe"
+      "image": "https://hardstyle.com/track_image/e4aafede-84ea-4a20-ada8-f5d87c56e7b9/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/e4aafede-84ea-4a20-ada8-f5d87c56e7b9/dance-you-got-the-chance"
     },
     {
       "id": "b6176d9d-0259-4ecd-b096-841c12b576d8",
