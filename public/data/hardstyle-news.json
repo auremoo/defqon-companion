@@ -1,10 +1,17 @@
 {
-  "updatedAt": "2026-10-20T11:56:38.514Z",
+  "updatedAt": "2026-10-21T12:10:26.583Z",
   "articles": [
+    {
+      "title": "Hardstyle goes virtual with Roblox raves",
+      "link": "https://hardstyle.com/en/news/hardstyle-goes-virtual-with-roblox-raves",
+      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/roblox/Screenshot%202026-10-16%20235224.png",
+      "date": "2026-10-20",
+      "category": "news,hardstyle"
+    },
     {
       "title": "Reverze 2027 shifts partly to daytime",
       "link": "https://hardstyle.com/en/news/reverze-2027-shifts-partly-to-daytime",
-      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/643574159_18362053642202636_5414209898065884435_n.jpg",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/643574159_18362053642202636_5414209898065884435_n.jpg",
       "date": "2026-10-16",
       "category": "hardstyle,event"
     },
@@ -32,7 +39,7 @@
     {
       "title": "Supremacy Classics returns with a massive rawstyle line-up",
       "link": "https://hardstyle.com/en/news/supremacy-classics-returns-with-a-massive-rawstyle-line-up",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/augustus/623221142_1494558038696050_6924224014553943139_n.jpg",
+      "image": null,
       "date": "2026-08-25",
       "category": "news,hardstyle"
     },
@@ -60,13 +67,6 @@
     {
       "title": "Frontliner's hit 'Discorecord' gets a fresh new twist with Galactixx' remix",
       "link": "https://hardstyle.com/en/news/frontliner-s-hit-discorecord-gets-a-fresh-new-twist-with-galactixx-remix",
-      "image": null,
-      "date": "2026-07-22",
-      "category": "news,hardstyle"
-    },
-    {
-      "title": "Hysta showcased the history of hardcore during The Spotlight at Defqon.1",
-      "link": "https://hardstyle.com/en/news/hysta-showcased-the-history-of-hardcore-during-the-spotlight-at-defqon1",
       "image": null,
       "date": "2026-07-22",
       "category": "news,hardstyle"
