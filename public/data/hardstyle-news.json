@@ -1,10 +1,17 @@
 {
-  "updatedAt": "2026-10-23T11:55:00.101Z",
+  "updatedAt": "2026-10-24T11:24:46.321Z",
   "articles": [
+    {
+      "title": "Vertile’s Remix of Porter Robinson’s ‘Easier To Love You’ Is Out Now",
+      "link": "https://hardstyle.com/en/news/vertiles-remix-of-porter-robinsons-easier-to-love-you-is-out-now",
+      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/easier%20to%20love%20you/20260412_212229_Rebirth_MNO_Photo.jpg",
+      "date": "2026-10-23",
+      "category": "hardstyle"
+    },
     {
       "title": "Classified Outdoor proves itself as the festival for the new generation",
       "link": "https://hardstyle.com/en/news/classified-outdoor-proves-itself-as-the-festival-for-the-new-generation",
-      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/events/classified%20off%20the%20grid/Foto1.png",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/events/classified%20off%20the%20grid/Foto1.png",
       "date": "2026-10-20",
       "category": "hardstyle,report"
     },
@@ -32,7 +39,7 @@
     {
       "title": "If you love zaagkicks and uptempo, Slow Down is the event for you",
       "link": "https://hardstyle.com/en/news/if-you-love-zaagkicks-and-uptempo-slow-down-is-the-event-for-you",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/2026/September/Energy-nonconforme-187.jpg",
+      "image": null,
       "date": "2026-09-24",
       "category": "news,hardstyle"
     },
@@ -62,13 +69,6 @@
       "link": "https://hardstyle.com/en/news/into-the-madness-gears-up-for-its-5th-anniversary",
       "image": null,
       "date": "2026-08-20",
-      "category": "news,hardstyle"
-    },
-    {
-      "title": "Tatanka goes back to his roots with 'Beyond Time'",
-      "link": "https://hardstyle.com/en/news/tatanka-goes-back-to-his-roots-with-beyond-time",
-      "image": null,
-      "date": "2026-08-07",
       "category": "news,hardstyle"
     }
   ]
