@@ -1,6 +1,38 @@
 {
-  "updatedAt": "2026-10-25T09:35:58.710Z",
+  "updatedAt": "2026-10-26T10:47:46.189Z",
   "releases": [
+    {
+      "id": "69130fbe-a2ff-4401-8746-da6f2d863365",
+      "title": "Everything Is Looking Good",
+      "artist": "Jose Del Barrio",
+      "mix": "Fiesta Mix",
+      "image": "https://hardstyle.com/track_image/69130fbe-a2ff-4401-8746-da6f2d863365/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/69130fbe-a2ff-4401-8746-da6f2d863365/everything-is-looking-good"
+    },
+    {
+      "id": "ac890a54-70d7-4003-9975-09d76f299c91",
+      "title": "Everything Is Looking Good",
+      "artist": "Jose Del Barrio",
+      "mix": "Happy Mix",
+      "image": "https://hardstyle.com/track_image/ac890a54-70d7-4003-9975-09d76f299c91/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/ac890a54-70d7-4003-9975-09d76f299c91/everything-is-looking-good"
+    },
+    {
+      "id": "030694ad-2c2a-443f-b093-a720ca0bfea8",
+      "title": "Let's Go",
+      "artist": "Thur",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/030694ad-2c2a-443f-b093-a720ca0bfea8/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/030694ad-2c2a-443f-b093-a720ca0bfea8/let-s-go"
+    },
+    {
+      "id": "f77e322d-3520-4c1c-9d9e-969c0baace91",
+      "title": "Racing Hearts",
+      "artist": "KINN",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/f77e322d-3520-4c1c-9d9e-969c0baace91/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/f77e322d-3520-4c1c-9d9e-969c0baace91/racing-hearts"
+    },
     {
       "id": "fe2b7aa6-7b04-4385-ab96-bfb2ab3511a8",
       "title": "KN",
@@ -16,38 +48,6 @@
       "mix": "Original Mix",
       "image": "https://hardstyle.com/track_image/2c6dff18-2ffa-498b-ac1b-5aa8aadeaabf/250x250/335",
       "link": "https://hardstyle.com/en/tracks/2c6dff18-2ffa-498b-ac1b-5aa8aadeaabf/6-em"
-    },
-    {
-      "id": "a95e4e8f-4028-4cee-a7c0-45a1cb5de4ba",
-      "title": "Hain",
-      "artist": "Oruam Zior",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/a95e4e8f-4028-4cee-a7c0-45a1cb5de4ba/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/a95e4e8f-4028-4cee-a7c0-45a1cb5de4ba/hain"
-    },
-    {
-      "id": "ab4e77b3-d3da-4b51-be83-02169ffbda01",
-      "title": "B4",
-      "artist": "Oruam Zior",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/ab4e77b3-d3da-4b51-be83-02169ffbda01/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/ab4e77b3-d3da-4b51-be83-02169ffbda01/b4"
-    },
-    {
-      "id": "001fbc57-902e-4d97-8d3c-be0c5e6bd613",
-      "title": "6 A♭maj",
-      "artist": "Oruam Zior",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/001fbc57-902e-4d97-8d3c-be0c5e6bd613/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/001fbc57-902e-4d97-8d3c-be0c5e6bd613/6-a-maj"
-    },
-    {
-      "id": "21691531-106a-4ac6-8a1c-ffc7e1f8b5d4",
-      "title": "Eclipse",
-      "artist": "KROLV2",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/21691531-106a-4ac6-8a1c-ffc7e1f8b5d4/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/21691531-106a-4ac6-8a1c-ffc7e1f8b5d4/eclipse"
     },
     {
       "id": "b6176d9d-0259-4ecd-b096-841c12b576d8",
