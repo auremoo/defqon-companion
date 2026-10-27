@@ -1,10 +1,17 @@
 {
-  "updatedAt": "2026-10-26T13:26:23.409Z",
+  "updatedAt": "2026-10-27T12:33:10.154Z",
   "articles": [
+    {
+      "title": "Reverze 2027 announces the full line-up for their upcoming edition: ‘Disruption’",
+      "link": "https://hardstyle.com/en/news/reverze-2027-announces-the-full-line-up-for-their-upcoming-edition-disruption",
+      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/reverze%202027%20lineup/114039-39841-geel-edit-535d72918dafefbb.png",
+      "date": "2026-10-26",
+      "category": "news,hardstyle"
+    },
     {
       "title": "Vertile’s Remix of Porter Robinson’s ‘Easier To Love You’ Is Out Now",
       "link": "https://hardstyle.com/en/news/vertiles-remix-of-porter-robinsons-easier-to-love-you-is-out-now",
-      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/easier%20to%20love%20you/20260412_212229_Rebirth_MNO_Photo.jpg",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/easier%20to%20love%20you/20260412_212229_Rebirth_MNO_Photo.jpg",
       "date": "2026-10-23",
       "category": "hardstyle"
     },
@@ -32,7 +39,7 @@
     {
       "title": "Hard Bass 2026: the GelreDome reminded us what hardstyle is all about",
       "link": "https://hardstyle.com/en/news/hard-bass-2026-review",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/events/hard%20bass%202026/HB26_1011_05_00_25_R52_9039_KEV.jpg",
+      "image": null,
       "date": "2026-10-13",
       "category": "hardstyle,report"
     },
@@ -62,13 +69,6 @@
       "link": "https://hardstyle.com/en/news/d-block-en-s-te-fan-en-phuture-noize-finally-unleash-arcadia",
       "image": null,
       "date": "2026-08-21",
-      "category": "news,hardstyle"
-    },
-    {
-      "title": "Into The Madness gears up for its 5th anniversary",
-      "link": "https://hardstyle.com/en/news/into-the-madness-gears-up-for-its-5th-anniversary",
-      "image": null,
-      "date": "2026-08-20",
       "category": "news,hardstyle"
     }
   ]
