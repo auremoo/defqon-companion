@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-10-26T10:47:46.189Z",
+  "updatedAt": "2026-10-27T10:13:58.396Z",
   "releases": [
+    {
+      "id": "3f56fdda-3403-4e7f-9878-436e9d71da9d",
+      "title": "Here For You",
+      "artist": "LARJ",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/3f56fdda-3403-4e7f-9878-436e9d71da9d/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/3f56fdda-3403-4e7f-9878-436e9d71da9d/here-for-you"
+    },
+    {
+      "id": "691febbd-fb14-46a1-8e53-ade92b975d12",
+      "title": "The Dark Knight",
+      "artist": "Damaxy",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/691febbd-fb14-46a1-8e53-ade92b975d12/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/691febbd-fb14-46a1-8e53-ade92b975d12/the-dark-knight"
+    },
+    {
+      "id": "4032f982-d9da-44f2-9431-6f3d97565256",
+      "title": "Out There",
+      "artist": "Hilz'E",
+      "mix": "Distorted Robocops & Phoenix Remix",
+      "image": "https://hardstyle.com/track_image/4032f982-d9da-44f2-9431-6f3d97565256/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/4032f982-d9da-44f2-9431-6f3d97565256/out-there"
+    },
     {
       "id": "69130fbe-a2ff-4401-8746-da6f2d863365",
       "title": "Everything Is Looking Good",
@@ -26,28 +50,12 @@
       "link": "https://hardstyle.com/en/tracks/030694ad-2c2a-443f-b093-a720ca0bfea8/let-s-go"
     },
     {
-      "id": "f77e322d-3520-4c1c-9d9e-969c0baace91",
-      "title": "Racing Hearts",
-      "artist": "KINN",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/f77e322d-3520-4c1c-9d9e-969c0baace91/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/f77e322d-3520-4c1c-9d9e-969c0baace91/racing-hearts"
-    },
-    {
-      "id": "fe2b7aa6-7b04-4385-ab96-bfb2ab3511a8",
-      "title": "KN",
-      "artist": "Oruam Zior",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/fe2b7aa6-7b04-4385-ab96-bfb2ab3511a8/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/fe2b7aa6-7b04-4385-ab96-bfb2ab3511a8/kn"
-    },
-    {
-      "id": "2c6dff18-2ffa-498b-ac1b-5aa8aadeaabf",
-      "title": "6 Em",
-      "artist": "Oruam Zior",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/2c6dff18-2ffa-498b-ac1b-5aa8aadeaabf/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/2c6dff18-2ffa-498b-ac1b-5aa8aadeaabf/6-em"
+      "id": "37960852-c64f-4d1f-a01b-6ba3187fa11e",
+      "title": "IGNITED",
+      "artist": "D-Fence",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/37960852-c64f-4d1f-a01b-6ba3187fa11e/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/37960852-c64f-4d1f-a01b-6ba3187fa11e"
     },
     {
       "id": "b6176d9d-0259-4ecd-b096-841c12b576d8",
@@ -72,14 +80,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/35a4de60-99e3-4b55-9575-d9198239c342/250x250/335",
       "link": "https://hardstyle.com/en/tracks/35a4de60-99e3-4b55-9575-d9198239c342"
-    },
-    {
-      "id": "1841a853-b620-4f88-ab6e-9da15a6d931f",
-      "title": "Order & Chaos",
-      "artist": "Unexist",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/1841a853-b620-4f88-ab6e-9da15a6d931f/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/1841a853-b620-4f88-ab6e-9da15a6d931f"
     }
   ]
 }
