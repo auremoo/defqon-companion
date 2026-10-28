@@ -1,10 +1,17 @@
 {
-  "updatedAt": "2026-10-27T12:33:10.154Z",
+  "updatedAt": "2026-10-28T13:20:52.589Z",
   "articles": [
+    {
+      "title": "B-Freqz - Eclipse vinyl is OUT NOW!",
+      "link": "https://hardstyle.com/en/news/b-freqz-eclipse-vinyl",
+      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/b-freqz/846070087_18633380113003443_4285161693425529013_n.jpg",
+      "date": "2026-10-28",
+      "category": "news"
+    },
     {
       "title": "Reverze 2027 announces the full line-up for their upcoming edition: ‘Disruption’",
       "link": "https://hardstyle.com/en/news/reverze-2027-announces-the-full-line-up-for-their-upcoming-edition-disruption",
-      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/reverze%202027%20lineup/114039-39841-geel-edit-535d72918dafefbb.png",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/reverze%202027%20lineup/114039-39841-geel-edit-535d72918dafefbb.png",
       "date": "2026-10-26",
       "category": "news,hardstyle"
     },
@@ -32,7 +39,7 @@
     {
       "title": "Reverze 2027 shifts partly to daytime",
       "link": "https://hardstyle.com/en/news/reverze-2027-shifts-partly-to-daytime",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/643574159_18362053642202636_5414209898065884435_n.jpg",
+      "image": null,
       "date": "2026-10-16",
       "category": "hardstyle,event"
     },
@@ -62,13 +69,6 @@
       "link": "https://hardstyle.com/en/news/supremacy-classics-returns-with-a-massive-rawstyle-line-up",
       "image": null,
       "date": "2026-08-25",
-      "category": "news,hardstyle"
-    },
-    {
-      "title": "D-Block & S-te-Fan & Phuture Noize finally unleash ‘Arcadia’",
-      "link": "https://hardstyle.com/en/news/d-block-en-s-te-fan-en-phuture-noize-finally-unleash-arcadia",
-      "image": null,
-      "date": "2026-08-21",
       "category": "news,hardstyle"
     }
   ]
