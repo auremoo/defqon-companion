@@ -1,53 +1,53 @@
 {
-  "updatedAt": "2026-10-27T10:13:58.396Z",
+  "updatedAt": "2026-10-28T11:01:31.804Z",
   "releases": [
     {
-      "id": "3f56fdda-3403-4e7f-9878-436e9d71da9d",
-      "title": "Here For You",
-      "artist": "LARJ",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/3f56fdda-3403-4e7f-9878-436e9d71da9d/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/3f56fdda-3403-4e7f-9878-436e9d71da9d/here-for-you"
-    },
-    {
-      "id": "691febbd-fb14-46a1-8e53-ade92b975d12",
-      "title": "The Dark Knight",
-      "artist": "Damaxy",
+      "id": "2faa42ad-4e73-4c26-941d-d12f79c32dcf",
+      "title": "Energy",
+      "artist": "Diztorted",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/691febbd-fb14-46a1-8e53-ade92b975d12/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/691febbd-fb14-46a1-8e53-ade92b975d12/the-dark-knight"
+      "image": "https://hardstyle.com/track_image/2faa42ad-4e73-4c26-941d-d12f79c32dcf/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/2faa42ad-4e73-4c26-941d-d12f79c32dcf/energy"
     },
     {
-      "id": "4032f982-d9da-44f2-9431-6f3d97565256",
-      "title": "Out There",
-      "artist": "Hilz'E",
-      "mix": "Distorted Robocops & Phoenix Remix",
-      "image": "https://hardstyle.com/track_image/4032f982-d9da-44f2-9431-6f3d97565256/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/4032f982-d9da-44f2-9431-6f3d97565256/out-there"
+      "id": "129f0306-db49-4a22-9a3b-2a14fe089b29",
+      "title": "Carry On",
+      "artist": "AN2ATIX",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/129f0306-db49-4a22-9a3b-2a14fe089b29/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/129f0306-db49-4a22-9a3b-2a14fe089b29/carry-on"
     },
     {
-      "id": "69130fbe-a2ff-4401-8746-da6f2d863365",
-      "title": "Everything Is Looking Good",
-      "artist": "Jose Del Barrio",
-      "mix": "Fiesta Mix",
-      "image": "https://hardstyle.com/track_image/69130fbe-a2ff-4401-8746-da6f2d863365/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/69130fbe-a2ff-4401-8746-da6f2d863365/everything-is-looking-good"
+      "id": "636f40fd-2920-4b0c-802c-2cbae75e831b",
+      "title": "Believe In The Music",
+      "artist": "Akyra",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/636f40fd-2920-4b0c-802c-2cbae75e831b/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/636f40fd-2920-4b0c-802c-2cbae75e831b/believe-in-the-music"
     },
     {
-      "id": "ac890a54-70d7-4003-9975-09d76f299c91",
-      "title": "Everything Is Looking Good",
-      "artist": "Jose Del Barrio",
-      "mix": "Happy Mix",
-      "image": "https://hardstyle.com/track_image/ac890a54-70d7-4003-9975-09d76f299c91/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/ac890a54-70d7-4003-9975-09d76f299c91/everything-is-looking-good"
-    },
-    {
-      "id": "030694ad-2c2a-443f-b093-a720ca0bfea8",
-      "title": "Let's Go",
-      "artist": "Thur",
+      "id": "bb5db91e-ae0a-4afd-ac0e-2ed54f3a4416",
+      "title": "Back 2 My Roots",
+      "artist": "Bounce Alliance",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/030694ad-2c2a-443f-b093-a720ca0bfea8/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/030694ad-2c2a-443f-b093-a720ca0bfea8/let-s-go"
+      "image": "https://hardstyle.com/track_image/bb5db91e-ae0a-4afd-ac0e-2ed54f3a4416/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/bb5db91e-ae0a-4afd-ac0e-2ed54f3a4416/back-2-my-roots"
+    },
+    {
+      "id": "01ed3ffa-5e0e-4ace-b556-4d758bddb1ca",
+      "title": "Back 2 My Roots",
+      "artist": "Bounce Alliance",
+      "mix": "Radio Edit",
+      "image": "https://hardstyle.com/track_image/01ed3ffa-5e0e-4ace-b556-4d758bddb1ca/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/01ed3ffa-5e0e-4ace-b556-4d758bddb1ca/back-2-my-roots"
+    },
+    {
+      "id": "d7ffe708-2a30-454c-821d-4c8d09a1b30b",
+      "title": "Angel Eyes",
+      "artist": "DTAH",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/d7ffe708-2a30-454c-821d-4c8d09a1b30b/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/d7ffe708-2a30-454c-821d-4c8d09a1b30b/angel-eyes"
     },
     {
       "id": "37960852-c64f-4d1f-a01b-6ba3187fa11e",
