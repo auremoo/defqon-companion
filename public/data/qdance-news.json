@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-10-27T11:39:27.246Z",
+  "updatedAt": "2026-10-28T12:10:52.406Z",
   "videos": [
+    {
+      "id": "sHgsIr1gDLg",
+      "title": "Tomorrow at 13:00 CET, the Defqon.1 2027 Travel Sale kicks off.",
+      "published": "2026-10-28T10:00:06+00:00",
+      "link": "https://www.youtube.com/watch?v=sHgsIr1gDLg",
+      "thumbnail": "https://i.ytimg.com/vi/sHgsIr1gDLg/mqdefault.jpg"
+    },
+    {
+      "id": "dKLA3pTFmo0",
+      "title": "Your journey to the RED starts here. Submit your demo now at defqon1.com.",
+      "published": "2026-10-27T15:30:13+00:00",
+      "link": "https://www.youtube.com/watch?v=dKLA3pTFmo0",
+      "thumbnail": "https://i.ytimg.com/vi/dKLA3pTFmo0/mqdefault.jpg"
+    },
     {
       "id": "ZN7aWdx2vHo",
       "title": "D-Sturb took us on a musical journey during his legendary opening set at The Gathering last summer.",
@@ -91,20 +105,6 @@
       "published": "2026-10-18T10:30:07+00:00",
       "link": "https://www.youtube.com/watch?v=h8JBgtabgs8",
       "thumbnail": "https://i.ytimg.com/vi/h8JBgtabgs8/mqdefault.jpg"
-    },
-    {
-      "id": "2OC-6XWtVxs",
-      "title": "YES YES, HERE WE GO! This is POWER HOUR.",
-      "published": "2026-10-18T07:00:33+00:00",
-      "link": "https://www.youtube.com/watch?v=2OC-6XWtVxs",
-      "thumbnail": "https://i.ytimg.com/vi/2OC-6XWtVxs/mqdefault.jpg"
-    },
-    {
-      "id": "vzccoSSVnmI",
-      "title": "Afterparty Warriors, welcome to Defqon.1 at night!",
-      "published": "2026-10-17T10:30:24+00:00",
-      "link": "https://www.youtube.com/watch?v=vzccoSSVnmI",
-      "thumbnail": "https://i.ytimg.com/vi/vzccoSSVnmI/mqdefault.jpg"
     }
   ]
 }
