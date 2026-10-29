@@ -1,53 +1,69 @@
 {
-  "updatedAt": "2026-10-28T11:01:31.804Z",
+  "updatedAt": "2026-10-29T11:19:31.369Z",
   "releases": [
     {
-      "id": "2faa42ad-4e73-4c26-941d-d12f79c32dcf",
-      "title": "Energy",
-      "artist": "Diztorted",
+      "id": "70c049eb-66ec-441d-b1c6-9af22614e5f8",
+      "title": "Bring Me Your Silence",
+      "artist": "DJ M!LO",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/70c049eb-66ec-441d-b1c6-9af22614e5f8/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/70c049eb-66ec-441d-b1c6-9af22614e5f8/bring-me-your-silence"
+    },
+    {
+      "id": "82d926c2-51bb-4753-a944-e2c80d836f74",
+      "title": "Jigsaw",
+      "artist": "S-KILL",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/2faa42ad-4e73-4c26-941d-d12f79c32dcf/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/2faa42ad-4e73-4c26-941d-d12f79c32dcf/energy"
+      "image": "https://hardstyle.com/track_image/82d926c2-51bb-4753-a944-e2c80d836f74/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/82d926c2-51bb-4753-a944-e2c80d836f74/jigsaw"
     },
     {
-      "id": "129f0306-db49-4a22-9a3b-2a14fe089b29",
-      "title": "Carry On",
-      "artist": "AN2ATIX",
+      "id": "b5091df2-c041-4328-99f4-e3a1bd83db61",
+      "title": "Flatline",
+      "artist": "Act of Rage",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/129f0306-db49-4a22-9a3b-2a14fe089b29/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/129f0306-db49-4a22-9a3b-2a14fe089b29/carry-on"
+      "image": "https://hardstyle.com/track_image/b5091df2-c041-4328-99f4-e3a1bd83db61/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/b5091df2-c041-4328-99f4-e3a1bd83db61/flatline"
     },
     {
-      "id": "636f40fd-2920-4b0c-802c-2cbae75e831b",
-      "title": "Believe In The Music",
-      "artist": "Akyra",
+      "id": "7376c6b6-6b39-4488-ba10-028770c3319e",
+      "title": "Rave Alarm",
+      "artist": "Act of Rage",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/636f40fd-2920-4b0c-802c-2cbae75e831b/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/636f40fd-2920-4b0c-802c-2cbae75e831b/believe-in-the-music"
+      "image": "https://hardstyle.com/track_image/7376c6b6-6b39-4488-ba10-028770c3319e/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/7376c6b6-6b39-4488-ba10-028770c3319e/rave-alarm"
     },
     {
-      "id": "bb5db91e-ae0a-4afd-ac0e-2ed54f3a4416",
-      "title": "Back 2 My Roots",
-      "artist": "Bounce Alliance",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/bb5db91e-ae0a-4afd-ac0e-2ed54f3a4416/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/bb5db91e-ae0a-4afd-ac0e-2ed54f3a4416/back-2-my-roots"
+      "id": "56b4de48-f48c-44e6-857a-a3d9daed52bf",
+      "title": "Drugs (Crypsis Remix)",
+      "artist": "Ran-D",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/56b4de48-f48c-44e6-857a-a3d9daed52bf/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/56b4de48-f48c-44e6-857a-a3d9daed52bf/drugs-crypsis-remix"
     },
     {
-      "id": "01ed3ffa-5e0e-4ace-b556-4d758bddb1ca",
-      "title": "Back 2 My Roots",
-      "artist": "Bounce Alliance",
-      "mix": "Radio Edit",
-      "image": "https://hardstyle.com/track_image/01ed3ffa-5e0e-4ace-b556-4d758bddb1ca/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/01ed3ffa-5e0e-4ace-b556-4d758bddb1ca/back-2-my-roots"
+      "id": "3f9c014b-2baf-419f-bdac-58335cd59892",
+      "title": "Vibrate",
+      "artist": "Rejecta",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/3f9c014b-2baf-419f-bdac-58335cd59892/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/3f9c014b-2baf-419f-bdac-58335cd59892/vibrate"
     },
     {
-      "id": "d7ffe708-2a30-454c-821d-4c8d09a1b30b",
-      "title": "Angel Eyes",
-      "artist": "DTAH",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/d7ffe708-2a30-454c-821d-4c8d09a1b30b/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/d7ffe708-2a30-454c-821d-4c8d09a1b30b/angel-eyes"
+      "id": "17874d4b-12d9-4a18-b142-c05e44e764bc",
+      "title": "Uncharted",
+      "artist": "Act of Rage",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/17874d4b-12d9-4a18-b142-c05e44e764bc/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/17874d4b-12d9-4a18-b142-c05e44e764bc"
+    },
+    {
+      "id": "13ab6309-92d3-4ca6-b3c3-5f0d3955db71",
+      "title": "Built 2 Break (Deluxe Album)",
+      "artist": "Dual Damage",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/13ab6309-92d3-4ca6-b3c3-5f0d3955db71/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/13ab6309-92d3-4ca6-b3c3-5f0d3955db71"
     },
     {
       "id": "37960852-c64f-4d1f-a01b-6ba3187fa11e",
@@ -64,22 +80,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/b6176d9d-0259-4ecd-b096-841c12b576d8/250x250/335",
       "link": "https://hardstyle.com/en/tracks/b6176d9d-0259-4ecd-b096-841c12b576d8"
-    },
-    {
-      "id": "b7b1d5ff-c5ad-4242-ba1a-045fdba75e6c",
-      "title": "SPACEHOPPER (Every Bounce), Pt. 1",
-      "artist": "Nik Denton",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/b7b1d5ff-c5ad-4242-ba1a-045fdba75e6c/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/b7b1d5ff-c5ad-4242-ba1a-045fdba75e6c"
-    },
-    {
-      "id": "35a4de60-99e3-4b55-9575-d9198239c342",
-      "title": "The World Of Happy Hardcore",
-      "artist": "Various Artists",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/35a4de60-99e3-4b55-9575-d9198239c342/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/35a4de60-99e3-4b55-9575-d9198239c342"
     }
   ]
 }
