@@ -1,12 +1,19 @@
 {
-  "updatedAt": "2026-10-28T13:20:52.589Z",
+  "updatedAt": "2026-10-29T13:30:21.168Z",
   "articles": [
+    {
+      "title": "Masters of Hardcore warms up for the 2027 edition with ‘The Masterplan’",
+      "link": "https://hardstyle.com/en/news/masters-of-hardcore-warms-up-for-the-2027-edition-with-the-masterplan",
+      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/moh%2027/260328_172339_MOH_HR_MNO%20Photo.jpg",
+      "date": "2026-10-28",
+      "category": "news,hardcore"
+    },
     {
       "title": "B-Freqz - Eclipse vinyl is OUT NOW!",
       "link": "https://hardstyle.com/en/news/b-freqz-eclipse-vinyl",
-      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/b-freqz/846070087_18633380113003443_4285161693425529013_n.jpg",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/b-freqz/846070087_18633380113003443_4285161693425529013_n.jpg",
       "date": "2026-10-28",
-      "category": "news"
+      "category": "news,hardstyle"
     },
     {
       "title": "Reverze 2027 announces the full line-up for their upcoming edition: ‘Disruption’",
@@ -32,7 +39,7 @@
     {
       "title": "Hardstyle goes virtual with Roblox raves",
       "link": "https://hardstyle.com/en/news/hardstyle-goes-virtual-with-roblox-raves",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/roblox/Screenshot%202026-10-16%20235224.png",
+      "image": null,
       "date": "2026-10-20",
       "category": "news,hardstyle"
     },
@@ -62,13 +69,6 @@
       "link": "https://hardstyle.com/en/news/resilience-en-erabreak-about-blow-our-ideas-align-perfectly",
       "image": null,
       "date": "2026-08-28",
-      "category": "news,hardstyle"
-    },
-    {
-      "title": "Supremacy Classics returns with a massive rawstyle line-up",
-      "link": "https://hardstyle.com/en/news/supremacy-classics-returns-with-a-massive-rawstyle-line-up",
-      "image": null,
-      "date": "2026-08-25",
       "category": "news,hardstyle"
     }
   ]
