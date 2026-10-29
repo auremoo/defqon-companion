@@ -1,6 +1,13 @@
 {
-  "updatedAt": "2026-10-28T12:10:52.406Z",
+  "updatedAt": "2026-10-29T12:21:35.398Z",
   "videos": [
+    {
+      "id": "h9MTHLIq0fQ",
+      "title": "Madness? This is POWER HOUR! #defqon1",
+      "published": "2026-10-28T16:30:07+00:00",
+      "link": "https://www.youtube.com/watch?v=h9MTHLIq0fQ",
+      "thumbnail": "https://i.ytimg.com/vi/h9MTHLIq0fQ/mqdefault.jpg"
+    },
     {
       "id": "sHgsIr1gDLg",
       "title": "Tomorrow at 13:00 CET, the Defqon.1 2027 Travel Sale kicks off.",
@@ -98,13 +105,6 @@
       "published": "2026-10-19T07:00:36+00:00",
       "link": "https://www.youtube.com/watch?v=E4mSgdrTicc",
       "thumbnail": "https://i.ytimg.com/vi/E4mSgdrTicc/mqdefault.jpg"
-    },
-    {
-      "id": "h8JBgtabgs8",
-      "title": "Kickstart your Saturday at Defqon.1 with the Warrior Workout 💪",
-      "published": "2026-10-18T10:30:07+00:00",
-      "link": "https://www.youtube.com/watch?v=h8JBgtabgs8",
-      "thumbnail": "https://i.ytimg.com/vi/h8JBgtabgs8/mqdefault.jpg"
     }
   ]
 }
