@@ -1,10 +1,24 @@
 {
-  "updatedAt": "2026-10-29T13:30:21.168Z",
+  "updatedAt": "2026-10-30T13:19:07.532Z",
   "articles": [
+    {
+      "title": "Dr. Peacock gives Mecano’s ‘Hijo de la Luna’ a frenchcore twist",
+      "link": "https://hardstyle.com/en/news/dr-peacock-gives-mecanos-hijo-de-la-luna-a-frenchcore-twist",
+      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/hijo%20de%20la%20luna/SPARK_20241221_232234_BKJN_DV_.jpg",
+      "date": "2026-10-29",
+      "category": "news,hardcore"
+    },
+    {
+      "title": "‘HARD’, the new documentary on Dutch television about the history of the harder styles",
+      "link": "https://hardstyle.com/en/news/hard-the-new-documentary-on-dutch-television-about-the-history-of-the-harder-styles",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/hard/555724798_24649845261304237_9085213748864608700_n.jpg",
+      "date": "2026-10-29",
+      "category": "news,hardstyle,hardcore"
+    },
     {
       "title": "Masters of Hardcore warms up for the 2027 edition with ‘The Masterplan’",
       "link": "https://hardstyle.com/en/news/masters-of-hardcore-warms-up-for-the-2027-edition-with-the-masterplan",
-      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/moh%2027/260328_172339_MOH_HR_MNO%20Photo.jpg",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/moh%2027/260328_172339_MOH_HR_MNO%20Photo.jpg",
       "date": "2026-10-28",
       "category": "news,hardcore"
     },
@@ -25,14 +39,14 @@
     {
       "title": "Vertile’s Remix of Porter Robinson’s ‘Easier To Love You’ Is Out Now",
       "link": "https://hardstyle.com/en/news/vertiles-remix-of-porter-robinsons-easier-to-love-you-is-out-now",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/easier%20to%20love%20you/20260412_212229_Rebirth_MNO_Photo.jpg",
+      "image": null,
       "date": "2026-10-23",
       "category": "hardstyle"
     },
     {
       "title": "Classified Outdoor proves itself as the festival for the new generation",
       "link": "https://hardstyle.com/en/news/classified-outdoor-proves-itself-as-the-festival-for-the-new-generation",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/events/classified%20off%20the%20grid/Foto1.png",
+      "image": null,
       "date": "2026-10-20",
       "category": "hardstyle,report"
     },
@@ -56,20 +70,6 @@
       "image": null,
       "date": "2026-10-13",
       "category": "hardstyle,report"
-    },
-    {
-      "title": "If you love zaagkicks and uptempo, Slow Down is the event for you",
-      "link": "https://hardstyle.com/en/news/if-you-love-zaagkicks-and-uptempo-slow-down-is-the-event-for-you",
-      "image": null,
-      "date": "2026-09-24",
-      "category": "news,hardstyle"
-    },
-    {
-      "title": "Resilience & ERABREAK about ‘BLOW’: “Our ideas align perfectly”",
-      "link": "https://hardstyle.com/en/news/resilience-en-erabreak-about-blow-our-ideas-align-perfectly",
-      "image": null,
-      "date": "2026-08-28",
-      "category": "news,hardstyle"
     }
   ]
 }
