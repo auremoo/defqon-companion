@@ -1,6 +1,14 @@
 {
-  "updatedAt": "2026-10-30T11:12:04.155Z",
+  "updatedAt": "2026-10-31T10:44:42.181Z",
   "releases": [
+    {
+      "id": "c100ec9a-3466-4192-8550-bff6e26b66c1",
+      "title": "Lose Control",
+      "artist": "",
+      "mix": "Radio Edit",
+      "image": "https://hardstyle.com/track_image/c100ec9a-3466-4192-8550-bff6e26b66c1/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/c100ec9a-3466-4192-8550-bff6e26b66c1/lose-control"
+    },
     {
       "id": "157247a7-a248-46f5-a254-096859c6a6c2",
       "title": "Run it Back",
@@ -40,14 +48,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/e3d93e3d-c691-4d7e-9bcb-e149bd7b6869/250x250/335",
       "link": "https://hardstyle.com/en/tracks/e3d93e3d-c691-4d7e-9bcb-e149bd7b6869/bass-rumbling"
-    },
-    {
-      "id": "5c746b75-d86f-4331-9c9a-f0c9ef1bc08d",
-      "title": "Lords of Underground",
-      "artist": "Promo",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/5c746b75-d86f-4331-9c9a-f0c9ef1bc08d/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/5c746b75-d86f-4331-9c9a-f0c9ef1bc08d/lords-of-underground"
     },
     {
       "id": "e8faf7a5-dad3-4183-8016-ef83ced75ba1",
