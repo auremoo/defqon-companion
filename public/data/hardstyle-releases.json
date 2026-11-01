@@ -1,6 +1,14 @@
 {
-  "updatedAt": "2026-10-31T10:44:42.181Z",
+  "updatedAt": "2026-11-01T11:42:28.290Z",
   "releases": [
+    {
+      "id": "958f9cdb-25a9-4e67-b02f-ccae2f7d5e99",
+      "title": "True Darkness",
+      "artist": "Dan Dyson",
+      "mix": "Distorted Robocops Twisted Dub",
+      "image": "https://hardstyle.com/track_image/958f9cdb-25a9-4e67-b02f-ccae2f7d5e99/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/958f9cdb-25a9-4e67-b02f-ccae2f7d5e99/true-darkness"
+    },
     {
       "id": "c100ec9a-3466-4192-8550-bff6e26b66c1",
       "title": "Lose Control",
@@ -40,14 +48,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/bc97ecb7-dcd8-45cd-a284-909cbb7efa11/250x250/335",
       "link": "https://hardstyle.com/en/tracks/bc97ecb7-dcd8-45cd-a284-909cbb7efa11/every-moment-i-love-you"
-    },
-    {
-      "id": "e3d93e3d-c691-4d7e-9bcb-e149bd7b6869",
-      "title": "Bass Rumbling",
-      "artist": "Promo",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/e3d93e3d-c691-4d7e-9bcb-e149bd7b6869/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/e3d93e3d-c691-4d7e-9bcb-e149bd7b6869/bass-rumbling"
     },
     {
       "id": "e8faf7a5-dad3-4183-8016-ef83ced75ba1",
