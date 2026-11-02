@@ -1,6 +1,46 @@
 {
-  "updatedAt": "2026-11-01T11:42:28.290Z",
+  "updatedAt": "2026-11-02T13:10:53.194Z",
   "releases": [
+    {
+      "id": "4b50c19e-dcf2-461e-a419-f054145c3c99",
+      "title": "Always Loved A Film",
+      "artist": "Blueline",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/4b50c19e-dcf2-461e-a419-f054145c3c99/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/4b50c19e-dcf2-461e-a419-f054145c3c99/always-loved-a-film"
+    },
+    {
+      "id": "c1a611a3-4616-4714-a1de-da0d17a24477",
+      "title": "Always Loved A Film",
+      "artist": "Blueline",
+      "mix": "Radio Edit",
+      "image": "https://hardstyle.com/track_image/c1a611a3-4616-4714-a1de-da0d17a24477/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/c1a611a3-4616-4714-a1de-da0d17a24477/always-loved-a-film"
+    },
+    {
+      "id": "9947c43a-e8b9-45a2-8cfe-de55d08eb97a",
+      "title": "Una Sola Pulsación",
+      "artist": "David Navas",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/9947c43a-e8b9-45a2-8cfe-de55d08eb97a/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/9947c43a-e8b9-45a2-8cfe-de55d08eb97a/una-sola-pulsacion"
+    },
+    {
+      "id": "0a31c74e-d3dd-4408-bdd0-c9ea0617ef38",
+      "title": "Star Track",
+      "artist": "Roman Naboka",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/0a31c74e-d3dd-4408-bdd0-c9ea0617ef38/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/0a31c74e-d3dd-4408-bdd0-c9ea0617ef38/star-track"
+    },
+    {
+      "id": "a10721df-f4f1-48b8-b6f9-7c166de78f39",
+      "title": "Born To Lead",
+      "artist": "Radical Redemption",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/a10721df-f4f1-48b8-b6f9-7c166de78f39/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/a10721df-f4f1-48b8-b6f9-7c166de78f39/born-to-lead"
+    },
     {
       "id": "958f9cdb-25a9-4e67-b02f-ccae2f7d5e99",
       "title": "True Darkness",
@@ -8,46 +48,6 @@
       "mix": "Distorted Robocops Twisted Dub",
       "image": "https://hardstyle.com/track_image/958f9cdb-25a9-4e67-b02f-ccae2f7d5e99/250x250/335",
       "link": "https://hardstyle.com/en/tracks/958f9cdb-25a9-4e67-b02f-ccae2f7d5e99/true-darkness"
-    },
-    {
-      "id": "c100ec9a-3466-4192-8550-bff6e26b66c1",
-      "title": "Lose Control",
-      "artist": "",
-      "mix": "Radio Edit",
-      "image": "https://hardstyle.com/track_image/c100ec9a-3466-4192-8550-bff6e26b66c1/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/c100ec9a-3466-4192-8550-bff6e26b66c1/lose-control"
-    },
-    {
-      "id": "157247a7-a248-46f5-a254-096859c6a6c2",
-      "title": "Run it Back",
-      "artist": "Deprived",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/157247a7-a248-46f5-a254-096859c6a6c2/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/157247a7-a248-46f5-a254-096859c6a6c2/run-it-back"
-    },
-    {
-      "id": "fb12b385-4eda-4b0c-b7a0-e9c9024ca219",
-      "title": "Game of Survival",
-      "artist": "Promo",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/fb12b385-4eda-4b0c-b7a0-e9c9024ca219/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/fb12b385-4eda-4b0c-b7a0-e9c9024ca219/game-of-survival"
-    },
-    {
-      "id": "cee97fed-83b8-4ae4-ae5b-66dab4e43ef2",
-      "title": "Wereldmuziek",
-      "artist": "Promo",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/cee97fed-83b8-4ae4-ae5b-66dab4e43ef2/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/cee97fed-83b8-4ae4-ae5b-66dab4e43ef2/wereldmuziek"
-    },
-    {
-      "id": "bc97ecb7-dcd8-45cd-a284-909cbb7efa11",
-      "title": "Every Moment I Love You",
-      "artist": "Promo",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/bc97ecb7-dcd8-45cd-a284-909cbb7efa11/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/bc97ecb7-dcd8-45cd-a284-909cbb7efa11/every-moment-i-love-you"
     },
     {
       "id": "e8faf7a5-dad3-4183-8016-ef83ced75ba1",
