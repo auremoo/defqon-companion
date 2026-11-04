@@ -1,53 +1,61 @@
 {
-  "updatedAt": "2026-11-03T12:38:37.586Z",
+  "updatedAt": "2026-11-04T12:48:16.711Z",
   "releases": [
     {
-      "id": "42e09153-c5dd-4bdb-8d30-1ec6982c4536",
-      "title": "Amen",
-      "artist": "DJ Zemtec",
-      "mix": "Brennan & Heart's Techstyle Remix",
-      "image": "https://hardstyle.com/track_image/42e09153-c5dd-4bdb-8d30-1ec6982c4536/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/42e09153-c5dd-4bdb-8d30-1ec6982c4536/amen"
-    },
-    {
-      "id": "346da882-e7e1-4326-8109-b6febdec3302",
-      "title": "Amen",
-      "artist": "DJ Zemtec",
+      "id": "8f3718dd-19dd-4b5e-a567-b53952febbd3",
+      "title": "Come As One",
+      "artist": "Brennan Heart",
       "mix": "",
-      "image": "https://hardstyle.com/track_image/346da882-e7e1-4326-8109-b6febdec3302/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/346da882-e7e1-4326-8109-b6febdec3302/amen"
+      "image": "https://hardstyle.com/track_image/8f3718dd-19dd-4b5e-a567-b53952febbd3/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/8f3718dd-19dd-4b5e-a567-b53952febbd3/come-as-one"
     },
     {
-      "id": "281ede12-34be-4b81-ac6f-fb6c84a730d4",
-      "title": "MIDNIGHT",
-      "artist": "AMTRAX",
+      "id": "8f13cd25-25b0-4350-8b79-2429bfca83a0",
+      "title": "DESTROYA",
+      "artist": "Monyal",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/281ede12-34be-4b81-ac6f-fb6c84a730d4/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/281ede12-34be-4b81-ac6f-fb6c84a730d4/midnight"
+      "image": "https://hardstyle.com/track_image/8f13cd25-25b0-4350-8b79-2429bfca83a0/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/8f13cd25-25b0-4350-8b79-2429bfca83a0/destroya"
     },
     {
-      "id": "0889ecc2-ec42-40f2-9577-fe1993438a94",
-      "title": "Amnesia",
-      "artist": "Mengers",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/0889ecc2-ec42-40f2-9577-fe1993438a94/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/0889ecc2-ec42-40f2-9577-fe1993438a94/amnesia"
+      "id": "a276fd91-8f9e-4cd0-934e-e40cfbd7b9f6",
+      "title": "What?",
+      "artist": "DJ Zemtec",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/a276fd91-8f9e-4cd0-934e-e40cfbd7b9f6/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/a276fd91-8f9e-4cd0-934e-e40cfbd7b9f6/what"
     },
     {
-      "id": "228f2850-3f11-4ec8-981b-b3ce820e601c",
-      "title": "4 THA RAVE",
-      "artist": "Flinke Herrie",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/228f2850-3f11-4ec8-981b-b3ce820e601c/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/228f2850-3f11-4ec8-981b-b3ce820e601c/4-tha-rave"
+      "id": "fb7055d6-9a39-42ad-81d7-720dbc17f0b6",
+      "title": "Kick It!",
+      "artist": "DJ Zemtec",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/fb7055d6-9a39-42ad-81d7-720dbc17f0b6/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/fb7055d6-9a39-42ad-81d7-720dbc17f0b6/kick-it"
     },
     {
-      "id": "f880c704-83a1-43be-a737-97ecda7169cd",
-      "title": "Take Control",
-      "artist": "Roekeloos",
+      "id": "ce2405ee-568c-4190-b85d-98c6c8f1ff79",
+      "title": "Fight With Fire",
+      "artist": "ARRIGO",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/f880c704-83a1-43be-a737-97ecda7169cd/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/f880c704-83a1-43be-a737-97ecda7169cd/take-control"
+      "image": "https://hardstyle.com/track_image/ce2405ee-568c-4190-b85d-98c6c8f1ff79/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/ce2405ee-568c-4190-b85d-98c6c8f1ff79/fight-with-fire"
+    },
+    {
+      "id": "c773cdcc-6e3f-40ac-8104-7d864f7a9236",
+      "title": "Infiltrate",
+      "artist": "Required",
+      "mix": "Furnox Remix",
+      "image": "https://hardstyle.com/track_image/c773cdcc-6e3f-40ac-8104-7d864f7a9236/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/c773cdcc-6e3f-40ac-8104-7d864f7a9236/infiltrate"
+    },
+    {
+      "id": "590c0a40-e745-4fc4-8f74-7fa4888e08d8",
+      "title": "Frequencies (The Remixes) (Extended Versions)",
+      "artist": "DJ Buzz Fuzz",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/590c0a40-e745-4fc4-8f74-7fa4888e08d8/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/590c0a40-e745-4fc4-8f74-7fa4888e08d8"
     },
     {
       "id": "a0368e25-0377-4c18-bfff-295f0d4f0be8",
@@ -72,14 +80,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/b2c3fc7c-55c5-4e09-8bdf-2d1aeb8df792/250x250/335",
       "link": "https://hardstyle.com/en/tracks/b2c3fc7c-55c5-4e09-8bdf-2d1aeb8df792"
-    },
-    {
-      "id": "ead1c916-b853-4df9-80d1-84e13bdd1792",
-      "title": "Dark Shadows Part IX - Burn The Witch",
-      "artist": "Al Storm pres. Dark Shadows",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/ead1c916-b853-4df9-80d1-84e13bdd1792/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/ead1c916-b853-4df9-80d1-84e13bdd1792"
     }
   ]
 }
