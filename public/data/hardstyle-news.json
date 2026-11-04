@@ -1,10 +1,17 @@
 {
-  "updatedAt": "2026-11-03T14:31:23.521Z",
+  "updatedAt": "2026-11-04T14:46:06.677Z",
   "articles": [
+    {
+      "title": "This is the full line-up of APEX 2027: ‘True to the Sound’",
+      "link": "https://hardstyle.com/en/news/this-is-the-full-line-up-of-apex-2027-true-to-the-sound",
+      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/apex%2027/20260207-221718-APEX-PZA01789-JT_PKZ-HR.jpg",
+      "date": "2026-11-03",
+      "category": "news,hardstyle,event"
+    },
     {
       "title": "Phuture Noize and B-Front announce new liveact and event: ‘White Noise’",
       "link": "https://hardstyle.com/en/news/phuture-noize-and-b-front-announce-new-liveact-and-event-white-noise",
-      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/white%20noise/enlightenment_apex_2.jpg",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/white%20noise/enlightenment_apex_2.jpg",
       "date": "2026-11-02",
       "category": "news,hardstyle,event"
     },
@@ -32,7 +39,7 @@
     {
       "title": "B-Freqz - Eclipse vinyl is OUT NOW!",
       "link": "https://hardstyle.com/en/news/b-freqz-eclipse-vinyl",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/b-freqz/846070087_18633380113003443_4285161693425529013_n.jpg",
+      "image": null,
       "date": "2026-10-28",
       "category": "news,hardstyle"
     },
@@ -63,13 +70,6 @@
       "image": null,
       "date": "2026-10-20",
       "category": "news,hardstyle"
-    },
-    {
-      "title": "Reverze 2027 shifts partly to daytime",
-      "link": "https://hardstyle.com/en/news/reverze-2027-shifts-partly-to-daytime",
-      "image": null,
-      "date": "2026-10-16",
-      "category": "hardstyle,event"
     }
   ]
 }
