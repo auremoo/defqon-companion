@@ -1,53 +1,61 @@
 {
-  "updatedAt": "2026-11-04T12:48:16.711Z",
+  "updatedAt": "2026-11-05T12:57:05.926Z",
   "releases": [
     {
-      "id": "8f3718dd-19dd-4b5e-a567-b53952febbd3",
-      "title": "Come As One",
-      "artist": "Brennan Heart",
+      "id": "92ced339-22ce-4797-afb3-3f109417f6d9",
+      "title": "Do You Hear Me",
+      "artist": "Stephen Game",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/92ced339-22ce-4797-afb3-3f109417f6d9/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/92ced339-22ce-4797-afb3-3f109417f6d9/do-you-hear-me"
+    },
+    {
+      "id": "cfb3d635-26ae-41fa-b60d-72d6ebaa0ed2",
+      "title": "PRAISE THE BASS",
+      "artist": "Mish",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/cfb3d635-26ae-41fa-b60d-72d6ebaa0ed2/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/cfb3d635-26ae-41fa-b60d-72d6ebaa0ed2/praise-the-bass"
+    },
+    {
+      "id": "b6fb2239-8552-44de-8a77-0732b7c94a2b",
+      "title": "ULTIMATE EVIL",
+      "artist": "333CXT",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/b6fb2239-8552-44de-8a77-0732b7c94a2b/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/b6fb2239-8552-44de-8a77-0732b7c94a2b/ultimate-evil"
+    },
+    {
+      "id": "5216c7a6-c0d1-4d45-b29d-1130cfad9bf2",
+      "title": "B!TCHES",
+      "artist": "Mark With A K",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/5216c7a6-c0d1-4d45-b29d-1130cfad9bf2/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/5216c7a6-c0d1-4d45-b29d-1130cfad9bf2/b-tches"
+    },
+    {
+      "id": "bb7b53a8-492c-4261-9b9b-8cd66abd0d6d",
+      "title": "Bang Me Harder",
+      "artist": "Peng",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/bb7b53a8-492c-4261-9b9b-8cd66abd0d6d/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/bb7b53a8-492c-4261-9b9b-8cd66abd0d6d/bang-me-harder"
+    },
+    {
+      "id": "c8037f71-cb99-4f07-a0b0-d22aec3bb341",
+      "title": "Mayday",
+      "artist": "Broken Element",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/c8037f71-cb99-4f07-a0b0-d22aec3bb341/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/c8037f71-cb99-4f07-a0b0-d22aec3bb341/mayday"
+    },
+    {
+      "id": "f9f69b58-5328-446f-886d-a8cad84bb5a4",
+      "title": "Neon Funfair",
+      "artist": "Satirized",
       "mix": "",
-      "image": "https://hardstyle.com/track_image/8f3718dd-19dd-4b5e-a567-b53952febbd3/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/8f3718dd-19dd-4b5e-a567-b53952febbd3/come-as-one"
-    },
-    {
-      "id": "8f13cd25-25b0-4350-8b79-2429bfca83a0",
-      "title": "DESTROYA",
-      "artist": "Monyal",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/8f13cd25-25b0-4350-8b79-2429bfca83a0/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/8f13cd25-25b0-4350-8b79-2429bfca83a0/destroya"
-    },
-    {
-      "id": "a276fd91-8f9e-4cd0-934e-e40cfbd7b9f6",
-      "title": "What?",
-      "artist": "DJ Zemtec",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/a276fd91-8f9e-4cd0-934e-e40cfbd7b9f6/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/a276fd91-8f9e-4cd0-934e-e40cfbd7b9f6/what"
-    },
-    {
-      "id": "fb7055d6-9a39-42ad-81d7-720dbc17f0b6",
-      "title": "Kick It!",
-      "artist": "DJ Zemtec",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/fb7055d6-9a39-42ad-81d7-720dbc17f0b6/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/fb7055d6-9a39-42ad-81d7-720dbc17f0b6/kick-it"
-    },
-    {
-      "id": "ce2405ee-568c-4190-b85d-98c6c8f1ff79",
-      "title": "Fight With Fire",
-      "artist": "ARRIGO",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/ce2405ee-568c-4190-b85d-98c6c8f1ff79/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/ce2405ee-568c-4190-b85d-98c6c8f1ff79/fight-with-fire"
-    },
-    {
-      "id": "c773cdcc-6e3f-40ac-8104-7d864f7a9236",
-      "title": "Infiltrate",
-      "artist": "Required",
-      "mix": "Furnox Remix",
-      "image": "https://hardstyle.com/track_image/c773cdcc-6e3f-40ac-8104-7d864f7a9236/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/c773cdcc-6e3f-40ac-8104-7d864f7a9236/infiltrate"
+      "image": "https://hardstyle.com/track_image/f9f69b58-5328-446f-886d-a8cad84bb5a4/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/f9f69b58-5328-446f-886d-a8cad84bb5a4"
     },
     {
       "id": "590c0a40-e745-4fc4-8f74-7fa4888e08d8",
@@ -64,14 +72,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/a0368e25-0377-4c18-bfff-295f0d4f0be8/250x250/335",
       "link": "https://hardstyle.com/en/tracks/a0368e25-0377-4c18-bfff-295f0d4f0be8"
-    },
-    {
-      "id": "e8faf7a5-dad3-4183-8016-ef83ced75ba1",
-      "title": "Legendary",
-      "artist": "Promo",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/e8faf7a5-dad3-4183-8016-ef83ced75ba1/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/e8faf7a5-dad3-4183-8016-ef83ced75ba1"
     },
     {
       "id": "b2c3fc7c-55c5-4e09-8bdf-2d1aeb8df792",
