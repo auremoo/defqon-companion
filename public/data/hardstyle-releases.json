@@ -1,53 +1,77 @@
 {
-  "updatedAt": "2026-11-05T12:57:05.926Z",
+  "updatedAt": "2026-11-06T12:44:14.550Z",
   "releases": [
     {
-      "id": "92ced339-22ce-4797-afb3-3f109417f6d9",
-      "title": "Do You Hear Me",
-      "artist": "Stephen Game",
+      "id": "334847df-4b3e-49e9-8cd6-7855abf3413e",
+      "title": "DROPPIN' BOMBS",
+      "artist": "Infected",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/92ced339-22ce-4797-afb3-3f109417f6d9/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/92ced339-22ce-4797-afb3-3f109417f6d9/do-you-hear-me"
+      "image": "https://hardstyle.com/track_image/334847df-4b3e-49e9-8cd6-7855abf3413e/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/334847df-4b3e-49e9-8cd6-7855abf3413e/droppin-bombs"
     },
     {
-      "id": "cfb3d635-26ae-41fa-b60d-72d6ebaa0ed2",
-      "title": "PRAISE THE BASS",
-      "artist": "Mish",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/cfb3d635-26ae-41fa-b60d-72d6ebaa0ed2/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/cfb3d635-26ae-41fa-b60d-72d6ebaa0ed2/praise-the-bass"
+      "id": "bcc8994c-ab5b-4402-b8ce-e6b51a67bcec",
+      "title": "Ghost Mode",
+      "artist": "Kili",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/bcc8994c-ab5b-4402-b8ce-e6b51a67bcec/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/bcc8994c-ab5b-4402-b8ce-e6b51a67bcec/ghost-mode"
     },
     {
-      "id": "b6fb2239-8552-44de-8a77-0732b7c94a2b",
-      "title": "ULTIMATE EVIL",
-      "artist": "333CXT",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/b6fb2239-8552-44de-8a77-0732b7c94a2b/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/b6fb2239-8552-44de-8a77-0732b7c94a2b/ultimate-evil"
+      "id": "4c3d8028-3f30-48d3-bd11-06beb1216406",
+      "title": "Humanoid",
+      "artist": "AVLM",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/4c3d8028-3f30-48d3-bd11-06beb1216406/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/4c3d8028-3f30-48d3-bd11-06beb1216406/humanoid"
     },
     {
-      "id": "5216c7a6-c0d1-4d45-b29d-1130cfad9bf2",
-      "title": "B!TCHES",
-      "artist": "Mark With A K",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/5216c7a6-c0d1-4d45-b29d-1130cfad9bf2/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/5216c7a6-c0d1-4d45-b29d-1130cfad9bf2/b-tches"
+      "id": "0a4256f1-49a1-45ef-8cb1-4c8a9422917d",
+      "title": "Pressure System",
+      "artist": "AVLM",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/0a4256f1-49a1-45ef-8cb1-4c8a9422917d/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/0a4256f1-49a1-45ef-8cb1-4c8a9422917d/pressure-system"
     },
     {
-      "id": "bb7b53a8-492c-4261-9b9b-8cd66abd0d6d",
-      "title": "Bang Me Harder",
-      "artist": "Peng",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/bb7b53a8-492c-4261-9b9b-8cd66abd0d6d/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/bb7b53a8-492c-4261-9b9b-8cd66abd0d6d/bang-me-harder"
+      "id": "c5ef08b9-af25-4f46-88be-6e48a263c8ab",
+      "title": "Cataclysm 2.0",
+      "artist": "AVLM",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/c5ef08b9-af25-4f46-88be-6e48a263c8ab/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/c5ef08b9-af25-4f46-88be-6e48a263c8ab/cataclysm-2-0"
     },
     {
-      "id": "c8037f71-cb99-4f07-a0b0-d22aec3bb341",
-      "title": "Mayday",
-      "artist": "Broken Element",
+      "id": "51eb9d95-600f-433d-b4ed-6e3e73d64c6f",
+      "title": "Death Sound",
+      "artist": "AVLM",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/c8037f71-cb99-4f07-a0b0-d22aec3bb341/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/c8037f71-cb99-4f07-a0b0-d22aec3bb341/mayday"
+      "image": "https://hardstyle.com/track_image/51eb9d95-600f-433d-b4ed-6e3e73d64c6f/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/51eb9d95-600f-433d-b4ed-6e3e73d64c6f/death-sound"
+    },
+    {
+      "id": "82db65bf-375d-4bf5-a101-95afab566def",
+      "title": "Pattern Failure",
+      "artist": "AVLM",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/82db65bf-375d-4bf5-a101-95afab566def/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/82db65bf-375d-4bf5-a101-95afab566def"
+    },
+    {
+      "id": "bc8a6256-f4ac-4467-a386-80330b6398d8",
+      "title": "Early Hardstyle - Raw Foundations",
+      "artist": "Various Artists",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/bc8a6256-f4ac-4467-a386-80330b6398d8/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/bc8a6256-f4ac-4467-a386-80330b6398d8"
+    },
+    {
+      "id": "6369f7b8-aecf-4931-bcac-554a4dc9ed22",
+      "title": "FULL HARDCORE EP",
+      "artist": "Radical Redemption",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/6369f7b8-aecf-4931-bcac-554a4dc9ed22/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/6369f7b8-aecf-4931-bcac-554a4dc9ed22"
     },
     {
       "id": "f9f69b58-5328-446f-886d-a8cad84bb5a4",
@@ -56,30 +80,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/f9f69b58-5328-446f-886d-a8cad84bb5a4/250x250/335",
       "link": "https://hardstyle.com/en/tracks/f9f69b58-5328-446f-886d-a8cad84bb5a4"
-    },
-    {
-      "id": "590c0a40-e745-4fc4-8f74-7fa4888e08d8",
-      "title": "Frequencies (The Remixes) (Extended Versions)",
-      "artist": "DJ Buzz Fuzz",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/590c0a40-e745-4fc4-8f74-7fa4888e08d8/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/590c0a40-e745-4fc4-8f74-7fa4888e08d8"
-    },
-    {
-      "id": "a0368e25-0377-4c18-bfff-295f0d4f0be8",
-      "title": "Frequencies (The Remixes)",
-      "artist": "DJ Buzz Fuzz",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/a0368e25-0377-4c18-bfff-295f0d4f0be8/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/a0368e25-0377-4c18-bfff-295f0d4f0be8"
-    },
-    {
-      "id": "b2c3fc7c-55c5-4e09-8bdf-2d1aeb8df792",
-      "title": "Triple Six Recordings presents - The Next Gen XIII",
-      "artist": "Vengeance",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/b2c3fc7c-55c5-4e09-8bdf-2d1aeb8df792/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/b2c3fc7c-55c5-4e09-8bdf-2d1aeb8df792"
     }
   ]
 }
