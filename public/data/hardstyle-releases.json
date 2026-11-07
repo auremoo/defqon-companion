@@ -1,6 +1,14 @@
 {
-  "updatedAt": "2026-11-06T12:44:14.550Z",
+  "updatedAt": "2026-11-07T11:32:33.534Z",
   "releases": [
+    {
+      "id": "a55602b3-0213-42f2-9458-c60617257fd5",
+      "title": "Dawn of a New World",
+      "artist": "Udex",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/a55602b3-0213-42f2-9458-c60617257fd5/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/a55602b3-0213-42f2-9458-c60617257fd5/dawn-of-a-new-world"
+    },
     {
       "id": "334847df-4b3e-49e9-8cd6-7855abf3413e",
       "title": "DROPPIN' BOMBS",
@@ -37,17 +45,9 @@
       "id": "c5ef08b9-af25-4f46-88be-6e48a263c8ab",
       "title": "Cataclysm 2.0",
       "artist": "AVLM",
-      "mix": "",
+      "mix": "Extended Mix",
       "image": "https://hardstyle.com/track_image/c5ef08b9-af25-4f46-88be-6e48a263c8ab/250x250/335",
       "link": "https://hardstyle.com/en/tracks/c5ef08b9-af25-4f46-88be-6e48a263c8ab/cataclysm-2-0"
-    },
-    {
-      "id": "51eb9d95-600f-433d-b4ed-6e3e73d64c6f",
-      "title": "Death Sound",
-      "artist": "AVLM",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/51eb9d95-600f-433d-b4ed-6e3e73d64c6f/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/51eb9d95-600f-433d-b4ed-6e3e73d64c6f/death-sound"
     },
     {
       "id": "82db65bf-375d-4bf5-a101-95afab566def",
