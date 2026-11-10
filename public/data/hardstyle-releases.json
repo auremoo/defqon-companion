@@ -1,53 +1,53 @@
 {
-  "updatedAt": "2026-11-09T13:39:17.839Z",
+  "updatedAt": "2026-11-10T13:16:48.112Z",
   "releases": [
     {
-      "id": "05500916-b697-458e-8260-3491077f5e04",
-      "title": "Tehuti",
-      "artist": "JordanHC",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/05500916-b697-458e-8260-3491077f5e04/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/05500916-b697-458e-8260-3491077f5e04/tehuti"
-    },
-    {
-      "id": "31669eec-a2e0-45e2-a707-406e1aea91a3",
-      "title": "What I Am",
-      "artist": "JordanHC",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/31669eec-a2e0-45e2-a707-406e1aea91a3/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/31669eec-a2e0-45e2-a707-406e1aea91a3/what-i-am"
-    },
-    {
-      "id": "f84b0b4d-43ed-4494-bfdc-aa6378d2cdc3",
-      "title": "Spinning",
-      "artist": "Big Ric",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/f84b0b4d-43ed-4494-bfdc-aa6378d2cdc3/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/f84b0b4d-43ed-4494-bfdc-aa6378d2cdc3/spinning"
-    },
-    {
-      "id": "836d729f-10cd-4152-8952-8e07b25d524d",
-      "title": "Spinning",
-      "artist": "Big Ric",
-      "mix": "Radio Edit",
-      "image": "https://hardstyle.com/track_image/836d729f-10cd-4152-8952-8e07b25d524d/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/836d729f-10cd-4152-8952-8e07b25d524d/spinning"
-    },
-    {
-      "id": "da6c2f1f-eb0f-4d73-ae84-5e7500d2b82f",
-      "title": "Loving You",
-      "artist": "Mikey P",
+      "id": "54d5e0d5-43e6-4aa9-9068-0cb3a4ff1da0",
+      "title": "Rotterdam",
+      "artist": "Strixter",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/da6c2f1f-eb0f-4d73-ae84-5e7500d2b82f/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/da6c2f1f-eb0f-4d73-ae84-5e7500d2b82f/loving-you"
+      "image": "https://hardstyle.com/track_image/54d5e0d5-43e6-4aa9-9068-0cb3a4ff1da0/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/54d5e0d5-43e6-4aa9-9068-0cb3a4ff1da0/rotterdam"
     },
     {
-      "id": "7419d057-1a4e-4da7-ac22-78500966ac2c",
-      "title": "Monsters",
-      "artist": "Mikey P",
+      "id": "2665689a-5603-4f80-9c70-ab4e798bed53",
+      "title": "Don't Want Me",
+      "artist": "Dropzone",
+      "mix": "Bounce Mix",
+      "image": "https://hardstyle.com/track_image/2665689a-5603-4f80-9c70-ab4e798bed53/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/2665689a-5603-4f80-9c70-ab4e798bed53/don-t-want-me"
+    },
+    {
+      "id": "2429799e-9574-4265-b03f-db7020e501d9",
+      "title": "Don't Want Me",
+      "artist": "Dropzone",
+      "mix": "Bounce Edit",
+      "image": "https://hardstyle.com/track_image/2429799e-9574-4265-b03f-db7020e501d9/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/2429799e-9574-4265-b03f-db7020e501d9/don-t-want-me"
+    },
+    {
+      "id": "277de0e3-60a0-469a-8eee-b2f08cba1d14",
+      "title": "Don't Want Me",
+      "artist": "Dropzone",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/7419d057-1a4e-4da7-ac22-78500966ac2c/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/7419d057-1a4e-4da7-ac22-78500966ac2c/monsters"
+      "image": "https://hardstyle.com/track_image/277de0e3-60a0-469a-8eee-b2f08cba1d14/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/277de0e3-60a0-469a-8eee-b2f08cba1d14/don-t-want-me"
+    },
+    {
+      "id": "8aee04e5-e46e-4844-a54f-0225535ade26",
+      "title": "Don't Want Me",
+      "artist": "Dropzone",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/8aee04e5-e46e-4844-a54f-0225535ade26/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/8aee04e5-e46e-4844-a54f-0225535ade26/don-t-want-me"
+    },
+    {
+      "id": "ed5516dd-adc7-45d8-8758-140f9fb74766",
+      "title": "Bite",
+      "artist": "DalyTec",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/ed5516dd-adc7-45d8-8758-140f9fb74766/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/ed5516dd-adc7-45d8-8758-140f9fb74766/bite"
     },
     {
       "id": "82db65bf-375d-4bf5-a101-95afab566def",
