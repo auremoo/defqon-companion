@@ -1,10 +1,17 @@
 {
-  "updatedAt": "2026-11-09T16:44:06.264Z",
+  "updatedAt": "2026-11-10T15:07:18.657Z",
   "articles": [
+    {
+      "title": "15 Years of Gunz For Hire delivers an unforgettable celebration of raw hardstyle",
+      "link": "https://hardstyle.com/en/news/15-years-of-gunz-for-hire-delivers-an-unforgettable-celebration-of-raw-hardstyle",
+      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/g4h/894839033_1668658887956000_3653608244837920262_n.jpg",
+      "date": "2026-11-09",
+      "category": "news,hardstyle,event"
+    },
     {
       "title": "This is the full line-up of APEX 2027: ‘True to the Sound’",
       "link": "https://hardstyle.com/en/news/this-is-the-full-line-up-of-apex-2027-true-to-the-sound",
-      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/apex%2027/20260207-221718-APEX-PZA01789-JT_PKZ-HR.jpg",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/apex%2027/20260207-221718-APEX-PZA01789-JT_PKZ-HR.jpg",
       "date": "2026-11-03",
       "category": "news,hardstyle,event"
     },
@@ -32,7 +39,7 @@
     {
       "title": "Masters of Hardcore warms up for the 2027 edition with ‘The Masterplan’",
       "link": "https://hardstyle.com/en/news/masters-of-hardcore-warms-up-for-the-2027-edition-with-the-masterplan",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/moh%2027/260328_172339_MOH_HR_MNO%20Photo.jpg",
+      "image": null,
       "date": "2026-10-28",
       "category": "news,hardcore"
     },
@@ -63,13 +70,6 @@
       "image": null,
       "date": "2026-10-20",
       "category": "hardstyle,report"
-    },
-    {
-      "title": "Hardstyle goes virtual with Roblox raves",
-      "link": "https://hardstyle.com/en/news/hardstyle-goes-virtual-with-roblox-raves",
-      "image": null,
-      "date": "2026-10-20",
-      "category": "news,hardstyle"
     }
   ]
 }
