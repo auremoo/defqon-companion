@@ -1,10 +1,17 @@
 {
-  "updatedAt": "2026-11-10T15:07:18.657Z",
+  "updatedAt": "2026-11-11T14:38:14.532Z",
   "articles": [
+    {
+      "title": "Lekkerfaces reaches level maximum with his new album ‘HYPER’",
+      "link": "https://hardstyle.com/en/news/lekkerfaces-reaches-level-maximum-with-his-new-album-hyper",
+      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/hyper/260411-1842-REBiRTHFESTIVAL-KVDMPHOTOGRAPHY-04306-HR.jpg",
+      "date": "2026-11-10",
+      "category": "news,hardcore"
+    },
     {
       "title": "15 Years of Gunz For Hire delivers an unforgettable celebration of raw hardstyle",
       "link": "https://hardstyle.com/en/news/15-years-of-gunz-for-hire-delivers-an-unforgettable-celebration-of-raw-hardstyle",
-      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/g4h/894839033_1668658887956000_3653608244837920262_n.jpg",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/g4h/894839033_1668658887956000_3653608244837920262_n.jpg",
       "date": "2026-11-09",
       "category": "news,hardstyle,event"
     },
@@ -32,7 +39,7 @@
     {
       "title": "‘HARD’, the new documentary on Dutch television about the history of the harder styles",
       "link": "https://hardstyle.com/en/news/hard-the-new-documentary-on-dutch-television-about-the-history-of-the-harder-styles",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/hard/555724798_24649845261304237_9085213748864608700_n.jpg",
+      "image": null,
       "date": "2026-10-29",
       "category": "news,hardstyle,hardcore"
     },
@@ -63,13 +70,6 @@
       "image": null,
       "date": "2026-10-23",
       "category": "hardstyle"
-    },
-    {
-      "title": "Classified Outdoor proves itself as the festival for the new generation",
-      "link": "https://hardstyle.com/en/news/classified-outdoor-proves-itself-as-the-festival-for-the-new-generation",
-      "image": null,
-      "date": "2026-10-20",
-      "category": "hardstyle,report"
     }
   ]
 }
