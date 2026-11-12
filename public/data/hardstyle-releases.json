@@ -1,53 +1,61 @@
 {
-  "updatedAt": "2026-11-11T12:28:27.126Z",
+  "updatedAt": "2026-11-12T13:33:15.329Z",
   "releases": [
     {
-      "id": "55ac864d-466c-4e29-9a92-ba97c24e5c04",
-      "title": "King from the Guns",
-      "artist": "Brain Damage",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/55ac864d-466c-4e29-9a92-ba97c24e5c04/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/55ac864d-466c-4e29-9a92-ba97c24e5c04/king-from-the-guns"
-    },
-    {
-      "id": "75062246-09ae-4adf-8e99-aa9e0aff39dc",
-      "title": "Down & Dirty",
-      "artist": "Infliction",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/75062246-09ae-4adf-8e99-aa9e0aff39dc/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/75062246-09ae-4adf-8e99-aa9e0aff39dc/down-dirty"
-    },
-    {
-      "id": "4ad07501-bb50-4eb0-adb9-1ac8469dcd04",
-      "title": "BLOODBATH",
-      "artist": "SMTX",
+      "id": "7356c063-bedd-41a5-8d50-a4ccb509177b",
+      "title": "Feel the Anger",
+      "artist": "Revealer",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/4ad07501-bb50-4eb0-adb9-1ac8469dcd04/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/4ad07501-bb50-4eb0-adb9-1ac8469dcd04/bloodbath"
+      "image": "https://hardstyle.com/track_image/7356c063-bedd-41a5-8d50-a4ccb509177b/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/7356c063-bedd-41a5-8d50-a4ccb509177b/feel-the-anger"
     },
     {
-      "id": "14f948f9-16e3-4942-81a2-f079236a77e0",
-      "title": "Rainbow Girl",
-      "artist": "S3RL",
-      "mix": "DJ KS Remix",
-      "image": "https://hardstyle.com/track_image/14f948f9-16e3-4942-81a2-f079236a77e0/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/14f948f9-16e3-4942-81a2-f079236a77e0/rainbow-girl"
-    },
-    {
-      "id": "06aa6e53-3a73-44c1-8282-ec90ff85eb2b",
-      "title": "The Power Is Ours",
-      "artist": "Toneshifterz",
+      "id": "ea7bb34f-e32a-4053-82b1-5f95c719be85",
+      "title": "The Anger In Us OST",
+      "artist": "Revealer",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/06aa6e53-3a73-44c1-8282-ec90ff85eb2b/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/06aa6e53-3a73-44c1-8282-ec90ff85eb2b/the-power-is-ours"
+      "image": "https://hardstyle.com/track_image/ea7bb34f-e32a-4053-82b1-5f95c719be85/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/ea7bb34f-e32a-4053-82b1-5f95c719be85/the-anger-in-us-ost"
     },
     {
-      "id": "16d211de-bf21-421b-8f94-f93e20128c06",
-      "title": "Hurricane",
-      "artist": "Guardelion",
-      "mix": "Extended",
-      "image": "https://hardstyle.com/track_image/16d211de-bf21-421b-8f94-f93e20128c06/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/16d211de-bf21-421b-8f94-f93e20128c06/hurricane"
+      "id": "6f81cd45-6234-42e5-aaa2-b0d1aec43eba",
+      "title": "Melody of World",
+      "artist": "Loic d",
+      "mix": "Revealer Live Edit",
+      "image": "https://hardstyle.com/track_image/6f81cd45-6234-42e5-aaa2-b0d1aec43eba/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/6f81cd45-6234-42e5-aaa2-b0d1aec43eba/melody-of-world"
+    },
+    {
+      "id": "3c9d3984-c149-4751-8733-cf4569446b9e",
+      "title": "Classified vs Overdrive Tool",
+      "artist": "Revealer",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/3c9d3984-c149-4751-8733-cf4569446b9e/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/3c9d3984-c149-4751-8733-cf4569446b9e/classified-vs-overdrive-tool"
+    },
+    {
+      "id": "48b5d0aa-09dd-4ab5-821a-12dcf99e3b9b",
+      "title": "Promise I'll Die",
+      "artist": "Revealer",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/48b5d0aa-09dd-4ab5-821a-12dcf99e3b9b/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/48b5d0aa-09dd-4ab5-821a-12dcf99e3b9b/promise-i-ll-die"
+    },
+    {
+      "id": "0543cd03-fc99-4651-bba5-9db2c757808f",
+      "title": "Heart is Broken",
+      "artist": "Revealer",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/0543cd03-fc99-4651-bba5-9db2c757808f/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/0543cd03-fc99-4651-bba5-9db2c757808f/heart-is-broken"
+    },
+    {
+      "id": "c594a4bf-0143-4e9d-ac92-968da148553f",
+      "title": "The Anger In Us",
+      "artist": "Revealer",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/c594a4bf-0143-4e9d-ac92-968da148553f/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/c594a4bf-0143-4e9d-ac92-968da148553f"
     },
     {
       "id": "82db65bf-375d-4bf5-a101-95afab566def",
@@ -72,14 +80,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/6369f7b8-aecf-4931-bcac-554a4dc9ed22/250x250/335",
       "link": "https://hardstyle.com/en/tracks/6369f7b8-aecf-4931-bcac-554a4dc9ed22"
-    },
-    {
-      "id": "f9f69b58-5328-446f-886d-a8cad84bb5a4",
-      "title": "Neon Funfair",
-      "artist": "Satirized",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/f9f69b58-5328-446f-886d-a8cad84bb5a4/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/f9f69b58-5328-446f-886d-a8cad84bb5a4"
     }
   ]
 }
