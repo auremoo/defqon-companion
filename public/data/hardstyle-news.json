@@ -1,10 +1,17 @@
 {
-  "updatedAt": "2026-11-12T15:29:53.084Z",
+  "updatedAt": "2026-11-13T14:47:42.433Z",
   "articles": [
+    {
+      "title": "Devin Wild releases his experimental EP ‘Serenity’",
+      "link": "https://hardstyle.com/en/news/devin-wild-releases-his-experimental-ep-serenity",
+      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/serenity/501128136_4897605030464504_1395079275581685074_n.jpg",
+      "date": "2026-11-11",
+      "category": "news,hardstyle"
+    },
     {
       "title": "Lekkerfaces reaches level maximum with his new album ‘HYPER’",
       "link": "https://hardstyle.com/en/news/lekkerfaces-reaches-level-maximum-with-his-new-album-hyper",
-      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/hyper/260411-1842-REBiRTHFESTIVAL-KVDMPHOTOGRAPHY-04306-HR.jpg",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/hyper/260411-1842-REBiRTHFESTIVAL-KVDMPHOTOGRAPHY-04306-HR.jpg",
       "date": "2026-11-10",
       "category": "news,hardcore"
     },
@@ -32,7 +39,7 @@
     {
       "title": "Dr. Peacock gives Mecano’s ‘Hijo de la Luna’ a frenchcore twist",
       "link": "https://hardstyle.com/en/news/dr-peacock-gives-mecanos-hijo-de-la-luna-a-frenchcore-twist",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/hijo%20de%20la%20luna/SPARK_20241221_232234_BKJN_DV_.jpg",
+      "image": null,
       "date": "2026-10-29",
       "category": "news,hardcore"
     },
@@ -63,13 +70,6 @@
       "image": null,
       "date": "2026-10-26",
       "category": "news,hardstyle"
-    },
-    {
-      "title": "Vertile’s Remix of Porter Robinson’s ‘Easier To Love You’ Is Out Now",
-      "link": "https://hardstyle.com/en/news/vertiles-remix-of-porter-robinsons-easier-to-love-you-is-out-now",
-      "image": null,
-      "date": "2026-10-23",
-      "category": "hardstyle"
     }
   ]
 }
