@@ -1,53 +1,77 @@
 {
-  "updatedAt": "2026-11-12T13:33:15.329Z",
+  "updatedAt": "2026-11-13T12:53:13.051Z",
   "releases": [
     {
-      "id": "7356c063-bedd-41a5-8d50-a4ccb509177b",
-      "title": "Feel the Anger",
-      "artist": "Revealer",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/7356c063-bedd-41a5-8d50-a4ccb509177b/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/7356c063-bedd-41a5-8d50-a4ccb509177b/feel-the-anger"
-    },
-    {
-      "id": "ea7bb34f-e32a-4053-82b1-5f95c719be85",
-      "title": "The Anger In Us OST",
-      "artist": "Revealer",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/ea7bb34f-e32a-4053-82b1-5f95c719be85/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/ea7bb34f-e32a-4053-82b1-5f95c719be85/the-anger-in-us-ost"
-    },
-    {
-      "id": "6f81cd45-6234-42e5-aaa2-b0d1aec43eba",
-      "title": "Melody of World",
-      "artist": "Loic d",
-      "mix": "Revealer Live Edit",
-      "image": "https://hardstyle.com/track_image/6f81cd45-6234-42e5-aaa2-b0d1aec43eba/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/6f81cd45-6234-42e5-aaa2-b0d1aec43eba/melody-of-world"
-    },
-    {
-      "id": "3c9d3984-c149-4751-8733-cf4569446b9e",
-      "title": "Classified vs Overdrive Tool",
-      "artist": "Revealer",
+      "id": "72b0d2cb-e5ae-4f21-8bcf-6ed0b4c9d4a3",
+      "title": "Flying So High",
+      "artist": "Bass Shaker",
       "mix": "",
-      "image": "https://hardstyle.com/track_image/3c9d3984-c149-4751-8733-cf4569446b9e/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/3c9d3984-c149-4751-8733-cf4569446b9e/classified-vs-overdrive-tool"
+      "image": "https://hardstyle.com/track_image/72b0d2cb-e5ae-4f21-8bcf-6ed0b4c9d4a3/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/72b0d2cb-e5ae-4f21-8bcf-6ed0b4c9d4a3/flying-so-high"
     },
     {
-      "id": "48b5d0aa-09dd-4ab5-821a-12dcf99e3b9b",
-      "title": "Promise I'll Die",
-      "artist": "Revealer",
+      "id": "70e83eee-ce4b-4dc9-be9c-c2236cd6f1f6",
+      "title": "SAY MY NAME",
+      "artist": "N-Vitral",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/48b5d0aa-09dd-4ab5-821a-12dcf99e3b9b/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/48b5d0aa-09dd-4ab5-821a-12dcf99e3b9b/promise-i-ll-die"
+      "image": "https://hardstyle.com/track_image/70e83eee-ce4b-4dc9-be9c-c2236cd6f1f6/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/70e83eee-ce4b-4dc9-be9c-c2236cd6f1f6/say-my-name"
     },
     {
-      "id": "0543cd03-fc99-4651-bba5-9db2c757808f",
-      "title": "Heart is Broken",
-      "artist": "Revealer",
+      "id": "d3c30db7-1a60-480f-875d-6eead38c9b75",
+      "title": "Ready Or Not",
+      "artist": "Deviation",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/0543cd03-fc99-4651-bba5-9db2c757808f/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/0543cd03-fc99-4651-bba5-9db2c757808f/heart-is-broken"
+      "image": "https://hardstyle.com/track_image/d3c30db7-1a60-480f-875d-6eead38c9b75/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/d3c30db7-1a60-480f-875d-6eead38c9b75/ready-or-not"
+    },
+    {
+      "id": "f2e3a876-2d89-4827-ade6-7b4475d48caf",
+      "title": "TURN ME UP",
+      "artist": "PHOROS",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/f2e3a876-2d89-4827-ade6-7b4475d48caf/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/f2e3a876-2d89-4827-ade6-7b4475d48caf/turn-me-up"
+    },
+    {
+      "id": "19bd5905-5119-44b2-ae15-619e7b59946f",
+      "title": "Purgatory",
+      "artist": "Silent Humanity",
+      "mix": "Alternative Version",
+      "image": "https://hardstyle.com/track_image/19bd5905-5119-44b2-ae15-619e7b59946f/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/19bd5905-5119-44b2-ae15-619e7b59946f/purgatory"
+    },
+    {
+      "id": "e1865f98-321d-46c6-8f06-d2f3c741937f",
+      "title": "Doomday Part 2",
+      "artist": "Silent Humanity",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/e1865f98-321d-46c6-8f06-d2f3c741937f/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/e1865f98-321d-46c6-8f06-d2f3c741937f/doomday-part-2"
+    },
+    {
+      "id": "722c35b6-7fba-499b-a250-202cbbe8c0bc",
+      "title": "Serenity",
+      "artist": "Devin Wild",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/722c35b6-7fba-499b-a250-202cbbe8c0bc/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/722c35b6-7fba-499b-a250-202cbbe8c0bc"
+    },
+    {
+      "id": "b615c5a2-9bed-45b5-81b3-b6fa46c3d26c",
+      "title": "Into The Fire",
+      "artist": "Digital Punk",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/b615c5a2-9bed-45b5-81b3-b6fa46c3d26c/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/b615c5a2-9bed-45b5-81b3-b6fa46c3d26c"
+    },
+    {
+      "id": "395fc929-9a62-4244-bbd2-026ddf7f5f60",
+      "title": "Island Baby",
+      "artist": "Walt Hari",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/395fc929-9a62-4244-bbd2-026ddf7f5f60/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/395fc929-9a62-4244-bbd2-026ddf7f5f60"
     },
     {
       "id": "c594a4bf-0143-4e9d-ac92-968da148553f",
@@ -56,30 +80,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/c594a4bf-0143-4e9d-ac92-968da148553f/250x250/335",
       "link": "https://hardstyle.com/en/tracks/c594a4bf-0143-4e9d-ac92-968da148553f"
-    },
-    {
-      "id": "82db65bf-375d-4bf5-a101-95afab566def",
-      "title": "Pattern Failure",
-      "artist": "AVLM",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/82db65bf-375d-4bf5-a101-95afab566def/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/82db65bf-375d-4bf5-a101-95afab566def"
-    },
-    {
-      "id": "bc8a6256-f4ac-4467-a386-80330b6398d8",
-      "title": "Early Hardstyle - Raw Foundations",
-      "artist": "Various Artists",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/bc8a6256-f4ac-4467-a386-80330b6398d8/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/bc8a6256-f4ac-4467-a386-80330b6398d8"
-    },
-    {
-      "id": "6369f7b8-aecf-4931-bcac-554a4dc9ed22",
-      "title": "FULL HARDCORE EP",
-      "artist": "Radical Redemption",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/6369f7b8-aecf-4931-bcac-554a4dc9ed22/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/6369f7b8-aecf-4931-bcac-554a4dc9ed22"
     }
   ]
 }
