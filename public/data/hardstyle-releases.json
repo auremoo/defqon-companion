@@ -1,6 +1,22 @@
 {
-  "updatedAt": "2026-11-13T12:53:13.051Z",
+  "updatedAt": "2026-11-14T11:57:06.205Z",
   "releases": [
+    {
+      "id": "57c6a76c-c31f-48bf-bd39-6b805acf3a83",
+      "title": "Darkness",
+      "artist": "EzKill",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/57c6a76c-c31f-48bf-bd39-6b805acf3a83/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/57c6a76c-c31f-48bf-bd39-6b805acf3a83/darkness"
+    },
+    {
+      "id": "d6403f75-9f9a-4309-911e-113d8afe59da",
+      "title": "Forever Gunz",
+      "artist": "Gunz For Hire",
+      "mix": "Extended 15 Years OST",
+      "image": "https://hardstyle.com/track_image/d6403f75-9f9a-4309-911e-113d8afe59da/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/d6403f75-9f9a-4309-911e-113d8afe59da/forever-gunz"
+    },
     {
       "id": "72b0d2cb-e5ae-4f21-8bcf-6ed0b4c9d4a3",
       "title": "Flying So High",
@@ -32,22 +48,6 @@
       "mix": "Extended Mix",
       "image": "https://hardstyle.com/track_image/f2e3a876-2d89-4827-ade6-7b4475d48caf/250x250/335",
       "link": "https://hardstyle.com/en/tracks/f2e3a876-2d89-4827-ade6-7b4475d48caf/turn-me-up"
-    },
-    {
-      "id": "19bd5905-5119-44b2-ae15-619e7b59946f",
-      "title": "Purgatory",
-      "artist": "Silent Humanity",
-      "mix": "Alternative Version",
-      "image": "https://hardstyle.com/track_image/19bd5905-5119-44b2-ae15-619e7b59946f/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/19bd5905-5119-44b2-ae15-619e7b59946f/purgatory"
-    },
-    {
-      "id": "e1865f98-321d-46c6-8f06-d2f3c741937f",
-      "title": "Doomday Part 2",
-      "artist": "Silent Humanity",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/e1865f98-321d-46c6-8f06-d2f3c741937f/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/e1865f98-321d-46c6-8f06-d2f3c741937f/doomday-part-2"
     },
     {
       "id": "722c35b6-7fba-499b-a250-202cbbe8c0bc",
