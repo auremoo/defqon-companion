@@ -1,53 +1,53 @@
 {
-  "updatedAt": "2026-11-14T11:57:06.205Z",
+  "updatedAt": "2026-11-15T12:31:40.650Z",
   "releases": [
     {
-      "id": "57c6a76c-c31f-48bf-bd39-6b805acf3a83",
-      "title": "Darkness",
-      "artist": "EzKill",
+      "id": "7dd5c532-7a62-4512-a37d-b8cca1804094",
+      "title": "Predators",
+      "artist": "Machine Command",
+      "mix": "The Peoples Republic Of Europe Remix",
+      "image": "https://hardstyle.com/track_image/7dd5c532-7a62-4512-a37d-b8cca1804094/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/7dd5c532-7a62-4512-a37d-b8cca1804094/predators"
+    },
+    {
+      "id": "b99f36b9-86a3-49fc-8f39-09a6346035a1",
+      "title": "Uncontrollable",
+      "artist": "Machine Command",
       "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/57c6a76c-c31f-48bf-bd39-6b805acf3a83/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/57c6a76c-c31f-48bf-bd39-6b805acf3a83/darkness"
+      "image": "https://hardstyle.com/track_image/b99f36b9-86a3-49fc-8f39-09a6346035a1/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/b99f36b9-86a3-49fc-8f39-09a6346035a1/uncontrollable"
     },
     {
-      "id": "d6403f75-9f9a-4309-911e-113d8afe59da",
-      "title": "Forever Gunz",
-      "artist": "Gunz For Hire",
-      "mix": "Extended 15 Years OST",
-      "image": "https://hardstyle.com/track_image/d6403f75-9f9a-4309-911e-113d8afe59da/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/d6403f75-9f9a-4309-911e-113d8afe59da/forever-gunz"
+      "id": "6e85e7b6-d09c-44a6-befa-d8a560bc440c",
+      "title": "Leave it Alone",
+      "artist": "Voltage Surge",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/6e85e7b6-d09c-44a6-befa-d8a560bc440c/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/6e85e7b6-d09c-44a6-befa-d8a560bc440c/leave-it-alone"
     },
     {
-      "id": "72b0d2cb-e5ae-4f21-8bcf-6ed0b4c9d4a3",
-      "title": "Flying So High",
-      "artist": "Bass Shaker",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/72b0d2cb-e5ae-4f21-8bcf-6ed0b4c9d4a3/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/72b0d2cb-e5ae-4f21-8bcf-6ed0b4c9d4a3/flying-so-high"
+      "id": "9cbdb5ae-915f-4704-9454-4971a51d3735",
+      "title": "Talk the Walk",
+      "artist": "Voltage Surge",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/9cbdb5ae-915f-4704-9454-4971a51d3735/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/9cbdb5ae-915f-4704-9454-4971a51d3735/talk-the-walk"
     },
     {
-      "id": "70e83eee-ce4b-4dc9-be9c-c2236cd6f1f6",
-      "title": "SAY MY NAME",
-      "artist": "N-Vitral",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/70e83eee-ce4b-4dc9-be9c-c2236cd6f1f6/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/70e83eee-ce4b-4dc9-be9c-c2236cd6f1f6/say-my-name"
+      "id": "1d4e8e3f-758c-4a45-a7ce-111cdc0afe37",
+      "title": "Control the Voltage",
+      "artist": "Voltage Surge",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/1d4e8e3f-758c-4a45-a7ce-111cdc0afe37/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/1d4e8e3f-758c-4a45-a7ce-111cdc0afe37/control-the-voltage"
     },
     {
-      "id": "d3c30db7-1a60-480f-875d-6eead38c9b75",
-      "title": "Ready Or Not",
-      "artist": "Deviation",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/d3c30db7-1a60-480f-875d-6eead38c9b75/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/d3c30db7-1a60-480f-875d-6eead38c9b75/ready-or-not"
-    },
-    {
-      "id": "f2e3a876-2d89-4827-ade6-7b4475d48caf",
-      "title": "TURN ME UP",
-      "artist": "PHOROS",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/f2e3a876-2d89-4827-ade6-7b4475d48caf/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/f2e3a876-2d89-4827-ade6-7b4475d48caf/turn-me-up"
+      "id": "633f2e81-6e29-4cc5-8f8b-92a6b3cc403d",
+      "title": "Tidal Pools in Time",
+      "artist": "Voltage Surge",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/633f2e81-6e29-4cc5-8f8b-92a6b3cc403d/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/633f2e81-6e29-4cc5-8f8b-92a6b3cc403d/tidal-pools-in-time"
     },
     {
       "id": "722c35b6-7fba-499b-a250-202cbbe8c0bc",
