@@ -1,10 +1,17 @@
 {
-  "updatedAt": "2026-11-15T14:12:15.535Z",
+  "updatedAt": "2026-11-16T16:14:45.378Z",
   "articles": [
+    {
+      "title": "REBELLiON Indoor 2026: the best rawstyle festival of the year",
+      "link": "https://hardstyle.com/en/news/rebellion-indoor-2026-the-best-rawstyle-festival-of-the-year",
+      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/rebellion%202026/20261114_165513_Rebellion_MNO_Photo.jpg",
+      "date": "2026-11-16",
+      "category": "news,hardstyle"
+    },
     {
       "title": "Devin Wild releases his experimental EP ‘Serenity’",
       "link": "https://hardstyle.com/en/news/devin-wild-releases-his-experimental-ep-serenity",
-      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/serenity/501128136_4897605030464504_1395079275581685074_n.jpg",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/serenity/501128136_4897605030464504_1395079275581685074_n.jpg",
       "date": "2026-11-11",
       "category": "news,hardstyle"
     },
@@ -32,7 +39,7 @@
     {
       "title": "Phuture Noize and B-Front announce new liveact and event: ‘White Noise’",
       "link": "https://hardstyle.com/en/news/phuture-noize-and-b-front-announce-new-liveact-and-event-white-noise",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/white%20noise/enlightenment_apex_2.jpg",
+      "image": null,
       "date": "2026-11-02",
       "category": "news,hardstyle,event"
     },
@@ -62,13 +69,6 @@
       "link": "https://hardstyle.com/en/news/b-freqz-eclipse-vinyl",
       "image": null,
       "date": "2026-10-28",
-      "category": "news,hardstyle"
-    },
-    {
-      "title": "Reverze 2027 announces the full line-up for their upcoming edition: ‘Disruption’",
-      "link": "https://hardstyle.com/en/news/reverze-2027-announces-the-full-line-up-for-their-upcoming-edition-disruption",
-      "image": null,
-      "date": "2026-10-26",
       "category": "news,hardstyle"
     }
   ]
