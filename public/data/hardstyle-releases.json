@@ -1,6 +1,14 @@
 {
-  "updatedAt": "2026-11-16T13:23:31.957Z",
+  "updatedAt": "2026-11-17T14:08:17.692Z",
   "releases": [
+    {
+      "id": "d04914ee-b2d6-4921-9b9e-3a59ab189abe",
+      "title": "Madness Without You",
+      "artist": "Dj Neo",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/d04914ee-b2d6-4921-9b9e-3a59ab189abe/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/d04914ee-b2d6-4921-9b9e-3a59ab189abe/madness-without-you"
+    },
     {
       "id": "1cdf5cab-0a5e-4092-9251-c9f974bcb293",
       "title": "Without You",
@@ -40,14 +48,6 @@
       "mix": "Extended Mix",
       "image": "https://hardstyle.com/track_image/e51e1942-cb34-4fed-8e88-5c398cf6b419/250x250/335",
       "link": "https://hardstyle.com/en/tracks/e51e1942-cb34-4fed-8e88-5c398cf6b419/the-bass-the-drums"
-    },
-    {
-      "id": "95251c8f-d786-4baa-87f7-a7a7b64ff6e9",
-      "title": "In Live",
-      "artist": "Abel Effect",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/95251c8f-d786-4baa-87f7-a7a7b64ff6e9/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/95251c8f-d786-4baa-87f7-a7a7b64ff6e9/in-live"
     },
     {
       "id": "722c35b6-7fba-499b-a250-202cbbe8c0bc",
