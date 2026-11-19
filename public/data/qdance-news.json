@@ -1,6 +1,13 @@
 {
-  "updatedAt": "2026-11-18T15:09:57.627Z",
+  "updatedAt": "2026-11-19T15:18:17.497Z",
   "videos": [
+    {
+      "id": "zaUxzSRMk9Y",
+      "title": "‘It Will Be OK’ claimed #1 in 2025. Who will top 2026? Cast your Top 10 at Q-dance.com! #HST100",
+      "published": "2026-11-19T14:00:31+00:00",
+      "link": "https://www.youtube.com/watch?v=zaUxzSRMk9Y",
+      "thumbnail": "https://i.ytimg.com/vi/zaUxzSRMk9Y/mqdefault.jpg"
+    },
     {
       "id": "inHoNReT4dU",
       "title": "The time has come to join the Tribe. Get your tickets now at defqon1.com! #defqon1",
@@ -98,13 +105,6 @@
       "published": "2026-10-20T10:30:19+00:00",
       "link": "https://www.youtube.com/watch?v=nD3NzIKMKsA",
       "thumbnail": "https://i.ytimg.com/vi/nD3NzIKMKsA/mqdefault.jpg"
-    },
-    {
-      "id": "mrwrK17v5TE",
-      "title": "These are the Holy Grounds we call home 🧡",
-      "published": "2026-10-20T07:00:28+00:00",
-      "link": "https://www.youtube.com/watch?v=mrwrK17v5TE",
-      "thumbnail": "https://i.ytimg.com/vi/mrwrK17v5TE/mqdefault.jpg"
     }
   ]
 }
