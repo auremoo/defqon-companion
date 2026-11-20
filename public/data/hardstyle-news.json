@@ -1,10 +1,17 @@
 {
-  "updatedAt": "2026-11-19T15:57:27.198Z",
+  "updatedAt": "2026-11-20T15:40:27.756Z",
   "articles": [
+    {
+      "title": "REBiRTH Festival 2027 reveals its massive line-up with over 300 artists",
+      "link": "https://hardstyle.com/en/news/rebirth-festival-2027-reveals-its-massive-line-up-with-over-300-artists",
+      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/rebirth%202027/20260411_155644_REBiRTHFestival_BPA06337-ARW_BobbiePhotography_HR.jpg",
+      "date": "2026-11-19",
+      "category": "news,hardstyle"
+    },
     {
       "title": "REBELLiON Indoor 2026: the best rawstyle festival of the year",
       "link": "https://hardstyle.com/en/news/rebellion-indoor-2026-the-best-rawstyle-festival-of-the-year",
-      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/rebellion%202026/20261114_165513_Rebellion_MNO_Photo.jpg",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/rebellion%202026/20261114_165513_Rebellion_MNO_Photo.jpg",
       "date": "2026-11-16",
       "category": "news,hardstyle"
     },
@@ -32,7 +39,7 @@
     {
       "title": "This is the full line-up of APEX 2027: ‘True to the Sound’",
       "link": "https://hardstyle.com/en/news/this-is-the-full-line-up-of-apex-2027-true-to-the-sound",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/apex%2027/20260207-221718-APEX-PZA01789-JT_PKZ-HR.jpg",
+      "image": null,
       "date": "2026-11-03",
       "category": "news,hardstyle,event"
     },
@@ -63,13 +70,6 @@
       "image": null,
       "date": "2026-10-28",
       "category": "news,hardcore"
-    },
-    {
-      "title": "B-Freqz - Eclipse vinyl is OUT NOW!",
-      "link": "https://hardstyle.com/en/news/b-freqz-eclipse-vinyl",
-      "image": null,
-      "date": "2026-10-28",
-      "category": "news,hardstyle"
     }
   ]
 }
