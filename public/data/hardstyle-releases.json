@@ -1,6 +1,14 @@
 {
-  "updatedAt": "2026-11-20T13:51:26.917Z",
+  "updatedAt": "2026-11-21T13:15:26.900Z",
   "releases": [
+    {
+      "id": "6e14a202-b49a-437e-aca9-dce7f5bf8504",
+      "title": "Nightmare",
+      "artist": "Distorted Robocops",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/6e14a202-b49a-437e-aca9-dce7f5bf8504/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/6e14a202-b49a-437e-aca9-dce7f5bf8504/nightmare"
+    },
     {
       "id": "df7bb5bf-39fa-4719-a7df-354f9bc9378a",
       "title": "Wherever You Will Go",
@@ -40,14 +48,6 @@
       "mix": "Extended Mix",
       "image": "https://hardstyle.com/track_image/8fa4e09e-4266-4c11-86e1-d7e8c67c48d5/250x250/335",
       "link": "https://hardstyle.com/en/tracks/8fa4e09e-4266-4c11-86e1-d7e8c67c48d5/dance"
-    },
-    {
-      "id": "f0c0e6df-781e-4288-bcdb-267ae9e1cfbc",
-      "title": "Testphase",
-      "artist": "Zupi",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/f0c0e6df-781e-4288-bcdb-267ae9e1cfbc/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/f0c0e6df-781e-4288-bcdb-267ae9e1cfbc/testphase"
     },
     {
       "id": "4ebd39a8-52e4-4e99-90bc-193a5004b5f1",
