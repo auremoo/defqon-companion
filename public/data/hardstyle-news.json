@@ -1,10 +1,17 @@
 {
-  "updatedAt": "2026-11-22T14:47:17.587Z",
+  "updatedAt": "2026-11-23T18:36:03.020Z",
   "articles": [
+    {
+      "title": "Dominator unveils major upgrades for the 2027 edition",
+      "link": "https://hardstyle.com/en/news/dominator-unveils-major-upgrades-for-the-2027-edition",
+      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/dominator%2027/main.jpg",
+      "date": "2026-11-23",
+      "category": "news,hardcore"
+    },
     {
       "title": "REBiRTH Festival 2027 reveals its massive line-up with over 300 artists",
       "link": "https://hardstyle.com/en/news/rebirth-festival-2027-reveals-its-massive-line-up-with-over-300-artists",
-      "image": "https://hardstyle.com/thumbs/1600x0/@0.5x0.5/gfx/news/rebirth%202027/20260411_155644_REBiRTHFestival_BPA06337-ARW_BobbiePhotography_HR.jpg",
+      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/rebirth%202027/20260411_155644_REBiRTHFestival_BPA06337-ARW_BobbiePhotography_HR.jpg",
       "date": "2026-11-19",
       "category": "news,hardstyle"
     },
@@ -32,7 +39,7 @@
     {
       "title": "15 Years of Gunz For Hire delivers an unforgettable celebration of raw hardstyle",
       "link": "https://hardstyle.com/en/news/15-years-of-gunz-for-hire-delivers-an-unforgettable-celebration-of-raw-hardstyle",
-      "image": "https://hardstyle.com/thumbs/600x0/@0.5x0.5/gfx/news/g4h/894839033_1668658887956000_3653608244837920262_n.jpg",
+      "image": null,
       "date": "2026-11-09",
       "category": "news,hardstyle,event"
     },
@@ -63,13 +70,6 @@
       "image": null,
       "date": "2026-10-29",
       "category": "news,hardstyle,hardcore"
-    },
-    {
-      "title": "Masters of Hardcore warms up for the 2027 edition with ‘The Masterplan’",
-      "link": "https://hardstyle.com/en/news/masters-of-hardcore-warms-up-for-the-2027-edition-with-the-masterplan",
-      "image": null,
-      "date": "2026-10-28",
-      "category": "news,hardcore"
     }
   ]
 }
