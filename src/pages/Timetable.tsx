@@ -1,10 +1,6 @@
-import { useState, useEffect, useCallback, useMemo } from 'react'
+import { memo, useState, useEffect, useCallback, useMemo, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useAuth } from '../contexts/AuthContext'
-import { db } from '../lib/firebase'
-import {
-  collection, doc, getDocs, setDoc, deleteDoc, query, where, onSnapshot, getDoc,
-} from 'firebase/firestore'
 import { UsersIcon, FlameIcon, SnowflakeIcon } from '../components/Icons'
 import PageShell from '../components/PageShell'
 import LiveMode from '../components/LiveMode'
@@ -33,18 +29,18 @@ function FriendsPanel({ onClose, editionYear, onViewSchedule }: {
   onViewSchedule: (friendId: string, friendName: string) => void
 }) {
   const { t } = useTranslation()
-  const { user } = useAuth()
+  const { user, store } = useAuth()
   const [searchQuery, setSearchQuery] = useState('')
   const [friends, setFriends] = useState<{ id: string; friendUserId: string; username: string; display_name: string | null; status: string; isRequester: boolean }[]>([])
   const [searchResults, setSearchResults] = useState<{ id: string; username: string }[]>([])
   const [buddyIds, setBuddyIds] = useState<string[]>([])
 
   const loadFriends = useCallback(async () => {
-    if (!db || !user) return
+    if (!store || !user) return
 
     const [asRequester, asAddressee] = await Promise.all([
-      getDocs(query(collection(db, 'friendships'), where('requester_id', '==', user.uid))),
-      getDocs(query(collection(db, 'friendships'), where('addressee_id', '==', user.uid))),
+      store.getDocs(store.query(store.collection('friendships'), store.where('requester_id', '==', user.uid))),
+      store.getDocs(store.query(store.collection('friendships'), store.where('addressee_id', '==', user.uid))),
     ])
 
     const all = [...asRequester.docs, ...asAddressee.docs]
@@ -52,7 +48,7 @@ function FriendsPanel({ onClose, editionYear, onViewSchedule }: {
       const data = snap.data()
       const isRequester = data.requester_id === user.uid
       const friendUid = isRequester ? data.addressee_id : data.requester_id
-      const profileSnap = await getDoc(doc(db!, 'users', friendUid))
+      const profileSnap = await store.getDoc(store.doc('users', friendUid))
       const profile = profileSnap.data() as { username: string; display_name: string | null } | undefined
       return {
         id: snap.id,
@@ -66,36 +62,36 @@ function FriendsPanel({ onClose, editionYear, onViewSchedule }: {
     setFriends(enriched)
 
     // Load edition buddies
-    const buddySnaps = await getDocs(
-      query(collection(db, 'edition_buddies'),
-        where('user_id', '==', user.uid),
-        where('edition_year', '==', editionYear))
+    const buddySnaps = await store.getDocs(
+      store.query(store.collection('edition_buddies'),
+        store.where('user_id', '==', user.uid),
+        store.where('edition_year', '==', editionYear))
     )
     setBuddyIds(buddySnaps.docs.map((d) => d.data().friend_id as string))
-  }, [user, editionYear])
+  }, [store, user, editionYear])
 
   useEffect(() => { loadFriends() }, [loadFriends])
 
   const toggleBuddy = async (friendUserId: string) => {
-    if (!db || !user) return
+    if (!store || !user) return
     const docId = `${user.uid}_${friendUserId}_${editionYear}`
     const isBuddy = buddyIds.includes(friendUserId)
     if (isBuddy) {
-      await deleteDoc(doc(db, 'edition_buddies', docId))
+      await store.deleteDoc(store.doc('edition_buddies', docId))
       setBuddyIds((prev) => prev.filter((id) => id !== friendUserId))
     } else {
-      await setDoc(doc(db, 'edition_buddies', docId), { user_id: user.uid, friend_id: friendUserId, edition_year: editionYear })
+      await store.setDoc(store.doc('edition_buddies', docId), { user_id: user.uid, friend_id: friendUserId, edition_year: editionYear })
       setBuddyIds((prev) => [...prev, friendUserId])
     }
   }
 
   const searchUsers = async () => {
-    if (!db || !searchQuery.trim()) return
+    if (!store || !searchQuery.trim()) return
     // Firestore ne supporte pas ILIKE — on charge par username exact (insensible à la casse côté client)
-    const snaps = await getDocs(query(
-      collection(db, 'users'),
-      where('username', '>=', searchQuery.toLowerCase()),
-      where('username', '<=', searchQuery.toLowerCase() + '')
+    const snaps = await store.getDocs(store.query(
+      store.collection('users'),
+      store.where('username', '>=', searchQuery.toLowerCase()),
+      store.where('username', '<=', searchQuery.toLowerCase() + '')
     ))
     setSearchResults(
       snaps.docs
@@ -106,23 +102,23 @@ function FriendsPanel({ onClose, editionYear, onViewSchedule }: {
   }
 
   const sendRequest = async (friendId: string) => {
-    if (!db || !user) return
+    if (!store || !user) return
     const docId = [user.uid, friendId].sort().join('_')
-    await setDoc(doc(db, 'friendships', docId), { requester_id: user.uid, addressee_id: friendId, status: 'pending' })
+    await store.setDoc(store.doc('friendships', docId), { requester_id: user.uid, addressee_id: friendId, status: 'pending' })
     setSearchResults([])
     setSearchQuery('')
     loadFriends()
   }
 
   const acceptRequest = async (friendshipId: string) => {
-    if (!db || !user) return
-    await setDoc(doc(db, 'friendships', friendshipId), { status: 'accepted' }, { merge: true })
+    if (!store || !user) return
+    await store.setDoc(store.doc('friendships', friendshipId), { status: 'accepted' }, { merge: true })
     loadFriends()
   }
 
   const removeFriend = async (friendshipId: string) => {
-    if (!db || !user) return
-    await deleteDoc(doc(db, 'friendships', friendshipId))
+    if (!store || !user) return
+    await store.deleteDoc(store.doc('friendships', friendshipId))
     loadFriends()
   }
 
@@ -232,14 +228,23 @@ function FriendsPanel({ onClose, editionYear, onViewSchedule }: {
   )
 }
 
+const dayOrder = new Map(days.map((d, i) => [d.key, i]))
+
+/** Chronological order across the whole festival: by day, then by start time. */
+function byDayThenTime(a: Set, b: Set): number {
+  return (dayOrder.get(a.day)! - dayOrder.get(b.day)!) || a.startTime.localeCompare(b.startTime)
+}
+
 // ─── Set Card ───
-function SetCard({ set, saved, friendCount, vote, onToggle, onVote }: {
+// Memoized, with id-based stable callbacks: typing in the search box or toggling
+// one set must not re-render every card of the day.
+const SetCard = memo(function SetCard({ set, saved, friendCount, vote, onToggle, onVote }: {
   set: Set
   saved: boolean
   friendCount: number
   vote?: VoteType
-  onToggle: () => void
-  onVote: (type: VoteType) => void
+  onToggle: (setId: string) => void
+  onVote: (setId: string, type: VoteType) => void
 }) {
   const { t } = useTranslation()
 
@@ -260,7 +265,7 @@ function SetCard({ set, saved, friendCount, vote, onToggle, onVote }: {
           </span>
         )}
         <button
-          onClick={onToggle}
+          onClick={() => onToggle(set.id)}
           className={`shrink-0 rounded-lg px-2.5 py-1.5 text-xs font-medium transition-colors ${
             saved
               ? 'bg-accent/20 text-accent hover:bg-accent/30'
@@ -274,7 +279,7 @@ function SetCard({ set, saved, friendCount, vote, onToggle, onVote }: {
         <div className="flex items-center gap-1.5 border-t border-white/5 px-3 py-1.5">
           <span className="mr-auto text-[10px] text-text-muted">{t('timetable.rateSet')} :</span>
           <button
-            onClick={() => onVote('fire')}
+            onClick={() => onVote(set.id, 'fire')}
             className={`flex items-center gap-1 rounded-full px-2.5 py-1 text-[11px] font-semibold transition-all ${
               vote === 'fire' ? 'bg-orange-500/30 text-orange-400' : 'bg-surface-alt text-text-muted hover:bg-orange-500/20 hover:text-orange-400'
             }`}
@@ -282,7 +287,7 @@ function SetCard({ set, saved, friendCount, vote, onToggle, onVote }: {
             <FlameIcon size={12} /> Fire
           </button>
           <button
-            onClick={() => onVote('cold')}
+            onClick={() => onVote(set.id, 'cold')}
             className={`flex items-center gap-1 rounded-full px-2.5 py-1 text-[11px] font-semibold transition-all ${
               vote === 'cold' ? 'bg-blue-500/30 text-blue-400' : 'bg-surface-alt text-text-muted hover:bg-blue-500/20 hover:text-blue-400'
             }`}
@@ -293,14 +298,14 @@ function SetCard({ set, saved, friendCount, vote, onToggle, onVote }: {
       )}
     </div>
   )
-}
+})
 
 const TIMETABLE_CACHE_URL = `${import.meta.env.BASE_URL}data/timetable-2026.json`
 
 // ─── Main Timetable Page ───
 export default function Timetable() {
   const { t } = useTranslation()
-  const { user, configured } = useAuth()
+  const { user, store, configured } = useAuth()
   const [edition, setEdition] = useState<Edition>(getCurrentEdition)
   const [officialTimetableLoaded, setOfficialTimetableLoaded] = useState(false)
   const [activeDay, setActiveDay] = useState<Day>('friday')
@@ -347,32 +352,36 @@ export default function Timetable() {
 
   // Sync saved sets with Firestore in real-time
   useEffect(() => {
-    if (!db || !user) return
-    const unsub = onSnapshot(
-      query(
-        collection(db, 'timetable_entries'),
-        where('user_id', '==', user.uid),
-        where('edition_year', '==', edition.year)
+    if (!store || !user) return
+    const unsub = store.onSnapshot(
+      store.query(
+        store.collection('timetable_entries'),
+        store.where('user_id', '==', user.uid),
+        store.where('edition_year', '==', edition.year)
       ),
       (snaps) => {
         setSavedSets(snaps.docs.map((d) => d.data().set_id as string))
       }
     )
     return unsub
-  }, [user, edition.year])
+  }, [store, user, edition.year])
 
   // Écouter en temps réel les sets des buddies
   useEffect(() => {
-    if (!db || !user) return
+    if (!store || !user) return
 
+    let cancelled = false
     let unsubscribe: (() => void) | undefined
 
-    async function subscribeBuddySets() {
-      const buddySnaps = await getDocs(query(
-        collection(db!, 'edition_buddies'),
-        where('user_id', '==', user!.uid),
-        where('edition_year', '==', edition.year)
+    const subscribeBuddySets = async () => {
+      const buddySnaps = await store.getDocs(store.query(
+        store.collection('edition_buddies'),
+        store.where('user_id', '==', user.uid),
+        store.where('edition_year', '==', edition.year)
       ))
+      // The effect was cleaned up while the query was in flight: don't open a
+      // listener nobody will ever close.
+      if (cancelled) return
       const buddyIds = buddySnaps.docs.map((d) => d.data().friend_id as string)
 
       if (!buddyIds.length) {
@@ -381,11 +390,11 @@ export default function Timetable() {
       }
 
       // onSnapshot sur les entries des buddies
-      unsubscribe = onSnapshot(
-        query(
-          collection(db!, 'timetable_entries'),
-          where('user_id', 'in', buddyIds),
-          where('edition_year', '==', edition.year)
+      unsubscribe = store.onSnapshot(
+        store.query(
+          store.collection('timetable_entries'),
+          store.where('user_id', 'in', buddyIds),
+          store.where('edition_year', '==', edition.year)
         ),
         (snap) => {
           const grouped: Record<string, string[]> = {}
@@ -399,31 +408,39 @@ export default function Timetable() {
       )
     }
 
-    subscribeBuddySets()
-    return () => unsubscribe?.()
-  }, [user, edition.year])
+    subscribeBuddySets().catch(() => { /* offline: keep the last known friend sets */ })
+    return () => {
+      cancelled = true
+      unsubscribe?.()
+    }
+  }, [store, user, edition.year])
 
   // Sync localStorage
   useEffect(() => {
     localStorage.setItem(`defqon-timetable-${edition.year}`, JSON.stringify(savedSets))
   }, [savedSets, edition.year])
 
-  const toggleSet = async (setId: string) => {
-    const isSaved = savedSets.includes(setId)
+  // Latest saved sets, readable from toggleSet without making it change identity
+  // on every toggle (which would defeat the SetCard memoization).
+  const savedSetsRef = useRef(savedSets)
+  useEffect(() => { savedSetsRef.current = savedSets }, [savedSets])
+
+  const toggleSet = useCallback(async (setId: string) => {
+    const isSaved = savedSetsRef.current.includes(setId)
     if (isSaved) {
       setSavedSets((prev) => prev.filter((id) => id !== setId))
-      if (db && user) {
+      if (store && user) {
         try {
-          await deleteDoc(doc(db, 'timetable_entries', `${user.uid}_${edition.year}_${setId}`))
+          await store.deleteDoc(store.doc('timetable_entries', `${user.uid}_${edition.year}_${setId}`))
         } catch {
           setSavedSets((prev) => [...prev, setId])
         }
       }
     } else {
       setSavedSets((prev) => [...prev, setId])
-      if (db && user) {
+      if (store && user) {
         try {
-          await setDoc(doc(db, 'timetable_entries', `${user.uid}_${edition.year}_${setId}`), {
+          await store.setDoc(store.doc('timetable_entries', `${user.uid}_${edition.year}_${setId}`), {
             user_id: user.uid,
             set_id: setId,
             edition_year: edition.year,
@@ -433,15 +450,15 @@ export default function Timetable() {
         }
       }
     }
-  }
+  }, [store, user, edition.year])
 
   const viewBuddySchedule = async (friendId: string, friendName: string) => {
     setViewingBuddy({ id: friendId, name: friendName })
-    if (db) {
-      const snaps = await getDocs(query(
-        collection(db, 'timetable_entries'),
-        where('user_id', '==', friendId),
-        where('edition_year', '==', edition.year)
+    if (store) {
+      const snaps = await store.getDocs(store.query(
+        store.collection('timetable_entries'),
+        store.where('user_id', '==', friendId),
+        store.where('edition_year', '==', edition.year)
       ))
       setBuddySetIds(snaps.docs.map((d) => d.data().set_id as string))
     }
@@ -463,57 +480,61 @@ export default function Timetable() {
     }
   }
 
-  const getConflicts = (): Set[][] => {
-    const saved = edition.lineup.filter((s) => savedSets.includes(s.id))
-    const conflicts: Set[][] = []
-    for (let i = 0; i < saved.length; i++) {
-      for (let j = i + 1; j < saved.length; j++) {
-        const a = saved[i], b = saved[j]
+  const savedIds = useMemo(() => new Set(savedSets), [savedSets])
+
+  // Saved sets in lineup order
+  const savedLineup = useMemo(
+    () => edition.lineup.filter((s) => savedIds.has(s.id)),
+    [edition.lineup, savedIds]
+  )
+
+  const conflicts = useMemo(() => {
+    const pairs: Set[][] = []
+    for (let i = 0; i < savedLineup.length; i++) {
+      for (let j = i + 1; j < savedLineup.length; j++) {
+        const a = savedLineup[i], b = savedLineup[j]
         if (a.day === b.day && a.stage !== b.stage && a.startTime < b.endTime && b.startTime < a.endTime) {
-          conflicts.push([a, b])
+          pairs.push([a, b])
         }
       }
     }
-    return conflicts
-  }
+    return pairs
+  }, [savedLineup])
 
-  const filteredSets = edition.lineup
-    .filter((s) => s.day === activeDay)
-    .filter((s) => activeStage === 'ALL' || s.stage === activeStage)
-    .filter((s) => !searchQuery || s.artist.toLowerCase().includes(searchQuery.toLowerCase()))
-    .sort((a, b) => a.startTime.localeCompare(b.startTime))
+  const normalizedQuery = searchQuery.toLowerCase()
 
-  const searchResults = searchQuery.length >= 2
-    ? edition.lineup
-        .filter((s) => s.artist.toLowerCase().includes(searchQuery.toLowerCase()))
-        .sort((a, b) => {
-          const dayOrder = days.findIndex((d) => d.key === a.day) - days.findIndex((d) => d.key === b.day)
-          return dayOrder || a.startTime.localeCompare(b.startTime)
-        })
-    : null
+  const filteredSets = useMemo(
+    () => edition.lineup
+      .filter((s) => s.day === activeDay)
+      .filter((s) => activeStage === 'ALL' || s.stage === activeStage)
+      .filter((s) => !normalizedQuery || s.artist.toLowerCase().includes(normalizedQuery))
+      .sort((a, b) => a.startTime.localeCompare(b.startTime)),
+    [edition.lineup, activeDay, activeStage, normalizedQuery]
+  )
 
-  const buddySets = viewingBuddy
-    ? edition.lineup.filter((s) => buddySetIds.includes(s.id)).sort((a, b) => {
-        const dayOrder = days.findIndex((d) => d.key === a.day) - days.findIndex((d) => d.key === b.day)
-        return dayOrder || a.startTime.localeCompare(b.startTime)
-      })
-    : []
+  const searchResults = useMemo(
+    () => normalizedQuery.length >= 2
+      ? edition.lineup
+          .filter((s) => s.artist.toLowerCase().includes(normalizedQuery))
+          .sort(byDayThenTime)
+      : null,
+    [edition.lineup, normalizedQuery]
+  )
 
-  const mySets = edition.lineup
-    .filter((s) => savedSets.includes(s.id))
-    .sort((a, b) => {
-      const dayOrder = days.findIndex((d) => d.key === a.day) - days.findIndex((d) => d.key === b.day)
-      return dayOrder || a.startTime.localeCompare(b.startTime)
-    })
+  const buddySets = useMemo(
+    () => viewingBuddy
+      ? edition.lineup.filter((s) => buddySetIds.includes(s.id)).sort(byDayThenTime)
+      : [],
+    [edition.lineup, viewingBuddy, buddySetIds]
+  )
 
-  const friendsViewSets = edition.lineup
-    .filter((s) => friendSets[s.id]?.length > 0)
-    .sort((a, b) => {
-      const dayOrder = days.findIndex((d) => d.key === a.day) - days.findIndex((d) => d.key === b.day)
-      return dayOrder || a.startTime.localeCompare(b.startTime)
-    })
+  const mySets = useMemo(() => [...savedLineup].sort(byDayThenTime), [savedLineup])
 
-  const conflicts = getConflicts()
+  const friendsViewSets = useMemo(
+    () => edition.lineup.filter((s) => friendSets[s.id]?.length > 0).sort(byDayThenTime),
+    [edition.lineup, friendSets]
+  )
+
   const stages = edition.stagesPerDay[activeDay]
 
   const headerContent = (
@@ -599,7 +620,7 @@ export default function Timetable() {
           <p className="mb-2 text-xs text-text-muted">{searchResults.length} {t('timetable.searchResultCount')}</p>
           <div className="space-y-2">
             {searchResults.map((set) => (
-              <SetCard key={set.id} set={set} saved={savedSets.includes(set.id)} friendCount={friendSets[set.id]?.length || 0} vote={votes[set.id]} onToggle={() => toggleSet(set.id)} onVote={(type) => voteSet(set.id, type)} />
+              <SetCard key={set.id} set={set} saved={savedIds.has(set.id)} friendCount={friendSets[set.id]?.length || 0} vote={votes[set.id]} onToggle={toggleSet} onVote={voteSet} />
             ))}
           </div>
         </div>
@@ -678,7 +699,7 @@ export default function Timetable() {
                   <p className="py-8 text-center text-sm text-gray-500">{t('timetable.noSets')}</p>
                 ) : (
                   filteredSets.map((set) => (
-                    <SetCard key={set.id} set={set} saved={savedSets.includes(set.id)} friendCount={friendSets[set.id]?.length || 0} vote={votes[set.id]} onToggle={() => toggleSet(set.id)} onVote={(type) => voteSet(set.id, type)} />
+                    <SetCard key={set.id} set={set} saved={savedIds.has(set.id)} friendCount={friendSets[set.id]?.length || 0} vote={votes[set.id]} onToggle={toggleSet} onVote={voteSet} />
                   ))
                 )}
               </div>
@@ -721,7 +742,7 @@ export default function Timetable() {
                     </h3>
                     <div className="space-y-2">
                       {daySets.map((set) => (
-                        <SetCard key={set.id} set={set} saved={true} friendCount={friendSets[set.id]?.length || 0} vote={votes[set.id]} onToggle={() => toggleSet(set.id)} onVote={(type) => voteSet(set.id, type)} />
+                        <SetCard key={set.id} set={set} saved={true} friendCount={friendSets[set.id]?.length || 0} vote={votes[set.id]} onToggle={toggleSet} onVote={voteSet} />
                       ))}
                     </div>
                   </div>
@@ -756,7 +777,7 @@ export default function Timetable() {
                     </h3>
                     <div className="space-y-2">
                       {daySets.map((set) => {
-                        const isMine = savedSets.includes(set.id)
+                        const isMine = savedIds.has(set.id)
                         return (
                           <div
                             key={set.id}
@@ -811,7 +832,7 @@ export default function Timetable() {
                       <h3 className="mb-2 text-xs font-bold uppercase tracking-wider text-text-muted">{t(`timetable.days.${day.key}`)}</h3>
                       <div className="space-y-1.5">
                         {daySets.map((set) => {
-                          const isMine = savedSets.includes(set.id)
+                          const isMine = savedIds.has(set.id)
                           return (
                             <div key={set.id} className={`flex items-center gap-2 rounded-lg p-2.5 ${isMine ? 'bg-accent/10' : 'bg-surface-alt'}`}>
                               <div className="h-8 w-1 shrink-0 rounded-full" style={{ backgroundColor: stageColors[set.stage] }} />

@@ -30,8 +30,19 @@ Defqon Companion is a client-side React SPA designed as a PWA. It runs entirely 
 
 ### Offline strategy
 
-- Service worker uses **stale-while-revalidate**: serves cached content immediately, fetches updates in background.
-- All static assets cached on first visit.
+The service worker (`public/sw.js`, completed at build time by `scripts/inject-sw-precache.mjs`) picks a strategy per kind of request:
+
+| Request | Strategy |
+|---------|----------|
+| Page navigation | Network-first, falling back to the precached shell when offline or after 3 s |
+| `assets/*` (content-hashed build output) | Cache-first — these files never change |
+| `data/*.json`, icons, manifest | **Stale-while-revalidate**: cached copy served immediately, refreshed in the background |
+| `mainstages/*` photos | Stale-while-revalidate, revalidated at most once a week |
+| Other origins (Firestore, YouTube, weather API) | Not intercepted |
+
+- The app shell and every chunk are precached on first visit; data files are fetched best-effort at the same time. The Firestore chunk is precached only for browsers that have already used it (signed-in users).
+- Caches are named `defqon-companion-precache-<version>` and `defqon-companion-runtime`. The version is a hash of the precached content, so a deploy that only refreshes `data/*.json` does not reinstall the worker. Old versions are deleted on activation; caches of other projects on the same origin are never touched.
+- The worker is only registered in production builds and stays inert when served unbuilt by the dev server.
 - User data in localStorage is always available offline.
 
 ## Future architecture (with backend)

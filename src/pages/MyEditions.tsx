@@ -1,8 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useAuth } from '../contexts/AuthContext'
-import { db } from '../lib/firebase'
-import { collection, doc, getDocs, setDoc, deleteDoc, query, where } from 'firebase/firestore'
 import PageShell from '../components/PageShell'
 import { editionMetas, loadEdition, type Edition } from '../data/editions'
 import { stageColors, days, type Set } from '../data/lineup'
@@ -41,7 +39,7 @@ const nfcSupported = typeof window !== 'undefined' && 'NDEFReader' in window
 
 export default function MyEditions() {
   const { t } = useTranslation()
-  const { user, configured } = useAuth()
+  const { user, store, configured } = useAuth()
   const [editionHistories, setEditionHistories] = useState<EditionHistory[]>(loadHistoriesFromCache)
   const [selectedYear, setSelectedYear] = useState<number | null>(null)
   const [selectedEdition, setSelectedEdition] = useState<Edition | null>(null)
@@ -61,13 +59,13 @@ export default function MyEditions() {
   useEffect(() => () => { nfcAbortRef.current?.abort() }, [])
 
   useEffect(() => {
-    if (!db || !user) return
-    getDocs(query(collection(db, 'user_editions'), where('user_id', '==', user.uid))).then((snaps) => {
+    if (!store || !user) return
+    store.getDocs(store.query(store.collection('user_editions'), store.where('user_id', '==', user.uid))).then((snaps) => {
       const data = snaps.docs.map((d) => d.data() as EditionHistory)
       setEditionHistories(data)
       saveHistoriesToCache(data)
     })
-  }, [user])
+  }, [store, user])
 
   const loadEditionData = async (year: number) => {
     nfcAbortRef.current?.abort()
@@ -80,16 +78,16 @@ export default function MyEditions() {
     setSelectedEdition(ed)
 
     let sets: SavedSet[] = []
-    if (!db || !user) {
+    if (!store || !user) {
       try {
         const local = JSON.parse(localStorage.getItem(`defqon-timetable-${year}`) || '[]')
         sets = local.map((id: string) => ({ set_id: id }))
       } catch { sets = [] }
     } else {
-      const snaps = await getDocs(query(
-        collection(db, 'timetable_entries'),
-        where('user_id', '==', user.uid),
-        where('edition_year', '==', year)
+      const snaps = await store.getDocs(store.query(
+        store.collection('timetable_entries'),
+        store.where('user_id', '==', user.uid),
+        store.where('edition_year', '==', year)
       ))
       sets = snaps.docs.map((d) => ({ set_id: d.data().set_id as string }))
     }
@@ -120,8 +118,8 @@ export default function MyEditions() {
       const existing = JSON.parse(localStorage.getItem(key) || '[]') as string[]
       localStorage.setItem(key, JSON.stringify(existing.filter((id) => id !== setId)))
     } catch {}
-    if (db && user) {
-      try { await deleteDoc(doc(db, 'timetable_entries', `${user.uid}_${selectedYear}_${setId}`)) } catch {}
+    if (store && user) {
+      try { await store.deleteDoc(store.doc('timetable_entries', `${user.uid}_${selectedYear}_${setId}`)) } catch {}
     }
   }
 
@@ -130,14 +128,14 @@ export default function MyEditions() {
     setSavedSets([])
     setShowClearConfirm(false)
     try { localStorage.removeItem(`defqon-timetable-${selectedYear}`) } catch {}
-    if (db && user) {
+    if (store && user) {
       try {
-        const snaps = await getDocs(query(
-          collection(db, 'timetable_entries'),
-          where('user_id', '==', user.uid),
-          where('edition_year', '==', selectedYear)
+        const snaps = await store.getDocs(store.query(
+          store.collection('timetable_entries'),
+          store.where('user_id', '==', user.uid),
+          store.where('edition_year', '==', selectedYear)
         ))
-        await Promise.all(snaps.docs.map((d) => deleteDoc(d.ref)))
+        await Promise.all(snaps.docs.map((d) => store.deleteDoc(d.ref)))
       } catch {}
     }
   }
@@ -149,18 +147,18 @@ export default function MyEditions() {
     updateHistories((prev) =>
       prev.map((h) => h.edition_year === selectedYear ? { ...h, attended_festival: false } : h)
     )
-    if (db && user) {
+    if (store && user) {
       try {
-        await setDoc(doc(db, 'user_editions', `${user.uid}_${selectedYear}`), { attended_festival: false }, { merge: true })
+        await store.setDoc(store.doc('user_editions', `${user.uid}_${selectedYear}`), { attended_festival: false }, { merge: true })
       } catch {}
     }
   }
 
   const saveEditionNotes = async () => {
-    if (!db || !user || !selectedYear) return
+    if (!store || !user || !selectedYear) return
     setSaveStatus('saving')
     try {
-      await setDoc(doc(db, 'user_editions', `${user.uid}_${selectedYear}`), {
+      await store.setDoc(store.doc('user_editions', `${user.uid}_${selectedYear}`), {
         user_id: user.uid,
         edition_year: selectedYear,
         attended_festival: true,
@@ -192,9 +190,9 @@ export default function MyEditions() {
       if (exists) return prev.map((h) => h.edition_year === selectedYear! ? { ...h, bracelet_uid: uid } : h)
       return [...prev, { edition_year: selectedYear!, attended_festival: false, notes: null, rating: null, bracelet_uid: uid }]
     })
-    if (db && user && selectedYear) {
+    if (store && user && selectedYear) {
       try {
-        await setDoc(doc(db, 'user_editions', `${user.uid}_${selectedYear}`), {
+        await store.setDoc(store.doc('user_editions', `${user.uid}_${selectedYear}`), {
           user_id: user.uid,
           edition_year: selectedYear,
           bracelet_uid: uid,
@@ -208,9 +206,9 @@ export default function MyEditions() {
     updateHistories((prev) =>
       prev.map((h) => h.edition_year === selectedYear! ? { ...h, bracelet_uid: null } : h)
     )
-    if (db && user && selectedYear) {
+    if (store && user && selectedYear) {
       try {
-        await setDoc(doc(db, 'user_editions', `${user.uid}_${selectedYear}`), { bracelet_uid: null }, { merge: true })
+        await store.setDoc(store.doc('user_editions', `${user.uid}_${selectedYear}`), { bracelet_uid: null }, { merge: true })
       } catch {}
     }
   }

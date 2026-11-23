@@ -169,7 +169,7 @@ function Lightbox({ slides, index, theme, onClose, onStep }: LightboxProps) {
       role="dialog"
       aria-modal="true"
       aria-label={`Defqon.1 ${slide.year} mainstage`}
-      className="fixed inset-0 z-[60] flex flex-col bg-black/95 backdrop-blur-sm"
+      className="fixed inset-0 z-[60] flex flex-col bg-black/95"
       onClick={onClose}
       onTouchStart={(e) => { touchStartX.current = e.touches[0].clientX }}
       onTouchEnd={(e) => {

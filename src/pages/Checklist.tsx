@@ -1,10 +1,8 @@
 import { useState, useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
-import { doc, getDoc, setDoc } from 'firebase/firestore'
 import { defaultChecklist, type ChecklistItem } from '../data/festival'
 import PageShell from '../components/PageShell'
 import { useAuth } from '../contexts/AuthContext'
-import { db } from '../lib/firebase'
 
 interface FirestoreChecklist {
   checkedIds: string[]
@@ -43,7 +41,7 @@ function getStoredChecklist(): ChecklistItem[] {
 
 export default function Checklist() {
   const { t } = useTranslation()
-  const { user } = useAuth()
+  const { user, store } = useAuth()
   const [items, setItems] = useState<ChecklistItem[]>(getStoredChecklist)
   const [newItem, setNewItem] = useState('')
   const syncTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
@@ -58,26 +56,26 @@ export default function Checklist() {
 
   // Sync FROM Firestore when user logs in
   useEffect(() => {
-    if (!db || !user) return
-    getDoc(doc(db, 'user_checklist', user.uid))
+    if (!store || !user) return
+    store.getDoc(store.doc('user_checklist', user.uid))
       .then((snap) => {
         if (!snap.exists()) return
         const data = snap.data() as FirestoreChecklist
         setItems(buildFromCache(data.checkedIds ?? [], data.customItems ?? []))
       })
       .catch(() => { /* keep localStorage state */ })
-  }, [user])
+  }, [store, user])
 
   // Debounced sync TO Firestore on every items change
   useEffect(() => {
-    if (!db || !user) return
+    if (!store || !user) return
     if (syncTimer.current) clearTimeout(syncTimer.current)
     setSyncStatus('saving')
     syncTimer.current = setTimeout(async () => {
       const checkedIds = items.filter((i) => i.checked).map((i) => i.id)
       const customItems = items.filter((i) => i.custom)
       try {
-        await setDoc(doc(db!, 'user_checklist', user.uid), { checkedIds, customItems })
+        await store.setDoc(store.doc('user_checklist', user.uid), { checkedIds, customItems })
         setSyncStatus('saved')
         setTimeout(() => setSyncStatus('idle'), 2000)
       } catch (e) {
@@ -88,7 +86,7 @@ export default function Checklist() {
     return () => {
       if (syncTimer.current) clearTimeout(syncTimer.current)
     }
-  }, [items, user])
+  }, [items, store, user])
 
   const toggle = (id: string) => {
     setItems((prev) =>

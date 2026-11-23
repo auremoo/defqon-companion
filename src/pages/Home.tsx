@@ -7,8 +7,6 @@ import { festival, attendanceHistory } from '../data/festival'
 import { editionMetas } from '../data/editions/index'
 import { lineup } from '../data/lineup'
 import { useAuth } from '../contexts/AuthContext'
-import { db } from '../lib/firebase'
-import { doc, setDoc, getDoc } from 'firebase/firestore'
 
 // Cached by GitHub Action daily — falls back to live RSS if empty
 const CACHED_NEWS_URL = `${import.meta.env.BASE_URL}data/qdance-news.json`
@@ -50,7 +48,7 @@ function timeAgo(isoDate: string): string {
 
 function GoingWidget() {
   const { t } = useTranslation()
-  const { user } = useAuth()
+  const { user, store } = useAuth()
   const year = festival.year
   const lsKey = `defqon-going-${year}`
   const [going, setGoing] = useState(() => localStorage.getItem(lsKey) === 'true')
@@ -62,8 +60,8 @@ function GoingWidget() {
   const isPast = new Date() > effectiveEnd
 
   useEffect(() => {
-    if (!db || !user) return
-    getDoc(doc(db, 'user_editions', `${user.uid}_${year}`))
+    if (!store || !user) return
+    store.getDoc(store.doc('user_editions', `${user.uid}_${year}`))
       .then((snap) => {
         const attended = snap.exists() && snap.data().attended_festival === true
         if (attended) {
@@ -75,14 +73,14 @@ function GoingWidget() {
         }
       })
       .catch(() => {})
-  }, [user, year, lsKey])
+  }, [store, user, year, lsKey])
 
   const confirm = async () => {
     localStorage.setItem(lsKey, 'true')
     setGoing(true)
-    if (db && user) {
+    if (store && user) {
       try {
-        await setDoc(doc(db, 'user_editions', `${user.uid}_${year}`), {
+        await store.setDoc(store.doc('user_editions', `${user.uid}_${year}`), {
           user_id: user.uid,
           edition_year: year,
           attended_festival: true,
@@ -96,9 +94,9 @@ function GoingWidget() {
   const undo = async () => {
     localStorage.removeItem(lsKey)
     setGoing(false)
-    if (db && user) {
+    if (store && user) {
       try {
-        await setDoc(doc(db, 'user_editions', `${user.uid}_${year}`), {
+        await store.setDoc(store.doc('user_editions', `${user.uid}_${year}`), {
           attended_festival: false,
         }, { merge: true })
       } catch {}
@@ -250,7 +248,8 @@ export default function Home() {
     <>
       <div className="mt-2 text-center">
         <div className="mx-auto mb-4 w-16">
-          <img src={import.meta.env.BASE_URL + 'icon-512.png'} alt="Defqon.1" className="w-full rounded-xl" />
+          {/* Shown at 64 CSS px: the 192px icon covers 3x screens at a twentieth of the 512px file's weight */}
+          <img src={import.meta.env.BASE_URL + 'icon-192.png'} alt="Defqon.1" width={64} height={64} decoding="async" className="w-full rounded-xl" />
         </div>
       </div>
 

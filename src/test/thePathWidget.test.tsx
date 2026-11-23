@@ -1,16 +1,16 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { render, screen, waitFor } from '@testing-library/react'
 
-// Firestore is mocked so the test controls exactly when getDoc settles.
+// The Firestore SDK reaches components through useAuth().store; it is mocked
+// so the test controls exactly when getDoc settles.
 const getDoc = vi.fn()
-vi.mock('firebase/firestore', () => ({
+const store = {
   doc: vi.fn(() => ({})),
   getDoc: (...args: unknown[]) => getDoc(...args),
   setDoc: vi.fn(),
-}))
-vi.mock('../lib/firebase', () => ({ db: {}, auth: {}, isFirebaseConfigured: true }))
+}
 
-const authState = { user: { uid: 'u1' }, configured: true, loading: false }
+const authState = { user: { uid: 'u1' }, store, configured: true, loading: false }
 vi.mock('../contexts/AuthContext', () => ({ useAuth: () => authState }))
 
 vi.mock('react-i18next', () => ({ useTranslation: () => ({ t: (k: string) => k }) }))

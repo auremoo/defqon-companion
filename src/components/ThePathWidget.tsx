@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useAuth } from '../contexts/AuthContext'
-import { db } from '../lib/firebase'
-import { doc, getDoc, setDoc } from 'firebase/firestore'
 
 interface PathData {
   rank: number
@@ -81,7 +79,7 @@ function PathStatsSkeleton() {
 
 export default function ThePathWidget() {
   const { t } = useTranslation()
-  const { user, configured, loading: authLoading } = useAuth()
+  const { user, store, configured, loading: authLoading } = useAuth()
   const [pathData, setPathData] = useState<PathData | null>(null)
   const [status, setStatus] = useState<Status>('loading')
   const [reloadKey, setReloadKey] = useState(0)
@@ -91,13 +89,13 @@ export default function ThePathWidget() {
   const [saveOk, setSaveOk] = useState(false)
 
   useEffect(() => {
-    if (!db || !user) return
+    if (!store || !user) return
     let cancelled = false
     let timer: ReturnType<typeof setTimeout> | undefined
 
-    new Promise<Awaited<ReturnType<typeof getDoc>>>((resolve, reject) => {
+    new Promise<Awaited<ReturnType<typeof store.getDoc>>>((resolve, reject) => {
       timer = setTimeout(() => reject(new Error('timeout')), FETCH_TIMEOUT_MS)
-      getDoc(doc(db!, 'user_paths', user.uid)).then(resolve, reject)
+      store.getDoc(store.doc('user_paths', user.uid)).then(resolve, reject)
     })
       .then((snap) => {
         if (cancelled) return
@@ -114,7 +112,7 @@ export default function ThePathWidget() {
       .finally(() => clearTimeout(timer))
 
     return () => { cancelled = true; clearTimeout(timer) }
-  }, [user, reloadKey])
+  }, [store, user, reloadKey])
 
   if (!configured) return null
   // Auth resolves from the IndexedDB cache; until it does we don't yet know
@@ -135,10 +133,10 @@ export default function ThePathWidget() {
   const cancel = () => setEditing(false)
 
   const save = async () => {
-    if (!db || !user) return
+    if (!store || !user) return
     setSaving(true)
     try {
-      await setDoc(doc(db, 'user_paths', user.uid), form)
+      await store.setDoc(store.doc('user_paths', user.uid), form)
       setPathData({ ...form })
       setEditing(false)
       setSaveOk(true)
