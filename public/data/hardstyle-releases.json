@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-11-22T13:05:58.133Z",
+  "updatedAt": "2026-11-23T15:43:22.711Z",
   "releases": [
+    {
+      "id": "4b7662d0-6582-46f2-a61c-afa4d9559858",
+      "title": "Follow Me Into The Shadows",
+      "artist": "Darren Glancy",
+      "mix": "Garbie Project Remix",
+      "image": "https://hardstyle.com/track_image/4b7662d0-6582-46f2-a61c-afa4d9559858/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/4b7662d0-6582-46f2-a61c-afa4d9559858/follow-me-into-the-shadows"
+    },
+    {
+      "id": "5fe16d89-c4f2-4ddb-be52-3c736c36d06a",
+      "title": "Halloween",
+      "artist": "Mental Crush",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/5fe16d89-c4f2-4ddb-be52-3c736c36d06a/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/5fe16d89-c4f2-4ddb-be52-3c736c36d06a/halloween"
+    },
+    {
+      "id": "d0e64694-576e-49fb-a201-8f1c7ad3e8f4",
+      "title": "Ghost Protocol",
+      "artist": "Mental Crush",
+      "mix": "Original Mix",
+      "image": "https://hardstyle.com/track_image/d0e64694-576e-49fb-a201-8f1c7ad3e8f4/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/d0e64694-576e-49fb-a201-8f1c7ad3e8f4/ghost-protocol"
+    },
     {
       "id": "5fea720c-8fd5-4136-9db0-4043baab0e82",
       "title": "Post Bass",
@@ -24,30 +48,6 @@
       "mix": "Original Mix",
       "image": "https://hardstyle.com/track_image/6e14a202-b49a-437e-aca9-dce7f5bf8504/250x250/335",
       "link": "https://hardstyle.com/en/tracks/6e14a202-b49a-437e-aca9-dce7f5bf8504/nightmare"
-    },
-    {
-      "id": "df7bb5bf-39fa-4719-a7df-354f9bc9378a",
-      "title": "Wherever You Will Go",
-      "artist": "Nova Scotia",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/df7bb5bf-39fa-4719-a7df-354f9bc9378a/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/df7bb5bf-39fa-4719-a7df-354f9bc9378a/wherever-you-will-go"
-    },
-    {
-      "id": "1d1d778e-b777-414f-b432-e60adee35568",
-      "title": "I Like Surprise",
-      "artist": "Thur",
-      "mix": "Original Mix",
-      "image": "https://hardstyle.com/track_image/1d1d778e-b777-414f-b432-e60adee35568/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/1d1d778e-b777-414f-b432-e60adee35568/i-like-surprise"
-    },
-    {
-      "id": "c71bb923-4ceb-4471-9f47-13f87bdb879e",
-      "title": "Good And Evil",
-      "artist": "Manifest Destiny",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/c71bb923-4ceb-4471-9f47-13f87bdb879e/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/c71bb923-4ceb-4471-9f47-13f87bdb879e/good-and-evil"
     },
     {
       "id": "4ebd39a8-52e4-4e99-90bc-193a5004b5f1",
