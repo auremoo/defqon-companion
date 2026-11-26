@@ -1,53 +1,77 @@
 {
-  "updatedAt": "2026-11-25T15:19:25.887Z",
+  "updatedAt": "2026-11-26T14:45:58.184Z",
   "releases": [
     {
-      "id": "44722b87-b599-4a74-b9e5-51dbfbc5bb41",
-      "title": "Take My Hand",
-      "artist": "The Slagerz",
+      "id": "773cd0ea-e0ea-4d38-a203-439ecefa19ff",
+      "title": "Da Undaground Culture",
+      "artist": "Brian Acardy",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/773cd0ea-e0ea-4d38-a203-439ecefa19ff/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/773cd0ea-e0ea-4d38-a203-439ecefa19ff/da-undaground-culture"
+    },
+    {
+      "id": "e3eaec1e-06d2-4132-a5a8-77a2ab8c9300",
+      "title": "Like A Drug",
+      "artist": "Promo",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/e3eaec1e-06d2-4132-a5a8-77a2ab8c9300/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/e3eaec1e-06d2-4132-a5a8-77a2ab8c9300/like-a-drug"
+    },
+    {
+      "id": "b0a95c8c-0e7c-4fc2-af89-325cc1e7f306",
+      "title": "The Oldschool Flow",
+      "artist": "Promo",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/b0a95c8c-0e7c-4fc2-af89-325cc1e7f306/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/b0a95c8c-0e7c-4fc2-af89-325cc1e7f306/the-oldschool-flow"
+    },
+    {
+      "id": "903a241c-5845-48bb-815c-ce9c7b444737",
+      "title": "The Wicked Style",
+      "artist": "Promo",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/903a241c-5845-48bb-815c-ce9c7b444737/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/903a241c-5845-48bb-815c-ce9c7b444737/the-wicked-style"
+    },
+    {
+      "id": "cf626741-76fc-4cad-baea-563ad439eba9",
+      "title": "Lost",
+      "artist": "Audiofreq",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/44722b87-b599-4a74-b9e5-51dbfbc5bb41/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/44722b87-b599-4a74-b9e5-51dbfbc5bb41/take-my-hand"
+      "image": "https://hardstyle.com/track_image/cf626741-76fc-4cad-baea-563ad439eba9/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/cf626741-76fc-4cad-baea-563ad439eba9/lost"
     },
     {
-      "id": "20f999d3-261d-45e3-b834-f0cb522ba26e",
-      "title": "Bang",
-      "artist": "Jan Vervloet",
+      "id": "d8e5c365-eee4-4eb2-a48d-42e80d7b89df",
+      "title": "I CHOOSE U",
+      "artist": "Dual Damage",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/20f999d3-261d-45e3-b834-f0cb522ba26e/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/20f999d3-261d-45e3-b834-f0cb522ba26e/bang"
+      "image": "https://hardstyle.com/track_image/d8e5c365-eee4-4eb2-a48d-42e80d7b89df/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/d8e5c365-eee4-4eb2-a48d-42e80d7b89df/i-choose-u"
     },
     {
-      "id": "58f5ddf8-ddef-4a77-94d9-84f60233f0a6",
-      "title": "Be The One",
-      "artist": "Ben Defekt",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/58f5ddf8-ddef-4a77-94d9-84f60233f0a6/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/58f5ddf8-ddef-4a77-94d9-84f60233f0a6/be-the-one"
+      "id": "823e73ef-3951-432a-9e01-f5836bc69d2c",
+      "title": "The Killing Fields 4",
+      "artist": "Various Artists",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/823e73ef-3951-432a-9e01-f5836bc69d2c/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/823e73ef-3951-432a-9e01-f5836bc69d2c"
     },
     {
-      "id": "546852e1-30cc-4aef-906d-141f2bde907a",
-      "title": "Heatwaves",
-      "artist": "Invaderz",
-      "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/546852e1-30cc-4aef-906d-141f2bde907a/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/546852e1-30cc-4aef-906d-141f2bde907a/heatwaves"
+      "id": "d2f3dc64-6547-44d4-82c4-d6ca858736bb",
+      "title": "BLOW IT UP EP",
+      "artist": "Vieze Asbak",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/d2f3dc64-6547-44d4-82c4-d6ca858736bb/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/d2f3dc64-6547-44d4-82c4-d6ca858736bb"
     },
     {
-      "id": "24dbd6b0-3035-4cf8-a10a-b069313aa266",
-      "title": "Crazy",
-      "artist": "Dropzone",
-      "mix": "Bounce Mix",
-      "image": "https://hardstyle.com/track_image/24dbd6b0-3035-4cf8-a10a-b069313aa266/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/24dbd6b0-3035-4cf8-a10a-b069313aa266/crazy"
-    },
-    {
-      "id": "76279b3b-c382-4919-9267-202fc44c6925",
-      "title": "Crazy",
-      "artist": "Dropzone",
-      "mix": "Bounce Edit",
-      "image": "https://hardstyle.com/track_image/76279b3b-c382-4919-9267-202fc44c6925/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/76279b3b-c382-4919-9267-202fc44c6925/crazy"
+      "id": "507811f5-8087-4228-b035-8be28e89d39f",
+      "title": "Nekronomikon",
+      "artist": "Antenora",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/507811f5-8087-4228-b035-8be28e89d39f/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/507811f5-8087-4228-b035-8be28e89d39f"
     },
     {
       "id": "4ebd39a8-52e4-4e99-90bc-193a5004b5f1",
@@ -56,30 +80,6 @@
       "mix": "",
       "image": "https://hardstyle.com/track_image/4ebd39a8-52e4-4e99-90bc-193a5004b5f1/250x250/335",
       "link": "https://hardstyle.com/en/tracks/4ebd39a8-52e4-4e99-90bc-193a5004b5f1"
-    },
-    {
-      "id": "ac7b3c51-25ec-4e31-8c2b-26c1dc28811c",
-      "title": "Musical Journey, Pt. 1",
-      "artist": "Delighted",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/ac7b3c51-25ec-4e31-8c2b-26c1dc28811c/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/ac7b3c51-25ec-4e31-8c2b-26c1dc28811c"
-    },
-    {
-      "id": "56a0de35-c215-473d-bac5-9ad0c759bb57",
-      "title": "back 2 life",
-      "artist": "Thyron",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/56a0de35-c215-473d-bac5-9ad0c759bb57/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/56a0de35-c215-473d-bac5-9ad0c759bb57"
-    },
-    {
-      "id": "722c35b6-7fba-499b-a250-202cbbe8c0bc",
-      "title": "Serenity",
-      "artist": "Devin Wild",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/722c35b6-7fba-499b-a250-202cbbe8c0bc/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/722c35b6-7fba-499b-a250-202cbbe8c0bc"
     }
   ]
 }
