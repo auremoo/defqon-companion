@@ -1,85 +1,85 @@
 {
-  "updatedAt": "2026-11-26T14:45:58.184Z",
+  "updatedAt": "2026-11-27T14:44:40.679Z",
   "releases": [
     {
-      "id": "773cd0ea-e0ea-4d38-a203-439ecefa19ff",
-      "title": "Da Undaground Culture",
-      "artist": "Brian Acardy",
+      "id": "e6905131-9439-45e6-8840-c9193a78b845",
+      "title": "BUST IT",
+      "artist": "Per Pleks",
       "mix": "",
-      "image": "https://hardstyle.com/track_image/773cd0ea-e0ea-4d38-a203-439ecefa19ff/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/773cd0ea-e0ea-4d38-a203-439ecefa19ff/da-undaground-culture"
+      "image": "https://hardstyle.com/track_image/e6905131-9439-45e6-8840-c9193a78b845/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/e6905131-9439-45e6-8840-c9193a78b845/bust-it"
     },
     {
-      "id": "e3eaec1e-06d2-4132-a5a8-77a2ab8c9300",
-      "title": "Like A Drug",
-      "artist": "Promo",
+      "id": "2309ff8c-9cb4-4908-a053-8f4b2cf4c995",
+      "title": "Running Free",
+      "artist": "",
       "mix": "",
-      "image": "https://hardstyle.com/track_image/e3eaec1e-06d2-4132-a5a8-77a2ab8c9300/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/e3eaec1e-06d2-4132-a5a8-77a2ab8c9300/like-a-drug"
+      "image": "https://hardstyle.com/track_image/2309ff8c-9cb4-4908-a053-8f4b2cf4c995/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/2309ff8c-9cb4-4908-a053-8f4b2cf4c995/running-free"
     },
     {
-      "id": "b0a95c8c-0e7c-4fc2-af89-325cc1e7f306",
-      "title": "The Oldschool Flow",
-      "artist": "Promo",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/b0a95c8c-0e7c-4fc2-af89-325cc1e7f306/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/b0a95c8c-0e7c-4fc2-af89-325cc1e7f306/the-oldschool-flow"
-    },
-    {
-      "id": "903a241c-5845-48bb-815c-ce9c7b444737",
-      "title": "The Wicked Style",
-      "artist": "Promo",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/903a241c-5845-48bb-815c-ce9c7b444737/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/903a241c-5845-48bb-815c-ce9c7b444737/the-wicked-style"
-    },
-    {
-      "id": "cf626741-76fc-4cad-baea-563ad439eba9",
-      "title": "Lost",
-      "artist": "Audiofreq",
+      "id": "21ac0fe8-143b-4776-9622-3bf1ef6d3a6d",
+      "title": "BLACKLISTED",
+      "artist": "Unresolved",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/cf626741-76fc-4cad-baea-563ad439eba9/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/cf626741-76fc-4cad-baea-563ad439eba9/lost"
+      "image": "https://hardstyle.com/track_image/21ac0fe8-143b-4776-9622-3bf1ef6d3a6d/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/21ac0fe8-143b-4776-9622-3bf1ef6d3a6d/blacklisted"
     },
     {
-      "id": "d8e5c365-eee4-4eb2-a48d-42e80d7b89df",
-      "title": "I CHOOSE U",
-      "artist": "Dual Damage",
+      "id": "9169d907-0128-4919-be2d-dd8fc09ebecb",
+      "title": "FIRE (REACTIVATED)",
+      "artist": "Mutilator",
       "mix": "Extended Mix",
-      "image": "https://hardstyle.com/track_image/d8e5c365-eee4-4eb2-a48d-42e80d7b89df/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/d8e5c365-eee4-4eb2-a48d-42e80d7b89df/i-choose-u"
+      "image": "https://hardstyle.com/track_image/9169d907-0128-4919-be2d-dd8fc09ebecb/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/9169d907-0128-4919-be2d-dd8fc09ebecb/fire-reactivated"
     },
     {
-      "id": "823e73ef-3951-432a-9e01-f5836bc69d2c",
-      "title": "The Killing Fields 4",
-      "artist": "Various Artists",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/823e73ef-3951-432a-9e01-f5836bc69d2c/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/823e73ef-3951-432a-9e01-f5836bc69d2c"
+      "id": "774fcf3c-8772-4ec4-a129-c35021fbe28a",
+      "title": "PSYCHEDELICS (REACTIVATED)",
+      "artist": "Mutilator",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/774fcf3c-8772-4ec4-a129-c35021fbe28a/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/774fcf3c-8772-4ec4-a129-c35021fbe28a/psychedelics-reactivated"
     },
     {
-      "id": "d2f3dc64-6547-44d4-82c4-d6ca858736bb",
-      "title": "BLOW IT UP EP",
-      "artist": "Vieze Asbak",
-      "mix": "",
-      "image": "https://hardstyle.com/track_image/d2f3dc64-6547-44d4-82c4-d6ca858736bb/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/d2f3dc64-6547-44d4-82c4-d6ca858736bb"
+      "id": "63f836f7-55c1-47d8-b4b5-c7dec12749a3",
+      "title": "KICKPONG",
+      "artist": "The Saints",
+      "mix": "Extended Mix",
+      "image": "https://hardstyle.com/track_image/63f836f7-55c1-47d8-b4b5-c7dec12749a3/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/63f836f7-55c1-47d8-b4b5-c7dec12749a3/kickpong"
     },
     {
-      "id": "507811f5-8087-4228-b035-8be28e89d39f",
-      "title": "Nekronomikon",
-      "artist": "Antenora",
+      "id": "efb1ce54-183b-4df5-bdfd-4217700180e5",
+      "title": "Rave Reactor EP",
+      "artist": "Mutilator",
       "mix": "",
-      "image": "https://hardstyle.com/track_image/507811f5-8087-4228-b035-8be28e89d39f/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/507811f5-8087-4228-b035-8be28e89d39f"
+      "image": "https://hardstyle.com/track_image/efb1ce54-183b-4df5-bdfd-4217700180e5/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/efb1ce54-183b-4df5-bdfd-4217700180e5"
     },
     {
-      "id": "4ebd39a8-52e4-4e99-90bc-193a5004b5f1",
-      "title": "New Era, Vol. 1",
-      "artist": "Mike W3lts",
+      "id": "114ba501-0c27-4e2d-940c-447f0849d252",
+      "title": "Brennan Heart 25 Years",
+      "artist": "Brennan Heart",
       "mix": "",
-      "image": "https://hardstyle.com/track_image/4ebd39a8-52e4-4e99-90bc-193a5004b5f1/250x250/335",
-      "link": "https://hardstyle.com/en/tracks/4ebd39a8-52e4-4e99-90bc-193a5004b5f1"
+      "image": "https://hardstyle.com/track_image/114ba501-0c27-4e2d-940c-447f0849d252/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/114ba501-0c27-4e2d-940c-447f0849d252"
+    },
+    {
+      "id": "4ba08059-bfdd-49f6-8952-628147190cdc",
+      "title": "Resurrexion",
+      "artist": "Radical Redemption",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/4ba08059-bfdd-49f6-8952-628147190cdc/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/4ba08059-bfdd-49f6-8952-628147190cdc"
+    },
+    {
+      "id": "0aead5ec-2d9f-4329-8b17-0ab0271f9dba",
+      "title": "Resurrexion",
+      "artist": "Radical Redemption",
+      "mix": "",
+      "image": "https://hardstyle.com/track_image/0aead5ec-2d9f-4329-8b17-0ab0271f9dba/250x250/335",
+      "link": "https://hardstyle.com/en/tracks/0aead5ec-2d9f-4329-8b17-0ab0271f9dba"
     }
   ]
 }
